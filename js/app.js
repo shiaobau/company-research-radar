@@ -661,6 +661,17 @@ function stockLabel(company) {
     .join(" · ");
 }
 
+function displayTags(company) {
+  return (company.tags || []).filter((tag) => tag !== "自動研究檔");
+}
+
+function displayThesis(company) {
+  const thesis = String(company.thesis || "");
+  const isResearchWorkflowNote = thesis.includes("已由選股宇宙升級為正式研究檔")
+    && thesis.includes("分數依公開資料自動計算");
+  return isResearchWorkflowNote ? "" : thesis;
+}
+
 function dataCoverageLabel(company) {
   const status = state.dataStatus.companies?.[company.id];
   if (!status) return "客觀資料待建立";
@@ -790,8 +801,8 @@ function renderCompanyList(companies) {
           <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.band.label)}</p>
           <h3>${RadarRenderers.escapeHtml(company.name)}</h3>
           <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(dataCoverageLabel(company))}</p>
-          <p class="muted">${RadarRenderers.escapeHtml(company.thesis)}</p>
-          <div class="card-tags">${(company.tags || []).map((tag) => `<span class="tag">${RadarRenderers.escapeHtml(tag)}</span>`).join("")}</div>
+          ${displayThesis(company) ? `<p class="muted">${RadarRenderers.escapeHtml(displayThesis(company))}</p>` : ""}
+          <div class="card-tags">${displayTags(company).map((tag) => `<span class="tag">${RadarRenderers.escapeHtml(tag)}</span>`).join("")}</div>
         </div>
         <div class="mini-fields">${summary}${RadarRenderers.sourceLinks(company.primary_source_ids, sourceIndex)}</div>
         <button class="card-delete" type="button" data-delete-research="${RadarRenderers.escapeHtml(company.ticker)}" title="刪除觀察公司">刪除</button>
@@ -926,11 +937,11 @@ function renderDetail() {
         <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.band.label)}</p>
         <h2>${RadarRenderers.escapeHtml(company.name)}</h2>
         <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(dataCoverageLabel(company))}${company.legal_name ? ` · ${RadarRenderers.escapeHtml(company.legal_name)}` : ""}</p>
-        <p class="muted">${RadarRenderers.escapeHtml(company.data_quality)} · ${RadarRenderers.escapeHtml(company.last_reviewed)}</p>
+        <p class="muted">資料更新：${RadarRenderers.escapeHtml(company.last_reviewed || "未提供")}</p>
       </div>
       <span class="pill">${score.total}</span>
     </div>
-    <p>${RadarRenderers.escapeHtml(company.thesis)}</p>
+    ${displayThesis(company) ? `<p>${RadarRenderers.escapeHtml(displayThesis(company))}</p>` : ""}
     <div class="score-breakdown">${RadarRenderers.renderScoreRows(score)}</div>
     <details class="detail-fold">
       <summary>資料快照與產業證據</summary>
