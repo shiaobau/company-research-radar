@@ -1,0 +1,209 @@
+{
+  "version": "0.1.0",
+  "note": "上市/上櫃公司初步分群用的產業模板映射。這是前置篩選用，不等同於已完成評分模型。",
+  "templates": [
+    {
+      "id": "semiconductor",
+      "label": "半導體",
+      "short_label": "半導體",
+      "description": "IC 設計、晶圓製造、封測、矽晶圓、半導體設備與材料。"
+    },
+    {
+      "id": "electronics_hardware",
+      "label": "電子硬體與零組件",
+      "short_label": "電子硬體",
+      "description": "電腦週邊、光電、通訊網路、電子零組件、電子通路與其他電子。"
+    },
+    {
+      "id": "software",
+      "label": "軟體、雲端與資訊服務",
+      "short_label": "軟體雲端",
+      "description": "資訊服務、數位雲端、系統整合、資安與企業軟體。"
+    },
+    {
+      "id": "ai",
+      "label": "AI 與資料平台",
+      "short_label": "AI",
+      "description": "AI 服務、資料平台、模型、算力、機器學習與智慧應用。"
+    },
+    {
+      "id": "biotech_pharma",
+      "label": "生技製藥",
+      "short_label": "生技製藥",
+      "description": "新藥、製藥、CDMO、原料藥、檢測與生技研發。"
+    },
+    {
+      "id": "medical_device",
+      "label": "醫療器材",
+      "short_label": "醫材",
+      "description": "醫療器材、診斷耗材、檢測設備、牙科、眼科與照護設備。"
+    },
+    {
+      "id": "nutrition_health_food",
+      "label": "保健營養食品",
+      "short_label": "保健食品",
+      "description": "健康食品、營養補充、益生菌、機能食品與食品生技。"
+    },
+    {
+      "id": "financial",
+      "label": "金融保險",
+      "short_label": "金融",
+      "description": "銀行、保險、證券、金控、租賃與其他金融服務。"
+    },
+    {
+      "id": "industrial_manufacturing",
+      "label": "工業製造與自動化",
+      "short_label": "工業製造",
+      "description": "電機機械、電器電纜、工業設備、自動化與製造服務。"
+    },
+    {
+      "id": "basic_materials",
+      "label": "原物料、化工與基礎材料",
+      "short_label": "基礎材料",
+      "description": "水泥、塑膠、玻璃、造紙、鋼鐵、橡膠與化學材料。"
+    },
+    {
+      "id": "auto_ev_supply_chain",
+      "label": "汽車與電動車供應鏈",
+      "short_label": "車用供應鏈",
+      "description": "汽車、車用零組件、電動車、車用電子與相關供應鏈。"
+    },
+    {
+      "id": "infrastructure_transport_real_assets",
+      "label": "基礎建設、營建與運輸",
+      "short_label": "基建運輸",
+      "description": "建材營造、不動產、工程、航運、運輸、倉儲與物流服務。"
+    },
+    {
+      "id": "consumer_food_retail",
+      "label": "消費、食品、零售與生活",
+      "short_label": "消費生活",
+      "description": "食品、觀光餐旅、貿易百貨、文創、農業科技、運動休閒與居家生活。"
+    },
+    {
+      "id": "energy_environment_utilities",
+      "label": "能源、環境與公用事業",
+      "short_label": "能源環境",
+      "description": "油電燃氣、綠能環保、循環經濟、能源服務與公用事業。"
+    },
+    {
+      "id": "other",
+      "label": "其他與待分類",
+      "short_label": "其他",
+      "description": "尚未能用公開產業代碼或關鍵字穩定歸類的公司。"
+    }
+  ],
+  "official_industry_labels": {
+    "01": "水泥工業",
+    "02": "食品工業",
+    "03": "塑膠工業",
+    "04": "紡織纖維",
+    "05": "電機機械",
+    "06": "電器電纜",
+    "08": "玻璃陶瓷",
+    "09": "造紙工業",
+    "10": "鋼鐵工業",
+    "11": "橡膠工業",
+    "12": "汽車工業",
+    "14": "建材營造",
+    "15": "航運業",
+    "16": "觀光餐旅",
+    "17": "金融保險",
+    "18": "貿易百貨",
+    "20": "其他",
+    "21": "化學工業",
+    "22": "生技醫療",
+    "23": "油電燃氣",
+    "24": "半導體業",
+    "25": "電腦及週邊設備",
+    "26": "光電業",
+    "27": "通信網路業",
+    "28": "電子零組件業",
+    "29": "電子通路業",
+    "30": "資訊服務業",
+    "31": "其他電子業",
+    "32": "文化創意業",
+    "33": "農業科技",
+    "35": "綠能環保",
+    "36": "數位雲端",
+    "37": "運動休閒",
+    "38": "居家生活",
+    "91": "存託憑證"
+  },
+  "official_industry_code_map": {
+    "01": "basic_materials",
+    "02": "consumer_food_retail",
+    "03": "basic_materials",
+    "04": "consumer_food_retail",
+    "05": "industrial_manufacturing",
+    "06": "industrial_manufacturing",
+    "08": "basic_materials",
+    "09": "basic_materials",
+    "10": "basic_materials",
+    "11": "basic_materials",
+    "12": "auto_ev_supply_chain",
+    "14": "infrastructure_transport_real_assets",
+    "15": "infrastructure_transport_real_assets",
+    "16": "consumer_food_retail",
+    "17": "financial",
+    "18": "consumer_food_retail",
+    "20": "other",
+    "21": "basic_materials",
+    "22": "biotech_pharma",
+    "23": "energy_environment_utilities",
+    "24": "semiconductor",
+    "25": "electronics_hardware",
+    "26": "electronics_hardware",
+    "27": "electronics_hardware",
+    "28": "electronics_hardware",
+    "29": "electronics_hardware",
+    "30": "software",
+    "31": "electronics_hardware",
+    "32": "consumer_food_retail",
+    "33": "consumer_food_retail",
+    "35": "energy_environment_utilities",
+    "36": "software",
+    "37": "consumer_food_retail",
+    "38": "consumer_food_retail",
+    "91": "other"
+  },
+  "keyword_overrides": [
+    {
+      "template_id": "nutrition_health_food",
+      "applies_to_industry_codes": ["02", "22", "33"],
+      "keywords": ["健康食品", "保健", "營養", "益生菌", "機能", "食品生技", "膳食", "乳酸菌", "生技食品"]
+    },
+    {
+      "template_id": "medical_device",
+      "applies_to_industry_codes": ["22", "20"],
+      "keywords": ["醫療器材", "醫材", "檢測", "耗材", "診斷", "牙科", "隱形眼鏡", "手術", "血糖", "導管", "照護"]
+    },
+    {
+      "template_id": "ai",
+      "applies_to_industry_codes": ["24", "25", "27", "30", "31", "36", "20"],
+      "keywords": ["人工智慧", "AI", "資料平台", "大數據", "模型", "算力", "機器學習", "智慧應用", "雲端AI"]
+    },
+    {
+      "template_id": "auto_ev_supply_chain",
+      "applies_to_industry_codes": ["05", "12", "24", "25", "27", "28", "31", "20"],
+      "keywords": ["電動車", "車用", "汽車", "車電", "充電", "電池模組", "ADAS"]
+    },
+    {
+      "template_id": "energy_environment_utilities",
+      "applies_to_industry_codes": ["20", "21", "23", "35"],
+      "keywords": ["綠能", "太陽能", "風電", "儲能", "環保", "循環", "能源", "碳"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "twse_company_basic",
+      "title": "上市公司基本資料",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
+    },
+    {
+      "id": "tpex_company_basic",
+      "title": "上櫃公司基本資料",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O"
+    }
+  ]
+}

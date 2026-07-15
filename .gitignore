@@ -1,0 +1,4 @@
+backtests/
+data/source_cache/
+server*.log
+tools/start-dashboard.cmd

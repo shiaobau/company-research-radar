@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sources": [
+    {
+      "id": "twse_material_events",
+      "title": "TWSE 重大訊息",
+      "kind": "official_api_cache",
+      "market": "TWSE",
+      "cache_source_id": "twse_material_events",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "update_policy": "shared_cache_6h",
+      "claim_type": "official_disclosure"
+    },
+    {
+      "id": "tpex_material_events",
+      "title": "TPEx 重大訊息",
+      "kind": "official_api_cache",
+      "market": "TPEx",
+      "cache_source_id": "tpex_material_events",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
+      "update_policy": "shared_cache_6h",
+      "claim_type": "official_disclosure"
+    },
+    {
+      "id": "mops_history_search",
+      "title": "MOPS 歷史重大訊息查詢",
+      "kind": "official_search_link",
+      "url_template": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id={ticker}",
+      "update_policy": "link_only",
+      "claim_type": "official_search_reference",
+      "note": "歷史資料以公開資訊觀測站查詢頁為準；本版本不將未經欄位驗證的網頁內容直接納入評分。"
+    },
+    {
+      "id": "company_website",
+      "title": "公司官方網站",
+      "kind": "company_reference",
+      "update_policy": "reference_only",
+      "claim_type": "company_published_reference",
+      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
+    }
+  ]
+}

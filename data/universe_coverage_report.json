@@ -1,0 +1,291 @@
+{
+  "version": "0.1.0",
+  "generated_at": "2026-07-08T02:20:26.326Z",
+  "total_count": 1974,
+  "market_counts": {
+    "TWSE": 1083,
+    "TPEx": 891
+  },
+  "template_counts": {
+    "semiconductor": 203,
+    "electronics_hardware": 646,
+    "software": 81,
+    "ai": 20,
+    "biotech_pharma": 149,
+    "medical_device": 5,
+    "nutrition_health_food": 6,
+    "financial": 41,
+    "industrial_manufacturing": 117,
+    "basic_materials": 143,
+    "auto_ev_supply_chain": 43,
+    "infrastructure_transport_real_assets": 122,
+    "consumer_food_retail": 246,
+    "energy_environment_utilities": 61,
+    "other": 91
+  },
+  "template_coverage": [
+    {
+      "id": "semiconductor",
+      "label": "半導體",
+      "count": 203
+    },
+    {
+      "id": "electronics_hardware",
+      "label": "電子硬體與零組件",
+      "count": 646
+    },
+    {
+      "id": "software",
+      "label": "軟體、雲端與資訊服務",
+      "count": 81
+    },
+    {
+      "id": "ai",
+      "label": "AI 與資料平台",
+      "count": 20
+    },
+    {
+      "id": "biotech_pharma",
+      "label": "生技製藥",
+      "count": 149
+    },
+    {
+      "id": "medical_device",
+      "label": "醫療器材",
+      "count": 5
+    },
+    {
+      "id": "nutrition_health_food",
+      "label": "保健營養食品",
+      "count": 6
+    },
+    {
+      "id": "financial",
+      "label": "金融保險",
+      "count": 41
+    },
+    {
+      "id": "industrial_manufacturing",
+      "label": "工業製造與自動化",
+      "count": 117
+    },
+    {
+      "id": "basic_materials",
+      "label": "原物料、化工與基礎材料",
+      "count": 143
+    },
+    {
+      "id": "auto_ev_supply_chain",
+      "label": "汽車與電動車供應鏈",
+      "count": 43
+    },
+    {
+      "id": "infrastructure_transport_real_assets",
+      "label": "基礎建設、營建與運輸",
+      "count": 122
+    },
+    {
+      "id": "consumer_food_retail",
+      "label": "消費、食品、零售與生活",
+      "count": 246
+    },
+    {
+      "id": "energy_environment_utilities",
+      "label": "能源、環境與公用事業",
+      "count": 61
+    },
+    {
+      "id": "other",
+      "label": "其他與待分類",
+      "count": 91
+    }
+  ],
+  "official_industry_counts": [
+    {
+      "code": "01",
+      "label": "水泥工業",
+      "count": 7
+    },
+    {
+      "code": "02",
+      "label": "食品工業",
+      "count": 34
+    },
+    {
+      "code": "03",
+      "label": "塑膠工業",
+      "count": 25
+    },
+    {
+      "code": "04",
+      "label": "紡織纖維",
+      "count": 52
+    },
+    {
+      "code": "05",
+      "label": "電機機械",
+      "count": 100
+    },
+    {
+      "code": "06",
+      "label": "電器電纜",
+      "count": 17
+    },
+    {
+      "code": "08",
+      "label": "玻璃陶瓷",
+      "count": 5
+    },
+    {
+      "code": "09",
+      "label": "造紙工業",
+      "count": 7
+    },
+    {
+      "code": "10",
+      "label": "鋼鐵工業",
+      "count": 48
+    },
+    {
+      "code": "11",
+      "label": "橡膠工業",
+      "count": 11
+    },
+    {
+      "code": "12",
+      "label": "汽車工業",
+      "count": 43
+    },
+    {
+      "code": "14",
+      "label": "建材營造",
+      "count": 88
+    },
+    {
+      "code": "15",
+      "label": "航運業",
+      "count": 34
+    },
+    {
+      "code": "16",
+      "label": "觀光餐旅",
+      "count": 51
+    },
+    {
+      "code": "17",
+      "label": "金融保險",
+      "count": 41
+    },
+    {
+      "code": "18",
+      "label": "貿易百貨",
+      "count": 18
+    },
+    {
+      "code": "20",
+      "label": "其他",
+      "count": 93
+    },
+    {
+      "code": "21",
+      "label": "化學工業",
+      "count": 42
+    },
+    {
+      "code": "22",
+      "label": "生技醫療",
+      "count": 159
+    },
+    {
+      "code": "23",
+      "label": "油電燃氣",
+      "count": 12
+    },
+    {
+      "code": "24",
+      "label": "半導體業",
+      "count": 206
+    },
+    {
+      "code": "25",
+      "label": "電腦及週邊設備",
+      "count": 109
+    },
+    {
+      "code": "26",
+      "label": "光電業",
+      "count": 116
+    },
+    {
+      "code": "27",
+      "label": "通信網路業",
+      "count": 90
+    },
+    {
+      "code": "28",
+      "label": "電子零組件業",
+      "count": 210
+    },
+    {
+      "code": "29",
+      "label": "電子通路業",
+      "count": 37
+    },
+    {
+      "code": "30",
+      "label": "資訊服務業",
+      "count": 45
+    },
+    {
+      "code": "31",
+      "label": "其他電子業",
+      "count": 94
+    },
+    {
+      "code": "32",
+      "label": "文化創意業",
+      "count": 26
+    },
+    {
+      "code": "33",
+      "label": "農業科技",
+      "count": 4
+    },
+    {
+      "code": "35",
+      "label": "綠能環保",
+      "count": 45
+    },
+    {
+      "code": "36",
+      "label": "數位雲端",
+      "count": 39
+    },
+    {
+      "code": "37",
+      "label": "運動休閒",
+      "count": 27
+    },
+    {
+      "code": "38",
+      "label": "居家生活",
+      "count": 35
+    },
+    {
+      "code": "91",
+      "label": "存託憑證",
+      "count": 4
+    }
+  ],
+  "unmatched_count": 91,
+  "source_counts": {
+    "twse_company_basic": 1083,
+    "tpex_company_basic": 891
+  },
+  "caveats": [
+    "官方產業代碼是穩定的第一層分類，但不足以分辨所有商業模式。",
+    "AI、保健食品、醫療器材、車用與能源環境使用公司名稱/網站關鍵字覆寫，仍需要人工抽查。",
+    "已存在於 data/companies.json 的公司會沿用既有研究檔的人工確認模板。",
+    "此清單只建立研究宇宙，不會自動把 1980 檔都加入原評分儀表板。"
+  ]
+}

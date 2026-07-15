@@ -1,0 +1,2629 @@
+{
+  "version": "0.9.0",
+  "note": "v0.9 起，選股宇宙的 15 類產業分類會直接升級為對應正式研究模板。",
+  "selection_method": "試點名單涵蓋保健營養食品與半導體。半導體名單橫跨晶圓代工、IC 設計、封測與矽晶圓材料；不代表市值、營收或投資價值排名。",
+  "reference_sources": [
+    {
+      "id": "twse_company_basic",
+      "title": "臺灣證券交易所 OpenAPI：上市公司基本資料",
+      "short_title": "TWSE 公司基本",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+      "note": "用於驗證上市公司股票代號、公司名稱、上市日期、公司網址等基本資料。"
+    },
+    {
+      "id": "tpex_company_basic",
+      "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司基本資料",
+      "short_title": "TPEx 公司基本",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O",
+      "note": "用於驗證上櫃公司股票代號、公司名稱、上櫃日期、公司網址等基本資料。"
+    },
+    {
+      "id": "mops",
+      "title": "公開資訊觀測站",
+      "short_title": "MOPS",
+      "url": "https://mops.twse.com.tw/mops/web/index",
+      "note": "下一版可用於重大訊息、月營收、財務報告與公司年報。"
+    },
+    {
+      "id": "twse",
+      "title": "臺灣證券交易所",
+      "short_title": "TWSE",
+      "url": "https://www.twse.com.tw/",
+      "note": "下一版可用於上市公司股價、成交量與市場資料。"
+    },
+    {
+      "id": "tpex",
+      "title": "證券櫃檯買賣中心",
+      "short_title": "TPEx",
+      "url": "https://www.tpex.org.tw/",
+      "note": "下一版可用於上櫃公司股價、成交量與市場資料。"
+    },
+    {
+      "id": "tdcc",
+      "title": "臺灣集中保管結算所",
+      "short_title": "TDCC",
+      "url": "https://www.tdcc.com.tw/",
+      "note": "下一版可用於股東分布、集保戶股權分散表與籌碼結構。"
+    },
+    {
+      "id": "tfda",
+      "title": "衛生福利部食品藥物管理署",
+      "short_title": "TFDA",
+      "url": "https://www.fda.gov.tw/",
+      "note": "適用於食品、健康食品、廣告宣稱、法規、裁罰與許可資料追蹤。"
+    }
+  ],
+  "companies": [
+    {
+      "id": "tpex-1595",
+      "ticker": "1595",
+      "market": "TPEx",
+      "market_label": "上櫃",
+      "name": "川寶",
+      "legal_name": "川寶科技股份有限公司",
+      "category": "半導體",
+      "industry_template": "semiconductor",
+      "original_industry_template": "semiconductor",
+      "official_industry_code": "24",
+      "official_industry_label": "半導體業",
+      "listing_date": "2011-10-04",
+      "website": "http://www.cbtech.com.tw/",
+      "data_quality": "自動建立研究檔；公司基本資料來自 TWSE/TPEx OpenAPI，客觀分數由公開資料更新流程產生。",
+      "last_reviewed": "2026-07-09",
+      "thesis": "川寶 已由選股宇宙升級為正式研究檔；初步以 半導體 模板追蹤，分數依公開資料自動計算。",
+      "tags": [
+        "上櫃",
+        "半導體",
+        "半導體業",
+        "自動研究檔"
+      ],
+      "primary_source_ids": [
+        "tpex_company_basic",
+        "mops",
+        "tpex"
+      ],
+      "sources": [
+        {
+          "id": "tpex-1595_official",
+          "title": "川寶 官方網站",
+          "short_title": "官方網站",
+          "url": "http://www.cbtech.com.tw/",
+          "note": "選股宇宙公司基本資料提供之公司網址。"
+        }
+      ],
+      "facts": {
+        "business_model": {
+          "value": "川寶 為上櫃半導體業公司；此研究檔由選股宇宙自動建立，後續以公開財務、營收、股價與重大訊息補強。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "industry_focus": {
+          "value": "半導體業；初步研究模板為 半導體。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "revenue_driver": {
+          "value": "待由月營收、財報與重大訊息資料辨識主要成長驅動。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "key_catalyst": {
+          "value": "待由公開重大訊息、營收動能、財務變化與股價趨勢自動整理。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "key_risk": {
+          "value": "待由公開重大訊息、資訊揭露違規、財務壓力與產業循環訊號自動整理。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "technology_position": {
+          "value": "待由年報、重大訊息、財務結構與產業證據辨識技術定位。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "customer_structure": {
+          "value": "待由公開資料辨識主要客戶結構、集中度與需求能見度。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "inventory_cycle": {
+          "value": "待由財報與營收變化觀察庫存循環與景氣位置。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "capex_intensity": {
+          "value": "待由財報與資本支出資訊觀察投資強度。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "industry_quality": {
+          "value": "初步依官方產業 半導體業 與 半導體 模板建立；產業證據分數會由公開資料與可追蹤欄位更新。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        }
+      },
+      "risks": [],
+      "events": []
+    },
+    {
+      "id": "tw-1707-grapeking",
+      "ticker": "1707",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "葡萄王生技",
+      "legal_name": "葡萄王生技股份有限公司",
+      "category": "保健營養食品",
+      "industry_template": "nutrition_health_food",
+      "data_quality": "真實公司試點：公司基本資料已由 TWSE OpenAPI 驗證；財務/股價/籌碼待接入自動更新。",
+      "last_reviewed": "2026-07-07",
+      "thesis": "老牌保健與生技品牌，保健食品關聯度高；下一步需要用月營收、毛利率、產品組合與通路費用驗證成長品質。",
+      "tags": [
+        "上市",
+        "保健食品",
+        "品牌",
+        "生技"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "grapeking_official",
+        "mops",
+        "tfda"
+      ],
+      "facts": {
+        "business_model": {
+          "value": "自有品牌保健食品/機能食品與生技產品，搭配電商、實體通路與公司公開資訊揭露。",
+          "source_ids": [
+            "grapeking_official",
+            "twse_company_basic"
+          ]
+        },
+        "industry_focus": {
+          "value": "保健食品、益生菌/生技相關產品與機能型消費品。",
+          "source_ids": [
+            "grapeking_official"
+          ]
+        },
+        "revenue_driver": {
+          "value": "品牌產品組合、通路鋪貨與回購、月營收趨勢；待接入 MOPS 月營收驗證。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "key_catalyst": {
+          "value": "新品、通路擴張、月營收/毛利改善、健康食品或合規宣稱進度。",
+          "source_ids": [
+            "mops",
+            "tfda"
+          ]
+        },
+        "key_risk": {
+          "value": "食品宣稱合規、品牌老化、行銷費用、競品與通路價格壓力。",
+          "source_ids": [
+            "tfda"
+          ]
+        },
+        "regulatory_status": {
+          "value": "食品與保健品需逐品項檢查健康食品許可、廣告宣稱及標示合規；此版尚未做品項級比對。",
+          "source_ids": [
+            "tfda"
+          ]
+        },
+        "evidence_level": {
+          "value": "中：公司與產品方向可由公開資料追溯；單一產品功效仍需逐品項文件。",
+          "source_ids": [
+            "grapeking_official",
+            "tfda"
+          ]
+        },
+        "quality_system": {
+          "value": "待由年報、工廠/品質系統揭露與第三方檢驗資料補齊。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "channel_quality": {
+          "value": "品牌與通路能見度較高，但需用營收、回購與費用率驗證通路品質。",
+          "source_ids": [
+            "grapeking_official",
+            "mops"
+          ]
+        },
+        "industry_quality": {
+          "value": "保健食品主題契合度高，適合作為品牌型基準公司；目前分數受限於尚未接入財務/股價資料。",
+          "source_ids": [
+            "twse_company_basic",
+            "grapeking_official"
+          ]
+        }
+      },
+      "score_inputs": {
+        "catalyst": {
+          "score": 66,
+          "evidence_level": "medium",
+          "rationale": "可能催化包含新品、通路與月營收改善，但此版尚未抓取近期重大訊息。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "revenueMomentum": {
+          "score": 63,
+          "evidence_level": "low",
+          "rationale": "尚未接入月營收 API，先以資料待補保守評分。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "cashProfitQuality": {
+          "score": 70,
+          "evidence_level": "low",
+          "rationale": "上市老公司資料可追溯，但現金流、毛利與費用率尚未自動帶入。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "priceTrend": {
+          "score": 55,
+          "evidence_level": "low",
+          "rationale": "尚未接入股價位置與趨勢。",
+          "source_ids": [
+            "twse"
+          ]
+        },
+        "ownership": {
+          "score": 55,
+          "evidence_level": "low",
+          "rationale": "尚未接入董監、法人與集保資料。",
+          "source_ids": [
+            "tdcc"
+          ]
+        },
+        "riskNews": {
+          "score": 65,
+          "evidence_level": "medium",
+          "rationale": "主要風險可定義為食品宣稱與品牌競爭，需由新聞/裁罰/重大訊息自動化驗證。",
+          "source_ids": [
+            "tfda",
+            "mops"
+          ]
+        },
+        "industryFundamental": {
+          "score": 76,
+          "evidence_level": "medium",
+          "rationale": "品牌與保健食品關聯度高，但品項級證據與通路品質待補。",
+          "source_ids": [
+            "grapeking_official"
+          ]
+        }
+      },
+      "risks": [
+        "宣稱與標示合規",
+        "通路費用與價格競爭",
+        "產品組合老化",
+        "月營收動能待驗證"
+      ],
+      "events": [
+        {
+          "date": "2026-Q3",
+          "type": "資料補齊",
+          "title": "接入月營收、股價區間與重大訊息後重新計分"
+        }
+      ],
+      "sources": [
+        {
+          "id": "grapeking_official",
+          "title": "葡萄王生技官方網站",
+          "short_title": "葡萄王官網",
+          "url": "https://www.grapeking.com.tw/",
+          "note": "用於公司品牌、產品與官方資訊追溯。"
+        }
+      ]
+    },
+    {
+      "id": "twse-1909",
+      "ticker": "1909",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "榮成",
+      "legal_name": "榮成紙業股份有限公司",
+      "category": "原物料、化工與基礎材料",
+      "industry_template": "basic_materials",
+      "original_industry_template": "basic_materials",
+      "official_industry_code": "09",
+      "official_industry_label": "造紙工業",
+      "listing_date": "1985-11-19",
+      "website": "https://www.longchenpaper.com",
+      "data_quality": "自動建立研究檔；公司基本資料來自 TWSE/TPEx OpenAPI，客觀分數由公開資料更新流程產生。",
+      "last_reviewed": "2026-07-15",
+      "thesis": "榮成 已由選股宇宙升級為正式研究檔；初步以 原物料、化工與基礎材料 模板追蹤，分數依公開資料自動計算。",
+      "tags": [
+        "上市",
+        "原物料、化工與基礎材料",
+        "造紙工業",
+        "自動研究檔"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "sources": [
+        {
+          "id": "twse-1909_official",
+          "title": "榮成 官方網站",
+          "short_title": "官方網站",
+          "url": "https://www.longchenpaper.com",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {
+        "business_model": {
+          "value": "榮成 為上市造紙工業公司；此研究檔由選股宇宙自動建立，後續以公開財務、月營收、股價、重大訊息與產業證據補強。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "industry_focus": {
+          "value": "造紙工業；正式研究模板為 原物料、化工與基礎材料。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "revenue_driver": {
+          "value": "待由月營收、財報、重大訊息與產業資料辨識主要成長驅動。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "key_catalyst": {
+          "value": "待由公開重大訊息、營收動能、財務變化、股價趨勢與產業專屬訊號自動整理。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "key_risk": {
+          "value": "待由公開重大訊息、資訊揭露違規、財務壓力、產業循環與法規事件自動整理。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "commodity_cycle": {
+          "value": "待由報價、供需、庫存、月營收與產業資料判斷商品循環位置。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "spread_margin": {
+          "value": "待由原料與成品價差、加工利差與毛利資料判斷利差品質。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "raw_material_exposure": {
+          "value": "待由原料、能源、匯率、運費與成本轉嫁資料判斷曝險。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "capacity_discipline": {
+          "value": "待由擴產、停產、產業供給與資本支出判斷產能紀律。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "industry_quality": {
+          "value": "初步依官方產業 造紙工業 與 原物料、化工與基礎材料 模板建立；產業證據分數會由可追蹤欄位與公開資料更新。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        }
+      },
+      "risks": [],
+      "events": []
+    },
+    {
+      "id": "twse-2301",
+      "ticker": "2301",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "光寶科",
+      "legal_name": "光寶科技股份有限公司",
+      "category": "電子硬體與零組件",
+      "industry_template": "electronics_hardware",
+      "original_industry_template": "electronics_hardware",
+      "official_industry_code": "25",
+      "official_industry_label": "電腦及週邊設備",
+      "listing_date": "1995-11-17",
+      "website": "http://www.liteon.com/",
+      "data_quality": "自動建立研究檔；公司基本資料來自 TWSE/TPEx OpenAPI，客觀分數由公開資料更新流程產生。",
+      "last_reviewed": "2026-07-09",
+      "thesis": "光寶科 已由選股宇宙升級為正式研究檔；初步以 電子硬體 模板追蹤，分數依公開資料自動計算。",
+      "tags": [
+        "上市",
+        "電子硬體與零組件",
+        "電腦及週邊設備",
+        "自動研究檔"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "sources": [
+        {
+          "id": "twse-2301_official",
+          "title": "光寶科 官方網站",
+          "short_title": "官方網站",
+          "url": "http://www.liteon.com/",
+          "note": "選股宇宙公司基本資料提供之公司網址。"
+        }
+      ],
+      "facts": {
+        "business_model": {
+          "value": "光寶科 為上市電腦及週邊設備公司；此研究檔由選股宇宙自動建立，後續以公開財務、營收、股價與重大訊息補強。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "industry_focus": {
+          "value": "電腦及週邊設備；初步研究模板為 電子硬體與零組件。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "revenue_driver": {
+          "value": "待由月營收、財報與重大訊息資料辨識主要成長驅動。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "key_catalyst": {
+          "value": "待由公開重大訊息、營收動能、財務變化與股價趨勢自動整理。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "key_risk": {
+          "value": "待由公開重大訊息、資訊揭露違規、財務壓力與產業循環訊號自動整理。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "product_cycle": {
+          "value": "待由公開資料辨識產品週期、新品進度與需求變化。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "customer_structure": {
+          "value": "待由公開資料辨識主要客戶結構、集中度與需求能見度。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "supply_chain_role": {
+          "value": "待由公開資料辨識供應鏈角色、議價能力與替代風險。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "margin_resilience": {
+          "value": "待由毛利率、營業利益率與產品組合變化觀察韌性。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "industry_quality": {
+          "value": "初步依官方產業 電腦及週邊設備 與 電子硬體與零組件 模板建立；產業證據分數會由公開資料與可追蹤欄位更新。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        }
+      },
+      "risks": [],
+      "events": []
+    },
+    {
+      "id": "tw-2303-umc",
+      "ticker": "2303",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "聯電",
+      "legal_name": "聯華電子股份有限公司",
+      "category": "半導體",
+      "industry_template": "semiconductor",
+      "data_quality": "半導體試點：公司已列入 TWSE/TPEx 公開市場資料更新流程；產業欄位先以公開研究檔與官方來源建立。",
+      "last_reviewed": "2026-07-08",
+      "thesis": "成熟製程晶圓代工代表，適合觀察成熟節點景氣、車用/工控需求、產能利用率與報價循環。",
+      "tags": [
+        "上市",
+        "晶圓代工",
+        "成熟製程",
+        "車用",
+        "工控"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "umc_official",
+        "mops"
+      ],
+      "facts": {
+        "business_model": {
+          "value": "專業晶圓代工，聚焦成熟與特殊製程，服務 IC 設計與系統客戶。",
+          "source_ids": [
+            "umc_official",
+            "twse_company_basic"
+          ]
+        },
+        "industry_focus": {
+          "value": "成熟製程、特殊製程、車用、工控、通訊與消費性應用晶圓代工。",
+          "source_ids": [
+            "umc_official"
+          ]
+        },
+        "revenue_driver": {
+          "value": "產能利用率、成熟製程報價、車用/工控需求與客戶庫存去化。",
+          "source_ids": [
+            "mops",
+            "umc_official"
+          ]
+        },
+        "key_catalyst": {
+          "value": "成熟製程庫存回補、車用需求改善、產能利用率回升與毛利率穩定。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "key_risk": {
+          "value": "成熟製程供需循環、價格壓力、客戶庫存與中國同業產能競爭。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "technology_position": {
+          "value": "成熟與特殊製程具規模與客戶基礎，差異化重點在穩定供應與特殊製程能力。",
+          "source_ids": [
+            "umc_official"
+          ]
+        },
+        "customer_structure": {
+          "value": "客戶分散於通訊、消費、車用與工控，需追蹤需求復甦速度。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "inventory_cycle": {
+          "value": "成熟製程對客戶庫存循環敏感，月營收與產能利用率是核心檢核。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "capex_intensity": {
+          "value": "資本支出低於先進製程代工，仍需看折舊、稼動與投資紀律。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "industry_quality": {
+          "value": "成熟製程基準公司，能測試景氣循環與毛利韌性評估。",
+          "source_ids": [
+            "umc_official",
+            "mops"
+          ]
+        }
+      },
+      "score_inputs": {
+        "catalyst": {
+          "score": 64,
+          "evidence_level": "medium",
+          "rationale": "庫存回補與稼動率改善可能催化，需月營收驗證。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "revenueMomentum": {
+          "score": 58,
+          "evidence_level": "low",
+          "rationale": "待接入月營收。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "cashProfitQuality": {
+          "score": 70,
+          "evidence_level": "low",
+          "rationale": "毛利與現金流穩定性待財報驗證。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "priceTrend": {
+          "score": 52,
+          "evidence_level": "low",
+          "rationale": "待接入股價趨勢。",
+          "source_ids": [
+            "twse"
+          ]
+        },
+        "ownership": {
+          "score": 55,
+          "evidence_level": "low",
+          "rationale": "待接入股權資料。",
+          "source_ids": [
+            "tdcc"
+          ]
+        },
+        "riskNews": {
+          "score": 62,
+          "evidence_level": "medium",
+          "rationale": "成熟製程供需與價格壓力是主要風險。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "industryFundamental": {
+          "score": 70,
+          "evidence_level": "medium",
+          "rationale": "成熟製程地位明確，但循環風險較高。",
+          "source_ids": [
+            "umc_official"
+          ]
+        }
+      },
+      "risks": [
+        "成熟製程價格壓力",
+        "客戶庫存",
+        "產能利用率",
+        "同業擴產競爭"
+      ],
+      "events": [
+        {
+          "date": "2026-Q3",
+          "type": "資料補齊",
+          "title": "接入月營收與財報後檢查成熟製程週期位置"
+        }
+      ],
+      "sources": [
+        {
+          "id": "umc_official",
+          "title": "聯電官方網站",
+          "short_title": "聯電官網",
+          "url": "https://www.umc.com/en/Home/Index",
+          "note": "用於公司技術、製程與官方資訊追溯。"
+        }
+      ]
+    },
+    {
+      "id": "tw-2330-tsmc",
+      "ticker": "2330",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "台積電",
+      "legal_name": "台灣積體電路製造股份有限公司",
+      "category": "半導體",
+      "industry_template": "semiconductor",
+      "data_quality": "半導體試點：公司已列入 TWSE/TPEx 公開市場資料更新流程；產業欄位先以公開研究檔與官方來源建立。",
+      "last_reviewed": "2026-07-08",
+      "thesis": "全球晶圓代工龍頭，先進製程與先進封裝是 AI/HPC 供應鏈核心，適合作為半導體高品質基準樣本。",
+      "tags": [
+        "上市",
+        "晶圓代工",
+        "先進製程",
+        "AI",
+        "HPC"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "tsmc_official",
+        "mops"
+      ],
+      "facts": {
+        "business_model": {
+          "value": "專業晶圓代工，替全球 IC 設計與系統客戶製造先進與特殊製程晶片。",
+          "source_ids": [
+            "tsmc_official",
+            "twse_company_basic"
+          ]
+        },
+        "industry_focus": {
+          "value": "先進製程、特殊製程、先進封裝與晶圓代工服務。",
+          "source_ids": [
+            "tsmc_official"
+          ]
+        },
+        "revenue_driver": {
+          "value": "AI/HPC、智慧手機、車用與資料中心需求；月營收與法說會展望是主要追蹤項。",
+          "source_ids": [
+            "mops",
+            "tsmc_official"
+          ]
+        },
+        "key_catalyst": {
+          "value": "先進製程放量、AI/HPC 需求、先進封裝產能、海外廠進度與資本支出效率。",
+          "source_ids": [
+            "mops",
+            "tsmc_official"
+          ]
+        },
+        "key_risk": {
+          "value": "地緣政治、出口管制、客戶集中、資本支出循環、匯率與海外擴產成本。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "technology_position": {
+          "value": "先進製程與先進封裝具全球領先位置，是半導體產業鏈關鍵節點。",
+          "source_ids": [
+            "tsmc_official"
+          ]
+        },
+        "customer_structure": {
+          "value": "全球高階 IC 設計與系統客戶導入深，需持續追蹤前幾大客戶集中度與 AI/HPC 需求。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "inventory_cycle": {
+          "value": "晶圓代工受終端庫存與客戶拉貨節奏影響，但高階製程需求能抵銷部分循環波動。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "capex_intensity": {
+          "value": "資本支出強度高，須追蹤先進製程、先進封裝與海外廠投資報酬。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "industry_quality": {
+          "value": "技術位置、客戶導入與供應鏈關鍵性都高，適合作為半導體模板的高分基準。",
+          "source_ids": [
+            "tsmc_official",
+            "mops"
+          ]
+        }
+      },
+      "score_inputs": {
+        "catalyst": {
+          "score": 78,
+          "evidence_level": "medium",
+          "rationale": "AI/HPC、先進製程與先進封裝是主要催化，但仍需由月營收與重大訊息更新。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "revenueMomentum": {
+          "score": 75,
+          "evidence_level": "low",
+          "rationale": "半導體龍頭月營收可追蹤，待客觀資料覆蓋。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "cashProfitQuality": {
+          "score": 82,
+          "evidence_level": "low",
+          "rationale": "高毛利與現金流品質需由財報自動帶入驗證。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "priceTrend": {
+          "score": 60,
+          "evidence_level": "low",
+          "rationale": "待接入股價區間與趨勢。",
+          "source_ids": [
+            "twse"
+          ]
+        },
+        "ownership": {
+          "score": 58,
+          "evidence_level": "low",
+          "rationale": "待接入大股東與內部人資料。",
+          "source_ids": [
+            "tdcc"
+          ]
+        },
+        "riskNews": {
+          "score": 66,
+          "evidence_level": "medium",
+          "rationale": "地緣政治與出口管制是主要風險，需由重大訊息與新聞驗證。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "industryFundamental": {
+          "score": 86,
+          "evidence_level": "medium",
+          "rationale": "先進製程與供應鏈地位明確，產業基本面品質高。",
+          "source_ids": [
+            "tsmc_official"
+          ]
+        }
+      },
+      "risks": [
+        "地緣政治與出口管制",
+        "客戶集中",
+        "海外擴產成本",
+        "資本支出循環"
+      ],
+      "events": [
+        {
+          "date": "2026-Q3",
+          "type": "資料補齊",
+          "title": "接入月營收、財報與重大訊息後檢查 AI/HPC 與先進封裝動能"
+        }
+      ],
+      "sources": [
+        {
+          "id": "tsmc_official",
+          "title": "台積電官方網站",
+          "short_title": "台積電官網",
+          "url": "https://www.tsmc.com/english",
+          "note": "用於公司業務、技術與官方資訊追溯。"
+        }
+      ]
+    },
+    {
+      "id": "twse-2344",
+      "ticker": "2344",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "華邦電",
+      "legal_name": "華邦電子股份有限公司",
+      "category": "半導體",
+      "industry_template": "semiconductor",
+      "original_industry_template": "semiconductor",
+      "official_industry_code": "24",
+      "official_industry_label": "半導體業",
+      "listing_date": "1995-10-18",
+      "website": "https://WWW.WINBOND.COM",
+      "data_quality": "自動建立研究檔；公司基本資料來自 TWSE/TPEx OpenAPI，客觀分數由公開資料更新流程產生。",
+      "last_reviewed": "2026-07-15",
+      "thesis": "華邦電 已由選股宇宙升級為正式研究檔；初步以 半導體 模板追蹤，分數依公開資料自動計算。",
+      "tags": [
+        "上市",
+        "半導體",
+        "半導體業",
+        "自動研究檔"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "sources": [
+        {
+          "id": "twse-2344_official",
+          "title": "華邦電 官方網站",
+          "short_title": "官方網站",
+          "url": "https://WWW.WINBOND.COM",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {
+        "business_model": {
+          "value": "華邦電 為上市半導體業公司；此研究檔由選股宇宙自動建立，後續以公開財務、月營收、股價、重大訊息與產業證據補強。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "industry_focus": {
+          "value": "半導體業；正式研究模板為 半導體。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "revenue_driver": {
+          "value": "待由月營收、財報、重大訊息與產業資料辨識主要成長驅動。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "key_catalyst": {
+          "value": "待由公開重大訊息、營收動能、財務變化、股價趨勢與產業專屬訊號自動整理。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "key_risk": {
+          "value": "待由公開重大訊息、資訊揭露違規、財務壓力、產業循環與法規事件自動整理。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "technology_position": {
+          "value": "待由產品規格、技術節點、專利、研發與客戶導入資料判斷技術位置。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "customer_structure": {
+          "value": "待由年報、重大訊息與營收資料判斷客戶結構與集中風險。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "inventory_cycle": {
+          "value": "待由財報存貨、月營收與產業循環資料判斷庫存位置。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "capex_intensity": {
+          "value": "待由財報、資本支出、擴產與折舊資料判斷投資強度。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "industry_quality": {
+          "value": "初步依官方產業 半導體業 與 半導體 模板建立；產業證據分數會由可追蹤欄位與公開資料更新。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        }
+      },
+      "risks": [],
+      "events": []
+    },
+    {
+      "id": "twse-2345",
+      "ticker": "2345",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "智邦",
+      "legal_name": "智邦科技股份有限公司",
+      "category": "電子硬體與零組件",
+      "industry_template": "electronics_hardware",
+      "original_industry_template": "electronics_hardware",
+      "official_industry_code": "27",
+      "official_industry_label": "通信網路業",
+      "listing_date": "1995-11-15",
+      "website": "http://www.accton.com",
+      "data_quality": "自動建立研究檔；公司基本資料來自 TWSE/TPEx OpenAPI，客觀分數由公開資料更新流程產生。",
+      "last_reviewed": "2026-07-15",
+      "thesis": "智邦 已由選股宇宙升級為正式研究檔；初步以 電子硬體與零組件 模板追蹤，分數依公開資料自動計算。",
+      "tags": [
+        "上市",
+        "電子硬體與零組件",
+        "通信網路業",
+        "自動研究檔"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "sources": [
+        {
+          "id": "twse-2345_official",
+          "title": "智邦 官方網站",
+          "short_title": "官方網站",
+          "url": "http://www.accton.com",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {
+        "business_model": {
+          "value": "智邦 為上市通信網路業公司；此研究檔由選股宇宙自動建立，後續以公開財務、月營收、股價、重大訊息與產業證據補強。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "industry_focus": {
+          "value": "通信網路業；正式研究模板為 電子硬體與零組件。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "revenue_driver": {
+          "value": "待由月營收、財報、重大訊息與產業資料辨識主要成長驅動。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "key_catalyst": {
+          "value": "待由公開重大訊息、營收動能、財務變化、股價趨勢與產業專屬訊號自動整理。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "key_risk": {
+          "value": "待由公開重大訊息、資訊揭露違規、財務壓力、產業循環與法規事件自動整理。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "product_cycle": {
+          "value": "待由新品、規格升級、替換週期與需求變化判斷產品週期。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "customer_structure": {
+          "value": "待由年報、重大訊息與營收資料判斷客戶結構與集中風險。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "supply_chain_role": {
+          "value": "待由客戶、供應商、產品環節與重大訊息判斷供應鏈角色。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "margin_resilience": {
+          "value": "待由毛利率、營益率、價格與成本波動判斷獲利韌性。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "industry_quality": {
+          "value": "初步依官方產業 通信網路業 與 電子硬體與零組件 模板建立；產業證據分數會由可追蹤欄位與公開資料更新。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        }
+      },
+      "risks": [],
+      "events": []
+    },
+    {
+      "id": "tw-2454-mediatek",
+      "ticker": "2454",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "聯發科",
+      "legal_name": "聯發科技股份有限公司",
+      "category": "半導體",
+      "industry_template": "semiconductor",
+      "data_quality": "半導體試點：公司已列入 TWSE/TPEx 公開市場資料更新流程；產業欄位先以公開研究檔與官方來源建立。",
+      "last_reviewed": "2026-07-08",
+      "thesis": "台灣代表性 IC 設計公司，產品橫跨手機、智慧裝置、連網與 AI 邊緣應用，可測試 fabless 模板。",
+      "tags": [
+        "上市",
+        "IC 設計",
+        "Fabless",
+        "手機晶片",
+        "AI Edge"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mediatek_official",
+        "mops"
+      ],
+      "facts": {
+        "business_model": {
+          "value": "Fabless IC 設計，透過晶圓代工與封測供應鏈推出 SoC 與連網晶片。",
+          "source_ids": [
+            "mediatek_official",
+            "twse_company_basic"
+          ]
+        },
+        "industry_focus": {
+          "value": "手機 SoC、智慧家庭、連網、電源管理、車用與 AI 邊緣晶片。",
+          "source_ids": [
+            "mediatek_official"
+          ]
+        },
+        "revenue_driver": {
+          "value": "手機與消費性電子產品週期、AI/邊緣運算導入、新平台上市與客戶拉貨。",
+          "source_ids": [
+            "mops",
+            "mediatek_official"
+          ]
+        },
+        "key_catalyst": {
+          "value": "旗艦 SoC 滲透率、AI 裝置需求、車用/連網產品成長與毛利率改善。",
+          "source_ids": [
+            "mops",
+            "mediatek_official"
+          ]
+        },
+        "key_risk": {
+          "value": "手機市場循環、競爭價格壓力、客戶庫存、匯率與先進製程成本。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "technology_position": {
+          "value": "具備大型 SoC 平台、通訊與多媒體整合能力，需追蹤高階平台競爭力。",
+          "source_ids": [
+            "mediatek_official"
+          ]
+        },
+        "customer_structure": {
+          "value": "客戶涵蓋手機與終端設備品牌，需追蹤高階客戶導入與產品組合改善。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "inventory_cycle": {
+          "value": "Fabless 模式對終端庫存與通路拉貨敏感，月營收和存貨變化是核心觀察。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "capex_intensity": {
+          "value": "資本支出相對晶圓製造低，重點在研發投入與先進製程投片成本。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "industry_quality": {
+          "value": "IC 設計平台能力明確，適合作為 fabless 與消費電子週期樣本。",
+          "source_ids": [
+            "mediatek_official",
+            "mops"
+          ]
+        }
+      },
+      "score_inputs": {
+        "catalyst": {
+          "score": 74,
+          "evidence_level": "medium",
+          "rationale": "新平台、AI 邊緣與高階 SoC 可能帶動評價，但需月營收確認。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "revenueMomentum": {
+          "score": 68,
+          "evidence_level": "low",
+          "rationale": "待接入月營收。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "cashProfitQuality": {
+          "score": 76,
+          "evidence_level": "low",
+          "rationale": "研發效率、毛利率與現金流待財報驗證。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "priceTrend": {
+          "score": 58,
+          "evidence_level": "low",
+          "rationale": "待接入股價趨勢。",
+          "source_ids": [
+            "twse"
+          ]
+        },
+        "ownership": {
+          "score": 55,
+          "evidence_level": "low",
+          "rationale": "待接入股權資料。",
+          "source_ids": [
+            "tdcc"
+          ]
+        },
+        "riskNews": {
+          "score": 64,
+          "evidence_level": "medium",
+          "rationale": "主要風險在競爭、庫存與終端需求波動。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "industryFundamental": {
+          "score": 78,
+          "evidence_level": "medium",
+          "rationale": "IC 設計平台與產品組合有代表性，但週期敏感度高。",
+          "source_ids": [
+            "mediatek_official"
+          ]
+        }
+      },
+      "risks": [
+        "手機市場循環",
+        "產品價格競爭",
+        "客戶庫存",
+        "先進製程成本"
+      ],
+      "events": [
+        {
+          "date": "2026-Q3",
+          "type": "資料補齊",
+          "title": "接入月營收與財報後檢查高階 SoC 與 AI 邊緣產品動能"
+        }
+      ],
+      "sources": [
+        {
+          "id": "mediatek_official",
+          "title": "聯發科官方網站",
+          "short_title": "聯發科官網",
+          "url": "https://www.mediatek.com/",
+          "note": "用於公司產品、平台與官方資訊追溯。"
+        }
+      ]
+    },
+    {
+      "id": "twse-3044",
+      "ticker": "3044",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "健鼎",
+      "legal_name": "健鼎科技股份有限公司",
+      "category": "電子硬體與零組件",
+      "industry_template": "electronics_hardware",
+      "original_industry_template": "electronics_hardware",
+      "official_industry_code": "28",
+      "official_industry_label": "電子零組件業",
+      "listing_date": "2002-08-26",
+      "website": "https://www.tripod-tech.com",
+      "data_quality": "自動建立研究檔；公司基本資料來自 TWSE/TPEx OpenAPI，客觀分數由公開資料更新流程產生。",
+      "last_reviewed": "2026-07-09",
+      "thesis": "健鼎 已由選股宇宙升級為正式研究檔；初步以 電子硬體 模板追蹤，分數依公開資料自動計算。",
+      "tags": [
+        "上市",
+        "電子硬體與零組件",
+        "電子零組件業",
+        "自動研究檔"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "sources": [
+        {
+          "id": "twse-3044_official",
+          "title": "健鼎 官方網站",
+          "short_title": "官方網站",
+          "url": "https://www.tripod-tech.com",
+          "note": "選股宇宙公司基本資料提供之公司網址。"
+        }
+      ],
+      "facts": {
+        "business_model": {
+          "value": "健鼎 為上市電子零組件業公司；此研究檔由選股宇宙自動建立，後續以公開財務、營收、股價與重大訊息補強。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "industry_focus": {
+          "value": "電子零組件業；初步研究模板為 電子硬體與零組件。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "revenue_driver": {
+          "value": "待由月營收、財報與重大訊息資料辨識主要成長驅動。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "key_catalyst": {
+          "value": "待由公開重大訊息、營收動能、財務變化與股價趨勢自動整理。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "key_risk": {
+          "value": "待由公開重大訊息、資訊揭露違規、財務壓力與產業循環訊號自動整理。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "product_cycle": {
+          "value": "待由公開資料辨識產品週期、新品進度與需求變化。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "customer_structure": {
+          "value": "待由公開資料辨識主要客戶結構、集中度與需求能見度。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "supply_chain_role": {
+          "value": "待由公開資料辨識供應鏈角色、議價能力與替代風險。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "margin_resilience": {
+          "value": "待由毛利率、營業利益率與產品組合變化觀察韌性。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        },
+        "industry_quality": {
+          "value": "初步依官方產業 電子零組件業 與 電子硬體與零組件 模板建立；產業證據分數會由公開資料與可追蹤欄位更新。",
+          "source_ids": [
+            "twse_company_basic",
+            "mops",
+            "twse"
+          ]
+        }
+      },
+      "risks": [],
+      "events": []
+    },
+    {
+      "id": "tw-3164-genmont",
+      "ticker": "3164",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "景岳",
+      "legal_name": "景岳生物科技股份有限公司",
+      "category": "保健營養食品",
+      "industry_template": "nutrition_health_food",
+      "data_quality": "真實公司試點：公司基本資料已由 TWSE OpenAPI 驗證；財務/股價/籌碼待接入自動更新。",
+      "last_reviewed": "2026-07-07",
+      "thesis": "以益生菌品牌/生技能力切入保健食品，適合測試品項證據、專利/菌株、通路與品質系統欄位。",
+      "tags": [
+        "上市",
+        "益生菌",
+        "保健食品",
+        "品牌"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "genmont_official",
+        "mops",
+        "tfda"
+      ],
+      "facts": {
+        "business_model": {
+          "value": "益生菌與保健食品相關品牌/產品，公司基本資料由公開市場資料驗證。",
+          "source_ids": [
+            "genmont_official",
+            "twse_company_basic"
+          ]
+        },
+        "industry_focus": {
+          "value": "益生菌、菌株應用與保健食品。",
+          "source_ids": [
+            "genmont_official"
+          ]
+        },
+        "revenue_driver": {
+          "value": "益生菌產品銷售、通路拓展、產品組合與月營收；待接 MOPS 資料驗證。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "key_catalyst": {
+          "value": "新品、通路擴張、月營收改善、菌株/專利或健康食品相關揭露。",
+          "source_ids": [
+            "mops",
+            "tfda"
+          ]
+        },
+        "key_risk": {
+          "value": "益生菌市場競爭、品項功效證據、宣稱合規、通路與品牌能見度。",
+          "source_ids": [
+            "tfda"
+          ]
+        },
+        "regulatory_status": {
+          "value": "益生菌/保健食品需逐品項檢查標示、宣稱與健康食品許可狀態。",
+          "source_ids": [
+            "tfda"
+          ]
+        },
+        "evidence_level": {
+          "value": "中：公司官網與市場資料可確認益生菌定位；菌株與品項證據需逐項補齊。",
+          "source_ids": [
+            "genmont_official"
+          ]
+        },
+        "quality_system": {
+          "value": "需補菌株、製造品質、檢驗與批次追溯資料。",
+          "source_ids": [
+            "mops",
+            "tfda"
+          ]
+        },
+        "channel_quality": {
+          "value": "品牌與產品定位明確，但通路分散、回購與費用率仍需資料驗證。",
+          "source_ids": [
+            "genmont_official",
+            "mops"
+          ]
+        },
+        "industry_quality": {
+          "value": "益生菌主題契合度高，適合做品項證據與宣稱合規的測試樣本。",
+          "source_ids": [
+            "genmont_official",
+            "twse_company_basic"
+          ]
+        }
+      },
+      "score_inputs": {
+        "catalyst": {
+          "score": 64,
+          "evidence_level": "low",
+          "rationale": "新品、通路與菌株/健康食品相關揭露可能形成催化，但尚未接公告。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "revenueMomentum": {
+          "score": 56,
+          "evidence_level": "low",
+          "rationale": "月營收尚未自動帶入，先保守。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "cashProfitQuality": {
+          "score": 61,
+          "evidence_level": "low",
+          "rationale": "需看毛利、費用率、庫存與現金流，目前資料待補。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "priceTrend": {
+          "score": 50,
+          "evidence_level": "low",
+          "rationale": "尚未接入股價趨勢。",
+          "source_ids": [
+            "twse"
+          ]
+        },
+        "ownership": {
+          "score": 50,
+          "evidence_level": "low",
+          "rationale": "尚未接入股權與集保資料。",
+          "source_ids": [
+            "tdcc"
+          ]
+        },
+        "riskNews": {
+          "score": 62,
+          "evidence_level": "medium",
+          "rationale": "益生菌品項風險主要在宣稱與同質化，需自動檢核新聞/法規/公告。",
+          "source_ids": [
+            "tfda",
+            "mops"
+          ]
+        },
+        "industryFundamental": {
+          "score": 72,
+          "evidence_level": "medium",
+          "rationale": "益生菌定位清楚，但品項證據與商業動能待補。",
+          "source_ids": [
+            "genmont_official"
+          ]
+        }
+      },
+      "risks": [
+        "益生菌同質化競爭",
+        "品項功效證據",
+        "宣稱合規",
+        "通路與回購資料不足"
+      ],
+      "events": [
+        {
+          "date": "2026-Q3",
+          "type": "資料補齊",
+          "title": "補菌株/品項證據與月營收後重新計分"
+        }
+      ],
+      "sources": [
+        {
+          "id": "genmont_official",
+          "title": "景岳生物科技官方網站",
+          "short_title": "景岳官網",
+          "url": "https://www.genmont.com.tw/",
+          "note": "用於益生菌品牌、產品與官方資訊追溯。"
+        }
+      ]
+    },
+    {
+      "id": "tw-3711-aseh",
+      "ticker": "3711",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "日月光投控",
+      "legal_name": "日月光投資控股股份有限公司",
+      "category": "半導體",
+      "industry_template": "semiconductor",
+      "data_quality": "半導體試點：公司已列入 TWSE/TPEx 公開市場資料更新流程；產業欄位先以公開研究檔與官方來源建立。",
+      "last_reviewed": "2026-07-08",
+      "thesis": "全球封測與電子製造服務重要公司，能測試先進封裝、測試需求與半導體後段景氣。",
+      "tags": [
+        "上市",
+        "封測",
+        "先進封裝",
+        "測試",
+        "OSAT"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "aseh_official",
+        "mops"
+      ],
+      "facts": {
+        "business_model": {
+          "value": "半導體封裝、測試與相關電子製造服務，位於晶片製造後段供應鏈。",
+          "source_ids": [
+            "aseh_official",
+            "twse_company_basic"
+          ]
+        },
+        "industry_focus": {
+          "value": "封裝、測試、先進封裝、系統級封裝與電子製造服務。",
+          "source_ids": [
+            "aseh_official"
+          ]
+        },
+        "revenue_driver": {
+          "value": "先進封裝需求、測試稼動率、AI/HPC 與終端電子產品拉貨。",
+          "source_ids": [
+            "mops",
+            "aseh_official"
+          ]
+        },
+        "key_catalyst": {
+          "value": "先進封裝需求提升、測試稼動改善、AI/HPC 封測訂單與毛利率回升。",
+          "source_ids": [
+            "mops",
+            "aseh_official"
+          ]
+        },
+        "key_risk": {
+          "value": "終端需求波動、封測價格競爭、設備稼動、匯率與客戶庫存調整。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "technology_position": {
+          "value": "封測規模與先進封裝能力具全球競爭地位，需追蹤高階封裝占比。",
+          "source_ids": [
+            "aseh_official"
+          ]
+        },
+        "customer_structure": {
+          "value": "服務全球半導體客戶，客戶導入深度與高階封裝需求是關鍵。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "inventory_cycle": {
+          "value": "封測需求通常反映下游拉貨與晶圓投片節奏，對庫存循環敏感。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "capex_intensity": {
+          "value": "先進封裝與測試設備投資需看稼動率與訂單能見度。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "industry_quality": {
+          "value": "後段封測代表公司，適合觀察先進封裝與半導體景氣擴散。",
+          "source_ids": [
+            "aseh_official",
+            "mops"
+          ]
+        }
+      },
+      "score_inputs": {
+        "catalyst": {
+          "score": 70,
+          "evidence_level": "medium",
+          "rationale": "先進封裝與 AI/HPC 封測需求可能形成催化。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "revenueMomentum": {
+          "score": 62,
+          "evidence_level": "low",
+          "rationale": "待接入月營收。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "cashProfitQuality": {
+          "score": 68,
+          "evidence_level": "low",
+          "rationale": "稼動率與毛利率待財報驗證。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "priceTrend": {
+          "score": 55,
+          "evidence_level": "low",
+          "rationale": "待接入股價趨勢。",
+          "source_ids": [
+            "twse"
+          ]
+        },
+        "ownership": {
+          "score": 55,
+          "evidence_level": "low",
+          "rationale": "待接入股權資料。",
+          "source_ids": [
+            "tdcc"
+          ]
+        },
+        "riskNews": {
+          "score": 63,
+          "evidence_level": "medium",
+          "rationale": "終端需求與稼動率是主要風險。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "industryFundamental": {
+          "score": 74,
+          "evidence_level": "medium",
+          "rationale": "封測與先進封裝地位清楚，但景氣彈性仍高。",
+          "source_ids": [
+            "aseh_official"
+          ]
+        }
+      },
+      "risks": [
+        "終端需求波動",
+        "封測價格競爭",
+        "設備稼動率",
+        "客戶庫存調整"
+      ],
+      "events": [
+        {
+          "date": "2026-Q3",
+          "type": "資料補齊",
+          "title": "接入月營收與財報後檢查先進封裝與測試稼動率"
+        }
+      ],
+      "sources": [
+        {
+          "id": "aseh_official",
+          "title": "日月光投控官方網站",
+          "short_title": "日月光官網",
+          "url": "https://www.aseglobal.com/",
+          "note": "用於封測、先進封裝與官方資訊追溯。"
+        }
+      ]
+    },
+    {
+      "id": "tpex-6171",
+      "ticker": "6171",
+      "market": "TPEx",
+      "market_label": "上櫃",
+      "name": "大城地產",
+      "legal_name": "大城地產股份有限公司",
+      "category": "基礎建設、營建與運輸",
+      "industry_template": "infrastructure_transport_real_assets",
+      "original_industry_template": "infrastructure_transport_real_assets",
+      "official_industry_code": "14",
+      "official_industry_label": "建材營造",
+      "listing_date": "2002-04-22",
+      "website": "https://www.aries-net.com.tw",
+      "data_quality": "自動建立研究檔；公司基本資料來自 TWSE/TPEx OpenAPI，客觀分數由公開資料更新流程產生。",
+      "last_reviewed": "2026-07-15",
+      "thesis": "大城地產 已由選股宇宙升級為正式研究檔；初步以 基礎建設、營建與運輸 模板追蹤，分數依公開資料自動計算。",
+      "tags": [
+        "上櫃",
+        "基礎建設、營建與運輸",
+        "建材營造",
+        "自動研究檔"
+      ],
+      "primary_source_ids": [
+        "tpex_company_basic",
+        "mops",
+        "tpex"
+      ],
+      "sources": [
+        {
+          "id": "tpex-6171_official",
+          "title": "大城地產 官方網站",
+          "short_title": "官方網站",
+          "url": "https://www.aries-net.com.tw",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {
+        "business_model": {
+          "value": "大城地產 為上櫃建材營造公司；此研究檔由選股宇宙自動建立，後續以公開財務、月營收、股價、重大訊息與產業證據補強。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "industry_focus": {
+          "value": "建材營造；正式研究模板為 基礎建設、營建與運輸。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "revenue_driver": {
+          "value": "待由月營收、財報、重大訊息與產業資料辨識主要成長驅動。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "key_catalyst": {
+          "value": "待由公開重大訊息、營收動能、財務變化、股價趨勢與產業專屬訊號自動整理。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "key_risk": {
+          "value": "待由公開重大訊息、資訊揭露違規、財務壓力、產業循環與法規事件自動整理。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "order_backlog": {
+          "value": "待由在手案量、工程、建案、標案或長約資料判斷能見度。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "asset_utilization": {
+          "value": "待由船舶、車隊、倉儲、土地、設備或營運資產資料判斷利用率。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "freight_rate_exposure": {
+          "value": "待由運價、租金、房價、工程價格或資產價格資料判斷曝險。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "interest_rate_exposure": {
+          "value": "待由負債、融資、利率與現金流資料判斷利率曝險。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        },
+        "industry_quality": {
+          "value": "初步依官方產業 建材營造 與 基礎建設、營建與運輸 模板建立；產業證據分數會由可追蹤欄位與公開資料更新。",
+          "source_ids": [
+            "tpex_company_basic",
+            "mops",
+            "tpex"
+          ]
+        }
+      },
+      "risks": [],
+      "events": []
+    },
+    {
+      "id": "tw-6488-globalwafers",
+      "ticker": "6488",
+      "market": "TPEx",
+      "market_label": "上櫃",
+      "name": "環球晶",
+      "legal_name": "環球晶圓股份有限公司",
+      "category": "半導體",
+      "industry_template": "semiconductor",
+      "data_quality": "半導體試點：公司已列入 TWSE/TPEx 公開市場資料更新流程；產業欄位先以公開研究檔與官方來源建立。",
+      "last_reviewed": "2026-07-08",
+      "thesis": "矽晶圓材料代表公司，適合觀察半導體上游材料、長約、庫存週期、報價與產能擴張。",
+      "tags": [
+        "上櫃",
+        "矽晶圓",
+        "材料",
+        "長約",
+        "上游"
+      ],
+      "primary_source_ids": [
+        "tpex_company_basic",
+        "globalwafers_official",
+        "mops"
+      ],
+      "facts": {
+        "business_model": {
+          "value": "半導體矽晶圓材料供應商，提供晶圓製造所需關鍵基材。",
+          "source_ids": [
+            "globalwafers_official",
+            "tpex_company_basic"
+          ]
+        },
+        "industry_focus": {
+          "value": "矽晶圓、半導體材料、上游供應鏈與長約出貨。",
+          "source_ids": [
+            "globalwafers_official"
+          ]
+        },
+        "revenue_driver": {
+          "value": "晶圓廠稼動率、長約、矽晶圓報價、客戶庫存與半導體資本支出週期。",
+          "source_ids": [
+            "mops",
+            "globalwafers_official"
+          ]
+        },
+        "key_catalyst": {
+          "value": "矽晶圓價格回穩、客戶庫存去化、長約出貨、產能利用率改善。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "key_risk": {
+          "value": "材料報價下行、客戶去庫存、長約重議、擴產折舊與能源成本。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "technology_position": {
+          "value": "上游矽晶圓材料具規模與客戶基礎，需追蹤先進晶圓規格與產能利用。",
+          "source_ids": [
+            "globalwafers_official"
+          ]
+        },
+        "customer_structure": {
+          "value": "客戶為全球半導體製造商，長約與客戶庫存狀態是重要觀察。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "inventory_cycle": {
+          "value": "矽晶圓對半導體景氣與晶圓廠庫存循環高度敏感。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "capex_intensity": {
+          "value": "擴產與折舊壓力需搭配長約與價格週期評估。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "industry_quality": {
+          "value": "上游材料代表公司，可補足半導體模板中的材料與庫存週期視角。",
+          "source_ids": [
+            "globalwafers_official",
+            "mops"
+          ]
+        }
+      },
+      "score_inputs": {
+        "catalyst": {
+          "score": 62,
+          "evidence_level": "medium",
+          "rationale": "矽晶圓價格與庫存去化可能形成催化，但週期尚需月營收確認。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "revenueMomentum": {
+          "score": 55,
+          "evidence_level": "low",
+          "rationale": "待接入月營收。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "cashProfitQuality": {
+          "score": 66,
+          "evidence_level": "low",
+          "rationale": "長約、毛利與折舊壓力待財報驗證。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "priceTrend": {
+          "score": 52,
+          "evidence_level": "low",
+          "rationale": "待接入股價趨勢。",
+          "source_ids": [
+            "tpex"
+          ]
+        },
+        "ownership": {
+          "score": 55,
+          "evidence_level": "low",
+          "rationale": "待接入股權資料。",
+          "source_ids": [
+            "tdcc"
+          ]
+        },
+        "riskNews": {
+          "score": 60,
+          "evidence_level": "medium",
+          "rationale": "報價、庫存與長約重議是主要風險。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "industryFundamental": {
+          "score": 68,
+          "evidence_level": "medium",
+          "rationale": "上游材料位置明確，但受半導體庫存週期影響較高。",
+          "source_ids": [
+            "globalwafers_official"
+          ]
+        }
+      },
+      "risks": [
+        "矽晶圓報價下行",
+        "客戶去庫存",
+        "長約重議",
+        "擴產折舊壓力"
+      ],
+      "events": [
+        {
+          "date": "2026-Q3",
+          "type": "資料補齊",
+          "title": "接入月營收與財報後檢查矽晶圓報價與庫存週期"
+        }
+      ],
+      "sources": [
+        {
+          "id": "globalwafers_official",
+          "title": "環球晶官方網站",
+          "short_title": "環球晶官網",
+          "url": "https://www.sas-globalwafers.com/",
+          "note": "用於矽晶圓材料、公司業務與官方資訊追溯。"
+        }
+      ]
+    },
+    {
+      "id": "tw-7780-daiken",
+      "ticker": "7780",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "大研生醫",
+      "legal_name": "大研生醫國際股份有限公司",
+      "category": "保健營養食品",
+      "industry_template": "nutrition_health_food",
+      "data_quality": "真實公司試點：公司基本資料已由 TWSE OpenAPI 驗證；財務/股價/籌碼待接入自動更新。",
+      "last_reviewed": "2026-07-07",
+      "thesis": "D2C/品牌型營養補充品公司，產品與通路識別清楚；重點是回購、廣告投放效率、毛利與上市後資訊揭露。",
+      "tags": [
+        "上市",
+        "D2C",
+        "營養補充品",
+        "品牌"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "daiken_official",
+        "mops",
+        "tfda"
+      ],
+      "facts": {
+        "business_model": {
+          "value": "自有品牌營養補充品，主要透過官方電商與消費者通路銷售。",
+          "source_ids": [
+            "daiken_official",
+            "twse_company_basic"
+          ]
+        },
+        "industry_focus": {
+          "value": "魚油、葉黃素與日常營養補充品等保健食品品類。",
+          "source_ids": [
+            "daiken_official"
+          ]
+        },
+        "revenue_driver": {
+          "value": "品牌知名度、電商轉換、會員回購、產品組合擴張；待接入月營收資料驗證。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "key_catalyst": {
+          "value": "新品、會員回購、通路擴張、上市後資訊揭露與月營收成長。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "key_risk": {
+          "value": "廣告投放效率、產品宣稱合規、同質化競爭、庫存效期與上市後評價波動。",
+          "source_ids": [
+            "tfda",
+            "mops"
+          ]
+        },
+        "regulatory_status": {
+          "value": "品牌型食品需逐品項檢查標示、廣告宣稱與健康食品許可；此版尚未品項級比對。",
+          "source_ids": [
+            "tfda"
+          ]
+        },
+        "evidence_level": {
+          "value": "中：官網可確認品類與品牌定位；回購、CAC、品項功效證據仍待補。",
+          "source_ids": [
+            "daiken_official"
+          ]
+        },
+        "quality_system": {
+          "value": "需補代工/製造品質系統、第三方檢驗與批次追溯資料。",
+          "source_ids": [
+            "mops",
+            "tfda"
+          ]
+        },
+        "channel_quality": {
+          "value": "官方電商能直接累積會員與回購資料，但此版尚無 CAC/回購率數據。",
+          "source_ids": [
+            "daiken_official"
+          ]
+        },
+        "industry_quality": {
+          "value": "品牌與保健食品關聯度高，是適合測試通路、回購與宣稱合規的品牌型樣本。",
+          "source_ids": [
+            "daiken_official",
+            "twse_company_basic"
+          ]
+        }
+      },
+      "score_inputs": {
+        "catalyst": {
+          "score": 72,
+          "evidence_level": "medium",
+          "rationale": "新品、上市後資訊揭露與月營收都可能形成催化。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "revenueMomentum": {
+          "score": 70,
+          "evidence_level": "low",
+          "rationale": "D2C 品牌成長可觀察月營收，但尚未自動帶入。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "cashProfitQuality": {
+          "score": 61,
+          "evidence_level": "low",
+          "rationale": "品牌型公司需看廣告費、毛利、庫存效期與現金流，目前資料待補。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "priceTrend": {
+          "score": 52,
+          "evidence_level": "low",
+          "rationale": "上市時間較新，仍需接入價格區間與量能。",
+          "source_ids": [
+            "twse"
+          ]
+        },
+        "ownership": {
+          "score": 50,
+          "evidence_level": "low",
+          "rationale": "尚未接入股權與集保資料。",
+          "source_ids": [
+            "tdcc"
+          ]
+        },
+        "riskNews": {
+          "score": 58,
+          "evidence_level": "medium",
+          "rationale": "主要風險在宣稱、競品、行銷效率與上市後波動。",
+          "source_ids": [
+            "tfda",
+            "mops"
+          ]
+        },
+        "industryFundamental": {
+          "score": 73,
+          "evidence_level": "medium",
+          "rationale": "品牌型保健食品樣本清楚，但品質與回購證據待補。",
+          "source_ids": [
+            "daiken_official"
+          ]
+        }
+      },
+      "risks": [
+        "廣告投放效率",
+        "產品宣稱合規",
+        "同質化競爭",
+        "上市後股價波動"
+      ],
+      "events": [
+        {
+          "date": "2026-Q3",
+          "type": "資料補齊",
+          "title": "接入月營收、上市後股價與產品宣稱檢核"
+        }
+      ],
+      "sources": [
+        {
+          "id": "daiken_official",
+          "title": "大研生醫官方網站",
+          "short_title": "大研官網",
+          "url": "https://www.daikenshop.com/",
+          "note": "用於品牌、品類與官方資訊追溯。"
+        }
+      ]
+    },
+    {
+      "id": "tw-8279-syngen",
+      "ticker": "8279",
+      "market": "TPEx",
+      "market_label": "上櫃",
+      "name": "生展",
+      "legal_name": "生展生物科技股份有限公司",
+      "category": "保健營養食品",
+      "industry_template": "nutrition_health_food",
+      "data_quality": "真實公司試點：公司基本資料已由 TPEx OpenAPI 驗證；財務/股價/籌碼待接入自動更新。",
+      "last_reviewed": "2026-07-07",
+      "thesis": "生技與發酵/益生菌相關公司，適合測試原料、製程、品質系統與 B2B 客戶結構的研究欄位。",
+      "tags": [
+        "上櫃",
+        "益生菌",
+        "發酵",
+        "生技"
+      ],
+      "primary_source_ids": [
+        "tpex_company_basic",
+        "syngen_official",
+        "mops",
+        "tfda"
+      ],
+      "facts": {
+        "business_model": {
+          "value": "生技/發酵相關產品與服務，公開資料顯示為上櫃生技公司；產品與客戶結構需年報補齊。",
+          "source_ids": [
+            "syngen_official",
+            "tpex_company_basic"
+          ]
+        },
+        "industry_focus": {
+          "value": "益生菌、發酵、生技素材與相關應用。",
+          "source_ids": [
+            "syngen_official"
+          ]
+        },
+        "revenue_driver": {
+          "value": "原料/產品訂單、客戶需求、品項組合與產能利用；待接月營收與年報。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "key_catalyst": {
+          "value": "新客戶/新產品、產能利用改善、毛利率回升或重大合作。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "key_risk": {
+          "value": "客戶集中、原料與發酵良率、品項需求波動、宣稱與食品安全合規。",
+          "source_ids": [
+            "mops",
+            "tfda"
+          ]
+        },
+        "regulatory_status": {
+          "value": "若涉及食品/機能素材，需追蹤原料規格、標示與客戶終端宣稱合規。",
+          "source_ids": [
+            "tfda"
+          ]
+        },
+        "evidence_level": {
+          "value": "中低：公司基本資料與官網可追溯；產品證據、客戶與毛利資料待補。",
+          "source_ids": [
+            "syngen_official",
+            "mops"
+          ]
+        },
+        "quality_system": {
+          "value": "發酵與生技製程的品質系統是核心；需補工廠認證、檢驗與批次追溯。",
+          "source_ids": [
+            "mops",
+            "syngen_official"
+          ]
+        },
+        "channel_quality": {
+          "value": "偏 B2B/素材型，通路品質取決於客戶穩定度與品項續單。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "industry_quality": {
+          "value": "產業位置有助於評估保健食品上游素材，但需要更完整的年報與客戶資料。",
+          "source_ids": [
+            "tpex_company_basic",
+            "syngen_official"
+          ]
+        }
+      },
+      "score_inputs": {
+        "catalyst": {
+          "score": 62,
+          "evidence_level": "low",
+          "rationale": "可能催化較依賴新客戶/產能/毛利改善，尚未抓取近期公告。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "revenueMomentum": {
+          "score": 58,
+          "evidence_level": "low",
+          "rationale": "月營收尚未接入，因此動能分數保守。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "cashProfitQuality": {
+          "score": 63,
+          "evidence_level": "low",
+          "rationale": "製程型公司需看良率、毛利、存貨與現金流，目前待補。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "priceTrend": {
+          "score": 50,
+          "evidence_level": "low",
+          "rationale": "尚未接入股價趨勢。",
+          "source_ids": [
+            "tpex"
+          ]
+        },
+        "ownership": {
+          "score": 50,
+          "evidence_level": "low",
+          "rationale": "尚未接入集保與法人資料。",
+          "source_ids": [
+            "tdcc"
+          ]
+        },
+        "riskNews": {
+          "score": 62,
+          "evidence_level": "medium",
+          "rationale": "風險可定義，但需新聞、重大訊息與食品安全資料自動檢核。",
+          "source_ids": [
+            "mops",
+            "tfda"
+          ]
+        },
+        "industryFundamental": {
+          "score": 70,
+          "evidence_level": "medium",
+          "rationale": "益生菌/發酵素材與保健食品產業關聯明確，但公開佐證仍需補強。",
+          "source_ids": [
+            "syngen_official"
+          ]
+        }
+      },
+      "risks": [
+        "客戶與訂單集中",
+        "發酵良率與品質",
+        "品項需求波動",
+        "資料揭露不足"
+      ],
+      "events": [
+        {
+          "date": "2026-Q3",
+          "type": "資料補齊",
+          "title": "補年報與月營收後確認素材/發酵業務占比"
+        }
+      ],
+      "sources": [
+        {
+          "id": "syngen_official",
+          "title": "生展生物科技官方網站",
+          "short_title": "生展官網",
+          "url": "https://www.syngen.com.tw/",
+          "note": "用於公司官方資訊追溯。"
+        }
+      ]
+    },
+    {
+      "id": "tw-8436-tci",
+      "ticker": "8436",
+      "market": "TPEx",
+      "market_label": "上櫃",
+      "name": "大江生醫",
+      "legal_name": "大江生醫股份有限公司",
+      "category": "保健營養食品",
+      "industry_template": "nutrition_health_food",
+      "data_quality": "真實公司試點：公司基本資料已由 TPEx OpenAPI 驗證；財務/股價/籌碼待接入自動更新。",
+      "last_reviewed": "2026-07-07",
+      "thesis": "偏 B2B 的保健食品/機能產品 ODM 型公司，適合作為產業供應鏈與產品開發能力的試點樣本。",
+      "tags": [
+        "上櫃",
+        "ODM",
+        "保健食品",
+        "機能產品"
+      ],
+      "primary_source_ids": [
+        "tpex_company_basic",
+        "tci_official",
+        "mops",
+        "tfda"
+      ],
+      "facts": {
+        "business_model": {
+          "value": "保健食品、機能飲品與相關生技產品的 B2B 開發/製造服務，並以公開資訊揭露營運狀況。",
+          "source_ids": [
+            "tci_official",
+            "tpex_company_basic"
+          ]
+        },
+        "industry_focus": {
+          "value": "保健營養食品、機能性產品、配方開發與製造服務。",
+          "source_ids": [
+            "tci_official"
+          ]
+        },
+        "revenue_driver": {
+          "value": "客戶訂單、海外需求、產品開發速度與產能利用；待接入月營收與法說/年報驗證。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "key_catalyst": {
+          "value": "海外客戶需求回升、產品線放量、毛利率改善、重大合作或產能效率改善。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "key_risk": {
+          "value": "客戶需求波動、ODM 議價壓力、原料與庫存、跨境法規與宣稱風險。",
+          "source_ids": [
+            "tfda",
+            "mops"
+          ]
+        },
+        "regulatory_status": {
+          "value": "作為產品開發/製造服務，需追蹤食品安全、品項宣稱與客戶市場法規；此版尚未做到客戶品項級。",
+          "source_ids": [
+            "tfda"
+          ]
+        },
+        "evidence_level": {
+          "value": "中：公司定位與公開基本資料可追溯；實際客戶結構與品項表現需年報/法說補齊。",
+          "source_ids": [
+            "tci_official",
+            "mops"
+          ]
+        },
+        "quality_system": {
+          "value": "品質與製造能力是核心評估點；待補年報、認證、工廠與稽核資料。",
+          "source_ids": [
+            "mops",
+            "tci_official"
+          ]
+        },
+        "channel_quality": {
+          "value": "B2B/ODM 型通路品質取決於客戶品質、訂單續單與國際市場分散度。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "industry_quality": {
+          "value": "供應鏈角色清楚，產業基本面分數高於一般品牌型樣本；仍需財務與客戶資料驗證。",
+          "source_ids": [
+            "tpex_company_basic",
+            "tci_official"
+          ]
+        }
+      },
+      "score_inputs": {
+        "catalyst": {
+          "score": 70,
+          "evidence_level": "medium",
+          "rationale": "海外需求、客戶訂單與毛利改善都可能成為催化，但需重大訊息/月營收確認。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "revenueMomentum": {
+          "score": 65,
+          "evidence_level": "low",
+          "rationale": "尚未接入月營收，先以保守分數處理。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "cashProfitQuality": {
+          "score": 68,
+          "evidence_level": "low",
+          "rationale": "製造服務需看毛利、存貨、應收與現金流，目前尚待自動化。",
+          "source_ids": [
+            "mops"
+          ]
+        },
+        "priceTrend": {
+          "score": 55,
+          "evidence_level": "low",
+          "rationale": "尚未接入上櫃股價資料。",
+          "source_ids": [
+            "tpex"
+          ]
+        },
+        "ownership": {
+          "score": 54,
+          "evidence_level": "low",
+          "rationale": "尚未接入法人與集保資料。",
+          "source_ids": [
+            "tdcc"
+          ]
+        },
+        "riskNews": {
+          "score": 64,
+          "evidence_level": "medium",
+          "rationale": "ODM 風險主要在客戶需求、合規與毛利壓力，需由新聞與重大訊息更新。",
+          "source_ids": [
+            "mops",
+            "tfda"
+          ]
+        },
+        "industryFundamental": {
+          "score": 78,
+          "evidence_level": "medium",
+          "rationale": "與保健營養食品產業鏈高度相關，且可用客戶/產能/毛利指標建立後續追蹤。",
+          "source_ids": [
+            "tci_official"
+          ]
+        }
+      },
+      "risks": [
+        "客戶需求波動",
+        "ODM 毛利壓力",
+        "庫存與應收",
+        "跨境法規與品項宣稱"
+      ],
+      "events": [
+        {
+          "date": "2026-Q3",
+          "type": "資料補齊",
+          "title": "接入月營收與財報後檢查 ODM 訂單與毛利韌性"
+        }
+      ],
+      "sources": [
+        {
+          "id": "tci_official",
+          "title": "大江生醫官方網站",
+          "short_title": "大江官網",
+          "url": "https://www.tci-bio.com/",
+          "note": "用於公司定位、服務與官方資訊追溯。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1601 @@
+{
+  "version": "0.7.0",
+  "generated_at": "2026-07-15T03:58:07.089Z",
+  "note": "產業證據層。各產業的子評估標準由 data/industry_templates.json 定義；保健營養食品先接入 TFDA 健康食品、廣告合規、品項證據、品質系統與通路回購框架。",
+  "sources": [
+    {
+      "id": "tfda_open_data",
+      "title": "衛生福利部食品藥物管理署：食品藥物開放資料平臺",
+      "short_title": "TFDA 開放資料",
+      "url": "https://data.fda.gov.tw/",
+      "note": "用於追蹤健康食品許可、食品廣告違規、標示與食品安全相關公開資料。此版先建立可接入資料層，端點確認後可由更新腳本自動比對。"
+    },
+    {
+      "id": "tfda_health_food",
+      "title": "衛生福利部食品藥物管理署：健康食品查詢與許可資料",
+      "short_title": "TFDA 健康食品",
+      "url": "https://consumer.fda.gov.tw/Food/InfoHealthFood.aspx?nodeID=162",
+      "note": "用於逐品項查核健康食品許可、核准功效與許可證狀態。"
+    },
+    {
+      "id": "tfda_ad_compliance",
+      "title": "衛生福利部食品藥物管理署：食品廣告與宣稱合規資料",
+      "short_title": "TFDA 廣告合規",
+      "url": "https://consumer.fda.gov.tw/",
+      "note": "用於追蹤食品、健康食品與營養補充品廣告宣稱、裁罰或違規公告。"
+    }
+  ],
+  "companies": {
+    "tpex-1595": {
+      "ticker": "1595",
+      "market": "TPEx",
+      "industry_template": "semiconductor",
+      "status": "ok",
+      "source_ids": [
+        "tpex_company_basic",
+        "mops",
+        "tpex"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": 61,
+      "dimensions": [
+        {
+          "id": "technology_position",
+          "label": "技術位置",
+          "weight": 0.26,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tpex_company_basic",
+            "tpex"
+          ],
+          "description": "公司在製程、設計、設備、材料或封測環節中的技術門檻與差異化。",
+          "rationale": "依研究檔欄位「technology_position、industry_focus」與來源追溯計算。"
+        },
+        {
+          "id": "customer_adoption",
+          "label": "客戶導入",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tpex_company_basic",
+            "tpex"
+          ],
+          "description": "主要客戶、設計案、量產導入與客戶集中風險。",
+          "rationale": "依研究檔欄位「customer_structure、revenue_driver」與來源追溯計算。"
+        },
+        {
+          "id": "inventory_cycle",
+          "label": "庫存循環",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tpex_company_basic",
+            "tpex"
+          ],
+          "description": "庫存天數、去化速度、產業補庫存或修正循環。",
+          "rationale": "依研究檔欄位「inventory_cycle、key_risk」與來源追溯計算。"
+        },
+        {
+          "id": "gross_margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 52,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "毛利率在景氣循環與價格壓力下的穩定度。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "supply_chain_risk",
+          "label": "供應鏈風險",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 70,
+          "evidence_level": "high",
+          "source_ids": [
+            "mops",
+            "tpex_company_basic",
+            "tpex"
+          ],
+          "description": "上游供料、地緣、單一供應商與產能瓶頸風險。",
+          "rationale": "依研究檔欄位「supply_chain_role、key_risk」與來源追溯計算。"
+        }
+      ],
+      "rationale": "半導體 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "tw-1707-grapeking": {
+      "ticker": "1707",
+      "market": "TWSE",
+      "industry_template": "nutrition_health_food",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "grapeking_official",
+        "mops",
+        "tfda",
+        "tfda_health_food",
+        "tfda_ad_compliance",
+        "tfda_open_data"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 77,
+      "score": 61,
+      "dimensions": [
+        {
+          "id": "tfda_health_food_permit",
+          "label": "TFDA 健康食品許可",
+          "weight": 0.24,
+          "status": "ok",
+          "score": 60,
+          "evidence_level": "medium",
+          "source_ids": [
+            "tfda_health_food",
+            "tfda",
+            "mops",
+            "twse_company_basic",
+            "grapeking_official"
+          ],
+          "description": "是否有可查證的健康食品許可或明確法規定位。",
+          "rationale": "已接入 TFDA 健康食品許可查詢來源；目前仍需逐品項自動比對許可證與核准功效，因此採中性偏保守分。"
+        },
+        {
+          "id": "tfda_ad_compliance",
+          "label": "廣告合規",
+          "weight": 0.24,
+          "status": "ok",
+          "score": 63,
+          "evidence_level": "medium",
+          "source_ids": [
+            "tfda_ad_compliance",
+            "tfda"
+          ],
+          "description": "食品、健康食品與營養品廣告是否有違規或裁罰訊號。",
+          "rationale": "先以公開申報違規 0 筆、負向重大訊息 1 則暫代扣分；TFDA 食品廣告違規資料源已列入待自動比對。"
+        },
+        {
+          "id": "product_evidence",
+          "label": "產品證據",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 58,
+          "evidence_level": "medium",
+          "source_ids": [
+            "tfda_open_data",
+            "grapeking_official",
+            "tfda",
+            "twse_company_basic"
+          ],
+          "description": "產品成分、功效宣稱、人體或文獻證據的可追蹤性。",
+          "rationale": "依研究檔欄位「evidence_level、industry_focus、industry_quality」與來源追溯計算。"
+        },
+        {
+          "id": "quality_system",
+          "label": "品質系統",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 67,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tfda_open_data"
+          ],
+          "description": "GMP、HACCP、ISO、供應鏈與製程品質證據。",
+          "rationale": "依研究檔欄位「quality_system」與來源追溯計算。"
+        },
+        {
+          "id": "channel_repeatability",
+          "label": "通路回購性",
+          "weight": 0.14,
+          "status": "ok",
+          "score": 54,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops",
+            "grapeking_official"
+          ],
+          "description": "品牌、會員、電商、藥局或通路是否具備重複銷售能力。",
+          "rationale": "依研究檔欄位「channel_quality、revenue_driver」與來源追溯計算。"
+        }
+      ],
+      "rationale": "保健營養食品 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "twse-1909": {
+      "ticker": "1909",
+      "market": "TWSE",
+      "industry_template": "basic_materials",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": 62,
+      "dimensions": [
+        {
+          "id": "commodity_cycle",
+          "label": "商品循環位置",
+          "weight": 0.24,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "產品報價、供需循環、庫存與景氣位置。",
+          "rationale": "依研究檔欄位「commodity_cycle、industry_focus、revenue_driver」與來源追溯計算。"
+        },
+        {
+          "id": "spread_margin",
+          "label": "價差與利差",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 55,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "原料與成品價差、加工利差與毛利率彈性。",
+          "rationale": "依研究檔欄位「spread_margin、margin_resilience、gross_margin_profile」與來源追溯計算。"
+        },
+        {
+          "id": "cost_pass_through",
+          "label": "成本轉嫁能力",
+          "weight": 0.2,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "能源、原料、匯率與運費上升時的轉嫁能力。",
+          "rationale": "依研究檔欄位「raw_material_exposure、margin_resilience」與來源追溯計算。"
+        },
+        {
+          "id": "capacity_discipline",
+          "label": "產能紀律",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "擴產、停產、去瓶頸與產業供給紀律。",
+          "rationale": "依研究檔欄位「capacity_discipline、capacity_utilization」與來源追溯計算。"
+        },
+        {
+          "id": "environmental_compliance",
+          "label": "環保與工安合規",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 70,
+          "evidence_level": "high",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "碳費、污染、工安、環評與法規支出風險。",
+          "rationale": "依研究檔欄位「regulatory_status、key_risk」與來源追溯計算。"
+        }
+      ],
+      "rationale": "原物料、化工與基礎材料 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "twse-2301": {
+      "ticker": "2301",
+      "market": "TWSE",
+      "industry_template": "electronics_hardware",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": 61,
+      "dimensions": [
+        {
+          "id": "product_cycle",
+          "label": "產品週期",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "產品是否處於升級、替換、去庫存或成熟壓價週期。",
+          "rationale": "依研究檔欄位「product_cycle、industry_focus」與來源追溯計算。"
+        },
+        {
+          "id": "customer_structure",
+          "label": "客戶結構",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "主要客戶品質、集中度、終端需求與議價能力。",
+          "rationale": "依研究檔欄位「customer_structure」與來源追溯計算。"
+        },
+        {
+          "id": "supply_chain_role",
+          "label": "供應鏈角色",
+          "weight": 0.2,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "公司在模組、零組件、通路或代工環節中的不可替代性。",
+          "rationale": "依研究檔欄位「supply_chain_role」與來源追溯計算。"
+        },
+        {
+          "id": "certification_quality",
+          "label": "認證與規格品質",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 54,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "產品規格、品質認證、車用或高可靠度應用證據。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "毛利率與營益率是否能抵抗匯率、價格與需求波動。",
+          "rationale": "依研究檔欄位「margin_resilience」與來源追溯計算。"
+        }
+      ],
+      "rationale": "電子硬體與零組件 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "tw-2303-umc": {
+      "ticker": "2303",
+      "market": "TWSE",
+      "industry_template": "semiconductor",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "umc_official",
+        "mops"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 69,
+      "score": 65,
+      "dimensions": [
+        {
+          "id": "technology_position",
+          "label": "技術位置",
+          "weight": 0.26,
+          "status": "ok",
+          "score": 66,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "umc_official"
+          ],
+          "description": "公司在製程、設計、設備、材料或封測環節中的技術門檻與差異化。",
+          "rationale": "依研究檔欄位「technology_position、industry_focus」與來源追溯計算。"
+        },
+        {
+          "id": "customer_adoption",
+          "label": "客戶導入",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 66,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "umc_official"
+          ],
+          "description": "主要客戶、設計案、量產導入與客戶集中風險。",
+          "rationale": "依研究檔欄位「customer_structure、revenue_driver」與來源追溯計算。"
+        },
+        {
+          "id": "inventory_cycle",
+          "label": "庫存循環",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "庫存天數、去化速度、產業補庫存或修正循環。",
+          "rationale": "依研究檔欄位「inventory_cycle、key_risk」與來源追溯計算。"
+        },
+        {
+          "id": "gross_margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 61,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "毛利率在景氣循環與價格壓力下的穩定度。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "supply_chain_risk",
+          "label": "供應鏈風險",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 70,
+          "evidence_level": "high",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "上游供料、地緣、單一供應商與產能瓶頸風險。",
+          "rationale": "依研究檔欄位「supply_chain_role、key_risk」與來源追溯計算。"
+        }
+      ],
+      "rationale": "半導體 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "tw-2330-tsmc": {
+      "ticker": "2330",
+      "market": "TWSE",
+      "industry_template": "semiconductor",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "tsmc_official",
+        "mops"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 69,
+      "score": 66,
+      "dimensions": [
+        {
+          "id": "technology_position",
+          "label": "技術位置",
+          "weight": 0.26,
+          "status": "ok",
+          "score": 66,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tsmc_official"
+          ],
+          "description": "公司在製程、設計、設備、材料或封測環節中的技術門檻與差異化。",
+          "rationale": "依研究檔欄位「technology_position、industry_focus」與來源追溯計算。"
+        },
+        {
+          "id": "customer_adoption",
+          "label": "客戶導入",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 66,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tsmc_official"
+          ],
+          "description": "主要客戶、設計案、量產導入與客戶集中風險。",
+          "rationale": "依研究檔欄位「customer_structure、revenue_driver」與來源追溯計算。"
+        },
+        {
+          "id": "inventory_cycle",
+          "label": "庫存循環",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "庫存天數、去化速度、產業補庫存或修正循環。",
+          "rationale": "依研究檔欄位「inventory_cycle、key_risk」與來源追溯計算。"
+        },
+        {
+          "id": "gross_margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 64,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "毛利率在景氣循環與價格壓力下的穩定度。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "supply_chain_risk",
+          "label": "供應鏈風險",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 70,
+          "evidence_level": "high",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "上游供料、地緣、單一供應商與產能瓶頸風險。",
+          "rationale": "依研究檔欄位「supply_chain_role、key_risk」與來源追溯計算。"
+        }
+      ],
+      "rationale": "半導體 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "twse-2344": {
+      "ticker": "2344",
+      "market": "TWSE",
+      "industry_template": "semiconductor",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": 63,
+      "dimensions": [
+        {
+          "id": "technology_position",
+          "label": "技術位置",
+          "weight": 0.26,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "公司在製程、設計、設備、材料或封測環節中的技術門檻與差異化。",
+          "rationale": "依研究檔欄位「technology_position、industry_focus」與來源追溯計算。"
+        },
+        {
+          "id": "customer_adoption",
+          "label": "客戶導入",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "主要客戶、設計案、量產導入與客戶集中風險。",
+          "rationale": "依研究檔欄位「customer_structure、revenue_driver」與來源追溯計算。"
+        },
+        {
+          "id": "inventory_cycle",
+          "label": "庫存循環",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "庫存天數、去化速度、產業補庫存或修正循環。",
+          "rationale": "依研究檔欄位「inventory_cycle、key_risk」與來源追溯計算。"
+        },
+        {
+          "id": "gross_margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 63,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "毛利率在景氣循環與價格壓力下的穩定度。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "supply_chain_risk",
+          "label": "供應鏈風險",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 70,
+          "evidence_level": "high",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "上游供料、地緣、單一供應商與產能瓶頸風險。",
+          "rationale": "依研究檔欄位「supply_chain_role、key_risk」與來源追溯計算。"
+        }
+      ],
+      "rationale": "半導體 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "twse-2345": {
+      "ticker": "2345",
+      "market": "TWSE",
+      "industry_template": "electronics_hardware",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": 61,
+      "dimensions": [
+        {
+          "id": "product_cycle",
+          "label": "產品週期",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "產品是否處於升級、替換、去庫存或成熟壓價週期。",
+          "rationale": "依研究檔欄位「product_cycle、industry_focus」與來源追溯計算。"
+        },
+        {
+          "id": "customer_structure",
+          "label": "客戶結構",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "主要客戶品質、集中度、終端需求與議價能力。",
+          "rationale": "依研究檔欄位「customer_structure」與來源追溯計算。"
+        },
+        {
+          "id": "supply_chain_role",
+          "label": "供應鏈角色",
+          "weight": 0.2,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "公司在模組、零組件、通路或代工環節中的不可替代性。",
+          "rationale": "依研究檔欄位「supply_chain_role」與來源追溯計算。"
+        },
+        {
+          "id": "certification_quality",
+          "label": "認證與規格品質",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 54,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "產品規格、品質認證、車用或高可靠度應用證據。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 63,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "毛利率與營益率是否能抵抗匯率、價格與需求波動。",
+          "rationale": "依研究檔欄位「margin_resilience」與來源追溯計算。"
+        }
+      ],
+      "rationale": "電子硬體與零組件 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "tw-2454-mediatek": {
+      "ticker": "2454",
+      "market": "TWSE",
+      "industry_template": "semiconductor",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "mediatek_official",
+        "mops"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 69,
+      "score": 65,
+      "dimensions": [
+        {
+          "id": "technology_position",
+          "label": "技術位置",
+          "weight": 0.26,
+          "status": "ok",
+          "score": 66,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "mediatek_official"
+          ],
+          "description": "公司在製程、設計、設備、材料或封測環節中的技術門檻與差異化。",
+          "rationale": "依研究檔欄位「technology_position、industry_focus」與來源追溯計算。"
+        },
+        {
+          "id": "customer_adoption",
+          "label": "客戶導入",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 66,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "mediatek_official"
+          ],
+          "description": "主要客戶、設計案、量產導入與客戶集中風險。",
+          "rationale": "依研究檔欄位「customer_structure、revenue_driver」與來源追溯計算。"
+        },
+        {
+          "id": "inventory_cycle",
+          "label": "庫存循環",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "庫存天數、去化速度、產業補庫存或修正循環。",
+          "rationale": "依研究檔欄位「inventory_cycle、key_risk」與來源追溯計算。"
+        },
+        {
+          "id": "gross_margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 61,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "毛利率在景氣循環與價格壓力下的穩定度。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "supply_chain_risk",
+          "label": "供應鏈風險",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 70,
+          "evidence_level": "high",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "上游供料、地緣、單一供應商與產能瓶頸風險。",
+          "rationale": "依研究檔欄位「supply_chain_role、key_risk」與來源追溯計算。"
+        }
+      ],
+      "rationale": "半導體 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "twse-3044": {
+      "ticker": "3044",
+      "market": "TWSE",
+      "industry_template": "electronics_hardware",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": 61,
+      "dimensions": [
+        {
+          "id": "product_cycle",
+          "label": "產品週期",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "產品是否處於升級、替換、去庫存或成熟壓價週期。",
+          "rationale": "依研究檔欄位「product_cycle、industry_focus」與來源追溯計算。"
+        },
+        {
+          "id": "customer_structure",
+          "label": "客戶結構",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "主要客戶品質、集中度、終端需求與議價能力。",
+          "rationale": "依研究檔欄位「customer_structure」與來源追溯計算。"
+        },
+        {
+          "id": "supply_chain_role",
+          "label": "供應鏈角色",
+          "weight": 0.2,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "公司在模組、零組件、通路或代工環節中的不可替代性。",
+          "rationale": "依研究檔欄位「supply_chain_role」與來源追溯計算。"
+        },
+        {
+          "id": "certification_quality",
+          "label": "認證與規格品質",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 54,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "產品規格、品質認證、車用或高可靠度應用證據。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 64,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "twse_company_basic",
+            "twse"
+          ],
+          "description": "毛利率與營益率是否能抵抗匯率、價格與需求波動。",
+          "rationale": "依研究檔欄位「margin_resilience」與來源追溯計算。"
+        }
+      ],
+      "rationale": "電子硬體與零組件 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "tw-3164-genmont": {
+      "ticker": "3164",
+      "market": "TWSE",
+      "industry_template": "nutrition_health_food",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "genmont_official",
+        "mops",
+        "tfda",
+        "tfda_health_food",
+        "tfda_ad_compliance",
+        "tfda_open_data"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 77,
+      "score": 62,
+      "dimensions": [
+        {
+          "id": "tfda_health_food_permit",
+          "label": "TFDA 健康食品許可",
+          "weight": 0.24,
+          "status": "ok",
+          "score": 60,
+          "evidence_level": "medium",
+          "source_ids": [
+            "tfda_health_food",
+            "tfda",
+            "mops",
+            "genmont_official",
+            "twse_company_basic"
+          ],
+          "description": "是否有可查證的健康食品許可或明確法規定位。",
+          "rationale": "已接入 TFDA 健康食品許可查詢來源；目前仍需逐品項自動比對許可證與核准功效，因此採中性偏保守分。"
+        },
+        {
+          "id": "tfda_ad_compliance",
+          "label": "廣告合規",
+          "weight": 0.24,
+          "status": "ok",
+          "score": 72,
+          "evidence_level": "high",
+          "source_ids": [
+            "tfda_ad_compliance",
+            "tfda"
+          ],
+          "description": "食品、健康食品與營養品廣告是否有違規或裁罰訊號。",
+          "rationale": "先以公開申報違規與負向重大訊息暫代檢查，未見明顯扣分項；TFDA 食品廣告違規資料源已列入待自動比對。"
+        },
+        {
+          "id": "product_evidence",
+          "label": "產品證據",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 60,
+          "evidence_level": "medium",
+          "source_ids": [
+            "tfda_open_data",
+            "genmont_official",
+            "twse_company_basic"
+          ],
+          "description": "產品成分、功效宣稱、人體或文獻證據的可追蹤性。",
+          "rationale": "依研究檔欄位「evidence_level、industry_focus、industry_quality」與來源追溯計算。"
+        },
+        {
+          "id": "quality_system",
+          "label": "品質系統",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 61,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tfda_open_data",
+            "tfda"
+          ],
+          "description": "GMP、HACCP、ISO、供應鏈與製程品質證據。",
+          "rationale": "依研究檔欄位「quality_system」與來源追溯計算。"
+        },
+        {
+          "id": "channel_repeatability",
+          "label": "通路回購性",
+          "weight": 0.14,
+          "status": "ok",
+          "score": 53,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops",
+            "genmont_official"
+          ],
+          "description": "品牌、會員、電商、藥局或通路是否具備重複銷售能力。",
+          "rationale": "依研究檔欄位「channel_quality、revenue_driver」與來源追溯計算。"
+        }
+      ],
+      "rationale": "保健營養食品 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "tw-3711-aseh": {
+      "ticker": "3711",
+      "market": "TWSE",
+      "industry_template": "semiconductor",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "aseh_official",
+        "mops"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 69,
+      "score": 64,
+      "dimensions": [
+        {
+          "id": "technology_position",
+          "label": "技術位置",
+          "weight": 0.26,
+          "status": "ok",
+          "score": 66,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "aseh_official"
+          ],
+          "description": "公司在製程、設計、設備、材料或封測環節中的技術門檻與差異化。",
+          "rationale": "依研究檔欄位「technology_position、industry_focus」與來源追溯計算。"
+        },
+        {
+          "id": "customer_adoption",
+          "label": "客戶導入",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 66,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "aseh_official"
+          ],
+          "description": "主要客戶、設計案、量產導入與客戶集中風險。",
+          "rationale": "依研究檔欄位「customer_structure、revenue_driver」與來源追溯計算。"
+        },
+        {
+          "id": "inventory_cycle",
+          "label": "庫存循環",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "庫存天數、去化速度、產業補庫存或修正循環。",
+          "rationale": "依研究檔欄位「inventory_cycle、key_risk」與來源追溯計算。"
+        },
+        {
+          "id": "gross_margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 58,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "毛利率在景氣循環與價格壓力下的穩定度。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "supply_chain_risk",
+          "label": "供應鏈風險",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 65,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "上游供料、地緣、單一供應商與產能瓶頸風險。",
+          "rationale": "依研究檔欄位「supply_chain_role、key_risk」與來源追溯計算。"
+        }
+      ],
+      "rationale": "半導體 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "tpex-6171": {
+      "ticker": "6171",
+      "market": "TPEx",
+      "industry_template": "infrastructure_transport_real_assets",
+      "status": "ok",
+      "source_ids": [
+        "tpex_company_basic",
+        "mops",
+        "tpex"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": 62,
+      "dimensions": [
+        {
+          "id": "order_backlog",
+          "label": "在手案量與工程能見度",
+          "weight": 0.24,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tpex_company_basic",
+            "tpex"
+          ],
+          "description": "營建、工程或長約服務的在手訂單與認列能見度。",
+          "rationale": "依研究檔欄位「order_backlog、order_visibility」與來源追溯計算。"
+        },
+        {
+          "id": "asset_utilization",
+          "label": "資產利用率",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tpex_company_basic",
+            "tpex"
+          ],
+          "description": "船舶、車隊、倉儲、土地、設備或營運資產使用效率。",
+          "rationale": "依研究檔欄位「asset_utilization、capacity_utilization」與來源追溯計算。"
+        },
+        {
+          "id": "freight_rate_exposure",
+          "label": "運價與租金曝險",
+          "weight": 0.2,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tpex_company_basic",
+            "tpex"
+          ],
+          "description": "運價、租金、房價或工程價格波動對獲利的影響。",
+          "rationale": "依研究檔欄位「freight_rate_exposure、revenue_driver」與來源追溯計算。"
+        },
+        {
+          "id": "interest_rate_exposure",
+          "label": "利率與負債曝險",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tpex_company_basic",
+            "tpex"
+          ],
+          "description": "高負債產業中利率、融資與現金流壓力。",
+          "rationale": "依研究檔欄位「interest_rate_exposure、balance_sheet_resilience、key_risk」與來源追溯計算。"
+        },
+        {
+          "id": "policy_project_pipeline",
+          "label": "政策與標案管線",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tpex_company_basic",
+            "tpex"
+          ],
+          "description": "公共工程、政策補助、標案、建案或航線需求。",
+          "rationale": "依研究檔欄位「project_pipeline、order_backlog、key_catalyst」與來源追溯計算。"
+        }
+      ],
+      "rationale": "基礎建設、營建與運輸 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "tw-6488-globalwafers": {
+      "ticker": "6488",
+      "market": "TPEx",
+      "industry_template": "semiconductor",
+      "status": "ok",
+      "source_ids": [
+        "tpex_company_basic",
+        "globalwafers_official",
+        "mops"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 69,
+      "score": 64,
+      "dimensions": [
+        {
+          "id": "technology_position",
+          "label": "技術位置",
+          "weight": 0.26,
+          "status": "ok",
+          "score": 66,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "globalwafers_official"
+          ],
+          "description": "公司在製程、設計、設備、材料或封測環節中的技術門檻與差異化。",
+          "rationale": "依研究檔欄位「technology_position、industry_focus」與來源追溯計算。"
+        },
+        {
+          "id": "customer_adoption",
+          "label": "客戶導入",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 66,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "globalwafers_official"
+          ],
+          "description": "主要客戶、設計案、量產導入與客戶集中風險。",
+          "rationale": "依研究檔欄位「customer_structure、revenue_driver」與來源追溯計算。"
+        },
+        {
+          "id": "inventory_cycle",
+          "label": "庫存循環",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 62,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "庫存天數、去化速度、產業補庫存或修正循環。",
+          "rationale": "依研究檔欄位「inventory_cycle、key_risk」與來源追溯計算。"
+        },
+        {
+          "id": "gross_margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 58,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "毛利率在景氣循環與價格壓力下的穩定度。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "supply_chain_risk",
+          "label": "供應鏈風險",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 70,
+          "evidence_level": "high",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "上游供料、地緣、單一供應商與產能瓶頸風險。",
+          "rationale": "依研究檔欄位「supply_chain_role、key_risk」與來源追溯計算。"
+        }
+      ],
+      "rationale": "半導體 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "tw-7780-daiken": {
+      "ticker": "7780",
+      "market": "TWSE",
+      "industry_template": "nutrition_health_food",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "daiken_official",
+        "mops",
+        "tfda",
+        "tfda_health_food",
+        "tfda_ad_compliance",
+        "tfda_open_data"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 77,
+      "score": 61,
+      "dimensions": [
+        {
+          "id": "tfda_health_food_permit",
+          "label": "TFDA 健康食品許可",
+          "weight": 0.24,
+          "status": "ok",
+          "score": 60,
+          "evidence_level": "medium",
+          "source_ids": [
+            "tfda_health_food",
+            "tfda",
+            "mops",
+            "daiken_official",
+            "twse_company_basic"
+          ],
+          "description": "是否有可查證的健康食品許可或明確法規定位。",
+          "rationale": "已接入 TFDA 健康食品許可查詢來源；目前仍需逐品項自動比對許可證與核准功效，因此採中性偏保守分。"
+        },
+        {
+          "id": "tfda_ad_compliance",
+          "label": "廣告合規",
+          "weight": 0.24,
+          "status": "ok",
+          "score": 64,
+          "evidence_level": "medium",
+          "source_ids": [
+            "tfda_ad_compliance",
+            "tfda",
+            "mops"
+          ],
+          "description": "食品、健康食品與營養品廣告是否有違規或裁罰訊號。",
+          "rationale": "先以公開申報違規 0 筆、負向重大訊息 1 則暫代扣分；TFDA 食品廣告違規資料源已列入待自動比對。"
+        },
+        {
+          "id": "product_evidence",
+          "label": "產品證據",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 52,
+          "evidence_level": "low",
+          "source_ids": [
+            "tfda_open_data",
+            "daiken_official",
+            "twse_company_basic"
+          ],
+          "description": "產品成分、功效宣稱、人體或文獻證據的可追蹤性。",
+          "rationale": "依研究檔欄位「evidence_level、industry_focus、industry_quality」與來源追溯計算。"
+        },
+        {
+          "id": "quality_system",
+          "label": "品質系統",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 67,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tfda_open_data",
+            "tfda"
+          ],
+          "description": "GMP、HACCP、ISO、供應鏈與製程品質證據。",
+          "rationale": "依研究檔欄位「quality_system」與來源追溯計算。"
+        },
+        {
+          "id": "channel_repeatability",
+          "label": "通路回購性",
+          "weight": 0.14,
+          "status": "ok",
+          "score": 68,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "daiken_official"
+          ],
+          "description": "品牌、會員、電商、藥局或通路是否具備重複銷售能力。",
+          "rationale": "依研究檔欄位「channel_quality、revenue_driver」與來源追溯計算。"
+        }
+      ],
+      "rationale": "保健營養食品 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "tw-8279-syngen": {
+      "ticker": "8279",
+      "market": "TPEx",
+      "industry_template": "nutrition_health_food",
+      "status": "ok",
+      "source_ids": [
+        "tpex_company_basic",
+        "syngen_official",
+        "mops",
+        "tfda",
+        "tfda_health_food",
+        "tfda_ad_compliance",
+        "tfda_open_data"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 77,
+      "score": 62,
+      "dimensions": [
+        {
+          "id": "tfda_health_food_permit",
+          "label": "TFDA 健康食品許可",
+          "weight": 0.24,
+          "status": "ok",
+          "score": 60,
+          "evidence_level": "medium",
+          "source_ids": [
+            "tfda_health_food",
+            "tfda",
+            "mops",
+            "tpex_company_basic",
+            "syngen_official"
+          ],
+          "description": "是否有可查證的健康食品許可或明確法規定位。",
+          "rationale": "已接入 TFDA 健康食品許可查詢來源；目前仍需逐品項自動比對許可證與核准功效，因此採中性偏保守分。"
+        },
+        {
+          "id": "tfda_ad_compliance",
+          "label": "廣告合規",
+          "weight": 0.24,
+          "status": "ok",
+          "score": 72,
+          "evidence_level": "high",
+          "source_ids": [
+            "tfda_ad_compliance",
+            "mops",
+            "tfda"
+          ],
+          "description": "食品、健康食品與營養品廣告是否有違規或裁罰訊號。",
+          "rationale": "先以公開申報違規與負向重大訊息暫代檢查，未見明顯扣分項；TFDA 食品廣告違規資料源已列入待自動比對。"
+        },
+        {
+          "id": "product_evidence",
+          "label": "產品證據",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 58,
+          "evidence_level": "medium",
+          "source_ids": [
+            "tfda_open_data",
+            "syngen_official",
+            "mops",
+            "tpex_company_basic"
+          ],
+          "description": "產品成分、功效宣稱、人體或文獻證據的可追蹤性。",
+          "rationale": "依研究檔欄位「evidence_level、industry_focus、industry_quality」與來源追溯計算。"
+        },
+        {
+          "id": "quality_system",
+          "label": "品質系統",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 63,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tfda_open_data",
+            "syngen_official"
+          ],
+          "description": "GMP、HACCP、ISO、供應鏈與製程品質證據。",
+          "rationale": "依研究檔欄位「quality_system」與來源追溯計算。"
+        },
+        {
+          "id": "channel_repeatability",
+          "label": "通路回購性",
+          "weight": 0.14,
+          "status": "ok",
+          "score": 55,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "品牌、會員、電商、藥局或通路是否具備重複銷售能力。",
+          "rationale": "依研究檔欄位「channel_quality、revenue_driver」與來源追溯計算。"
+        }
+      ],
+      "rationale": "保健營養食品 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "tw-8436-tci": {
+      "ticker": "8436",
+      "market": "TPEx",
+      "industry_template": "nutrition_health_food",
+      "status": "ok",
+      "source_ids": [
+        "tpex_company_basic",
+        "tci_official",
+        "mops",
+        "tfda",
+        "tfda_health_food",
+        "tfda_ad_compliance",
+        "tfda_open_data"
+      ],
+      "evidence_level": "medium",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 77,
+      "score": 63,
+      "dimensions": [
+        {
+          "id": "tfda_health_food_permit",
+          "label": "TFDA 健康食品許可",
+          "weight": 0.24,
+          "status": "ok",
+          "score": 60,
+          "evidence_level": "medium",
+          "source_ids": [
+            "tfda_health_food",
+            "tfda",
+            "mops",
+            "tpex_company_basic",
+            "tci_official"
+          ],
+          "description": "是否有可查證的健康食品許可或明確法規定位。",
+          "rationale": "已接入 TFDA 健康食品許可查詢來源；目前仍需逐品項自動比對許可證與核准功效，因此採中性偏保守分。"
+        },
+        {
+          "id": "tfda_ad_compliance",
+          "label": "廣告合規",
+          "weight": 0.24,
+          "status": "ok",
+          "score": 72,
+          "evidence_level": "high",
+          "source_ids": [
+            "tfda_ad_compliance",
+            "tfda",
+            "mops"
+          ],
+          "description": "食品、健康食品與營養品廣告是否有違規或裁罰訊號。",
+          "rationale": "先以公開申報違規與負向重大訊息暫代檢查，未見明顯扣分項；TFDA 食品廣告違規資料源已列入待自動比對。"
+        },
+        {
+          "id": "product_evidence",
+          "label": "產品證據",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 66,
+          "evidence_level": "medium",
+          "source_ids": [
+            "tfda_open_data",
+            "tci_official",
+            "mops",
+            "tpex_company_basic"
+          ],
+          "description": "產品成分、功效宣稱、人體或文獻證據的可追蹤性。",
+          "rationale": "依研究檔欄位「evidence_level、industry_focus、industry_quality」與來源追溯計算。"
+        },
+        {
+          "id": "quality_system",
+          "label": "品質系統",
+          "weight": 0.16,
+          "status": "ok",
+          "score": 63,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops",
+            "tfda_open_data",
+            "tci_official"
+          ],
+          "description": "GMP、HACCP、ISO、供應鏈與製程品質證據。",
+          "rationale": "依研究檔欄位「quality_system」與來源追溯計算。"
+        },
+        {
+          "id": "channel_repeatability",
+          "label": "通路回購性",
+          "weight": 0.14,
+          "status": "ok",
+          "score": 50,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "品牌、會員、電商、藥局或通路是否具備重複銷售能力。",
+          "rationale": "依研究檔欄位「channel_quality、revenue_driver」與來源追溯計算。"
+        }
+      ],
+      "rationale": "保健營養食品 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    }
+  }
+}

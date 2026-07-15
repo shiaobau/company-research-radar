@@ -1,0 +1,276 @@
+{
+  "version": "0.9.0",
+  "note": "15 類跨產業研究模板。選股宇宙的產業分類應直接對應到這裡的正式研究模板。",
+  "industries": {
+    "semiconductor": {
+      "id": "semiconductor",
+      "label": "半導體",
+      "description": "IC 設計、晶圓製造、封測、矽晶圓、半導體設備、材料與相關供應鏈。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "semi_quality", "label": "半導體產業判讀", "fields": ["technology_position", "customer_structure", "inventory_cycle", "capex_intensity", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["技術節點或產品定位", "客戶導入品質", "庫存循環位置", "資本支出壓力", "毛利韌性", "供應鏈關鍵性"],
+      "industry_evidence_dimensions": [
+        { "id": "technology_position", "label": "技術位置", "weight": 0.26, "source_ids": ["mops"], "description": "公司在製程、設計、設備、材料或封測環節中的技術門檻與差異化。" },
+        { "id": "customer_adoption", "label": "客戶導入", "weight": 0.22, "source_ids": ["mops"], "description": "主要客戶、設計案、量產導入與客戶集中風險。" },
+        { "id": "inventory_cycle", "label": "庫存循環", "weight": 0.18, "source_ids": ["mops"], "description": "庫存天數、去化速度、產業補庫存或修正循環。" },
+        { "id": "gross_margin_resilience", "label": "毛利韌性", "weight": 0.18, "source_ids": ["mops"], "description": "毛利率在景氣循環與價格壓力下的穩定度。" },
+        { "id": "supply_chain_risk", "label": "供應鏈風險", "weight": 0.16, "source_ids": ["mops"], "description": "上游供料、地緣、單一供應商與產能瓶頸風險。" }
+      ]
+    },
+    "electronics_hardware": {
+      "id": "electronics_hardware",
+      "label": "電子硬體與零組件",
+      "description": "電腦週邊、光電、通訊網路、電子零組件、電子通路與其他電子。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "hardware_quality", "label": "電子硬體判讀", "fields": ["product_cycle", "customer_structure", "supply_chain_role", "margin_resilience", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["產品週期", "客戶結構", "供應鏈角色", "毛利韌性", "庫存與價格壓力", "規格升級或設計導入"],
+      "industry_evidence_dimensions": [
+        { "id": "product_cycle", "label": "產品週期", "weight": 0.22, "source_ids": ["mops"], "description": "產品是否處於升級、替換、去庫存或成熟壓價週期。" },
+        { "id": "customer_structure", "label": "客戶結構", "weight": 0.22, "source_ids": ["mops"], "description": "主要客戶品質、集中度、終端需求與議價能力。" },
+        { "id": "supply_chain_role", "label": "供應鏈角色", "weight": 0.2, "source_ids": ["mops"], "description": "公司在模組、零組件、通路或代工環節中的不可替代性。" },
+        { "id": "certification_quality", "label": "認證與規格品質", "weight": 0.18, "source_ids": ["mops"], "description": "產品規格、品質認證、車用或高可靠度應用證據。" },
+        { "id": "margin_resilience", "label": "毛利韌性", "weight": 0.18, "source_ids": ["mops"], "description": "毛利率與營益率是否能抵抗匯率、價格與需求波動。" }
+      ]
+    },
+    "software": {
+      "id": "software",
+      "label": "軟體、雲端與資訊服務",
+      "description": "資訊服務、數位雲端、系統整合、資安、企業軟體與 SaaS。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "software_quality", "label": "軟體服務判讀", "fields": ["recurring_revenue", "retention_signal", "gross_margin_profile", "implementation_depth", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["經常性收入", "續約與留存", "毛利結構", "導入深度", "資安與合規", "客戶擴張能力"],
+      "industry_evidence_dimensions": [
+        { "id": "recurring_revenue", "label": "經常性收入", "weight": 0.26, "source_ids": ["mops"], "description": "訂閱、維護、雲端服務或長約收入的可重複性。" },
+        { "id": "retention_signal", "label": "續約與留存", "weight": 0.24, "source_ids": ["mops"], "description": "續約率、既有客戶擴張、流失率與服務黏著度。" },
+        { "id": "gross_margin_profile", "label": "毛利結構", "weight": 0.18, "source_ids": ["mops"], "description": "軟體、授權、雲端與專案服務的毛利結構。" },
+        { "id": "security_compliance", "label": "資安與合規", "weight": 0.16, "source_ids": ["mops"], "description": "資安認證、資料保護、政府或大型企業採購門檻。" },
+        { "id": "implementation_depth", "label": "導入深度", "weight": 0.16, "source_ids": ["mops"], "description": "導入後是否深入客戶流程，形成替換成本。" }
+      ]
+    },
+    "ai": {
+      "id": "ai",
+      "label": "AI 與資料平台",
+      "description": "AI 服務、資料平台、模型、算力、機器學習與智慧應用。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "ai_quality", "label": "AI 商業化判讀", "fields": ["data_advantage", "model_or_compute_edge", "deployment_maturity", "monetization_path", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["資料權利", "模型或算力優勢", "部署成熟度", "變現路徑", "成本結構", "AI 安全與合規"],
+      "industry_evidence_dimensions": [
+        { "id": "data_rights", "label": "資料權利與獨特性", "weight": 0.24, "source_ids": ["mops"], "description": "是否擁有可合法使用、可更新且難以取得的資料。" },
+        { "id": "model_compute_edge", "label": "模型或算力優勢", "weight": 0.22, "source_ids": ["mops"], "description": "模型能力、推論成本、算力供給與技術部署優勢。" },
+        { "id": "deployment_maturity", "label": "部署成熟度", "weight": 0.2, "source_ids": ["mops"], "description": "從 PoC 到正式上線、SLA、客戶流程整合的成熟度。" },
+        { "id": "monetization_path", "label": "變現路徑", "weight": 0.18, "source_ids": ["mops"], "description": "AI 能否轉成訂閱、授權、交易抽成或效率收益。" },
+        { "id": "ai_safety_compliance", "label": "AI 安全與合規", "weight": 0.16, "source_ids": ["mops"], "description": "資料治理、模型風險、法規與客戶合規需求。" }
+      ]
+    },
+    "biotech_pharma": {
+      "id": "biotech_pharma",
+      "label": "生技製藥",
+      "description": "新藥、製藥、CDMO、原料藥、檢測與生技研發。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "biopharma_quality", "label": "生技製藥判讀", "fields": ["pipeline_stage", "regulatory_status", "clinical_evidence", "partnering_strength", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["管線階段", "臨床或藥證進度", "授權合作", "製造品質", "資金續航", "法規事件"],
+      "industry_evidence_dimensions": [
+        { "id": "pipeline_stage", "label": "管線成熟度", "weight": 0.24, "source_ids": ["mops"], "description": "研發管線所處階段、適應症、成功率與下一個里程碑。" },
+        { "id": "clinical_evidence", "label": "臨床證據", "weight": 0.22, "source_ids": ["mops"], "description": "臨床數據、試驗設計、樣本數、療效與安全性訊號。" },
+        { "id": "regulatory_milestone", "label": "法規里程碑", "weight": 0.2, "source_ids": ["mops"], "description": "IND、NDA、查驗登記、藥證與主管機關互動。" },
+        { "id": "partnering_strength", "label": "授權合作能力", "weight": 0.18, "source_ids": ["mops"], "description": "授權金、里程碑金、共同開發與國際合作品質。" },
+        { "id": "cash_runway", "label": "資金續航", "weight": 0.16, "source_ids": ["mops"], "description": "研發支出、現金水位、增資需求與營運資金壓力。" }
+      ]
+    },
+    "medical_device": {
+      "id": "medical_device",
+      "label": "醫療器材",
+      "description": "醫療器材、診斷耗材、檢測設備、牙科、眼科與照護設備。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "med_device_quality", "label": "醫材判讀", "fields": ["regulatory_status", "clinical_adoption", "reimbursement_status", "channel_quality", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["法規認證", "臨床採用", "通路與耗材回購", "保險給付", "品質系統", "召回或不良事件"],
+      "industry_evidence_dimensions": [
+        { "id": "regulatory_clearance", "label": "TFDA/FDA/CE 認證", "weight": 0.28, "source_ids": ["tfda_open_data", "mops"], "description": "產品是否具備上市許可與主要市場認證。" },
+        { "id": "qms_quality", "label": "QMS/GMP 品質系統", "weight": 0.2, "source_ids": ["tfda_open_data", "mops"], "description": "ISO 13485、QMS、GMP 與品質管理可追蹤性。" },
+        { "id": "clinical_adoption", "label": "臨床採用", "weight": 0.2, "source_ids": ["mops"], "description": "醫院、診所、通路或專科採用程度。" },
+        { "id": "recall_adverse_event", "label": "召回與不良事件", "weight": 0.16, "source_ids": ["tfda_open_data"], "description": "召回、警訊、不良事件與產品風險紀錄。" },
+        { "id": "reimbursement_channel", "label": "給付與通路", "weight": 0.16, "source_ids": ["mops"], "description": "健保、保險、代理通路、耗材回購與海外銷售能力。" }
+      ]
+    },
+    "nutrition_health_food": {
+      "id": "nutrition_health_food",
+      "label": "保健營養食品",
+      "description": "健康食品、營養補充、益生菌、機能食品與食品生技。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "nutrition_quality", "label": "保健食品判讀", "fields": ["regulatory_status", "evidence_level", "quality_system", "channel_quality", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["TFDA 健康食品許可", "廣告合規", "產品證據", "品質系統", "通路回購", "品牌信任"],
+      "industry_evidence_dimensions": [
+        { "id": "tfda_health_food_permit", "label": "TFDA 健康食品許可", "weight": 0.24, "source_ids": ["tfda_health_food"], "description": "是否有可查證的健康食品許可或明確法規定位。" },
+        { "id": "tfda_ad_compliance", "label": "廣告合規", "weight": 0.24, "source_ids": ["tfda_ad_compliance"], "description": "食品、健康食品與營養品廣告是否有違規或裁罰訊號。" },
+        { "id": "product_evidence", "label": "產品證據", "weight": 0.22, "source_ids": ["tfda_open_data"], "description": "產品成分、功效宣稱、人體或文獻證據的可追蹤性。" },
+        { "id": "quality_system", "label": "品質系統", "weight": 0.16, "source_ids": ["mops", "tfda_open_data"], "description": "GMP、HACCP、ISO、供應鏈與製程品質證據。" },
+        { "id": "channel_repeatability", "label": "通路回購性", "weight": 0.14, "source_ids": ["mops"], "description": "品牌、會員、電商、藥局或通路是否具備重複銷售能力。" }
+      ]
+    },
+    "financial": {
+      "id": "financial",
+      "label": "金融保險",
+      "description": "銀行、保險、證券、金控、租賃與其他金融服務。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "financial_quality", "label": "金融業判讀", "fields": ["asset_quality", "capital_adequacy", "interest_rate_sensitivity", "fee_income_mix", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["資產品質", "資本適足", "利率敏感度", "手續費收入", "法遵風險", "股利穩定性"],
+      "industry_evidence_dimensions": [
+        { "id": "asset_quality", "label": "資產品質", "weight": 0.24, "source_ids": ["mops"], "description": "逾放、備抵、投資部位、信用風險與資產組合品質。" },
+        { "id": "capital_adequacy", "label": "資本適足", "weight": 0.22, "source_ids": ["mops"], "description": "資本適足率、淨值比、槓桿與風險承擔能力。" },
+        { "id": "interest_rate_sensitivity", "label": "利率敏感度", "weight": 0.2, "source_ids": ["mops"], "description": "升降息對利差、債券評價與保險負債的影響。" },
+        { "id": "fee_income_mix", "label": "手續費與非利息收入", "weight": 0.18, "source_ids": ["mops"], "description": "財管、證券、保險、租賃與其他非利息收入穩定度。" },
+        { "id": "compliance_risk", "label": "法遵與監理風險", "weight": 0.16, "source_ids": ["mops"], "description": "裁罰、內控缺失、監理要求與重大訴訟。" }
+      ]
+    },
+    "industrial_manufacturing": {
+      "id": "industrial_manufacturing",
+      "label": "工業製造與自動化",
+      "description": "電機機械、電器電纜、工業設備、自動化與製造服務。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "manufacturing_quality", "label": "工業製造判讀", "fields": ["capacity_utilization", "raw_material_exposure", "order_visibility", "automation_level", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["產能利用率", "原物料曝險", "訂單能見度", "自動化程度", "客戶分散", "景氣循環位置"],
+      "industry_evidence_dimensions": [
+        { "id": "capacity_utilization", "label": "產能利用率", "weight": 0.22, "source_ids": ["mops"], "description": "產能、稼動率、擴產與閒置風險。" },
+        { "id": "quality_certification", "label": "品質與認證", "weight": 0.2, "source_ids": ["mops"], "description": "ISO、IATF、客戶稽核、工業安全與品質認證。" },
+        { "id": "order_visibility", "label": "訂單能見度", "weight": 0.2, "source_ids": ["mops"], "description": "在手訂單、長約、交期、客戶 forecast 與接單動能。" },
+        { "id": "raw_material_exposure", "label": "原物料曝險", "weight": 0.18, "source_ids": ["mops"], "description": "鋼、銅、塑化、能源、匯率與成本轉嫁能力。" },
+        { "id": "automation_efficiency", "label": "自動化效率", "weight": 0.2, "source_ids": ["mops"], "description": "自動化、良率、製程效率與單位成本改善。" }
+      ]
+    },
+    "basic_materials": {
+      "id": "basic_materials",
+      "label": "原物料、化工與基礎材料",
+      "description": "水泥、塑膠、玻璃、造紙、鋼鐵、橡膠與化學材料。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "materials_quality", "label": "基礎材料判讀", "fields": ["commodity_cycle", "spread_margin", "raw_material_exposure", "capacity_discipline", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["商品循環", "價差或利差", "成本轉嫁", "產能紀律", "環保成本", "庫存與需求循環"],
+      "industry_evidence_dimensions": [
+        { "id": "commodity_cycle", "label": "商品循環位置", "weight": 0.24, "source_ids": ["mops"], "description": "產品報價、供需循環、庫存與景氣位置。" },
+        { "id": "spread_margin", "label": "價差與利差", "weight": 0.22, "source_ids": ["mops"], "description": "原料與成品價差、加工利差與毛利率彈性。" },
+        { "id": "cost_pass_through", "label": "成本轉嫁能力", "weight": 0.2, "source_ids": ["mops"], "description": "能源、原料、匯率與運費上升時的轉嫁能力。" },
+        { "id": "capacity_discipline", "label": "產能紀律", "weight": 0.18, "source_ids": ["mops"], "description": "擴產、停產、去瓶頸與產業供給紀律。" },
+        { "id": "environmental_compliance", "label": "環保與工安合規", "weight": 0.16, "source_ids": ["mops"], "description": "碳費、污染、工安、環評與法規支出風險。" }
+      ]
+    },
+    "auto_ev_supply_chain": {
+      "id": "auto_ev_supply_chain",
+      "label": "汽車與電動車供應鏈",
+      "description": "汽車、車用零組件、電動車、車用電子與相關供應鏈。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "auto_quality", "label": "車用供應鏈判讀", "fields": ["auto_customer_qualification", "ev_content_growth", "safety_certification", "platform_lifecycle", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["車廠認證", "電動車含量提升", "安全規格", "平台生命週期", "客戶集中", "召回風險"],
+      "industry_evidence_dimensions": [
+        { "id": "auto_customer_qualification", "label": "車廠認證與導入", "weight": 0.24, "source_ids": ["mops"], "description": "是否進入車廠或 Tier 1 供應鏈，並具量產紀錄。" },
+        { "id": "ev_content_growth", "label": "電動車含量提升", "weight": 0.22, "source_ids": ["mops"], "description": "單車價值、電動化、ADAS、熱管理或車用電子滲透。" },
+        { "id": "safety_certification", "label": "安全與品質認證", "weight": 0.2, "source_ids": ["mops"], "description": "IATF 16949、功能安全、車規驗證與品質稽核。" },
+        { "id": "platform_lifecycle", "label": "平台生命週期", "weight": 0.18, "source_ids": ["mops"], "description": "車型平台量產年限、改款週期與接單延續性。" },
+        { "id": "recall_risk", "label": "召回與責任風險", "weight": 0.16, "source_ids": ["mops"], "description": "產品責任、召回、保固與品質事故風險。" }
+      ]
+    },
+    "infrastructure_transport_real_assets": {
+      "id": "infrastructure_transport_real_assets",
+      "label": "基礎建設、營建與運輸",
+      "description": "建材營造、不動產、工程、航運、運輸、倉儲與物流服務。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "real_assets_quality", "label": "基建運輸判讀", "fields": ["order_backlog", "asset_utilization", "freight_rate_exposure", "interest_rate_exposure", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["在手案量", "資產利用率", "運價或租金", "利率曝險", "政策與標案", "負債與現金流"],
+      "industry_evidence_dimensions": [
+        { "id": "order_backlog", "label": "在手案量與工程能見度", "weight": 0.24, "source_ids": ["mops"], "description": "營建、工程或長約服務的在手訂單與認列能見度。" },
+        { "id": "asset_utilization", "label": "資產利用率", "weight": 0.22, "source_ids": ["mops"], "description": "船舶、車隊、倉儲、土地、設備或營運資產使用效率。" },
+        { "id": "freight_rate_exposure", "label": "運價與租金曝險", "weight": 0.2, "source_ids": ["mops"], "description": "運價、租金、房價或工程價格波動對獲利的影響。" },
+        { "id": "interest_rate_exposure", "label": "利率與負債曝險", "weight": 0.18, "source_ids": ["mops"], "description": "高負債產業中利率、融資與現金流壓力。" },
+        { "id": "policy_project_pipeline", "label": "政策與標案管線", "weight": 0.16, "source_ids": ["mops"], "description": "公共工程、政策補助、標案、建案或航線需求。" }
+      ]
+    },
+    "consumer_food_retail": {
+      "id": "consumer_food_retail",
+      "label": "消費、食品、零售與生活",
+      "description": "食品、觀光餐旅、貿易百貨、文創、農業科技、運動休閒與居家生活。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "consumer_quality", "label": "消費生活判讀", "fields": ["brand_strength", "same_store_sales", "channel_mix", "input_cost_sensitivity", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["品牌力", "同店或通路成長", "通路組合", "原料成本", "食品安全", "消費景氣"],
+      "industry_evidence_dimensions": [
+        { "id": "brand_strength", "label": "品牌力", "weight": 0.24, "source_ids": ["mops"], "description": "品牌知名度、定價力、會員與消費者黏著度。" },
+        { "id": "same_store_sales", "label": "同店與通路成長", "weight": 0.22, "source_ids": ["mops"], "description": "同店銷售、展店、電商、加盟與通路效率。" },
+        { "id": "channel_mix", "label": "通路組合", "weight": 0.2, "source_ids": ["mops"], "description": "直營、加盟、量販、電商、海外與 B2B 通路結構。" },
+        { "id": "input_cost_sensitivity", "label": "成本敏感度", "weight": 0.18, "source_ids": ["mops"], "description": "原物料、租金、人力、匯率與價格轉嫁能力。" },
+        { "id": "food_safety_compliance", "label": "食安與合規", "weight": 0.16, "source_ids": ["mops", "tfda_open_data"], "description": "食品安全、標示、廣告、檢驗與違規紀錄。" }
+      ]
+    },
+    "energy_environment_utilities": {
+      "id": "energy_environment_utilities",
+      "label": "能源、環境與公用事業",
+      "description": "油電燃氣、綠能環保、循環經濟、能源服務與公用事業。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "energy_quality", "label": "能源環境判讀", "fields": ["contracted_revenue", "energy_price_exposure", "project_pipeline", "regulatory_tariff", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["合約收入", "能源價格曝險", "專案管線", "費率制度", "環保法規", "資本支出"],
+      "industry_evidence_dimensions": [
+        { "id": "contracted_revenue", "label": "合約收入穩定度", "weight": 0.24, "source_ids": ["mops"], "description": "售電合約、處理合約、公用費率或長約收入可預測性。" },
+        { "id": "energy_price_exposure", "label": "能源價格曝險", "weight": 0.22, "source_ids": ["mops"], "description": "燃料、電價、碳權、原油或天然氣價格敏感度。" },
+        { "id": "project_pipeline", "label": "專案管線", "weight": 0.2, "source_ids": ["mops"], "description": "開發中案場、工程進度、容量、環評與併網時程。" },
+        { "id": "regulatory_tariff", "label": "法規與費率制度", "weight": 0.18, "source_ids": ["mops"], "description": "費率調整、補助、法規變動與政策支持程度。" },
+        { "id": "environmental_permit", "label": "環保許可與合規", "weight": 0.16, "source_ids": ["mops"], "description": "排放、水處理、廢棄物、環保許可與裁罰風險。" }
+      ]
+    },
+    "other": {
+      "id": "other",
+      "label": "其他與待分類",
+      "description": "尚未能用公開產業代碼或關鍵字穩定歸類的公司。",
+      "summary_fields": ["business_model", "industry_focus", "industry_quality"],
+      "modules": [
+        { "id": "common_profile", "label": "公司輪廓", "fields": ["business_model", "industry_focus", "revenue_driver", "key_catalyst", "key_risk"] },
+        { "id": "general_quality", "label": "通用公司判讀", "fields": ["business_clarity", "revenue_visibility", "balance_sheet_resilience", "governance_signal", "industry_quality"] }
+      ],
+      "industry_quality_checks": ["商業模式清楚度", "營收能見度", "資產負債韌性", "治理訊號", "重大訊息", "資料可追蹤性"],
+      "industry_evidence_dimensions": [
+        { "id": "business_clarity", "label": "商業模式清楚度", "weight": 0.24, "source_ids": ["mops"], "description": "公司收入來源、客戶、產品與市場定位是否可理解。" },
+        { "id": "revenue_visibility", "label": "營收能見度", "weight": 0.22, "source_ids": ["mops"], "description": "月營收、合約、訂單或需求是否能支持未來判讀。" },
+        { "id": "balance_sheet_resilience", "label": "資產負債韌性", "weight": 0.2, "source_ids": ["mops"], "description": "現金、負債、流動性與財務壓力。" },
+        { "id": "governance_signal", "label": "治理訊號", "weight": 0.18, "source_ids": ["mops"], "description": "內部人、重大訊息、資訊揭露與治理風險。" },
+        { "id": "traceability", "label": "資料可追蹤性", "weight": 0.16, "source_ids": ["mops"], "description": "公開資料是否足以支持研究判斷。" }
+      ]
+    }
+  }
+}

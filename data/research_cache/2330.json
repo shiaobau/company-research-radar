@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "collected_at": "2026-07-15T03:35:53.816Z",
+  "company": {
+    "id": "tw-2330-tsmc",
+    "ticker": "2330",
+    "name": "台積電",
+    "market": "TWSE",
+    "industry_template": "semiconductor"
+  },
+  "collection_scope": "targeted_research_company",
+  "events": [],
+  "references": [
+    {
+      "id": "mops-history-2330",
+      "title": "台積電 MOPS 歷史重大訊息",
+      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_id": "mops_history_search",
+      "source_type": "official_search_link",
+      "claim_type": "official_search_reference",
+      "review_status": "reference_only",
+      "note": "歷史資料以公開資訊觀測站查詢頁為準；本版本不將未經欄位驗證的網頁內容直接納入評分。"
+    },
+    {
+      "id": "company-website-2330",
+      "title": "台積電 官方網站",
+      "url": "https://www.tsmc.com/english",
+      "source_id": "company_website",
+      "source_type": "company_reference",
+      "claim_type": "company_published_reference",
+      "review_status": "reference_only",
+      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
+    }
+  ],
+  "source_status": [
+    {
+      "source_id": "twse_material_events",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-15T03:35:53.226Z",
+      "row_count": 123,
+      "available": true
+    }
+  ],
+  "limitations": [
+    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
+    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
+    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
+  ]
+}

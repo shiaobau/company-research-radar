@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>跨產業公司研究雷達</title>
+  <meta name="description" content="跨產業公司研究與評分儀錶板，使用 JSON 設定產業模板、欄位定義、評分規則、訊號與公司資料。">
+  <link rel="stylesheet" href="css/styles.css?v=0.17">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Company Research Radar</p>
+      <h1>跨產業公司研究雷達</h1>
+      <p class="subtitle">以官方公開資料、產業證據層與可追溯公式計算七個評分維度，再用產業模板保留跨產業擴充能力。</p>
+    </div>
+    <div class="status-panel" aria-label="資料狀態">
+      <span id="company-count">-- 家公司</span>
+      <span id="last-updated">資料載入中</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="control-strip" aria-label="篩選工具">
+      <label class="search-box">
+        <span>搜尋</span>
+        <input id="search-input" type="search" placeholder="公司、產業、產品、標籤、訊號">
+      </label>
+      <label>
+        <span>產業模板</span>
+        <select id="industry-filter"></select>
+      </label>
+      <label>
+        <span>評分區間</span>
+        <select id="score-filter">
+          <option value="all">全部</option>
+          <option value="80">80 分以上</option>
+          <option value="70">70 分以上</option>
+          <option value="60">60 分以上</option>
+        </select>
+      </label>
+      <button id="reset-button" type="button" class="ghost-button">重設</button>
+    </section>
+
+    <section class="candidate-loader" aria-label="研究清單管理">
+      <div class="scope-copy">
+        <p class="eyebrow">Research Scope</p>
+        <p>選擇或新增公司後，研究建立與更新都由選股頁處理。</p>
+      </div>
+      <label class="seed-import">
+        <span>載入候選種子</span>
+        <input id="candidate-seed-file" type="file" accept="application/json,.json">
+      </label>
+      <a class="ghost-button" href="universe.html">管理公司</a>
+    </section>
+
+    <section id="research-status" class="research-status" aria-live="polite"></section>
+
+    <section class="summary-grid" id="summary-grid" aria-label="總覽指標"></section>
+
+    <section class="workspace">
+      <div class="primary-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Watchlist</p>
+            <h2>公司觀察清單</h2>
+          </div>
+          <span id="visible-count" class="pill">--</span>
+        </div>
+        <div id="company-list" class="company-list" aria-live="polite"></div>
+      </div>
+
+      <aside class="detail-panel" aria-label="公司詳細資料">
+        <div id="company-detail" class="detail-empty">
+          <p class="eyebrow">Company File</p>
+          <h2>選擇一家公司</h2>
+          <p>點選左側公司卡片，可查看產業模板欄位、來源 metadata 與評分拆解。</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section-block" aria-label="產業評估標準">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Evaluation Standard</p>
+          <h2>共通評分與產業模板</h2>
+        </div>
+      </div>
+      <div id="standards-grid" class="standards-grid"></div>
+    </section>
+
+    <section class="section-block" aria-label="事件時間線">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Signals</p>
+          <h2>近期觀察訊號</h2>
+        </div>
+      </div>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <section class="section-block" aria-label="來源與限制">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Traceability</p>
+          <h2>來源與使用限制</h2>
+        </div>
+      </div>
+      <div id="source-list" class="source-list"></div>
+    </section>
+  </main>
+
+  <script src="js/scoring.js?v=0.15"></script>
+  <script src="js/renderers.js?v=0.15"></script>
+  <script src="js/app.js?v=0.17"></script>
+</body>
+</html>

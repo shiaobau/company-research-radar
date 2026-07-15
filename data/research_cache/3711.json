@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "collected_at": "2026-07-15T03:35:53.816Z",
+  "company": {
+    "id": "tw-3711-aseh",
+    "ticker": "3711",
+    "name": "日月光投控",
+    "market": "TWSE",
+    "industry_template": "semiconductor"
+  },
+  "collection_scope": "targeted_research_company",
+  "events": [
+    {
+      "id": "aa4a410b533458b08afa",
+      "date": "2026-07-14",
+      "announced_date": "2026-07-14",
+      "fact_date": "2026-07-14",
+      "announced_time": "181405",
+      "title": "代子公司矽品精密工業(股)公司公告取得營業用機器設備達十億元",
+      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）:\r\n營業用機器設備\r\n2.事實發生日:115/6/17~115/7/14\r\n3.董事會通過日期: 不適用\r\n4.其他核決日期:\r\n核決層級:總經理核決\r\n民國115年7月14日\r\n5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額:\r\n取得6批，\n每批平均單價：NTD 374,118,556元，\n交易總金額：NTD 2,244,711,335元。\r\n6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關\r\n係人者，得免揭露其姓名）:\r\n交易相對人：愛德萬測試股份有限公司；\n與公司之關係：無\r\n7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之\r\n所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期\r\n及移轉金額:\r\n不適用\r\n8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係\r\n人之取得及處分日期、價格及交易當時與公司之關係:\r\n不適用\r\n9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明\r\n認列情形）:\r\n不適用\r\n10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定\r\n事項:\r\n電匯。\n契約限制條款：無。\n其他重要約定事項：無。\r\n11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及\r\n決策單位:\r\n交易決定方式：比價/議價。\n價格決定之參考依據：參考歷年交易資料和市場行情。\n決策單位：依公司內部核決權限決定。\r\n12.專業估價者事務所或公司名稱及其估價金額:\r\n不適用\r\n13.專業估價師姓名:\r\n不適用\r\n14.專業估價師開業證書字號:\r\n不適用\r\n15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用\r\n16.是否尚未取得估價報告:否或不適用\r\n17.尚未取得估價報告之原因:\r\n不適用\r\n18.估價結果有重大差異時，其差異原因及會計師意見:\r\n不適用\r\n19.會計師事務所名稱:\r\n不適用\r\n20.會計師姓名:\r\n不適用\r\n21.會計師開業證書字號:\r\n不適用\r\n22.經紀人及經紀費用:\r\n無\r\n23.取得或處分之具體目的或用途:\r\n營業用途\r\n24.本次交易表示異議之董事之意見:\r\n無\r\n25.本次交易為關係人交易:否\r\n26.監察人承認或審計委員會同意日期:\r\n不適用\r\n27.本次交易係向關係人取得不動產或其使用權資產:否\r\n28.依「公開發行公司取得或處分資產處理準則」第十六條規定\r\n評估之價格:不適用\r\n29.依前項評估之價格較交易價格為低者，依同準則第十七條規\r\n定評估之價格:不適用\r\n30.前已就同一件事件發布重大訊息日期: 不適用\r\n31.其他敘明事項:\r\n無",
+      "clause": "第20款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    }
+  ],
+  "references": [
+    {
+      "id": "mops-history-3711",
+      "title": "日月光投控 MOPS 歷史重大訊息",
+      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3711",
+      "source_id": "mops_history_search",
+      "source_type": "official_search_link",
+      "claim_type": "official_search_reference",
+      "review_status": "reference_only",
+      "note": "歷史資料以公開資訊觀測站查詢頁為準；本版本不將未經欄位驗證的網頁內容直接納入評分。"
+    },
+    {
+      "id": "company-website-3711",
+      "title": "日月光投控 官方網站",
+      "url": "https://www.aseglobal.com/",
+      "source_id": "company_website",
+      "source_type": "company_reference",
+      "claim_type": "company_published_reference",
+      "review_status": "reference_only",
+      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
+    }
+  ],
+  "source_status": [
+    {
+      "source_id": "twse_material_events",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-15T03:35:53.226Z",
+      "row_count": 123,
+      "available": true
+    }
+  ],
+  "limitations": [
+    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
+    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
+    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "version": "0.4.0",
+  "scoring_method": "跨產業總分採共通 7 維度加權平均；營收動能、現金/獲利品質、股價位置/趨勢可由公開客觀資料覆蓋人工初評；最後一項 industryFundamental 由各產業模板定義子檢核。",
+  "common_dimensions": [
+    {
+      "id": "catalyst",
+      "label": "催化事件",
+      "weight": 0.2,
+      "description": "觀察新品、訂單、認證、產能、合作、併購、法規進度、重大專案等可能改變市場預期的事件。",
+      "high_score_signal": "事件明確、時間接近、影響範圍可追蹤，且有公告或可信來源支撐。"
+    },
+    {
+      "id": "revenueMomentum",
+      "label": "營收動能",
+      "weight": 0.18,
+      "description": "觀察月營收、累計營收、YoY/MoM、訂單能見度與旺季循環。",
+      "high_score_signal": "月營收連續改善，年增率轉強，且不是一次性因素。"
+    },
+    {
+      "id": "cashProfitQuality",
+      "label": "現金/獲利品質",
+      "weight": 0.17,
+      "description": "觀察現金水位、自由現金流、毛利率、營益率、存貨、應收帳款與資本支出壓力。",
+      "high_score_signal": "現金充足、毛利或營益率穩定，營運資金沒有明顯惡化。"
+    },
+    {
+      "id": "priceTrend",
+      "label": "股價位置/趨勢",
+      "weight": 0.15,
+      "description": "觀察股價相對區間、短中期趨勢、量能、過熱或落後程度。",
+      "high_score_signal": "趨勢改善但未明顯過熱，量價配合且仍有事件或基本面支撐。"
+    },
+    {
+      "id": "ownership",
+      "label": "籌碼/股權結構",
+      "weight": 0.1,
+      "description": "觀察大股東、法人、董監、股東人數、股本稀釋與集中度變化。",
+      "high_score_signal": "長線籌碼穩定，未見明顯稀釋或籌碼鬆動。"
+    },
+    {
+      "id": "riskNews",
+      "label": "新聞/重大訊息風險",
+      "weight": 0.1,
+      "description": "觀察重大訊息、裁罰、訴訟、召回、客戶異動、負面新聞與輿情雜訊。",
+      "high_score_signal": "近期訊號多為中性或正向，負面事件少且可控。"
+    },
+    {
+      "id": "industryFundamental",
+      "label": "產業基本面",
+      "weight": 0.1,
+      "description": "依產業模板評估護城河、產品可信度、技術位置、通路、法規、商業模式與週期位置。",
+      "high_score_signal": "產業特有的關鍵檢核項目具可追溯資料，且與財務表現方向一致。"
+    }
+  ],
+  "score_bands": [
+    { "min": 85, "label": "高度研究名單" },
+    { "min": 75, "label": "值得追蹤" },
+    { "min": 65, "label": "觀察中" },
+    { "min": 55, "label": "低分觀察" },
+    { "min": 0, "label": "資料不足" }
+  ]
+}

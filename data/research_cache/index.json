@@ -1,0 +1,64 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-07-15T04:00:21.543Z",
+  "collection_scope": "targeted_research_company",
+  "source_status": [
+    {
+      "source_id": "twse_material_events",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-15T03:35:53.226Z",
+      "row_count": 123,
+      "available": true
+    },
+    {
+      "source_id": "tpex_material_events",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-15T03:35:53.681Z",
+      "row_count": 70,
+      "available": true
+    }
+  ],
+  "companies": [
+    {
+      "ticker": "1909",
+      "company_id": "twse-1909",
+      "name": "榮成",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-15T04:00:21.543Z",
+      "cache_path": "data/research_cache/1909.json"
+    },
+    {
+      "ticker": "2344",
+      "company_id": "twse-2344",
+      "name": "華邦電",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-15T04:00:21.543Z",
+      "cache_path": "data/research_cache/2344.json"
+    },
+    {
+      "ticker": "2345",
+      "company_id": "twse-2345",
+      "name": "智邦",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-15T04:00:21.543Z",
+      "cache_path": "data/research_cache/2345.json"
+    },
+    {
+      "ticker": "6171",
+      "company_id": "tpex-6171",
+      "name": "大城地產",
+      "market": "TPEx",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-15T04:00:21.543Z",
+      "cache_path": "data/research_cache/6171.json"
+    }
+  ],
+  "total_events": 0
+}

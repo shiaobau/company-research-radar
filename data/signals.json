@@ -1,0 +1,61 @@
+{
+  "version": "0.3.0",
+  "note": "第三版真實公司試點訊號。這些是研究待辦與資料補齊訊號，未來可由重大訊息、月營收、財報、股價、新聞與法規資料更新腳本產生。",
+  "signals": [
+    {
+      "id": "sig-1707-revenue",
+      "company_id": "tw-1707-grapeking",
+      "date": "2026-Q3",
+      "type": "月營收",
+      "dimension": "revenueMomentum",
+      "impact": "watch",
+      "confidence": "medium",
+      "title": "補抓月營收 YoY/MoM，確認品牌產品組合是否轉強",
+      "source_ids": ["mops"]
+    },
+    {
+      "id": "sig-8436-margin",
+      "company_id": "tw-8436-tci",
+      "date": "2026-Q3",
+      "type": "財報",
+      "dimension": "cashProfitQuality",
+      "impact": "watch",
+      "confidence": "medium",
+      "title": "補財報毛利率、存貨與應收，檢查 ODM 訂單品質",
+      "source_ids": ["mops"]
+    },
+    {
+      "id": "sig-7780-listing",
+      "company_id": "tw-7780-daiken",
+      "date": "2026-Q3",
+      "type": "股價",
+      "dimension": "priceTrend",
+      "impact": "watch",
+      "confidence": "medium",
+      "title": "上市後價格區間與量能需獨立追蹤，避免品牌題材過熱",
+      "source_ids": ["twse"]
+    },
+    {
+      "id": "sig-8279-disclosure",
+      "company_id": "tw-8279-syngen",
+      "date": "2026-Q3",
+      "type": "年報",
+      "dimension": "industryFundamental",
+      "impact": "watch",
+      "confidence": "medium",
+      "title": "補年報與產品資料，確認益生菌/發酵素材業務占比",
+      "source_ids": ["mops"]
+    },
+    {
+      "id": "sig-3164-product-evidence",
+      "company_id": "tw-3164-genmont",
+      "date": "2026-Q3",
+      "type": "品項證據",
+      "dimension": "industryFundamental",
+      "impact": "watch",
+      "confidence": "medium",
+      "title": "逐品項整理益生菌證據、宣稱邊界與健康食品許可狀態",
+      "source_ids": ["tfda", "mops"]
+    }
+  ]
+}

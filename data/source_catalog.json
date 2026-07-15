@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "sources": [
+    { "id": "twse_monthly_revenue", "title": "TWSE 月營收", "url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L", "ttl_hours": 12 },
+    { "id": "tpex_monthly_revenue", "title": "TPEx 月營收", "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap05_O", "ttl_hours": 12 },
+    { "id": "twse_income_statement", "title": "TWSE 綜合損益表", "url": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci", "ttl_hours": 24 },
+    { "id": "tpex_income_statement", "title": "TPEx 綜合損益表", "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap06_O_ci", "ttl_hours": 24 },
+    { "id": "twse_balance_sheet", "title": "TWSE 資產負債表", "url": "https://openapi.twse.com.tw/v1/opendata/t187ap07_L_ci", "ttl_hours": 24 },
+    { "id": "tpex_balance_sheet", "title": "TPEx 資產負債表", "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap07_O_ci", "ttl_hours": 24 },
+    { "id": "twse_material_events", "title": "TWSE 重大訊息", "url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L", "ttl_hours": 6 },
+    { "id": "tpex_material_events", "title": "TPEx 重大訊息", "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O", "ttl_hours": 6 },
+    { "id": "twse_major_shareholders", "title": "TWSE 大股東持股", "url": "https://openapi.twse.com.tw/v1/opendata/t187ap02_L", "ttl_hours": 24 },
+    { "id": "tpex_major_shareholders", "title": "TPEx 大股東持股", "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap02_O", "ttl_hours": 24 },
+    { "id": "twse_insider_transfer", "title": "TWSE 內部人股權異動", "url": "https://openapi.twse.com.tw/v1/opendata/t187ap12_L", "ttl_hours": 24 },
+    { "id": "tpex_insider_transfer", "title": "TPEx 內部人股權異動", "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap12_O", "ttl_hours": 24 },
+    { "id": "twse_disclosure_violations", "title": "TWSE 違規處分", "url": "https://openapi.twse.com.tw/v1/opendata/t187ap23_L", "ttl_hours": 24 },
+    { "id": "tpex_disclosure_violations", "title": "TPEx 違規處分", "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap23_O", "ttl_hours": 24 }
+  ]
+}

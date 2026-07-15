@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "collected_at": "2026-07-15T03:35:53.816Z",
+  "company": {
+    "id": "tw-2303-umc",
+    "ticker": "2303",
+    "name": "聯電",
+    "market": "TWSE",
+    "industry_template": "semiconductor"
+  },
+  "collection_scope": "targeted_research_company",
+  "events": [
+    {
+      "id": "4fae64ffe7f5372d9626",
+      "date": "2026-07-14",
+      "announced_date": "2026-07-14",
+      "fact_date": "2026-07-29",
+      "announced_time": "140135",
+      "title": "本公司召開2026年第二季法人說明會",
+      "description": "符合條款第四條第XX款：12\r\n事實發生日：115/07/29\r\n1.召開法人說明會之日期：115/07/29\r\n2.召開法人說明會之時間：17 時 00 分 \r\n3.召開法人說明會之地點：線上法說會\r\n4.法人說明會擇要訊息：本公司2026年第二季財務暨營運報告。\r\n5.其他應敘明事項：無\r\n完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    }
+  ],
+  "references": [
+    {
+      "id": "mops-history-2303",
+      "title": "聯電 MOPS 歷史重大訊息",
+      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_id": "mops_history_search",
+      "source_type": "official_search_link",
+      "claim_type": "official_search_reference",
+      "review_status": "reference_only",
+      "note": "歷史資料以公開資訊觀測站查詢頁為準；本版本不將未經欄位驗證的網頁內容直接納入評分。"
+    },
+    {
+      "id": "company-website-2303",
+      "title": "聯電 官方網站",
+      "url": "https://www.umc.com/en/Home/Index",
+      "source_id": "company_website",
+      "source_type": "company_reference",
+      "claim_type": "company_published_reference",
+      "review_status": "reference_only",
+      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
+    }
+  ],
+  "source_status": [
+    {
+      "source_id": "twse_material_events",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-15T03:35:53.226Z",
+      "row_count": 123,
+      "available": true
+    }
+  ],
+  "limitations": [
+    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
+    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
+    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-07-15T03:35:53.922Z",
+  "current_run": null,
+  "schedules": {
+    "morning": {
+      "label": "早晨公告補漏",
+      "time": "08:15",
+      "description": "更新重大訊息快取與研究公司事件。",
+      "last_run": {
+        "slot": "morning",
+        "label": "早晨公告補漏",
+        "status": "done",
+        "started_at": "2026-07-15T03:35:50.907Z",
+        "steps": [
+          {
+            "script": "tools/source-cache.mjs",
+            "args": [
+              "--refresh",
+              "--ids=twse_material_events,tpex_material_events"
+            ],
+            "status": "done",
+            "started_at": "2026-07-15T03:35:50.908Z",
+            "finished_at": "2026-07-15T03:35:53.707Z",
+            "output_tail": "twse_material_events: updated, 123 rows, 2026-07-15T03:35:53.226Z\ntpex_material_events: updated, 70 rows, 2026-07-15T03:35:53.681Z\n"
+          },
+          {
+            "script": "tools/targeted-collector.mjs",
+            "args": [],
+            "status": "done",
+            "started_at": "2026-07-15T03:35:53.708Z",
+            "finished_at": "2026-07-15T03:35:53.920Z",
+            "output_tail": "{\n  \"status\": \"done\",\n  \"companies\": 13,\n  \"researched_companies\": 13,\n  \"total_events\": 4,\n  \"cache\": \"data\\\\research_cache\"\n}\n"
+          }
+        ],
+        "finished_at": "2026-07-15T03:35:53.921Z",
+        "company_count": 13
+      }
+    },
+    "market_close": {
+      "label": "收盤完整更新",
+      "time": "14:15",
+      "description": "更新官方快取、價格與評分，再刷新研究事件。",
+      "last_run": null
+    },
+    "evening": {
+      "label": "晚間公告補更新",
+      "time": "20:30",
+      "description": "更新重大訊息、違規與股權資料，再刷新研究事件。",
+      "last_run": null
+    }
+  }
+}

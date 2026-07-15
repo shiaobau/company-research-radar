@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台股產業研究宇宙</title>
+  <meta name="description" content="依產業模板搜尋、分區與勾選上市上櫃公司，作為後續研究檔建立前的前置篩選器。">
+  <link rel="stylesheet" href="css/universe.css?v=0.16">
+</head>
+<body>
+  <header class="page-header">
+    <div>
+      <p class="eyebrow">Research Universe</p>
+      <h1>台股產業研究宇宙</h1>
+      <p class="subtitle">用官方產業代碼建立第一層分類，再用少量可追蹤規則細分成 15 個產業模板。先勾選有興趣的公司，下一步再建立研究檔與接資料。</p>
+    </div>
+    <nav class="header-actions" aria-label="頁面切換">
+      <a href="index.html">回到評分儀表板</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="toolbar" aria-label="搜尋與選取工具">
+      <label class="search-field">
+        <span>搜尋</span>
+        <input id="search-input" type="search" placeholder="輸入股票代號、公司名稱、簡稱或產業">
+      </label>
+      <label>
+        <span>產業模板</span>
+        <select id="template-filter"></select>
+      </label>
+      <label>
+        <span>市場</span>
+        <select id="market-filter">
+          <option value="all">全部</option>
+          <option value="TWSE">上市</option>
+          <option value="TPEx">上櫃</option>
+        </select>
+      </label>
+      <button id="clear-button" type="button">清除選取</button>
+    </section>
+
+    <section class="summary-strip" aria-label="清單摘要">
+      <div>
+        <span>全市場</span>
+        <strong id="total-count">--</strong>
+      </div>
+      <div>
+        <span>目前顯示</span>
+        <strong id="visible-count">--</strong>
+      </div>
+      <div>
+        <span>已勾選</span>
+        <strong id="selected-count">0</strong>
+      </div>
+      <div>
+        <span>資料更新</span>
+        <strong id="generated-at">--</strong>
+      </div>
+    </section>
+
+    <section class="selected-panel" aria-label="已勾選公司">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">Selection</p>
+          <h2>已勾選研究候選</h2>
+        </div>
+        <span id="copy-status" class="status-text" aria-live="polite"></span>
+      </div>
+      <div id="selected-list" class="selected-list"></div>
+      <div class="selection-actions">
+        <button id="save-seed-button" type="button">保存候選種子</button>
+        <button id="start-research-button" type="button" class="primary-action">開始建立研究檔</button>
+      </div>
+    </section>
+
+    <section id="template-sections" class="template-sections" aria-live="polite"></section>
+  </main>
+
+  <script src="js/universe.js?v=0.16"></script>
+</body>
+</html>
