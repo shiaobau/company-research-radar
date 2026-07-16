@@ -1,3 +1,4 @@
+import { spawn } from "node:child_process";
 import { mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -38,11 +39,11 @@ function sourceUrl(ticker, year = "") {
 }
 
 function rocYear(date = new Date()) {
-  return date.getFullYear() - 1911;
+  return date.getUTCFullYear() - 1911;
 }
 
-function requestedYears(yearCount) {
-  const currentYear = rocYear();
+function requestedYears(yearCount, referenceDate = new Date()) {
+  const currentYear = rocYear(referenceDate);
   return Array.from({ length: Math.max(1, yearCount) }, (_, index) => String(currentYear - index));
 }
 
@@ -51,40 +52,86 @@ function cacheIsFresh(record, ttlHours) {
   return Number.isFinite(timestamp) && Date.now() - timestamp < ttlHours * 60 * 60 * 1000;
 }
 
-async function readCache(ticker) {
+async function readCache(ticker, directory = cacheDir) {
   try {
-    return JSON.parse(await readFile(path.join(cacheDir, `${ticker}.json`), "utf8"));
+    return JSON.parse(await readFile(path.join(directory, `${ticker}.json`), "utf8"));
   } catch {
     return null;
   }
 }
 
-async function postMops(apiName, payload) {
-  let lastError;
-  for (let attempt = 0; attempt < 3; attempt += 1) {
-    try {
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 30000);
-      const response = await fetch(`${apiBase}/${apiName}`, {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-          accept: "application/json"
-        },
-        body: JSON.stringify(payload),
-        signal: controller.signal
-      });
+async function postMopsWithPowerShell(apiName, payload) {
+  const command = "[Console]::OutputEncoding=[System.Text.Encoding]::UTF8; $ProgressPreference='SilentlyContinue'; Invoke-WebRequest -UseBasicParsing -Uri $env:CODEX_MOPS_URL -Method POST -ContentType 'application/json' -Body $env:CODEX_MOPS_BODY -TimeoutSec 20 | Select-Object -ExpandProperty Content";
+  return new Promise((resolve, reject) => {
+    const child = spawn("powershell.exe", ["-NoProfile", "-Command", command], {
+      cwd: root,
+      env: {
+        ...process.env,
+        CODEX_MOPS_URL: `${apiBase}/${apiName}`,
+        CODEX_MOPS_BODY: JSON.stringify(payload)
+      },
+      windowsHide: true,
+      stdio: ["ignore", "pipe", "pipe"]
+    });
+    let stdout = "";
+    let stderr = "";
+    const timeout = setTimeout(() => {
+      child.kill("SIGKILL");
+      reject(new Error(`MOPS ${apiName} PowerShell request timed out.`));
+    }, 30000);
+    child.stdout.on("data", (chunk) => { stdout += chunk.toString(); });
+    child.stderr.on("data", (chunk) => { stderr += chunk.toString(); });
+    child.on("error", (error) => {
       clearTimeout(timeout);
-      if (!response.ok) throw new Error(`MOPS ${apiName} returned ${response.status}.`);
-      const result = await response.json();
-      if (Number(result?.code) !== 200) throw new Error(result?.message || `MOPS ${apiName} did not return data.`);
-      return result.result || {};
-    } catch (error) {
-      lastError = error;
-      if (attempt < 2) await sleep(900 * (attempt + 1));
+      reject(error);
+    });
+    child.on("exit", (code) => {
+      clearTimeout(timeout);
+      if (code !== 0) {
+        reject(new Error(stderr || `MOPS ${apiName} PowerShell exited with ${code}.`));
+        return;
+      }
+      try {
+        resolve(JSON.parse(stdout));
+      } catch (error) {
+        reject(new Error(`MOPS ${apiName} PowerShell returned invalid JSON: ${error.message}`));
+      }
+    });
+  });
+}
+
+async function postMops(apiName, payload) {
+  try {
+    const result = await postMopsWithPowerShell(apiName, payload);
+    if (Number(result?.code) !== 200) throw new Error(result?.message || `MOPS ${apiName} did not return data.`);
+    return result.result || {};
+  } catch (powerShellError) {
+    let lastError = powerShellError;
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      try {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 12000);
+        const response = await fetch(`${apiBase}/${apiName}`, {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+            accept: "application/json"
+          },
+          body: JSON.stringify(payload),
+          signal: controller.signal
+        });
+        clearTimeout(timeout);
+        if (!response.ok) throw new Error(`MOPS ${apiName} returned ${response.status}.`);
+        const result = await response.json();
+        if (Number(result?.code) !== 200) throw new Error(result?.message || `MOPS ${apiName} did not return data.`);
+        return result.result || {};
+      } catch (error) {
+        lastError = error;
+        if (attempt < 2) await sleep(900 * (attempt + 1));
+      }
     }
+    throw new Error(`PowerShell failed: ${powerShellError.message}; Node fetch failed: ${lastError.message}`);
   }
-  throw lastError;
 }
 
 function listEvent(row) {
@@ -141,15 +188,18 @@ export async function getMopsHistory(ticker, options = {}) {
   const yearCount = Math.max(1, Number(options.yearCount || 2));
   const maxEvents = Math.max(1, Number(options.maxEvents || 60));
   const detailLimit = Math.max(0, Number(options.detailLimit || 6));
-  const cached = await readCache(normalizedTicker);
-  if (cached && !options.force && cacheIsFresh(cached, ttlHours)) {
+  const asOfDate = /^\d{4}-\d{2}-\d{2}$/.test(String(options.asOfDate || "")) ? String(options.asOfDate) : null;
+  const targetCacheDir = options.cacheDirectory || cacheDir;
+  const cached = await readCache(normalizedTicker, targetCacheDir);
+  if (cached && !options.force && cached.as_of_date === asOfDate && cacheIsFresh(cached, ttlHours)) {
     return { ...cached, cache_status: "fresh" };
   }
 
   const events = [];
   const queriedYears = [];
   try {
-    for (const year of requestedYears(yearCount)) {
+    const referenceDate = asOfDate ? new Date(`${asOfDate}T00:00:00Z`) : new Date();
+    for (const year of requestedYears(yearCount, referenceDate)) {
       const result = await postMops("t05st01", {
         companyId: normalizedTicker,
         year,
@@ -170,6 +220,7 @@ export async function getMopsHistory(ticker, options = {}) {
   }
 
   const selected = dedupeEvents(events)
+    .filter((event) => !asOfDate || String(event.announced_date || event.date || "") <= asOfDate)
     .sort((left, right) => `${right.date} ${right.announced_time || ""}`.localeCompare(`${left.date} ${left.announced_time || ""}`))
     .slice(0, maxEvents);
 
@@ -189,13 +240,14 @@ export async function getMopsHistory(ticker, options = {}) {
     ticker: normalizedTicker,
     fetched_at: new Date().toISOString(),
     cache_status: "updated",
+    as_of_date: asOfDate,
     queried_roc_years: queriedYears,
     event_count: selected.length,
     detail_count: selected.filter((event) => event.description).length,
     events: selected
   };
-  await mkdir(cacheDir, { recursive: true });
-  await writeJson(path.join(cacheDir, `${normalizedTicker}.json`), payload);
+  await mkdir(targetCacheDir, { recursive: true });
+  await writeJson(path.join(targetCacheDir, `${normalizedTicker}.json`), payload);
   return payload;
 }
 
@@ -206,6 +258,8 @@ async function main() {
     .map((ticker) => ticker.trim())
     .filter((ticker) => /^\d{4}$/.test(ticker));
   const tickers = [...new Set(requested.length ? requested : (companiesJson.companies || []).map((company) => company.ticker))];
+  const asOfDate = argValue("as-of", "");
+  const targetCacheDir = path.resolve(root, argValue("cache-dir", cacheDir));
   const results = [];
   for (const ticker of tickers) {
     try {
@@ -213,7 +267,9 @@ async function main() {
         force: process.argv.includes("--refresh"),
         yearCount: Number(argValue("years", "2")),
         maxEvents: Number(argValue("max-events", "60")),
-        detailLimit: Number(argValue("detail-limit", "6"))
+        detailLimit: Number(argValue("detail-limit", "6")),
+        asOfDate,
+        cacheDirectory: targetCacheDir
       });
       results.push({ ticker, cache_status: result.cache_status, event_count: result.event_count, detail_count: result.detail_count });
     } catch (error) {
