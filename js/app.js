@@ -226,7 +226,7 @@ function candidateWatchlistItems() {
       template_label: official?.template_label || templateId,
       official_industry_label: official?.official_industry_label || "",
       thesis: "已加入研究候選，公開資料蒐集中。",
-      tags: ["研究候選", "待建立研究檔"],
+      tags: ["研究候選", "研究準備中"],
       official
     };
   });
@@ -1199,7 +1199,6 @@ function formatDashboardTimestamp() {
 }
 
 function renderSummary(companies) {
-  {
   const scoredCompanies = companies.filter((company) => !company.__candidate);
   const candidateOnlyCount = companies.length - scoredCompanies.length;
   const scores = scoredCompanies
@@ -1207,8 +1206,7 @@ function renderSummary(companies) {
     .filter(Number.isFinite);
   const average = scores.length ? Math.round(scores.reduce((sum, score) => sum + score, 0) / scores.length) : "尚未評分";
   const activeSignals = scoredCompanies.flatMap(objectiveSignalsFor).length;
-  const dataCoverage = scoredCompanies.reduce((sum, company) => sum + (state.dataStatus.companies?.[company.id]?.completed_count || 0), 0);
-  const totalCoverage = scoredCompanies.reduce((sum, company) => sum + (state.dataStatus.companies?.[company.id]?.total_count || 6), 0);
+  const researchInProgress = candidateOnlyCount + scoredCompanies.length - scores.length;
   const modeLabel = universeSelectionMode() ? "候選" : "公司";
 
   $("#company-count").textContent = `${companies.length} ${modeLabel}`;
@@ -1216,33 +1214,9 @@ function renderSummary(companies) {
   $("#last-updated").textContent = `資料更新：${formatDashboardTimestamp()}`;
   $("#summary-grid").innerHTML = [
     ["平均評分", average],
-    ["完成分析", scores.length],
-    ["資料待補", scoredCompanies.length - scores.length],
-    ["待建立研究檔", candidateOnlyCount],
-    ["資料覆蓋", scoredCompanies.length ? `${dataCoverage}/${totalCoverage}` : "尚未接資料"],
+    ["完成研究", `${scores.length}/${companies.length}`],
+    ["研究中", researchInProgress],
     ["追蹤訊號", activeSignals]
-  ].map(([label, value]) => `<div class="metric"><span class="muted">${label}</span><strong>${value}</strong></div>`).join("");
-  return;
-  }
-
-  const scoredCompanies = companies.filter((company) => !company.__candidate);
-  const scores = scoredCompanies.map((company) => RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets()).total);
-  const average = scores.length ? Math.round(scores.reduce((sum, score) => sum + score, 0) / scores.length) : 0;
-  const highEvidence = scoredCompanies.filter((company) => RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets()).rows.some((row) => row.evidenceLevel === "high")).length;
-  const openRisks = scoredCompanies.reduce((sum, company) => sum + ((company.risks || []).length), 0);
-  const activeSignals = state.signals.filter((signal) => scoredCompanies.some((company) => company.id === signal.company_id)).length;
-  const dataCoverage = scoredCompanies.reduce((sum, company) => sum + (state.dataStatus.companies?.[company.id]?.completed_count || 0), 0);
-  const totalCoverage = scoredCompanies.reduce((sum, company) => sum + (state.dataStatus.companies?.[company.id]?.total_count || 6), 0);
-
-  $("#company-count").textContent = `${state.companies.length} 家公司`;
-  $("#visible-count").textContent = `${companies.length} 筆`;
-  $("#last-updated").textContent = `更新：${new Date().toLocaleDateString("zh-TW")}`;
-  $("#summary-grid").innerHTML = [
-    ["平均評分", average],
-    ["高證據項目", highEvidence],
-    ["待追風險", openRisks],
-    ["客觀資料", `${dataCoverage}/${totalCoverage}`],
-    ["訊號數", activeSignals]
   ].map(([label, value]) => `<div class="metric"><span class="muted">${label}</span><strong>${value}</strong></div>`).join("");
 }
 
