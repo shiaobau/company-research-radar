@@ -43,7 +43,7 @@ Promise.all([
   fetch("data/data_status.json").then((response) => response.json()).catch(() => ({ companies: {} })),
   fetch("data/public_facts.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
   fetch("data/listed_companies_universe.json").then((response) => response.json()).catch(() => ({ companies: [] })),
-  fetch("data/research_cache/index.json").then((response) => response.json()).catch(() => ({ companies: [] })),
+  fetch("data/research_cache/index.json", { cache: "no-store" }).then((response) => response.json()).catch(() => ({ companies: [] })),
   fetch("data/scheduler_status.json").then((response) => response.json()).catch(() => ({ schedules: {}, current_run: null }))
 ]).then(([templates, definitions, rules, companies, signals, marketData, revenueData, financialData, catalystData, ownershipData, riskData, industryEvidenceData, industryData, dataStatus, publicFactsData, universe, researchCacheIndex, schedulerStatus]) => {
   state.templates = templates.industries;
