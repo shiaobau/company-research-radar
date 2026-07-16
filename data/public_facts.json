@@ -1,0 +1,868 @@
+{
+  "version": "0.7.0",
+  "generated_at": "2026-07-15T08:32:05.509Z",
+  "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
+  "sources": [
+    {
+      "id": "tpex_company_basic",
+      "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司基本資料",
+      "short_title": "TPEx 公司基本",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O",
+      "note": "用於驗證上櫃公司股票代號、公司名稱、上櫃日期、公司網址等基本資料。"
+    },
+    {
+      "id": "tpex_monthly_revenue",
+      "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司每月營業收入彙總表",
+      "short_title": "TPEx 月營收",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap05_O",
+      "note": "上櫃公司每月營收、MoM、YoY 與累計 YoY。"
+    },
+    {
+      "id": "tpex_income_statement",
+      "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司綜合損益表",
+      "short_title": "TPEx 損益",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap06_O_ci",
+      "note": "上櫃公司一般業綜合損益表，用於毛利率、營益率、淨利率與 EPS。"
+    },
+    {
+      "id": "tpex_balance_sheet",
+      "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司資產負債表",
+      "short_title": "TPEx 資產負債",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap07_O_ci",
+      "note": "上櫃公司一般業資產負債表，用於流動比率、負債比率與每股淨值。"
+    },
+    {
+      "id": "tpex_trading_stock",
+      "title": "證券櫃檯買賣中心：個股日成交資訊",
+      "short_title": "TPEx 股價",
+      "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock",
+      "note": "上櫃公司個股日成交資訊，用於計算近一年價格區間、20/60 日趨勢。"
+    },
+    {
+      "id": "twse_monthly_revenue",
+      "title": "臺灣證券交易所 OpenAPI：上市公司每月營業收入彙總表",
+      "short_title": "TWSE 月營收",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "note": "上市公司每月營收、MoM、YoY 與累計 YoY。"
+    },
+    {
+      "id": "twse_income_statement",
+      "title": "臺灣證券交易所 OpenAPI：上市公司綜合損益表",
+      "short_title": "TWSE 損益",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
+      "note": "上市公司一般業綜合損益表，用於毛利率、營益率、淨利率與 EPS。"
+    },
+    {
+      "id": "twse_balance_sheet",
+      "title": "臺灣證券交易所 OpenAPI：上市公司資產負債表",
+      "short_title": "TWSE 資產負債",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap07_L_ci",
+      "note": "上市公司一般業資產負債表，用於流動比率、負債比率與每股淨值。"
+    },
+    {
+      "id": "twse_stock_day",
+      "title": "臺灣證券交易所：個股日成交資訊",
+      "short_title": "TWSE 股價",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY",
+      "note": "上市公司個股日成交資訊，用於計算近一年價格區間、20/60 日趨勢。"
+    },
+    {
+      "id": "twse_material_events",
+      "title": "臺灣證券交易所 OpenAPI：上市公司每日重大訊息",
+      "short_title": "TWSE 重大訊息",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "note": "上市公司每日重大訊息，用於催化事件與新聞/重大訊息風險評分。"
+    },
+    {
+      "id": "twse_company_basic",
+      "title": "臺灣證券交易所 OpenAPI：上市公司基本資料",
+      "short_title": "TWSE 公司基本",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+      "note": "用於驗證上市公司股票代號、公司名稱、上市日期、公司網址等基本資料。"
+    },
+    {
+      "id": "twse_major_shareholders",
+      "title": "臺灣證券交易所 OpenAPI：上市公司持股逾 10% 大股東名單",
+      "short_title": "TWSE 大股東",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap02_L",
+      "note": "上市公司持股逾 10% 大股東名單，用於籌碼/股權結構評分。"
+    },
+    {
+      "id": "tpex_major_shareholders",
+      "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司持股逾 10% 大股東名單",
+      "short_title": "TPEx 大股東",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap02_O",
+      "note": "上櫃公司持股逾 10% 大股東名單，用於籌碼/股權結構評分。"
+    }
+  ],
+  "companies": {
+    "tpex-1595": {
+      "ticker": "1595",
+      "market": "TPEx",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：半導體業；追蹤模板：半導體。",
+          "source_ids": [
+            "tpex_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 27.9%；月增 8.82%。",
+          "source_ids": [
+            "tpex_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 14.17%；營益率 -33%；EPS -0.74。",
+          "source_ids": [
+            "tpex_income_statement",
+            "tpex_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 65.9；區間報酬：20日 -12.25%；60日 25.52%。",
+          "source_ids": [
+            "tpex_trading_stock"
+          ]
+        }
+      ]
+    },
+    "tw-1707-grapeking": {
+      "ticker": "1707",
+      "market": "TWSE",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 -7.24%；月增 4.06%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 69.7%；營益率 14.72%；EPS 1.18。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 91.9；區間報酬：20日 -10.78%；60日 -22.45%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
+          "id": "latest_disclosure",
+          "label": "近期重大訊息",
+          "value": "2026-07-14：針對115年7月14日工商時報報導「葡萄王 全年營收戰百億」 澄清說明。",
+          "source_ids": [
+            "twse_material_events"
+          ]
+        }
+      ]
+    },
+    "twse-1909": {
+      "ticker": "1909",
+      "market": "TWSE",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：造紙工業；追蹤模板：原物料、化工與基礎材料。",
+          "source_ids": [
+            "twse_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 44.1%；月增 7.26%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 10.31%；營益率 0.15%；EPS -0.02。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-02-26 收盤 9.93；區間報酬：20日 -0.7%；60日 -2.65%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：寶隆國際股份有限公司。",
+          "source_ids": [
+            "twse_major_shareholders"
+          ]
+        }
+      ]
+    },
+    "twse-2301": {
+      "ticker": "2301",
+      "market": "TWSE",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：電腦及週邊設備；追蹤模板：電子硬體與零組件。",
+          "source_ids": [
+            "twse_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 36.98%；月增 7.5%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 21.66%；營益率 9.44%；EPS 1.66。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 216；區間報酬：20日 4.1%；60日 33.33%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        }
+      ]
+    },
+    "tw-2303-umc": {
+      "ticker": "2303",
+      "market": "TWSE",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 22.85%；月增 0.79%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 29.19%；營益率 18.47%；EPS 1.29。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 166；區間報酬：20日 17.31%；60日 127.4%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
+          "id": "latest_disclosure",
+          "label": "近期重大訊息",
+          "value": "2026-07-14：本公司召開2026年第二季法人說明會。",
+          "source_ids": [
+            "twse_material_events"
+          ]
+        }
+      ]
+    },
+    "tw-2330-tsmc": {
+      "ticker": "2330",
+      "market": "TWSE",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 67.87%；月增 6.16%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 66.25%；營益率 58.1%；EPS 22.08。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 2,440；區間報酬：20日 2.74%；60日 20.2%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        }
+      ]
+    },
+    "twse-2344": {
+      "ticker": "2344",
+      "market": "TWSE",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：半導體業；追蹤模板：半導體。",
+          "source_ids": [
+            "twse_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 189.88%；月增 2.98%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 53.37%；營益率 32.81%；EPS 2.25。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 180.5；區間報酬：20日 -4.5%；60日 105.58%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：華新麗華股份有限公司。",
+          "source_ids": [
+            "twse_major_shareholders"
+          ]
+        }
+      ]
+    },
+    "twse-2345": {
+      "ticker": "2345",
+      "market": "TWSE",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：通信網路業；追蹤模板：電子硬體與零組件。",
+          "source_ids": [
+            "twse_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 61.16%；月增 38.19%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 19.54%；營益率 14.33%；EPS 14.92。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 2,340；區間報酬：20日 -3.7%；60日 13.04%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        }
+      ]
+    },
+    "tw-2454-mediatek": {
+      "ticker": "2454",
+      "market": "TWSE",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 2.8%；月增 22.3%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 46.3%；營益率 15.35%；EPS 15.17。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 3,740；區間報酬：20日 -16.33%；60日 94.29%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        }
+      ]
+    },
+    "twse-3044": {
+      "ticker": "3044",
+      "market": "TWSE",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：電子零組件業；追蹤模板：電子硬體與零組件。",
+          "source_ids": [
+            "twse_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 41.97%；月增 -7.54%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 26.51%；營益率 18.34%；EPS 5.61。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 426；區間報酬：20日 -18.08%；60日 3.52%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        }
+      ]
+    },
+    "tw-3164-genmont": {
+      "ticker": "3164",
+      "market": "TWSE",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 -13.2%；月增 35.7%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 54.08%；營益率 -8.05%；EPS 0.05。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 16.6；區間報酬：20日 1.22%；60日 -7.52%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        }
+      ]
+    },
+    "tw-3711-aseh": {
+      "ticker": "3711",
+      "market": "TWSE",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 32.86%；月增 4.36%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 20.07%；營益率 10.1%；EPS 3.24。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2025-11-28 收盤 229.5；區間報酬：20日 -7.27%；60日 47.12%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
+          "id": "latest_disclosure",
+          "label": "近期重大訊息",
+          "value": "2026-07-14：代子公司矽品精密工業(股)公司公告取得營業用機器設備達十億元。",
+          "source_ids": [
+            "twse_material_events"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：張虔生。",
+          "source_ids": [
+            "twse_major_shareholders"
+          ]
+        }
+      ]
+    },
+    "tpex-6167": {
+      "ticker": "6167",
+      "market": "TPEx",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：光電業；追蹤模板：電子硬體與零組件。",
+          "source_ids": [
+            "tpex_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 -2.35%；月增 9.54%。",
+          "source_ids": [
+            "tpex_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 6.74%；營益率 -10.32%；EPS -0.06。",
+          "source_ids": [
+            "tpex_income_statement",
+            "tpex_balance_sheet"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：佰鴻工業股份有限公司。",
+          "source_ids": [
+            "tpex_major_shareholders"
+          ]
+        }
+      ]
+    },
+    "tpex-6171": {
+      "ticker": "6171",
+      "market": "TPEx",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：建材營造；追蹤模板：基礎建設、營建與運輸。",
+          "source_ids": [
+            "tpex_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 -98.15%；月增 -11.58%。",
+          "source_ids": [
+            "tpex_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 49.23%；營益率 27.08%；EPS 0.08。",
+          "source_ids": [
+            "tpex_income_statement",
+            "tpex_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 23.3；區間報酬：20日 -2.51%；60日 -10.38%。",
+          "source_ids": [
+            "tpex_trading_stock"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：大城建設股份有限公司、賴源釗。",
+          "source_ids": [
+            "tpex_major_shareholders"
+          ]
+        }
+      ]
+    },
+    "tw-6488-globalwafers": {
+      "ticker": "6488",
+      "market": "TPEx",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 -1.63%；月增 16.16%。",
+          "source_ids": [
+            "tpex_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 20.83%；營益率 10.55%；EPS 3.97。",
+          "source_ids": [
+            "tpex_income_statement",
+            "tpex_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 1,480；區間報酬：20日 55.79%；60日 193.07%。",
+          "source_ids": [
+            "tpex_trading_stock"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：中美矽晶製品股份有限公司。",
+          "source_ids": [
+            "tpex_major_shareholders"
+          ]
+        }
+      ]
+    },
+    "tpex-6735": {
+      "ticker": "6735",
+      "market": "TPEx",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：其他電子業；追蹤模板：電子硬體與零組件。",
+          "source_ids": [
+            "tpex_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 15.24%；月增 -11.24%。",
+          "source_ids": [
+            "tpex_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 48.4%；營益率 5.6%；EPS 0.29。",
+          "source_ids": [
+            "tpex_income_statement",
+            "tpex_balance_sheet"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：陳梅開發投資有限公司。",
+          "source_ids": [
+            "tpex_major_shareholders"
+          ]
+        }
+      ]
+    },
+    "tw-7780-daiken": {
+      "ticker": "7780",
+      "market": "TWSE",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 37.7%；月增 19.31%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 60.09%；營益率 13.4%；EPS 0.13。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 17.85；區間報酬：20日 -7.75%；60日 -12.29%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
+          "id": "latest_disclosure",
+          "label": "近期重大訊息",
+          "value": "2026-07-14：代澳洲孫公司Daiken Investment One Australia Pty Ltd 公告擬取得澳洲不動產。",
+          "source_ids": [
+            "twse_material_events"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：尚凡國際創新科技股份有限公司。",
+          "source_ids": [
+            "twse_major_shareholders"
+          ]
+        }
+      ]
+    },
+    "tw-8279-syngen": {
+      "ticker": "8279",
+      "market": "TPEx",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 6%；月增 -3.21%。",
+          "source_ids": [
+            "tpex_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 32.97%；營益率 10.42%；EPS 1.23。",
+          "source_ids": [
+            "tpex_income_statement",
+            "tpex_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 88；區間報酬：20日 -11.11%；60日 -16.98%。",
+          "source_ids": [
+            "tpex_trading_stock"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：生達化學製藥股份有限公司。",
+          "source_ids": [
+            "tpex_major_shareholders"
+          ]
+        }
+      ]
+    },
+    "tw-8436-tci": {
+      "ticker": "8436",
+      "market": "TPEx",
+      "generated_at": "2026-07-15T08:32:05.509Z",
+      "facts": [
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 -14.6%；月增 19.48%。",
+          "source_ids": [
+            "tpex_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 45.41%；營益率 17.64%；EPS 1.92。",
+          "source_ids": [
+            "tpex_income_statement",
+            "tpex_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 115.5；區間報酬：20日 -3.35%；60日 -7.6%。",
+          "source_ids": [
+            "tpex_trading_stock"
+          ]
+        }
+      ]
+    }
+  }
+}

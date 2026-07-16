@@ -2,19 +2,19 @@
   "version": "1.0.0",
   "collected_at": "2026-07-16T02:49:46.182Z",
   "company": {
-    "id": "twse-2344",
-    "ticker": "2344",
-    "name": "華邦電",
-    "market": "TWSE",
-    "industry_template": "semiconductor"
+    "id": "tpex-6735",
+    "ticker": "6735",
+    "name": "美達科技",
+    "market": "TPEx",
+    "industry_template": "electronics_hardware"
   },
   "collection_scope": "targeted_research_company",
   "events": [],
   "references": [
     {
-      "id": "mops-history-2344",
-      "title": "華邦電 MOPS 歷史重大訊息",
-      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2344",
+      "id": "mops-history-6735",
+      "title": "美達科技 MOPS 歷史重大訊息",
+      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6735",
       "source_id": "mops_history_search",
       "source_type": "official_search_link",
       "claim_type": "official_search_reference",
@@ -22,9 +22,9 @@
       "note": "歷史資料以公開資訊觀測站查詢頁為準；本版本不將未經欄位驗證的網頁內容直接納入評分。"
     },
     {
-      "id": "company-website-2344",
-      "title": "華邦電 官方網站",
-      "url": "https://WWW.WINBOND.COM",
+      "id": "company-website-6735",
+      "title": "美達科技 官方網站",
+      "url": "http://www.amidatec.com/",
       "source_id": "company_website",
       "source_type": "company_reference",
       "claim_type": "company_published_reference",
@@ -34,10 +34,10 @@
   ],
   "source_status": [
     {
-      "source_id": "twse_material_events",
+      "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-16T01:56:57.043Z",
-      "row_count": 87,
+      "fetched_at": "2026-07-16T01:56:57.535Z",
+      "row_count": 75,
       "available": true
     }
   ],

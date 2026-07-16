@@ -303,9 +303,9 @@ button:disabled {
 
 .company-row {
   display: grid;
-  grid-template-columns: 24px minmax(0, 1fr) auto;
+  grid-template-columns: 24px minmax(0, 1fr);
   gap: 8px;
-  align-items: center;
+  align-items: start;
   min-height: 58px;
   padding: 9px 10px;
   background: #13191b;
@@ -320,6 +320,8 @@ button:disabled {
 }
 
 .company-main {
+  display: grid;
+  gap: 4px;
   min-width: 0;
 }
 
@@ -332,10 +334,17 @@ button:disabled {
 }
 
 .company-sub {
-  margin-top: 4px;
-  overflow: hidden;
+  display: flex;
+  min-width: 0;
+  gap: 6px;
+  align-items: center;
   color: var(--muted);
   font-size: 12px;
+}
+
+.company-industry {
+  min-width: 0;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -346,12 +355,17 @@ button:disabled {
 }
 
 .market-badge {
+  flex: 0 0 auto;
+  min-width: 38px;
   padding: 3px 6px;
   color: var(--ink);
   background: var(--blue);
   border-radius: 999px;
   font-size: 11px;
   font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .empty-state,

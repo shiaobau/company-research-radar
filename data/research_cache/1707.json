@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-15T03:35:53.816Z",
+  "collected_at": "2026-07-16T02:49:46.182Z",
   "company": {
     "id": "tw-1707-grapeking",
     "ticker": "1707",
@@ -9,23 +9,7 @@
     "industry_template": "nutrition_health_food"
   },
   "collection_scope": "targeted_research_company",
-  "events": [
-    {
-      "id": "9f7020aa42d6cdaa1d24",
-      "date": "2026-07-14",
-      "announced_date": "2026-07-14",
-      "fact_date": "2026-07-14",
-      "announced_time": "110112",
-      "title": "針對115年7月14日工商時報報導「葡萄王 全年營收戰百億」\r\n澄清說明",
-      "description": "1.事實發生日:115/07/14\n2.公司名稱:葡萄王生技股份有限公司\n3.與公司關係(請輸入本公司或子公司):本公司\n4.相互持股比例:不適用\n5.傳播媒體名稱:工商時報\n6.報導內容:受惠代工業務、自有品牌及上海葡萄王等事業體仍持續推動各項\n 成長策略，加上搶進馬來西亞直銷市場預計8月開幕，法人看好葡萄王下半\n 年成長動能，全年營收有望挑戰百億元。\n7.發生緣由:115年7月14日工商時報報導\n8.因應措施:\n 以上報導均屬法人自行推算預估，有關公司之財務資訊，請依本公司於公開資訊觀\n 測站公告為準，另本公司111年之營收已超過百億元，特此說明。\n9.其他應敘明事項:無",
-      "clause": "第51款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    }
-  ],
+  "events": [],
   "references": [
     {
       "id": "mops-history-1707",
@@ -52,8 +36,8 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-15T03:35:53.226Z",
-      "row_count": 123,
+      "fetched_at": "2026-07-16T01:56:57.043Z",
+      "row_count": 87,
       "available": true
     }
   ],

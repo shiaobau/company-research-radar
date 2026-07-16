@@ -13,11 +13,15 @@ const state = {
   industryEvidenceData: { companies: {}, sources: [] },
   industryData: { companies: {}, sources: [] },
   dataStatus: { companies: {} },
+  publicFactsData: { companies: {}, sources: [] },
   universe: { companies: [] },
   researchCache: { index: { companies: [] }, records: {}, pending: new Set() },
   schedulerStatus: { schedules: {}, current_run: null },
   referenceSources: [],
-  selectedId: null
+  selectedId: null,
+  managementMode: false,
+  companyOrder: readWatchlistOrder(),
+  pendingDeletionTicker: null
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -37,10 +41,11 @@ Promise.all([
   fetch("data/industry_evidence_data.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
   fetch("data/industry_data.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
   fetch("data/data_status.json").then((response) => response.json()).catch(() => ({ companies: {} })),
+  fetch("data/public_facts.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
   fetch("data/listed_companies_universe.json").then((response) => response.json()).catch(() => ({ companies: [] })),
   fetch("data/research_cache/index.json").then((response) => response.json()).catch(() => ({ companies: [] })),
   fetch("data/scheduler_status.json").then((response) => response.json()).catch(() => ({ schedules: {}, current_run: null }))
-]).then(([templates, definitions, rules, companies, signals, marketData, revenueData, financialData, catalystData, ownershipData, riskData, industryEvidenceData, industryData, dataStatus, universe, researchCacheIndex, schedulerStatus]) => {
+]).then(([templates, definitions, rules, companies, signals, marketData, revenueData, financialData, catalystData, ownershipData, riskData, industryEvidenceData, industryData, dataStatus, publicFactsData, universe, researchCacheIndex, schedulerStatus]) => {
   state.templates = templates.industries;
   state.definitions = definitions.fields;
   state.rules = rules;
@@ -54,6 +59,7 @@ Promise.all([
   state.industryEvidenceData = industryEvidenceData;
   state.industryData = industryData;
   state.dataStatus = dataStatus;
+  state.publicFactsData = publicFactsData;
   state.universe = universe;
   state.researchCache.index = researchCacheIndex;
   state.schedulerStatus = schedulerStatus;
@@ -66,14 +72,17 @@ Promise.all([
     ...(ownershipData.sources || []),
     ...(riskData.sources || []),
     ...(industryEvidenceData.sources || []),
-    ...(industryData.sources || [])
+    ...(industryData.sources || []),
+    ...(publicFactsData.sources || [])
   ];
   state.signals = signals.signals || [];
+  pruneCompletedUniverseCandidates();
   initControls();
   state.selectedId = universeSelectionMode()
     ? candidateWatchlistItems()[0]?.id || state.companies[0]?.id || null
     : state.companies[0]?.id || null;
   renderAll();
+  autoStartResearchFromUrl();
 }).catch((error) => {
   $("#company-list").innerHTML = `<p class="risk">資料載入失敗：${RadarRenderers.escapeHtml(error.message)}</p>`;
 });
@@ -100,6 +109,45 @@ function selectedUniverseTickers() {
   }
 
   return [...new Set(storedTickers)].sort((a, b) => a.localeCompare(b, "zh-Hant-TW"));
+}
+
+function autoStartResearchFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("autostart") !== "1") return;
+  params.delete("autostart");
+  window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}`);
+  sessionStorage.setItem("researchAutoRefreshAfterRun", "1");
+  window.setTimeout(startResearchFromDashboard, 120);
+}
+
+function clearUniverseResearchRequest() {
+  localStorage.removeItem("researchUniverseSelectedTickers");
+  const params = new URLSearchParams(window.location.search);
+  params.delete("universe");
+  params.delete("tickers");
+  params.delete("autostart");
+  const query = params.toString();
+  window.history.replaceState(null, "", `${window.location.pathname}${query ? `?${query}` : ""}`);
+}
+
+function pruneCompletedUniverseCandidates() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("universe") !== "selected" || params.get("autostart") === "1") return;
+
+  const tickers = selectedUniverseTickers();
+  if (!tickers.length) return;
+
+  const researchedTickers = new Set(state.companies.map((company) => company.ticker));
+  const pendingTickers = tickers.filter((ticker) => !researchedTickers.has(ticker));
+  if (pendingTickers.length === tickers.length) return;
+  if (!pendingTickers.length) {
+    clearUniverseResearchRequest();
+    return;
+  }
+
+  localStorage.setItem("researchUniverseSelectedTickers", JSON.stringify(pendingTickers));
+  params.set("tickers", pendingTickers.join(","));
+  window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}`);
 }
 
 function universeSelectionMode() {
@@ -174,6 +222,112 @@ function companyById(id) {
     || candidateWatchlistItems().find((item) => item.id === id);
 }
 
+function readWatchlistOrder() {
+  try {
+    const stored = JSON.parse(localStorage.getItem("researchWatchlistOrder") || "[]");
+    return Array.isArray(stored) ? stored.filter((ticker) => typeof ticker === "string") : [];
+  } catch {
+    return [];
+  }
+}
+
+function orderedResearchCompanies(companies) {
+  const position = new Map(state.companyOrder.map((ticker, index) => [ticker, index]));
+  return [...companies].sort((left, right) => {
+    const leftPosition = position.get(left.ticker);
+    const rightPosition = position.get(right.ticker);
+    if (leftPosition !== undefined && rightPosition !== undefined) return leftPosition - rightPosition;
+    if (leftPosition !== undefined) return -1;
+    if (rightPosition !== undefined) return 1;
+    return String(left.ticker).localeCompare(String(right.ticker), "zh-Hant-TW");
+  });
+}
+
+function moveResearchCompany(ticker, direction) {
+  const ordered = orderedResearchCompanies(state.companies);
+  const fromIndex = ordered.findIndex((company) => company.ticker === ticker);
+  const toIndex = fromIndex + direction;
+  if (fromIndex < 0 || toIndex < 0 || toIndex >= ordered.length) return;
+  [ordered[fromIndex], ordered[toIndex]] = [ordered[toIndex], ordered[fromIndex]];
+  state.companyOrder = ordered.map((company) => company.ticker);
+  localStorage.setItem("researchWatchlistOrder", JSON.stringify(state.companyOrder));
+  renderAll();
+}
+
+function placeResearchCompanyBefore(ticker, targetTicker) {
+  if (!ticker || ticker === targetTicker) return;
+  const ordered = orderedResearchCompanies(state.companies);
+  const fromIndex = ordered.findIndex((company) => company.ticker === ticker);
+  const targetIndex = ordered.findIndex((company) => company.ticker === targetTicker);
+  if (fromIndex < 0 || targetIndex < 0) return;
+  const [moved] = ordered.splice(fromIndex, 1);
+  const nextTargetIndex = ordered.findIndex((company) => company.ticker === targetTicker);
+  ordered.splice(nextTargetIndex, 0, moved);
+  state.companyOrder = ordered.map((company) => company.ticker);
+  localStorage.setItem("researchWatchlistOrder", JSON.stringify(state.companyOrder));
+  renderAll();
+}
+
+function renderCompanyManager() {
+  const panel = $("#company-manager");
+  const button = $("#manage-list-button");
+  if (!panel || !button) return;
+  panel.hidden = !state.managementMode;
+  button.textContent = state.managementMode ? "完成管理" : "管理清單";
+  button.setAttribute("aria-expanded", String(state.managementMode));
+  const heading = panel.closest(".primary-panel")?.querySelector(".section-heading");
+  if (heading?.nextElementSibling !== panel) heading.insertAdjacentElement("afterend", panel);
+  if (!state.managementMode) return;
+
+  const companies = orderedResearchCompanies(state.companies);
+  panel.innerHTML = `
+    <div class="manager-heading">
+      <div>
+        <p class="eyebrow">Watchlist Management</p>
+        <h3>刪除與排序</h3>
+      </div>
+      <span class="muted">拖曳調整順序，僅保存在此瀏覽器</span>
+    </div>
+    <div class="manager-list">
+      ${companies.map((company, index) => `
+        <article class="manager-row" draggable="true" data-company-ticker="${RadarRenderers.escapeHtml(company.ticker)}">
+          <div>
+            <strong>${RadarRenderers.escapeHtml(company.name)}</strong>
+            <small>${RadarRenderers.escapeHtml(stockLabel(company))}</small>
+          </div>
+          <div class="manager-actions">
+            ${state.pendingDeletionTicker === company.ticker ? `
+              <button class="ghost-button" type="button" data-cancel-delete-research="${RadarRenderers.escapeHtml(company.ticker)}">取消</button>
+              <button class="ghost-button manager-remove" type="button" data-delete-research="${RadarRenderers.escapeHtml(company.ticker)}">確認移除</button>
+            ` : `<button class="ghost-button manager-remove" type="button" data-arm-delete-research="${RadarRenderers.escapeHtml(company.ticker)}">移除</button>`}
+          </div>
+        </article>
+      `).join("")}
+    </div>
+  `;
+
+  panel.querySelectorAll(".manager-row").forEach((row) => {
+    row.addEventListener("dragstart", (event) => {
+      event.dataTransfer.effectAllowed = "move";
+      event.dataTransfer.setData("text/plain", row.dataset.companyTicker || "");
+      row.classList.add("dragging");
+    });
+    row.addEventListener("dragend", () => {
+      panel.querySelectorAll(".manager-row").forEach((item) => item.classList.remove("dragging", "drag-over"));
+    });
+    row.addEventListener("dragover", (event) => {
+      event.preventDefault();
+      if (event.dataTransfer) event.dataTransfer.dropEffect = "move";
+      row.classList.add("drag-over");
+    });
+    row.addEventListener("dragleave", () => row.classList.remove("drag-over"));
+    row.addEventListener("drop", (event) => {
+      event.preventDefault();
+      placeResearchCompanyBefore(event.dataTransfer?.getData("text/plain"), row.dataset.companyTicker);
+    });
+  });
+}
+
 function ensureCandidatePanel() {
   let panel = $("#universe-candidate-panel");
   if (panel) return panel;
@@ -187,23 +341,9 @@ function ensureCandidatePanel() {
 
 function renderUniverseCandidates() {
   const panel = ensureCandidatePanel();
-  const candidates = selectedUniverseCompanies();
+  const candidates = selectedUniverseCompanies().filter(({ research }) => !research);
   if (!candidates.length) {
-    if (!universeSelectionMode()) {
-      panel.style.display = "none";
-      return;
-    }
-    panel.style.display = "";
-    panel.innerHTML = `
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Universe Selection</p>
-          <h2>選股頁送來的研究候選</h2>
-        </div>
-        <a class="ghost-button" href="universe.html">回選股頁</a>
-      </div>
-      <p class="muted">目前沒有讀到候選代號。請回選股頁勾選公司後按「送到主頁」，或使用包含 tickers 參數的網址。</p>
-    `;
+    panel.style.display = "none";
     return;
   }
 
@@ -234,7 +374,7 @@ function renderUniverseCandidates() {
         `;
       }).join("")}
     </div>
-    <p class="muted">這裡只呈現你在選股宇宙頁勾選的候選名單；正式評分仍只針對已加入 data/companies.json 且已接資料的公司。</p>
+    <p class="muted">研究完成後，這批候選會自動移入觀察清單。</p>
   `;
 }
 
@@ -262,8 +402,6 @@ function removeUniverseCandidate(ticker) {
 
 async function deleteResearchCompany(ticker) {
   if (!ticker) return;
-  const confirmed = window.confirm(`確定要刪除 ${ticker} 的觀察研究檔嗎？這會從本機 JSON 研究資料移除。`);
-  if (!confirmed) return;
   setResearchStatus(`刪除 ${ticker} 中...`);
   try {
     const response = await fetch(`/api/company?ticker=${encodeURIComponent(ticker)}`, { method: "DELETE" });
@@ -288,7 +426,19 @@ async function pollResearchStatus() {
       setTimeout(pollResearchStatus, 2500);
     }
     if (status.status === "done") {
-      setResearchStatus(`${status.message}，請重新整理主頁查看最新分數。`);
+      if (sessionStorage.getItem("researchAutoRefreshAfterRun") === "1") {
+        sessionStorage.removeItem("researchAutoRefreshAfterRun");
+        clearUniverseResearchRequest();
+        setResearchStatus("研究完成，正在載入最新結果...");
+        window.setTimeout(() => window.location.reload(), 900);
+        return;
+      }
+      setResearchStatus(status.message, false);
+      return;
+    }
+    if (status.status === "error") {
+      sessionStorage.removeItem("researchAutoRefreshAfterRun");
+      setResearchStatus(`研究流程未完成：${status.message}`, false);
     }
   } catch {
     // 靜態伺服器沒有 API 時保持安靜，避免干擾一般瀏覽。
@@ -314,6 +464,7 @@ async function startResearchFromDashboard() {
     setResearchStatus(`研究流程已啟動：${tickers.join(", ")}`);
     setTimeout(pollResearchStatus, 1200);
   } catch (error) {
+    sessionStorage.removeItem("researchAutoRefreshAfterRun");
     setResearchStatus(`目前使用的是靜態伺服器，請改用動態研究伺服器後再按開始研究。${error.message}`);
   }
 }
@@ -441,6 +592,8 @@ function renderSchedulerPanel() {
   const schedules = state.schedulerStatus.schedules || {};
   const order = ["morning", "market_close", "evening"];
   const active = state.schedulerStatus.current_run;
+  const frequency = state.schedulerStatus.frequency === "daily" ? "daily" : "weekday";
+  const frequencyLabel = frequency === "daily" ? "每日" : "平日";
   panel.innerHTML = `
     <details class="scheduler-details">
       <summary>
@@ -448,7 +601,7 @@ function renderSchedulerPanel() {
           <span class="eyebrow">Automatic Updates</span>
           <strong>每日研究更新</strong>
         </span>
-        <span class="pill">${active ? "更新中" : "平日更新"}</span>
+        <span class="pill">${active ? "更新中" : `${frequencyLabel}更新`}</span>
       </summary>
       <div class="scheduler-content">
         <div class="scheduler-heading">
@@ -456,17 +609,21 @@ function renderSchedulerPanel() {
         <p class="eyebrow">Automatic Updates</p>
         <h2>每日研究更新</h2>
       </div>
-      <span class="pill">${active ? "更新中" : "平日"}</span>
+      <div class="scheduler-mode" role="group" aria-label="更新頻率">
+        <button class="scheduler-mode-option ${frequency === "weekday" ? "active" : ""}" type="button" data-scheduler-frequency="weekday" aria-pressed="${frequency === "weekday"}">平日</button>
+        <button class="scheduler-mode-option ${frequency === "daily" ? "active" : ""}" type="button" data-scheduler-frequency="daily" aria-pressed="${frequency === "daily"}">每日</button>
+      </div>
     </div>
     <div class="scheduler-grid">
       ${order.map((id) => {
         const schedule = schedules[id] || {};
         const run = schedule.last_run;
+        const stateLabel = run ? schedulerRunLabel(run) : `預定${frequencyLabel} ${schedule.time || "--:--"}`;
         return `
           <article class="scheduler-card ${run?.status || "idle"}">
             <div><strong>${RadarRenderers.escapeHtml(schedule.time || "--:--")}</strong><span>${RadarRenderers.escapeHtml(schedule.label || id)}</span></div>
             <p>${RadarRenderers.escapeHtml(schedule.description || "")}</p>
-            <small>${RadarRenderers.escapeHtml(schedulerRunLabel(run))}</small>
+            <small>${RadarRenderers.escapeHtml(stateLabel)}</small>
           </article>
         `;
       }).join("")}
@@ -484,6 +641,25 @@ async function refreshSchedulerStatus() {
     renderSchedulerPanel();
   } catch {
     // The dashboard can still be opened without a configured local scheduler.
+  }
+}
+
+async function updateSchedulerFrequency(frequency) {
+  if (!new Set(["weekday", "daily"]).has(frequency)) return;
+  try {
+    const response = await fetch("/api/scheduler/frequency", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ frequency })
+    });
+    const payload = await response.json();
+    if (!response.ok) throw new Error(payload.message || "排程設定失敗");
+    state.schedulerStatus.frequency = frequency;
+    state.schedulerStatus.frequency_label = frequency === "daily" ? "每日" : "平日";
+    renderSchedulerPanel();
+    await refreshSchedulerStatus();
+  } catch (error) {
+    setResearchStatus(`無法更新排程：${error.message}`);
   }
 }
 
@@ -580,6 +756,20 @@ function initControls() {
     renderAll();
   });
 
+  $("#manage-list-button").addEventListener("click", () => {
+    state.managementMode = !state.managementMode;
+    renderCompanyManager();
+  });
+
+  const quickCompanyInput = $("#quick-company-input");
+  quickCompanyInput.addEventListener("input", renderQuickCompanyResults);
+  quickCompanyInput.addEventListener("focus", renderQuickCompanyResults);
+  quickCompanyInput.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    hideQuickCompanyResults();
+    quickCompanyInput.blur();
+  });
+
   $("#candidate-seed-file").addEventListener("change", async (event) => {
     const file = event.target.files?.[0];
     if (!file) return;
@@ -606,10 +796,32 @@ function initControls() {
   });
 
   document.addEventListener("click", (event) => {
+    const schedulerFrequency = event.target?.dataset?.schedulerFrequency;
+    if (schedulerFrequency) {
+      updateSchedulerFrequency(schedulerFrequency);
+      return;
+    }
+    const quickResult = event.target.closest("[data-quick-company-ticker]");
+    if (quickResult) {
+      handleQuickCompanyResult(quickResult.dataset.quickCompanyTicker);
+      return;
+    }
     const ticker = event.target?.dataset?.removeCandidate;
     if (ticker) removeUniverseCandidate(ticker);
     const deleteTicker = event.target?.dataset?.deleteResearch;
     if (deleteTicker) deleteResearchCompany(deleteTicker);
+    const armDeleteTicker = event.target?.dataset?.armDeleteResearch;
+    if (armDeleteTicker) {
+      state.pendingDeletionTicker = armDeleteTicker;
+      renderCompanyManager();
+    }
+    const cancelDeleteTicker = event.target?.dataset?.cancelDeleteResearch;
+    if (cancelDeleteTicker) {
+      state.pendingDeletionTicker = null;
+      renderCompanyManager();
+    }
+    const moveTicker = event.target?.dataset?.moveCompany;
+    if (moveTicker) moveResearchCompany(moveTicker, Number(event.target.dataset.moveDirection));
   });
 
   ensureCollectorControls();
@@ -620,6 +832,103 @@ function initControls() {
   pollCollectorStatus();
   refreshSchedulerStatus();
   setInterval(refreshSchedulerStatus, 60000);
+}
+
+function quickCompanySearchText(company) {
+  return [
+    company.ticker,
+    company.name,
+    company.abbreviation,
+    company.market_label,
+    company.official_industry_label,
+    company.template_label
+  ].filter(Boolean).join(" ").toLowerCase();
+}
+
+function quickCompanyDisplayName(company) {
+  const shortName = String(company?.abbreviation || "").trim();
+  const officialName = String(company?.name || "").trim();
+  if (shortName && officialName && shortName !== officialName) return `${shortName}（${officialName}）`;
+  return shortName || officialName || "公司名稱未提供";
+}
+
+function hideQuickCompanyResults() {
+  const results = $("#quick-company-results");
+  const input = $("#quick-company-input");
+  if (!results || !input) return;
+  results.hidden = true;
+  results.replaceChildren();
+  input.setAttribute("aria-expanded", "false");
+}
+
+function renderQuickCompanyResults() {
+  const input = $("#quick-company-input");
+  const results = $("#quick-company-results");
+  if (!input || !results) return;
+  const keyword = input.value.trim().toLowerCase();
+  if (!keyword) {
+    hideQuickCompanyResults();
+    return;
+  }
+
+  const researchByTicker = new Map(state.companies.map((company) => [company.ticker, company]));
+  const matches = (state.universe.companies || [])
+    .filter((company) => quickCompanySearchText(company).includes(keyword))
+    .slice(0, 8);
+
+  if (!matches.length) {
+    results.innerHTML = `<p class="quick-company-empty">找不到符合的上市上櫃公司</p>`;
+  } else {
+    results.innerHTML = matches.map((company) => {
+      const researched = researchByTicker.has(company.ticker);
+      const name = quickCompanyDisplayName(company);
+      const status = researched ? "查看研究" : "加入研究";
+      return `
+        <button class="quick-company-result" type="button" role="option" data-quick-company-ticker="${RadarRenderers.escapeHtml(company.ticker)}">
+          <span class="quick-company-name"><b>${RadarRenderers.escapeHtml(company.ticker)}</b><strong>${RadarRenderers.escapeHtml(name)}</strong></span>
+          <small>${RadarRenderers.escapeHtml(company.market_label || company.market || "")} · ${RadarRenderers.escapeHtml(company.template_label || company.official_industry_label || "未分類")}</small>
+          <em>${status}</em>
+        </button>
+      `;
+    }).join("");
+  }
+
+  results.hidden = false;
+  input.setAttribute("aria-expanded", "true");
+}
+
+async function handleQuickCompanyResult(ticker) {
+  const input = $("#quick-company-input");
+  const existing = state.companies.find((company) => company.ticker === ticker);
+  if (existing) {
+    state.selectedId = existing.id;
+    if (input) input.value = "";
+    hideQuickCompanyResults();
+    renderAll();
+    document.querySelector(`.company-card[data-id="${existing.id}"]`)?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    return;
+  }
+
+  const official = (state.universe.companies || []).find((company) => company.ticker === ticker);
+  const companyLabel = `${ticker} ${quickCompanyDisplayName(official)}`;
+  setResearchStatus(`正在將 ${companyLabel} 加入研究...`);
+  try {
+    sessionStorage.setItem("researchAutoRefreshAfterRun", "1");
+    const response = await fetch("/api/research", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ tickers: [ticker] })
+    });
+    const payload = await response.json();
+    if (!response.ok) throw new Error(payload.message || "研究 API 無法啟動");
+    if (input) input.value = "";
+    hideQuickCompanyResults();
+    setResearchStatus(`研究流程已啟動：${companyLabel}`);
+    setTimeout(pollResearchStatus, 1000);
+  } catch (error) {
+    sessionStorage.removeItem("researchAutoRefreshAfterRun");
+    setResearchStatus(`無法加入 ${companyLabel}：${error.message}`);
+  }
 }
 
 function companyText(company) {
@@ -672,6 +981,84 @@ function displayThesis(company) {
   return isResearchWorkflowNote ? "" : thesis;
 }
 
+function publicFactsFor(company) {
+  return (state.publicFactsData.companies?.[company.id]?.facts || [])
+    .filter((item) => item?.label && item?.value && Array.isArray(item.source_ids) && item.source_ids.length);
+}
+
+function publicFactSourceIds(company) {
+  return [...new Set(publicFactsFor(company).flatMap((item) => item.source_ids))];
+}
+
+function renderSourceTooltipsForFacts(facts, sourceIndex) {
+  const grouped = new Map();
+  for (const fact of facts) {
+    for (const sourceId of fact.source_ids) {
+      const source = sourceIndex[sourceId];
+      if (!source) continue;
+      if (!grouped.has(sourceId)) grouped.set(sourceId, { source, facts: [] });
+      grouped.get(sourceId).facts.push(fact);
+    }
+  }
+
+  if (!grouped.size) return "";
+
+  return `
+    <div class="fact-source-list" aria-label="公司資料來源摘要">
+      ${[...grouped.values()].map(({ source, facts }) => {
+        const visibleFacts = facts.slice(0, 3);
+        const title = source.short_title || source.title;
+        const summary = visibleFacts
+          .map((fact) => `<span><b>${RadarRenderers.escapeHtml(fact.label)}</b>：${RadarRenderers.escapeHtml(fact.value)}</span>`)
+          .join("");
+        const remaining = facts.length - visibleFacts.length;
+        const accessibleLabel = `${title}：${facts.map((fact) => `${fact.label} ${fact.value}`).join("；")}`;
+        return `
+          <span class="fact-source-tooltip" tabindex="0" role="note" aria-label="${RadarRenderers.escapeHtml(accessibleLabel)}">
+            <span class="source-chip source-chip-static">${RadarRenderers.escapeHtml(title)}</span>
+            <span class="fact-tooltip-content" role="tooltip">
+              <strong>${RadarRenderers.escapeHtml(source.title)}</strong>
+              ${summary}
+              ${remaining > 0 ? `<span class="tooltip-more">另有 ${remaining} 項相關資料</span>` : ""}
+            </span>
+          </span>
+        `;
+      }).join("")}
+    </div>
+  `;
+}
+
+function renderPublicFactSourceTooltips(company, sourceIndex) {
+  return renderSourceTooltipsForFacts(publicFactsFor(company), sourceIndex);
+}
+
+function renderPublicFacts(company, sourceIndex, compact = false) {
+  const facts = publicFactsFor(company);
+  const visibleFacts = compact ? facts.slice(0, 2) : facts;
+  if (!visibleFacts.length) return "";
+
+  if (compact) {
+    return visibleFacts.map((item) => `
+      <span><b>${RadarRenderers.escapeHtml(item.label)}</b>：${RadarRenderers.escapeHtml(item.value)}</span>
+    `).join("");
+  }
+
+  return `
+    <section class="module">
+      <h3>公開資料摘要</h3>
+      <div class="module-grid">
+        ${visibleFacts.map((item) => `
+          <article class="field-card">
+            <span class="field-label">${RadarRenderers.escapeHtml(item.label)}</span>
+            <p>${RadarRenderers.escapeHtml(item.value)}</p>
+            ${renderSourceTooltipsForFacts([item], sourceIndex)}
+          </article>
+        `).join("")}
+      </div>
+    </section>
+  `;
+}
+
 function dataCoverageLabel(company) {
   const status = state.dataStatus.companies?.[company.id];
   if (!status) return "客觀資料待建立";
@@ -684,7 +1071,7 @@ function filteredCompanies() {
   const minimumScore = $("#score-filter").value;
   const sourceCompanies = universeSelectionMode() ? candidateWatchlistItems() : state.companies;
 
-  return sourceCompanies.filter((company) => {
+  const matches = sourceCompanies.filter((company) => {
     if (company.__candidate) {
       return (industry === "all" || company.industry_template === industry)
         && (!query || companyText(company).includes(query));
@@ -694,6 +1081,9 @@ function filteredCompanies() {
       && (!query || companyText(company).includes(query))
       && (minimumScore === "all" || score >= Number(minimumScore));
   });
+  const researchCompanies = matches.filter((company) => !company.__candidate);
+  const candidates = matches.filter((company) => company.__candidate);
+  return [...orderedResearchCompanies(researchCompanies), ...candidates];
 }
 
 function renderAll() {
@@ -705,10 +1095,37 @@ function renderAll() {
   renderUniverseCandidates();
   renderSummary(companies);
   renderCompanyList(companies);
+  renderCompanyManager();
   renderDetail();
   renderStandards();
   renderTimeline(companies);
   renderSources();
+}
+
+function latestDataTimestamp() {
+  const timestamps = [
+    state.publicFactsData.generated_at,
+    state.marketData.generated_at,
+    state.revenueData.generated_at,
+    state.financialData.generated_at,
+    state.catalystData.generated_at,
+    state.riskData.generated_at,
+    state.dataStatus.generated_at
+  ].map((value) => Date.parse(value || "")).filter(Number.isFinite);
+  return timestamps.length ? new Date(Math.max(...timestamps)) : null;
+}
+
+function formatDashboardTimestamp() {
+  const timestamp = latestDataTimestamp();
+  if (!timestamp) return "更新時間未提供";
+  return timestamp.toLocaleString("zh-TW", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false
+  });
 }
 
 function renderSummary(companies) {
@@ -724,7 +1141,7 @@ function renderSummary(companies) {
 
   $("#company-count").textContent = `${companies.length} ${modeLabel}`;
   $("#visible-count").textContent = `${companies.length} 筆`;
-  $("#last-updated").textContent = `更新：${new Date().toLocaleDateString("zh-TW")}`;
+  $("#last-updated").textContent = `資料更新：${formatDashboardTimestamp()}`;
   $("#summary-grid").innerHTML = [
     ["平均評分", average],
     ["已正式評分", scoredCompanies.length],
@@ -788,11 +1205,7 @@ function renderCompanyList(companies) {
     const template = state.templates[company.industry_template];
     const score = RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets());
     const sourceIndex = sourceIndexFor(company);
-    const summary = (template.summary_fields || []).map((fieldId) => {
-      const fact = RadarRenderers.getFact(company, fieldId);
-      const definition = state.definitions[fieldId] || { label: fieldId };
-      return `<span><b>${RadarRenderers.escapeHtml(definition.label)}</b>：${RadarRenderers.escapeHtml(RadarRenderers.formatFactValue(fact, definition))}</span>`;
-    }).join("");
+    const summary = renderPublicFacts(company, sourceIndex, true);
 
     return `
       <article class="company-card ${company.id === state.selectedId ? "active" : ""}" data-id="${company.id}" tabindex="0" style="--score-deg:${score.total * 3.6}deg">
@@ -801,11 +1214,9 @@ function renderCompanyList(companies) {
           <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.band.label)}</p>
           <h3>${RadarRenderers.escapeHtml(company.name)}</h3>
           <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(dataCoverageLabel(company))}</p>
-          ${displayThesis(company) ? `<p class="muted">${RadarRenderers.escapeHtml(displayThesis(company))}</p>` : ""}
           <div class="card-tags">${displayTags(company).map((tag) => `<span class="tag">${RadarRenderers.escapeHtml(tag)}</span>`).join("")}</div>
         </div>
-        <div class="mini-fields">${summary}${RadarRenderers.sourceLinks(company.primary_source_ids, sourceIndex)}</div>
-        <button class="card-delete" type="button" data-delete-research="${RadarRenderers.escapeHtml(company.ticker)}" title="刪除觀察公司">刪除</button>
+        <div class="mini-fields">${summary}${renderPublicFactSourceTooltips(company, sourceIndex)}</div>
       </article>
     `;
   }).join("");
@@ -813,7 +1224,6 @@ function renderCompanyList(companies) {
   document.querySelectorAll(".company-card").forEach((card) => {
     card.addEventListener("click", (event) => {
       if (event.target?.dataset?.removeCandidate) return;
-      if (event.target?.dataset?.deleteResearch) return;
       selectCompany(card.dataset.id);
     });
     card.addEventListener("keydown", (event) => {
@@ -867,18 +1277,23 @@ function renderCollectedEvents(company) {
     return `<section class="module collected-events"><h3>官方公告事件</h3><p class="muted">${text}</p></section>`;
   }
 
-  const eventItems = (record.events || []).map((event) => `
-    <article class="collector-event">
-      <div class="collector-event-head">
-        <span class="timeline-date">${RadarRenderers.escapeHtml(event.date || "未提供日期")}</span>
-        <span class="tag">${RadarRenderers.escapeHtml(event.claim_type || "official_disclosure")}</span>
-      </div>
-      <strong>${RadarRenderers.escapeHtml(event.title)}</strong>
-      ${event.clause ? `<p class="muted">${RadarRenderers.escapeHtml(event.clause)}</p>` : ""}
-      ${event.description ? `<p>${RadarRenderers.escapeHtml(event.description.slice(0, 280))}${event.description.length > 280 ? "..." : ""}</p>` : ""}
-      <a class="source-chip" href="${RadarRenderers.escapeHtml(event.source_url)}" target="_blank" rel="noopener">官方來源</a>
-    </article>
-  `).join("");
+  const eventItems = (record.events || []).map((event) => {
+    const title = normalizeDisclosureText(event.title);
+    const clause = normalizeDisclosureText(event.clause);
+    const description = normalizeDisclosureText(event.description);
+    return `
+      <article class="collector-event">
+        <div class="collector-event-head">
+          <span class="timeline-date">${RadarRenderers.escapeHtml(event.date || "未提供日期")}</span>
+          <span class="tag">${RadarRenderers.escapeHtml(event.claim_type || "official_disclosure")}</span>
+        </div>
+        <strong>${RadarRenderers.escapeHtml(title)}</strong>
+        ${clause ? `<p class="muted">${RadarRenderers.escapeHtml(clause)}</p>` : ""}
+        ${description ? `<p>${RadarRenderers.escapeHtml(description.slice(0, 280))}${description.length > 280 ? "..." : ""}</p>` : ""}
+        <a class="source-chip" href="${RadarRenderers.escapeHtml(event.source_url)}" target="_blank" rel="noopener">官方來源</a>
+      </article>
+    `;
+  }).join("");
   const references = (record.references || []).map((reference) => `
     <a class="source-chip" href="${RadarRenderers.escapeHtml(reference.url)}" target="_blank" rel="noopener">${RadarRenderers.escapeHtml(reference.title)}</a>
   `).join("");
@@ -913,22 +1328,9 @@ function renderDetail() {
   const template = state.templates[company.industry_template];
   const score = RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets());
   const sourceIndex = sourceIndexFor(company);
-  const companySignals = state.signals.filter((signal) => signal.company_id === company.id);
   const dataSnapshot = renderDataSnapshot(company, sourceIndex);
 
-  const modules = template.modules.map((module) => `
-    <section class="module">
-      <h3>${RadarRenderers.escapeHtml(module.label)}</h3>
-      <div class="module-grid">
-        ${module.fields.map((fieldId) => RadarRenderers.renderFact(company, fieldId, state.definitions, sourceIndex)).join("")}
-      </div>
-    </section>
-  `).join("");
-
-  const riskItems = (company.risks || []).map((risk) => `<li>${RadarRenderers.escapeHtml(risk)}</li>`).join("");
-  const signalItems = companySignals.map((signal) => `
-    <li><b>${RadarRenderers.escapeHtml(signal.type)}</b>：${RadarRenderers.escapeHtml(signal.title)} <span class="muted">(${RadarRenderers.escapeHtml(signal.impact)} / ${RadarRenderers.escapeHtml(signal.confidence)})</span></li>
-  `).join("");
+  const publicFacts = renderPublicFacts(company, sourceIndex);
 
   $("#company-detail").className = "detail-content";
   $("#company-detail").innerHTML = `
@@ -941,25 +1343,13 @@ function renderDetail() {
       </div>
       <span class="pill">${score.total}</span>
     </div>
-    ${displayThesis(company) ? `<p>${RadarRenderers.escapeHtml(displayThesis(company))}</p>` : ""}
+    ${publicFacts}
     <div class="score-breakdown">${RadarRenderers.renderScoreRows(score)}</div>
     <details class="detail-fold">
-      <summary>資料快照與產業證據</summary>
+      <summary>公開資料快照</summary>
       ${dataSnapshot}
     </details>
     ${renderCollectedEvents(company)}
-    <details class="detail-fold">
-      <summary>完整研究欄位</summary>
-      ${modules}
-    </details>
-    <section class="module">
-      <h3>主要風險</h3>
-      <ul>${riskItems || "<li>尚未填寫</li>"}</ul>
-    </section>
-    <section class="module">
-      <h3>近期訊號</h3>
-      <ul>${signalItems || "<li>尚未建立訊號</li>"}</ul>
-    </section>
     <section class="module">
       <h3>評分理由</h3>
       ${score.rows.map((row) => `<p><b>${RadarRenderers.escapeHtml(row.label)}</b>：${RadarRenderers.escapeHtml(row.rationale)}</p>`).join("")}
@@ -977,6 +1367,31 @@ function formatPercent(value) {
   return formatNumber(value, "%");
 }
 
+function majorShareholderLabel(ownership) {
+  const names = (ownership?.major_shareholders || [])
+    .map((holder) => String(holder?.name || "").trim())
+    .filter(Boolean);
+  return names.length ? names.join("、") : `${formatNumber(ownership?.major_shareholder_count)} 名`;
+}
+
+function normalizeDisclosureText(value) {
+  let text = String(value || "").replace(/\uFEFF/g, "");
+  const looksMojibake = /[\u0080-\u009F\u00C2\u00C3\u00E5-\u00E9]/.test(text);
+  const canReDecode = [...text].every((character) => character.charCodeAt(0) <= 255);
+  if (looksMojibake && canReDecode) {
+    try {
+      const decoded = new TextDecoder("utf-8", { fatal: true }).decode(Uint8Array.from(text, (character) => character.charCodeAt(0)));
+      if (/[^\x00-\x7F]/.test(decoded)) text = decoded;
+    } catch {
+      // Preserve source text when it is not recoverable UTF-8 mojibake.
+    }
+  }
+  return text
+    .replace(/[\u0000-\u0008\u000B-\u001F\u007F-\u009F]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function renderDataSnapshot(company, sourceIndex) {
   const market = state.marketData.companies?.[company.id];
   const revenue = state.revenueData.companies?.[company.id];
@@ -984,11 +1399,8 @@ function renderDataSnapshot(company, sourceIndex) {
   const catalyst = state.catalystData.companies?.[company.id];
   const ownership = state.ownershipData.companies?.[company.id];
   const risk = state.riskData.companies?.[company.id];
-  const industryEvidence = state.industryEvidenceData.companies?.[company.id];
-  const industry = state.industryData.companies?.[company.id];
   const status = state.dataStatus.companies?.[company.id];
   const statusText = status ? `${status.completed_count}/${status.total_count} 類資料已接入` : "資料狀態未建立";
-  const evidenceRows = industryEvidence?.dimensions || [];
 
   const cards = [
     {
@@ -1036,7 +1448,7 @@ function renderDataSnapshot(company, sourceIndex) {
       sourceIds: ownership?.source_ids,
       rows: [
         ["分數", formatNumber(ownership?.score)],
-        ["大股東", `${formatNumber(ownership?.major_shareholder_count)} 名`],
+        ["大股東", majorShareholderLabel(ownership)],
         ["內部人轉讓", `${formatNumber(ownership?.insider_transfer_count)} 筆`],
         ["理由", ownership?.rationale || "尚無資料"]
       ]
@@ -1049,17 +1461,6 @@ function renderDataSnapshot(company, sourceIndex) {
         ["負向訊息", `${formatNumber(risk?.negative_event_count)} 則`],
         ["申報違規", `${formatNumber(risk?.disclosure_violation_count)} 筆`],
         ["理由", risk?.rationale || "尚無資料"]
-      ]
-    },
-    {
-      title: "產業基本面",
-      sourceIds: industry?.source_ids,
-      rows: [
-        ["分數", formatNumber(industry?.score)],
-        ["產業證據", industry?.industry_evidence_total_count ? `${formatNumber(industry?.industry_evidence_score)} (${formatNumber(industry?.industry_evidence_completed_count)}/${formatNumber(industry?.industry_evidence_total_count)})` : "尚無資料"],
-        ["來源追溯", formatNumber(industry?.traceability_score)],
-        ["營收/財務/風險", `${formatNumber(industry?.revenue_score)} / ${formatNumber(industry?.financial_score)} / ${formatNumber(industry?.risk_score)}`],
-        ["理由", industry?.rationale || "尚無資料"]
       ]
     }
   ];
@@ -1081,21 +1482,7 @@ function renderDataSnapshot(company, sourceIndex) {
           </article>
         `).join("")}
       </div>
-      <p class="muted">七個評分維度皆由公開資料或可追溯公式產生；若官方 API 暫時失敗，更新腳本會使用上一版快取資料並保留資料狀態。</p>
-      ${evidenceRows.length ? `
-        <div class="evidence-list">
-          ${evidenceRows.map((dimension) => `
-            <article class="evidence-item">
-              <div>
-                <strong>${RadarRenderers.escapeHtml(dimension.label)}</strong>
-                <p class="muted">${RadarRenderers.escapeHtml(dimension.rationale || dimension.description || "")}</p>
-              </div>
-              <span class="pill">${RadarRenderers.escapeHtml(formatNumber(dimension.score))}</span>
-              ${RadarRenderers.sourceLinks(dimension.source_ids, sourceIndex)}
-            </article>
-          `).join("")}
-        </div>
-      ` : ""}
+      <p class="muted">各卡僅呈現已接入的公開資料；若官方 API 暫時失敗，更新腳本會使用上一版快取資料並保留資料狀態。</p>
     </section>
   `;
 }

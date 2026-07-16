@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>跨產業公司研究雷達</title>
-  <meta name="description" content="跨產業公司研究與評分儀錶板，使用 JSON 設定產業模板、欄位定義、評分規則、訊號與公司資料。">
-  <link rel="stylesheet" href="css/styles.css?v=0.17">
+  <title>台股公司觀察站</title>
+  <meta name="description" content="台股公司公開資料追蹤與評分觀察工具，使用可追溯資料與產業模板整理公司變化。">
+  <link rel="stylesheet" href="css/styles.css?v=0.24">
 </head>
 <body>
   <header class="app-header">
     <div>
-      <p class="eyebrow">Company Research Radar</p>
-      <h1>跨產業公司研究雷達</h1>
+      <p class="eyebrow">Taiwan Company Watch</p>
+      <h1>台股公司觀察站</h1>
       <p class="subtitle">以官方公開資料、產業證據層與可追溯公式計算七個評分維度，再用產業模板保留跨產業擴充能力。</p>
     </div>
     <div class="status-panel" aria-label="資料狀態">
@@ -45,8 +45,13 @@
     <section class="candidate-loader" aria-label="研究清單管理">
       <div class="scope-copy">
         <p class="eyebrow">Research Scope</p>
-        <p>選擇或新增公司後，研究建立與更新都由選股頁處理。</p>
+        <p>輸入公司名稱或代號快速加入；批次篩選請使用管理公司。</p>
       </div>
+      <label class="quick-company-search">
+        <span>快速加入研究</span>
+        <input id="quick-company-input" type="search" autocomplete="off" placeholder="輸入公司名稱或四碼代號" aria-controls="quick-company-results" aria-expanded="false">
+        <div id="quick-company-results" class="quick-company-results" role="listbox" hidden></div>
+      </label>
       <label class="seed-import">
         <span>載入候選種子</span>
         <input id="candidate-seed-file" type="file" accept="application/json,.json">
@@ -65,18 +70,22 @@
             <p class="eyebrow">Watchlist</p>
             <h2>公司觀察清單</h2>
           </div>
-          <span id="visible-count" class="pill">--</span>
+          <div class="watchlist-actions">
+            <span id="visible-count" class="pill">--</span>
+            <button id="manage-list-button" type="button" class="ghost-button" aria-expanded="false">管理清單</button>
+          </div>
         </div>
         <div id="company-list" class="company-list" aria-live="polite"></div>
+        <section id="company-manager" class="company-manager" aria-label="觀察清單管理" hidden></section>
       </div>
 
-      <aside class="detail-panel" aria-label="公司詳細資料">
+      <section class="detail-panel" aria-label="公司詳細資料">
         <div id="company-detail" class="detail-empty">
           <p class="eyebrow">Company File</p>
           <h2>選擇一家公司</h2>
           <p>點選左側公司卡片，可查看產業模板欄位、來源 metadata 與評分拆解。</p>
         </div>
-      </aside>
+      </section>
     </section>
 
     <section class="section-block" aria-label="產業評估標準">
@@ -112,6 +121,6 @@
 
   <script src="js/scoring.js?v=0.15"></script>
   <script src="js/renderers.js?v=0.15"></script>
-  <script src="js/app.js?v=0.18"></script>
+  <script src="js/app.js?v=0.30"></script>
 </body>
 </html>

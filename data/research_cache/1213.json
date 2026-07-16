@@ -2,19 +2,19 @@
   "version": "1.0.0",
   "collected_at": "2026-07-16T02:49:46.182Z",
   "company": {
-    "id": "twse-2344",
-    "ticker": "2344",
-    "name": "華邦電",
+    "id": "twse-1213",
+    "ticker": "1213",
+    "name": "大飲",
     "market": "TWSE",
-    "industry_template": "semiconductor"
+    "industry_template": "consumer_food_retail"
   },
   "collection_scope": "targeted_research_company",
   "events": [],
   "references": [
     {
-      "id": "mops-history-2344",
-      "title": "華邦電 MOPS 歷史重大訊息",
-      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2344",
+      "id": "mops-history-1213",
+      "title": "大飲 MOPS 歷史重大訊息",
+      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1213",
       "source_id": "mops_history_search",
       "source_type": "official_search_link",
       "claim_type": "official_search_reference",
@@ -22,9 +22,9 @@
       "note": "歷史資料以公開資訊觀測站查詢頁為準；本版本不將未經欄位驗證的網頁內容直接納入評分。"
     },
     {
-      "id": "company-website-2344",
-      "title": "華邦電 官方網站",
-      "url": "https://WWW.WINBOND.COM",
+      "id": "company-website-1213",
+      "title": "大飲 官方網站",
+      "url": "http://applesidra.com.tw",
       "source_id": "company_website",
       "source_type": "company_reference",
       "claim_type": "company_published_reference",

@@ -1,6 +1,6 @@
 {
   "version": "0.7.0",
-  "generated_at": "2026-07-15T03:58:07.089Z",
+  "generated_at": "2026-07-15T08:24:54.483Z",
   "sources": [
     {
       "id": "twse_income_statement",
@@ -296,6 +296,28 @@
       "score": 63,
       "rationale": "2026Q1 毛利率 20.07%，營益率 10.1%，流動比率 1.15，負債比率 60.19%。"
     },
+    "tpex-6167": {
+      "ticker": "6167",
+      "market": "TPEx",
+      "status": "ok",
+      "source_ids": [
+        "tpex_income_statement",
+        "tpex_balance_sheet"
+      ],
+      "evidence_level": "high",
+      "year": "2026",
+      "quarter": "1",
+      "revenue_thousand_twd": 316109,
+      "gross_margin_pct": 6.74,
+      "operating_margin_pct": -10.32,
+      "net_margin_pct": -2.71,
+      "current_ratio": 3.2,
+      "debt_ratio_pct": 15.51,
+      "eps": -0.06,
+      "book_value_per_share": 11.78,
+      "score": 50,
+      "rationale": "2026Q1 毛利率 6.74%，營益率 -10.32%，流動比率 3.2，負債比率 15.51%。"
+    },
     "tpex-6171": {
       "ticker": "6171",
       "market": "TPEx",
@@ -339,6 +361,28 @@
       "book_value_per_share": 195.32,
       "score": 65,
       "rationale": "2026Q1 毛利率 20.83%，營益率 10.55%，流動比率 1.24，負債比率 55.75%。"
+    },
+    "tpex-6735": {
+      "ticker": "6735",
+      "market": "TPEx",
+      "status": "ok",
+      "source_ids": [
+        "tpex_income_statement",
+        "tpex_balance_sheet"
+      ],
+      "evidence_level": "high",
+      "year": "2026",
+      "quarter": "1",
+      "revenue_thousand_twd": 93677,
+      "gross_margin_pct": 48.4,
+      "operating_margin_pct": 5.6,
+      "net_margin_pct": 14.3,
+      "current_ratio": 4.16,
+      "debt_ratio_pct": 15.61,
+      "eps": 0.29,
+      "book_value_per_share": 20.99,
+      "score": 71,
+      "rationale": "2026Q1 毛利率 48.4%，營益率 5.6%，流動比率 4.16，負債比率 15.61%。"
     },
     "tw-7780-daiken": {
       "ticker": "7780",

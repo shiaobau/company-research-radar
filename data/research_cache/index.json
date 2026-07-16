@@ -1,24 +1,54 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-07-15T04:00:21.543Z",
+  "generated_at": "2026-07-16T02:49:46.182Z",
   "collection_scope": "targeted_research_company",
   "source_status": [
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-15T03:35:53.226Z",
-      "row_count": 123,
+      "fetched_at": "2026-07-16T01:56:57.043Z",
+      "row_count": 87,
       "available": true
     },
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-15T03:35:53.681Z",
-      "row_count": 70,
+      "fetched_at": "2026-07-16T01:56:57.535Z",
+      "row_count": 75,
       "available": true
     }
   ],
   "companies": [
+    {
+      "ticker": "1213",
+      "company_id": "twse-1213",
+      "name": "大飲",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/1213.json"
+    },
+    {
+      "ticker": "1595",
+      "company_id": "tpex-1595",
+      "name": "川寶",
+      "market": "TPEx",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/1595.json"
+    },
+    {
+      "ticker": "1707",
+      "company_id": "tw-1707-grapeking",
+      "name": "葡萄王生技",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/1707.json"
+    },
     {
       "ticker": "1909",
       "company_id": "twse-1909",
@@ -26,8 +56,38 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 0,
-      "collected_at": "2026-07-15T04:00:21.543Z",
+      "collected_at": "2026-07-16T02:49:46.182Z",
       "cache_path": "data/research_cache/1909.json"
+    },
+    {
+      "ticker": "2301",
+      "company_id": "twse-2301",
+      "name": "光寶科",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/2301.json"
+    },
+    {
+      "ticker": "2303",
+      "company_id": "tw-2303-umc",
+      "name": "聯電",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 1,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/2303.json"
+    },
+    {
+      "ticker": "2330",
+      "company_id": "tw-2330-tsmc",
+      "name": "台積電",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/2330.json"
     },
     {
       "ticker": "2344",
@@ -36,7 +96,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 0,
-      "collected_at": "2026-07-15T04:00:21.543Z",
+      "collected_at": "2026-07-16T02:49:46.182Z",
       "cache_path": "data/research_cache/2344.json"
     },
     {
@@ -46,8 +106,58 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 0,
-      "collected_at": "2026-07-15T04:00:21.543Z",
+      "collected_at": "2026-07-16T02:49:46.182Z",
       "cache_path": "data/research_cache/2345.json"
+    },
+    {
+      "ticker": "2454",
+      "company_id": "tw-2454-mediatek",
+      "name": "聯發科",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/2454.json"
+    },
+    {
+      "ticker": "3044",
+      "company_id": "twse-3044",
+      "name": "健鼎",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/3044.json"
+    },
+    {
+      "ticker": "3164",
+      "company_id": "tw-3164-genmont",
+      "name": "景岳",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/3164.json"
+    },
+    {
+      "ticker": "3711",
+      "company_id": "tw-3711-aseh",
+      "name": "日月光投控",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/3711.json"
+    },
+    {
+      "ticker": "6167",
+      "company_id": "tpex-6167",
+      "name": "久正",
+      "market": "TPEx",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/6167.json"
     },
     {
       "ticker": "6171",
@@ -56,9 +166,59 @@
       "market": "TPEx",
       "status": "ok",
       "event_count": 0,
-      "collected_at": "2026-07-15T04:00:21.543Z",
+      "collected_at": "2026-07-16T02:49:46.182Z",
       "cache_path": "data/research_cache/6171.json"
+    },
+    {
+      "ticker": "6488",
+      "company_id": "tw-6488-globalwafers",
+      "name": "環球晶",
+      "market": "TPEx",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/6488.json"
+    },
+    {
+      "ticker": "6735",
+      "company_id": "tpex-6735",
+      "name": "美達科技",
+      "market": "TPEx",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/6735.json"
+    },
+    {
+      "ticker": "7780",
+      "company_id": "tw-7780-daiken",
+      "name": "大研生醫",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/7780.json"
+    },
+    {
+      "ticker": "8279",
+      "company_id": "tw-8279-syngen",
+      "name": "生展",
+      "market": "TPEx",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/8279.json"
+    },
+    {
+      "ticker": "8436",
+      "company_id": "tw-8436-tci",
+      "name": "大江生醫",
+      "market": "TPEx",
+      "status": "ok",
+      "event_count": 0,
+      "collected_at": "2026-07-16T02:49:46.182Z",
+      "cache_path": "data/research_cache/8436.json"
     }
   ],
-  "total_events": 0
+  "total_events": 1
 }

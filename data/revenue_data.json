@@ -1,6 +1,6 @@
 {
   "version": "0.7.0",
-  "generated_at": "2026-07-15T03:58:07.089Z",
+  "generated_at": "2026-07-15T08:24:54.483Z",
   "sources": [
     {
       "id": "twse_monthly_revenue",
@@ -246,6 +246,25 @@
       "score": 79,
       "rationale": "2026-06 月營收 YoY 32.86%，MoM 4.36%，累計 YoY 22.02%。"
     },
+    "tpex-6167": {
+      "ticker": "6167",
+      "market": "TPEx",
+      "status": "ok",
+      "source_ids": [
+        "tpex_monthly_revenue"
+      ],
+      "evidence_level": "high",
+      "data_month": "2026-06",
+      "current_revenue_thousand_twd": 111885,
+      "previous_month_revenue_thousand_twd": 102138,
+      "last_year_month_revenue_thousand_twd": 114573,
+      "mom_pct": 9.54,
+      "yoy_pct": -2.35,
+      "cumulative_revenue_thousand_twd": 612891,
+      "cumulative_yoy_pct": 6.08,
+      "score": 55,
+      "rationale": "2026-06 月營收 YoY -2.35%，MoM 9.54%，累計 YoY 6.08%。"
+    },
     "tpex-6171": {
       "ticker": "6171",
       "market": "TPEx",
@@ -283,6 +302,25 @@
       "cumulative_yoy_pct": -7.6,
       "score": 52,
       "rationale": "2026-06 月營收 YoY -1.63%，MoM 16.16%，累計 YoY -7.6%。"
+    },
+    "tpex-6735": {
+      "ticker": "6735",
+      "market": "TPEx",
+      "status": "ok",
+      "source_ids": [
+        "tpex_monthly_revenue"
+      ],
+      "evidence_level": "high",
+      "data_month": "2026-06",
+      "current_revenue_thousand_twd": 33285,
+      "previous_month_revenue_thousand_twd": 37499,
+      "last_year_month_revenue_thousand_twd": 28884,
+      "mom_pct": -11.24,
+      "yoy_pct": 15.24,
+      "cumulative_revenue_thousand_twd": 199435,
+      "cumulative_yoy_pct": 55.83,
+      "score": 71,
+      "rationale": "2026-06 月營收 YoY 15.24%，MoM -11.24%，累計 YoY 55.83%。"
     },
     "tw-7780-daiken": {
       "ticker": "7780",

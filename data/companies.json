@@ -55,6 +55,45 @@
   ],
   "companies": [
     {
+      "id": "twse-1213",
+      "ticker": "1213",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "大飲",
+      "legal_name": "大西洋飲料股份有限公司",
+      "category": "消費、食品、零售與生活",
+      "industry_template": "consumer_food_retail",
+      "original_industry_template": "consumer_food_retail",
+      "official_industry_code": "02",
+      "official_industry_label": "食品工業",
+      "listing_date": "1981-04-10",
+      "website": "http://applesidra.com.tw",
+      "data_quality": "Public structured datasets are refreshed by the research update workflow.",
+      "last_reviewed": "2026-07-16",
+      "tags": [
+        "上市",
+        "消費、食品、零售與生活",
+        "食品工業"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "sources": [
+        {
+          "id": "twse-1213_official",
+          "title": "大飲 官方網站",
+          "short_title": "官方網站",
+          "url": "http://applesidra.com.tw",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {},
+      "risks": [],
+      "events": []
+    },
+    {
       "id": "tpex-1595",
       "ticker": "1595",
       "market": "TPEx",
@@ -1816,6 +1855,45 @@
       ]
     },
     {
+      "id": "tpex-6167",
+      "ticker": "6167",
+      "market": "TPEx",
+      "market_label": "上櫃",
+      "name": "久正",
+      "legal_name": "久正光電股份有限公司",
+      "category": "電子硬體與零組件",
+      "industry_template": "electronics_hardware",
+      "original_industry_template": "electronics_hardware",
+      "official_industry_code": "26",
+      "official_industry_label": "光電業",
+      "listing_date": "2002-03-26",
+      "website": "https://www.powertip.com.tw",
+      "data_quality": "Public structured datasets are refreshed by the research update workflow.",
+      "last_reviewed": "2026-07-15",
+      "tags": [
+        "上櫃",
+        "電子硬體與零組件",
+        "光電業"
+      ],
+      "primary_source_ids": [
+        "tpex_company_basic",
+        "mops",
+        "tpex"
+      ],
+      "sources": [
+        {
+          "id": "tpex-6167_official",
+          "title": "久正 官方網站",
+          "short_title": "官方網站",
+          "url": "https://www.powertip.com.tw",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {},
+      "risks": [],
+      "events": []
+    },
+    {
       "id": "tpex-6171",
       "ticker": "6171",
       "market": "TPEx",
@@ -2106,6 +2184,45 @@
           "note": "用於矽晶圓材料、公司業務與官方資訊追溯。"
         }
       ]
+    },
+    {
+      "id": "tpex-6735",
+      "ticker": "6735",
+      "market": "TPEx",
+      "market_label": "上櫃",
+      "name": "美達科技",
+      "legal_name": "美達科技股份有限公司",
+      "category": "電子硬體與零組件",
+      "industry_template": "electronics_hardware",
+      "original_industry_template": "electronics_hardware",
+      "official_industry_code": "31",
+      "official_industry_label": "其他電子業",
+      "listing_date": "2022-04-29",
+      "website": "http://www.amidatec.com/",
+      "data_quality": "Public structured datasets are refreshed by the research update workflow.",
+      "last_reviewed": "2026-07-15",
+      "tags": [
+        "上櫃",
+        "電子硬體與零組件",
+        "其他電子業"
+      ],
+      "primary_source_ids": [
+        "tpex_company_basic",
+        "mops",
+        "tpex"
+      ],
+      "sources": [
+        {
+          "id": "tpex-6735_official",
+          "title": "美達科技 官方網站",
+          "short_title": "官方網站",
+          "url": "http://www.amidatec.com/",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {},
+      "risks": [],
+      "events": []
     },
     {
       "id": "tw-7780-daiken",

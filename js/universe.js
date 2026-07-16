@@ -141,9 +141,11 @@ function companyRow(company) {
       <input type="checkbox" data-ticker="${escapeHtml(company.ticker)}" ${checked}>
       <span class="company-main">
         <span class="company-name"><span class="ticker">${escapeHtml(company.ticker)}</span> ${escapeHtml(company.abbreviation || company.name)}</span>
-        <span class="company-sub">${escapeHtml(company.official_industry_label)} · ${escapeHtml(company.match_reason)}</span>
+        <span class="company-sub">
+          <span class="market-badge">${escapeHtml(company.market_label)}</span>
+          <span class="company-industry">${escapeHtml(company.official_industry_label)} · ${escapeHtml(company.match_reason)}</span>
+        </span>
       </span>
-      <span class="market-badge">${escapeHtml(company.market_label)}</span>
     </label>
   `;
 }
@@ -175,7 +177,7 @@ function renderSections() {
             <div class="section-meta">
               <span class="pill">全部 ${allCount.toLocaleString("zh-TW")}</span>
               <span class="pill">顯示 ${visible.length.toLocaleString("zh-TW")}</span>
-              <span class="pill">已選 ${selectedCount.toLocaleString("zh-TW")}</span>
+              <span class="pill" data-selected-count="${escapeHtml(template.id)}">已選 ${selectedCount.toLocaleString("zh-TW")}</span>
               <button class="select-visible" type="button" data-select-template="${escapeHtml(template.id)}">勾選本區可見</button>
             </div>
           </div>
@@ -202,7 +204,24 @@ function toggleCompany(ticker, checked) {
   if (checked) state.selected.add(ticker);
   else state.selected.delete(ticker);
   saveSelection();
-  render();
+  updateSelectionUi(ticker);
+}
+
+function updateSelectionUi(ticker) {
+  renderSummary();
+  renderSelectedList();
+
+  const checkbox = document.querySelector(`input[data-ticker="${ticker}"]`);
+  if (checkbox) checkbox.checked = state.selected.has(ticker);
+
+  const company = state.companies.find((item) => item.ticker === ticker);
+  if (!company) return;
+
+  const selectedCount = state.visibleCompanies.filter((item) => (
+    item.industry_template === company.industry_template && state.selected.has(item.ticker)
+  )).length;
+  const countPill = document.querySelector(`[data-selected-count="${company.industry_template}"]`);
+  if (countPill) countPill.textContent = `已選 ${selectedCount.toLocaleString("zh-TW")}`;
 }
 
 function selectVisibleTemplate(templateId) {
@@ -267,43 +286,31 @@ function saveCandidateSeed() {
   els.copyStatus.textContent = `已保存 ${tickers.length} 檔候選種子`;
 }
 
-function dashboardUrlForSelection() {
+function dashboardUrlForSelection(autoStart = false) {
   const params = new URLSearchParams();
   params.set("universe", "selected");
   const tickers = selectedTickers();
   if (tickers.length) params.set("tickers", tickers.join(","));
+  if (autoStart) params.set("autostart", "1");
   return `index.html?${params.toString()}`;
 }
 
-async function startResearch() {
+function startResearch() {
   const tickers = selectedTickers();
   if (!tickers.length) {
     els.copyStatus.textContent = "尚未勾選公司";
     return;
   }
 
-  setResearchProgress("正在建立研究檔與更新公開資料...", true);
-  sessionStorage.setItem(RESEARCH_SESSION_KEY, JSON.stringify(tickers));
-  try {
-    const response = await fetch("/api/research", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ tickers })
-    });
-    const payload = await response.json();
-    if (!response.ok) throw new Error(payload.message || "研究 API 無法啟動");
-    setResearchProgress(`已開始處理 ${tickers.length} 家公司，請留在此頁等待完成。`, true);
-    window.setTimeout(pollResearchProgress, 900);
-  } catch (error) {
-    sessionStorage.removeItem(RESEARCH_SESSION_KEY);
-    setResearchProgress(`無法啟動研究：${error.message}`);
-  }
+  saveSelection();
+  setResearchProgress(`正在將 ${tickers.length} 家公司加入研究與更新流程...`, true);
+  window.location.href = dashboardUrlForSelection(true);
 }
 
 function setResearchProgress(message, active = false) {
   els.copyStatus.textContent = message;
   els.startResearchButton.disabled = active;
-  els.startResearchButton.textContent = active ? "研究處理中" : "開始建立研究檔";
+  els.startResearchButton.textContent = active ? "正在前往研究流程" : "加入研究並更新";
 }
 
 async function pollResearchProgress() {

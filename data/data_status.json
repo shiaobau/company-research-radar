@@ -1,6 +1,6 @@
 {
   "version": "0.7.0",
-  "generated_at": "2026-07-15T03:58:07.089Z",
+  "generated_at": "2026-07-15T08:24:54.483Z",
   "note": "由 tools/update-data.mjs 產生。資料來源為公開市場 API；若端點缺漏，前端會退回人工初評並標示資料狀態。",
   "companies": {
     "tpex-1595": {
@@ -159,6 +159,19 @@
       "completed_count": 7,
       "total_count": 7
     },
+    "tpex-6167": {
+      "ticker": "6167",
+      "name": "久正",
+      "catalyst": "ok",
+      "market": "missing",
+      "revenue": "ok",
+      "financial": "ok",
+      "ownership": "ok",
+      "risk": "ok",
+      "industry": "ok",
+      "completed_count": 6,
+      "total_count": 7
+    },
     "tpex-6171": {
       "ticker": "6171",
       "name": "大城地產",
@@ -183,6 +196,19 @@
       "risk": "ok",
       "industry": "ok",
       "completed_count": 7,
+      "total_count": 7
+    },
+    "tpex-6735": {
+      "ticker": "6735",
+      "name": "美達科技",
+      "catalyst": "ok",
+      "market": "missing",
+      "revenue": "ok",
+      "financial": "ok",
+      "ownership": "ok",
+      "risk": "ok",
+      "industry": "ok",
+      "completed_count": 6,
       "total_count": 7
     },
     "tw-7780-daiken": {

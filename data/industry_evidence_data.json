@@ -1,6 +1,6 @@
 {
   "version": "0.7.0",
-  "generated_at": "2026-07-15T03:58:07.089Z",
+  "generated_at": "2026-07-15T08:24:54.483Z",
   "note": "產業證據層。各產業的子評估標準由 data/industry_templates.json 定義；保健營養食品先接入 TFDA 健康食品、廣告合規、品項證據、品質系統與通路回購框架。",
   "sources": [
     {
@@ -1109,8 +1109,8 @@
           "label": "供應鏈風險",
           "weight": 0.16,
           "status": "ok",
-          "score": 65,
-          "evidence_level": "medium",
+          "score": 70,
+          "evidence_level": "high",
           "source_ids": [
             "mops"
           ],
@@ -1119,6 +1119,90 @@
         }
       ],
       "rationale": "半導體 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
+    "tpex-6167": {
+      "ticker": "6167",
+      "market": "TPEx",
+      "industry_template": "electronics_hardware",
+      "status": "ok",
+      "source_ids": [
+        "tpex_company_basic",
+        "mops",
+        "tpex"
+      ],
+      "evidence_level": "low",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": 54,
+      "dimensions": [
+        {
+          "id": "product_cycle",
+          "label": "產品週期",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 54,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "產品是否處於升級、替換、去庫存或成熟壓價週期。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "customer_structure",
+          "label": "客戶結構",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 54,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "主要客戶品質、集中度、終端需求與議價能力。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "supply_chain_role",
+          "label": "供應鏈角色",
+          "weight": 0.2,
+          "status": "ok",
+          "score": 54,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "公司在模組、零組件、通路或代工環節中的不可替代性。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "certification_quality",
+          "label": "認證與規格品質",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 54,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "產品規格、品質認證、車用或高可靠度應用證據。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 52,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "毛利率與營益率是否能抵抗匯率、價格與需求波動。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        }
+      ],
+      "rationale": "電子硬體與零組件 產業證據 5/5 項已建立；分數由各子項權重合成。"
     },
     "tpex-6171": {
       "ticker": "6171",
@@ -1300,6 +1384,90 @@
       ],
       "rationale": "半導體 產業證據 5/5 項已建立；分數由各子項權重合成。"
     },
+    "tpex-6735": {
+      "ticker": "6735",
+      "market": "TPEx",
+      "industry_template": "electronics_hardware",
+      "status": "ok",
+      "source_ids": [
+        "tpex_company_basic",
+        "mops",
+        "tpex"
+      ],
+      "evidence_level": "low",
+      "completed_count": 5,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": 55,
+      "dimensions": [
+        {
+          "id": "product_cycle",
+          "label": "產品週期",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 54,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "產品是否處於升級、替換、去庫存或成熟壓價週期。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "customer_structure",
+          "label": "客戶結構",
+          "weight": 0.22,
+          "status": "ok",
+          "score": 54,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "主要客戶品質、集中度、終端需求與議價能力。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "supply_chain_role",
+          "label": "供應鏈角色",
+          "weight": 0.2,
+          "status": "ok",
+          "score": 54,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "公司在模組、零組件、通路或代工環節中的不可替代性。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "certification_quality",
+          "label": "認證與規格品質",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 54,
+          "evidence_level": "low",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "產品規格、品質認證、車用或高可靠度應用證據。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        },
+        {
+          "id": "margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "ok",
+          "score": 61,
+          "evidence_level": "medium",
+          "source_ids": [
+            "mops"
+          ],
+          "description": "毛利率與營益率是否能抵抗匯率、價格與需求波動。",
+          "rationale": "產業模板已建立，但此公司尚未填入對應欄位。"
+        }
+      ],
+      "rationale": "電子硬體與零組件 產業證據 5/5 項已建立；分數由各子項權重合成。"
+    },
     "tw-7780-daiken": {
       "ticker": "7780",
       "market": "TWSE",
@@ -1318,7 +1486,7 @@
       "completed_count": 5,
       "total_count": 5,
       "traceability_score": 77,
-      "score": 61,
+      "score": 63,
       "dimensions": [
         {
           "id": "tfda_health_food_permit",
@@ -1342,15 +1510,15 @@
           "label": "廣告合規",
           "weight": 0.24,
           "status": "ok",
-          "score": 64,
-          "evidence_level": "medium",
+          "score": 72,
+          "evidence_level": "high",
           "source_ids": [
             "tfda_ad_compliance",
             "tfda",
             "mops"
           ],
           "description": "食品、健康食品與營養品廣告是否有違規或裁罰訊號。",
-          "rationale": "先以公開申報違規 0 筆、負向重大訊息 1 則暫代扣分；TFDA 食品廣告違規資料源已列入待自動比對。"
+          "rationale": "先以公開申報違規與負向重大訊息暫代檢查，未見明顯扣分項；TFDA 食品廣告違規資料源已列入待自動比對。"
         },
         {
           "id": "product_evidence",

@@ -1,16 +1,18 @@
 {
   "version": "1.0.0",
   "timezone": "Asia/Taipei",
-  "generated_at": "2026-07-15T03:35:53.922Z",
+  "frequency": "weekday",
+  "frequency_label": "平日",
+  "generated_at": "2026-07-16T02:51:14.895Z",
   "current_run": null,
   "schedules": {
     "morning": {
-      "label": "早晨公告補漏",
+      "label": "早間事件更新",
       "time": "08:15",
-      "description": "更新重大訊息快取與研究公司事件。",
+      "description": "更新重大訊息與目標式資料收集。",
       "last_run": {
         "slot": "morning",
-        "label": "早晨公告補漏",
+        "label": "早間事件更新",
         "status": "done",
         "started_at": "2026-07-15T03:35:50.907Z",
         "steps": [
@@ -39,15 +41,15 @@
       }
     },
     "market_close": {
-      "label": "收盤完整更新",
+      "label": "收盤資料更新",
       "time": "14:15",
-      "description": "更新官方快取、價格與評分，再刷新研究事件。",
+      "description": "更新公開資料、評分與研究快取。",
       "last_run": null
     },
     "evening": {
-      "label": "晚間公告補更新",
+      "label": "晚間治理更新",
       "time": "20:30",
-      "description": "更新重大訊息、違規與股權資料，再刷新研究事件。",
+      "description": "更新重大訊息、股權、違規與目標式收集。",
       "last_run": null
     }
   }

@@ -11,7 +11,9 @@
       "impact": "watch",
       "confidence": "medium",
       "title": "補抓月營收 YoY/MoM，確認品牌產品組合是否轉強",
-      "source_ids": ["mops"]
+      "source_ids": [
+        "mops"
+      ]
     },
     {
       "id": "sig-8436-margin",
@@ -22,7 +24,9 @@
       "impact": "watch",
       "confidence": "medium",
       "title": "補財報毛利率、存貨與應收，檢查 ODM 訂單品質",
-      "source_ids": ["mops"]
+      "source_ids": [
+        "mops"
+      ]
     },
     {
       "id": "sig-7780-listing",
@@ -33,7 +37,9 @@
       "impact": "watch",
       "confidence": "medium",
       "title": "上市後價格區間與量能需獨立追蹤，避免品牌題材過熱",
-      "source_ids": ["twse"]
+      "source_ids": [
+        "twse"
+      ]
     },
     {
       "id": "sig-8279-disclosure",
@@ -44,7 +50,9 @@
       "impact": "watch",
       "confidence": "medium",
       "title": "補年報與產品資料，確認益生菌/發酵素材業務占比",
-      "source_ids": ["mops"]
+      "source_ids": [
+        "mops"
+      ]
     },
     {
       "id": "sig-3164-product-evidence",
@@ -55,7 +63,10 @@
       "impact": "watch",
       "confidence": "medium",
       "title": "逐品項整理益生菌證據、宣稱邊界與健康食品許可狀態",
-      "source_ids": ["tfda", "mops"]
+      "source_ids": [
+        "tfda",
+        "mops"
+      ]
     }
   ]
 }
