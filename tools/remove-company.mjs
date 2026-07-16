@@ -1,4 +1,5 @@
 import path from "node:path";
+import { unlink } from "node:fs/promises";
 import { readJson, writeJson } from "./data-sources.mjs";
 
 const root = process.cwd();
@@ -20,6 +21,10 @@ async function removeFromGenerated(fileName, ids) {
   } catch {
     // Optional generated file.
   }
+}
+
+async function removeTickerCache(directory, ticker) {
+  await unlink(path.join(dataDir, directory, `${ticker}.json`)).catch(() => {});
 }
 
 async function main() {
@@ -63,6 +68,35 @@ async function main() {
   } catch {
     // Optional file.
   }
+
+  try {
+    const cacheIndexPath = path.join(dataDir, "research_cache", "index.json");
+    const cacheIndex = await readJson(cacheIndexPath);
+    cacheIndex.companies = (cacheIndex.companies || []).filter((company) => !tickers.includes(company.ticker));
+    await writeJson(cacheIndexPath, cacheIndex);
+  } catch {
+    // Optional targeted-research cache index.
+  }
+
+  try {
+    const researchStatusPath = path.join(dataDir, "research_status.json");
+    const researchStatus = await readJson(researchStatusPath);
+    for (const id of removedIds) delete researchStatus.companies?.[id];
+    const records = Object.values(researchStatus.companies || {});
+    researchStatus.summary = {
+      total: records.length,
+      complete_count: records.filter((record) => record.status === "complete").length,
+      incomplete_count: records.filter((record) => record.status === "incomplete").length
+    };
+    await writeJson(researchStatusPath, researchStatus);
+  } catch {
+    // Optional research completeness status.
+  }
+
+  await Promise.all(tickers.flatMap((ticker) => [
+    removeTickerCache("research_cache", ticker),
+    removeTickerCache("mops_history_cache", ticker)
+  ]));
 
   console.log(JSON.stringify({
     removed: removed.map((company) => ({ ticker: company.ticker, id: company.id, name: company.name })),

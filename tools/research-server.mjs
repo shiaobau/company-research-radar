@@ -20,6 +20,8 @@ let task = {
   status: "idle",
   message: "尚未啟動研究流程",
   tickers: [],
+  progress_percent: 0,
+  current_step: null,
   started_at: null,
   finished_at: null,
   output: ""
@@ -108,29 +110,51 @@ function runCommand(command, args, onOutput = () => {}, timeoutMs = 120000) {
 async function startResearch(tickers) {
   task = {
     status: "running",
-    message: "建立研究檔中",
+    message: "準備研究流程",
     tickers,
+    progress_percent: 0,
+    current_step: { index: 0, total: 5, label: "準備研究流程" },
     started_at: new Date().toISOString(),
     finished_at: null,
     output: ""
   };
 
   try {
+    task.message = "刷新公開資料來源中";
+    task.progress_percent = 5;
+    task.current_step = { index: 1, total: 5, label: task.message };
+    await runCommand(nodePath, ["tools/source-cache.mjs", "--refresh"], (output) => { task.output = output; }, 180000);
+
+    task.message = "建立研究檔中";
+    task.progress_percent = 25;
+    task.current_step = { index: 2, total: 5, label: task.message };
     await runCommand(nodePath, ["tools/promote-candidates.mjs", `--tickers=${tickers.join(",")}`], (output) => { task.output = output; }, 30000);
+
     task.message = "更新公開資料中";
+    task.progress_percent = 45;
+    task.current_step = { index: 3, total: 5, label: task.message };
     await runCommand(nodePath, ["tools/update-data.mjs", `--tickers=${tickers.join(",")}`], (output) => { task.output = output; }, 180000);
+
     task.message = "驗證評分資料中";
+    task.progress_percent = 68;
+    task.current_step = { index: 4, total: 5, label: task.message };
     const verificationOutput = await runCommand(nodePath, ["tools/verify-research-data.mjs", `--tickers=${tickers.join(",")}`, "--retry"], (output) => { task.output = output; }, 240000);
     const verification = JSON.parse(verificationOutput);
+
     task.message = "整理公司公告中";
+    task.progress_percent = 88;
+    task.current_step = { index: 5, total: 5, label: task.message };
     await runCommand(nodePath, ["tools/targeted-collector.mjs", `--tickers=${tickers.join(",")}`], (output) => { task.output = output; }, 90000);
     task.status = "done";
+    task.progress_percent = 100;
+    task.current_step = null;
     task.message = verification.incomplete_count
       ? `研究流程已完成；${verification.incomplete_count} 家資料待補。`
       : `完成分析：${tickers.join(", ")}`;
     task.finished_at = new Date().toISOString();
   } catch (error) {
     task.status = "error";
+    task.current_step = null;
     task.message = error.message;
     task.finished_at = new Date().toISOString();
   }

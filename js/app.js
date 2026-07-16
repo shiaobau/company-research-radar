@@ -191,6 +191,17 @@ function setResearchStatus(message, active = true) {
   status.textContent = message || "";
 }
 
+function setResearchProgress(message, percent = 0) {
+  const status = $("#research-status");
+  if (!status) return;
+  const progress = Math.max(0, Math.min(99, Number(percent) || 0));
+  status.className = "research-status active research-progress";
+  status.innerHTML = `
+    <span class="progress-spinner" aria-hidden="true"></span>
+    <div><strong>${RadarRenderers.escapeHtml(message || "研究流程執行中")}</strong><span>${progress}%</span><div class="progress-track"><i style="--progress:${progress}%"></i></div></div>
+  `;
+}
+
 function parseTickerText(text) {
   return String(text || "")
     .split(/[\s,，、;；]+/)
@@ -427,15 +438,16 @@ async function pollResearchStatus() {
     if (!response.ok) return;
     const status = await response.json();
     if (status.status === "idle") return;
-    setResearchStatus(`${status.message}${status.tickers?.length ? `（${status.tickers.join(", ")}）` : ""}`);
+    const message = `${status.message}${status.tickers?.length ? `（${status.tickers.join(", ")}）` : ""}`;
     if (status.status === "running") {
+      setResearchProgress(message, status.progress_percent);
       setTimeout(pollResearchStatus, 2500);
     }
     if (status.status === "done") {
       if (sessionStorage.getItem("researchAutoRefreshAfterRun") === "1") {
         sessionStorage.removeItem("researchAutoRefreshAfterRun");
         clearUniverseResearchRequest();
-        setResearchStatus("研究完成，正在載入最新結果...");
+        setResearchStatus(`${status.message}，正在載入最新結果...`);
         window.setTimeout(() => window.location.reload(), 900);
         return;
       }
@@ -460,7 +472,7 @@ async function startResearchFromDashboard() {
     return;
   }
 
-  setResearchStatus("研究流程啟動中...");
+  setResearchProgress("研究流程啟動中...", 0);
   try {
     const response = await fetch("/api/research", {
       method: "POST",
@@ -472,7 +484,7 @@ async function startResearchFromDashboard() {
     }
     const payload = await response.json();
     if (!response.ok) throw new Error(payload.message || "研究 API 無法啟動");
-    setResearchStatus(`研究流程已啟動：${tickers.join(", ")}`);
+    setResearchProgress(`研究流程已啟動：${tickers.join(", ")}`, 0);
     setTimeout(pollResearchStatus, 1200);
   } catch (error) {
     sessionStorage.removeItem("researchAutoRefreshAfterRun");
@@ -608,6 +620,7 @@ function renderSchedulerPanel() {
   const coverage = state.researchStatus.summary || {};
   const incomplete = Object.values(state.researchStatus.companies || {}).filter((company) => company.status === "incomplete");
   const stateLabel = active ? "更新中" : incomplete.length ? "資料待補" : "完成分析";
+  const activeProgress = Math.max(0, Math.min(99, Number(active?.progress_percent) || 0));
   panel.innerHTML = `
     <div class="update-dashboard">
       <section class="update-section">
@@ -629,7 +642,7 @@ function renderSchedulerPanel() {
       </section>
       <section class="update-section update-status">
         <div><p class="eyebrow">Status</p><h2>更新情形 <span class="pill">${stateLabel}</span></h2></div>
-        <p class="muted">${active ? `目前正在${RadarRenderers.escapeHtml(active.label || "更新")}` : `完成分析 ${coverage.complete_count || 0}/${coverage.total || 0} 家`}</p>
+        ${active ? `<div class="update-progress"><span class="progress-spinner" aria-hidden="true"></span><div><strong>${RadarRenderers.escapeHtml(active.current_step?.label || active.label || "更新中")}</strong><span>${activeProgress}%</span><div class="progress-track"><i style="--progress:${activeProgress}%"></i></div></div></div>` : `<p class="muted">完成分析 ${coverage.complete_count || 0}/${coverage.total || 0} 家</p>`}
         ${incomplete.length ? `<div class="update-missing-list">${incomplete.map((company) => `<span title="${RadarRenderers.escapeHtml((company.missing_dimensions || []).map((item) => item.label).join("、"))}">${RadarRenderers.escapeHtml(`${company.ticker} ${company.name}`)}：${RadarRenderers.escapeHtml((company.missing_dimensions || []).map((item) => item.label).join("、"))}</span>`).join("")}</div>` : "<p class=\"muted\">目前研究公司均已通過七項必要維度驗證。</p>"}
       </section>
     </div>
@@ -660,6 +673,7 @@ async function refreshSchedulerStatus() {
     const researchResponse = await fetch("data/research_status.json", { cache: "no-store" });
     if (researchResponse.ok) state.researchStatus = await researchResponse.json();
     renderSchedulerPanel();
+    if (state.schedulerStatus.current_run) window.setTimeout(refreshSchedulerStatus, 2200);
   } catch {
     // The dashboard can still be opened without a configured local scheduler.
   }

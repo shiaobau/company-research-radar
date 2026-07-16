@@ -26,7 +26,7 @@ const dataDir = path.join(root, "data");
 const companiesPath = path.join(dataDir, "companies.json");
 const generatedAt = new Date().toISOString();
 const runDate = new Date();
-const priceMonths = monthStarts(runDate, 13);
+const priceMonths = monthStarts(runDate, 13).reverse();
 
 const companiesJson = await readJson(companiesPath);
 const companies = companiesJson.companies || [];
@@ -525,47 +525,94 @@ function buildIndustryData({ revenueCompanies, financialCompanies, catalystCompa
   return companiesById;
 }
 
+async function fetchSecondaryPriceHistory(company) {
+  const suffix = company.market === "TWSE" ? ".TW" : ".TWO";
+  const start = Math.floor(new Date(runDate.getFullYear() - 1, runDate.getMonth(), runDate.getDate()).getTime() / 1000);
+  const end = Math.floor((Date.now() + 24 * 60 * 60 * 1000) / 1000);
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${company.ticker}${suffix}?period1=${start}&period2=${end}&interval=1d&events=history`;
+  const payload = await fetchJson(url, 2, 8000);
+  const result = payload.chart?.result?.[0];
+  const quote = result?.indicators?.quote?.[0];
+  if (!Array.isArray(result?.timestamp) || !Array.isArray(quote?.close)) {
+    throw new Error("次要股價來源未回傳日線資料");
+  }
+  return result.timestamp.map((timestamp, index) => ({
+    date: new Date(timestamp * 1000).toISOString().slice(0, 10),
+    close: Number(quote.close[index]),
+    volume: Number(quote.volume?.[index]),
+    source_id: "yahoo_finance_chart"
+  })).filter((row) => Number.isFinite(row.close));
+}
+
 async function fetchPriceHistory(company) {
   const rows = [];
   const errors = [];
+  let failedMonthsInRow = 0;
   for (const month of priceMonths) {
     try {
       if (company.market === "TWSE") {
-        const url = `https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=${twDateParam(month)}&stockNo=${company.ticker}&response=json`;
-        const payload = await fetchJson(url);
-        if (payload.stat === "OK" && Array.isArray(payload.data)) {
-          for (const item of payload.data) {
-            rows.push({
-              date: rocDateToIso(item[0]),
-              close: toNumber(item[6]),
-              volume: toNumber(item[1]),
-              source_id: "twse_stock_day"
-            });
+        const date = twDateParam(month);
+        const urls = [
+          `https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=${date}&stockNo=${company.ticker}&response=json`,
+          `https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=${date}&stockNo=${company.ticker}`
+        ];
+        let payload = null;
+        let lastError = "官方端點未回傳可用資料";
+        for (const url of urls) {
+          try {
+            const candidate = await fetchJson(url, 2, 8000);
+            if (candidate.stat === "OK" && Array.isArray(candidate.data)) {
+              payload = candidate;
+              break;
+            }
+            lastError = `官方端點回覆 ${candidate.stat || "未知狀態"}`;
+          } catch (error) {
+            lastError = error.message;
           }
+        }
+        if (!payload) throw new Error(lastError);
+        for (const item of payload.data) {
+          rows.push({
+            date: rocDateToIso(item[0]),
+            close: toNumber(item[6]),
+            volume: toNumber(item[1]),
+            source_id: "twse_stock_day"
+          });
         }
       } else {
         const url = `https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock?code=${company.ticker}&date=${encodeURIComponent(tpexDateParam(month))}&id=&response=json`;
         const payload = await fetchJson(url);
         const table = payload.tables?.[0];
-        if (payload.stat === "ok" && Array.isArray(table?.data)) {
-          for (const item of table.data) {
-            rows.push({
-              date: rocDateToIso(item[0]),
-              close: toNumber(item[6]),
-              volume: toNumber(item[1]) ? toNumber(item[1]) * 1000 : null,
-              source_id: "tpex_trading_stock"
-            });
-          }
+        if (payload.stat !== "ok" || !Array.isArray(table?.data)) {
+          throw new Error(`官方端點回覆 ${payload.stat || "未知狀態"}`);
+        }
+        for (const item of table.data) {
+          rows.push({
+            date: rocDateToIso(item[0]),
+            close: toNumber(item[6]),
+            volume: toNumber(item[1]) ? toNumber(item[1]) * 1000 : null,
+            source_id: "tpex_trading_stock"
+          });
         }
       }
+      failedMonthsInRow = 0;
     } catch (error) {
       errors.push(`${month.toISOString().slice(0, 7)}: ${error.message}`);
+      failedMonthsInRow += 1;
+      if (failedMonthsInRow >= 2) break;
     }
   }
 
   const byDate = new Map();
   for (const row of rows) {
     if (row.date && Number.isFinite(row.close)) byDate.set(row.date, row);
+  }
+  if (!byDate.size) {
+    try {
+      for (const row of await fetchSecondaryPriceHistory(company)) byDate.set(row.date, row);
+    } catch (error) {
+      errors.push(`secondary market data: ${error.message}`);
+    }
   }
   const history = [...byDate.values()].sort((a, b) => a.date.localeCompare(b.date));
   const closes = history.map((row) => row.close);
@@ -594,7 +641,7 @@ async function fetchPriceHistory(company) {
     ticker: company.ticker,
     market: company.market,
     status: history.length ? "ok" : "missing",
-    source_ids: sourceIdsForMarket(company, "price"),
+    source_ids: history.length ? unique(history.map((row) => row.source_id)) : sourceIdsForMarket(company, "price"),
     evidence_level: evidenceFromCount(history.length),
     trading_days: history.length,
     latest_trade_date: latest?.date || null,

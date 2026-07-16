@@ -19,6 +19,13 @@ export const SOURCE_CATALOG = [
     note: "上櫃公司個股日成交資訊，用於計算近一年價格區間、20/60 日趨勢。"
   },
   {
+    id: "yahoo_finance_chart",
+    title: "Yahoo Finance：台股歷史日線資料",
+    short_title: "Yahoo Finance 股價",
+    url: "https://query1.finance.yahoo.com/v8/finance/chart/",
+    note: "當交易所歷史查詢暫時不可用時，作為次要公開市場資料備援；使用 .TW 或 .TWO 代號，並在每筆資料標示來源。"
+  },
+  {
     id: "twse_monthly_revenue",
     title: "臺灣證券交易所 OpenAPI：上市公司每月營業收入彙總表",
     short_title: "TWSE 月營收",

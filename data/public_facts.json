@@ -1,6 +1,6 @@
 {
   "version": "0.7.0",
-  "generated_at": "2026-07-16T06:07:50.508Z",
+  "generated_at": "2026-07-16T06:28:16.589Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -99,7 +99,7 @@
     "twse-1213": {
       "ticker": "1213",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "official_classification",
@@ -147,7 +147,7 @@
     "tpex-1595": {
       "ticker": "1595",
       "market": "TPEx",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "official_classification",
@@ -187,7 +187,7 @@
     "tw-1707-grapeking": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -219,7 +219,7 @@
     "twse-1909": {
       "ticker": "1909",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "official_classification",
@@ -249,7 +249,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-16 收盤 10.4；區間報酬：20日 3.48%；60日 10.99%。",
+          "value": "2026-07-16 收盤 10.4；區間報酬：20日 7.22%；60日 -5.02%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -267,7 +267,7 @@
     "twse-2301": {
       "ticker": "2301",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "official_classification",
@@ -297,7 +297,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-01-30 收盤 164；區間報酬：20日 -1.8%；60日 -2.96%。",
+          "value": "2026-07-16 收盤 218；區間報酬：20日 4.81%；60日 32.12%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -307,7 +307,7 @@
     "tw-2303-umc": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -347,7 +347,7 @@
     "tw-2330-tsmc": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -369,7 +369,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-15 收盤 2,440；區間報酬：20日 2.74%；60日 20.2%。",
+          "value": "2026-07-16 收盤 2,470；區間報酬：20日 10.27%；60日 0%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -379,7 +379,7 @@
     "twse-2344": {
       "ticker": "2344",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "official_classification",
@@ -409,7 +409,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-16 收盤 172；區間報酬：20日 0%；60日 0%。",
+          "value": "2026-07-16 收盤 172；區間報酬：20日 -12.69%；60日 100.7%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -427,7 +427,7 @@
     "twse-2345": {
       "ticker": "2345",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "official_classification",
@@ -457,7 +457,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-05-29 收盤 2,430；區間報酬：20日 0%；60日 0%。",
+          "value": "2025-09-30 收盤 1,045；區間報酬：20日 10.7%；60日 0%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -467,7 +467,7 @@
     "tw-2454-mediatek": {
       "ticker": "2454",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -489,7 +489,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-16 收盤 3,700；區間報酬：20日 -18.86%；60日 94.74%。",
+          "value": "2026-07-16 收盤 3,700；區間報酬：20日 0%；60日 0%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -499,7 +499,7 @@
     "twse-3044": {
       "ticker": "3044",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "official_classification",
@@ -529,7 +529,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-16 收盤 422；區間報酬：20日 38.59%；60日 0%。",
+          "value": "2026-07-16 收盤 422；區間報酬：20日 -22.71%；60日 2.06%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -539,7 +539,7 @@
     "tw-3164-genmont": {
       "ticker": "3164",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -557,13 +557,21 @@
             "twse_income_statement",
             "twse_balance_sheet"
           ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-16 收盤 16.5；區間報酬：20日 0%；60日 0%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
         }
       ]
     },
     "tw-3711-aseh": {
       "ticker": "3711",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -585,7 +593,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-16 收盤 682；區間報酬：20日 15.2%；60日 47.78%。",
+          "value": "2026-07-16 收盤 682；區間報酬：20日 15.2%；60日 0%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -603,7 +611,7 @@
     "twse-3712": {
       "ticker": "3712",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "official_classification",
@@ -631,6 +639,14 @@
           ]
         },
         {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2025-09-30 收盤 35.15；區間報酬：20日 1.3%；60日 0%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
           "id": "major_shareholders",
           "label": "大股東資料",
           "value": "持股逾 10% 大股東：富士臨國際投資股份有限公司。",
@@ -643,7 +659,7 @@
     "tpex-6167": {
       "ticker": "6167",
       "market": "TPEx",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "official_classification",
@@ -691,7 +707,7 @@
     "tpex-6171": {
       "ticker": "6171",
       "market": "TPEx",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "official_classification",
@@ -739,7 +755,7 @@
     "tw-6488-globalwafers": {
       "ticker": "6488",
       "market": "TPEx",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -779,7 +795,7 @@
     "tpex-6735": {
       "ticker": "6735",
       "market": "TPEx",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "official_classification",
@@ -827,7 +843,7 @@
     "tw-7780-daiken": {
       "ticker": "7780",
       "market": "TWSE",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -847,6 +863,14 @@
           ]
         },
         {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-16 收盤 17.9；區間報酬：20日 -5.54%；60日 -10.5%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
           "id": "major_shareholders",
           "label": "大股東資料",
           "value": "持股逾 10% 大股東：尚凡國際創新科技股份有限公司。",
@@ -859,7 +883,7 @@
     "tw-8279-syngen": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -899,7 +923,7 @@
     "tw-8436-tci": {
       "ticker": "8436",
       "market": "TPEx",
-      "generated_at": "2026-07-16T06:07:50.508Z",
+      "generated_at": "2026-07-16T06:28:16.589Z",
       "facts": [
         {
           "id": "monthly_revenue",

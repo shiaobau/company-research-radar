@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T05:56:54.115Z",
+  "collected_at": "2026-07-16T06:19:50.905Z",
   "company": {
     "id": "twse-2345",
     "ticker": "2345",
@@ -541,7 +541,7 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-16T05:53:58.458Z",
+      "fetched_at": "2026-07-16T06:19:38.979Z",
       "row_count": 87,
       "available": true
     },

@@ -1,6 +1,6 @@
 {
   "version": "0.7.0",
-  "generated_at": "2026-07-16T06:07:50.508Z",
+  "generated_at": "2026-07-16T06:28:16.589Z",
   "note": "產業基本面公式化資料。此版納入產業證據層，再與公開財務、營收、重大訊息、風險與來源可追溯度合成。",
   "sources": [
     {
@@ -16,6 +16,13 @@
       "short_title": "TPEx 股價",
       "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock",
       "note": "上櫃公司個股日成交資訊，用於計算近一年價格區間、20/60 日趨勢。"
+    },
+    {
+      "id": "yahoo_finance_chart",
+      "title": "Yahoo Finance：台股歷史日線資料",
+      "short_title": "Yahoo Finance 股價",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/",
+      "note": "當交易所歷史查詢暫時不可用時，作為次要公開市場資料備援；使用 .TW 或 .TWO 代號，並在每筆資料標示來源。"
     },
     {
       "id": "twse_monthly_revenue",

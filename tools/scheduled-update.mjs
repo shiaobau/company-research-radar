@@ -114,6 +114,14 @@ function runNode(script, args) {
   });
 }
 
+function stepLabel(script) {
+  if (script.endsWith("source-cache.mjs")) return "刷新公開資料來源";
+  if (script.endsWith("update-data.mjs")) return "重建評分資料";
+  if (script.endsWith("verify-research-data.mjs")) return "驗證與補抓缺失資料";
+  if (script.endsWith("targeted-collector.mjs")) return "整理 MOPS 與官方公告";
+  return script;
+}
+
 async function main() {
   const status = await loadStatus();
   if (process.argv.includes("--repair-status")) {
@@ -138,12 +146,16 @@ async function main() {
   }
 
   const startedAt = new Date().toISOString();
-  const run = { slot, label: config.label, status: "running", started_at: startedAt, steps: [] };
+  const run = { slot, label: config.label, status: "running", started_at: startedAt, steps: [], progress_percent: 0, current_step: null };
   status.current_run = run;
   await saveStatus(status);
 
   try {
-    for (const [script, ...args] of config.steps) {
+    for (const [index, [script, ...args]] of config.steps.entries()) {
+      run.current_step = { index: index + 1, total: config.steps.length, label: stepLabel(script) };
+      run.progress_percent = Math.round((index / config.steps.length) * 100);
+      status.current_run = run;
+      await saveStatus(status);
       const stepStartedAt = new Date().toISOString();
       const output = dryRun ? "Dry run: command skipped." : await runNode(script, args);
       run.steps.push({
@@ -158,6 +170,8 @@ async function main() {
       await saveStatus(status);
     }
     run.status = dryRun ? "dry_run" : "done";
+    run.progress_percent = 100;
+    run.current_step = null;
     run.finished_at = new Date().toISOString();
     const companies = await readJson(path.join(dataDir, "companies.json"));
     run.company_count = (companies.companies || []).length;
@@ -167,6 +181,7 @@ async function main() {
     console.log(JSON.stringify({ status: run.status, slot, company_count: run.company_count, steps: run.steps.length }, null, 2));
   } catch (error) {
     run.status = "error";
+    run.current_step = null;
     run.finished_at = new Date().toISOString();
     run.error = error.message;
     status.schedules[slot].last_run = run;

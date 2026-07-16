@@ -1,6 +1,6 @@
 {
   "version": "0.7.0",
-  "generated_at": "2026-07-16T06:07:50.508Z",
+  "generated_at": "2026-07-16T06:28:16.589Z",
   "note": "由 tools/update-data.mjs 產生。資料來源為公開市場 API；若端點缺漏，前端會退回人工初評並標示資料狀態。",
   "companies": {
     "twse-1213": {
@@ -150,13 +150,13 @@
       "ticker": "3164",
       "name": "景岳",
       "catalyst": "ok",
-      "market": "missing",
+      "market": "ok",
       "revenue": "ok",
       "financial": "ok",
       "ownership": "ok",
       "risk": "ok",
       "industry": "ok",
-      "completed_count": 6,
+      "completed_count": 7,
       "total_count": 7
     },
     "tw-3711-aseh": {
@@ -176,13 +176,13 @@
       "ticker": "3712",
       "name": "永崴投控",
       "catalyst": "ok",
-      "market": "missing",
+      "market": "ok",
       "revenue": "ok",
       "financial": "ok",
       "ownership": "ok",
       "risk": "ok",
       "industry": "ok",
-      "completed_count": 6,
+      "completed_count": 7,
       "total_count": 7
     },
     "tpex-6167": {
@@ -241,13 +241,13 @@
       "ticker": "7780",
       "name": "大研生醫",
       "catalyst": "ok",
-      "market": "missing",
+      "market": "ok",
       "revenue": "ok",
       "financial": "ok",
       "ownership": "ok",
       "risk": "ok",
       "industry": "ok",
-      "completed_count": 6,
+      "completed_count": 7,
       "total_count": 7
     },
     "tw-8279-syngen": {

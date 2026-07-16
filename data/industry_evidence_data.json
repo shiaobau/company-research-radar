@@ -1,6 +1,6 @@
 {
   "version": "0.7.0",
-  "generated_at": "2026-07-16T06:07:50.508Z",
+  "generated_at": "2026-07-16T06:28:16.589Z",
   "note": "產業證據層。各產業的子評估標準由 data/industry_templates.json 定義；保健營養食品先接入 TFDA 健康食品、廣告合規、品項證據、品質系統與通路回購框架。",
   "sources": [
     {
