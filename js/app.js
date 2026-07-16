@@ -669,8 +669,13 @@ function renderSchedulerPanel() {
   const active = state.schedulerStatus.current_run;
   const localServer = ["127.0.0.1", "localhost"].includes(window.location.hostname);
   const coverage = state.researchStatus.summary || {};
-  const incomplete = Object.values(state.researchStatus.companies || {}).filter((company) => company.status === "incomplete");
-  const stateLabel = active ? "更新中" : incomplete.length ? "資料待補" : "完成分析";
+  const calculatedReadiness = state.companies.map((company) => ({
+    company,
+    score: RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets())
+  }));
+  const incomplete = calculatedReadiness.filter(({ score }) => !score.complete).map(({ company }) => researchReadiness(company));
+  const coreComplete = calculatedReadiness.filter(({ score }) => score.complete && score.isProvisional);
+  const stateLabel = active ? "更新中" : incomplete.length ? "資料待補" : coreComplete.length ? "核心分析完成" : "完成分析";
   const activeProgress = Math.max(0, Math.min(99, Number(active?.progress_percent) || 0));
   panel.innerHTML = `
     <div class="update-dashboard">
@@ -693,7 +698,7 @@ function renderSchedulerPanel() {
       </section>
       <section class="update-section update-status">
         <div><p class="eyebrow">Status</p><h2>更新情形 <span class="pill">${stateLabel}</span></h2></div>
-        ${active ? `<div class="update-progress"><span class="progress-spinner" aria-hidden="true"></span><div><strong>${RadarRenderers.escapeHtml(active.current_step?.label || active.label || "更新中")}</strong><span>${activeProgress}%</span><div class="progress-track"><i style="--progress:${activeProgress}%"></i></div></div></div>` : `<p class="muted">完成分析 ${coverage.complete_count || 0}/${coverage.total || 0} 家</p>`}
+        ${active ? `<div class="update-progress"><span class="progress-spinner" aria-hidden="true"></span><div><strong>${RadarRenderers.escapeHtml(active.current_step?.label || active.label || "更新中")}</strong><span>${activeProgress}%</span><div class="progress-track"><i style="--progress:${activeProgress}%"></i></div></div></div>` : `<p class="muted">完整分析 ${coverage.complete_count || 0}/${coverage.total || 0} 家；核心分析完成 ${coverage.core_complete_count || 0} 家</p>`}
         ${incomplete.length ? `<div class="update-missing-list">${incomplete.map((company) => `<span title="${RadarRenderers.escapeHtml((company.missing_dimensions || []).map((item) => item.label).join("、"))}">${RadarRenderers.escapeHtml(`${company.ticker} ${company.name}`)}：${RadarRenderers.escapeHtml((company.missing_dimensions || []).map((item) => item.label).join("、"))}</span>`).join("")}</div>` : "<p class=\"muted\">目前研究公司均已通過七項必要維度驗證。</p>"}
       </section>
     </div>
@@ -1121,12 +1126,16 @@ function scoreColorStyle(score) {
 function scoreDisplayTitle(score) {
   if (!score.complete) return "研究中，尚未具備完整評分資料";
   const submetricCount = score.rows.reduce((sum, row) => sum + (row.submetrics?.length || 0), 0);
-  return `${score.band.label}（研究分數 ${score.total}/100；${submetricCount} 個公開資料子測項）`;
+  const adjustment = Number.isFinite(score.industryAdjustment)
+    ? `${score.industryAdjustment >= 0 ? "+" : ""}${score.industryAdjustment}`
+    : "0";
+  const adjustmentScope = score.isProvisional ? "產業調整待補，暫以 0 分計" : score.industryAdjustmentLabel;
+  return `${score.band.label}（核心 ${score.coreTotal}/100 ${adjustment} 產業調整 = ${score.total}/100；${adjustmentScope}；${submetricCount} 個公開資料子測項）`;
 }
 
 function scoreMissingLabel(score) {
   return (score.missingDimensions || [])
-    .map((label) => label === "產業基本面" ? "產業證據待補" : label)
+    .map((label) => label === "產業證據調整" ? "產業證據待補，不影響核心分數" : label)
     .join("、");
 }
 
@@ -1159,6 +1168,7 @@ function researchReadiness(company) {
 function readinessLabel(company) {
   const readiness = researchReadiness(company);
   if (readiness.status === "complete") return "完成分析";
+  if (readiness.status === "core_complete") return "核心完成";
   if (readiness.status === "analyzing") return "分析中";
   return "資料待補";
 }
@@ -1288,7 +1298,7 @@ function renderCompanyList(companies) {
       <article class="company-card ${company.id === state.selectedId ? "active" : ""} ${score.complete ? "" : "incomplete"}" data-id="${company.id}" tabindex="0" style="--score-deg:${Number.isFinite(score.total) ? score.total * 3.6 : 0}deg;${scoreColorStyle(score)}">
         <div class="score-ring" title="${RadarRenderers.escapeHtml(score.complete ? scoreDisplayTitle(score) : readinessLabel(company))}"><span>${scoreValue}</span></div>
         <div>
-          <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.complete ? score.band.label : readinessLabel(company))}</p>
+          <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.complete ? score.band.label : readinessLabel(company))}${score.isProvisional ? " · 核心完成" : ""}</p>
           <h3>${RadarRenderers.escapeHtml(company.name)}</h3>
           <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(dataCoverageLabel(company))}${industryRank ? ` · ${RadarRenderers.escapeHtml(industryRank)}` : ""}</p>
           ${score.complete ? "" : `<p class="muted">缺少：${RadarRenderers.escapeHtml(scoreMissingLabel(score) || missingLabels || "評分資料")}</p>`}
@@ -1420,7 +1430,7 @@ function renderDetail() {
   $("#company-detail").innerHTML = `
     <div class="detail-title">
       <div>
-        <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.band.label)}</p>
+        <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.band.label)}${score.isProvisional ? " · 核心完成" : ""}</p>
         <h2>${RadarRenderers.escapeHtml(company.name)}</h2>
         <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(dataCoverageLabel(company))}${industryRank ? ` · ${RadarRenderers.escapeHtml(industryRank)}` : ""}${company.legal_name ? ` · ${RadarRenderers.escapeHtml(company.legal_name)}` : ""}</p>
         <p class="muted">資料更新：${RadarRenderers.escapeHtml(company.last_reviewed || "未提供")}</p>
@@ -1428,7 +1438,8 @@ function renderDetail() {
       <span class="pill score-tier" title="${RadarRenderers.escapeHtml(scoreDisplayTitle(score))}" style="${scoreColorStyle(score)}">${Number.isFinite(score.total) ? `${score.total} · ${RadarRenderers.escapeHtml(score.band.label)}` : readinessLabel(company)}</span>
     </div>
     ${publicFacts}
-    ${score.complete ? "" : `<p class="risk">尚未產生總分。缺少：${RadarRenderers.escapeHtml(scoreMissingLabel(score))}</p>`}
+    ${score.complete ? `<p class="risk">核心分數 ${score.coreTotal}/100；產業證據調整 ${score.industryAdjustment >= 0 ? "+" : ""}${score.industryAdjustment} 分（${RadarRenderers.escapeHtml(score.industryAdjustmentLabel)}）。${score.isProvisional ? "產業證據待補時暫以 0 分計，不影響六項核心分數。" : ""}</p>` : ""}
+    ${score.complete ? "" : `<p class="risk">尚未產生核心分數。缺少：${RadarRenderers.escapeHtml(scoreMissingLabel(score))}</p>`}
     <div class="score-breakdown">${RadarRenderers.renderScoreRows(score)}</div>
     <details class="detail-fold">
       <summary>公開資料快照</summary>

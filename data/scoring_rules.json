@@ -1,6 +1,6 @@
 {
-  "version": "0.5.0",
-  "scoring_method": "跨產業研究分數由七個共通維度與可追溯的子測項組成。每一維度的子測項必須具備公開資料，缺項時不產生總分。產業基本面會自動展開對應產業模板的子檢核。",
+  "version": "0.6.0",
+  "scoring_method": "跨產業研究分數由六項加權核心維度與一項產業證據調整組成。核心子測項必須具備公開資料；產業調整只有在產業模板子檢核具備可追溯的正負向事實時才介入，資料未齊時以 0 分計。",
   "common_dimensions": [
     {
       "id": "catalyst",
@@ -77,10 +77,22 @@
     },
     {
       "id": "industryFundamental",
-      "label": "產業基本面",
-      "weight": 0.1,
-      "description": "自動展開各產業模板已定義的子檢核，並納入資料可追溯度。",
-      "high_score_signal": "產業特有子檢核與來源可追溯度均具足夠證據。",
+      "label": "產業證據調整",
+      "role": "adjustment",
+      "weight": 0,
+      "description": "不占核心分數權重；僅在產業特有子檢核具備完整、可追溯的公司證據時，作為有限的加減分調整。",
+      "high_score_signal": "產業特有子檢核與來源可追溯度均具足夠證據，可加分；負向或薄弱證據則扣分。",
+      "adjustment": {
+        "pending_points": 0,
+        "bands": [
+          { "direction": "strong_positive", "points": 6, "label": "產業事實明確正向" },
+          { "direction": "positive", "points": 3, "label": "產業事實偏正向" },
+          { "direction": "neutral", "points": 0, "label": "產業事實中性" },
+          { "direction": "negative", "points": -3, "label": "產業事實偏負向" },
+          { "direction": "strong_negative", "points": -6, "label": "產業事實明確負向" },
+          { "direction": "pending", "points": 0, "label": "產業證據待補" }
+        ]
+      },
       "submetrics": [
         { "id": "industry_evidence", "label": "產業子檢核", "weight": 0.8, "formula": "dimension_collection", "source": "industryEvidence", "field": "dimensions" },
         { "id": "traceability", "label": "產業資料可追溯度", "weight": 0.2, "formula": "direct", "source": "industryEvidence", "field": "traceability_score" }

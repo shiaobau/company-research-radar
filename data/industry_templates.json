@@ -1959,6 +1959,13 @@
       "需補",
       "未做",
       "無資料"
-    ]
+    ],
+    "directional_signals": {
+      "positive_patterns": ["成長", "增加", "提升", "擴產", "擴大", "量產", "導入", "取得", "通過", "獲准", "續約", "長約", "訂單", "改善", "回升"],
+      "negative_patterns": ["衰退", "減少", "下降", "下滑", "縮減", "去化", "延後", "取消", "終止", "違約", "停產", "虧損", "跌價", "罰", "違規", "召回"],
+      "severe_negative_patterns": ["停工", "下市", "重大違法", "撤銷", "召回", "違約", "破產", "資金缺口"],
+      "strong_positive_minimum_matches": 2,
+      "strong_negative_minimum_matches": 2
+    }
   }
 }

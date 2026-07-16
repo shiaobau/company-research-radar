@@ -325,13 +325,36 @@ function evidenceLevelFromScore(score) {
   return "none";
 }
 
+function matchedPatterns(text, patterns = []) {
+  return [...new Set(patterns.filter((pattern) => text.includes(pattern)))];
+}
+
+function evidenceDirection(text, policy) {
+  const signals = policy?.directional_signals || {};
+  const positive = matchedPatterns(text, signals.positive_patterns);
+  const negative = matchedPatterns(text, signals.negative_patterns);
+  const severeNegative = matchedPatterns(text, signals.severe_negative_patterns);
+  const strongPositiveMinimum = Number(signals.strong_positive_minimum_matches || 2);
+  const strongNegativeMinimum = Number(signals.strong_negative_minimum_matches || 2);
+
+  if (severeNegative.length || (negative.length >= strongNegativeMinimum && negative.length > positive.length)) {
+    return { id: "strong_negative", matches: { positive, negative, severe_negative: severeNegative } };
+  }
+  if (positive.length >= strongPositiveMinimum && !negative.length) {
+    return { id: "strong_positive", matches: { positive, negative, severe_negative: severeNegative } };
+  }
+  if (positive.length > negative.length) return { id: "positive", matches: { positive, negative, severe_negative: severeNegative } };
+  if (negative.length > positive.length) return { id: "negative", matches: { positive, negative, severe_negative: severeNegative } };
+  return { id: "neutral", matches: { positive, negative, severe_negative: severeNegative } };
+}
+
 function fieldIdsForEvidenceDimension(dimension, template) {
   return dimension.fact_fields || template.default_fact_fields || [];
 }
 
 function buildIndustryEvidenceData() {
   const companiesById = {};
-  const policy = industryTemplates.industry_evidence_policy || {};
+  const policy = templatesJson.industry_evidence_policy || {};
 
   for (const company of companies) {
     const template = industryTemplates[company.industry_template] || {};
@@ -362,6 +385,7 @@ function buildIndustryEvidenceData() {
         score,
         evidence_level: Number.isFinite(score) ? evidenceLevelFromScore(score) : "none",
         source_ids: evidence.sourceIds,
+        evidence_text: evidence.text,
         description: dimension.description,
         rationale
       };
@@ -370,6 +394,12 @@ function buildIndustryEvidenceData() {
     const completedCount = dimensionRows.filter((dimension) => dimension.status === "ok").length;
     const complete = dimensions.length > 0 && completedCount === dimensions.length && weightSum > 0;
     const score = complete ? Math.round(weighted / weightSum) : null;
+    const evidenceText = [...new Set(dimensionRows
+      .filter((dimension) => dimension.status === "ok")
+      .map((dimension) => dimension.evidence_text)
+      .filter(Boolean))]
+      .join(" ");
+    const direction = complete ? evidenceDirection(evidenceText, policy) : { id: "pending", matches: { positive: [], negative: [], severe_negative: [] } };
     companiesById[company.id] = {
       ticker: company.ticker,
       market: company.market,
@@ -381,6 +411,8 @@ function buildIndustryEvidenceData() {
       total_count: dimensions.length,
       traceability_score: traceabilityScore,
       score,
+      direction: direction.id,
+      direction_matches: direction.matches,
       dimensions: dimensionRows,
       rationale: dimensions.length
         ? complete

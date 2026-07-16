@@ -190,13 +190,40 @@
     const dimensions = dimensionsFor(company, rules);
     if (!dimensions.length) return { total: null, rawTotal: null, complete: false, missingDimensions: ["評分規則"], band: { label: "資料不足" }, rows: [] };
     const rows = dimensions.map((dimension) => evaluateDimension(dimension, company, datasets));
+    const adjustmentRow = rows.find((row) => row.id === "industryFundamental");
+    const adjustmentDefinition = dimensions.find((dimension) => dimension.id === "industryFundamental");
+    const coreRows = rows.filter((row) => row.id !== "industryFundamental");
+    const coreMissingDimensions = coreRows.filter((row) => row.status !== "ok").map((row) => row.label);
     const missingDimensions = rows.filter((row) => row.status !== "ok").map((row) => row.label);
-    if (missingDimensions.length) {
-      return { total: null, rawTotal: null, complete: false, missingDimensions, band: { label: "資料不足" }, rows };
+    if (coreMissingDimensions.length) {
+      return { total: null, rawTotal: null, complete: false, missingDimensions, coreMissingDimensions, band: { label: "資料不足" }, rows };
     }
-    const weightSum = rows.reduce((sum, row) => sum + Number(row.weight), 0);
-    const total = clamp(rows.reduce((sum, row) => sum + row.score * Number(row.weight), 0) / weightSum);
-    return { total, rawTotal: total, complete: true, missingDimensions: [], band: scoreBand(total, rules), rows };
+    const weightSum = coreRows.reduce((sum, row) => sum + Number(row.weight), 0);
+    const coreTotal = clamp(coreRows.reduce((sum, row) => sum + row.score * Number(row.weight), 0) / weightSum);
+    const industryRecord = recordFor(company, "industryEvidence", datasets);
+    const industryDirection = adjustmentRow?.status === "ok"
+      ? String(industryRecord?.direction || "neutral")
+      : "pending";
+    const adjustmentBand = (adjustmentDefinition?.adjustment?.bands || [])
+      .find((band) => band.direction === industryDirection);
+    const industryAdjustment = adjustmentBand
+      ? Number(adjustmentBand.points || 0)
+      : Number(adjustmentDefinition?.adjustment?.pending_points || 0);
+    const total = clamp(coreTotal + industryAdjustment);
+    const industryEvidencePending = adjustmentRow?.status !== "ok";
+    return {
+      total,
+      rawTotal: coreTotal,
+      coreTotal,
+      industryAdjustment,
+      industryAdjustmentLabel: adjustmentBand?.label || "產業證據待補",
+      complete: true,
+      isProvisional: industryEvidencePending,
+      missingDimensions: industryEvidencePending ? ["產業證據調整"] : [],
+      coreMissingDimensions: [],
+      band: scoreBand(total, rules),
+      rows
+    };
   }
 
   window.RadarScoring = { computeCompanyScore, scoreBand };

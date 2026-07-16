@@ -61,7 +61,7 @@
       <div class="score-row" title="${escapeHtml(row.rationale)}">
         <span>${escapeHtml(row.label)}</span>
         <div class="bar" style="--bar-width:${Number.isFinite(row.score) ? row.score : 0}%"><span></span></div>
-        <b>${Number.isFinite(row.score) ? row.score : "待補"}</b>
+        <b>${row.id === "industryFundamental" && Number.isFinite(score.industryAdjustment) ? `${score.industryAdjustment > 0 ? "+" : ""}${score.industryAdjustment}` : Number.isFinite(row.score) ? row.score : "待補"}</b>
         ${(row.submetrics || []).length ? `
           <details class="score-submetrics">
             <summary>${row.submetrics.length} 個子測項</summary>

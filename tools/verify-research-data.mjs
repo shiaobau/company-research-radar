@@ -20,7 +20,7 @@ const DIMENSIONS = [
   ["financial", "現金/獲利品質"],
   ["ownership", "籌碼/股權結構"],
   ["risk", "新聞/重大訊息風險"],
-  ["industry", "產業基本面"]
+  ["industry", "產業證據調整"]
 ];
 
 function runNode(script, args) {
@@ -48,11 +48,13 @@ function recordsFrom(statusData, industryEvidenceData, companies) {
     const missingDimensions = DIMENSIONS
       .filter(([id]) => source[id] !== "ok" || (id === "industry" && industryEvidence?.status !== "ok"))
       .map(([id, label]) => ({ id, label }));
+    const coreMissing = missingDimensions.filter((dimension) => dimension.id !== "industry");
+    const industryPending = !coreMissing.length && missingDimensions.some((dimension) => dimension.id === "industry");
     return {
       id: company.id,
       ticker: company.ticker,
       name: company.name,
-      status: missingDimensions.length ? "incomplete" : "complete",
+      status: coreMissing.length ? "incomplete" : industryPending ? "core_complete" : "complete",
       missing_dimensions: missingDimensions,
       completed_count: DIMENSIONS.length - missingDimensions.length,
       total_count: DIMENSIONS.length
@@ -94,12 +96,13 @@ async function main() {
 
   const allRecords = Object.values(merged);
   const completeCount = allRecords.filter((record) => record.status === "complete").length;
-  const incompleteCount = allRecords.length - completeCount;
+  const coreCompleteCount = allRecords.filter((record) => record.status === "core_complete").length;
+  const incompleteCount = allRecords.filter((record) => record.status === "incomplete").length;
   await writeJson(path.join(dataDir, "research_status.json"), {
     version: "1.0.0",
     generated_at: checkedAt,
-    note: "七個必要評分維度皆須具備公開資料；產業基本面還必須通過來源支持的產業子檢核，否則不產生總分。",
-    summary: { total: allRecords.length, complete_count: completeCount, incomplete_count: incompleteCount },
+    note: "六項核心評分維度必須具備公開資料；產業證據調整僅在通過來源支持的產業子檢核後才介入，未完成時維持核心分數。",
+    summary: { total: allRecords.length, complete_count: completeCount, core_complete_count: coreCompleteCount, incomplete_count: incompleteCount },
     companies: merged
   });
   console.log(JSON.stringify({ status: incompleteCount ? "incomplete" : "complete", retried, complete_count: completeCount, incomplete_count: incompleteCount, companies: records }, null, 2));
