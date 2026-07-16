@@ -1098,7 +1098,6 @@ function renderPublicFacts(company, sourceIndex, compact = false) {
           <article class="field-card">
             <span class="field-label">${RadarRenderers.escapeHtml(item.label)}</span>
             <p>${RadarRenderers.escapeHtml(item.value)}</p>
-            ${renderSourceTooltipsForFacts([item], sourceIndex)}
           </article>
         `).join("")}
       </div>
@@ -1337,6 +1336,7 @@ function renderCollectedEvents(company) {
     const title = normalizeDisclosureText(event.title);
     const clause = normalizeDisclosureText(event.clause);
     const description = normalizeDisclosureText(event.description);
+    const source = eventSourceLink(event, company.ticker);
     return `
       <article class="collector-event">
         <div class="collector-event-head">
@@ -1346,13 +1346,16 @@ function renderCollectedEvents(company) {
         <strong>${RadarRenderers.escapeHtml(title)}</strong>
         ${clause ? `<p class="muted">${RadarRenderers.escapeHtml(clause)}</p>` : ""}
         ${description ? `<p>${RadarRenderers.escapeHtml(description.slice(0, 280))}${description.length > 280 ? "..." : ""}</p>` : ""}
-        <a class="source-chip" href="${RadarRenderers.escapeHtml(event.source_url)}" target="_blank" rel="noopener">官方來源</a>
+        ${source.url ? `<a class="source-chip" href="${RadarRenderers.escapeHtml(source.url)}" target="_blank" rel="noopener">${RadarRenderers.escapeHtml(source.label)}</a>` : ""}
       </article>
     `;
   }).join("");
-  const references = (record.references || []).map((reference) => `
-    <a class="source-chip" href="${RadarRenderers.escapeHtml(reference.url)}" target="_blank" rel="noopener">${RadarRenderers.escapeHtml(reference.title)}</a>
-  `).join("");
+  const references = (record.references || []).map((reference) => {
+    const url = reference.source_id === "mops_history_search"
+      ? mopsHistoryUrl(company.ticker)
+      : reference.url;
+    return `<a class="source-chip" href="${RadarRenderers.escapeHtml(url)}" target="_blank" rel="noopener">${RadarRenderers.escapeHtml(reference.title)}</a>`;
+  }).join("");
   const sourceStatus = "官方公開資訊快取";
 
   return `
@@ -1385,6 +1388,7 @@ function renderDetail() {
   const score = RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets());
   const sourceIndex = sourceIndexFor(company);
   const dataSnapshot = renderDataSnapshot(company, sourceIndex);
+  const publicFacts = renderPublicFacts(company, sourceIndex);
 
   $("#company-detail").className = "detail-content";
   $("#company-detail").innerHTML = `
@@ -1397,6 +1401,7 @@ function renderDetail() {
       </div>
       <span class="pill score-tier" style="${scoreColorStyle(score)}">${Number.isFinite(score.total) ? `${score.total} · ${RadarRenderers.escapeHtml(score.band.label)}` : readinessLabel(company)}</span>
     </div>
+    ${publicFacts}
     ${score.complete ? "" : `<p class="risk">尚未產生總分。缺少：${RadarRenderers.escapeHtml(score.missingDimensions.join("、"))}</p>`}
     <div class="score-breakdown">${RadarRenderers.renderScoreRows(score)}</div>
     <details class="detail-fold">
@@ -1444,6 +1449,26 @@ function normalizeDisclosureText(value) {
     .replace(/[\u0000-\u0008\u000B-\u001F\u007F-\u009F]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function mopsHistoryUrl(ticker, rocYear = "") {
+  const params = new URLSearchParams({
+    co_id: String(ticker || "").trim(),
+    firstin: "true",
+    step: "1"
+  });
+  if (/^\d{3}$/.test(String(rocYear))) params.set("year", String(rocYear));
+  return `https://mops.twse.com.tw/mops/web/t05st01?${params.toString()}`;
+}
+
+function eventSourceLink(event, fallbackTicker) {
+  if (event?.source_id !== "mops_history_api") {
+    return { url: event?.source_url || "", label: "官方來源" };
+  }
+  const parameters = event.detail_parameters || {};
+  const ticker = parameters.companyId || fallbackTicker;
+  const rocYear = String(parameters.enterDate || "").slice(0, 3);
+  return { url: mopsHistoryUrl(ticker, rocYear), label: "在 MOPS 查詢" };
 }
 
 function renderDataSnapshot(company, sourceIndex) {

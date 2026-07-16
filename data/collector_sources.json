@@ -25,7 +25,7 @@
     "id": "mops_history_search",
       "title": "MOPS 歷史重大訊息查詢",
     "kind": "official_history_api",
-      "url_template": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id={ticker}",
+      "url_template": "https://mops.twse.com.tw/mops/web/t05st01?co_id={ticker}&firstin=true&step=1",
     "update_policy": "company_cache_24h_two_roc_years",
       "claim_type": "official_search_reference",
     "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"

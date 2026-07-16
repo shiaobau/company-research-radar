@@ -6,7 +6,7 @@ import { rocDateToIso, readJson, writeJson } from "./data-sources.mjs";
 const root = process.cwd();
 const dataDir = path.join(root, "data");
 const cacheDir = path.join(dataDir, "mops_history_cache");
-const searchUrl = "https://mops.twse.com.tw/mops/#/web/t05st01";
+const searchUrl = "https://mops.twse.com.tw/mops/web/t05st01";
 const apiBase = "https://mops.twse.com.tw/mops/api";
 
 function argValue(name, fallback = "") {
@@ -27,8 +27,14 @@ function normalizeText(value) {
     .trim();
 }
 
-function sourceUrl(ticker) {
-  return `${searchUrl}?co_id=${encodeURIComponent(ticker)}`;
+function sourceUrl(ticker, year = "") {
+  const params = new URLSearchParams({
+    co_id: String(ticker || "").trim(),
+    firstin: "true",
+    step: "1"
+  });
+  if (/^\d{3}$/.test(String(year))) params.set("year", String(year));
+  return `${searchUrl}?${params.toString()}`;
 }
 
 function rocYear(date = new Date()) {
@@ -98,7 +104,7 @@ function listEvent(row) {
     clause: null,
     source_id: "mops_history_api",
     source_type: "official_history_api",
-    source_url: sourceUrl(parameters.companyId),
+    source_url: sourceUrl(parameters.companyId, String(parameters.enterDate || "").slice(0, 3)),
     claim_type: "official_disclosure",
     review_status: "unreviewed",
     detail_parameters: parameters
