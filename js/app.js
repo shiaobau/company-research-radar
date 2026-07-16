@@ -464,6 +464,9 @@ async function startResearchFromDashboard() {
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ tickers })
     });
+    if (!response.headers.get("content-type")?.includes("application/json")) {
+      throw new Error("研究功能只能在本機的 127.0.0.1:8768 使用。");
+    }
     const payload = await response.json();
     if (!response.ok) throw new Error(payload.message || "研究 API 無法啟動");
     setResearchStatus(`研究流程已啟動：${tickers.join(", ")}`);
@@ -475,6 +478,7 @@ async function startResearchFromDashboard() {
 }
 
 function ensureCollectorControls() {
+  return;
   const loader = $(".candidate-loader");
   if (!loader || $("#collect-events-button")) return;
   const button = document.createElement("button");
@@ -657,6 +661,9 @@ async function updateSchedulerFrequency(frequency) {
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ frequency })
     });
+    if (!response.headers.get("content-type")?.includes("application/json")) {
+      throw new Error("排程只能在本機的 127.0.0.1:8768 調整；GitHub Pages 無法管理 Windows 排程。");
+    }
     const payload = await response.json();
     if (!response.ok) throw new Error(payload.message || "排程設定失敗");
     state.schedulerStatus.frequency = frequency;
@@ -834,7 +841,6 @@ function initControls() {
     if (moveTicker) moveResearchCompany(moveTicker, Number(event.target.dataset.moveDirection));
   });
 
-  ensureCollectorControls();
   ensureOnboardingPanel();
   ensureSchedulerPanel();
   setupCollapsibleSections();
