@@ -62,6 +62,19 @@
         <span>${escapeHtml(row.label)}</span>
         <div class="bar" style="--bar-width:${Number.isFinite(row.score) ? row.score : 0}%"><span></span></div>
         <b>${Number.isFinite(row.score) ? row.score : "待補"}</b>
+        ${(row.submetrics || []).length ? `
+          <details class="score-submetrics">
+            <summary>${row.submetrics.length} 個子測項</summary>
+            <div class="score-submetric-list">
+              ${row.submetrics.map((metric) => `
+                <div title="${escapeHtml(metric.rationale)}">
+                  <span>${escapeHtml(metric.label)}</span>
+                  <b>${Number.isFinite(metric.score) ? metric.score : "待補"}</b>
+                </div>
+              `).join("")}
+            </div>
+          </details>
+        ` : ""}
       </div>
     `).join("");
   }

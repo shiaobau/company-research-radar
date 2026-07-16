@@ -114,6 +114,9 @@ async function main() {
   const ids = argValue("backtests", "").split(",").map((value) => value.trim()).filter(Boolean);
   if (!ids.length) throw new Error("Use --backtests=<backtest-id>[,<backtest-id>].");
   const scoringRules = JSON.parse(await readFile(path.join(root, "data", "scoring_rules.json"), "utf8"));
+  if ((scoringRules.common_dimensions || []).some((dimension) => dimension.submetrics?.length)) {
+    throw new Error("The current granular score model requires a point-in-time submetric data pack. Do not calibrate it with legacy seven-dimension backtests.");
+  }
   const sources = [];
   const rows = [];
   for (const id of ids) {

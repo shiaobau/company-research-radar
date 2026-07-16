@@ -1,90 +1,95 @@
 {
-  "version": "0.4.0",
-  "scoring_method": "跨產業總分採共通 7 維度加權平均；營收動能、現金/獲利品質、股價位置/趨勢可由公開客觀資料覆蓋人工初評；最後一項 industryFundamental 由各產業模板定義子檢核。",
+  "version": "0.5.0",
+  "scoring_method": "跨產業研究分數由七個共通維度與可追溯的子測項組成。每一維度的子測項必須具備公開資料，缺項時不產生總分。產業基本面會自動展開對應產業模板的子檢核。",
   "common_dimensions": [
     {
       "id": "catalyst",
       "label": "催化事件",
       "weight": 0.2,
-      "description": "觀察新品、訂單、認證、產能、合作、併購、法規進度、重大專案等可能改變市場預期的事件。",
-      "high_score_signal": "事件明確、時間接近、影響範圍可追蹤，且有公告或可信來源支撐。"
+      "description": "以公告事件的正負向平衡、事件密度與營收／獲利支撐度判讀催化條件。",
+      "high_score_signal": "近期可追溯事件與基本面改善同時出現。",
+      "submetrics": [
+        { "id": "event_balance", "label": "事件正負向平衡", "weight": 0.34, "formula": "event_balance", "source": "catalyst", "positive_field": "positive_event_count", "negative_field": "negative_event_count", "base": 60, "positive_weight": 12, "negative_weight": 24, "min_score": 20, "max_score": 92 },
+        { "id": "event_density", "label": "可追蹤事件密度", "weight": 0.26, "formula": "threshold", "source": "catalyst", "field": "event_count", "direction": "higher", "bands": [{ "min": 4, "score": 88 }, { "min": 2, "score": 76 }, { "min": 1, "score": 68 }, { "min": 0, "score": 55 }] },
+        { "id": "fundamental_confirmation", "label": "基本面支撐", "weight": 0.4, "formula": "weighted_average", "inputs": [{ "source": "revenue", "field": "score", "weight": 0.52 }, { "source": "financial", "field": "score", "weight": 0.48 }] }
+      ]
     },
     {
       "id": "revenueMomentum",
       "label": "營收動能",
       "weight": 0.18,
-      "description": "觀察月營收、累計營收、YoY/MoM、訂單能見度與旺季循環。",
-      "high_score_signal": "月營收連續改善，年增率轉強，且不是一次性因素。"
+      "description": "拆解單月年增、月增與累計年增，避免只靠單一營收數字判讀。",
+      "high_score_signal": "單月與累計動能皆正向，且月增未顯著轉弱。",
+      "submetrics": [
+        { "id": "monthly_yoy", "label": "單月營收年增", "weight": 0.45, "formula": "threshold", "source": "revenue", "field": "yoy_pct", "direction": "higher", "bands": [{ "min": 50, "score": 95 }, { "min": 30, "score": 86 }, { "min": 15, "score": 76 }, { "min": 0, "score": 58 }, { "min": -15, "score": 38 }, { "min": -999, "score": 20 }] },
+        { "id": "monthly_mom", "label": "單月營收月增", "weight": 0.2, "formula": "threshold", "source": "revenue", "field": "mom_pct", "direction": "higher", "bands": [{ "min": 20, "score": 88 }, { "min": 8, "score": 76 }, { "min": 0, "score": 62 }, { "min": -8, "score": 42 }, { "min": -999, "score": 25 }] },
+        { "id": "cumulative_yoy", "label": "累計營收年增", "weight": 0.35, "formula": "threshold", "source": "revenue", "field": "cumulative_yoy_pct", "direction": "higher", "bands": [{ "min": 35, "score": 92 }, { "min": 20, "score": 82 }, { "min": 8, "score": 72 }, { "min": 0, "score": 56 }, { "min": -10, "score": 38 }, { "min": -999, "score": 20 }] }
+      ]
     },
     {
       "id": "cashProfitQuality",
-      "label": "現金/獲利品質",
+      "label": "獲利與財務韌性",
       "weight": 0.17,
-      "description": "觀察現金水位、自由現金流、毛利率、營益率、存貨、應收帳款與資本支出壓力。",
-      "high_score_signal": "現金充足、毛利或營益率穩定，營運資金沒有明顯惡化。"
+      "description": "分別檢視毛利、營益、短期償債能力與負債壓力。",
+      "high_score_signal": "獲利率與流動性穩健，負債未造成明顯壓力。",
+      "submetrics": [
+        { "id": "gross_margin", "label": "毛利率", "weight": 0.3, "formula": "threshold", "source": "financial", "field": "gross_margin_pct", "direction": "higher", "bands": [{ "min": 60, "score": 95 }, { "min": 40, "score": 86 }, { "min": 25, "score": 76 }, { "min": 15, "score": 62 }, { "min": 5, "score": 45 }, { "min": -999, "score": 25 }] },
+        { "id": "operating_margin", "label": "營業利益率", "weight": 0.3, "formula": "threshold", "source": "financial", "field": "operating_margin_pct", "direction": "higher", "bands": [{ "min": 45, "score": 95 }, { "min": 25, "score": 86 }, { "min": 12, "score": 76 }, { "min": 5, "score": 62 }, { "min": 0, "score": 45 }, { "min": -999, "score": 22 }] },
+        { "id": "current_ratio", "label": "流動比率", "weight": 0.2, "formula": "threshold", "source": "financial", "field": "current_ratio", "direction": "higher", "bands": [{ "min": 2.5, "score": 88 }, { "min": 1.8, "score": 78 }, { "min": 1.2, "score": 65 }, { "min": 1, "score": 50 }, { "min": -999, "score": 30 }] },
+        { "id": "debt_ratio", "label": "負債比率", "weight": 0.2, "formula": "threshold", "source": "financial", "field": "debt_ratio_pct", "direction": "lower", "bands": [{ "max": 25, "score": 90 }, { "max": 40, "score": 78 }, { "max": 55, "score": 62 }, { "max": 70, "score": 45 }, { "max": 999, "score": 25 }] }
+      ]
     },
     {
       "id": "priceTrend",
-      "label": "股價位置/趨勢",
+      "label": "股價位置與趨勢",
       "weight": 0.15,
-      "description": "觀察股價相對區間、短中期趨勢、量能、過熱或落後程度。",
-      "high_score_signal": "趨勢改善但未明顯過熱，量價配合且仍有事件或基本面支撐。"
+      "description": "分別看一年區間位置、20 日與 60 日報酬；高檔位置不會自動拿到最高分。",
+      "high_score_signal": "中期趨勢改善，且未過度偏離一年交易區間。",
+      "submetrics": [
+        { "id": "range_position", "label": "一年區間位置", "weight": 0.35, "formula": "threshold", "source": "market", "field": "position_pct", "direction": "lower", "bands": [{ "max": 35, "score": 45 }, { "max": 55, "score": 68 }, { "max": 80, "score": 82 }, { "max": 92, "score": 74 }, { "max": 100, "score": 58 }] },
+        { "id": "return_20d", "label": "20 日趨勢", "weight": 0.25, "formula": "threshold", "source": "market", "field": "return_20d_pct", "direction": "higher", "bands": [{ "min": 15, "score": 88 }, { "min": 5, "score": 76 }, { "min": 0, "score": 62 }, { "min": -8, "score": 42 }, { "min": -999, "score": 25 }] },
+        { "id": "return_60d", "label": "60 日趨勢", "weight": 0.4, "formula": "threshold", "source": "market", "field": "return_60d_pct", "direction": "higher", "bands": [{ "min": 35, "score": 92 }, { "min": 15, "score": 82 }, { "min": 0, "score": 64 }, { "min": -12, "score": 42 }, { "min": -999, "score": 24 }] }
+      ]
     },
     {
       "id": "ownership",
-      "label": "籌碼/股權結構",
+      "label": "股權與治理訊號",
       "weight": 0.1,
-      "description": "觀察大股東、法人、董監、股東人數、股本稀釋與集中度變化。",
-      "high_score_signal": "長線籌碼穩定，未見明顯稀釋或籌碼鬆動。"
+      "description": "以可取得的大股東、內部人轉讓與申報違規資料建立可查核的治理基礎分。",
+      "high_score_signal": "股權揭露可追溯，近期未見內部人異常移轉或申報違規。",
+      "submetrics": [
+        { "id": "major_shareholder_visibility", "label": "主要股東揭露", "weight": 0.3, "formula": "threshold", "source": "ownership", "field": "major_shareholder_count", "direction": "higher", "bands": [{ "min": 5, "score": 85 }, { "min": 2, "score": 75 }, { "min": 1, "score": 65 }, { "min": 0, "score": 55 }] },
+        { "id": "insider_transfers", "label": "內部人轉讓壓力", "weight": 0.3, "formula": "threshold", "source": "ownership", "field": "insider_transfer_count", "direction": "lower", "bands": [{ "max": 0, "score": 78 }, { "max": 2, "score": 58 }, { "max": 5, "score": 40 }, { "max": 999, "score": 25 }] },
+        { "id": "governance_compliance", "label": "資訊申報合規", "weight": 0.4, "formula": "threshold", "source": "ownership", "field": "disclosure_violation_count", "direction": "lower", "bands": [{ "max": 0, "score": 92 }, { "max": 1, "score": 58 }, { "max": 3, "score": 32 }, { "max": 999, "score": 15 }] }
+      ]
     },
     {
       "id": "riskNews",
-      "label": "新聞/重大訊息風險",
+      "label": "事件與合規風險",
       "weight": 0.1,
-      "description": "觀察重大訊息、裁罰、訴訟、召回、客戶異動、負面新聞與輿情雜訊。",
-      "high_score_signal": "近期訊號多為中性或正向，負面事件少且可控。"
+      "description": "拆解負向重大訊息、資訊申報違規與公開事件覆蓋程度。",
+      "high_score_signal": "近期未見負向重大事件或違規，且公開事件資料可查。",
+      "submetrics": [
+        { "id": "negative_event_pressure", "label": "負向事件壓力", "weight": 0.45, "formula": "event_balance", "source": "risk", "positive_field": "positive_event_count", "negative_field": "negative_event_count", "base": 78, "positive_weight": 0, "negative_weight": 26, "min_score": 15, "max_score": 88 },
+        { "id": "disclosure_compliance", "label": "資訊申報違規", "weight": 0.35, "formula": "threshold", "source": "risk", "field": "disclosure_violation_count", "direction": "lower", "bands": [{ "max": 0, "score": 92 }, { "max": 1, "score": 58 }, { "max": 3, "score": 30 }, { "max": 999, "score": 15 }] },
+        { "id": "event_coverage", "label": "公開事件覆蓋", "weight": 0.2, "formula": "threshold", "source": "risk", "field": "event_count", "direction": "higher", "bands": [{ "min": 3, "score": 82 }, { "min": 1, "score": 70 }, { "min": 0, "score": 55 }] }
+      ]
     },
     {
       "id": "industryFundamental",
       "label": "產業基本面",
       "weight": 0.1,
-      "description": "依產業模板評估護城河、產品可信度、技術位置、通路、法規、商業模式與週期位置。",
-      "high_score_signal": "產業特有的關鍵檢核項目具可追溯資料，且與財務表現方向一致。"
+      "description": "自動展開各產業模板已定義的子檢核，並納入資料可追溯度。",
+      "high_score_signal": "產業特有子檢核與來源可追溯度均具足夠證據。",
+      "submetrics": [
+        { "id": "industry_evidence", "label": "產業子檢核", "weight": 0.8, "formula": "dimension_collection", "source": "industryEvidence", "field": "dimensions" },
+        { "id": "traceability", "label": "產業資料可追溯度", "weight": 0.2, "formula": "direct", "source": "industryEvidence", "field": "traceability_score" }
+      ]
     }
   ],
   "score_bands": [
-    {
-      "id": "priority",
-      "min": 75,
-      "label": "優先觀察",
-      "description": "公開資料訊號整體較佳，列為優先閱讀與後續追蹤對象；不構成買賣建議。",
-      "color": "#46b88a"
-    },
-    {
-      "id": "monitor",
-      "min": 55,
-      "label": "持續追蹤",
-      "description": "具備可追蹤條件，但仍需持續確認趨勢、事件與風險。",
-      "color": "#d6a94b"
-    },
-    {
-      "id": "defer",
-      "min": 0,
-      "label": "訊號待確認",
-      "description": "現階段公開資料訊號尚待確認，應回到評分拆解與事件內容進一步閱讀。",
-      "color": "#cf6a6a"
-    }
-  ],
-  "score_calibration": {
-    "method": "piecewise_linear",
-    "description": "保留七項原始加權分數，依跨產業回測分布轉換為較易閱讀的顯示分數；不改變各維度資料或權重。",
-    "anchors": [
-      { "raw": 0, "display": 0 },
-      { "raw": 52, "display": 45 },
-      { "raw": 57, "display": 55 },
-      { "raw": 62, "display": 75 },
-      { "raw": 70, "display": 90 },
-      { "raw": 100, "display": 100 }
-    ]
-  }
+    { "id": "priority", "min": 75, "label": "優先觀察", "description": "多數可追溯子測項表現較佳，列為優先閱讀與後續追蹤對象；不構成買賣建議。", "color": "#46b88a" },
+    { "id": "monitor", "min": 60, "label": "持續追蹤", "description": "已有可追蹤條件，但部分子測項仍需確認趨勢、事件或風險。", "color": "#d6a94b" },
+    { "id": "defer", "min": 0, "label": "訊號待確認", "description": "公開資料訊號尚待確認，應回到子測項、事件內容與資料日期進一步閱讀。", "color": "#cf6a6a" }
+  ]
 }

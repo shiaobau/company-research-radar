@@ -1,30 +1,26 @@
 (function () {
+  const sourceMaps = {
+    catalyst: "catalystData",
+    revenue: "revenueData",
+    financial: "financialData",
+    market: "marketData",
+    ownership: "ownershipData",
+    risk: "riskData",
+    industry: "industryData",
+    industryEvidence: "industryEvidenceData"
+  };
+
+  function clamp(score) {
+    return Math.max(0, Math.min(100, Math.round(score)));
+  }
+
   function scoreBand(score, rules) {
     const bands = rules?.score_bands || [
       { id: "priority", min: 75, label: "優先觀察", color: "#46b88a" },
-      { id: "monitor", min: 55, label: "持續追蹤", color: "#d6a94b" },
+      { id: "monitor", min: 60, label: "持續追蹤", color: "#d6a94b" },
       { id: "defer", min: 0, label: "訊號待確認", color: "#cf6a6a" }
     ];
-    return bands.find((band) => score >= band.min) || bands[bands.length - 1];
-  }
-
-  function calibrateScore(rawScore, rules) {
-    const anchors = (rules?.score_calibration?.anchors || [])
-      .map((anchor) => ({ raw: Number(anchor.raw), display: Number(anchor.display) }))
-      .filter((anchor) => Number.isFinite(anchor.raw) && Number.isFinite(anchor.display))
-      .sort((left, right) => left.raw - right.raw);
-    if (!anchors.length) return Math.round(rawScore);
-    if (rawScore <= anchors[0].raw) return Math.round(anchors[0].display);
-
-    for (let index = 1; index < anchors.length; index += 1) {
-      const lower = anchors[index - 1];
-      const upper = anchors[index];
-      if (rawScore <= upper.raw) {
-        const progress = (rawScore - lower.raw) / (upper.raw - lower.raw);
-        return Math.round(lower.display + (upper.display - lower.display) * progress);
-      }
-    }
-    return Math.round(anchors[anchors.length - 1].display);
+    return [...bands].sort((left, right) => right.min - left.min).find((band) => score >= band.min) || bands[bands.length - 1];
   }
 
   function dimensionsFor(company, rules) {
@@ -32,72 +28,157 @@
     return rules.industries?.[company.industry_template]?.dimensions || [];
   }
 
-  function objectiveInput(company, dimensionId, datasets) {
-    const dataMap = {
-      catalyst: datasets?.catalystData?.companies,
-      revenueMomentum: datasets?.revenueData?.companies,
-      cashProfitQuality: datasets?.financialData?.companies,
-      priceTrend: datasets?.marketData?.companies,
-      ownership: datasets?.ownershipData?.companies,
-      riskNews: datasets?.riskData?.companies,
-      industryFundamental: datasets?.industryData?.companies
-    };
-    const record = dataMap[dimensionId]?.[company.id];
-    if (!record || record.status !== "ok" || !Number.isFinite(Number(record.score))) return null;
+  function recordFor(company, source, datasets) {
+    const dataset = datasets?.[sourceMaps[source]];
+    const record = dataset?.companies?.[company.id];
+    return record?.status === "ok" ? record : null;
+  }
+
+  function numberAt(record, field) {
+    const value = String(field || "").split(".").reduce((result, key) => result?.[key], record);
+    const numeric = Number(value);
+    return Number.isFinite(numeric) ? numeric : null;
+  }
+
+  function thresholdScore(value, definition) {
+    const bands = definition.bands || [];
+    if (definition.direction === "lower") {
+      const match = [...bands].sort((left, right) => left.max - right.max).find((band) => value <= Number(band.max));
+      return match ? Number(match.score) : null;
+    }
+    const match = [...bands].sort((left, right) => right.min - left.min).find((band) => value >= Number(band.min));
+    return match ? Number(match.score) : null;
+  }
+
+  function weightedInputs(definition, company, datasets) {
+    const values = (definition.inputs || []).map((input) => {
+      const record = recordFor(company, input.source, datasets);
+      const value = record ? numberAt(record, input.field) : null;
+      return { value, weight: Number(input.weight), record };
+    });
+    if (values.some((item) => !Number.isFinite(item.value) || !Number.isFinite(item.weight))) return null;
+    const weightSum = values.reduce((sum, item) => sum + item.weight, 0);
+    if (!weightSum) return null;
     return {
-      score: Number(record.score),
-      evidence_level: record.evidence_level || "high",
-      rationale: record.rationale || "由公開客觀資料計算。",
-      source_ids: record.source_ids || [],
-      objective: true
+      score: values.reduce((sum, item) => sum + item.value * item.weight, 0) / weightSum,
+      sourceIds: [...new Set(values.flatMap((item) => item.record.source_ids || []))],
+      rationale: values.map((item) => `${item.value}`).join("、")
     };
   }
 
-  function missingDimensionLabel(dimension) {
-    return dimension?.label || dimension?.id || "未命名維度";
+  function evaluateSingle(definition, company, datasets) {
+    const record = recordFor(company, definition.source, datasets);
+    if (definition.formula === "weighted_average") {
+      const result = weightedInputs(definition, company, datasets);
+      return {
+        ...definition,
+        score: result ? clamp(result.score) : null,
+        status: result ? "ok" : "missing",
+        rationale: result ? `相關公開分數：${result.rationale}` : "尚未取得所有必要的公開資料。",
+        sourceIds: result?.sourceIds || []
+      };
+    }
+    if (!record) {
+      return { ...definition, score: null, status: "missing", rationale: "尚未取得必要的公開資料。", sourceIds: [] };
+    }
+
+    if (definition.formula === "event_balance") {
+      const positive = numberAt(record, definition.positive_field) || 0;
+      const negative = numberAt(record, definition.negative_field) || 0;
+      const score = clamp(Number(definition.base || 0) + positive * Number(definition.positive_weight || 0) - negative * Number(definition.negative_weight || 0));
+      return {
+        ...definition,
+        score: Math.max(Number(definition.min_score ?? 0), Math.min(Number(definition.max_score ?? 100), score)),
+        status: "ok",
+        rationale: `正向事件 ${positive} 件；負向事件 ${negative} 件。`,
+        sourceIds: record.source_ids || []
+      };
+    }
+
+    const value = numberAt(record, definition.field);
+    if (!Number.isFinite(value)) {
+      return { ...definition, score: null, status: "missing", rationale: "公開資料未提供此測項數值。", sourceIds: record.source_ids || [] };
+    }
+    const score = definition.formula === "threshold" ? thresholdScore(value, definition) : value;
+    return {
+      ...definition,
+      score: Number.isFinite(score) ? clamp(score) : null,
+      status: Number.isFinite(score) ? "ok" : "missing",
+      rationale: Number.isFinite(score) ? `公開數值：${value}` : "公開數值不符合目前的計分規則。",
+      sourceIds: record.source_ids || []
+    };
+  }
+
+  function evaluateSubmetrics(dimension, company, datasets) {
+    return (dimension.submetrics || []).flatMap((definition) => {
+      if (definition.formula !== "dimension_collection") return [evaluateSingle(definition, company, datasets)];
+      const record = recordFor(company, definition.source, datasets);
+      const dimensions = record?.[definition.field];
+      if (!Array.isArray(dimensions) || !dimensions.length) {
+        return [{ ...definition, score: null, status: "missing", rationale: "尚未取得產業子檢核資料。", sourceIds: record?.source_ids || [] }];
+      }
+      return dimensions.map((item) => ({
+        id: item.id,
+        label: item.label,
+        weight: Number(definition.weight) * Number(item.weight || 0),
+        score: Number.isFinite(Number(item.score)) ? clamp(Number(item.score)) : null,
+        status: item.status === "ok" && Number.isFinite(Number(item.score)) ? "ok" : "missing",
+        rationale: item.rationale || item.description || "產業子檢核。",
+        sourceIds: item.source_ids || record.source_ids || []
+      }));
+    });
+  }
+
+  function legacyDimension(dimension, company, datasets) {
+    const sourceByDimension = {
+      catalyst: "catalyst",
+      revenueMomentum: "revenue",
+      cashProfitQuality: "financial",
+      priceTrend: "market",
+      ownership: "ownership",
+      riskNews: "risk",
+      industryFundamental: "industry"
+    };
+    return evaluateSingle({ id: dimension.id, label: dimension.label, weight: 1, formula: "direct", source: sourceByDimension[dimension.id], field: "score" }, company, datasets);
+  }
+
+  function evaluateDimension(dimension, company, datasets) {
+    const submetrics = dimension.submetrics?.length
+      ? evaluateSubmetrics(dimension, company, datasets)
+      : [legacyDimension(dimension, company, datasets)];
+    const missing = submetrics.filter((item) => item.status !== "ok");
+    const weightSum = submetrics.reduce((sum, item) => sum + (Number(item.weight) || 0), 0);
+    const score = missing.length || !weightSum
+      ? null
+      : clamp(submetrics.reduce((sum, item) => sum + item.score * Number(item.weight), 0) / weightSum);
+    return {
+      id: dimension.id,
+      label: dimension.label,
+      weight: dimension.weight,
+      score,
+      status: Number.isFinite(score) ? "ok" : "missing",
+      rationale: Number.isFinite(score)
+        ? `${submetrics.length} 個子測項均已取得公開資料。`
+        : `尚缺 ${missing.map((item) => item.label).join("、")}。`,
+      evidenceLevel: Number.isFinite(score) ? "high" : "none",
+      sourceIds: [...new Set(submetrics.flatMap((item) => item.sourceIds || []))],
+      objective: true,
+      submetrics
+    };
   }
 
   function computeCompanyScore(company, rules, datasets = {}) {
     const dimensions = dimensionsFor(company, rules);
-    if (!dimensions.length) return { total: null, complete: false, missingDimensions: ["評分規則"], band: { label: "資料不足" }, rows: [] };
-
-    let weighted = 0;
-    let weightSum = 0;
-    const rows = dimensions.map((dimension) => {
-      const input = objectiveInput(company, dimension.id, datasets);
-      const available = Boolean(input);
-      const score = available ? Number(input.score) : null;
-      if (available) {
-        weighted += score * dimension.weight;
-        weightSum += dimension.weight;
-      }
-      return {
-        id: dimension.id,
-        label: dimension.label,
-        weight: dimension.weight,
-        score,
-        status: available ? "ok" : "missing",
-        rationale: input?.rationale || "尚未取得可計分的公開資料。",
-        evidenceLevel: input?.evidence_level || "none",
-        sourceIds: input?.source_ids || [],
-        objective: Boolean(input?.objective)
-      };
-    });
-
-    const missingDimensions = rows.filter((row) => row.status !== "ok").map(missingDimensionLabel);
+    if (!dimensions.length) return { total: null, rawTotal: null, complete: false, missingDimensions: ["評分規則"], band: { label: "資料不足" }, rows: [] };
+    const rows = dimensions.map((dimension) => evaluateDimension(dimension, company, datasets));
+    const missingDimensions = rows.filter((row) => row.status !== "ok").map((row) => row.label);
     if (missingDimensions.length) {
-      return {
-        total: null,
-        complete: false,
-        missingDimensions,
-        band: { label: "資料不足" },
-        rows
-      };
+      return { total: null, rawTotal: null, complete: false, missingDimensions, band: { label: "資料不足" }, rows };
     }
-    const rawTotal = weightSum ? Math.round(weighted / weightSum) : 0;
-    const total = calibrateScore(rawTotal, rules);
-    return { total, rawTotal, complete: true, missingDimensions: [], band: scoreBand(total, rules), rows };
+    const weightSum = rows.reduce((sum, row) => sum + Number(row.weight), 0);
+    const total = clamp(rows.reduce((sum, row) => sum + row.score * Number(row.weight), 0) / weightSum);
+    return { total, rawTotal: total, complete: true, missingDimensions: [], band: scoreBand(total, rules), rows };
   }
 
-  window.RadarScoring = { computeCompanyScore, scoreBand, calibrateScore };
+  window.RadarScoring = { computeCompanyScore, scoreBand };
 })();

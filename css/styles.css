@@ -1122,6 +1122,37 @@ button:focus {
   line-height: 1.65;
 }
 
+.score-submetrics {
+  grid-column: 1 / -1;
+  margin-top: 2px;
+}
+
+.score-submetrics > summary {
+  color: var(--teal);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.score-submetric-list {
+  display: grid;
+  gap: 4px;
+  margin-top: 7px;
+  padding: 7px 8px;
+  border-left: 2px solid #3a7465;
+  background: #151918;
+}
+
+.score-submetric-list > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--soft);
+  font-size: 12px;
+}
+
+.score-submetric-list b { color: var(--ink); }
+
 .fact {
   padding: 10px;
   background: #141716;
