@@ -1,0 +1,562 @@
+{
+  "version": "1.0.0",
+  "collected_at": "2026-07-16T05:40:25.086Z",
+  "company": {
+    "id": "twse-3712",
+    "ticker": "3712",
+    "name": "永崴投控",
+    "market": "TWSE",
+    "industry_template": "electronics_hardware"
+  },
+  "collection_scope": "targeted_research_company",
+  "events": [
+    {
+      "id": "mops-history-3712-1150713-1",
+      "date": "2026-07-13",
+      "announced_date": "2026-07-13",
+      "fact_date": "2026-07-13",
+      "announced_time": "19:51:38",
+      "title": "代孫公司台灣寶崴海事工程股份有限公司公告無法償還到 期之銀行借款，森崴能源股份有限公司為其連帶保證人",
+      "description": "1.關係人或主要債務人或其連帶保證人名稱: 子公司森崴能源股份有限公司、孫公司台灣寶崴海事工程股份有限公司 2.事實發生日:115/07/13 3.發生緣由: 森崴能源股份有限公司間接持有67%之孫公司台灣寶崴海事工程股份有限公司向第一商 業銀行股份有限公司之借款，因未依約履行，尚欠本金新台幣524,556仟元及相關利息 、違約金。依雙方簽訂之約定書，已喪失期限利益，所有借款視為全部到期。 因森崴能源為該筆借款之連帶保證人，森崴能源及台灣寶崴於115年07月13日收到臺灣 新北地方法院115年度司促字第15573號支付命令，要求連帶給付上述金額。 4.債權種類或背書保證金額及其所占資產比例: 新台幣524,556仟元/1.17% 5.債權有無保全措施:無 6.對公司財務、業務之影響及預計可能損失:子公司第一季財報已認列 7.因應措施:森崴能源與台灣寶崴持續與債權銀行積極協商，展延到期本金及利息， 以達成和解方案。 8.其他應敘明事項:無",
+      "clause": "第28款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150713"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150709-1",
+      "date": "2026-07-09",
+      "announced_date": "2026-07-09",
+      "fact_date": "2026-07-09",
+      "announced_time": "22:05:06",
+      "title": "代子公司Apix Limited公告董事會決議股利分派",
+      "description": "1.董事會決議日期:115/07/09 2.發放股利種類及金額:現金股利總金額港幣1,225,000元 3.其他應敘明事項:無",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150709"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150706-3",
+      "date": "2026-07-06",
+      "announced_date": "2026-07-06",
+      "fact_date": "2026-07-06",
+      "announced_time": "17:26:16",
+      "title": "代子公司Shinfox Far East Company Pte. Ltd公告董事會 決議召開股東特別會議",
+      "description": "1.董事會決議日期:115/07/06 2.股東臨時會召開日期:115/08/04 3.股東臨時會召開地點:視訊會議 4.召集事由一、報告事項:無 5.召集事由二、承認事項:無 6.召集事由三、討論事項: (1)討論本公司依據《2018年破產、重組與解散法》規定，以債權人自願清算方式進行 清算並委任Deloitte Singapore辦理清算事宜。 (2)決議清算人得依《2018年破產、重組與解散法》所賦予之權力，於清算程序中全權 行使全部或任何相關權限。 7.召集事由四、選舉事項:無 8.召集事由五、其他議案:無 9.召集事由六、臨時動議:無 10.停止過戶起始日期:NA 11.停止過戶截止日期:NA 12.其他應敘明事項:無",
+      "clause": "第17款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150706"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150706-2",
+      "date": "2026-07-06",
+      "announced_date": "2026-07-06",
+      "fact_date": "2026-07-06",
+      "announced_time": "17:26:01",
+      "title": "代子公司Shinfox Far East Company Pte. Ltd公告董事會 決議擬辦理解散清算案",
+      "description": "1.董事會決議日期:115/07/06 2.解散事由: Shinfox Far East Company Pte. Ltd因目前資產已遠不足以清償債務並面臨債權人求 償，森崴能源考量整體財務結構遭受巨大衝擊，無力支持其繼續營運，已於115年7月6 日召開SFE 董事會並正式決議辦理「自願清算」(CREDITORS' VOLUNTARY LIQUIDATION) 依據新加坡相關法令辦理，並已委任新加坡德勤（Deloitte）會計師事務所擔任清算 人，正式啟動清算程序。 3.預計股東會日期:115/08/04 4.其他應敘明事項:無",
+      "clause": "第11款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150706"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150706-1",
+      "date": "2026-07-06",
+      "announced_date": "2026-07-06",
+      "fact_date": null,
+      "announced_time": "17:25:31",
+      "title": "代子公司Shinfox Far East Company Pte. Ltd公告召開重大 訊息說明記者會內容",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150706"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150703-3",
+      "date": "2026-07-03",
+      "announced_date": "2026-07-03",
+      "fact_date": null,
+      "announced_time": "18:01:19",
+      "title": "代子公司Shinfox Far East Company Pte. Ltd公告董事會決議處分船舶",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150703"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150703-1",
+      "date": "2026-07-03",
+      "announced_date": "2026-07-03",
+      "fact_date": null,
+      "announced_time": "17:49:53",
+      "title": "代子公司崴強科技股份有限公司依「公開發行公司資金貸與及背書 保證處理準則」第二十二條第一項第三款之規定公告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150703"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150630-2",
+      "date": "2026-06-30",
+      "announced_date": "2026-06-30",
+      "fact_date": null,
+      "announced_time": "17:31:29",
+      "title": "代子公司森崴能源股份有限公司公告董事會決議變更113年 第一次現金增資資金運用計畫",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150630"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150630-1",
+      "date": "2026-06-30",
+      "announced_date": "2026-06-30",
+      "fact_date": null,
+      "announced_time": "17:30:44",
+      "title": "代子公司森崴能源股份有限公司公告董事會選任董事長",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150630"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150629-6",
+      "date": "2026-06-29",
+      "announced_date": "2026-06-29",
+      "fact_date": null,
+      "announced_time": "18:16:40",
+      "title": "代子公司森崴能源股份有限公司公告審計委員會委員辭任",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "6",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150629"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150629-5",
+      "date": "2026-06-29",
+      "announced_date": "2026-06-29",
+      "fact_date": null,
+      "announced_time": "18:16:19",
+      "title": "代子公司森崴能源股份有限公司公告獨立董事辭任",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "5",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150629"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150629-4",
+      "date": "2026-06-29",
+      "announced_date": "2026-06-29",
+      "fact_date": null,
+      "announced_time": "18:15:34",
+      "title": "代子公司世豐電力(股)公司公告董事會選任董事長",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150629"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150629-3",
+      "date": "2026-06-29",
+      "announced_date": "2026-06-29",
+      "fact_date": null,
+      "announced_time": "18:15:11",
+      "title": "代子公司世豐電力(股)公司公告股東常會解除新任董事之競 業禁止事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150629"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150629-2",
+      "date": "2026-06-29",
+      "announced_date": "2026-06-29",
+      "fact_date": null,
+      "announced_time": "18:14:46",
+      "title": "代子公司世豐電力(股)公司公告改選董事及監察人名單",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150629"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150629-1",
+      "date": "2026-06-29",
+      "announced_date": "2026-06-29",
+      "fact_date": null,
+      "announced_time": "18:14:10",
+      "title": "代子公司世豐電力(股)公司公告股東會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150629"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150623-1",
+      "date": "2026-06-23",
+      "announced_date": "2026-06-23",
+      "fact_date": null,
+      "announced_time": "17:32:54",
+      "title": "公告本公司115年股東常會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150623"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150618-2",
+      "date": "2026-06-18",
+      "announced_date": "2026-06-18",
+      "fact_date": null,
+      "announced_time": "18:22:09",
+      "title": "代子公司中旋實業有限公司公告改選董事名單",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150618"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150618-1",
+      "date": "2026-06-18",
+      "announced_date": "2026-06-18",
+      "fact_date": null,
+      "announced_time": "18:21:43",
+      "title": "代子公司中旋實業有限公司公告股東會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150618"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150611-1",
+      "date": "2026-06-11",
+      "announced_date": "2026-06-11",
+      "fact_date": null,
+      "announced_time": "17:08:42",
+      "title": "公告本公司對子公司富威電力股份有限公司降低持股比例達 百分之十以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150611"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150609-1",
+      "date": "2026-06-09",
+      "announced_date": "2026-06-09",
+      "fact_date": null,
+      "announced_time": "18:03:06",
+      "title": "公告本公司持有被控股公司家數變動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150609"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150529-2",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "17:30:45",
+      "title": "代子公司又德風力發電股份有限公司公告股東會重要決議 事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150529"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150529-1",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "17:30:33",
+      "title": "代子公司欣鑫天然氣股份有限公司公告股東會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150529"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150526-2",
+      "date": "2026-05-26",
+      "announced_date": "2026-05-26",
+      "fact_date": null,
+      "announced_time": "17:32:02",
+      "title": "代子公司世豐電力股份有限公司公告董事會決議召開115年 股東常會相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150526"
+      }
+    },
+    {
+      "id": "mops-history-3712-1150526-1",
+      "date": "2026-05-26",
+      "announced_date": "2026-05-26",
+      "fact_date": null,
+      "announced_time": "17:31:48",
+      "title": "代子公司世豐電力股份有限公司公告董事會決議不分派股利",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3712",
+        "marketKind": "sii",
+        "enterDate": "1150526"
+      }
+    }
+  ],
+  "references": [
+    {
+      "id": "mops-history-3712",
+      "title": "永崴投控 MOPS 歷史重大訊息",
+      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3712",
+      "source_id": "mops_history_search",
+      "source_type": "official_history_api",
+      "claim_type": "official_search_reference",
+      "review_status": "reference_only",
+      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
+    },
+    {
+      "id": "company-website-3712",
+      "title": "永崴投控 官方網站",
+      "url": "https://www.fit-holding.com",
+      "source_id": "company_website",
+      "source_type": "company_reference",
+      "claim_type": "company_published_reference",
+      "review_status": "reference_only",
+      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
+    }
+  ],
+  "source_status": [
+    {
+      "source_id": "twse_material_events",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-16T01:56:57.043Z",
+      "row_count": 87,
+      "available": true
+    },
+    {
+      "source_id": "mops_history_api",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-16T05:38:01.522Z",
+      "row_count": 60,
+      "detail_count": 4,
+      "available": true
+    }
+  ],
+  "limitations": [
+    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
+    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
+    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
+  ]
+}

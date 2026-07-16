@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T02:49:46.182Z",
+  "collected_at": "2026-07-16T05:40:25.086Z",
   "company": {
     "id": "tw-2454-mediatek",
     "ticker": "2454",
@@ -9,17 +9,522 @@
     "industry_template": "semiconductor"
   },
   "collection_scope": "targeted_research_company",
-  "events": [],
+  "events": [
+    {
+      "id": "mops-history-2454-1150709-1",
+      "date": "2026-07-10",
+      "announced_date": "2026-07-10",
+      "fact_date": "2026-07-10",
+      "announced_time": "17:06:50",
+      "title": "代重要子公司翔發投資(股)公司公告法人股東重新指派董事 暨任董事長",
+      "description": "1.發生變動日期:115/07/10 2.法人名稱:聯發資本股份有限公司 3.舊任者姓名:顧大為 4.舊任者簡歷:聯發科技股份有限公司 共同營運長及公司執行副總經理暨財務長 5.新任者姓名:陳暄妮 6.新任者簡歷:聯發科技股份有限公司 財務本部協理 7.異動原因:法人股東重新指派董事暨任董事長 8.原任期（例xx/xx/xx至xx/xx/xx）:113/12/03至116/12/02 9.新任生效日期:115/07/10 10.其他應敘明事項:依公司章程，公司設董事1人，由陳暄妮女士擔任， 並以其為董事長。",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150709"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150709-4",
+      "date": "2026-07-10",
+      "announced_date": "2026-07-10",
+      "fact_date": "2026-07-10",
+      "announced_time": "17:06:40",
+      "title": "代重要子公司聯發資本(股)公司公告法人股東重新指派董事 暨任董事長",
+      "description": "1.發生變動日期:115/07/10 2.法人名稱:聯發科技股份有限公司 3.舊任者姓名: 蔡明介 陳暄妮 4.舊任者簡歷: 蔡明介 聯發科技股份有限公司 董事長 陳暄妮 聯發科技股份有限公司 財務本部協理 5.新任者姓名:陳暄妮 6.新任者簡歷:陳暄妮 聯發科技股份有限公司 財務本部協理 7.異動原因:法人股東重新指派董事暨任董事長 8.原任期（例xx/xx/xx至xx/xx/xx）:113/10/31至116/10/30 9.新任生效日期:115/07/10 10.其他應敘明事項:依公司章程，公司設董事一人，由陳暄妮女士擔任， 並以其為董事長。",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150709"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150709-3",
+      "date": "2026-07-10",
+      "announced_date": "2026-07-10",
+      "fact_date": "2026-07-10",
+      "announced_time": "17:06:27",
+      "title": "代重要子公司聯發資本股份有限公司公告董事會 (代行臨時股東會)重要決議事項",
+      "description": "1.股東臨時會日期:115/07/10 2.重要決議事項: (1)、通過修訂本公司「公司章程」 3.其他應敘明事項:無",
+      "clause": "第18款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150709"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150709-2",
+      "date": "2026-07-10",
+      "announced_date": "2026-07-10",
+      "fact_date": "2026-07-10",
+      "announced_time": "17:06:15",
+      "title": "代重要子公司聯發資本股份有限公司公告召集董事會 (代行臨時股東會)",
+      "description": "1.董事會決議日期:115/07/10 2.股東臨時會召開日期:115/07/10 3.股東臨時會召開地點:不適用 4.召集事由一、報告事項:無 5.召集事由二、承認事項:無 6.召集事由三、討論事項:修訂本公司「公司章程」 7.召集事由四、選舉事項:無 8.召集事由五、其他議案:無 9.召集事由六、臨時動議:無 10.停止過戶起始日期:NA 11.停止過戶截止日期:NA 12.其他應敘明事項:無",
+      "clause": "第17款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150709"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150708-2",
+      "date": "2026-07-10",
+      "announced_date": "2026-07-10",
+      "fact_date": null,
+      "announced_time": "17:04:12",
+      "title": "代重要子公司MediaTek Investment Singapore Pte. Ltd. 公告董事會決議發放股利",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150708"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150708-1",
+      "date": "2026-07-10",
+      "announced_date": "2026-07-10",
+      "fact_date": null,
+      "announced_time": "17:03:59",
+      "title": "代重要子公司Gaintech Co. Limited公告董事會決議發放股利",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150708"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150709-5",
+      "date": "2026-07-10",
+      "announced_date": "2026-07-10",
+      "fact_date": null,
+      "announced_time": "16:55:43",
+      "title": "聯發科技115年6月份自結合併營收淨額公告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "5",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150709"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150706-3",
+      "date": "2026-07-06",
+      "announced_date": "2026-07-06",
+      "fact_date": null,
+      "announced_time": "18:17:09",
+      "title": "代重要子公司聯發資本(股)公司公告法人股東指派董事",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150706"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150626-1",
+      "date": "2026-06-26",
+      "announced_date": "2026-06-26",
+      "fact_date": null,
+      "announced_time": "17:06:52",
+      "title": "代子公司Digimoc Holdings Limited公告取得有價證券",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150626"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150622-1",
+      "date": "2026-06-23",
+      "announced_date": "2026-06-23",
+      "fact_date": null,
+      "announced_time": "16:03:40",
+      "title": "公告本公司調整配息率",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150622"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150622-2",
+      "date": "2026-06-22",
+      "announced_date": "2026-06-22",
+      "fact_date": null,
+      "announced_time": "17:00:36",
+      "title": "公告本公司參與機構投資人說明會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150622"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150610-2",
+      "date": "2026-06-12",
+      "announced_date": "2026-06-12",
+      "fact_date": null,
+      "announced_time": "17:08:56",
+      "title": "代重要子公司旭展(香港)投資有限公司 公告董事會決議發放股利",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150610"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150610-1",
+      "date": "2026-06-10",
+      "announced_date": "2026-06-10",
+      "fact_date": null,
+      "announced_time": "16:55:44",
+      "title": "聯發科技115年5月份自結合併營收淨額公告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150610"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150602-1",
+      "date": "2026-06-05",
+      "announced_date": "2026-06-05",
+      "fact_date": null,
+      "announced_time": "17:12:07",
+      "title": "代重要子公司MEDIATEK SINGAPORE PTE. LTD. 公告董事會決議股利分派",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150602"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150527-1",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "17:13:17",
+      "title": "代重要子公司翔發投資(股)公司及聚星電子(股)公司 簡易合併案向債權人公告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150527"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150529-3",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "17:12:29",
+      "title": "代重要子公司翔發投資(股)公司公告與聚星電子(股)公司 之簡易合併案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150529"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150529-2",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "17:09:54",
+      "title": "代子公司寰發股份有限公司公告取得無形資產",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150529"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150528-1",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "17:06:57",
+      "title": "公告本公司一一五年股東常會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150528"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150525-1",
+      "date": "2026-05-25",
+      "announced_date": "2026-05-25",
+      "fact_date": null,
+      "announced_time": "17:58:26",
+      "title": "代子公司依公開發行公司資金貸與及背書保證處理準則 第二十二條‎第一項第二款、第三款公告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150525"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150515-1",
+      "date": "2026-05-15",
+      "announced_date": "2026-05-15",
+      "fact_date": null,
+      "announced_time": "17:40:11",
+      "title": "公告本公司參與機構投資人說明會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150515"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150514-1",
+      "date": "2026-05-14",
+      "announced_date": "2026-05-14",
+      "fact_date": null,
+      "announced_time": "18:28:08",
+      "title": "公告本公司限制員工權利新股註銷完成變更登記事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150514"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150428-3",
+      "date": "2026-05-08",
+      "announced_date": "2026-05-08",
+      "fact_date": null,
+      "announced_time": "17:26:54",
+      "title": "代重要子公司翔發投資股份有限公司公告114年度除息基準日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150428"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150428-5",
+      "date": "2026-05-08",
+      "announced_date": "2026-05-08",
+      "fact_date": null,
+      "announced_time": "17:26:11",
+      "title": "代重要子公司翔發投資股份有限公司公告董事會(代行股東會) 重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "5",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150428"
+      }
+    },
+    {
+      "id": "mops-history-2454-1150428-4",
+      "date": "2026-05-08",
+      "announced_date": "2026-05-08",
+      "fact_date": null,
+      "announced_time": "17:25:12",
+      "title": "代重要子公司翔發投資股份有限公司公告召集董事會 (代行股東會)",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "2454",
+        "marketKind": "sii",
+        "enterDate": "1150428"
+      }
+    }
+  ],
   "references": [
     {
       "id": "mops-history-2454",
       "title": "聯發科 MOPS 歷史重大訊息",
       "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2454",
       "source_id": "mops_history_search",
-      "source_type": "official_search_link",
+      "source_type": "official_history_api",
       "claim_type": "official_search_reference",
       "review_status": "reference_only",
-      "note": "歷史資料以公開資訊觀測站查詢頁為準；本版本不將未經欄位驗證的網頁內容直接納入評分。"
+      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
     },
     {
       "id": "company-website-2454",
@@ -38,6 +543,14 @@
       "cache_status": "fresh",
       "fetched_at": "2026-07-16T01:56:57.043Z",
       "row_count": 87,
+      "available": true
+    },
+    {
+      "source_id": "mops_history_api",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-16T05:37:43.674Z",
+      "row_count": 60,
+      "detail_count": 4,
       "available": true
     }
   ],

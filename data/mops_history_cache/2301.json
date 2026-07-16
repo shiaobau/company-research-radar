@@ -1,14 +1,16 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T05:40:25.086Z",
-  "company": {
-    "id": "twse-2301",
-    "ticker": "2301",
-    "name": "光寶科",
-    "market": "TWSE",
-    "industry_template": "electronics_hardware"
-  },
-  "collection_scope": "targeted_research_company",
+  "source_id": "mops_history_api",
+  "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+  "ticker": "2301",
+  "fetched_at": "2026-07-16T05:37:21.247Z",
+  "cache_status": "updated",
+  "queried_roc_years": [
+    "115",
+    "114"
+  ],
+  "event_count": 60,
+  "detail_count": 4,
   "events": [
     {
       "id": "mops-history-2301-1150713-2",
@@ -513,50 +515,762 @@
         "marketKind": "sii",
         "enterDate": "1150429"
       }
-    }
-  ],
-  "references": [
-    {
-      "id": "mops-history-2301",
-      "title": "光寶科 MOPS 歷史重大訊息",
-      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
-      "source_id": "mops_history_search",
-      "source_type": "official_history_api",
-      "claim_type": "official_search_reference",
-      "review_status": "reference_only",
-      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
     },
     {
-      "id": "company-website-2301",
-      "title": "光寶科 官方網站",
-      "url": "http://www.liteon.com/",
-      "source_id": "company_website",
-      "source_type": "company_reference",
-      "claim_type": "company_published_reference",
-      "review_status": "reference_only",
-      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
-    }
-  ],
-  "source_status": [
-    {
-      "source_id": "twse_material_events",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T01:56:57.043Z",
-      "row_count": 87,
-      "available": true
-    },
-    {
+      "id": "mops-history-2301-1150429-3",
+      "date": "2026-04-29",
+      "announced_date": "2026-04-29",
+      "fact_date": null,
+      "announced_time": "13:49:17",
+      "title": "本公司董事會決議通過對100%直接持有之子公司LITE-ON VIETNAM CO., LTD. 現金增資案",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T05:37:21.247Z",
-      "row_count": 60,
-      "detail_count": 4,
-      "available": true
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150429"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150429-2",
+      "date": "2026-04-29",
+      "announced_date": "2026-04-29",
+      "fact_date": null,
+      "announced_time": "13:46:13",
+      "title": "本公司董事會決議通過對⼦公司 LITE-ON TECHNOLOGY VIETNAM COMPANY LIMITED 現⾦增資案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150429"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150429-1",
+      "date": "2026-04-29",
+      "announced_date": "2026-04-29",
+      "fact_date": null,
+      "announced_time": "13:42:50",
+      "title": "董事會決議115年第一季不分派盈餘",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150429"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150421-1",
+      "date": "2026-04-29",
+      "announced_date": "2026-04-29",
+      "fact_date": null,
+      "announced_time": "13:36:35",
+      "title": "公告本公司115年第1季合併財務報告業經董事會決議通過",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150421"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150408-1",
+      "date": "2026-04-21",
+      "announced_date": "2026-04-21",
+      "fact_date": null,
+      "announced_time": "17:48:12",
+      "title": "公告本公司民國115年第一季財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150408"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150420-1",
+      "date": "2026-04-20",
+      "announced_date": "2026-04-20",
+      "fact_date": null,
+      "announced_time": "16:01:39",
+      "title": "光寶科技115年第一季法人說明會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150420"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150317-1",
+      "date": "2026-03-24",
+      "announced_date": "2026-03-24",
+      "fact_date": null,
+      "announced_time": "15:34:33",
+      "title": "董事會決議召開115年股東常會(新增討論議案)",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150317"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150319-3",
+      "date": "2026-03-24",
+      "announced_date": "2026-03-24",
+      "fact_date": null,
+      "announced_time": "14:58:23",
+      "title": "公告本公司董事會決議辦理私募普通股",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150319"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150319-1",
+      "date": "2026-03-24",
+      "announced_date": "2026-03-24",
+      "fact_date": null,
+      "announced_time": "14:57:30",
+      "title": "公告本公司董事會決議辦理現金增資發行普通股參與 發行海外存託憑證",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150319"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150320-1",
+      "date": "2026-03-20",
+      "announced_date": "2026-03-20",
+      "fact_date": null,
+      "announced_time": "16:41:41",
+      "title": "受邀參加 HSBC Global Investment Summit",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150320"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150316-2",
+      "date": "2026-03-16",
+      "announced_date": "2026-03-16",
+      "fact_date": null,
+      "announced_time": "14:38:06",
+      "title": "公告本公司辦理國內第二次無擔保轉換公司債 申請展延募集期間，業經金管會准予備查",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150316"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150316-1",
+      "date": "2026-03-16",
+      "announced_date": "2026-03-16",
+      "fact_date": null,
+      "announced_time": "14:37:34",
+      "title": "公告本公司辦理國內第一次無擔保轉換公司債 申請展延募集期間，業經金管會准予備查",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150316"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150313-1",
+      "date": "2026-03-13",
+      "announced_date": "2026-03-13",
+      "fact_date": null,
+      "announced_time": "00:08:57",
+      "title": "公告本公司公開收購宇智網通股份有限公司普通股之公開收購期間屆滿",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150313"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150310-1",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "16:57:30",
+      "title": "公告本公司公開收購宇智網通股份有限公司普通股，公開收購條件均已成就",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150225-8",
+      "date": "2026-03-06",
+      "announced_date": "2026-03-06",
+      "fact_date": null,
+      "announced_time": "15:49:42",
+      "title": "公告本公司辦理發行國內第二次無擔保轉換公司債， 向金管會申請延長募集期間三個月",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "8",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150225"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150225-7",
+      "date": "2026-03-06",
+      "announced_date": "2026-03-06",
+      "fact_date": null,
+      "announced_time": "15:48:09",
+      "title": "公告本公司辦理發行國內第一次無擔保轉換公司債， 向金管會申請延長募集期間三個月",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "7",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150225"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150223-1",
+      "date": "2026-03-03",
+      "announced_date": "2026-03-03",
+      "fact_date": null,
+      "announced_time": "16:38:14",
+      "title": "公告本公司114年第四季配息基準日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150223"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150206-2",
+      "date": "2026-03-01",
+      "announced_date": "2026-03-01",
+      "fact_date": null,
+      "announced_time": "09:15:13",
+      "title": "公告本公司法人董事改派代表人",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150206"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150225-5",
+      "date": "2026-02-25",
+      "announced_date": "2026-02-25",
+      "fact_date": null,
+      "announced_time": "17:56:36",
+      "title": "受邀參加券商舉辦之美國投資人會議",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "5",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150225"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150225-4",
+      "date": "2026-02-25",
+      "announced_date": "2026-02-25",
+      "fact_date": null,
+      "announced_time": "17:55:55",
+      "title": "受邀參加J.P. Morgan Taiwan CEO-CFO Conference",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150225"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150225-3",
+      "date": "2026-02-25",
+      "announced_date": "2026-02-25",
+      "fact_date": null,
+      "announced_time": "17:55:14",
+      "title": "受邀參加2026 BofA Asia Tech Conference",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150225"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150225-6",
+      "date": "2026-02-25",
+      "announced_date": "2026-02-25",
+      "fact_date": null,
+      "announced_time": "16:39:04",
+      "title": "董事會決議召開115年股東常會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "6",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150225"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150225-2",
+      "date": "2026-02-25",
+      "announced_date": "2026-02-25",
+      "fact_date": null,
+      "announced_time": "15:48:59",
+      "title": "本公司董事會通過與子公司飛利浦建興數位科技 股份有限公司合併案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150225"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150210-1",
+      "date": "2026-02-25",
+      "announced_date": "2026-02-25",
+      "fact_date": null,
+      "announced_time": "15:21:55",
+      "title": "本公司捐贈財團法人光寶文教基金會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150210"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150225-1",
+      "date": "2026-02-25",
+      "announced_date": "2026-02-25",
+      "fact_date": null,
+      "announced_time": "15:20:46",
+      "title": "董事會決議114年第四季盈餘分派",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150225"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150210-2",
+      "date": "2026-02-25",
+      "announced_date": "2026-02-25",
+      "fact_date": null,
+      "announced_time": "15:12:43",
+      "title": "公告本公司114年度合併財務報告業經董事會決議通過",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150210"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150120-2",
+      "date": "2026-02-13",
+      "announced_date": "2026-02-13",
+      "fact_date": null,
+      "announced_time": "14:34:08",
+      "title": "公告本公司民國114年度財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150120"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150209-1",
+      "date": "2026-02-09",
+      "announced_date": "2026-02-09",
+      "fact_date": null,
+      "announced_time": "15:54:48",
+      "title": "光寶科技114年第四季法人說明會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150209"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150122-2",
+      "date": "2026-01-22",
+      "announced_date": "2026-01-22",
+      "fact_date": null,
+      "announced_time": "13:49:29",
+      "title": "公告本公司公開收購宇智網通股份有限公司普通股",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150122"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150122-1",
+      "date": "2026-01-22",
+      "announced_date": "2026-01-22",
+      "fact_date": null,
+      "announced_time": "13:44:37",
+      "title": "公告本公司公開收購宇智網通股份有限公司普通股， 本次收購對價已匯入受委任機構名下之公開收購專戶。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150122"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150119-2",
+      "date": "2026-01-21",
+      "announced_date": "2026-01-21",
+      "fact_date": null,
+      "announced_time": "19:13:25",
+      "title": "公告本公司發言人異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150119"
+      }
+    },
+    {
+      "id": "mops-history-2301-1150121-1",
+      "date": "2026-01-21",
+      "announced_date": "2026-01-21",
+      "fact_date": null,
+      "announced_time": "19:11:43",
+      "title": "本公司董事會決議通過公開收購宇智網通股份有限公司普通股",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1150121"
+      }
+    },
+    {
+      "id": "mops-history-2301-1141219-4",
+      "date": "2025-12-26",
+      "announced_date": "2025-12-26",
+      "fact_date": null,
+      "announced_time": "15:15:26",
+      "title": "本公司代子公司LITE-ON SINGAPORE PTE.LTD. 公告現金股利除息基準日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1141219"
+      }
+    },
+    {
+      "id": "mops-history-2301-1141219-3",
+      "date": "2025-12-26",
+      "announced_date": "2025-12-26",
+      "fact_date": null,
+      "announced_time": "15:13:42",
+      "title": "本公司代子公司LITE-ON SINGAPORE PTE.LTD. 公告董事會決議發放現金股利",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1141219"
+      }
+    },
+    {
+      "id": "mops-history-2301-1141125-1",
+      "date": "2025-11-28",
+      "announced_date": "2025-11-28",
+      "fact_date": null,
+      "announced_time": "14:44:30",
+      "title": "代子公司LITE-ON SINGAPORE PTE.LTD.公告取消對 光寶科技股份有限公司背書保證",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1141125"
+      }
+    },
+    {
+      "id": "mops-history-2301-1141110-4",
+      "date": "2025-11-10",
+      "announced_date": "2025-11-10",
+      "fact_date": null,
+      "announced_time": "17:01:42",
+      "title": "受邀參加富邦證券舉辦之「Fubon/Jefferies 4Q25 Tech Trip」",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2301",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "2301",
+        "marketKind": "sii",
+        "enterDate": "1141110"
+      }
     }
-  ],
-  "limitations": [
-    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
-    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
-    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
   ]
 }

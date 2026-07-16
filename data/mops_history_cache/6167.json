@@ -1,14 +1,16 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T05:40:25.086Z",
-  "company": {
-    "id": "tpex-6167",
-    "ticker": "6167",
-    "name": "久正",
-    "market": "TPEx",
-    "industry_template": "electronics_hardware"
-  },
-  "collection_scope": "targeted_research_company",
+  "source_id": "mops_history_api",
+  "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6167",
+  "ticker": "6167",
+  "fetched_at": "2026-07-16T05:38:05.839Z",
+  "cache_status": "updated",
+  "queried_roc_years": [
+    "115",
+    "114"
+  ],
+  "event_count": 31,
+  "detail_count": 4,
   "events": [
     {
       "id": "mops-history-6167-1150616-2",
@@ -513,50 +515,153 @@
         "marketKind": "otc",
         "enterDate": "1140508"
       }
-    }
-  ],
-  "references": [
-    {
-      "id": "mops-history-6167",
-      "title": "久正 MOPS 歷史重大訊息",
-      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6167",
-      "source_id": "mops_history_search",
-      "source_type": "official_history_api",
-      "claim_type": "official_search_reference",
-      "review_status": "reference_only",
-      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
     },
     {
-      "id": "company-website-6167",
-      "title": "久正 官方網站",
-      "url": "https://www.powertip.com.tw",
-      "source_id": "company_website",
-      "source_type": "company_reference",
-      "claim_type": "company_published_reference",
-      "review_status": "reference_only",
-      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
-    }
-  ],
-  "source_status": [
-    {
-      "source_id": "tpex_material_events",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T01:56:57.535Z",
-      "row_count": 75,
-      "available": true
-    },
-    {
+      "id": "mops-history-6167-1140430-1",
+      "date": "2025-04-30",
+      "announced_date": "2025-04-30",
+      "fact_date": null,
+      "announced_time": "16:33:21",
+      "title": "公告本公司114年第一季財報董事會預計召開日期為 114年5月8日。",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T05:38:05.839Z",
-      "row_count": 31,
-      "detail_count": 4,
-      "available": true
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6167",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "6167",
+        "marketKind": "otc",
+        "enterDate": "1140430"
+      }
+    },
+    {
+      "id": "mops-history-6167-1140312-5",
+      "date": "2025-03-12",
+      "announced_date": "2025-03-12",
+      "fact_date": null,
+      "announced_time": "16:29:13",
+      "title": "公告本公司董事會決議股利分派。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6167",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "5",
+        "companyId": "6167",
+        "marketKind": "otc",
+        "enterDate": "1140312"
+      }
+    },
+    {
+      "id": "mops-history-6167-1140312-4",
+      "date": "2025-03-12",
+      "announced_date": "2025-03-12",
+      "fact_date": null,
+      "announced_time": "16:16:05",
+      "title": "本公司董事會決議辦理現金減資事宜。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6167",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "6167",
+        "marketKind": "otc",
+        "enterDate": "1140312"
+      }
+    },
+    {
+      "id": "mops-history-6167-1140312-3",
+      "date": "2025-03-12",
+      "announced_date": "2025-03-12",
+      "fact_date": null,
+      "announced_time": "16:14:59",
+      "title": "公告本公司董事會通過113年度員工酬勞及董事酬勞分派案。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6167",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "6167",
+        "marketKind": "otc",
+        "enterDate": "1140312"
+      }
+    },
+    {
+      "id": "mops-history-6167-1140312-2",
+      "date": "2025-03-12",
+      "announced_date": "2025-03-12",
+      "fact_date": null,
+      "announced_time": "16:14:15",
+      "title": "公告本公司董事會決議召開114年股東常會。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6167",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "6167",
+        "marketKind": "otc",
+        "enterDate": "1140312"
+      }
+    },
+    {
+      "id": "mops-history-6167-1140312-1",
+      "date": "2025-03-12",
+      "announced_date": "2025-03-12",
+      "fact_date": null,
+      "announced_time": "16:12:48",
+      "title": "公告本公司董事會提報通過113年度合併財務報告及 相關重要財務數據摘錄。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6167",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "6167",
+        "marketKind": "otc",
+        "enterDate": "1140312"
+      }
+    },
+    {
+      "id": "mops-history-6167-1140304-1",
+      "date": "2025-03-04",
+      "announced_date": "2025-03-04",
+      "fact_date": null,
+      "announced_time": "16:36:32",
+      "title": "公告本公司113年度財務報告董事會預計召開日期為 114年3月12日。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6167",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "6167",
+        "marketKind": "otc",
+        "enterDate": "1140304"
+      }
     }
-  ],
-  "limitations": [
-    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
-    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
-    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
   ]
 }

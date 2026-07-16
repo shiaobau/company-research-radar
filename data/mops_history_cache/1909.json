@@ -1,14 +1,16 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T05:40:25.086Z",
-  "company": {
-    "id": "twse-1909",
-    "ticker": "1909",
-    "name": "榮成",
-    "market": "TWSE",
-    "industry_template": "basic_materials"
-  },
-  "collection_scope": "targeted_research_company",
+  "source_id": "mops_history_api",
+  "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+  "ticker": "1909",
+  "fetched_at": "2026-07-16T05:37:12.646Z",
+  "cache_status": "updated",
+  "queried_roc_years": [
+    "115",
+    "114"
+  ],
+  "event_count": 60,
+  "detail_count": 4,
   "events": [
     {
       "id": "mops-history-1909-1150706-1",
@@ -513,50 +515,762 @@
         "marketKind": "sii",
         "enterDate": "1150408"
       }
-    }
-  ],
-  "references": [
-    {
-      "id": "mops-history-1909",
-      "title": "榮成 MOPS 歷史重大訊息",
-      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
-      "source_id": "mops_history_search",
-      "source_type": "official_history_api",
-      "claim_type": "official_search_reference",
-      "review_status": "reference_only",
-      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
     },
     {
-      "id": "company-website-1909",
-      "title": "榮成 官方網站",
-      "url": "https://www.longchenpaper.com",
-      "source_id": "company_website",
-      "source_type": "company_reference",
-      "claim_type": "company_published_reference",
-      "review_status": "reference_only",
-      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
-    }
-  ],
-  "source_status": [
-    {
-      "source_id": "twse_material_events",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T01:56:57.043Z",
-      "row_count": 87,
-      "available": true
-    },
-    {
+      "id": "mops-history-1909-1150401-1",
+      "date": "2026-04-01",
+      "announced_date": "2026-04-01",
+      "fact_date": null,
+      "announced_time": "17:08:28",
+      "title": "本公司從事衍生性金融商品交易達損失上限",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T05:37:12.646Z",
-      "row_count": 60,
-      "detail_count": 4,
-      "available": true
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150401"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150327-6",
+      "date": "2026-03-27",
+      "announced_date": "2026-03-27",
+      "fact_date": null,
+      "announced_time": "16:01:56",
+      "title": "代重要子公司榮成環科公告對單一企業背書保證餘額達新臺幣 一千萬元以上且對其背書保證、長期投資及資金貸與餘額合計 數達該公開發行公司最近期財務報表淨值百分之三十以上者。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "6",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150327"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150327-5",
+      "date": "2026-03-27",
+      "announced_date": "2026-03-27",
+      "fact_date": null,
+      "announced_time": "16:01:42",
+      "title": "代重要子公司榮成環科公告對單一企業背書保證餘額達新臺幣 一千萬元以上且對其背書保證、長期投資及資金貸與餘額合計 數達該公開發行公司最近期財務報表淨值百分之三十以上者。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "5",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150327"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150327-4",
+      "date": "2026-03-27",
+      "announced_date": "2026-03-27",
+      "fact_date": null,
+      "announced_time": "16:01:25",
+      "title": "代重要子公司榮成環科公告對單一企業背書保證餘額達新臺幣 一千萬元以上且對其背書保證、長期投資及資金貸與餘額合計 數達該公開發行公司最近期財務報表淨值百分之三十以上者。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150327"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150327-3",
+      "date": "2026-03-27",
+      "announced_date": "2026-03-27",
+      "fact_date": null,
+      "announced_time": "16:01:10",
+      "title": "代重要子公司榮成環科公告決議股利分派",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150327"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150327-2",
+      "date": "2026-03-27",
+      "announced_date": "2026-03-27",
+      "fact_date": null,
+      "announced_time": "16:00:49",
+      "title": "代重要子公司榮成環科公告決議召開一一五年股東常會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150327"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150327-1",
+      "date": "2026-03-27",
+      "announced_date": "2026-03-27",
+      "fact_date": null,
+      "announced_time": "16:00:31",
+      "title": "代重要子公司榮成環科公告股東臨時會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150327"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-18",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:14:43",
+      "title": "代重要子公司榮成中國公告董事異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "18",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-17",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:14:31",
+      "title": "代重要子公司L&C CO.,(BVI)LTD.公告董事異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "17",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-16",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:14:18",
+      "title": "代重要子公司榮成環科公告董事異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "16",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-15",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:13:49",
+      "title": "代重要子公司榮成環科公告總經理異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "15",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-14",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:13:37",
+      "title": "代重要子公司榮成環科公告董事長異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "14",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-13",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:13:23",
+      "title": "代重要子公司榮成環科公告股東臨時會相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "13",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-12",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:13:12",
+      "title": "公告本公司董事會決議新增背書保證餘額達新臺幣一千萬元以 上且對其背書保證、長期投資及資金貸與餘額合計數達本公司 最近期財務報表淨值百分之三十以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "12",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-11",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:13:00",
+      "title": "公告本公司董事會決議新增背書保證餘額達新臺幣一千萬元以 上且對其背書保證、長期投資及資金貸與餘額合計數達本公司 最近期財務報表淨值百分之三十以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "11",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-10",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:12:45",
+      "title": "公告本公司董事會決議新增背書保證餘額達新臺幣一千萬元以 上且對其背書保證、長期投資及資金貸與餘額合計數達本公司 最近期財務報表淨值百分之三十以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "10",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-9",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:12:32",
+      "title": "公告本公司董事會決議新增背書保證餘額達新臺幣一千萬元以 上且對其背書保證、長期投資及資金貸與餘額合計數達本公司 最近期財務報表淨值百分之三十以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "9",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-8",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:12:19",
+      "title": "公告本公司董事會決議新增資金貸與金額達新臺幣一千萬元以 上且達本公司最近期財務報表淨值百分之二以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "8",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-7",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:12:04",
+      "title": "公告本公司發言人、代理發言人、財務主管、公司治理主管 異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "7",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-6",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:11:48",
+      "title": "公告本公司國際業務及策略發展總經理異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "6",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-5",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:11:35",
+      "title": "本公司董事會通過新臺幣50億元聯貸案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "5",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-4",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:11:19",
+      "title": "公告董事會決議捐贈財團法人榮成山與田教育基金會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-3",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:11:02",
+      "title": "董事會決議股利分派",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-2",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:10:46",
+      "title": "榮成董事會決議召開一一五年股東常會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150311-1",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:10:24",
+      "title": "公告本公司董事會通過114年度個體財務報表暨合併財務報表案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150306-1",
+      "date": "2026-03-06",
+      "announced_date": "2026-03-06",
+      "fact_date": null,
+      "announced_time": "18:34:13",
+      "title": "公告本公司董事會決議第二十七次庫藏股買回",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150306"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150305-1",
+      "date": "2026-03-05",
+      "announced_date": "2026-03-05",
+      "fact_date": null,
+      "announced_time": "15:00:08",
+      "title": "公告本公司115年2月份及1-2月累計合併自結損益",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150305"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150303-1",
+      "date": "2026-03-03",
+      "announced_date": "2026-03-03",
+      "fact_date": null,
+      "announced_time": "16:31:38",
+      "title": "公告本公司114年第四季財務報告董事會預計召開日期為 115年03月11日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150303"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150302-1",
+      "date": "2026-03-02",
+      "announced_date": "2026-03-02",
+      "fact_date": null,
+      "announced_time": "17:01:45",
+      "title": "本公司從事衍生性金融商品交易達損失上限",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150302"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150205-1",
+      "date": "2026-02-05",
+      "announced_date": "2026-02-05",
+      "fact_date": null,
+      "announced_time": "15:00:07",
+      "title": "公告本公司115年1月份合併自結損益",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150205"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150202-1",
+      "date": "2026-02-02",
+      "announced_date": "2026-02-02",
+      "fact_date": null,
+      "announced_time": "17:00:06",
+      "title": "本公司從事衍生性金融商品交易達損失上限",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150202"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150106-1",
+      "date": "2026-01-06",
+      "announced_date": "2026-01-06",
+      "fact_date": null,
+      "announced_time": "15:00:11",
+      "title": "公告本公司114年12月份及1-12月累計合併自結損益",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150106"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150102-2",
+      "date": "2026-01-02",
+      "announced_date": "2026-01-02",
+      "fact_date": null,
+      "announced_time": "17:03:13",
+      "title": "本公司網路資安事件說明",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150102"
+      }
+    },
+    {
+      "id": "mops-history-1909-1150102-1",
+      "date": "2026-01-02",
+      "announced_date": "2026-01-02",
+      "fact_date": null,
+      "announced_time": "17:02:41",
+      "title": "本公司從事衍生性金融商品交易達損失上限",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1150102"
+      }
+    },
+    {
+      "id": "mops-history-1909-1141217-1",
+      "date": "2025-12-17",
+      "announced_date": "2025-12-17",
+      "fact_date": null,
+      "announced_time": "15:00:43",
+      "title": "公告本公司受邀參加元大證券舉辦之線上法說會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1141217"
+      }
+    },
+    {
+      "id": "mops-history-1909-1141210-1",
+      "date": "2025-12-10",
+      "announced_date": "2025-12-10",
+      "fact_date": null,
+      "announced_time": "13:30:28",
+      "title": "代重要子公司平湖榮成環保科技有限公司公告董事會決議新增 資金貸與金額達新臺幣一千萬元以上且達本公司最近期財務報表淨 值百分之二以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1909",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1909",
+        "marketKind": "sii",
+        "enterDate": "1141210"
+      }
     }
-  ],
-  "limitations": [
-    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
-    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
-    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
   ]
 }

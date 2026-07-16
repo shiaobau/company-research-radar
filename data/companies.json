@@ -1855,6 +1855,45 @@
       ]
     },
     {
+      "id": "twse-3712",
+      "ticker": "3712",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "永崴投控",
+      "legal_name": "永崴投資控股股份有限公司",
+      "category": "電子硬體與零組件",
+      "industry_template": "electronics_hardware",
+      "original_industry_template": "electronics_hardware",
+      "official_industry_code": "25",
+      "official_industry_label": "電腦及週邊設備",
+      "listing_date": "2018-10-01",
+      "website": "https://www.fit-holding.com",
+      "data_quality": "Public structured datasets are refreshed by the research update workflow.",
+      "last_reviewed": "2026-07-16",
+      "tags": [
+        "上市",
+        "電子硬體與零組件",
+        "電腦及週邊設備"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "sources": [
+        {
+          "id": "twse-3712_official",
+          "title": "永崴投控 官方網站",
+          "short_title": "官方網站",
+          "url": "https://www.fit-holding.com",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {},
+      "risks": [],
+      "events": []
+    },
+    {
       "id": "tpex-6167",
       "ticker": "6167",
       "market": "TPEx",

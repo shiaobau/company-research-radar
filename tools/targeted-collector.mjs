@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import path from "node:path";
 import { rocCompactDateToIso, rocDateToIso, readJson, writeJson } from "./data-sources.mjs";
 import { getCachedSource } from "./source-cache.mjs";
+import { getMopsHistory } from "./mops-history-collector.mjs";
 
 const root = process.cwd();
 const dataDir = path.join(root, "data");
@@ -113,6 +114,19 @@ function historySearchSource(company, sourceDefinition) {
   };
 }
 
+function mergeEvents(historyEvents, recentEvents, maxEvents) {
+  const seen = new Set();
+  return [...historyEvents, ...recentEvents]
+    .sort((left, right) => `${right.date} ${right.announced_time || ""}`.localeCompare(`${left.date} ${left.announced_time || ""}`))
+    .filter((event) => {
+      const key = [event.date, event.announced_time, event.title].join("|");
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .slice(0, maxEvents);
+}
+
 async function main() {
   const generatedAt = new Date().toISOString();
   const maxEvents = Math.max(1, Number(argValue("max-events", "24")) || 24);
@@ -153,12 +167,20 @@ async function main() {
 
     const source = exchangeSources.find((item) => item.market === company.market);
     const rawRows = rowsBySource.get(source?.id) || [];
-    const events = rawRows
+    const recentEvents = rawRows
       .filter((row) => field(row, "公司代號", "SecuritiesCompanyCode") === ticker)
       .map((row) => normalizeEvent(row, source, ticker))
       .filter(Boolean)
-      .sort((left, right) => right.date.localeCompare(left.date))
-      .slice(0, maxEvents);
+      .sort((left, right) => right.date.localeCompare(left.date));
+
+    let history = { events: [], cache_status: "unavailable", fetched_at: null, event_count: 0, detail_count: 0 };
+    let historyError = null;
+    try {
+      history = await getMopsHistory(ticker, { maxEvents, detailLimit: 4 });
+    } catch (error) {
+      historyError = error.message;
+    }
+    const events = mergeEvents(history.events || [], recentEvents, maxEvents);
 
     const historySource = sources.find((item) => item.id === "mops_history_search");
     const websiteSource = sources.find((item) => item.id === "company_website");
@@ -179,7 +201,18 @@ async function main() {
       collection_scope: "targeted_research_company",
       events,
       references,
-      source_status: sourceStatus.filter((status) => status.source_id === source?.id),
+      source_status: [
+        ...sourceStatus.filter((status) => status.source_id === source?.id),
+        {
+          source_id: "mops_history_api",
+          cache_status: history.cache_status,
+          fetched_at: history.fetched_at,
+          row_count: history.event_count || 0,
+          detail_count: history.detail_count || 0,
+          available: !historyError,
+          error: historyError || undefined
+        }
+      ],
       limitations: [
         "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
         "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",

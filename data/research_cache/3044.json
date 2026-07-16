@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T02:49:46.182Z",
+  "collected_at": "2026-07-16T05:40:25.086Z",
   "company": {
     "id": "twse-3044",
     "ticker": "3044",
@@ -9,17 +9,522 @@
     "industry_template": "electronics_hardware"
   },
   "collection_scope": "targeted_research_company",
-  "events": [],
+  "events": [
+    {
+      "id": "mops-history-3044-1150709-1",
+      "date": "2026-07-09",
+      "announced_date": "2026-07-09",
+      "fact_date": "2026-07-09",
+      "announced_time": "15:14:02",
+      "title": "代本公司之子公司J & J Holding Co., Ltd.公告 其新增資金貸與金額達新台幣一千萬以上且達本 公司最近期財務報表淨值百分之二以上。",
+      "description": "1.事實發生日:115/07/09 2.接受資金貸與之: (1)公司名稱:Tripod Overseas Co.,Ltd. (2)與資金貸與他人公司之關係: Tripod Overseas Co., Ltd為J & J Holding Co., Ltd.直接持有百分之百之子公司。 (3)資金貸與之限額(仟元):130,850,979 (4)原資金貸與之餘額(仟元):17,055,038 (5)本次新增資金貸與之金額(仟元):2,659,475 (6)是否為董事會授權董事長對同一貸與對象分次撥貸或循環動用之資金貸與:否 (7)迄事實發生日止資金貸與餘額(仟元):19,714,513 (8)本次新增資金貸與之原因: 短期融通資金需求 3.接受資金貸與公司所提供擔保品之: (1)內容: 無 (2)價值(仟元):0 4.接受資金貸與公司最近期財務報表之: (1)資本(仟元):4,076,800 (2)累積盈虧金額(仟元):45,186,870 5.計息方式: 不計息。 6.還款之: (1)條件: 借款到期之次日，全數清償本金及利息，亦得提前償還。 (2)日期: 116年07月08日 7.迄事實發生日為止，資金貸與餘額(仟元): 32,620,325 8.迄事實發生日為止，資金貸與餘額占公開發行公司最近期財務報表淨值之比率: 55.95 9.公司貸與他人資金之來源: 子公司本身 10.其他應敘明事項: 無",
+      "clause": "第23款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150709"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150603-1",
+      "date": "2026-06-03",
+      "announced_date": "2026-06-03",
+      "fact_date": "2026-06-04",
+      "announced_time": "15:50:17",
+      "title": "健鼎受邀參加參加花旗證券2026 Taiwan Tech Conference",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/06/04 1.召開法人說明會之日期：115/06/04 2.召開法人說明會之時間：09 時 00 分 3.召開法人說明會之地點：台北 W Hotel 4.法人說明會擇要訊息：本公司於115年06月04日受邀參加花旗證券2026 Taiwan Tech Conference 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150603"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150602-1",
+      "date": "2026-06-02",
+      "announced_date": "2026-06-02",
+      "fact_date": "2026-06-03",
+      "announced_time": "14:51:47",
+      "title": "健鼎受邀參加第一金證券2026年第二季投資論壇",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/06/03 1.召開法人說明會之日期：115/06/03 2.召開法人說明會之時間：14 時 30 分 3.召開法人說明會之地點：台北喜來登飯店 4.法人說明會擇要訊息：本公司於115年06月03日受邀參加第一金證券2026年第二季投資論壇 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150602"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150529-3",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": "2026-06-01",
+      "announced_time": "15:30:42",
+      "title": "健鼎受邀參加匯豐證券 Taiwan Conference 2026",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/06/01 1.召開法人說明會之日期：115/06/01 2.召開法人說明會之時間：09 時 00 分 3.召開法人說明會之地點：台北君悅酒店 4.法人說明會擇要訊息：本公司於115年06月01日受邀參加匯豐證券 Taiwan Conference 2026 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150529"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150529-2",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "15:23:30",
+      "title": "公告除息相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150529"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150529-1",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "15:20:47",
+      "title": "公告本公司115年股東常會重要決議事項。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150529"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150508-1",
+      "date": "2026-05-08",
+      "announced_date": "2026-05-08",
+      "fact_date": null,
+      "announced_time": "14:43:05",
+      "title": "公告本公司董事會通過115年第1季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150508"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150429-1",
+      "date": "2026-04-29",
+      "announced_date": "2026-04-29",
+      "fact_date": null,
+      "announced_time": "14:40:42",
+      "title": "公告本公司115年第一季財務報告董事會召開日期為115年 05月08日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150429"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150317-1",
+      "date": "2026-03-17",
+      "announced_date": "2026-03-17",
+      "fact_date": null,
+      "announced_time": "14:47:44",
+      "title": "健鼎受邀參加美銀證券2026 Asia Tech Conference",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150317"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150311-1",
+      "date": "2026-03-11",
+      "announced_date": "2026-03-11",
+      "fact_date": null,
+      "announced_time": "16:10:09",
+      "title": "公告本公司董事會決議通過，增資越南子公司 TRIPOD VIETNAM (CHAUDUC) ELECTRONIC COMPANY LIMITED",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150311"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150310-4",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "15:34:51",
+      "title": "公告本公司董事會決議發放股利事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150310-3",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "15:23:35",
+      "title": "本公司捐贈財團法人臺北市健鼎關懷教育基金會。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150310-2",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "15:23:12",
+      "title": "董事會決議115年股東常會召集相關事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150310-1",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "15:22:50",
+      "title": "公告本公司董事會通過114年度合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150302-1",
+      "date": "2026-03-02",
+      "announced_date": "2026-03-02",
+      "fact_date": null,
+      "announced_time": "15:24:51",
+      "title": "114年度財務報告董事會預計召開日期為115年03月10日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150302"
+      }
+    },
+    {
+      "id": "mops-history-3044-1150122-1",
+      "date": "2026-01-22",
+      "announced_date": "2026-01-22",
+      "fact_date": null,
+      "announced_time": "15:43:45",
+      "title": "代本公司之子公司J & J Holding Co., Ltd.公告 其新增資金貸與金額達新台幣一千萬以上且達本 公司最近期財務報表淨值百分之二以上。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1150122"
+      }
+    },
+    {
+      "id": "mops-history-3044-1141223-1",
+      "date": "2025-12-23",
+      "announced_date": "2025-12-23",
+      "fact_date": null,
+      "announced_time": "16:06:22",
+      "title": "代本公司之子公司J & J Holding Co., Ltd.公告 其新增資金貸與金額達新台幣一千萬以上且達本 公司最近期財務報表淨值百分之二以上。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1141223"
+      }
+    },
+    {
+      "id": "mops-history-3044-1141210-1",
+      "date": "2025-12-10",
+      "announced_date": "2025-12-10",
+      "fact_date": null,
+      "announced_time": "15:11:37",
+      "title": "健鼎受邀參加第一金證券2025年第四季投資論壇",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1141210"
+      }
+    },
+    {
+      "id": "mops-history-3044-1141209-1",
+      "date": "2025-12-09",
+      "announced_date": "2025-12-09",
+      "fact_date": null,
+      "announced_time": "16:14:51",
+      "title": "代本公司之子公司Tripod Overseas Co.,Ltd公告 其新增資金貸與金額達新台幣一千萬以上且達本 公司最近期財務報表淨值百分之二以上。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1141209"
+      }
+    },
+    {
+      "id": "mops-history-3044-1141124-1",
+      "date": "2025-11-24",
+      "announced_date": "2025-11-24",
+      "fact_date": null,
+      "announced_time": "15:10:44",
+      "title": "健鼎受邀參加參加花旗證券2025 Taiwan Corporate Day",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1141124"
+      }
+    },
+    {
+      "id": "mops-history-3044-1141120-1",
+      "date": "2025-11-20",
+      "announced_date": "2025-11-20",
+      "fact_date": null,
+      "announced_time": "14:30:32",
+      "title": "代本公司之子公司J & J Holding Co., Ltd.公告 其新增資金貸與金額達新台幣一千萬以上且達本 公司最近期財務報表淨值百分之二以上。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1141120"
+      }
+    },
+    {
+      "id": "mops-history-3044-1141107-4",
+      "date": "2025-11-07",
+      "announced_date": "2025-11-07",
+      "fact_date": null,
+      "announced_time": "14:42:04",
+      "title": "本公司捐贈財團法人臺北市健鼎關懷教育基金會。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1141107"
+      }
+    },
+    {
+      "id": "mops-history-3044-1141107-3",
+      "date": "2025-11-07",
+      "announced_date": "2025-11-07",
+      "fact_date": null,
+      "announced_time": "14:41:38",
+      "title": "公告本公司董事會通過新設永續發展委員會及委任委員會成員",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1141107"
+      }
+    },
+    {
+      "id": "mops-history-3044-1141107-2",
+      "date": "2025-11-07",
+      "announced_date": "2025-11-07",
+      "fact_date": null,
+      "announced_time": "14:41:15",
+      "title": "公告本公司董事會通過新設提名委員會及委任委員會成員",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "3044",
+        "marketKind": "sii",
+        "enterDate": "1141107"
+      }
+    }
+  ],
   "references": [
     {
       "id": "mops-history-3044",
       "title": "健鼎 MOPS 歷史重大訊息",
       "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=3044",
       "source_id": "mops_history_search",
-      "source_type": "official_search_link",
+      "source_type": "official_history_api",
       "claim_type": "official_search_reference",
       "review_status": "reference_only",
-      "note": "歷史資料以公開資訊觀測站查詢頁為準；本版本不將未經欄位驗證的網頁內容直接納入評分。"
+      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
     },
     {
       "id": "company-website-3044",
@@ -38,6 +543,14 @@
       "cache_status": "fresh",
       "fetched_at": "2026-07-16T01:56:57.043Z",
       "row_count": 87,
+      "available": true
+    },
+    {
+      "source_id": "mops_history_api",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-16T05:37:48.124Z",
+      "row_count": 54,
+      "detail_count": 4,
       "available": true
     }
   ],

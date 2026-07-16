@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T02:49:46.182Z",
+  "collected_at": "2026-07-16T05:40:25.086Z",
   "company": {
     "id": "twse-2345",
     "ticker": "2345",
@@ -9,17 +9,522 @@
     "industry_template": "electronics_hardware"
   },
   "collection_scope": "targeted_research_company",
-  "events": [],
+  "events": [
+    {
+      "id": "mops-history-2345-1150611-3",
+      "date": "2026-06-11",
+      "announced_date": "2026-06-11",
+      "fact_date": "2026-06-11",
+      "announced_time": "16:54:47",
+      "title": "公告本公司董事會決議增資子公司Accton Manufacturing and Service, Inc.",
+      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: Accton Manufacturing and Service, Inc. 2.事實發生日:115/6/11~115/6/11 3.董事會通過日期: 民國115年6月11日 4.其他核決日期: 不適用 5.交易數量、每單位價格及交易總金額: 擬現金增資美金2仟萬元. 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: Accton Manufacturing and Service, Inc.； 本公司之子公司 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 不適用 12.本次交易之決定方式、價格決定之參考依據及決策單位: 依據民國115年6月11日董事會決議 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 累積持有金額：新台幣1,571.77佰萬元 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 占總資產比例：9.90 % 占業主權益比例：23.54 % 營運資金數額：37,876,521仟元 16.經紀人及經紀費用: 不適用 17.取得或處分之具體目的或用途: 增加廠房基礎建設及生產相關設備 18.本次交易表示異議董事之意見: 無 19.本次交易為關係人交易:是 20.監察人承認或審計委員會同意日期: 民國115年6月11日 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 自有資金 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150611"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150611-2",
+      "date": "2026-06-11",
+      "announced_date": "2026-06-11",
+      "fact_date": "2026-06-11",
+      "announced_time": "16:44:28",
+      "title": "公告本公司董事會決議115年除息基準日",
+      "description": "1.董事會、股東會決議或公司決定日期:115/06/11 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.普通股發放股利種類及金額: 普通股現金股利NT$8,416,768,455元 (每股預計配發15元) 4.除權（息）交易日:115/07/30 5.最後過戶日:115/07/31 6.停止過戶起始日期:115/08/01 7.停止過戶截止日期:115/08/05 8.除權（息）基準日:115/08/05 9.債券最後申請轉換日期:不適用 10.債券停止轉換起始日期:不適用 11.債券停止轉換截止日期:不適用 12.普通股現金股利發放日期:115/08/27 13.其他應敘明事項: 有關股東之每股盈餘實際配發比例得由董事長依除息基準日登載於本公司 普通股股東名簿之已發行且流通在外之股數調整之。",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150611"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150611-1",
+      "date": "2026-06-11",
+      "announced_date": "2026-06-11",
+      "fact_date": "2026-06-11",
+      "announced_time": "16:35:06",
+      "title": "公告本公司115年股東常會重要決議事項",
+      "description": "1.股東常會日期:115/06/11 2.重要決議事項一、盈餘分配或盈虧撥補: 承認114年度盈餘分配案，發放現金股利新台幣8,416,768,455元(每股預計配發15元)。 3.重要決議事項二、章程修訂:無。 通過本公司「公司章程」修正案。 4.重要決議事項三、營業報告書及財務報表: 承認114年度營業報告書及財務報表案，其中全年合併營收淨額為NT$2,483.20億元， 稅後淨利NT$263.06億元，稅後每股盈餘NT$47.13元。 5.重要決議事項四、董監事選舉:無。 6.重要決議事項五、其他事項: 通過本公司「取得或處分資產處理程序」修正案。 7.其他應敘明事項:無。",
+      "clause": "第18款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150611"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150527-1",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": "2026-05-27",
+      "announced_time": "18:32:15",
+      "title": "代子公司Accton Technology SG Pte Ltd.公告-無塵室廠房建置工程",
+      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: Tower 4 of Bulim Square, Singapore. 2.事實發生日:115/5/27~115/5/27 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:母公司董事會 民國115年3月12日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: SGD 31,000,000 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: KIDE INTERNATIONAL (SINGAPORE) PTE. LTD. ; 非關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依合約約定方式交付 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 交易決定方式:議價 價格決定之參考依據:市場價格 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 無 23.取得或處分之具體目的或用途: 因應營運所需 24.本次交易表示異議之董事之意見: 無 25.本次交易為關係人交易:否 26.監察人承認或審計委員會同意日期: 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150527"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150526-1",
+      "date": "2026-05-26",
+      "announced_date": "2026-05-26",
+      "fact_date": null,
+      "announced_time": "16:20:26",
+      "title": "本公司受邀參加Morgan Stanley Asia AI Summit 2026",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150526"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150518-4",
+      "date": "2026-05-18",
+      "announced_date": "2026-05-18",
+      "fact_date": null,
+      "announced_time": "18:01:36",
+      "title": "公告本公司董事會通過Vietnam Accton Technology Company Limited廠房長期租賃案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150518"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150518-3",
+      "date": "2026-05-18",
+      "announced_date": "2026-05-18",
+      "fact_date": null,
+      "announced_time": "18:00:33",
+      "title": "公告本公司董事會通過Vietnam Accton Technology Company Limited取得使用權資產",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150518"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150518-2",
+      "date": "2026-05-18",
+      "announced_date": "2026-05-18",
+      "fact_date": null,
+      "announced_time": "17:59:08",
+      "title": "代子公司Accton Technology SG Pte Ltd.公告承租廠房",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150518"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150518-1",
+      "date": "2026-05-18",
+      "announced_date": "2026-05-18",
+      "fact_date": null,
+      "announced_time": "17:56:57",
+      "title": "公告本公司董事會決議增資子公司Accton Technology SG Pte Ltd.",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150518"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150515-1",
+      "date": "2026-05-15",
+      "announced_date": "2026-05-15",
+      "fact_date": null,
+      "announced_time": "14:36:15",
+      "title": "(補充114/03/13公告)代子公司Accton Investment Corp.公告-處分有價證券",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150515"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150511-1",
+      "date": "2026-05-11",
+      "announced_date": "2026-05-11",
+      "fact_date": null,
+      "announced_time": "15:15:25",
+      "title": "(補充12/18公告)代子公司Accton Technology SG Pte Ltd.公告- 投資子公司ACCTON TECHNOLOGY MY SDN. BHD.",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150511"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150507-7",
+      "date": "2026-05-07",
+      "announced_date": "2026-05-07",
+      "fact_date": null,
+      "announced_time": "17:39:31",
+      "title": "公告本公司董事會通過Accton Technology SG Pte Ltd. 廠房長期租賃案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "7",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150507"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150507-6",
+      "date": "2026-05-07",
+      "announced_date": "2026-05-07",
+      "fact_date": null,
+      "announced_time": "17:38:38",
+      "title": "公告本公司董事會通過 Vietnam Accton Technology Company Limited預算案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "6",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150507"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150507-5",
+      "date": "2026-05-07",
+      "announced_date": "2026-05-07",
+      "fact_date": null,
+      "announced_time": "17:37:59",
+      "title": "公告本公司董事會決議增資子公司Vietnam Accton Technology Company Limited",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "5",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150507"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150507-4",
+      "date": "2026-05-07",
+      "announced_date": "2026-05-07",
+      "fact_date": null,
+      "announced_time": "17:36:53",
+      "title": "公告本公司董事會通過生產設備採購案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150507"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150507-2",
+      "date": "2026-05-07",
+      "announced_date": "2026-05-07",
+      "fact_date": null,
+      "announced_time": "17:36:07",
+      "title": "公告本公司董事會通過實驗室建置案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150507"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150507-1",
+      "date": "2026-05-07",
+      "announced_date": "2026-05-07",
+      "fact_date": null,
+      "announced_time": "17:25:36",
+      "title": "公告本公司董事會通過115年第一季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150507"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150505-1",
+      "date": "2026-05-05",
+      "announced_date": "2026-05-05",
+      "fact_date": null,
+      "announced_time": "17:35:56",
+      "title": "公告本公司處分貝萊德美元儲備基金A2美元及瑞士銀行貨幣市場基金",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150505"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150429-1",
+      "date": "2026-04-29",
+      "announced_date": "2026-04-29",
+      "fact_date": null,
+      "announced_time": "16:49:09",
+      "title": "公告本公司115年第1季合併財務報告董事會 預計召開日期為115年05月07日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150429"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150331-1",
+      "date": "2026-03-31",
+      "announced_date": "2026-03-31",
+      "fact_date": null,
+      "announced_time": "17:18:19",
+      "title": "(補充114/11/6公告) 代子公司ACCTON TECHNOLOGY MY SDN. BHD. 公告購買土地",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150331"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150312-4",
+      "date": "2026-03-12",
+      "announced_date": "2026-03-12",
+      "fact_date": null,
+      "announced_time": "17:28:23",
+      "title": "公告本公司董事會決議增資子公司Accton Technology SG Pte Ltd.",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150312"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150312-3",
+      "date": "2026-03-12",
+      "announced_date": "2026-03-12",
+      "fact_date": null,
+      "announced_time": "17:19:51",
+      "title": "本公司董事會召集115年股東常會公告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150312"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150312-2",
+      "date": "2026-03-12",
+      "announced_date": "2026-03-12",
+      "fact_date": null,
+      "announced_time": "16:22:13",
+      "title": "公告本公司董事會決議發放股利事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150312"
+      }
+    },
+    {
+      "id": "mops-history-2345-1150312-1",
+      "date": "2026-03-12",
+      "announced_date": "2026-03-12",
+      "fact_date": null,
+      "announced_time": "15:59:17",
+      "title": "公告本公司董事會通過114年合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2345",
+        "marketKind": "sii",
+        "enterDate": "1150312"
+      }
+    }
+  ],
   "references": [
     {
       "id": "mops-history-2345",
       "title": "智邦 MOPS 歷史重大訊息",
       "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2345",
       "source_id": "mops_history_search",
-      "source_type": "official_search_link",
+      "source_type": "official_history_api",
       "claim_type": "official_search_reference",
       "review_status": "reference_only",
-      "note": "歷史資料以公開資訊觀測站查詢頁為準；本版本不將未經欄位驗證的網頁內容直接納入評分。"
+      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
     },
     {
       "id": "company-website-2345",
@@ -38,6 +543,14 @@
       "cache_status": "fresh",
       "fetched_at": "2026-07-16T01:56:57.043Z",
       "row_count": 87,
+      "available": true
+    },
+    {
+      "source_id": "mops_history_api",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-16T05:37:39.396Z",
+      "row_count": 60,
+      "detail_count": 4,
       "available": true
     }
   ],

@@ -21,14 +21,14 @@
       "update_policy": "shared_cache_6h",
       "claim_type": "official_disclosure"
     },
-    {
-      "id": "mops_history_search",
+  {
+    "id": "mops_history_search",
       "title": "MOPS 歷史重大訊息查詢",
-      "kind": "official_search_link",
+    "kind": "official_history_api",
       "url_template": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id={ticker}",
-      "update_policy": "link_only",
+    "update_policy": "company_cache_24h_two_roc_years",
       "claim_type": "official_search_reference",
-      "note": "歷史資料以公開資訊觀測站查詢頁為準；本版本不將未經欄位驗證的網頁內容直接納入評分。"
+    "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
     },
     {
       "id": "company_website",

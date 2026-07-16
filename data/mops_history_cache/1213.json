@@ -1,14 +1,16 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T05:40:25.086Z",
-  "company": {
-    "id": "twse-1213",
-    "ticker": "1213",
-    "name": "大飲",
-    "market": "TWSE",
-    "industry_template": "consumer_food_retail"
-  },
-  "collection_scope": "targeted_research_company",
+  "source_id": "mops_history_api",
+  "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1213",
+  "ticker": "1213",
+  "fetched_at": "2026-07-16T05:36:59.415Z",
+  "cache_status": "updated",
+  "queried_roc_years": [
+    "115",
+    "114"
+  ],
+  "event_count": 29,
+  "detail_count": 4,
   "events": [
     {
       "id": "mops-history-1213-1150609-1",
@@ -513,50 +515,111 @@
         "marketKind": "sii",
         "enterDate": "1140313"
       }
-    }
-  ],
-  "references": [
-    {
-      "id": "mops-history-1213",
-      "title": "大飲 MOPS 歷史重大訊息",
-      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1213",
-      "source_id": "mops_history_search",
-      "source_type": "official_history_api",
-      "claim_type": "official_search_reference",
-      "review_status": "reference_only",
-      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
     },
     {
-      "id": "company-website-1213",
-      "title": "大飲 官方網站",
-      "url": "http://applesidra.com.tw",
-      "source_id": "company_website",
-      "source_type": "company_reference",
-      "claim_type": "company_published_reference",
-      "review_status": "reference_only",
-      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
-    }
-  ],
-  "source_status": [
-    {
-      "source_id": "twse_material_events",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T01:56:57.043Z",
-      "row_count": 87,
-      "available": true
-    },
-    {
+      "id": "mops-history-1213-1140312-5",
+      "date": "2025-03-13",
+      "announced_date": "2025-03-13",
+      "fact_date": null,
+      "announced_time": "14:06:14",
+      "title": "公告本公司發言人異動",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T05:36:59.415Z",
-      "row_count": 29,
-      "detail_count": 4,
-      "available": true
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1213",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "5",
+        "companyId": "1213",
+        "marketKind": "sii",
+        "enterDate": "1140312"
+      }
+    },
+    {
+      "id": "mops-history-1213-1140312-4",
+      "date": "2025-03-13",
+      "announced_date": "2025-03-13",
+      "fact_date": null,
+      "announced_time": "14:05:15",
+      "title": "公告本公司總經理異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1213",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "companyId": "1213",
+        "marketKind": "sii",
+        "enterDate": "1140312"
+      }
+    },
+    {
+      "id": "mops-history-1213-1140312-2",
+      "date": "2025-03-13",
+      "announced_date": "2025-03-13",
+      "fact_date": null,
+      "announced_time": "14:02:57",
+      "title": "公告董事會決議召開民國114年股東常會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1213",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "1213",
+        "marketKind": "sii",
+        "enterDate": "1140312"
+      }
+    },
+    {
+      "id": "mops-history-1213-1140312-1",
+      "date": "2025-03-13",
+      "announced_date": "2025-03-13",
+      "fact_date": null,
+      "announced_time": "14:01:31",
+      "title": "公告本公司董事會通過113年度第四季合併財務報表",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1213",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1213",
+        "marketKind": "sii",
+        "enterDate": "1140312"
+      }
+    },
+    {
+      "id": "mops-history-1213-1140303-1",
+      "date": "2025-03-05",
+      "announced_date": "2025-03-05",
+      "fact_date": null,
+      "announced_time": "13:47:11",
+      "title": "公告本公司113年第四季合併財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=1213",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1213",
+        "marketKind": "sii",
+        "enterDate": "1140303"
+      }
     }
-  ],
-  "limitations": [
-    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
-    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
-    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
   ]
 }

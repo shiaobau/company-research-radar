@@ -1,14 +1,16 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T05:40:25.086Z",
-  "company": {
-    "id": "tpex-6171",
-    "ticker": "6171",
-    "name": "大城地產",
-    "market": "TPEx",
-    "industry_template": "infrastructure_transport_real_assets"
-  },
-  "collection_scope": "targeted_research_company",
+  "source_id": "mops_history_api",
+  "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6171",
+  "ticker": "6171",
+  "fetched_at": "2026-07-16T05:38:11.200Z",
+  "cache_status": "updated",
+  "queried_roc_years": [
+    "115",
+    "114"
+  ],
+  "event_count": 26,
+  "detail_count": 4,
   "events": [
     {
       "id": "mops-history-6171-1150626-1",
@@ -513,50 +515,48 @@
         "marketKind": "otc",
         "enterDate": "1140311"
       }
-    }
-  ],
-  "references": [
-    {
-      "id": "mops-history-6171",
-      "title": "大城地產 MOPS 歷史重大訊息",
-      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6171",
-      "source_id": "mops_history_search",
-      "source_type": "official_history_api",
-      "claim_type": "official_search_reference",
-      "review_status": "reference_only",
-      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
     },
     {
-      "id": "company-website-6171",
-      "title": "大城地產 官方網站",
-      "url": "https://www.aries-net.com.tw",
-      "source_id": "company_website",
-      "source_type": "company_reference",
-      "claim_type": "company_published_reference",
-      "review_status": "reference_only",
-      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
-    }
-  ],
-  "source_status": [
-    {
-      "source_id": "tpex_material_events",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T01:56:57.535Z",
-      "row_count": 75,
-      "available": true
-    },
-    {
+      "id": "mops-history-6171-1140311-1",
+      "date": "2025-03-11",
+      "announced_date": "2025-03-11",
+      "fact_date": null,
+      "announced_time": "16:37:30",
+      "title": "公告本公司董事會通過113年度財務報告",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T05:38:11.200Z",
-      "row_count": 26,
-      "detail_count": 4,
-      "available": true
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6171",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "6171",
+        "marketKind": "otc",
+        "enterDate": "1140311"
+      }
+    },
+    {
+      "id": "mops-history-6171-1140303-1",
+      "date": "2025-03-03",
+      "announced_date": "2025-03-03",
+      "fact_date": null,
+      "announced_time": "11:44:08",
+      "title": "公告本公司113年第4季財務報告董事會預計 召開日期為114年3月11日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=6171",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "6171",
+        "marketKind": "otc",
+        "enterDate": "1140303"
+      }
     }
-  ],
-  "limitations": [
-    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
-    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
-    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
   ]
 }

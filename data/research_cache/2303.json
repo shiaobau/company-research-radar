@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T02:49:46.182Z",
+  "collected_at": "2026-07-16T05:40:25.086Z",
   "company": {
     "id": "tw-2303-umc",
     "ticker": "2303",
@@ -24,6 +24,489 @@
       "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed"
+    },
+    {
+      "id": "mops-history-2303-1150715-1",
+      "date": "2026-07-15",
+      "announced_date": "2026-07-15",
+      "fact_date": "2026-07-15",
+      "announced_time": "17:11:27",
+      "title": "代子公司宏誠創業投資(股)公司公告處分台灣半導體(股)公司普通股之相關資料",
+      "description": "1.證券名稱: 台灣半導體(股)公司普通股 2.交易日期:115/1/23~115/7/15 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:不適用 民國115年07月15日 5.交易數量、每單位價格及交易總金額: 交易數量: 3,706,000股 每單位價格: 平均單價NTD 81.63 交易總金額: NTD 302,534,400 6.處分利益（或損失）（取得有價證券者不適用）: NTD 137,617,400 7.與交易標的公司之關係: 無 8.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 數量: 3,035,000股 金額: NTD 135,057,500 持股比例: 1.15% 權利受限情形:無 9.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列之有價證券投 資（含本次交易）占公司最近期財務報表中總資產及歸屬於母公司業主之權益之比例 暨最近期財務報表中營運資金數額: 佔總資產比率: 2.42% 佔歸屬於母公司股東權益比率:3.32% 最近期財務報表中營運資金: NTD44,980,640,000 10.取得或處分之具體目的: 理財計畫 11.本次交易表示異議董事之意見: 不適用 12.本次交易為關係人交易: 否 13.交易相對人及其與公司之關係: 不適用 14.監察人承認或審計委員會同意日期: 不適用 15.前已就同一件事件發布重大訊息日期: 不適用 16.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150715"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150714-1",
+      "date": "2026-07-14",
+      "announced_date": "2026-07-14",
+      "fact_date": "2026-07-29",
+      "announced_time": "14:01:35",
+      "title": "本公司召開2026年第二季法人說明會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/07/29 1.召開法人說明會之日期：115/07/29 2.召開法人說明會之時間：17 時 00 分 3.召開法人說明會之地點：線上法說會 4.法人說明會擇要訊息：本公司2026年第二季財務暨營運報告。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150714"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150629-1",
+      "date": "2026-06-29",
+      "announced_date": "2026-06-29",
+      "fact_date": "2026-06-29",
+      "announced_time": "17:52:39",
+      "title": "公告本公司第二十二次買回公司股份期間屆滿及執行情形",
+      "description": "1.原預定買回股份總金額上限(元):212,951,478,175 2.原預定買回之期間:115/04/30~115/06/29 3.原預定買回之數量(股):50,000,000 4.原預定買回區間價格(元):52.50~109.50 5.本次實際買回期間:115/05/05~115/05/20 6.本次已買回股份數量(股):30,551,000 7.本次已買回股份總金額(元):3,095,665,789 8.本次平均每股買回價格(元):101.33 9.累積已持有自己公司股份數量(股):30,551,000 10.累積已持有自己公司股份數量占公司已發行股份總數之比率(%):0.24 11.本次未執行完畢之原因: 為考量市場機制及整體股東權益，本次庫藏股未執行完畢。 12.其他應敘明事項: 無",
+      "clause": "第35款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150629"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150623-6",
+      "date": "2026-06-23",
+      "announced_date": "2026-06-23",
+      "fact_date": "2026-06-23",
+      "announced_time": "17:08:40",
+      "title": "係因本公司有價證券於集中交易市場達公布注意交易資訊 標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
+      "description": "1.事實發生日:115/06/23 2.發生緣由:依據臺灣證券交易所股份有限公司通知辦理 3.財務業務資訊: 本公司合併財務資訊： 科目 最近一月 與去年同期 最近一季 與去年同期 最近四季累計 期間 115年05月 增 減% 115年第1季 增 減% 114年第2季至 115年第1季 (自結數) (核閱數) (查核/核閱數) =========================================================================== 營業收入 22,944 17.8% 61,038 5.5% 240,732 (百萬) 稅前淨利 8,379 202.9% 16,644 78.1% 56,945 (百萬) 歸屬母公司 8,449 203.0% 16,171 107.9% 50,111 業主淨利 (百萬) 每股盈餘 0.68 195.7% 1.29 108.1% 4.01 (元) 4.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理 程序」第4條所列重大訊息之情事（如「有」，請說明）:無 5.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理 程序」第11條所列重大訊息說明記者會之情事:無 6.完整財務資訊請至公開資訊觀測站查閱，路徑如下： (1)近期營業收入及損益資訊：基本資料>精華版 (2)歷史每月營業收入：營運概況>每月營收>採用IFRSs後之月營業收入資訊 (3)歷史損益(會計師查核/核閱數)：財務報表>採IFRSs後>合併/個別報表>綜合損益表 (4)歷史損益(自願性公告自結數)：營運概況>自結損益公告:無 7.其他應敘明事項: 本次公告之單月財務數字係屬公司自結數，未經會計師查核或核閱。 另本公司對採用權益法所認列之投資損益係按季評估及認列，上述單月自結數字 並未包含該等權益法投資損益，投資人審閱時請務必注意此項會計處理時程之限 制，並請以未來公告之經會計師核閱季報數字為準。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "6",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150623"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150623-7",
+      "date": "2026-06-23",
+      "announced_date": "2026-06-23",
+      "fact_date": null,
+      "announced_time": "16:42:11",
+      "title": "公告本公司處分聯詠科技股份有限公司證券之相關資料",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "7",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150623"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150623-2",
+      "date": "2026-06-23",
+      "announced_date": "2026-06-23",
+      "fact_date": null,
+      "announced_time": "16:40:55",
+      "title": "公告本公司除息基準日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150623"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150623-1",
+      "date": "2026-06-23",
+      "announced_date": "2026-06-23",
+      "fact_date": null,
+      "announced_time": "16:16:16",
+      "title": "公告本公司調整現金股利配息率",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150623"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150622-2",
+      "date": "2026-06-22",
+      "announced_date": "2026-06-22",
+      "fact_date": null,
+      "announced_time": "17:16:12",
+      "title": "公告本公司處分聯詠科技股份有限公司證券之相關資料",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150622"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150622-1",
+      "date": "2026-06-22",
+      "announced_date": "2026-06-22",
+      "fact_date": null,
+      "announced_time": "12:04:24",
+      "title": "說明115年6月21日經濟日報報導",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150622"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150618-1",
+      "date": "2026-06-18",
+      "announced_date": "2026-06-18",
+      "fact_date": null,
+      "announced_time": "14:43:21",
+      "title": "公告本公司處分聯詠科技股份有限公司證券之相關資料",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150618"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150616-1",
+      "date": "2026-06-16",
+      "announced_date": "2026-06-16",
+      "fact_date": null,
+      "announced_time": "17:40:05",
+      "title": "公告本公司處分聯詠科技股份有限公司證券之相關資料",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150616"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150603-2",
+      "date": "2026-06-03",
+      "announced_date": "2026-06-03",
+      "fact_date": null,
+      "announced_time": "17:19:20",
+      "title": "本公司董事會決議發行國內第二次無擔保轉換公司債 相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150603"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150603-1",
+      "date": "2026-06-03",
+      "announced_date": "2026-06-03",
+      "fact_date": null,
+      "announced_time": "17:19:05",
+      "title": "本公司董事會決議發行國內第一次無擔保轉換公司債 相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150603"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150527-1",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": null,
+      "announced_time": "15:04:01",
+      "title": "公告本公司一一五年股東常會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150527"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150526-2",
+      "date": "2026-05-26",
+      "announced_date": "2026-05-26",
+      "fact_date": null,
+      "announced_time": "13:47:39",
+      "title": "公告本公司取得廠務設備之相關資料",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150526"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150526-1",
+      "date": "2026-05-26",
+      "announced_date": "2026-05-26",
+      "fact_date": null,
+      "announced_time": "13:47:12",
+      "title": "公告本公司取得廠務設備之相關資料",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150526"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150522-3",
+      "date": "2026-05-22",
+      "announced_date": "2026-05-22",
+      "fact_date": null,
+      "announced_time": "14:23:01",
+      "title": "公告本公司取得機器設備之相關資料",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150522"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150522-2",
+      "date": "2026-05-22",
+      "announced_date": "2026-05-22",
+      "fact_date": null,
+      "announced_time": "14:21:44",
+      "title": "本公司受邀參與法人說明會相關資訊",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150522"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150522-1",
+      "date": "2026-05-22",
+      "announced_date": "2026-05-22",
+      "fact_date": null,
+      "announced_time": "14:21:13",
+      "title": "本公司受邀參與法人說明會相關資訊",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150522"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150520-1",
+      "date": "2026-05-20",
+      "announced_date": "2026-05-20",
+      "fact_date": null,
+      "announced_time": "15:40:02",
+      "title": "公告本公司買回股份之金額達新台幣三億元以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150520"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150515-1",
+      "date": "2026-05-15",
+      "announced_date": "2026-05-15",
+      "fact_date": null,
+      "announced_time": "14:30:28",
+      "title": "公告本公司買回股份之金額達新台幣三億元以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150515"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150513-2",
+      "date": "2026-05-13",
+      "announced_date": "2026-05-13",
+      "fact_date": null,
+      "announced_time": "16:07:19",
+      "title": "公告本公司買回股份之金額達新台幣三億元以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150513"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150513-1",
+      "date": "2026-05-13",
+      "announced_date": "2026-05-13",
+      "fact_date": null,
+      "announced_time": "16:04:12",
+      "title": "公告本公司辦理限制員工權利新股註銷完成實收 資本額變更登記事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150513"
+      }
     }
   ],
   "references": [
@@ -32,10 +515,10 @@
       "title": "聯電 MOPS 歷史重大訊息",
       "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
       "source_id": "mops_history_search",
-      "source_type": "official_search_link",
+      "source_type": "official_history_api",
       "claim_type": "official_search_reference",
       "review_status": "reference_only",
-      "note": "歷史資料以公開資訊觀測站查詢頁為準；本版本不將未經欄位驗證的網頁內容直接納入評分。"
+      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
     },
     {
       "id": "company-website-2303",
@@ -54,6 +537,14 @@
       "cache_status": "fresh",
       "fetched_at": "2026-07-16T01:56:57.043Z",
       "row_count": 87,
+      "available": true
+    },
+    {
+      "source_id": "mops_history_api",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-16T05:37:25.900Z",
+      "row_count": 60,
+      "detail_count": 4,
       "available": true
     }
   ],

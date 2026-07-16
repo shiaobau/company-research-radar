@@ -1,14 +1,16 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T05:40:25.086Z",
-  "company": {
-    "id": "tw-8279-syngen",
-    "ticker": "8279",
-    "name": "生展",
-    "market": "TPEx",
-    "industry_template": "nutrition_health_food"
-  },
-  "collection_scope": "targeted_research_company",
+  "source_id": "mops_history_api",
+  "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=8279",
+  "ticker": "8279",
+  "fetched_at": "2026-07-16T05:40:06.158Z",
+  "cache_status": "updated",
+  "queried_roc_years": [
+    "115",
+    "114"
+  ],
+  "event_count": 28,
+  "detail_count": 4,
   "events": [
     {
       "id": "mops-history-8279-1150602-2",
@@ -513,50 +515,90 @@
         "marketKind": "otc",
         "enterDate": "1140409"
       }
-    }
-  ],
-  "references": [
-    {
-      "id": "mops-history-8279",
-      "title": "生展 MOPS 歷史重大訊息",
-      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=8279",
-      "source_id": "mops_history_search",
-      "source_type": "official_history_api",
-      "claim_type": "official_search_reference",
-      "review_status": "reference_only",
-      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
     },
     {
-      "id": "company-website-8279",
-      "title": "生展 官方網站",
-      "url": "https://www.syngen.com.tw/",
-      "source_id": "company_website",
-      "source_type": "company_reference",
-      "claim_type": "company_published_reference",
-      "review_status": "reference_only",
-      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
-    }
-  ],
-  "source_status": [
-    {
-      "source_id": "tpex_material_events",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T01:56:57.535Z",
-      "row_count": 75,
-      "available": true
-    },
-    {
+      "id": "mops-history-8279-1140224-1",
+      "date": "2025-02-24",
+      "announced_date": "2025-02-24",
+      "fact_date": null,
+      "announced_time": "16:11:58",
+      "title": "公告本公司董事會決議發放股利",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T05:40:06.158Z",
-      "row_count": 28,
-      "detail_count": 4,
-      "available": true
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=8279",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "8279",
+        "marketKind": "otc",
+        "enterDate": "1140224"
+      }
+    },
+    {
+      "id": "mops-history-8279-1140217-3",
+      "date": "2025-02-24",
+      "announced_date": "2025-02-24",
+      "fact_date": null,
+      "announced_time": "16:05:20",
+      "title": "本公司董事會決議召開114年股東常會相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=8279",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "8279",
+        "marketKind": "otc",
+        "enterDate": "1140217"
+      }
+    },
+    {
+      "id": "mops-history-8279-1140217-2",
+      "date": "2025-02-24",
+      "announced_date": "2025-02-24",
+      "fact_date": null,
+      "announced_time": "16:00:58",
+      "title": "公告本公司董事會通過民國113年度合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=8279",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "8279",
+        "marketKind": "otc",
+        "enterDate": "1140217"
+      }
+    },
+    {
+      "id": "mops-history-8279-1140217-1",
+      "date": "2025-02-17",
+      "announced_date": "2025-02-17",
+      "fact_date": null,
+      "announced_time": "16:33:31",
+      "title": "公告113年第4季財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=8279",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "8279",
+        "marketKind": "otc",
+        "enterDate": "1140217"
+      }
     }
-  ],
-  "limitations": [
-    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
-    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
-    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
   ]
 }
