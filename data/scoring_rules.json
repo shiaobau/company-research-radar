@@ -57,12 +57,12 @@
       "id": "priority",
       "min": 75,
       "label": "優先觀察",
-      "description": "公開資料訊號整體較佳，列為優先閱讀與後續追蹤對象。",
+      "description": "公開資料訊號整體較佳，列為優先閱讀與後續追蹤對象；不構成買賣建議。",
       "color": "#46b88a"
     },
     {
       "id": "monitor",
-      "min": 60,
+      "min": 55,
       "label": "持續追蹤",
       "description": "具備可追蹤條件，但仍需持續確認趨勢、事件與風險。",
       "color": "#d6a94b"
@@ -70,9 +70,21 @@
     {
       "id": "defer",
       "min": 0,
-      "label": "暫緩觀察",
-      "description": "現階段訊號較弱或風險較多，暫不列為優先研究對象。",
+      "label": "訊號待確認",
+      "description": "現階段公開資料訊號尚待確認，應回到評分拆解與事件內容進一步閱讀。",
       "color": "#cf6a6a"
     }
-  ]
+  ],
+  "score_calibration": {
+    "method": "piecewise_linear",
+    "description": "保留七項原始加權分數，依跨產業回測分布轉換為較易閱讀的顯示分數；不改變各維度資料或權重。",
+    "anchors": [
+      { "raw": 0, "display": 0 },
+      { "raw": 52, "display": 45 },
+      { "raw": 57, "display": 55 },
+      { "raw": 62, "display": 75 },
+      { "raw": 70, "display": 90 },
+      { "raw": 100, "display": 100 }
+    ]
+  }
 }

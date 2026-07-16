@@ -32,6 +32,12 @@ const referenceOnly = argValue("reference-only", "false") === "true";
 const outDir = path.join(root, "backtests", backtestId);
 const cohortPath = path.resolve(root, argValue("cohort", path.join("backtests", backtestId, "cohort.json")));
 const generatedAt = new Date().toISOString();
+let scoreBands = [
+  { id: "priority", min: 75, label: "優先觀察" },
+  { id: "monitor", min: 55, label: "持續追蹤" },
+  { id: "defer", min: 0, label: "訊號待確認" }
+];
+let scoreCalibration = null;
 
 const SCORE_DIMENSIONS = [
   { id: "catalyst", label: "催化事件", weight: 0.2 },
@@ -364,18 +370,32 @@ function scorePriceAt(history, cutoffDate) {
   };
 }
 
-function computeTotal(scores) {
+function computeRawTotal(scores) {
   const weighted = SCORE_DIMENSIONS.reduce((sum, dimension) => sum + (scores[dimension.id] || 0) * dimension.weight, 0);
   const weightSum = SCORE_DIMENSIONS.reduce((sum, dimension) => sum + dimension.weight, 0);
   return Math.round(weighted / weightSum);
 }
 
+function calibrateScore(rawScore) {
+  const anchors = (scoreCalibration?.anchors || [])
+    .map((anchor) => ({ raw: Number(anchor.raw), display: Number(anchor.display) }))
+    .filter((anchor) => Number.isFinite(anchor.raw) && Number.isFinite(anchor.display))
+    .sort((left, right) => left.raw - right.raw);
+  if (!anchors.length) return Math.round(rawScore);
+  if (rawScore <= anchors[0].raw) return Math.round(anchors[0].display);
+  for (let index = 1; index < anchors.length; index += 1) {
+    const lower = anchors[index - 1];
+    const upper = anchors[index];
+    if (rawScore <= upper.raw) {
+      const progress = (rawScore - lower.raw) / (upper.raw - lower.raw);
+      return Math.round(lower.display + (upper.display - lower.display) * progress);
+    }
+  }
+  return Math.round(anchors.at(-1).display);
+}
+
 function band(score) {
-  if (score >= 85) return "強勢但需估值驗證";
-  if (score >= 75) return "值得深入研究";
-  if (score >= 65) return "觀察偏正向";
-  if (score >= 55) return "中性觀察";
-  return "資料或風險不足";
+  return scoreBands.find((item) => score >= item.min)?.label || scoreBands.at(-1)?.label || "未分級";
 }
 
 function dataCoverage(row) {
@@ -404,9 +424,8 @@ function coverageLevel(coverage) {
 
 function predictionSignal(row) {
   if ((row.data_coverage_score ?? 0) < 0.55) return "insufficient";
-  if (row.as_of_score >= 70) return "positive";
-  if (row.as_of_score >= 60) return "watch_positive";
-  if (row.as_of_score >= 55) return "neutral";
+  if (row.as_of_score >= scoreBands[0].min) return "positive";
+  if (row.as_of_score >= scoreBands[1].min) return "watch_positive";
   if ((row.data_coverage_score ?? 0) >= 0.75) return "weak";
   return "insufficient";
 }
@@ -714,8 +733,10 @@ function buildCompanyScores(company, reference, template, priceStart, priceEnd) 
     riskNews: riskEnd,
     industryFundamental: industryEnd.score
   };
-  const asOfScore = computeTotal(asOfDimensions);
-  const currentScore = computeTotal(currentDimensions);
+  const asOfRawScore = computeRawTotal(asOfDimensions);
+  const currentRawScore = computeRawTotal(currentDimensions);
+  const asOfScore = calibrateScore(asOfRawScore);
+  const currentScore = calibrateScore(currentRawScore);
   const priceReturnPct = priceStart.close && priceEnd.close ? ((priceEnd.close / priceStart.close) - 1) * 100 : null;
 
   const row = {
@@ -731,8 +752,10 @@ function buildCompanyScores(company, reference, template, priceStart, priceEnd) 
     as_of_date: startDate,
     end_date: endDate,
     as_of_score: asOfScore,
+    as_of_raw_score: asOfRawScore,
     as_of_band: band(asOfScore),
     current_score: currentScore,
+    current_raw_score: currentRawScore,
     current_band: band(currentScore),
     score_change: currentScore - asOfScore,
     as_of_dimensions: asOfDimensions,
@@ -884,10 +907,13 @@ function summaryReport(summaries, rows, referenceWarnings = []) {
 
 async function main() {
   await mkdir(outDir, { recursive: true });
-  const [cohortJson, templatesJson] = await Promise.all([
+  const [cohortJson, templatesJson, scoringRules] = await Promise.all([
     readJson(cohortPath),
-    readJson(path.join(dataDir, "industry_templates.json"))
+    readJson(path.join(dataDir, "industry_templates.json")),
+    readJson(path.join(dataDir, "scoring_rules.json"))
   ]);
+  scoreBands = [...(scoringRules.score_bands || scoreBands)].sort((left, right) => right.min - left.min);
+  scoreCalibration = scoringRules.score_calibration || null;
   const companies = cohortJson.companies || [];
   if (!companies.length) throw new Error(`No cohort companies found: ${cohortPath}`);
 

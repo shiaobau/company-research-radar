@@ -1117,6 +1117,12 @@ function scoreColorStyle(score) {
   return color ? `--score-color:${RadarRenderers.escapeHtml(color)};` : "";
 }
 
+function scoreDisplayTitle(score) {
+  if (!score.complete) return "研究中，尚未具備完整評分資料";
+  if (!Number.isFinite(score.rawTotal)) return score.band.label;
+  return `${score.band.label}（顯示分數 ${score.total}；原始加權分 ${score.rawTotal}）`;
+}
+
 function researchReadiness(company) {
   const status = state.researchStatus.companies?.[company.id];
   if (status) return status;
@@ -1257,7 +1263,7 @@ function renderCompanyList(companies) {
     const scoreValue = Number.isFinite(score.total) ? score.total : "待補";
     return `
       <article class="company-card ${company.id === state.selectedId ? "active" : ""} ${score.complete ? "" : "incomplete"}" data-id="${company.id}" tabindex="0" style="--score-deg:${Number.isFinite(score.total) ? score.total * 3.6 : 0}deg;${scoreColorStyle(score)}">
-        <div class="score-ring" title="${RadarRenderers.escapeHtml(score.complete ? score.band.label : readinessLabel(company))}"><span>${scoreValue}</span></div>
+        <div class="score-ring" title="${RadarRenderers.escapeHtml(score.complete ? scoreDisplayTitle(score) : readinessLabel(company))}"><span>${scoreValue}</span></div>
         <div>
           <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.complete ? score.band.label : readinessLabel(company))}</p>
           <h3>${RadarRenderers.escapeHtml(company.name)}</h3>
@@ -1336,7 +1342,6 @@ function renderCollectedEvents(company) {
     const title = normalizeDisclosureText(event.title);
     const clause = normalizeDisclosureText(event.clause);
     const description = normalizeDisclosureText(event.description);
-    const source = eventSourceLink(event, company.ticker);
     return `
       <article class="collector-event">
         <div class="collector-event-head">
@@ -1345,18 +1350,15 @@ function renderCollectedEvents(company) {
         </div>
         <strong>${RadarRenderers.escapeHtml(title)}</strong>
         ${clause ? `<p class="muted">${RadarRenderers.escapeHtml(clause)}</p>` : ""}
-        ${description ? `<p>${RadarRenderers.escapeHtml(description.slice(0, 280))}${description.length > 280 ? "..." : ""}</p>` : ""}
-        ${source.url ? `<a class="source-chip" href="${RadarRenderers.escapeHtml(source.url)}" target="_blank" rel="noopener">${RadarRenderers.escapeHtml(source.label)}</a>` : ""}
+        ${description ? `<details class="collector-event-detail"><summary>查看完整公告</summary><p>${RadarRenderers.escapeHtml(description)}</p></details>` : `<p class="muted">此筆公告目前僅取得標題與日期。</p>`}
       </article>
     `;
   }).join("");
-  const references = (record.references || []).map((reference) => {
-    const url = reference.source_id === "mops_history_search"
-      ? mopsHistoryUrl(company.ticker)
-      : reference.url;
-    return `<a class="source-chip" href="${RadarRenderers.escapeHtml(url)}" target="_blank" rel="noopener">${RadarRenderers.escapeHtml(reference.title)}</a>`;
-  }).join("");
-  const sourceStatus = "官方公開資訊快取";
+  const references = (record.references || [])
+    .filter((reference) => reference.source_id !== "mops_history_search")
+    .map((reference) => `<a class="source-chip" href="${RadarRenderers.escapeHtml(reference.url)}" target="_blank" rel="noopener">${RadarRenderers.escapeHtml(reference.title)}</a>`)
+    .join("");
+  const sourceStatus = "公告內容由公開資訊觀測站蒐集並快取；可展開查看完整已擷取內容。";
 
   return `
     <section class="module collected-events">
@@ -1399,7 +1401,7 @@ function renderDetail() {
         <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(dataCoverageLabel(company))}${company.legal_name ? ` · ${RadarRenderers.escapeHtml(company.legal_name)}` : ""}</p>
         <p class="muted">資料更新：${RadarRenderers.escapeHtml(company.last_reviewed || "未提供")}</p>
       </div>
-      <span class="pill score-tier" style="${scoreColorStyle(score)}">${Number.isFinite(score.total) ? `${score.total} · ${RadarRenderers.escapeHtml(score.band.label)}` : readinessLabel(company)}</span>
+      <span class="pill score-tier" title="${RadarRenderers.escapeHtml(scoreDisplayTitle(score))}" style="${scoreColorStyle(score)}">${Number.isFinite(score.total) ? `${score.total} · ${RadarRenderers.escapeHtml(score.band.label)}` : readinessLabel(company)}</span>
     </div>
     ${publicFacts}
     ${score.complete ? "" : `<p class="risk">尚未產生總分。缺少：${RadarRenderers.escapeHtml(score.missingDimensions.join("、"))}</p>`}
@@ -1449,26 +1451,6 @@ function normalizeDisclosureText(value) {
     .replace(/[\u0000-\u0008\u000B-\u001F\u007F-\u009F]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
-}
-
-function mopsHistoryUrl(ticker, rocYear = "") {
-  const params = new URLSearchParams({
-    co_id: String(ticker || "").trim(),
-    firstin: "true",
-    step: "1"
-  });
-  if (/^\d{3}$/.test(String(rocYear))) params.set("year", String(rocYear));
-  return `https://mops.twse.com.tw/mops/web/t05st01?${params.toString()}`;
-}
-
-function eventSourceLink(event, fallbackTicker) {
-  if (event?.source_id !== "mops_history_api") {
-    return { url: event?.source_url || "", label: "官方來源" };
-  }
-  const parameters = event.detail_parameters || {};
-  const ticker = parameters.companyId || fallbackTicker;
-  const rocYear = String(parameters.enterDate || "").slice(0, 3);
-  return { url: mopsHistoryUrl(ticker, rocYear), label: "在 MOPS 查詢" };
 }
 
 function renderDataSnapshot(company, sourceIndex) {
