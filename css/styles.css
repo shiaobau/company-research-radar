@@ -433,7 +433,7 @@ button:focus {
 
 .summary-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   margin: 10px 0;
 }
@@ -1109,6 +1109,18 @@ button:focus {
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 8px;
+}
+
+.data-card-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 10px;
+}
+
+.data-card-heading .source-links {
+  margin-top: 0;
 }
 
 a.source-chip,

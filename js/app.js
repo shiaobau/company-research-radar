@@ -1058,20 +1058,15 @@ function renderSourceTooltipsForFacts(facts, sourceIndex) {
   return `
     <div class="fact-source-list" aria-label="公司資料來源摘要">
       ${[...grouped.values()].map(({ source, facts }) => {
-        const visibleFacts = facts.slice(0, 3);
         const title = source.short_title || source.title;
-        const summary = visibleFacts
-          .map((fact) => `<span><b>${RadarRenderers.escapeHtml(fact.label)}</b>：${RadarRenderers.escapeHtml(fact.value)}</span>`)
-          .join("");
-        const remaining = facts.length - visibleFacts.length;
-        const accessibleLabel = `${title}：${facts.map((fact) => `${fact.label} ${fact.value}`).join("；")}`;
+        const description = source.note || source.title;
+        const accessibleLabel = `${title}：${description}`;
         return `
           <span class="fact-source-tooltip" tabindex="0" role="note" aria-label="${RadarRenderers.escapeHtml(accessibleLabel)}">
             <span class="source-chip source-chip-static">${RadarRenderers.escapeHtml(title)}</span>
             <span class="fact-tooltip-content" role="tooltip">
               <strong>${RadarRenderers.escapeHtml(source.title)}</strong>
-              ${summary}
-              ${remaining > 0 ? `<span class="tooltip-more">另有 ${remaining} 項相關資料</span>` : ""}
+              <span>${RadarRenderers.escapeHtml(description)}</span>
             </span>
           </span>
         `;
@@ -1205,7 +1200,6 @@ function renderSummary(companies) {
     .map((company) => RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets()).total)
     .filter(Number.isFinite);
   const average = scores.length ? Math.round(scores.reduce((sum, score) => sum + score, 0) / scores.length) : "尚未評分";
-  const activeSignals = scoredCompanies.flatMap(objectiveSignalsFor).length;
   const researchInProgress = candidateOnlyCount + scoredCompanies.length - scores.length;
   const modeLabel = universeSelectionMode() ? "候選" : "公司";
 
@@ -1215,8 +1209,7 @@ function renderSummary(companies) {
   $("#summary-grid").innerHTML = [
     ["平均評分", average],
     ["完成研究", `${scores.length}/${companies.length}`],
-    ["研究中", researchInProgress],
-    ["追蹤訊號", activeSignals]
+    ["研究中", researchInProgress]
   ].map(([label, value]) => `<div class="metric"><span class="muted">${label}</span><strong>${value}</strong></div>`).join("");
 }
 
@@ -1387,8 +1380,6 @@ function renderDetail() {
   const sourceIndex = sourceIndexFor(company);
   const dataSnapshot = renderDataSnapshot(company, sourceIndex);
 
-  const publicFacts = renderPublicFacts(company, sourceIndex);
-
   $("#company-detail").className = "detail-content";
   $("#company-detail").innerHTML = `
     <div class="detail-title">
@@ -1400,7 +1391,6 @@ function renderDetail() {
       </div>
       <span class="pill">${Number.isFinite(score.total) ? score.total : readinessLabel(company)}</span>
     </div>
-    ${publicFacts}
     ${score.complete ? "" : `<p class="risk">尚未產生總分。缺少：${RadarRenderers.escapeHtml(score.missingDimensions.join("、"))}</p>`}
     <div class="score-breakdown">${RadarRenderers.renderScoreRows(score)}</div>
     <details class="detail-fold">
@@ -1529,14 +1519,16 @@ function renderDataSnapshot(company, sourceIndex) {
       <div class="data-grid">
         ${cards.map((card) => `
           <article class="data-card">
-            <strong>${RadarRenderers.escapeHtml(card.title)}</strong>
+            <div class="data-card-heading">
+              <strong>${RadarRenderers.escapeHtml(card.title)}</strong>
+              ${RadarRenderers.sourceLinks(card.sourceIds, sourceIndex)}
+            </div>
             ${card.rows.map(([label, value]) => `
               <div class="data-row">
                 <span>${RadarRenderers.escapeHtml(label)}</span>
                 <b>${RadarRenderers.escapeHtml(value)}</b>
               </div>
             `).join("")}
-            ${RadarRenderers.sourceLinks(card.sourceIds, sourceIndex)}
           </article>
         `).join("")}
       </div>

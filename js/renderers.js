@@ -23,12 +23,24 @@
 
   function sourceLinks(sourceIds, sourceIndex) {
     if (!sourceIds || !sourceIds.length) return "";
-    const links = sourceIds
+    const chips = sourceIds
       .map((id) => sourceIndex[id])
       .filter(Boolean)
-      .map((source) => `<a class="source-chip" href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.short_title || source.title)}</a>`)
+      .map((source) => {
+        const title = source.short_title || source.title;
+        const description = source.note || source.title;
+        return `
+          <span class="fact-source-tooltip" tabindex="0" role="note" aria-label="${escapeHtml(`${title}：${description}`)}">
+            <span class="source-chip source-chip-static">${escapeHtml(title)}</span>
+            <span class="fact-tooltip-content" role="tooltip">
+              <strong>${escapeHtml(source.title)}</strong>
+              <span>${escapeHtml(description)}</span>
+            </span>
+          </span>
+        `;
+      })
       .join("");
-    return `<div class="source-links">${links}</div>`;
+    return `<div class="source-links source-links-static">${chips}</div>`;
   }
 
   function renderFact(company, fieldId, definitions, sourceIndex) {
