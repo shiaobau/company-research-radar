@@ -35,31 +35,49 @@
     };
   }
 
+  function missingDimensionLabel(dimension) {
+    return dimension?.label || dimension?.id || "未命名維度";
+  }
+
   function computeCompanyScore(company, rules, datasets = {}) {
     const dimensions = dimensionsFor(company, rules);
-    if (!dimensions.length) return { total: 0, band: scoreBand(0, rules), rows: [] };
+    if (!dimensions.length) return { total: null, complete: false, missingDimensions: ["評分規則"], band: { label: "資料不足" }, rows: [] };
 
     let weighted = 0;
     let weightSum = 0;
     const rows = dimensions.map((dimension) => {
-      const input = objectiveInput(company, dimension.id, datasets) || company.score_inputs?.[dimension.id] || {};
-      const score = Number(input.score || 0);
-      weighted += score * dimension.weight;
-      weightSum += dimension.weight;
+      const input = objectiveInput(company, dimension.id, datasets);
+      const available = Boolean(input);
+      const score = available ? Number(input.score) : null;
+      if (available) {
+        weighted += score * dimension.weight;
+        weightSum += dimension.weight;
+      }
       return {
         id: dimension.id,
         label: dimension.label,
         weight: dimension.weight,
         score,
-        rationale: input.rationale || "尚未填寫評分理由",
-        evidenceLevel: input.evidence_level || "unknown",
-        sourceIds: input.source_ids || [],
-        objective: Boolean(input.objective)
+        status: available ? "ok" : "missing",
+        rationale: input?.rationale || "尚未取得可計分的公開資料。",
+        evidenceLevel: input?.evidence_level || "none",
+        sourceIds: input?.source_ids || [],
+        objective: Boolean(input?.objective)
       };
     });
 
+    const missingDimensions = rows.filter((row) => row.status !== "ok").map(missingDimensionLabel);
+    if (missingDimensions.length) {
+      return {
+        total: null,
+        complete: false,
+        missingDimensions,
+        band: { label: "資料不足" },
+        rows
+      };
+    }
     const total = weightSum ? Math.round(weighted / weightSum) : 0;
-    return { total, band: scoreBand(total, rules), rows };
+    return { total, complete: true, missingDimensions: [], band: scoreBand(total, rules), rows };
   }
 
   window.RadarScoring = { computeCompanyScore, scoreBand };

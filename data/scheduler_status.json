@@ -1,56 +1,92 @@
 {
-  "version": "1.0.0",
-  "timezone": "Asia/Taipei",
-  "frequency": "weekday",
-  "frequency_label": "平日",
-  "generated_at": "2026-07-16T02:51:14.895Z",
-  "current_run": null,
-  "schedules": {
-    "morning": {
-      "label": "早間事件更新",
-      "time": "08:15",
-      "description": "更新重大訊息與目標式資料收集。",
-      "last_run": {
-        "slot": "morning",
-        "label": "早間事件更新",
-        "status": "done",
-        "started_at": "2026-07-15T03:35:50.907Z",
-        "steps": [
-          {
-            "script": "tools/source-cache.mjs",
-            "args": [
-              "--refresh",
-              "--ids=twse_material_events,tpex_material_events"
-            ],
-            "status": "done",
-            "started_at": "2026-07-15T03:35:50.908Z",
-            "finished_at": "2026-07-15T03:35:53.707Z",
-            "output_tail": "twse_material_events: updated, 123 rows, 2026-07-15T03:35:53.226Z\ntpex_material_events: updated, 70 rows, 2026-07-15T03:35:53.681Z\n"
-          },
-          {
-            "script": "tools/targeted-collector.mjs",
-            "args": [],
-            "status": "done",
-            "started_at": "2026-07-15T03:35:53.708Z",
-            "finished_at": "2026-07-15T03:35:53.920Z",
-            "output_tail": "{\n  \"status\": \"done\",\n  \"companies\": 13,\n  \"researched_companies\": 13,\n  \"total_events\": 4,\n  \"cache\": \"data\\\\research_cache\"\n}\n"
-          }
-        ],
-        "finished_at": "2026-07-15T03:35:53.921Z",
-        "company_count": 13
-      }
-    },
-    "market_close": {
-      "label": "收盤資料更新",
-      "time": "14:15",
-      "description": "更新公開資料、評分與研究快取。",
-      "last_run": null
-    },
-    "evening": {
-      "label": "晚間治理更新",
-      "time": "20:30",
-      "description": "更新重大訊息、股權、違規與目標式收集。",
-      "last_run": null
-    }
-  }
+    "version":  "1.0.0",
+    "timezone":  "Asia/Taipei",
+    "current_run":  null,
+    "schedules":  {
+                      "morning":  {
+                                      "label":  "早間完整更新",
+                                      "time":  "08:15",
+                                      "description":  "完整更新公開資料、研究資料與 MOPS 歷史事件。",
+                                      "last_run":  {
+                                                       "slot":  "morning",
+                                                       "label":  "早間完整更新",
+                                                       "status":  "done",
+                                                       "started_at":  "2026-07-15T03:35:50.907Z",
+                                                       "steps":  [
+                                                                     {
+                                                                         "script":  "tools/source-cache.mjs",
+                                                                         "args":  [
+                                                                                      "--refresh",
+                                                                                      "--ids=twse_material_events,tpex_material_events"
+                                                                                  ],
+                                                                         "status":  "done",
+                                                                         "started_at":  "2026-07-15T03:35:50.908Z",
+                                                                         "finished_at":  "2026-07-15T03:35:53.707Z",
+                                                                         "output_tail":  "twse_material_events: updated, 123 rows, 2026-07-15T03:35:53.226Z\ntpex_material_events: updated, 70 rows, 2026-07-15T03:35:53.681Z\n"
+                                                                     },
+                                                                     {
+                                                                         "script":  "tools/targeted-collector.mjs",
+                                                                         "args":  [
+
+                                                                                  ],
+                                                                         "status":  "done",
+                                                                         "started_at":  "2026-07-15T03:35:53.708Z",
+                                                                         "finished_at":  "2026-07-15T03:35:53.920Z",
+                                                                         "output_tail":  "{\n  \"status\": \"done\",\n  \"companies\": 13,\n  \"researched_companies\": 13,\n  \"total_events\": 4,\n  \"cache\": \"data\\\\research_cache\"\n}\n"
+                                                                     }
+                                                                 ],
+                                                       "finished_at":  "2026-07-15T03:35:53.921Z",
+                                                       "company_count":  13
+                                                   }
+                                  },
+                      "evening":  {
+                                      "label":  "晚間完整更新",
+                                      "time":  "20:30",
+                                      "description":  "完整更新公開資料、研究資料與 MOPS 歷史事件。",
+                                      "last_run":  {
+                                                       "slot":  "evening",
+                                                       "label":  "晚間完整更新",
+                                                       "status":  "done",
+                                                       "started_at":  "2026-07-16T05:53:57.623Z",
+                                                       "steps":  [
+                                                                     {
+                                                                         "script":  "tools/source-cache.mjs",
+                                                                         "args":  [
+                                                                                      "--refresh",
+                                                                                      "--ids=twse_material_events,tpex_material_events,twse_major_shareholders,tpex_major_shareholders,twse_insider_transfer,tpex_insider_transfer,twse_disclosure_violations,tpex_disclosure_violations"
+                                                                                  ],
+                                                                         "status":  "done",
+                                                                         "started_at":  "2026-07-16T05:53:57.623Z",
+                                                                         "finished_at":  "2026-07-16T05:54:01.688Z",
+                                                                         "output_tail":  "twse_material_events: updated, 87 rows, 2026-07-16T05:53:58.458Z\ntpex_material_events: updated, 75 rows, 2026-07-16T05:53:58.954Z\ntwse_major_shareholders: updated, 1052 rows, 2026-07-16T05:53:59.503Z\ntpex_major_shareholders: updated, 1000 rows, 2026-07-16T05:53:59.891Z\ntwse_insider_transfer: updated, 5 rows, 2026-07-16T05:54:00.459Z\ntpex_insider_transfer: updated, 2 rows, 2026-07-16T05:54:00.796Z\ntwse_disclosure_violations: updated, 26 rows, 2026-07-16T05:54:01.189Z\ntpex_disclosure_violations: updated, 15 rows, 2026-07-16T05:54:01.669Z\n"
+                                                                     },
+                                                                     {
+                                                                         "script":  "tools/update-data.mjs",
+                                                                         "args":  [
+
+                                                                                  ],
+                                                                         "status":  "done",
+                                                                         "started_at":  "2026-07-16T05:54:01.689Z",
+                                                                         "finished_at":  "2026-07-16T05:56:54.042Z",
+                                                                         "output_tail":  "Generated objective data for 21 research companies.\n"
+                                                                     },
+                                                                     {
+                                                                         "script":  "tools/targeted-collector.mjs",
+                                                                         "args":  [
+
+                                                                                  ],
+                                                                         "status":  "done",
+                                                                         "started_at":  "2026-07-16T05:56:54.043Z",
+                                                                         "finished_at":  "2026-07-16T05:56:54.223Z",
+                                                                         "output_tail":  "{\n  \"status\": \"done\",\n  \"companies\": 21,\n  \"researched_companies\": 21,\n  \"total_events\": 504,\n  \"cache\": \"data\\\\research_cache\"\n}\n"
+                                                                     }
+                                                                 ],
+                                                       "finished_at":  "2026-07-16T05:56:54.224Z",
+                                                       "company_count":  21
+                                                   }
+                                  }
+                  },
+    "frequency":  "weekday",
+    "frequency_label":  "平日",
+    "generated_at":  "2026-07-16T06:10:58.8512982Z"
 }

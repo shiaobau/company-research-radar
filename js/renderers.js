@@ -48,8 +48,8 @@
     return score.rows.map((row) => `
       <div class="score-row" title="${escapeHtml(row.rationale)}">
         <span>${escapeHtml(row.label)}</span>
-        <div class="bar" style="--bar-width:${row.score}%"><span></span></div>
-        <b>${row.score}</b>
+        <div class="bar" style="--bar-width:${Number.isFinite(row.score) ? row.score : 0}%"><span></span></div>
+        <b>${Number.isFinite(row.score) ? row.score : "待補"}</b>
       </div>
     `).join("");
   }

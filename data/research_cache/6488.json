@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T05:40:25.086Z",
+  "collected_at": "2026-07-16T05:56:54.115Z",
   "company": {
     "id": "tw-6488-globalwafers",
     "ticker": "6488",
@@ -543,7 +543,7 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-16T01:56:57.535Z",
+      "fetched_at": "2026-07-16T05:53:58.954Z",
       "row_count": 75,
       "available": true
     },

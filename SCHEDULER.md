@@ -4,9 +4,7 @@ The local dashboard uses Windows Task Scheduler for weekday updates. It runs onl
 
 ## Schedule
 
-- 08:15: refresh official disclosure events and targeted research-event cache.
-- 14:15: refresh all shared sources, company data, prices, scores, and targeted research-event cache.
-- 20:30: refresh disclosures, governance, violations, and targeted research-event cache.
+- 08:15 and 20:30: each runs a full refresh of shared sources, company data, prices, scores, targeted research-event cache, and completeness validation.
 
 ## Install
 
@@ -17,7 +15,7 @@ powershell -ExecutionPolicy Bypass -File tools\register-scheduled-update.ps1 -Ac
 ## Manual Run
 
 ```powershell
-& "C:\Users\user\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" tools\scheduled-update.mjs --slot=market_close
+& "C:\Users\user\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" tools\scheduled-update.mjs --slot=morning
 ```
 
 ## Uninstall

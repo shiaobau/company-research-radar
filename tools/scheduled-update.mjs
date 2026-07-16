@@ -8,59 +8,29 @@ const root = process.cwd();
 const dataDir = path.join(root, "data");
 const statusPath = path.join(dataDir, "scheduler_status.json");
 const lockPath = path.join(dataDir, ".scheduled-update.lock");
-const slot = (process.argv.find((arg) => arg.startsWith("--slot=")) || "--slot=market_close").slice(7);
+const slot = (process.argv.find((arg) => arg.startsWith("--slot=")) || "--slot=morning").slice(7);
 const dryRun = process.argv.includes("--dry-run");
 
 const SCHEDULES = {
   morning: {
-    label: "早晨公告補漏",
+    label: "早間完整更新",
     time: "08:15",
-    description: "更新重大訊息快取與研究公司事件。",
-    steps: [
-      ["tools/source-cache.mjs", "--refresh", "--ids=twse_material_events,tpex_material_events"],
-      ["tools/targeted-collector.mjs"]
-    ]
-  },
-  market_close: {
-    label: "收盤完整更新",
-    time: "14:15",
-    description: "更新官方快取、價格與評分，再刷新研究事件。",
-    steps: [
-      ["tools/source-cache.mjs", "--refresh"],
-      ["tools/update-data.mjs"],
-      ["tools/targeted-collector.mjs"]
-    ]
+    description: "完整更新公開資料、研究資料與 MOPS 歷史事件。"
   },
   evening: {
-    label: "晚間公告補更新",
+    label: "晚間完整更新",
     time: "20:30",
-    description: "更新重大訊息、違規與股權資料，再刷新研究事件。",
-    steps: [
-      [
-        "tools/source-cache.mjs",
-        "--refresh",
-        "--ids=twse_material_events,tpex_material_events,twse_major_shareholders,tpex_major_shareholders,twse_insider_transfer,tpex_insider_transfer,twse_disclosure_violations,tpex_disclosure_violations"
-      ],
-      ["tools/targeted-collector.mjs"]
-    ]
+    description: "完整更新公開資料、研究資料與 MOPS 歷史事件。"
   }
 };
 
-// Keep user-facing scheduler labels ASCII-safe in source while emitting UTF-8 JSON.
-const WEEKDAY_LABEL = "\u5e73\u65e5";
-const DAILY_LABEL = "\u6bcf\u65e5";
-Object.assign(SCHEDULES.morning, {
-  label: "\u65e9\u9593\u4e8b\u4ef6\u66f4\u65b0",
-  description: "\u66f4\u65b0\u91cd\u5927\u8a0a\u606f\u8207\u76ee\u6a19\u5f0f\u8cc7\u6599\u6536\u96c6\u3002"
-});
-Object.assign(SCHEDULES.market_close, {
-  label: "\u6536\u76e4\u8cc7\u6599\u66f4\u65b0",
-  description: "\u66f4\u65b0\u516c\u958b\u8cc7\u6599\u3001\u8a55\u5206\u8207\u7814\u7a76\u5feb\u53d6\u3002"
-});
-Object.assign(SCHEDULES.evening, {
-  label: "\u665a\u9593\u6cbb\u7406\u66f4\u65b0",
-  description: "\u66f4\u65b0\u91cd\u5927\u8a0a\u606f\u3001\u80a1\u6b0a\u3001\u9055\u898f\u8207\u76ee\u6a19\u5f0f\u6536\u96c6\u3002"
-});
+const FULL_UPDATE_STEPS = [
+  ["tools/source-cache.mjs", "--refresh"],
+  ["tools/update-data.mjs"],
+  ["tools/verify-research-data.mjs", "--retry"],
+  ["tools/targeted-collector.mjs"]
+];
+for (const schedule of Object.values(SCHEDULES)) schedule.steps = FULL_UPDATE_STEPS;
 
 function defaultStatus() {
   return {
@@ -90,7 +60,7 @@ async function loadStatus() {
 
 function normalizeStatus(existing) {
   const defaults = defaultStatus();
-  const frequency = existing.frequency === "daily" ? "daily" : "weekday";
+  const frequency = "weekday";
   const schedules = Object.fromEntries(Object.entries(SCHEDULES).map(([id, config]) => {
     const prior = existing.schedules?.[id] || {};
     const lastRun = prior.last_run ? { ...prior.last_run, label: config.label } : null;
@@ -100,7 +70,7 @@ function normalizeStatus(existing) {
     ...defaults,
     ...existing,
     frequency,
-    frequency_label: frequency === "daily" ? DAILY_LABEL : WEEKDAY_LABEL,
+    frequency_label: "平日",
     schedules
   };
 }

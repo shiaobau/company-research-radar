@@ -1,6 +1,6 @@
 {
   "version": "0.7.0",
-  "generated_at": "2026-07-15T08:24:54.483Z",
+  "generated_at": "2026-07-16T06:07:50.508Z",
   "note": "產業基本面公式化資料。此版納入產業證據層，再與公開財務、營收、重大訊息、風險與來源可追溯度合成。",
   "sources": [
     {
@@ -138,6 +138,34 @@
     }
   ],
   "companies": {
+    "twse-1213": {
+      "ticker": "1213",
+      "market": "TWSE",
+      "industry_template": "consumer_food_retail",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse",
+        "twse_monthly_revenue",
+        "twse_income_statement",
+        "twse_balance_sheet",
+        "twse_material_events",
+        "twse_disclosure_violations",
+        "tfda_open_data"
+      ],
+      "evidence_level": "medium",
+      "traceability_score": 59,
+      "industry_evidence_score": 56,
+      "industry_evidence_completed_count": 5,
+      "industry_evidence_total_count": 5,
+      "revenue_score": 68,
+      "financial_score": 50,
+      "catalyst_score": 53,
+      "risk_score": 76,
+      "score": 60,
+      "rationale": "產業基本面由產業證據 56、營收 68、財務 50、風險 76、催化 53、來源可追溯度 59 加權合成。"
+    },
     "tpex-1595": {
       "ticker": "1595",
       "market": "TPEx",
@@ -186,15 +214,15 @@
       ],
       "evidence_level": "medium",
       "traceability_score": 77,
-      "industry_evidence_score": 61,
+      "industry_evidence_score": 63,
       "industry_evidence_completed_count": 5,
       "industry_evidence_total_count": 5,
       "revenue_score": 50,
       "financial_score": 74,
-      "catalyst_score": 50,
-      "risk_score": 66,
-      "score": 62,
-      "rationale": "產業基本面由產業證據 61、營收 50、財務 74、風險 66、催化 50、來源可追溯度 77 加權合成。"
+      "catalyst_score": 53,
+      "risk_score": 76,
+      "score": 65,
+      "rationale": "產業基本面由產業證據 63、營收 50、財務 74、風險 76、催化 53、來源可追溯度 77 加權合成。"
     },
     "twse-1909": {
       "ticker": "1909",
@@ -465,10 +493,37 @@
       "industry_evidence_total_count": 5,
       "revenue_score": 79,
       "financial_score": 63,
-      "catalyst_score": 62,
+      "catalyst_score": 59,
       "risk_score": 76,
       "score": 69,
-      "rationale": "產業基本面由產業證據 64、營收 79、財務 63、風險 76、催化 62、來源可追溯度 69 加權合成。"
+      "rationale": "產業基本面由產業證據 64、營收 79、財務 63、風險 76、催化 59、來源可追溯度 69 加權合成。"
+    },
+    "twse-3712": {
+      "ticker": "3712",
+      "market": "TWSE",
+      "industry_template": "electronics_hardware",
+      "status": "ok",
+      "source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse",
+        "twse_monthly_revenue",
+        "twse_income_statement",
+        "twse_balance_sheet",
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "medium",
+      "traceability_score": 59,
+      "industry_evidence_score": 55,
+      "industry_evidence_completed_count": 5,
+      "industry_evidence_total_count": 5,
+      "revenue_score": 36,
+      "financial_score": 64,
+      "catalyst_score": 45,
+      "risk_score": 76,
+      "score": 56,
+      "rationale": "產業基本面由產業證據 55、營收 36、財務 64、風險 76、催化 45、來源可追溯度 59 加權合成。"
     },
     "tpex-6167": {
       "ticker": "6167",
@@ -604,10 +659,10 @@
       "industry_evidence_total_count": 5,
       "revenue_score": 81,
       "financial_score": 77,
-      "catalyst_score": 80,
+      "catalyst_score": 77,
       "risk_score": 76,
       "score": 73,
-      "rationale": "產業基本面由產業證據 63、營收 81、財務 77、風險 76、催化 80、來源可追溯度 77 加權合成。"
+      "rationale": "產業基本面由產業證據 63、營收 81、財務 77、風險 76、催化 77、來源可追溯度 77 加權合成。"
     },
     "tw-8279-syngen": {
       "ticker": "8279",

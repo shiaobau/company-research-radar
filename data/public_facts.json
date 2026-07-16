@@ -1,8 +1,50 @@
 {
   "version": "0.7.0",
-  "generated_at": "2026-07-15T08:32:05.509Z",
+  "generated_at": "2026-07-16T06:07:50.508Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
+    {
+      "id": "twse_company_basic",
+      "title": "臺灣證券交易所 OpenAPI：上市公司基本資料",
+      "short_title": "TWSE 公司基本",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+      "note": "用於驗證上市公司股票代號、公司名稱、上市日期、公司網址等基本資料。"
+    },
+    {
+      "id": "twse_monthly_revenue",
+      "title": "臺灣證券交易所 OpenAPI：上市公司每月營業收入彙總表",
+      "short_title": "TWSE 月營收",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "note": "上市公司每月營收、MoM、YoY 與累計 YoY。"
+    },
+    {
+      "id": "twse_income_statement",
+      "title": "臺灣證券交易所 OpenAPI：上市公司綜合損益表",
+      "short_title": "TWSE 損益",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
+      "note": "上市公司一般業綜合損益表，用於毛利率、營益率、淨利率與 EPS。"
+    },
+    {
+      "id": "twse_balance_sheet",
+      "title": "臺灣證券交易所 OpenAPI：上市公司資產負債表",
+      "short_title": "TWSE 資產負債",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap07_L_ci",
+      "note": "上市公司一般業資產負債表，用於流動比率、負債比率與每股淨值。"
+    },
+    {
+      "id": "twse_stock_day",
+      "title": "臺灣證券交易所：個股日成交資訊",
+      "short_title": "TWSE 股價",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY",
+      "note": "上市公司個股日成交資訊，用於計算近一年價格區間、20/60 日趨勢。"
+    },
+    {
+      "id": "twse_major_shareholders",
+      "title": "臺灣證券交易所 OpenAPI：上市公司持股逾 10% 大股東名單",
+      "short_title": "TWSE 大股東",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap02_L",
+      "note": "上市公司持股逾 10% 大股東名單，用於籌碼/股權結構評分。"
+    },
     {
       "id": "tpex_company_basic",
       "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司基本資料",
@@ -39,53 +81,11 @@
       "note": "上櫃公司個股日成交資訊，用於計算近一年價格區間、20/60 日趨勢。"
     },
     {
-      "id": "twse_monthly_revenue",
-      "title": "臺灣證券交易所 OpenAPI：上市公司每月營業收入彙總表",
-      "short_title": "TWSE 月營收",
-      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
-      "note": "上市公司每月營收、MoM、YoY 與累計 YoY。"
-    },
-    {
-      "id": "twse_income_statement",
-      "title": "臺灣證券交易所 OpenAPI：上市公司綜合損益表",
-      "short_title": "TWSE 損益",
-      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
-      "note": "上市公司一般業綜合損益表，用於毛利率、營益率、淨利率與 EPS。"
-    },
-    {
-      "id": "twse_balance_sheet",
-      "title": "臺灣證券交易所 OpenAPI：上市公司資產負債表",
-      "short_title": "TWSE 資產負債",
-      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap07_L_ci",
-      "note": "上市公司一般業資產負債表，用於流動比率、負債比率與每股淨值。"
-    },
-    {
-      "id": "twse_stock_day",
-      "title": "臺灣證券交易所：個股日成交資訊",
-      "short_title": "TWSE 股價",
-      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY",
-      "note": "上市公司個股日成交資訊，用於計算近一年價格區間、20/60 日趨勢。"
-    },
-    {
       "id": "twse_material_events",
       "title": "臺灣證券交易所 OpenAPI：上市公司每日重大訊息",
       "short_title": "TWSE 重大訊息",
       "url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
       "note": "上市公司每日重大訊息，用於催化事件與新聞/重大訊息風險評分。"
-    },
-    {
-      "id": "twse_company_basic",
-      "title": "臺灣證券交易所 OpenAPI：上市公司基本資料",
-      "short_title": "TWSE 公司基本",
-      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
-      "note": "用於驗證上市公司股票代號、公司名稱、上市日期、公司網址等基本資料。"
-    },
-    {
-      "id": "twse_major_shareholders",
-      "title": "臺灣證券交易所 OpenAPI：上市公司持股逾 10% 大股東名單",
-      "short_title": "TWSE 大股東",
-      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap02_L",
-      "note": "上市公司持股逾 10% 大股東名單，用於籌碼/股權結構評分。"
     },
     {
       "id": "tpex_major_shareholders",
@@ -96,10 +96,58 @@
     }
   ],
   "companies": {
+    "twse-1213": {
+      "ticker": "1213",
+      "market": "TWSE",
+      "generated_at": "2026-07-16T06:07:50.508Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：食品工業；追蹤模板：消費、食品、零售與生活。",
+          "source_ids": [
+            "twse_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 5.66%；月增 10.67%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 -2%；營益率 -16.28%；EPS -0.37。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 7.7；區間報酬：20日 -10.47%；60日 -17.12%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：旭順食品股份有限公司、寶亞有限公司。",
+          "source_ids": [
+            "twse_major_shareholders"
+          ]
+        }
+      ]
+    },
     "tpex-1595": {
       "ticker": "1595",
       "market": "TPEx",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "official_classification",
@@ -139,7 +187,7 @@
     "tw-1707-grapeking": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -161,17 +209,9 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-15 收盤 91.9；區間報酬：20日 -10.78%；60日 -22.45%。",
+          "value": "2026-07-16 收盤 92.5；區間報酬：20日 -10.19%；60日 -21.61%。",
           "source_ids": [
             "twse_stock_day"
-          ]
-        },
-        {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-07-14：針對115年7月14日工商時報報導「葡萄王 全年營收戰百億」 澄清說明。",
-          "source_ids": [
-            "twse_material_events"
           ]
         }
       ]
@@ -179,7 +219,7 @@
     "twse-1909": {
       "ticker": "1909",
       "market": "TWSE",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "official_classification",
@@ -209,7 +249,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-02-26 收盤 9.93；區間報酬：20日 -0.7%；60日 -2.65%。",
+          "value": "2026-07-16 收盤 10.4；區間報酬：20日 3.48%；60日 10.99%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -227,7 +267,7 @@
     "twse-2301": {
       "ticker": "2301",
       "market": "TWSE",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "official_classification",
@@ -257,7 +297,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-15 收盤 216；區間報酬：20日 4.1%；60日 33.33%。",
+          "value": "2026-01-30 收盤 164；區間報酬：20日 -1.8%；60日 -2.96%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -267,7 +307,7 @@
     "tw-2303-umc": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -289,7 +329,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-15 收盤 166；區間報酬：20日 17.31%；60日 127.4%。",
+          "value": "2026-07-16 收盤 160；區間報酬：20日 13.48%；60日 247.07%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -297,7 +337,7 @@
         {
           "id": "latest_disclosure",
           "label": "近期重大訊息",
-          "value": "2026-07-14：本公司召開2026年第二季法人說明會。",
+          "value": "2026-07-15：代子公司宏誠創業投資(股)公司公告處分台灣半導體(股)公司普通股之相關資料。",
           "source_ids": [
             "twse_material_events"
           ]
@@ -307,7 +347,7 @@
     "tw-2330-tsmc": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -339,7 +379,7 @@
     "twse-2344": {
       "ticker": "2344",
       "market": "TWSE",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "official_classification",
@@ -369,7 +409,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-15 收盤 180.5；區間報酬：20日 -4.5%；60日 105.58%。",
+          "value": "2026-07-16 收盤 172；區間報酬：20日 0%；60日 0%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -387,7 +427,7 @@
     "twse-2345": {
       "ticker": "2345",
       "market": "TWSE",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "official_classification",
@@ -417,7 +457,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-15 收盤 2,340；區間報酬：20日 -3.7%；60日 13.04%。",
+          "value": "2026-05-29 收盤 2,430；區間報酬：20日 0%；60日 0%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -427,7 +467,7 @@
     "tw-2454-mediatek": {
       "ticker": "2454",
       "market": "TWSE",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -449,7 +489,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-15 收盤 3,740；區間報酬：20日 -16.33%；60日 94.29%。",
+          "value": "2026-07-16 收盤 3,700；區間報酬：20日 -18.86%；60日 94.74%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -459,7 +499,7 @@
     "twse-3044": {
       "ticker": "3044",
       "market": "TWSE",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "official_classification",
@@ -489,7 +529,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-15 收盤 426；區間報酬：20日 -18.08%；60日 3.52%。",
+          "value": "2026-07-16 收盤 422；區間報酬：20日 38.59%；60日 0%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -499,7 +539,7 @@
     "tw-3164-genmont": {
       "ticker": "3164",
       "market": "TWSE",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -517,21 +557,13 @@
             "twse_income_statement",
             "twse_balance_sheet"
           ]
-        },
-        {
-          "id": "market_snapshot",
-          "label": "股價資料",
-          "value": "2026-07-15 收盤 16.6；區間報酬：20日 1.22%；60日 -7.52%。",
-          "source_ids": [
-            "twse_stock_day"
-          ]
         }
       ]
     },
     "tw-3711-aseh": {
       "ticker": "3711",
       "market": "TWSE",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -553,17 +585,9 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2025-11-28 收盤 229.5；區間報酬：20日 -7.27%；60日 47.12%。",
+          "value": "2026-07-16 收盤 682；區間報酬：20日 15.2%；60日 47.78%。",
           "source_ids": [
             "twse_stock_day"
-          ]
-        },
-        {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-07-14：代子公司矽品精密工業(股)公司公告取得營業用機器設備達十億元。",
-          "source_ids": [
-            "twse_material_events"
           ]
         },
         {
@@ -576,10 +600,50 @@
         }
       ]
     },
+    "twse-3712": {
+      "ticker": "3712",
+      "market": "TWSE",
+      "generated_at": "2026-07-16T06:07:50.508Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：電腦及週邊設備；追蹤模板：電子硬體與零組件。",
+          "source_ids": [
+            "twse_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 -85.23%；月增 -40.93%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 37.74%；營益率 31.6%；EPS -1.94。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：富士臨國際投資股份有限公司。",
+          "source_ids": [
+            "twse_major_shareholders"
+          ]
+        }
+      ]
+    },
     "tpex-6167": {
       "ticker": "6167",
       "market": "TPEx",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "official_classification",
@@ -607,6 +671,14 @@
           ]
         },
         {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 11.6；區間報酬：20日 -0.85%；60日 -18.31%。",
+          "source_ids": [
+            "tpex_trading_stock"
+          ]
+        },
+        {
           "id": "major_shareholders",
           "label": "大股東資料",
           "value": "持股逾 10% 大股東：佰鴻工業股份有限公司。",
@@ -619,7 +691,7 @@
     "tpex-6171": {
       "ticker": "6171",
       "market": "TPEx",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "official_classification",
@@ -667,7 +739,7 @@
     "tw-6488-globalwafers": {
       "ticker": "6488",
       "market": "TPEx",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -707,7 +779,7 @@
     "tpex-6735": {
       "ticker": "6735",
       "market": "TPEx",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "official_classification",
@@ -735,6 +807,14 @@
           ]
         },
         {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-15 收盤 75.3；區間報酬：20日 -17.88%；60日 -0.79%。",
+          "source_ids": [
+            "tpex_trading_stock"
+          ]
+        },
+        {
           "id": "major_shareholders",
           "label": "大股東資料",
           "value": "持股逾 10% 大股東：陳梅開發投資有限公司。",
@@ -747,7 +827,7 @@
     "tw-7780-daiken": {
       "ticker": "7780",
       "market": "TWSE",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -767,22 +847,6 @@
           ]
         },
         {
-          "id": "market_snapshot",
-          "label": "股價資料",
-          "value": "2026-07-15 收盤 17.85；區間報酬：20日 -7.75%；60日 -12.29%。",
-          "source_ids": [
-            "twse_stock_day"
-          ]
-        },
-        {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-07-14：代澳洲孫公司Daiken Investment One Australia Pty Ltd 公告擬取得澳洲不動產。",
-          "source_ids": [
-            "twse_material_events"
-          ]
-        },
-        {
           "id": "major_shareholders",
           "label": "大股東資料",
           "value": "持股逾 10% 大股東：尚凡國際創新科技股份有限公司。",
@@ -795,7 +859,7 @@
     "tw-8279-syngen": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "monthly_revenue",
@@ -835,7 +899,7 @@
     "tw-8436-tci": {
       "ticker": "8436",
       "market": "TPEx",
-      "generated_at": "2026-07-15T08:32:05.509Z",
+      "generated_at": "2026-07-16T06:07:50.508Z",
       "facts": [
         {
           "id": "monthly_revenue",

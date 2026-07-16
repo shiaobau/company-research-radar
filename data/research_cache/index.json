@@ -1,19 +1,19 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-07-16T05:40:25.086Z",
+  "generated_at": "2026-07-16T05:56:54.115Z",
   "collection_scope": "targeted_research_company",
   "source_status": [
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-16T01:56:57.043Z",
+      "fetched_at": "2026-07-16T05:53:58.458Z",
       "row_count": 87,
       "available": true
     },
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-16T01:56:57.535Z",
+      "fetched_at": "2026-07-16T05:53:58.954Z",
       "row_count": 75,
       "available": true
     }
@@ -26,7 +26,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/1213.json"
     },
     {
@@ -36,7 +36,7 @@
       "market": "TPEx",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/1595.json"
     },
     {
@@ -46,7 +46,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/1707.json"
     },
     {
@@ -56,7 +56,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/1909.json"
     },
     {
@@ -66,7 +66,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/2301.json"
     },
     {
@@ -76,7 +76,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/2303.json"
     },
     {
@@ -86,7 +86,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/2330.json"
     },
     {
@@ -96,7 +96,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/2344.json"
     },
     {
@@ -106,7 +106,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/2345.json"
     },
     {
@@ -116,7 +116,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/2454.json"
     },
     {
@@ -126,7 +126,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/3044.json"
     },
     {
@@ -136,7 +136,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/3164.json"
     },
     {
@@ -146,7 +146,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/3711.json"
     },
     {
@@ -156,7 +156,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/3712.json"
     },
     {
@@ -166,7 +166,7 @@
       "market": "TPEx",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/6167.json"
     },
     {
@@ -176,7 +176,7 @@
       "market": "TPEx",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/6171.json"
     },
     {
@@ -186,7 +186,7 @@
       "market": "TPEx",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/6488.json"
     },
     {
@@ -196,7 +196,7 @@
       "market": "TPEx",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/6735.json"
     },
     {
@@ -206,7 +206,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/7780.json"
     },
     {
@@ -216,7 +216,7 @@
       "market": "TPEx",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/8279.json"
     },
     {
@@ -226,7 +226,7 @@
       "market": "TPEx",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-16T05:40:25.086Z",
+      "collected_at": "2026-07-16T05:56:54.115Z",
       "cache_path": "data/research_cache/8436.json"
     }
   ],

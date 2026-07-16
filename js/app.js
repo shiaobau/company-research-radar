@@ -17,6 +17,7 @@ const state = {
   universe: { companies: [] },
   researchCache: { index: { companies: [] }, records: {}, pending: new Set() },
   schedulerStatus: { schedules: {}, current_run: null },
+  researchStatus: { summary: {}, companies: {} },
   referenceSources: [],
   selectedId: null,
   managementMode: false,
@@ -44,8 +45,9 @@ Promise.all([
   fetch("data/public_facts.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
   fetch("data/listed_companies_universe.json").then((response) => response.json()).catch(() => ({ companies: [] })),
   fetch("data/research_cache/index.json", { cache: "no-store" }).then((response) => response.json()).catch(() => ({ companies: [] })),
-  fetch("data/scheduler_status.json").then((response) => response.json()).catch(() => ({ schedules: {}, current_run: null }))
-]).then(([templates, definitions, rules, companies, signals, marketData, revenueData, financialData, catalystData, ownershipData, riskData, industryEvidenceData, industryData, dataStatus, publicFactsData, universe, researchCacheIndex, schedulerStatus]) => {
+  fetch("data/scheduler_status.json", { cache: "no-store" }).then((response) => response.json()).catch(() => ({ schedules: {}, current_run: null })),
+  fetch("data/research_status.json", { cache: "no-store" }).then((response) => response.json()).catch(() => ({ summary: {}, companies: {} }))
+]).then(([templates, definitions, rules, companies, signals, marketData, revenueData, financialData, catalystData, ownershipData, riskData, industryEvidenceData, industryData, dataStatus, publicFactsData, universe, researchCacheIndex, schedulerStatus, researchStatus]) => {
   state.templates = templates.industries;
   state.definitions = definitions.fields;
   state.rules = rules;
@@ -63,6 +65,7 @@ Promise.all([
   state.universe = universe;
   state.researchCache.index = researchCacheIndex;
   state.schedulerStatus = schedulerStatus;
+  state.researchStatus = researchStatus;
   state.referenceSources = [
     ...(companies.reference_sources || []),
     ...(marketData.sources || []),
@@ -595,95 +598,41 @@ function schedulerRunLabel(run) {
   return `失敗 ${new Date(run.finished_at || run.started_at).toLocaleString("zh-TW")}`;
 }
 
-function renderLegacySchedulerPanel() {
-  const panel = $("#scheduler-panel");
-  if (!panel) return;
-  const schedules = state.schedulerStatus.schedules || {};
-  const order = ["morning", "market_close", "evening"];
-  const active = state.schedulerStatus.current_run;
-  const frequency = state.schedulerStatus.frequency === "daily" ? "daily" : "weekday";
-  const frequencyLabel = frequency === "daily" ? "每日" : "平日";
-  panel.innerHTML = `
-    <details class="scheduler-details">
-      <summary>
-        <span>
-          <span class="eyebrow">Automatic Updates</span>
-          <strong>每日研究更新</strong>
-        </span>
-        <span class="pill">${active ? "更新中" : `${frequencyLabel}更新`}</span>
-      </summary>
-      <div class="scheduler-content">
-        <div class="scheduler-heading">
-      <div>
-        <p class="eyebrow">Automatic Updates</p>
-        <h2>每日研究更新</h2>
-      </div>
-      <div class="scheduler-mode" role="group" aria-label="更新頻率">
-        <button class="scheduler-mode-option ${frequency === "weekday" ? "active" : ""}" type="button" data-scheduler-frequency="weekday" aria-pressed="${frequency === "weekday"}">平日</button>
-        <button class="scheduler-mode-option ${frequency === "daily" ? "active" : ""}" type="button" data-scheduler-frequency="daily" aria-pressed="${frequency === "daily"}">每日</button>
-      </div>
-    </div>
-    <div class="scheduler-grid">
-      ${order.map((id) => {
-        const schedule = schedules[id] || {};
-        const run = schedule.last_run;
-        const stateLabel = run ? schedulerRunLabel(run) : `預定${frequencyLabel} ${schedule.time || "--:--"}`;
-        return `
-          <article class="scheduler-card ${run?.status || "idle"}">
-            <div><strong>${RadarRenderers.escapeHtml(schedule.time || "--:--")}</strong><span>${RadarRenderers.escapeHtml(schedule.label || id)}</span></div>
-            <p>${RadarRenderers.escapeHtml(schedule.description || "")}</p>
-            <small>${RadarRenderers.escapeHtml(stateLabel)}</small>
-          </article>
-        `;
-      }).join("")}
-    </div>
-      </div>
-    </details>
-  `;
-}
-
 function renderSchedulerPanel() {
   const panel = $("#scheduler-panel");
   if (!panel) return;
   const schedules = state.schedulerStatus.schedules || {};
-  const order = ["morning", "market_close", "evening"];
+  const order = ["morning", "evening"];
   const active = state.schedulerStatus.current_run;
   const localServer = ["127.0.0.1", "localhost"].includes(window.location.hostname);
-  const stateLabel = active ? "更新中" : "平日自動更新";
+  const coverage = state.researchStatus.summary || {};
+  const incomplete = Object.values(state.researchStatus.companies || {}).filter((company) => company.status === "incomplete");
+  const stateLabel = active ? "更新中" : incomplete.length ? "資料待補" : "完成分析";
   panel.innerHTML = `
-    <details class="scheduler-details" open>
-      <summary>
-        <span>
-          <span class="eyebrow">Automatic Updates</span>
-          <strong>平日自動更新</strong>
-        </span>
-        <span class="pill">${stateLabel}</span>
-      </summary>
-      <div class="scheduler-content">
-        <div class="scheduler-heading">
-          <div>
-            <p class="eyebrow">Automatic Updates</p>
-            <h2>平日自動更新</h2>
-            <p class="muted">三個時段依序更新公開資料、研究資料與治理資料。</p>
-          </div>
-          <button class="ghost-button" type="button" data-run-manual-update ${localServer ? "" : "disabled"} title="${localServer ? "執行與晚間治理更新相同的完整更新" : "手動更新僅能在本機服務執行"}">手動完整更新</button>
-        </div>
+    <div class="update-dashboard">
+      <section class="update-section">
+        <div><p class="eyebrow">Automatic</p><h2>自動更新</h2></div>
+        <p class="muted">平日早晚各一次完整更新，包含公開來源、評分資料、MOPS 歷史事件與完整性驗證。</p>
         <div class="scheduler-grid">
           ${order.map((id) => {
             const schedule = schedules[id] || {};
             const run = schedule.last_run;
             const label = run ? schedulerRunLabel(run) : `預定平日 ${schedule.time || "--:--"}`;
-            return `
-              <article class="scheduler-card ${run?.status || "idle"}">
-                <div><strong>${RadarRenderers.escapeHtml(schedule.time || "--:--")}</strong><span>${RadarRenderers.escapeHtml(schedule.label || id)}</span></div>
-                <p>${RadarRenderers.escapeHtml(schedule.description || "")}</p>
-                <small>${RadarRenderers.escapeHtml(label)}</small>
-              </article>
-            `;
+            return `<article class="scheduler-card ${run?.status || "idle"}"><div><strong>${RadarRenderers.escapeHtml(schedule.time || "--:--")}</strong><span>${RadarRenderers.escapeHtml(schedule.label || id)}</span></div><small>${RadarRenderers.escapeHtml(label)}</small></article>`;
           }).join("")}
         </div>
-      </div>
-    </details>
+      </section>
+      <section class="update-section update-manual">
+        <div><p class="eyebrow">Manual</p><h2>手動更新</h2></div>
+        <p class="muted">立即執行與平日排程相同的完整更新與一次補抓。</p>
+        <button class="ghost-button" type="button" data-run-manual-update ${localServer ? "" : "disabled"} title="${localServer ? "更新後會重新驗證所有必要評分維度" : "手動更新僅能在本機服務執行"}">執行完整更新</button>
+      </section>
+      <section class="update-section update-status">
+        <div><p class="eyebrow">Status</p><h2>更新情形 <span class="pill">${stateLabel}</span></h2></div>
+        <p class="muted">${active ? `目前正在${RadarRenderers.escapeHtml(active.label || "更新")}` : `完成分析 ${coverage.complete_count || 0}/${coverage.total || 0} 家`}</p>
+        ${incomplete.length ? `<div class="update-missing-list">${incomplete.map((company) => `<span title="${RadarRenderers.escapeHtml((company.missing_dimensions || []).map((item) => item.label).join("、"))}">${RadarRenderers.escapeHtml(`${company.ticker} ${company.name}`)}：${RadarRenderers.escapeHtml((company.missing_dimensions || []).map((item) => item.label).join("、"))}</span>`).join("")}</div>` : "<p class=\"muted\">目前研究公司均已通過七項必要維度驗證。</p>"}
+      </section>
+    </div>
   `;
 }
 
@@ -695,7 +644,7 @@ async function runManualFullUpdate() {
     }
     const payload = await response.json();
     if (!response.ok) throw new Error(payload.message || "手動更新無法啟動");
-    setResearchStatus("手動完整更新已開始，完成後會更新三個時段的狀態。");
+    setResearchStatus("手動完整更新已開始，完成後會驗證所有評分維度。");
     window.setTimeout(refreshSchedulerStatus, 800);
     window.setTimeout(refreshSchedulerStatus, 3500);
   } catch (error) {
@@ -708,31 +657,11 @@ async function refreshSchedulerStatus() {
     const response = await fetch("data/scheduler_status.json", { cache: "no-store" });
     if (!response.ok) return;
     state.schedulerStatus = await response.json();
+    const researchResponse = await fetch("data/research_status.json", { cache: "no-store" });
+    if (researchResponse.ok) state.researchStatus = await researchResponse.json();
     renderSchedulerPanel();
   } catch {
     // The dashboard can still be opened without a configured local scheduler.
-  }
-}
-
-async function updateSchedulerFrequency(frequency) {
-  if (!new Set(["weekday", "daily"]).has(frequency)) return;
-  try {
-    const response = await fetch("/api/scheduler/frequency", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ frequency })
-    });
-    if (!response.headers.get("content-type")?.includes("application/json")) {
-      throw new Error("排程只能在本機的 127.0.0.1:8768 調整；GitHub Pages 無法管理 Windows 排程。");
-    }
-    const payload = await response.json();
-    if (!response.ok) throw new Error(payload.message || "排程設定失敗");
-    state.schedulerStatus.frequency = frequency;
-    state.schedulerStatus.frequency_label = frequency === "daily" ? "每日" : "平日";
-    renderSchedulerPanel();
-    await refreshSchedulerStatus();
-  } catch (error) {
-    setResearchStatus(`無法更新排程：${error.message}`);
   }
 }
 
@@ -869,11 +798,6 @@ function initControls() {
   });
 
   document.addEventListener("click", (event) => {
-    const schedulerFrequency = event.target?.dataset?.schedulerFrequency;
-    if (schedulerFrequency) {
-      updateSchedulerFrequency(schedulerFrequency);
-      return;
-    }
     if (event.target.closest("[data-run-manual-update]")) {
       runManualFullUpdate();
       return;
@@ -1140,6 +1064,24 @@ function dataCoverageLabel(company) {
   return `客觀資料 ${status.completed_count}/${status.total_count}`;
 }
 
+function researchReadiness(company) {
+  const status = state.researchStatus.companies?.[company.id];
+  if (status) return status;
+  const dataStatus = state.dataStatus.companies?.[company.id];
+  const missing = [
+    ["catalyst", "催化事件"], ["market", "股價位置/趨勢"], ["revenue", "營收動能"],
+    ["financial", "現金/獲利品質"], ["ownership", "籌碼/股權結構"], ["risk", "新聞/重大訊息風險"], ["industry", "產業基本面"]
+  ].filter(([id]) => dataStatus?.[id] !== "ok").map(([id, label]) => ({ id, label }));
+  return { status: missing.length ? "incomplete" : "complete", missing_dimensions: missing };
+}
+
+function readinessLabel(company) {
+  const readiness = researchReadiness(company);
+  if (readiness.status === "complete") return "完成分析";
+  if (readiness.status === "analyzing") return "分析中";
+  return "資料待補";
+}
+
 function filteredCompanies() {
   const query = $("#search-input").value.trim().toLowerCase();
   const industry = $("#industry-filter").value;
@@ -1154,7 +1096,7 @@ function filteredCompanies() {
     const score = RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets()).total;
     return (industry === "all" || company.industry_template === industry)
       && (!query || companyText(company).includes(query))
-      && (minimumScore === "all" || score >= Number(minimumScore));
+      && (minimumScore === "all" || (Number.isFinite(score) && score >= Number(minimumScore)));
   });
   const researchCompanies = matches.filter((company) => !company.__candidate);
   const candidates = matches.filter((company) => company.__candidate);
@@ -1207,7 +1149,9 @@ function renderSummary(companies) {
   {
   const scoredCompanies = companies.filter((company) => !company.__candidate);
   const candidateOnlyCount = companies.length - scoredCompanies.length;
-  const scores = scoredCompanies.map((company) => RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets()).total);
+  const scores = scoredCompanies
+    .map((company) => RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets()).total)
+    .filter(Number.isFinite);
   const average = scores.length ? Math.round(scores.reduce((sum, score) => sum + score, 0) / scores.length) : "尚未評分";
   const activeSignals = scoredCompanies.flatMap(objectiveSignalsFor).length;
   const dataCoverage = scoredCompanies.reduce((sum, company) => sum + (state.dataStatus.companies?.[company.id]?.completed_count || 0), 0);
@@ -1219,7 +1163,8 @@ function renderSummary(companies) {
   $("#last-updated").textContent = `資料更新：${formatDashboardTimestamp()}`;
   $("#summary-grid").innerHTML = [
     ["平均評分", average],
-    ["已正式評分", scoredCompanies.length],
+    ["完成分析", scores.length],
+    ["資料待補", scoredCompanies.length - scores.length],
     ["待建立研究檔", candidateOnlyCount],
     ["資料覆蓋", scoredCompanies.length ? `${dataCoverage}/${totalCoverage}` : "尚未接資料"],
     ["追蹤訊號", activeSignals]
@@ -1282,13 +1227,17 @@ function renderCompanyList(companies) {
     const sourceIndex = sourceIndexFor(company);
     const summary = renderPublicFacts(company, sourceIndex, true);
 
+    const readiness = researchReadiness(company);
+    const missingLabels = (readiness.missing_dimensions || []).map((item) => item.label).join("、");
+    const scoreValue = Number.isFinite(score.total) ? score.total : "待補";
     return `
-      <article class="company-card ${company.id === state.selectedId ? "active" : ""}" data-id="${company.id}" tabindex="0" style="--score-deg:${score.total * 3.6}deg">
-        <div class="score-ring"><span>${score.total}</span></div>
+      <article class="company-card ${company.id === state.selectedId ? "active" : ""} ${score.complete ? "" : "incomplete"}" data-id="${company.id}" tabindex="0" style="--score-deg:${Number.isFinite(score.total) ? score.total * 3.6 : 0}deg">
+        <div class="score-ring"><span>${scoreValue}</span></div>
         <div>
-          <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.band.label)}</p>
+          <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.complete ? score.band.label : readinessLabel(company))}</p>
           <h3>${RadarRenderers.escapeHtml(company.name)}</h3>
           <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(dataCoverageLabel(company))}</p>
+          ${score.complete ? "" : `<p class="muted">缺少：${RadarRenderers.escapeHtml(missingLabels || "評分資料")}</p>`}
           <div class="card-tags">${displayTags(company).map((tag) => `<span class="tag">${RadarRenderers.escapeHtml(tag)}</span>`).join("")}</div>
         </div>
         <div class="mini-fields">${summary}${renderPublicFactSourceTooltips(company, sourceIndex)}</div>
@@ -1422,9 +1371,10 @@ function renderDetail() {
         <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(dataCoverageLabel(company))}${company.legal_name ? ` · ${RadarRenderers.escapeHtml(company.legal_name)}` : ""}</p>
         <p class="muted">資料更新：${RadarRenderers.escapeHtml(company.last_reviewed || "未提供")}</p>
       </div>
-      <span class="pill">${score.total}</span>
+      <span class="pill">${Number.isFinite(score.total) ? score.total : readinessLabel(company)}</span>
     </div>
     ${publicFacts}
+    ${score.complete ? "" : `<p class="risk">尚未產生總分。缺少：${RadarRenderers.escapeHtml(score.missingDimensions.join("、"))}</p>`}
     <div class="score-breakdown">${RadarRenderers.renderScoreRows(score)}</div>
     <details class="detail-fold">
       <summary>公開資料快照</summary>

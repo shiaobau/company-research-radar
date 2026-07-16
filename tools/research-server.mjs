@@ -119,10 +119,15 @@ async function startResearch(tickers) {
     await runCommand(nodePath, ["tools/promote-candidates.mjs", `--tickers=${tickers.join(",")}`], (output) => { task.output = output; }, 30000);
     task.message = "更新公開資料中";
     await runCommand(nodePath, ["tools/update-data.mjs", `--tickers=${tickers.join(",")}`], (output) => { task.output = output; }, 180000);
+    task.message = "驗證評分資料中";
+    const verificationOutput = await runCommand(nodePath, ["tools/verify-research-data.mjs", `--tickers=${tickers.join(",")}`, "--retry"], (output) => { task.output = output; }, 240000);
+    const verification = JSON.parse(verificationOutput);
     task.message = "整理公司公告中";
     await runCommand(nodePath, ["tools/targeted-collector.mjs", `--tickers=${tickers.join(",")}`], (output) => { task.output = output; }, 90000);
     task.status = "done";
-    task.message = `研究流程完成：${tickers.join(", ")}`;
+    task.message = verification.incomplete_count
+      ? `研究流程已完成；${verification.incomplete_count} 家資料待補。`
+      : `完成分析：${tickers.join(", ")}`;
     task.finished_at = new Date().toISOString();
   } catch (error) {
     task.status = "error";
@@ -155,7 +160,7 @@ async function startCollector(tickers) {
 async function startManualFullUpdate() {
   schedulerTask = {
     status: "running",
-    message: "Running the evening governance update.",
+    message: "Running the complete manual update.",
     started_at: new Date().toISOString(),
     finished_at: null,
     output: ""
@@ -211,36 +216,6 @@ async function handleApi(request, response) {
     }
     startManualFullUpdate();
     json(response, 202, { status: "running", message: "Manual full update started." });
-    return;
-  }
-
-  if (request.method === "POST" && request.url.startsWith("/api/scheduler/frequency")) {
-    if (task.status === "running" || collectorTask.status === "running") {
-      json(response, 409, task.status === "running" ? task : collectorTask);
-      return;
-    }
-    try {
-      const payload = JSON.parse(await readBody(request) || "{}");
-      const frequency = String(payload.frequency || "").trim();
-      if (!new Set(["weekday", "daily"]).has(frequency)) {
-        json(response, 400, { status: "error", message: "frequency 必須是 weekday 或 daily" });
-        return;
-      }
-      const output = await runCommand("powershell.exe", [
-        "-NoProfile",
-        "-ExecutionPolicy",
-        "Bypass",
-        "-File",
-        "tools/register-scheduled-update.ps1",
-        "-Action",
-        "install",
-        "-Frequency",
-        frequency
-      ], () => {}, 90000);
-      json(response, 200, { status: "done", frequency, message: `已設定為${frequency === "daily" ? "每日" : "平日"}更新`, output });
-    } catch (error) {
-      json(response, 500, { status: "error", message: error.message });
-    }
     return;
   }
 

@@ -1,8 +1,21 @@
 {
   "version": "0.7.0",
-  "generated_at": "2026-07-15T08:24:54.483Z",
+  "generated_at": "2026-07-16T06:07:50.508Z",
   "note": "由 tools/update-data.mjs 產生。資料來源為公開市場 API；若端點缺漏，前端會退回人工初評並標示資料狀態。",
   "companies": {
+    "twse-1213": {
+      "ticker": "1213",
+      "name": "大飲",
+      "catalyst": "ok",
+      "market": "ok",
+      "revenue": "ok",
+      "financial": "ok",
+      "ownership": "ok",
+      "risk": "ok",
+      "industry": "ok",
+      "completed_count": 7,
+      "total_count": 7
+    },
     "tpex-1595": {
       "ticker": "1595",
       "name": "川寶",
@@ -137,13 +150,13 @@
       "ticker": "3164",
       "name": "景岳",
       "catalyst": "ok",
-      "market": "ok",
+      "market": "missing",
       "revenue": "ok",
       "financial": "ok",
       "ownership": "ok",
       "risk": "ok",
       "industry": "ok",
-      "completed_count": 7,
+      "completed_count": 6,
       "total_count": 7
     },
     "tw-3711-aseh": {
@@ -159,9 +172,9 @@
       "completed_count": 7,
       "total_count": 7
     },
-    "tpex-6167": {
-      "ticker": "6167",
-      "name": "久正",
+    "twse-3712": {
+      "ticker": "3712",
+      "name": "永崴投控",
       "catalyst": "ok",
       "market": "missing",
       "revenue": "ok",
@@ -170,6 +183,19 @@
       "risk": "ok",
       "industry": "ok",
       "completed_count": 6,
+      "total_count": 7
+    },
+    "tpex-6167": {
+      "ticker": "6167",
+      "name": "久正",
+      "catalyst": "ok",
+      "market": "ok",
+      "revenue": "ok",
+      "financial": "ok",
+      "ownership": "ok",
+      "risk": "ok",
+      "industry": "ok",
+      "completed_count": 7,
       "total_count": 7
     },
     "tpex-6171": {
@@ -202,19 +228,6 @@
       "ticker": "6735",
       "name": "美達科技",
       "catalyst": "ok",
-      "market": "missing",
-      "revenue": "ok",
-      "financial": "ok",
-      "ownership": "ok",
-      "risk": "ok",
-      "industry": "ok",
-      "completed_count": 6,
-      "total_count": 7
-    },
-    "tw-7780-daiken": {
-      "ticker": "7780",
-      "name": "大研生醫",
-      "catalyst": "ok",
       "market": "ok",
       "revenue": "ok",
       "financial": "ok",
@@ -222,6 +235,19 @@
       "risk": "ok",
       "industry": "ok",
       "completed_count": 7,
+      "total_count": 7
+    },
+    "tw-7780-daiken": {
+      "ticker": "7780",
+      "name": "大研生醫",
+      "catalyst": "ok",
+      "market": "missing",
+      "revenue": "ok",
+      "financial": "ok",
+      "ownership": "ok",
+      "risk": "ok",
+      "industry": "ok",
+      "completed_count": 6,
       "total_count": 7
     },
     "tw-8279-syngen": {

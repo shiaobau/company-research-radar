@@ -1,0 +1,258 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-07-16T06:08:38.641Z",
+  "note": "七個必要評分維度皆有公開資料才會產生總分；缺項公司會在更新流程中重試一次。",
+  "summary": {
+    "total": 21,
+    "complete_count": 18,
+    "incomplete_count": 3
+  },
+  "companies": {
+    "twse-1213": {
+      "id": "twse-1213",
+      "ticker": "1213",
+      "name": "大飲",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tpex-1595": {
+      "id": "tpex-1595",
+      "ticker": "1595",
+      "name": "川寶",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tw-1707-grapeking": {
+      "id": "tw-1707-grapeking",
+      "ticker": "1707",
+      "name": "葡萄王生技",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "twse-1909": {
+      "id": "twse-1909",
+      "ticker": "1909",
+      "name": "榮成",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "twse-2301": {
+      "id": "twse-2301",
+      "ticker": "2301",
+      "name": "光寶科",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tw-2303-umc": {
+      "id": "tw-2303-umc",
+      "ticker": "2303",
+      "name": "聯電",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tw-2330-tsmc": {
+      "id": "tw-2330-tsmc",
+      "ticker": "2330",
+      "name": "台積電",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "twse-2344": {
+      "id": "twse-2344",
+      "ticker": "2344",
+      "name": "華邦電",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "twse-2345": {
+      "id": "twse-2345",
+      "ticker": "2345",
+      "name": "智邦",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tw-2454-mediatek": {
+      "id": "tw-2454-mediatek",
+      "ticker": "2454",
+      "name": "聯發科",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "twse-3044": {
+      "id": "twse-3044",
+      "ticker": "3044",
+      "name": "健鼎",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tw-3164-genmont": {
+      "id": "tw-3164-genmont",
+      "ticker": "3164",
+      "name": "景岳",
+      "status": "incomplete",
+      "missing_dimensions": [
+        {
+          "id": "market",
+          "label": "股價位置/趨勢"
+        }
+      ],
+      "completed_count": 6,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tw-3711-aseh": {
+      "id": "tw-3711-aseh",
+      "ticker": "3711",
+      "name": "日月光投控",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "twse-3712": {
+      "id": "twse-3712",
+      "ticker": "3712",
+      "name": "永崴投控",
+      "status": "incomplete",
+      "missing_dimensions": [
+        {
+          "id": "market",
+          "label": "股價位置/趨勢"
+        }
+      ],
+      "completed_count": 6,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tpex-6167": {
+      "id": "tpex-6167",
+      "ticker": "6167",
+      "name": "久正",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tpex-6171": {
+      "id": "tpex-6171",
+      "ticker": "6171",
+      "name": "大城地產",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tw-6488-globalwafers": {
+      "id": "tw-6488-globalwafers",
+      "ticker": "6488",
+      "name": "環球晶",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tpex-6735": {
+      "id": "tpex-6735",
+      "ticker": "6735",
+      "name": "美達科技",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tw-7780-daiken": {
+      "id": "tw-7780-daiken",
+      "ticker": "7780",
+      "name": "大研生醫",
+      "status": "incomplete",
+      "missing_dimensions": [
+        {
+          "id": "market",
+          "label": "股價位置/趨勢"
+        }
+      ],
+      "completed_count": 6,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tw-8279-syngen": {
+      "id": "tw-8279-syngen",
+      "ticker": "8279",
+      "name": "生展",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    },
+    "tw-8436-tci": {
+      "id": "tw-8436-tci",
+      "ticker": "8436",
+      "name": "大江生醫",
+      "status": "complete",
+      "missing_dimensions": [],
+      "completed_count": 7,
+      "total_count": 7,
+      "checked_at": "2026-07-16T06:08:38.641Z",
+      "retried": true
+    }
+  }
+}
