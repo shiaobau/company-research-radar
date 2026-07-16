@@ -287,19 +287,22 @@ async function handleApi(request, response) {
   }
 
   if (request.method === "DELETE" && request.url.startsWith("/api/company")) {
-    if (task.status === "running") {
-      json(response, 409, task);
+    if (task.status === "running" || collectorTask.status === "running" || schedulerTask.status === "running") {
+      json(response, 409, task.status === "running" ? task : collectorTask.status === "running" ? collectorTask : schedulerTask);
       return;
     }
     const url = new URL(request.url, `http://127.0.0.1:${port}`);
-    const ticker = String(url.searchParams.get("ticker") || "").trim();
-    if (!/^\d{4}$/.test(ticker)) {
-      json(response, 400, { status: "error", message: "請提供四碼股票代號" });
+    const tickers = [...new Set(String(url.searchParams.get("tickers") || url.searchParams.get("ticker") || "")
+      .split(",")
+      .map((ticker) => ticker.trim())
+      .filter((ticker) => /^\d{4}$/.test(ticker)))];
+    if (!tickers.length) {
+      json(response, 400, { status: "error", message: "請提供至少一個四碼股票代號" });
       return;
     }
     try {
-      const output = await runCommand(nodePath, ["tools/remove-company.mjs", `--tickers=${ticker}`]);
-      json(response, 200, { status: "done", message: `已刪除 ${ticker}`, output });
+      const output = await runCommand(nodePath, ["tools/remove-company.mjs", `--tickers=${tickers.join(",")}`]);
+      json(response, 200, { status: "done", message: `已刪除 ${tickers.length} 家公司`, tickers, output });
     } catch (error) {
       json(response, 500, { status: "error", message: error.message });
     }

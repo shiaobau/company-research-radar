@@ -22,7 +22,9 @@ const state = {
   selectedId: null,
   managementMode: false,
   companyOrder: readWatchlistOrder(),
-  pendingDeletionTicker: null
+  pendingDeletionTicker: null,
+  selectedManagerTickers: new Set(),
+  pendingDeletionTickers: []
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -197,7 +199,6 @@ function setResearchProgress(message, percent = 0) {
   const progress = Math.max(0, Math.min(99, Number(percent) || 0));
   status.className = "research-status active research-progress";
   status.innerHTML = `
-    <span class="progress-spinner" aria-hidden="true"></span>
     <div><strong>${RadarRenderers.escapeHtml(message || "研究流程執行中")}</strong><span>${progress}%</span><div class="progress-track"><i style="--progress:${progress}%"></i></div></div>
   `;
 }
@@ -294,31 +295,48 @@ function renderCompanyManager() {
   if (!state.managementMode) return;
 
   const companies = orderedResearchCompanies(state.companies);
+  const selected = state.selectedManagerTickers;
+  const allSelected = companies.length > 0 && companies.every((company) => selected.has(company.ticker));
   panel.innerHTML = `
     <div class="manager-heading">
       <div>
         <p class="eyebrow">Watchlist Management</p>
         <h3>刪除與排序</h3>
       </div>
-      <span class="muted">拖曳調整順序，僅保存在此瀏覽器</span>
+      <div class="manager-toolbar">
+        <button class="ghost-button" type="button" data-select-all-manager>${allSelected ? "取消全選" : "全選"}</button>
+        <button class="ghost-button manager-remove" type="button" data-request-bulk-delete ${selected.size ? "" : "disabled"}>移除已選 ${selected.size ? `(${selected.size})` : ""}</button>
+      </div>
     </div>
+    <p class="muted">拖曳調整順序，僅保存在此瀏覽器。</p>
     <div class="manager-list">
-      ${companies.map((company, index) => `
+      ${companies.map((company) => `
         <article class="manager-row" draggable="true" data-company-ticker="${RadarRenderers.escapeHtml(company.ticker)}">
-          <div>
+          <label class="manager-select" title="選擇 ${RadarRenderers.escapeHtml(company.name)}">
+            <input type="checkbox" data-manager-select="${RadarRenderers.escapeHtml(company.ticker)}" ${selected.has(company.ticker) ? "checked" : ""}>
+          </label>
+          <div class="manager-company">
             <strong>${RadarRenderers.escapeHtml(company.name)}</strong>
             <small>${RadarRenderers.escapeHtml(stockLabel(company))}</small>
-          </div>
-          <div class="manager-actions">
-            ${state.pendingDeletionTicker === company.ticker ? `
-              <button class="ghost-button" type="button" data-cancel-delete-research="${RadarRenderers.escapeHtml(company.ticker)}">取消</button>
-              <button class="ghost-button manager-remove" type="button" data-delete-research="${RadarRenderers.escapeHtml(company.ticker)}">確認移除</button>
-            ` : `<button class="ghost-button manager-remove" type="button" data-arm-delete-research="${RadarRenderers.escapeHtml(company.ticker)}">移除</button>`}
           </div>
         </article>
       `).join("")}
     </div>
   `;
+
+  panel.querySelector("[data-select-all-manager]")?.addEventListener("click", () => {
+    state.selectedManagerTickers = allSelected ? new Set() : new Set(companies.map((company) => company.ticker));
+    renderCompanyManager();
+  });
+  panel.querySelector("[data-request-bulk-delete]")?.addEventListener("click", () => requestResearchDeletion([...state.selectedManagerTickers]));
+  panel.querySelectorAll("[data-manager-select]").forEach((input) => {
+    input.addEventListener("change", () => {
+      const ticker = input.dataset.managerSelect;
+      if (input.checked) state.selectedManagerTickers.add(ticker);
+      else state.selectedManagerTickers.delete(ticker);
+      renderCompanyManager();
+    });
+  });
 
   panel.querySelectorAll(".manager-row").forEach((row) => {
     row.addEventListener("dragstart", (event) => {
@@ -417,18 +435,50 @@ function removeUniverseCandidate(ticker) {
   renderAll();
 }
 
-async function deleteResearchCompany(ticker) {
-  if (!ticker) return;
-  setResearchStatus(`刪除 ${ticker} 中...`);
+function ensureDeletionDialog() {
+  let dialog = $("#research-deletion-dialog");
+  if (dialog) return dialog;
+  dialog = document.createElement("dialog");
+  dialog.id = "research-deletion-dialog";
+  dialog.className = "confirm-dialog";
+  dialog.addEventListener("close", () => {
+    if (dialog.returnValue === "confirm") deleteResearchCompanies(state.pendingDeletionTickers);
+    state.pendingDeletionTickers = [];
+  });
+  document.body.append(dialog);
+  return dialog;
+}
+
+function requestResearchDeletion(tickers) {
+  const selected = [...new Set(tickers)].filter((ticker) => state.companies.some((company) => company.ticker === ticker));
+  if (!selected.length) return;
+  const companies = selected.map((ticker) => state.companies.find((company) => company.ticker === ticker));
+  state.pendingDeletionTickers = selected;
+  const dialog = ensureDeletionDialog();
+  dialog.innerHTML = `
+    <form method="dialog">
+      <p class="eyebrow">Confirm removal</p>
+      <h2>確認移除 ${companies.length} 家公司？</h2>
+      <div class="dialog-list">${companies.map((company) => `<span>${RadarRenderers.escapeHtml(`${company.ticker} ${company.name}`)}</span>`).join("")}</div>
+      <div class="dialog-actions"><button class="ghost-button" value="cancel">取消</button><button class="ghost-button manager-remove" value="confirm">確認移除</button></div>
+    </form>
+  `;
+  dialog.showModal();
+}
+
+async function deleteResearchCompanies(tickers) {
+  if (!tickers.length) return;
+  setResearchStatus(`移除 ${tickers.length} 家公司中...`);
   try {
-    const response = await fetch(`/api/company?ticker=${encodeURIComponent(ticker)}`, { method: "DELETE" });
+    const response = await fetch(`/api/company?tickers=${encodeURIComponent(tickers.join(","))}`, { method: "DELETE" });
     const payload = await response.json();
     if (!response.ok) throw new Error(payload.message || "刪除失敗");
-    setCandidateTickers(selectedUniverseTickers().filter((item) => item !== ticker));
-    setResearchStatus(`${ticker} 已刪除，正在重新整理...`);
+    setCandidateTickers(selectedUniverseTickers().filter((item) => !tickers.includes(item)));
+    state.selectedManagerTickers = new Set();
+    setResearchStatus(`已移除 ${tickers.length} 家公司，正在重新整理...`);
     window.location.reload();
   } catch (error) {
-    setResearchStatus(`無法刪除 ${ticker}：${error.message}`);
+    setResearchStatus(`無法移除公司：${error.message}`);
   }
 }
 
@@ -828,18 +878,6 @@ function initControls() {
     }
     const ticker = event.target?.dataset?.removeCandidate;
     if (ticker) removeUniverseCandidate(ticker);
-    const deleteTicker = event.target?.dataset?.deleteResearch;
-    if (deleteTicker) deleteResearchCompany(deleteTicker);
-    const armDeleteTicker = event.target?.dataset?.armDeleteResearch;
-    if (armDeleteTicker) {
-      state.pendingDeletionTicker = armDeleteTicker;
-      renderCompanyManager();
-    }
-    const cancelDeleteTicker = event.target?.dataset?.cancelDeleteResearch;
-    if (cancelDeleteTicker) {
-      state.pendingDeletionTicker = null;
-      renderCompanyManager();
-    }
     const moveTicker = event.target?.dataset?.moveCompany;
     if (moveTicker) moveResearchCompany(moveTicker, Number(event.target.dataset.moveDirection));
   });
