@@ -34,6 +34,14 @@ let collectorTask = {
   output: ""
 };
 
+let schedulerTask = {
+  status: "idle",
+  message: "Manual update is idle.",
+  started_at: null,
+  finished_at: null,
+  output: ""
+};
+
 function json(response, status, payload) {
   response.writeHead(status, {
     "content-type": "application/json; charset=utf-8",
@@ -144,6 +152,26 @@ async function startCollector(tickers) {
   }
 }
 
+async function startManualFullUpdate() {
+  schedulerTask = {
+    status: "running",
+    message: "Running the evening governance update.",
+    started_at: new Date().toISOString(),
+    finished_at: null,
+    output: ""
+  };
+  try {
+    await runCommand(nodePath, ["tools/scheduled-update.mjs", "--slot=evening"], (output) => { schedulerTask.output = output; }, 420000);
+    schedulerTask.status = "done";
+    schedulerTask.message = "Manual full update completed.";
+    schedulerTask.finished_at = new Date().toISOString();
+  } catch (error) {
+    schedulerTask.status = "error";
+    schedulerTask.message = error.message;
+    schedulerTask.finished_at = new Date().toISOString();
+  }
+}
+
 async function handleApi(request, response) {
   if (request.method === "GET" && request.url.startsWith("/api/research-cache")) {
     const url = new URL(request.url, `http://127.0.0.1:${port}`);
@@ -168,6 +196,21 @@ async function handleApi(request, response) {
 
   if (request.method === "GET" && request.url.startsWith("/api/research/status")) {
     json(response, 200, task);
+    return;
+  }
+
+  if (request.method === "GET" && request.url.startsWith("/api/scheduler/status")) {
+    json(response, 200, schedulerTask);
+    return;
+  }
+
+  if (request.method === "POST" && request.url.startsWith("/api/scheduler/manual")) {
+    if (task.status === "running" || collectorTask.status === "running" || schedulerTask.status === "running") {
+      json(response, 409, task.status === "running" ? task : collectorTask.status === "running" ? collectorTask : schedulerTask);
+      return;
+    }
+    startManualFullUpdate();
+    json(response, 202, { status: "running", message: "Manual full update started." });
     return;
   }
 

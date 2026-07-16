@@ -595,7 +595,7 @@ function schedulerRunLabel(run) {
   return `失敗 ${new Date(run.finished_at || run.started_at).toLocaleString("zh-TW")}`;
 }
 
-function renderSchedulerPanel() {
+function renderLegacySchedulerPanel() {
   const panel = $("#scheduler-panel");
   if (!panel) return;
   const schedules = state.schedulerStatus.schedules || {};
@@ -640,6 +640,67 @@ function renderSchedulerPanel() {
       </div>
     </details>
   `;
+}
+
+function renderSchedulerPanel() {
+  const panel = $("#scheduler-panel");
+  if (!panel) return;
+  const schedules = state.schedulerStatus.schedules || {};
+  const order = ["morning", "market_close", "evening"];
+  const active = state.schedulerStatus.current_run;
+  const localServer = ["127.0.0.1", "localhost"].includes(window.location.hostname);
+  const stateLabel = active ? "更新中" : "平日自動更新";
+  panel.innerHTML = `
+    <details class="scheduler-details" open>
+      <summary>
+        <span>
+          <span class="eyebrow">Automatic Updates</span>
+          <strong>平日自動更新</strong>
+        </span>
+        <span class="pill">${stateLabel}</span>
+      </summary>
+      <div class="scheduler-content">
+        <div class="scheduler-heading">
+          <div>
+            <p class="eyebrow">Automatic Updates</p>
+            <h2>平日自動更新</h2>
+            <p class="muted">三個時段依序更新公開資料、研究資料與治理資料。</p>
+          </div>
+          <button class="ghost-button" type="button" data-run-manual-update ${localServer ? "" : "disabled"} title="${localServer ? "執行與晚間治理更新相同的完整更新" : "手動更新僅能在本機服務執行"}">手動完整更新</button>
+        </div>
+        <div class="scheduler-grid">
+          ${order.map((id) => {
+            const schedule = schedules[id] || {};
+            const run = schedule.last_run;
+            const label = run ? schedulerRunLabel(run) : `預定平日 ${schedule.time || "--:--"}`;
+            return `
+              <article class="scheduler-card ${run?.status || "idle"}">
+                <div><strong>${RadarRenderers.escapeHtml(schedule.time || "--:--")}</strong><span>${RadarRenderers.escapeHtml(schedule.label || id)}</span></div>
+                <p>${RadarRenderers.escapeHtml(schedule.description || "")}</p>
+                <small>${RadarRenderers.escapeHtml(label)}</small>
+              </article>
+            `;
+          }).join("")}
+        </div>
+      </div>
+    </details>
+  `;
+}
+
+async function runManualFullUpdate() {
+  try {
+    const response = await fetch("/api/scheduler/manual", { method: "POST" });
+    if (!response.headers.get("content-type")?.includes("application/json")) {
+      throw new Error("手動完整更新只能在本機的 127.0.0.1:8768 使用。");
+    }
+    const payload = await response.json();
+    if (!response.ok) throw new Error(payload.message || "手動更新無法啟動");
+    setResearchStatus("手動完整更新已開始，完成後會更新三個時段的狀態。");
+    window.setTimeout(refreshSchedulerStatus, 800);
+    window.setTimeout(refreshSchedulerStatus, 3500);
+  } catch (error) {
+    setResearchStatus(`無法啟動手動完整更新：${error.message}`);
+  }
 }
 
 async function refreshSchedulerStatus() {
@@ -811,6 +872,10 @@ function initControls() {
     const schedulerFrequency = event.target?.dataset?.schedulerFrequency;
     if (schedulerFrequency) {
       updateSchedulerFrequency(schedulerFrequency);
+      return;
+    }
+    if (event.target.closest("[data-run-manual-update]")) {
+      runManualFullUpdate();
       return;
     }
     if (event.target.closest("[data-start-research]")) {
