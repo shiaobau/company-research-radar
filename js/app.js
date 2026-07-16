@@ -362,12 +362,13 @@ function renderCompanyManager() {
 
 function ensureCandidatePanel() {
   let panel = $("#universe-candidate-panel");
-  if (panel) return panel;
-  panel = document.createElement("section");
-  panel.id = "universe-candidate-panel";
-  panel.className = "section-block";
-  const anchor = $("#summary-grid");
-  anchor.parentNode.insertBefore(panel, anchor);
+  if (!panel) {
+    panel = document.createElement("section");
+    panel.id = "universe-candidate-panel";
+    panel.className = "section-block";
+  }
+  const anchor = $(".candidate-loader");
+  if (anchor?.nextElementSibling !== panel) anchor?.insertAdjacentElement("afterend", panel);
   return panel;
 }
 
