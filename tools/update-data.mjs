@@ -281,11 +281,29 @@ function companySourceIds(company) {
   ]);
 }
 
-function factText(company, fieldIds) {
-  return fieldIds
-    .map((fieldId) => company.facts?.[fieldId]?.value)
-    .filter(Boolean)
-    .join(" ");
+function factEvidence(company, fieldIds) {
+  const facts = fieldIds
+    .map((fieldId) => ({ fieldId, ...(company.facts?.[fieldId] || {}) }))
+    .filter((fact) => String(fact.value || "").trim());
+  return {
+    text: facts.map((fact) => String(fact.value).trim()).join(" "),
+    sourceIds: unique(facts.flatMap((fact) => fact.source_ids || [])),
+    factCount: facts.length
+  };
+}
+
+function evidenceIsUsable(evidence, requirements, policy) {
+  const minimumTextLength = Number(requirements?.minimum_text_length ?? policy?.minimum_text_length ?? 12);
+  const minimumSourceCount = Number(requirements?.minimum_fact_source_count ?? policy?.minimum_fact_source_count ?? 1);
+  const text = String(evidence.text || "").trim();
+  const placeholderPatterns = policy?.placeholder_patterns || [];
+  const isPlaceholder = placeholderPatterns.some((pattern) => text.includes(pattern));
+  return Boolean(
+    evidence.factCount
+    && text.length >= minimumTextLength
+    && evidence.sourceIds.length >= minimumSourceCount
+    && !isPlaceholder
+  );
 }
 
 function scoreFromTraceableText(text, sourceIds, base = 48) {
@@ -307,170 +325,67 @@ function evidenceLevelFromScore(score) {
   return "none";
 }
 
-function fieldIdsForEvidenceDimension(dimensionId) {
-  const fieldMap = {
-    tfda_health_food_permit: ["regulatory_status", "key_catalyst", "industry_quality"],
-    tfda_ad_compliance: ["key_risk", "regulatory_status"],
-    product_evidence: ["evidence_level", "industry_focus", "industry_quality"],
-    quality_system: ["quality_system"],
-    channel_repeatability: ["channel_quality", "revenue_driver"],
-    technology_position: ["technology_position", "industry_focus"],
-    customer_adoption: ["customer_structure", "revenue_driver"],
-    inventory_cycle: ["inventory_cycle", "key_risk"],
-    gross_margin_resilience: ["margin_resilience", "gross_margin_profile"],
-    supply_chain_risk: ["supply_chain_role", "key_risk"],
-    product_cycle: ["product_cycle", "industry_focus"],
-    customer_structure: ["customer_structure"],
-    supply_chain_role: ["supply_chain_role"],
-    certification_quality: ["quality_system", "regulatory_status"],
-    margin_resilience: ["margin_resilience"],
-    recurring_revenue: ["recurring_revenue", "revenue_driver"],
-    retention_signal: ["retention_signal", "channel_quality"],
-    gross_margin_profile: ["gross_margin_profile"],
-    security_compliance: ["regulatory_status", "quality_system", "key_risk"],
-    implementation_depth: ["implementation_depth", "channel_quality"],
-    data_rights: ["data_advantage", "key_risk"],
-    model_compute_edge: ["model_or_compute_edge", "technology_position"],
-    deployment_maturity: ["deployment_maturity", "channel_quality"],
-    monetization_path: ["monetization_path", "revenue_driver"],
-    ai_safety_compliance: ["regulatory_status", "key_risk"],
-    regulatory_clearance: ["regulatory_status"],
-    qms_quality: ["quality_system"],
-    clinical_adoption: ["clinical_adoption"],
-    recall_adverse_event: ["key_risk", "regulatory_status"],
-    reimbursement_channel: ["reimbursement_status", "channel_quality"],
-    capacity_utilization: ["capacity_utilization"],
-    quality_certification: ["quality_system", "regulatory_status"],
-    order_visibility: ["order_visibility", "revenue_driver"],
-    raw_material_exposure: ["raw_material_exposure", "key_risk"],
-    automation_efficiency: ["automation_level", "quality_system"],
-    pipeline_stage: ["pipeline_stage", "key_catalyst", "industry_quality"],
-    clinical_evidence: ["clinical_evidence", "evidence_level", "industry_quality"],
-    regulatory_milestone: ["regulatory_status", "key_catalyst"],
-    partnering_strength: ["partnering_strength", "customer_structure", "key_catalyst"],
-    cash_runway: ["balance_sheet_resilience", "key_risk"],
-    asset_quality: ["asset_quality", "key_risk"],
-    capital_adequacy: ["capital_adequacy", "balance_sheet_resilience"],
-    interest_rate_sensitivity: ["interest_rate_sensitivity", "key_risk"],
-    fee_income_mix: ["fee_income_mix", "revenue_driver"],
-    compliance_risk: ["regulatory_status", "key_risk", "governance_signal"],
-    commodity_cycle: ["commodity_cycle", "industry_focus", "revenue_driver"],
-    spread_margin: ["spread_margin", "margin_resilience", "gross_margin_profile"],
-    cost_pass_through: ["raw_material_exposure", "margin_resilience"],
-    capacity_discipline: ["capacity_discipline", "capacity_utilization"],
-    environmental_compliance: ["regulatory_status", "key_risk"],
-    auto_customer_qualification: ["auto_customer_qualification", "customer_structure"],
-    ev_content_growth: ["ev_content_growth", "revenue_driver"],
-    safety_certification: ["safety_certification", "quality_system"],
-    platform_lifecycle: ["platform_lifecycle", "product_cycle", "order_visibility"],
-    recall_risk: ["key_risk", "regulatory_status"],
-    order_backlog: ["order_backlog", "order_visibility"],
-    asset_utilization: ["asset_utilization", "capacity_utilization"],
-    freight_rate_exposure: ["freight_rate_exposure", "revenue_driver"],
-    interest_rate_exposure: ["interest_rate_exposure", "balance_sheet_resilience", "key_risk"],
-    policy_project_pipeline: ["project_pipeline", "order_backlog", "key_catalyst"],
-    brand_strength: ["brand_strength", "channel_quality"],
-    same_store_sales: ["same_store_sales", "revenue_driver"],
-    channel_mix: ["channel_mix", "channel_quality"],
-    input_cost_sensitivity: ["input_cost_sensitivity", "raw_material_exposure"],
-    food_safety_compliance: ["regulatory_status", "quality_system", "key_risk"],
-    contracted_revenue: ["contracted_revenue", "recurring_revenue"],
-    energy_price_exposure: ["energy_price_exposure", "raw_material_exposure"],
-    project_pipeline: ["project_pipeline", "key_catalyst"],
-    regulatory_tariff: ["regulatory_tariff", "regulatory_status"],
-    environmental_permit: ["regulatory_status", "key_risk"],
-    business_clarity: ["business_clarity", "business_model", "industry_focus"],
-    revenue_visibility: ["revenue_visibility", "revenue_driver"],
-    balance_sheet_resilience: ["balance_sheet_resilience", "key_risk"],
-    governance_signal: ["governance_signal", "key_risk"],
-    traceability: ["industry_quality", "business_model"]
-  };
-  return fieldMap[dimensionId] || ["industry_quality", "industry_focus", "key_risk"];
+function fieldIdsForEvidenceDimension(dimension, template) {
+  return dimension.fact_fields || template.default_fact_fields || [];
 }
 
-function buildIndustryEvidenceData({ revenueCompanies, financialCompanies, riskCompanies }) {
+function buildIndustryEvidenceData() {
   const companiesById = {};
+  const policy = industryTemplates.industry_evidence_policy || {};
 
   for (const company of companies) {
     const template = industryTemplates[company.industry_template] || {};
     const dimensions = template.industry_evidence_dimensions || [];
-    const revenue = revenueCompanies[company.id];
-    const financial = financialCompanies[company.id];
-    const risk = riskCompanies[company.id];
     const traceabilityScore = traceabilityScoreFrom(company);
 
     let weighted = 0;
     let weightSum = 0;
     const dimensionRows = dimensions.map((dimension) => {
-      const fieldIds = fieldIdsForEvidenceDimension(dimension.id);
-      const sourceIds = unique([
-        ...(dimension.source_ids || []),
-        ...fieldIds.flatMap((fieldId) => company.facts?.[fieldId]?.source_ids || [])
-      ]);
-      const text = factText(company, fieldIds);
-      let score = scoreFromTraceableText(text, sourceIds);
-      let status = "ok";
-      let rationale = text
-        ? `依研究檔欄位「${fieldIds.join("、")}」與來源追溯計算。`
-        : "產業模板已建立，但此公司尚未填入對應欄位。";
+      const fieldIds = fieldIdsForEvidenceDimension(dimension, template);
+      const evidence = factEvidence(company, fieldIds);
+      const usable = evidenceIsUsable(evidence, dimension.minimum_evidence, policy);
+      const score = usable ? scoreFromTraceableText(evidence.text, evidence.sourceIds) : null;
+      const status = usable ? "ok" : "missing";
+      const rationale = usable
+        ? `依來源支持的研究欄位「${fieldIds.join("、")}」計算。`
+        : `尚未取得可追溯的公司事實；需要欄位「${fieldIds.join("、")}」及至少 ${dimension.minimum_evidence?.minimum_fact_source_count ?? policy.minimum_fact_source_count ?? 1} 個來源。`;
 
-      if (company.industry_template === "nutrition_health_food" && dimension.id === "tfda_health_food_permit") {
-        score = sourceIds.includes("tfda_health_food") || sourceIds.includes("tfda") ? 60 : 45;
-        rationale = "已接入 TFDA 健康食品許可查詢來源；目前仍需逐品項自動比對許可證與核准功效，因此採中性偏保守分。";
+      if (status === "ok") {
+        weighted += score * (dimension.weight || 0);
+        weightSum += dimension.weight || 0;
       }
-      if (company.industry_template === "nutrition_health_food" && dimension.id === "tfda_ad_compliance") {
-        const disclosureViolations = risk?.disclosure_violation_count || 0;
-        const negativeEvents = risk?.negative_event_count || 0;
-        score = clamp(66 - disclosureViolations * 16 - negativeEvents * 6, 35, 72);
-        rationale = disclosureViolations || negativeEvents
-          ? `先以公開申報違規 ${disclosureViolations} 筆、負向重大訊息 ${negativeEvents} 則暫代扣分；TFDA 食品廣告違規資料源已列入待自動比對。`
-          : "先以公開申報違規與負向重大訊息暫代檢查，未見明顯扣分項；TFDA 食品廣告違規資料源已列入待自動比對。";
-      }
-      if (dimension.id === "channel_repeatability" || dimension.id === "order_visibility" || dimension.id === "recurring_revenue") {
-        score = clamp(Math.round(score * 0.55 + (revenue?.score ?? 50) * 0.45), 35, 82);
-      }
-      if (dimension.id.includes("margin") || dimension.id === "gross_margin_profile" || dimension.id === "qms_quality" || dimension.id === "quality_system") {
-        score = clamp(Math.round(score * 0.6 + (financial?.score ?? 50) * 0.4), 35, 82);
-      }
-      if (dimension.id.includes("risk") || dimension.id.includes("compliance") || dimension.id === "recall_adverse_event") {
-        score = clamp(Math.round(score * 0.45 + (risk?.score ?? 50) * 0.55), 30, 82);
-      }
-
-      if (!text && !sourceIds.length) status = "missing";
-      weighted += score * (dimension.weight || 0);
-      weightSum += dimension.weight || 0;
       return {
         id: dimension.id,
         label: dimension.label,
         weight: dimension.weight,
         status,
         score,
-        evidence_level: evidenceLevelFromScore(score),
-        source_ids: sourceIds,
+        evidence_level: Number.isFinite(score) ? evidenceLevelFromScore(score) : "none",
+        source_ids: evidence.sourceIds,
         description: dimension.description,
         rationale
       };
     });
 
-    const score = weightSum ? Math.round(weighted / weightSum) : traceabilityScore;
     const completedCount = dimensionRows.filter((dimension) => dimension.status === "ok").length;
+    const complete = dimensions.length > 0 && completedCount === dimensions.length && weightSum > 0;
+    const score = complete ? Math.round(weighted / weightSum) : null;
     companiesById[company.id] = {
       ticker: company.ticker,
       market: company.market,
       industry_template: company.industry_template,
-      status: dimensions.length ? "ok" : "missing",
-      source_ids: unique([
-        ...companySourceIds(company),
-        ...dimensionRows.flatMap((dimension) => dimension.source_ids || [])
-      ]),
-      evidence_level: evidenceLevelFromScore(score),
+      status: complete ? "ok" : "missing",
+      source_ids: unique(dimensionRows.flatMap((dimension) => dimension.source_ids || [])),
+      evidence_level: Number.isFinite(score) ? evidenceLevelFromScore(score) : "none",
       completed_count: completedCount,
       total_count: dimensions.length,
       traceability_score: traceabilityScore,
-      score: clamp(score),
+      score,
       dimensions: dimensionRows,
       rationale: dimensions.length
-        ? `${template.label || company.industry_template} 產業證據 ${completedCount}/${dimensions.length} 項已建立；分數由各子項權重合成。`
+        ? complete
+          ? `${template.label || company.industry_template} 產業證據 ${completedCount}/${dimensions.length} 項皆有來源支持；分數由各子項權重合成。`
+          : `${template.label || company.industry_template} 產業證據僅 ${completedCount}/${dimensions.length} 項具來源支持；未完成前不產生產業分數。`
         : "此產業尚未定義產業證據模板。"
     };
   }
@@ -487,20 +402,21 @@ function buildIndustryData({ revenueCompanies, financialCompanies, catalystCompa
     const risk = riskCompanies[company.id];
     const industryEvidence = industryEvidenceCompanies[company.id];
     const traceabilityScore = traceabilityScoreFrom(company);
-    const score = Math.round(
-      (industryEvidence?.score ?? 50) * 0.35 +
+    const complete = industryEvidence?.status === "ok";
+    const score = complete ? Math.round(
+      industryEvidence.score * 0.35 +
       (revenue?.score ?? 50) * 0.2 +
       (financial?.score ?? 50) * 0.2 +
       (risk?.score ?? 50) * 0.15 +
       (catalyst?.score ?? 50) * 0.05 +
       traceabilityScore * 0.05
-    );
+    ) : null;
 
     companiesById[company.id] = {
       ticker: company.ticker,
       market: company.market,
       industry_template: company.industry_template,
-      status: "ok",
+      status: complete ? "ok" : "missing",
       source_ids: unique([
         ...(company.primary_source_ids || []),
         ...(revenue?.source_ids || []),
@@ -509,7 +425,7 @@ function buildIndustryData({ revenueCompanies, financialCompanies, catalystCompa
         ...(risk?.source_ids || []),
         ...(industryEvidence?.source_ids || [])
       ]),
-      evidence_level: "medium",
+      evidence_level: complete ? "medium" : "none",
       traceability_score: traceabilityScore,
       industry_evidence_score: industryEvidence?.score ?? null,
       industry_evidence_completed_count: industryEvidence?.completed_count ?? null,
@@ -518,8 +434,10 @@ function buildIndustryData({ revenueCompanies, financialCompanies, catalystCompa
       financial_score: financial?.score ?? null,
       catalyst_score: catalyst?.score ?? null,
       risk_score: risk?.score ?? null,
-      score: clamp(score),
-      rationale: `產業基本面由產業證據 ${industryEvidence?.score ?? "NA"}、營收 ${revenue?.score ?? "NA"}、財務 ${financial?.score ?? "NA"}、風險 ${risk?.score ?? "NA"}、催化 ${catalyst?.score ?? "NA"}、來源可追溯度 ${traceabilityScore} 加權合成。`
+      score: Number.isFinite(score) ? clamp(score) : null,
+      rationale: complete
+        ? `產業基本面由產業證據 ${industryEvidence.score}、營收 ${revenue?.score ?? "NA"}、財務 ${financial?.score ?? "NA"}、風險 ${risk?.score ?? "NA"}、催化 ${catalyst?.score ?? "NA"}、來源可追溯度 ${traceabilityScore} 加權合成。`
+        : "產業證據尚未完成所有來源支持的子檢核，因此不產生產業基本面分數。"
     };
   }
   return companiesById;
@@ -917,7 +835,18 @@ function buildOwnershipData(governanceRows, companiesToUpdate = companies) {
 }
 
 function mergeUpdatedRecords(previousRecords, updatedRecords) {
-  return targetedRun ? { ...previousRecords, ...updatedRecords } : updatedRecords;
+  const recovered = Object.fromEntries(Object.entries(updatedRecords).map(([id, record]) => {
+    const previous = previousRecords[id];
+    if (record?.status === "missing" && previous?.status === "ok") {
+      return [id, {
+        ...previous,
+        cache_status: "stale",
+        rationale: `${previous.rationale || "已使用先前公開資料。"} 本次端點未回傳資料，暫時保留上一版快取。`
+      }];
+    }
+    return [id, record];
+  }));
+  return targetedRun ? { ...previousRecords, ...recovered } : recovered;
 }
 
 async function mapWithConcurrency(items, concurrency, worker) {
@@ -992,7 +921,7 @@ async function build() {
   const dataStatus = {
     version: DATA_VERSION,
     generated_at: generatedAt,
-    note: "由 tools/update-data.mjs 產生。資料來源為公開市場 API；若端點缺漏，前端會退回人工初評並標示資料狀態。",
+    note: "由 tools/update-data.mjs 產生。資料來源為公開市場 API；缺少來源支持的產業子檢核會標示待補，不以預設分數代替。",
     companies: {}
   };
 
@@ -1054,14 +983,14 @@ async function build() {
   await writeJson(path.join(dataDir, "industry_evidence_data.json"), {
     version: DATA_VERSION,
     generated_at: generatedAt,
-    note: "產業證據層。各產業的子評估標準由 data/industry_templates.json 定義；保健營養食品先接入 TFDA 健康食品、廣告合規、品項證據、品質系統與通路回購框架。",
+    note: "產業證據層。各產業子檢核僅在取得公司事實與來源支持時評分；模板本身與未填入欄位不會產生分數。",
     sources: SOURCE_CATALOG.filter((source) => source.id.startsWith("tfda") || source.id === "mops"),
     companies: industryEvidenceCompanies
   });
   await writeJson(path.join(dataDir, "industry_data.json"), {
     version: DATA_VERSION,
     generated_at: generatedAt,
-    note: "產業基本面公式化資料。此版納入產業證據層，再與公開財務、營收、重大訊息、風險與來源可追溯度合成。",
+    note: "產業基本面公式化資料。未完成來源支持的產業子檢核時，不產生產業基本面分數。",
     sources: SOURCE_CATALOG,
     companies: industryCompanies
   });

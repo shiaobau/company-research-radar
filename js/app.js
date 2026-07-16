@@ -1124,6 +1124,12 @@ function scoreDisplayTitle(score) {
   return `${score.band.label}（研究分數 ${score.total}/100；${submetricCount} 個公開資料子測項）`;
 }
 
+function scoreMissingLabel(score) {
+  return (score.missingDimensions || [])
+    .map((label) => label === "產業基本面" ? "產業證據待補" : label)
+    .join("、");
+}
+
 function industryRankLabel(company, score) {
   if (!score.complete) return "";
   const peers = state.companies
@@ -1285,7 +1291,7 @@ function renderCompanyList(companies) {
           <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.complete ? score.band.label : readinessLabel(company))}</p>
           <h3>${RadarRenderers.escapeHtml(company.name)}</h3>
           <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(dataCoverageLabel(company))}${industryRank ? ` · ${RadarRenderers.escapeHtml(industryRank)}` : ""}</p>
-          ${score.complete ? "" : `<p class="muted">缺少：${RadarRenderers.escapeHtml(missingLabels || "評分資料")}</p>`}
+          ${score.complete ? "" : `<p class="muted">缺少：${RadarRenderers.escapeHtml(scoreMissingLabel(score) || missingLabels || "評分資料")}</p>`}
           <div class="card-tags">${displayTags(company).map((tag) => `<span class="tag">${RadarRenderers.escapeHtml(tag)}</span>`).join("")}</div>
         </div>
         <div class="mini-fields">${summary}${renderPublicFactSourceTooltips(company, sourceIndex)}</div>
@@ -1422,7 +1428,7 @@ function renderDetail() {
       <span class="pill score-tier" title="${RadarRenderers.escapeHtml(scoreDisplayTitle(score))}" style="${scoreColorStyle(score)}">${Number.isFinite(score.total) ? `${score.total} · ${RadarRenderers.escapeHtml(score.band.label)}` : readinessLabel(company)}</span>
     </div>
     ${publicFacts}
-    ${score.complete ? "" : `<p class="risk">尚未產生總分。缺少：${RadarRenderers.escapeHtml(score.missingDimensions.join("、"))}</p>`}
+    ${score.complete ? "" : `<p class="risk">尚未產生總分。缺少：${RadarRenderers.escapeHtml(scoreMissingLabel(score))}</p>`}
     <div class="score-breakdown">${RadarRenderers.renderScoreRows(score)}</div>
     <details class="detail-fold">
       <summary>公開資料快照</summary>

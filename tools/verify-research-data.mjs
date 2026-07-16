@@ -38,14 +38,15 @@ function runNode(script, args) {
   });
 }
 
-function recordsFrom(statusData, companies) {
+function recordsFrom(statusData, industryEvidenceData, companies) {
   const selected = requestedTickers.size
     ? companies.filter((company) => requestedTickers.has(company.ticker))
     : companies;
   return selected.map((company) => {
     const source = statusData.companies?.[company.id] || {};
+    const industryEvidence = industryEvidenceData.companies?.[company.id];
     const missingDimensions = DIMENSIONS
-      .filter(([id]) => source[id] !== "ok")
+      .filter(([id]) => source[id] !== "ok" || (id === "industry" && industryEvidence?.status !== "ok"))
       .map(([id, label]) => ({ id, label }));
     return {
       id: company.id,
@@ -60,24 +61,25 @@ function recordsFrom(statusData, companies) {
 }
 
 async function loadInputs() {
-  const [companiesData, dataStatus] = await Promise.all([
+  const [companiesData, dataStatus, industryEvidenceData] = await Promise.all([
     readJson(path.join(dataDir, "companies.json")),
-    readJson(path.join(dataDir, "data_status.json"))
+    readJson(path.join(dataDir, "data_status.json")),
+    readJson(path.join(dataDir, "industry_evidence_data.json"))
   ]);
-  return { companies: companiesData.companies || [], dataStatus };
+  return { companies: companiesData.companies || [], dataStatus, industryEvidenceData };
 }
 
 async function main() {
-  let { companies, dataStatus } = await loadInputs();
-  let records = recordsFrom(dataStatus, companies);
+  let { companies, dataStatus, industryEvidenceData } = await loadInputs();
+  let records = recordsFrom(dataStatus, industryEvidenceData, companies);
   const missingTickers = records.filter((record) => record.status === "incomplete").map((record) => record.ticker);
   let retried = false;
 
   if (retryMissing && missingTickers.length) {
     await runNode("tools/source-cache.mjs", ["--refresh"]);
     await runNode("tools/update-data.mjs", [`--tickers=${missingTickers.join(",")}`]);
-    ({ companies, dataStatus } = await loadInputs());
-    records = recordsFrom(dataStatus, companies);
+    ({ companies, dataStatus, industryEvidenceData } = await loadInputs());
+    records = recordsFrom(dataStatus, industryEvidenceData, companies);
     retried = true;
   }
 
@@ -96,7 +98,7 @@ async function main() {
   await writeJson(path.join(dataDir, "research_status.json"), {
     version: "1.0.0",
     generated_at: checkedAt,
-    note: "七個必要評分維度皆有公開資料才會產生總分；缺項公司會在更新流程中重試一次。",
+    note: "七個必要評分維度皆須具備公開資料；產業基本面還必須通過來源支持的產業子檢核，否則不產生總分。",
     summary: { total: allRecords.length, complete_count: completeCount, incomplete_count: incompleteCount },
     companies: merged
   });

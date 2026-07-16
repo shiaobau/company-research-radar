@@ -112,20 +112,39 @@
   function evaluateSubmetrics(dimension, company, datasets) {
     return (dimension.submetrics || []).flatMap((definition) => {
       if (definition.formula !== "dimension_collection") return [evaluateSingle(definition, company, datasets)];
-      const record = recordFor(company, definition.source, datasets);
+      const dataset = datasets?.[sourceMaps[definition.source]];
+      const rawRecord = dataset?.companies?.[company.id];
+      const record = rawRecord?.status === "ok" ? rawRecord : null;
       const dimensions = record?.[definition.field];
+      const pendingDimensions = rawRecord?.[definition.field];
+      if (!Array.isArray(dimensions) && Array.isArray(pendingDimensions) && pendingDimensions.length) {
+        return pendingDimensions.map((item) => ({
+          id: item.id,
+          label: item.label,
+          weight: Number(definition.weight) * Number(item.weight || 0),
+          score: null,
+          status: "missing",
+          rationale: item.rationale || "尚未取得來源支持的產業子檢核資料。",
+          sourceIds: item.source_ids || []
+        }));
+      }
       if (!Array.isArray(dimensions) || !dimensions.length) {
         return [{ ...definition, score: null, status: "missing", rationale: "尚未取得產業子檢核資料。", sourceIds: record?.source_ids || [] }];
       }
-      return dimensions.map((item) => ({
-        id: item.id,
-        label: item.label,
-        weight: Number(definition.weight) * Number(item.weight || 0),
-        score: Number.isFinite(Number(item.score)) ? clamp(Number(item.score)) : null,
-        status: item.status === "ok" && Number.isFinite(Number(item.score)) ? "ok" : "missing",
-        rationale: item.rationale || item.description || "產業子檢核。",
-        sourceIds: item.source_ids || record.source_ids || []
-      }));
+      return dimensions.map((item) => {
+        const rationale = item.rationale || item.description || "產業子檢核。";
+        const placeholder = /模板已建立|尚未填入|仍需逐品項|暫代檢查|待自動比對/.test(rationale);
+        const sourceBacked = item.status === "ok" && Number.isFinite(Number(item.score)) && !placeholder;
+        return {
+          id: item.id,
+          label: item.label,
+          weight: Number(definition.weight) * Number(item.weight || 0),
+          score: sourceBacked ? clamp(Number(item.score)) : null,
+          status: sourceBacked ? "ok" : "missing",
+          rationale,
+          sourceIds: item.source_ids || record.source_ids || []
+        };
+      });
     });
   }
 
