@@ -187,6 +187,7 @@ h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: var(--text);
 }
 
 .quick-company-result b {
@@ -598,6 +599,14 @@ button:focus {
 
 .candidate-chip b {
   color: var(--amber);
+}
+
+.candidate-chip strong {
+  color: var(--text);
+}
+
+.candidate-chip small {
+  color: var(--muted);
 }
 
 .candidate-chip em {

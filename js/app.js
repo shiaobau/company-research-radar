@@ -356,18 +356,21 @@ function renderUniverseCandidates() {
       </div>
       <div class="candidate-actions">
         <span class="pill">${candidates.length}</span>
+        <button class="primary-button" type="button" data-start-research>開始研究</button>
         <a class="ghost-button" href="universe.html">回選股頁</a>
       </div>
     </div>
     <div class="candidate-list">
       ${candidates.map(({ ticker, official, research }) => {
         const name = research?.name || official?.abbreviation || official?.name || ticker;
+        const legalName = official?.name || research?.legal_name || "";
         const template = state.templates[research?.industry_template]?.label || official?.template_label || "待分類";
         const status = research ? "已在研究檔" : "待建立研究檔";
         return `
           <span class="candidate-chip" title="${RadarRenderers.escapeHtml(template)} / ${RadarRenderers.escapeHtml(status)}">
             <b>${RadarRenderers.escapeHtml(ticker)}</b>
-            ${RadarRenderers.escapeHtml(name)}
+            <strong>${RadarRenderers.escapeHtml(name)}</strong>
+            ${legalName && legalName !== name ? `<small>${RadarRenderers.escapeHtml(legalName)}</small>` : ""}
             <em>${RadarRenderers.escapeHtml(status)}</em>
             <button class="candidate-remove" type="button" data-remove-candidate="${RadarRenderers.escapeHtml(ticker)}" aria-label="移除 ${RadarRenderers.escapeHtml(ticker)}">x</button>
           </span>
@@ -446,7 +449,9 @@ async function pollResearchStatus() {
 }
 
 async function startResearchFromDashboard() {
-  const tickers = selectedUniverseTickers();
+  const tickers = selectedUniverseCompanies()
+    .filter(({ research }) => !research)
+    .map(({ ticker }) => ticker);
   if (!tickers.length) {
     setResearchStatus("請先載入候選代號或候選種子檔。");
     return;
@@ -801,6 +806,11 @@ function initControls() {
       updateSchedulerFrequency(schedulerFrequency);
       return;
     }
+    if (event.target.closest("[data-start-research]")) {
+      sessionStorage.setItem("researchAutoRefreshAfterRun", "1");
+      startResearchFromDashboard();
+      return;
+    }
     const quickResult = event.target.closest("[data-quick-company-ticker]");
     if (quickResult) {
       handleQuickCompanyResult(quickResult.dataset.quickCompanyTicker);
@@ -882,10 +892,12 @@ function renderQuickCompanyResults() {
     results.innerHTML = matches.map((company) => {
       const researched = researchByTicker.has(company.ticker);
       const name = quickCompanyDisplayName(company);
+      const legalName = String(company.name || name).trim();
       const status = researched ? "查看研究" : "加入研究";
       return `
         <button class="quick-company-result" type="button" role="option" data-quick-company-ticker="${RadarRenderers.escapeHtml(company.ticker)}">
           <span class="quick-company-name"><b>${RadarRenderers.escapeHtml(company.ticker)}</b><strong>${RadarRenderers.escapeHtml(name)}</strong></span>
+          <small class="quick-company-legal-name">${RadarRenderers.escapeHtml(legalName)}</small>
           <small>${RadarRenderers.escapeHtml(company.market_label || company.market || "")} · ${RadarRenderers.escapeHtml(company.template_label || company.official_industry_label || "未分類")}</small>
           <em>${status}</em>
         </button>
@@ -911,24 +923,16 @@ async function handleQuickCompanyResult(ticker) {
 
   const official = (state.universe.companies || []).find((company) => company.ticker === ticker);
   const companyLabel = `${ticker} ${quickCompanyDisplayName(official)}`;
-  setResearchStatus(`正在將 ${companyLabel} 加入研究...`);
-  try {
-    sessionStorage.setItem("researchAutoRefreshAfterRun", "1");
-    const response = await fetch("/api/research", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ tickers: [ticker] })
-    });
-    const payload = await response.json();
-    if (!response.ok) throw new Error(payload.message || "研究 API 無法啟動");
-    if (input) input.value = "";
-    hideQuickCompanyResults();
-    setResearchStatus(`研究流程已啟動：${companyLabel}`);
-    setTimeout(pollResearchStatus, 1000);
-  } catch (error) {
-    sessionStorage.removeItem("researchAutoRefreshAfterRun");
-    setResearchStatus(`無法加入 ${companyLabel}：${error.message}`);
-  }
+  const tickers = setCandidateTickers([...selectedUniverseTickers(), ticker]);
+  const params = new URLSearchParams(window.location.search);
+  params.set("universe", "selected");
+  params.set("tickers", tickers.join(","));
+  window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}`);
+  if (input) input.value = "";
+  hideQuickCompanyResults();
+  state.selectedId = `candidate-${ticker}`;
+  setResearchStatus(`${companyLabel} 已加入待研究清單。請按「開始研究」。`);
+  renderAll();
 }
 
 function companyText(company) {
@@ -1266,7 +1270,7 @@ function renderCandidateDetail(company) {
 }
 
 function renderCollectedEvents(company) {
-  const record = state.researchCache.records[company.ticker];
+  let record = state.researchCache.records[company.ticker];
   const indexed = (state.researchCache.index.companies || []).find((item) => item.ticker === company.ticker);
   if (!record) {
     const text = state.researchCache.pending.has(company.ticker)
@@ -1276,6 +1280,12 @@ function renderCollectedEvents(company) {
         : "尚未建立公告事件快取。可使用「更新公告事件」開始蒐集。";
     return `<section class="module collected-events"><h3>官方公告事件</h3><p class="muted">${text}</p></section>`;
   }
+
+  const collectedAt = record.collected_at ? new Date(record.collected_at) : null;
+  const collectedLabel = collectedAt && !Number.isNaN(collectedAt.getTime())
+    ? collectedAt.toLocaleString("zh-TW", { dateStyle: "medium", timeStyle: "short" })
+    : "尚未記錄";
+  record = { ...record, collected_at: collectedLabel };
 
   const eventItems = (record.events || []).map((event) => {
     const title = normalizeDisclosureText(event.title);
@@ -1297,7 +1307,7 @@ function renderCollectedEvents(company) {
   const references = (record.references || []).map((reference) => `
     <a class="source-chip" href="${RadarRenderers.escapeHtml(reference.url)}" target="_blank" rel="noopener">${RadarRenderers.escapeHtml(reference.title)}</a>
   `).join("");
-  const sourceStatus = (record.source_status || []).map((status) => `${status.source_id}: ${status.cache_status || (status.available ? "available" : "unavailable")}`).join(" | ");
+  const sourceStatus = "官方公開資訊快取";
 
   return `
     <section class="module collected-events">
