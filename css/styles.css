@@ -114,7 +114,7 @@ h3 {
 
 .candidate-loader {
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) minmax(240px, 1.2fr) minmax(180px, 240px) auto auto;
+  grid-template-columns: minmax(220px, 1fr) minmax(240px, 1.2fr) minmax(180px, 240px) auto;
   gap: 12px;
   align-items: end;
   margin-top: 10px;

@@ -389,7 +389,7 @@ function renderUniverseCandidates() {
       </div>
       <div class="candidate-actions">
         <span class="pill">${candidates.length}</span>
-        <button class="primary-button" type="button" data-start-research>開始研究</button>
+        <button class="ghost-button" type="button" data-start-research>開始研究</button>
         <a class="ghost-button" href="universe.html">回選股頁</a>
       </div>
     </div>
