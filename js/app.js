@@ -225,7 +225,7 @@ function candidateWatchlistItems() {
       industry_template: templateId,
       template_label: official?.template_label || templateId,
       official_industry_label: official?.official_industry_label || "",
-      thesis: "已加入研究候選，尚未建立正式研究檔與評分資料。",
+      thesis: "已加入研究候選，公開資料蒐集中。",
       tags: ["研究候選", "待建立研究檔"],
       official
     };
@@ -398,7 +398,7 @@ function renderUniverseCandidates() {
         const name = research?.name || official?.abbreviation || official?.name || ticker;
         const legalName = official?.name || research?.legal_name || "";
         const template = state.templates[research?.industry_template]?.label || official?.template_label || "待分類";
-        const status = research ? "已在研究檔" : "待建立研究檔";
+        const status = research ? "已在觀察清單" : "研究準備中";
         return `
           <span class="candidate-chip" title="${RadarRenderers.escapeHtml(template)} / ${RadarRenderers.escapeHtml(status)}">
             <b>${RadarRenderers.escapeHtml(ticker)}</b>
@@ -1249,17 +1249,17 @@ function renderSummary(companies) {
 function renderCandidateCard(company) {
   return `
     <article class="company-card candidate-only ${company.id === state.selectedId ? "active" : ""}" data-id="${company.id}" tabindex="0">
-      <div class="candidate-score"><span>待<br>建檔</span></div>
+      <div class="candidate-score"><span>研究<br>中</span></div>
       <div>
         <p class="eyebrow">${RadarRenderers.escapeHtml(company.template_label || company.industry_template)} · 研究候選</p>
         <h3>${RadarRenderers.escapeHtml(company.name)}</h3>
-        <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · 尚未建立評分資料</p>
+        <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · 公開資料蒐集中</p>
         <p class="muted">${RadarRenderers.escapeHtml(company.thesis)}</p>
         <div class="card-tags">${(company.tags || []).map((tag) => `<span class="tag">${RadarRenderers.escapeHtml(tag)}</span>`).join("")}</div>
       </div>
       <div class="mini-fields">
         <span><b>官方產業</b>：${RadarRenderers.escapeHtml(company.official_industry_label || "未提供")}</span>
-        <span><b>狀態</b>：待加入 data/companies.json</span>
+        <span><b>狀態</b>：研究準備中</span>
         <button class="ghost-button" type="button" data-remove-candidate="${RadarRenderers.escapeHtml(company.ticker)}">移除</button>
       </div>
     </article>
@@ -1322,13 +1322,13 @@ function renderCandidateDetail(company) {
         <p class="eyebrow">Research Candidate</p>
         <h2>${RadarRenderers.escapeHtml(company.name)}</h2>
         <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(company.template_label || company.industry_template)}</p>
-        <p class="muted">這家公司目前只在研究候選清單中，尚未建立正式研究檔。</p>
+        <p class="muted">公開資料正在整理中；完成後將顯示評分與可追溯的資料來源。</p>
       </div>
-      <span class="pill">待建檔</span>
+      <span class="pill">研究中</span>
     </div>
     <section class="module">
-      <h3>下一步</h3>
-      <p>若要產生評分，需要把此公司加入 <code>data/companies.json</code>，再執行資料接入流程，取得股價、營收、財務、重大訊息、風險與產業證據。</p>
+      <h3>研究狀態</h3>
+      <p>正在蒐集股價、營收、財務、公告與產業資料；資料齊備並完成驗證後才會顯示評分。</p>
     </section>
     <section class="module">
       <h3>官方分類</h3>
