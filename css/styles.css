@@ -610,7 +610,7 @@ button:focus {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: conic-gradient(var(--teal) var(--score-deg), #2b302d 0);
+  background: conic-gradient(var(--score-color, var(--teal)) var(--score-deg), #2b302d 0);
 }
 
 .score-ring span {
@@ -1086,6 +1086,11 @@ button:focus {
 .scheduler-card.running { border-color: #8b6a35; }
 .scheduler-card.idle { border-color: #4b5753; }
 .company-card.incomplete .score-ring { color: var(--amber); }
+
+.score-tier {
+  color: var(--score-color, var(--teal));
+  border-color: color-mix(in srgb, var(--score-color, var(--teal)) 55%, transparent);
+}
 
 .fact {
   padding: 10px;

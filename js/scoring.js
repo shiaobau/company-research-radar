@@ -1,10 +1,9 @@
 (function () {
   function scoreBand(score, rules) {
     const bands = rules?.score_bands || [
-      { min: 85, label: "高度研究名單" },
-      { min: 75, label: "值得追蹤" },
-      { min: 65, label: "觀察中" },
-      { min: 0, label: "資料不足" }
+      { id: "priority", min: 75, label: "優先觀察", color: "#46b88a" },
+      { id: "monitor", min: 60, label: "持續追蹤", color: "#d6a94b" },
+      { id: "defer", min: 0, label: "暫緩觀察", color: "#cf6a6a" }
     ];
     return bands.find((band) => score >= band.min) || bands[bands.length - 1];
   }

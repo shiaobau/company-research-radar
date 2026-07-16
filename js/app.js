@@ -1112,6 +1112,12 @@ function dataCoverageLabel(company) {
   return `客觀資料 ${status.completed_count}/${status.total_count}`;
 }
 
+function scoreColorStyle(score) {
+  if (!score.complete) return "";
+  const color = String(score.band?.color || "").trim();
+  return color ? `--score-color:${RadarRenderers.escapeHtml(color)};` : "";
+}
+
 function researchReadiness(company) {
   const status = state.researchStatus.companies?.[company.id];
   if (status) return status;
@@ -1251,8 +1257,8 @@ function renderCompanyList(companies) {
     const missingLabels = (readiness.missing_dimensions || []).map((item) => item.label).join("、");
     const scoreValue = Number.isFinite(score.total) ? score.total : "待補";
     return `
-      <article class="company-card ${company.id === state.selectedId ? "active" : ""} ${score.complete ? "" : "incomplete"}" data-id="${company.id}" tabindex="0" style="--score-deg:${Number.isFinite(score.total) ? score.total * 3.6 : 0}deg">
-        <div class="score-ring"><span>${scoreValue}</span></div>
+      <article class="company-card ${company.id === state.selectedId ? "active" : ""} ${score.complete ? "" : "incomplete"}" data-id="${company.id}" tabindex="0" style="--score-deg:${Number.isFinite(score.total) ? score.total * 3.6 : 0}deg;${scoreColorStyle(score)}">
+        <div class="score-ring" title="${RadarRenderers.escapeHtml(score.complete ? score.band.label : readinessLabel(company))}"><span>${scoreValue}</span></div>
         <div>
           <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.complete ? score.band.label : readinessLabel(company))}</p>
           <h3>${RadarRenderers.escapeHtml(company.name)}</h3>
@@ -1389,7 +1395,7 @@ function renderDetail() {
         <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(dataCoverageLabel(company))}${company.legal_name ? ` · ${RadarRenderers.escapeHtml(company.legal_name)}` : ""}</p>
         <p class="muted">資料更新：${RadarRenderers.escapeHtml(company.last_reviewed || "未提供")}</p>
       </div>
-      <span class="pill">${Number.isFinite(score.total) ? score.total : readinessLabel(company)}</span>
+      <span class="pill score-tier" style="${scoreColorStyle(score)}">${Number.isFinite(score.total) ? `${score.total} · ${RadarRenderers.escapeHtml(score.band.label)}` : readinessLabel(company)}</span>
     </div>
     ${score.complete ? "" : `<p class="risk">尚未產生總分。缺少：${RadarRenderers.escapeHtml(score.missingDimensions.join("、"))}</p>`}
     <div class="score-breakdown">${RadarRenderers.renderScoreRows(score)}</div>

@@ -53,10 +53,26 @@
     }
   ],
   "score_bands": [
-    { "min": 85, "label": "高度研究名單" },
-    { "min": 75, "label": "值得追蹤" },
-    { "min": 65, "label": "觀察中" },
-    { "min": 55, "label": "低分觀察" },
-    { "min": 0, "label": "資料不足" }
+    {
+      "id": "priority",
+      "min": 75,
+      "label": "優先觀察",
+      "description": "公開資料訊號整體較佳，列為優先閱讀與後續追蹤對象。",
+      "color": "#46b88a"
+    },
+    {
+      "id": "monitor",
+      "min": 60,
+      "label": "持續追蹤",
+      "description": "具備可追蹤條件，但仍需持續確認趨勢、事件與風險。",
+      "color": "#d6a94b"
+    },
+    {
+      "id": "defer",
+      "min": 0,
+      "label": "暫緩觀察",
+      "description": "現階段訊號較弱或風險較多，暫不列為優先研究對象。",
+      "color": "#cf6a6a"
+    }
   ]
 }
