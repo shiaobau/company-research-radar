@@ -115,6 +115,36 @@ async function selectRevenue(rawDir, company, observationDate, publicationLag) {
       source_file: path.relative(root, file)
     };
   }
+  const fallback = await optionalJson(path.join(rawDir, "finmind", `${company.ticker}-TaiwanStockMonthRevenue.json`));
+  const rows = fallback?.data || [];
+  const available = rows.filter((row) => row.date && addDays(row.date, publicationLag) <= observationDate && Number.isFinite(Number(row.revenue)));
+  const current = available.at(-1);
+  if (current) {
+    const currentYear = Number(current.revenue_year);
+    const currentMonth = Number(current.revenue_month);
+    const findRevenue = (year, month) => rows.find((row) => Number(row.revenue_year) === year && Number(row.revenue_month) === month && Number.isFinite(Number(row.revenue)));
+    const previousMonth = currentMonth === 1 ? 12 : currentMonth - 1;
+    const previousYear = currentMonth === 1 ? currentYear - 1 : currentYear;
+    const previous = findRevenue(previousYear, previousMonth);
+    const lastYear = findRevenue(currentYear - 1, currentMonth);
+    const currentCumulative = rows.filter((row) => Number(row.revenue_year) === currentYear && Number(row.revenue_month) <= currentMonth).reduce((sum, row) => sum + Number(row.revenue || 0), 0);
+    const lastYearCumulative = rows.filter((row) => Number(row.revenue_year) === currentYear - 1 && Number(row.revenue_month) <= currentMonth).reduce((sum, row) => sum + Number(row.revenue || 0), 0);
+    const yoy = lastYear ? (Number(current.revenue) - Number(lastYear.revenue)) / Math.abs(Number(lastYear.revenue)) * 100 : null;
+    const mom = previous ? (Number(current.revenue) - Number(previous.revenue)) / Math.abs(Number(previous.revenue)) * 100 : null;
+    const cumulativeYoy = lastYearCumulative ? (currentCumulative - lastYearCumulative) / Math.abs(lastYearCumulative) * 100 : null;
+    if ([yoy, mom, cumulativeYoy].every(Number.isFinite)) {
+      return {
+        status: "ok",
+        data_month: `${currentYear}-${String(currentMonth).padStart(2, "0")}`,
+        yoy_pct: round(yoy),
+        mom_pct: round(mom),
+        cumulative_yoy_pct: round(cumulativeYoy),
+        source_id: fallback.source_id,
+        source_url: fallback.source_url,
+        source_file: path.relative(root, path.join(rawDir, "finmind", `${company.ticker}-TaiwanStockMonthRevenue.json`))
+      };
+    }
+  }
   return { status: "missing", reason: "No dated MOPS monthly-revenue row was available before this observation date." };
 }
 
@@ -152,6 +182,47 @@ async function selectFinancial(rawDir, company, observationDate, publicationLag)
       source_url: income.source_url,
       source_files: [path.relative(root, incomeFile), path.relative(root, balanceFile)]
     };
+  }
+  const income = await optionalJson(path.join(rawDir, "finmind", `${company.ticker}-TaiwanStockFinancialStatements.json`));
+  const balance = await optionalJson(path.join(rawDir, "finmind", `${company.ticker}-TaiwanStockBalanceSheet.json`));
+  const incomeByDate = new Map();
+  for (const row of income?.data || []) {
+    if (row.date && row.type) incomeByDate.set(`${row.date}:${row.type}`, Number(row.value));
+  }
+  const balanceByDate = new Map();
+  for (const row of balance?.data || []) {
+    if (row.date && row.type) balanceByDate.set(`${row.date}:${row.type}`, Number(row.value));
+  }
+  const dates = [...new Set((income?.data || []).map((row) => row.date))].filter((date) => date && addDays(date, publicationLag) <= observationDate).sort();
+  const date = dates.at(-1);
+  if (date) {
+    const revenue = incomeByDate.get(`${date}:Revenue`);
+    const grossProfit = incomeByDate.get(`${date}:GrossProfit`);
+    const operatingIncome = incomeByDate.get(`${date}:OperatingIncome`);
+    const currentAssets = balanceByDate.get(`${date}:CurrentAssets`);
+    const currentLiabilities = balanceByDate.get(`${date}:CurrentLiabilities`);
+    const totalAssets = balanceByDate.get(`${date}:TotalAssets`);
+    const totalLiabilities = balanceByDate.get(`${date}:Liabilities`) ?? balanceByDate.get(`${date}:TotalLiabilities`);
+    const grossMargin = revenue ? grossProfit / revenue * 100 : null;
+    const operatingMargin = revenue ? operatingIncome / revenue * 100 : null;
+    const currentRatio = currentLiabilities ? currentAssets / currentLiabilities : null;
+    const debtRatio = totalAssets ? totalLiabilities / totalAssets * 100 : null;
+    if ([grossMargin, operatingMargin, currentRatio, debtRatio].every(Number.isFinite)) {
+      return {
+        status: "ok",
+        fiscal_period: date,
+        gross_margin_pct: round(grossMargin),
+        operating_margin_pct: round(operatingMargin),
+        current_ratio: round(currentRatio),
+        debt_ratio_pct: round(debtRatio),
+        source_id: income.source_id,
+        source_url: income.source_url,
+        source_files: [
+          path.relative(root, path.join(rawDir, "finmind", `${company.ticker}-TaiwanStockFinancialStatements.json`)),
+          path.relative(root, path.join(rawDir, "finmind", `${company.ticker}-TaiwanStockBalanceSheet.json`))
+        ]
+      };
+    }
   }
   return { status: "missing", reason: "No dated MOPS income-statement and balance-sheet rows were available before this observation date." };
 }

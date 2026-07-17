@@ -32,6 +32,19 @@
       "enabled": true,
       "publication_lag_days": 50
     },
+    "finmind_historical_fallback": {
+      "enabled": true,
+      "provider": "FinMind",
+      "source_type": "third_party_structured_public_data",
+      "base_url": "https://api.finmindtrade.com/api/v4/data",
+      "no_token_request_budget": 270,
+      "datasets": {
+        "revenue": "TaiwanStockMonthRevenue",
+        "income": "TaiwanStockFinancialStatements",
+        "balance": "TaiwanStockBalanceSheet"
+      },
+      "note": "Used only when the dated MOPS historical form cannot be collected. Raw responses retain their provider and URL. It does not replace the dated governance requirement."
+    },
     "historical_prices": {
       "enabled": true,
       "lookback_trading_days": 260

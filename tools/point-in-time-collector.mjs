@@ -1,5 +1,5 @@
 import { spawn } from "node:child_process";
-import { mkdir } from "node:fs/promises";
+import { mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { getMopsHistory } from "./mops-history-collector.mjs";
@@ -8,6 +8,14 @@ import { readJson, rocDateToIso, toNumber, tpexDateParam, twDateParam, writeJson
 const root = process.cwd();
 const dataDir = path.join(root, "data");
 const mopsWebBase = "https://mops.twse.com.tw/mops/web";
+
+async function optionalJson(file) {
+  try {
+    return JSON.parse(await readFile(file, "utf8"));
+  } catch {
+    return null;
+  }
+}
 
 function argValue(name, fallback = "") {
   const prefix = `--${name}=`;
@@ -214,6 +222,65 @@ async function getOfficialJson(url) {
   });
 }
 
+function finmindUrl(baseUrl, dataset, ticker, startDate, endDate) {
+  const url = new URL(baseUrl);
+  url.searchParams.set("dataset", dataset);
+  url.searchParams.set("data_id", ticker);
+  url.searchParams.set("start_date", startDate);
+  url.searchParams.set("end_date", endDate);
+  return url.toString();
+}
+
+async function collectFinmindDataset(company, source, datasetKey, startDate, endDate, outputDir, budget) {
+  const dataset = source.datasets?.[datasetKey];
+  const file = path.join(outputDir, "raw", "finmind", `${company.ticker}-${dataset}.json`);
+  const existing = await optionalJson(file);
+  if (!process.argv.includes("--refresh") && ["ok", "no_data"].includes(existing?.status)) return existing;
+  if (budget.used >= budget.limit) {
+    return { status: "deferred", dataset, reason: "FinMind request budget reached; run the collector again to resume from cache." };
+  }
+  budget.used += 1;
+  const sourceUrl = finmindUrl(source.base_url, dataset, company.ticker, startDate, endDate);
+  const payload = {
+    source_id: `finmind_${dataset}`,
+    provider: source.provider,
+    source_type: source.source_type,
+    source_url: sourceUrl,
+    dataset,
+    ticker: company.ticker,
+    requested_range: { start_date: startDate, end_date: endDate },
+    fetched_at: new Date().toISOString(),
+    status: "unavailable",
+    data: []
+  };
+  try {
+    const response = await getOfficialJson(sourceUrl);
+    if (response?.status !== 200 || !Array.isArray(response.data)) throw new Error(response?.msg || "Unexpected FinMind response.");
+    payload.status = response.data.length ? "ok" : "no_data";
+    payload.data = response.data;
+  } catch (error) {
+    payload.error = error.message;
+  }
+  await writeJson(file, payload);
+  return payload;
+}
+
+function historicalStartDate(startDate) {
+  const value = new Date(`${startDate}T00:00:00Z`);
+  value.setUTCMonth(value.getUTCMonth() - 18);
+  value.setUTCDate(1);
+  return isoDate(value);
+}
+
+async function collectFinmindHistory(company, source, startDate, endDate, outputDir, budget) {
+  if (!source?.enabled) return { status: "disabled" };
+  const datasets = await Promise.all(["revenue", "income", "balance"].map((key) => collectFinmindDataset(company, source, key, startDate, endDate, outputDir, budget)));
+  return {
+    status: datasets.every((dataset) => ["ok", "no_data"].includes(dataset.status)) ? "ok" : "partial",
+    datasets: Object.fromEntries(datasets.map((dataset) => [dataset.dataset, dataset.status]))
+  };
+}
+
 function marketType(market) {
   return market === "TPEx" ? "otc" : "sii";
 }
@@ -390,8 +457,14 @@ async function main() {
   }
 
   const companyStatus = [];
+  const finmindSource = config.sources.finmind_historical_fallback;
+  const finmindBudget = { used: 0, limit: Number(argValue("finmind-request-budget", finmindSource?.no_token_request_budget || 0)) };
+  const finmindStart = historicalStartDate(startDate);
   for (const company of selectedCompanies) {
-    const record = { ticker: company.ticker, market: company.market, price: "unavailable", mops_history: "unavailable" };
+    const record = { ticker: company.ticker, market: company.market, price: "unavailable", mops_history: "unavailable", finmind_historical: "disabled" };
+    const finmind = await collectFinmindHistory(company, finmindSource, finmindStart, endDate, outputDir, finmindBudget);
+    record.finmind_historical = finmind.status;
+    record.finmind_datasets = finmind.datasets || {};
     const price = await fetchPriceHistory(company, startDate, isoDate(priceEnd), outputDir);
     record.price = price.status;
     try {
@@ -423,6 +496,7 @@ async function main() {
     source_status: reportStatus.map((item) => ({ source_id: item.source_id, market: item.market, period: `${item.roc_year}-${item.quarter || item.month}`, status: item.status, error: item.error || null })),
     skipped_mops_reports: skipMopsReports,
     companies: companyStatus,
+    finmind_request_budget: { used: finmindBudget.used, limit: finmindBudget.limit },
     note: "Raw source data is stored before scoring. A source security response or missing dated governance record is preserved as unavailable and must not be replaced with current data."
   };
   await writeJson(path.join(outputDir, "manifest.json"), manifest);
