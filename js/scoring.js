@@ -23,6 +23,15 @@
     return [...bands].sort((left, right) => right.min - left.min).find((band) => score >= band.min) || bands[bands.length - 1];
   }
 
+  function calibrateCoreScore(rawScore, rules) {
+    const calibration = rules?.core_score_calibration || {};
+    if (calibration.method !== "neutral_centered_spread") return clamp(rawScore);
+    const neutral = Number(calibration.neutral_score);
+    const factor = Number(calibration.spread_factor);
+    if (!Number.isFinite(neutral) || !Number.isFinite(factor) || factor <= 0) return clamp(rawScore);
+    return clamp(neutral + (rawScore - neutral) * factor);
+  }
+
   function dimensionsFor(company, rules) {
     if (rules.common_dimensions) return rules.common_dimensions;
     return rules.industries?.[company.industry_template]?.dimensions || [];
@@ -199,7 +208,8 @@
       return { total: null, rawTotal: null, complete: false, missingDimensions, coreMissingDimensions, band: { label: "資料不足" }, rows };
     }
     const weightSum = coreRows.reduce((sum, row) => sum + Number(row.weight), 0);
-    const coreTotal = clamp(coreRows.reduce((sum, row) => sum + row.score * Number(row.weight), 0) / weightSum);
+    const rawCoreTotal = clamp(coreRows.reduce((sum, row) => sum + row.score * Number(row.weight), 0) / weightSum);
+    const coreTotal = calibrateCoreScore(rawCoreTotal, rules);
     const industryRecord = recordFor(company, "industryEvidence", datasets);
     const industryDirection = adjustmentRow?.status === "ok"
       ? String(industryRecord?.direction || "neutral")
@@ -213,7 +223,8 @@
     const industryEvidencePending = adjustmentRow?.status !== "ok";
     return {
       total,
-      rawTotal: coreTotal,
+      rawTotal: rawCoreTotal,
+      rawCoreTotal,
       coreTotal,
       industryAdjustment,
       industryAdjustmentLabel: adjustmentBand?.label || "產業證據待補",

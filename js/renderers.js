@@ -57,26 +57,45 @@
   }
 
   function renderScoreRows(score) {
-    return score.rows.map((row) => `
+    return score.rows.map((row) => {
+      const submetrics = (row.submetrics || []).length ? `
+        <details class="score-submetrics">
+          <summary>${row.submetrics.length} 個子測項</summary>
+          <div class="score-submetric-list">
+            ${row.submetrics.map((metric) => `
+              <div title="${escapeHtml(metric.rationale)}">
+                <span>${escapeHtml(metric.label)}</span>
+                <b>${Number.isFinite(metric.score) ? metric.score : "待補"}</b>
+              </div>
+            `).join("")}
+          </div>
+        </details>
+      ` : "";
+      if (row.id === "industryFundamental") {
+        const points = Number.isFinite(score.industryAdjustment) ? score.industryAdjustment : 0;
+        const position = Math.max(0, Math.min(100, ((points + 6) / 12) * 100));
+        const value = `${points > 0 ? "+" : ""}${points}`;
+        return `
+          <div class="score-row score-adjustment" title="${escapeHtml(row.rationale)}">
+            <span>${escapeHtml(row.label)}</span>
+            <div class="adjustment-scale" style="--adjustment-position:${position}%">
+              <div class="adjustment-track"><i></i></div>
+              <div class="adjustment-labels"><small>-6</small><small>0</small><small>+6</small></div>
+            </div>
+            <b class="adjustment-value ${points > 0 ? "positive" : points < 0 ? "negative" : "neutral"}">${value}</b>
+            ${submetrics}
+          </div>
+        `;
+      }
+      return `
       <div class="score-row" title="${escapeHtml(row.rationale)}">
         <span>${escapeHtml(row.label)}</span>
         <div class="bar" style="--bar-width:${Number.isFinite(row.score) ? row.score : 0}%"><span></span></div>
-        <b>${row.id === "industryFundamental" && Number.isFinite(score.industryAdjustment) ? `${score.industryAdjustment > 0 ? "+" : ""}${score.industryAdjustment}` : Number.isFinite(row.score) ? row.score : "待補"}</b>
-        ${(row.submetrics || []).length ? `
-          <details class="score-submetrics">
-            <summary>${row.submetrics.length} 個子測項</summary>
-            <div class="score-submetric-list">
-              ${row.submetrics.map((metric) => `
-                <div title="${escapeHtml(metric.rationale)}">
-                  <span>${escapeHtml(metric.label)}</span>
-                  <b>${Number.isFinite(metric.score) ? metric.score : "待補"}</b>
-                </div>
-              `).join("")}
-            </div>
-          </details>
-        ` : ""}
+        <b>${Number.isFinite(row.score) ? row.score : "待補"}</b>
+        ${submetrics}
       </div>
-    `).join("");
+    `;
+    }).join("");
   }
 
   window.RadarRenderers = {

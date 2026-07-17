@@ -1,6 +1,12 @@
 {
-  "version": "0.6.0",
-  "scoring_method": "跨產業研究分數由六項加權核心維度與一項產業證據調整組成。核心子測項必須具備公開資料；產業調整只有在產業模板子檢核具備可追溯的正負向事實時才介入，資料未齊時以 0 分計。",
+  "version": "0.7.0",
+  "scoring_method": "跨產業研究分數由六項加權核心維度與一項產業證據調整組成。核心子測項必須具備公開資料；核心分數以 50 為中性點展開為百分制，產業調整只有在產業模板子檢核具備可追溯的正負向事實時才介入，資料未齊時以 0 分計。",
+  "core_score_calibration": {
+    "method": "neutral_centered_spread",
+    "neutral_score": 50,
+    "spread_factor": 1.25,
+    "description": "以 50 為中性點放大核心分數差異；所有結果限制於 0 到 100。"
+  },
   "common_dimensions": [
     {
       "id": "catalyst",
@@ -100,8 +106,8 @@
     }
   ],
   "score_bands": [
-    { "id": "priority", "min": 75, "label": "優先觀察", "description": "多數可追溯子測項表現較佳，列為優先閱讀與後續追蹤對象；不構成買賣建議。", "color": "#46b88a" },
-    { "id": "monitor", "min": 60, "label": "持續追蹤", "description": "已有可追蹤條件，但部分子測項仍需確認趨勢、事件或風險。", "color": "#d6a94b" },
+    { "id": "priority", "min": 82, "label": "優先觀察", "description": "核心百分制訊號明確偏強，列為優先閱讀與後續追蹤對象；不構成買賣建議。", "color": "#46b88a" },
+    { "id": "monitor", "min": 65, "label": "持續追蹤", "description": "已有可追蹤條件，但部分子測項仍需確認趨勢、事件或風險。", "color": "#d6a94b" },
     { "id": "defer", "min": 0, "label": "訊號待確認", "description": "公開資料訊號尚待確認，應回到子測項、事件內容與資料日期進一步閱讀。", "color": "#cf6a6a" }
   ]
 }

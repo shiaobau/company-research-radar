@@ -858,6 +858,53 @@ button:focus {
   background: linear-gradient(90deg, var(--teal), var(--amber));
 }
 
+.score-adjustment .adjustment-scale {
+  display: grid;
+  gap: 3px;
+}
+
+.adjustment-track {
+  position: relative;
+  height: 8px;
+  border: 1px solid #49504b;
+  background: linear-gradient(90deg, #a94b53 0%, #a94b53 46%, #2d332f 46%, #2d332f 54%, #49ae83 54%, #49ae83 100%);
+}
+
+.adjustment-track::before {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: 50%;
+  width: 1px;
+  background: #e1e9e4;
+  content: "";
+}
+
+.adjustment-track i {
+  position: absolute;
+  top: 50%;
+  left: var(--adjustment-position);
+  width: 10px;
+  height: 10px;
+  border: 2px solid #f4f8f6;
+  border-radius: 50%;
+  background: #121615;
+  box-shadow: 0 0 0 1px #121615;
+  transform: translate(-50%, -50%);
+}
+
+.adjustment-labels {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1;
+}
+
+.adjustment-value.positive { color: #58c797; }
+.adjustment-value.negative { color: #ec767c; }
+.adjustment-value.neutral { color: #d6a94b; }
+
 .module {
   padding: 14px 0;
   border-top: 1px solid var(--line);
