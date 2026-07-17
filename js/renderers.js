@@ -57,7 +57,7 @@
   }
 
   function renderScoreRows(score) {
-    return score.rows.map((row) => {
+    return score.rows.filter((row) => row.id !== "industryFundamental" || !score.isProvisional).map((row) => {
       const submetrics = (row.submetrics || []).length ? `
         <details class="score-submetrics">
           <summary>${row.submetrics.length} 個子測項</summary>

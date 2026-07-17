@@ -124,11 +124,39 @@ function buildFacts(company, datasets) {
     ));
   }
 
+  if (ownership?.status === "ok") {
+    const governanceItems = [
+      Number.isFinite(Number(ownership.major_shareholder_count)) ? `主要股東揭露 ${formatNumber(ownership.major_shareholder_count, 0)} 位` : "",
+      Number.isFinite(Number(ownership.insider_transfer_count)) ? `內部人轉讓 ${formatNumber(ownership.insider_transfer_count, 0)} 筆` : ""
+    ].filter(Boolean);
+    facts.push(fact(
+      "governance_snapshot",
+      "股權與治理",
+      governanceItems.length ? `${governanceItems.join("；")}。` : "",
+      ownership.source_ids
+    ));
+  }
+
   if (risk?.status === "ok" && Number(risk.disclosure_violation_count) > 0) {
     facts.push(fact(
       "disclosure_violations",
       "申報違規",
       `公開資料列示申報違規 ${formatNumber(risk.disclosure_violation_count, 0)} 筆。`,
+      risk.source_ids
+    ));
+  }
+
+  if (risk?.status === "ok") {
+    const riskItems = [
+      Number.isFinite(Number(risk.event_count)) ? `官方事件 ${formatNumber(risk.event_count, 0)} 則` : "",
+      Number.isFinite(Number(risk.review_event_count)) && Number(risk.review_event_count) > 0 ? `待閱讀 ${formatNumber(risk.review_event_count, 0)} 則` : "",
+      Number.isFinite(Number(risk.negative_event_count)) && Number(risk.negative_event_count) > 0 ? `重大負向 ${formatNumber(risk.negative_event_count, 0)} 則` : "",
+      Number.isFinite(Number(risk.disclosure_violation_count)) ? `申報違規 ${formatNumber(risk.disclosure_violation_count, 0)} 筆` : ""
+    ].filter(Boolean);
+    facts.push(fact(
+      "event_risk_snapshot",
+      "事件與合規",
+      riskItems.length ? `${riskItems.join("；")}。` : "",
       risk.source_ids
     ));
   }

@@ -1040,8 +1040,41 @@ function displayThesis(company) {
 }
 
 function publicFactsFor(company) {
-  return (state.publicFactsData.companies?.[company.id]?.facts || [])
+  const facts = (state.publicFactsData.companies?.[company.id]?.facts || [])
     .filter((item) => item?.label && item?.value && Array.isArray(item.source_ids) && item.source_ids.length);
+  const factIds = new Set(facts.map((item) => item.id));
+  const ownership = state.ownershipData.companies?.[company.id];
+  const risk = state.riskData.companies?.[company.id];
+
+  if (ownership?.status === "ok" && !factIds.has("governance_snapshot")) {
+    const parts = [
+      Number.isFinite(Number(ownership.major_shareholder_count)) ? `主要股東揭露 ${formatNumber(ownership.major_shareholder_count, 0)} 位` : "",
+      Number.isFinite(Number(ownership.insider_transfer_count)) ? `內部人轉讓 ${formatNumber(ownership.insider_transfer_count, 0)} 筆` : ""
+    ].filter(Boolean);
+    if (parts.length) facts.push({
+      id: "governance_snapshot",
+      label: "股權與治理",
+      value: `${parts.join("；")}。`,
+      source_ids: ownership.source_ids || []
+    });
+  }
+
+  if (risk?.status === "ok" && !factIds.has("event_risk_snapshot")) {
+    const parts = [
+      Number.isFinite(Number(risk.event_count)) ? `官方事件 ${formatNumber(risk.event_count, 0)} 則` : "",
+      Number.isFinite(Number(risk.review_event_count)) && Number(risk.review_event_count) > 0 ? `待閱讀 ${formatNumber(risk.review_event_count, 0)} 則` : "",
+      Number.isFinite(Number(risk.negative_event_count)) && Number(risk.negative_event_count) > 0 ? `重大負向 ${formatNumber(risk.negative_event_count, 0)} 則` : "",
+      Number.isFinite(Number(risk.disclosure_violation_count)) ? `申報違規 ${formatNumber(risk.disclosure_violation_count, 0)} 筆` : ""
+    ].filter(Boolean);
+    if (parts.length) facts.push({
+      id: "event_risk_snapshot",
+      label: "事件與合規",
+      value: `${parts.join("；")}。`,
+      source_ids: risk.source_ids || []
+    });
+  }
+
+  return facts;
 }
 
 function publicFactSourceIds(company) {
@@ -1126,11 +1159,9 @@ function scoreColorStyle(score) {
 function scoreDisplayTitle(score) {
   if (!score.complete) return "研究中，尚未具備完整評分資料";
   const submetricCount = score.rows.reduce((sum, row) => sum + (row.submetrics?.length || 0), 0);
-  const adjustment = Number.isFinite(score.industryAdjustment)
-    ? `${score.industryAdjustment >= 0 ? "+" : ""}${score.industryAdjustment}`
-    : "0";
-  const adjustmentScope = score.isProvisional ? "產業調整待補，暫以 0 分計" : score.industryAdjustmentLabel;
-  return `${score.band.label}（核心 ${score.coreTotal}/100；${adjustment} 產業調整 = 綜合 ${score.total}/100；${adjustmentScope}；${submetricCount} 個公開資料子測項）`;
+  const adjustment = Number(score.industryAdjustment || 0);
+  const adjustmentText = adjustment ? `；產業調整 ${adjustment > 0 ? "+" : ""}${adjustment}` : "";
+  return `${score.band.label}（核心 ${score.coreTotal}/100${adjustmentText}；綜合 ${score.total}/100；${submetricCount} 個公開資料子測項）`;
 }
 
 function scoreMissingLabel(score) {
@@ -1287,24 +1318,22 @@ function renderCompanyList(companies) {
 
     const template = state.templates[company.industry_template];
     const score = RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets());
-    const sourceIndex = sourceIndexFor(company);
-    const summary = renderPublicFacts(company, sourceIndex, true);
+    const summary = renderPublicFacts(company, {}, true);
 
     const readiness = researchReadiness(company);
     const missingLabels = (readiness.missing_dimensions || []).map((item) => item.label).join("、");
     const scoreValue = Number.isFinite(score.total) ? score.total : "待補";
-    const industryRank = industryRankLabel(company, score);
     return `
       <article class="company-card ${company.id === state.selectedId ? "active" : ""} ${score.complete ? "" : "incomplete"}" data-id="${company.id}" tabindex="0" style="--score-deg:${Number.isFinite(score.total) ? score.total * 3.6 : 0}deg;${scoreColorStyle(score)}">
         <div class="score-ring" title="${RadarRenderers.escapeHtml(score.complete ? scoreDisplayTitle(score) : readinessLabel(company))}"><span>${scoreValue}</span></div>
         <div>
-          <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.complete ? score.band.label : readinessLabel(company))}${score.isProvisional ? " · 核心完成" : ""}</p>
+          <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.complete ? score.band.label : readinessLabel(company))}</p>
           <h3>${RadarRenderers.escapeHtml(company.name)}</h3>
-          <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(dataCoverageLabel(company))}${industryRank ? ` · ${RadarRenderers.escapeHtml(industryRank)}` : ""}</p>
+          <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))}</p>
           ${score.complete ? "" : `<p class="muted">缺少：${RadarRenderers.escapeHtml(scoreMissingLabel(score) || missingLabels || "評分資料")}</p>`}
           <div class="card-tags">${displayTags(company).map((tag) => `<span class="tag">${RadarRenderers.escapeHtml(tag)}</span>`).join("")}</div>
         </div>
-        <div class="mini-fields">${summary}${renderPublicFactSourceTooltips(company, sourceIndex)}</div>
+        <div class="mini-fields">${summary}</div>
       </article>
     `;
   }).join("");
@@ -1421,7 +1450,6 @@ function renderDetail() {
 
   const template = state.templates[company.industry_template];
   const score = RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets());
-  const industryRank = industryRankLabel(company, score);
   const sourceIndex = sourceIndexFor(company);
   const dataSnapshot = renderDataSnapshot(company, sourceIndex);
   const publicFacts = renderPublicFacts(company, sourceIndex);
@@ -1430,15 +1458,15 @@ function renderDetail() {
   $("#company-detail").innerHTML = `
     <div class="detail-title">
       <div>
-        <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.band.label)}${score.isProvisional ? " · 核心完成" : ""}</p>
+        <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.band.label)}</p>
         <h2>${RadarRenderers.escapeHtml(company.name)}</h2>
-        <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))} · ${RadarRenderers.escapeHtml(dataCoverageLabel(company))}${industryRank ? ` · ${RadarRenderers.escapeHtml(industryRank)}` : ""}${company.legal_name ? ` · ${RadarRenderers.escapeHtml(company.legal_name)}` : ""}</p>
+        <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))}${company.legal_name ? ` · ${RadarRenderers.escapeHtml(company.legal_name)}` : ""}</p>
         <p class="muted">資料更新：${RadarRenderers.escapeHtml(company.last_reviewed || "未提供")}</p>
       </div>
       <span class="pill score-tier" title="${RadarRenderers.escapeHtml(scoreDisplayTitle(score))}" style="${scoreColorStyle(score)}">${Number.isFinite(score.total) ? `${score.total} · ${RadarRenderers.escapeHtml(score.band.label)}` : readinessLabel(company)}</span>
     </div>
     ${publicFacts}
-    ${score.complete ? `<p class="risk">核心分數 ${score.coreTotal}/100；產業證據調整 ${score.industryAdjustment >= 0 ? "+" : ""}${score.industryAdjustment} 分（${RadarRenderers.escapeHtml(score.industryAdjustmentLabel)}）；綜合 ${score.total}/100。${score.isProvisional ? "產業證據待補時暫以 0 分計，不影響六項核心分數。" : ""}</p>` : ""}
+    ${score.complete ? `<p class="risk">核心分數 ${score.coreTotal}/100${Number(score.industryAdjustment || 0) ? `；產業調整 ${score.industryAdjustment >= 0 ? "+" : ""}${score.industryAdjustment} 分` : ""}；綜合 ${score.total}/100。</p>` : ""}
     ${score.complete ? "" : `<p class="risk">尚未產生核心分數。缺少：${RadarRenderers.escapeHtml(scoreMissingLabel(score))}</p>`}
     <div class="score-breakdown">${RadarRenderers.renderScoreRows(score)}</div>
     <details class="detail-fold">
