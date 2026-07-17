@@ -1466,7 +1466,6 @@ function renderDetail() {
       <span class="pill score-tier" title="${RadarRenderers.escapeHtml(scoreDisplayTitle(score))}" style="${scoreColorStyle(score)}">${Number.isFinite(score.total) ? `${score.total} · ${RadarRenderers.escapeHtml(score.band.label)}` : readinessLabel(company)}</span>
     </div>
     ${publicFacts}
-    ${score.complete ? `<p class="risk">核心分數 ${score.coreTotal}/100${Number(score.industryAdjustment || 0) ? `；產業調整 ${score.industryAdjustment >= 0 ? "+" : ""}${score.industryAdjustment} 分` : ""}；綜合 ${score.total}/100。</p>` : ""}
     ${score.complete ? "" : `<p class="risk">尚未產生核心分數。缺少：${RadarRenderers.escapeHtml(scoreMissingLabel(score))}</p>`}
     <div class="score-breakdown">${RadarRenderers.renderScoreRows(score)}</div>
     <details class="detail-fold">

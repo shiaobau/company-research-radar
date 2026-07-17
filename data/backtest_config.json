@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "description": "歷史時點回測設定。所有評分只使用 observation_date 當日或之前已公開的資料；任一核心維度缺失時不產生總分。",
+  "cohort": {
+    "templates": "all",
+    "companies_per_template": 10,
+    "selection": "evenly_spaced_by_ticker",
+    "minimum_listing_days": 420
+  },
+  "timeline": {
+    "months": 12,
+    "observation_day": 15,
+    "forward_return_days": [20, 60, 120],
+    "event_lookback_days": 90
+  },
+  "event_classification": {
+    "positive_patterns": ["取得訂單", "簽訂合約", "策略合作", "新產品", "量產", "啟用", "獲准", "核准", "收購", "併購"],
+    "note": "僅把未被風險分類器標記為負向或待閱讀的公告，且命中此清單者計為正向催化；模式本身不使用產業專屬字詞。"
+  },
+  "sources": {
+    "mops_history": {
+      "enabled": true,
+      "years": 2,
+      "max_events": 160,
+      "detail_limit": 0
+    },
+    "mops_monthly_revenue": {
+      "enabled": true,
+      "publication_lag_days": 12
+    },
+    "mops_financial_statements": {
+      "enabled": true,
+      "publication_lag_days": 50
+    },
+    "historical_prices": {
+      "enabled": true,
+      "lookback_trading_days": 260
+    },
+    "historical_governance": {
+      "enabled": true,
+      "require_dated_source": true
+    }
+  },
+  "scoring": {
+    "require_all_six_core_dimensions": true,
+    "industry_adjustment": false,
+    "use_current_scoring_rules": true
+  }
+}
