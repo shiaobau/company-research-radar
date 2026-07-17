@@ -38,11 +38,6 @@
     const value = String(field || "").split(".").reduce((result, key) => result?.[key], record);
     const numeric = Number(value);
     if (Number.isFinite(numeric)) return numeric;
-    // Legacy risk snapshots can be scored safely until their next public-data refresh.
-    if (field === "review_event_count" && Number.isFinite(Number(record?.negative_event_count))) return 0;
-    if (field === "negative_event_points" && Number.isFinite(Number(record?.negative_event_count))) {
-      return Number(record.negative_event_count) * 18;
-    }
     return null;
   }
 

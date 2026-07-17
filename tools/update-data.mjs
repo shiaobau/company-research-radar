@@ -103,6 +103,7 @@ function revenueScoreFrom(row) {
   const yoy = toNumber(row["營業收入-去年同月增減(%)"]);
   const mom = toNumber(row["營業收入-上月比較增減(%)"]);
   const cumulativeYoy = toNumber(row["累計營業收入-前期比較增減(%)"]);
+  if (![yoy, mom, cumulativeYoy].every(Number.isFinite)) return null;
   const yoyScore = scoreByThresholds(yoy, [[20, 85], [10, 75], [3, 65], [0, 58], [-10, 48], [-999, 35]], 45);
   const momScore = scoreByThresholds(mom, [[10, 70], [0, 58], [-10, 50], [-999, 42]], 50);
   const cumulativeScore = scoreByThresholds(cumulativeYoy, [[15, 82], [8, 72], [3, 64], [0, 58], [-10, 48], [-999, 35]], 45);
@@ -130,23 +131,15 @@ function financialScoreFrom(income, balance) {
   const currentRatio = currentLiabilities ? currentAssets / currentLiabilities : null;
   const debtRatio = totalAssets ? (totalLiabilities / totalAssets) * 100 : null;
 
-  const grossScore = marginScore(grossMargin, [[50, 85], [35, 75], [25, 65], [15, 55], [-999, 45]]);
-  const opScore = marginScore(operatingMargin, [[20, 85], [10, 75], [5, 65], [0, 55], [-999, 35]]);
-  const netScore = marginScore(netMargin, [[15, 80], [8, 70], [0, 58], [-999, 35]]);
-  const liquidityScore = scoreByThresholds(currentRatio, [[2, 75], [1.2, 65], [1, 55], [-999, 40]], 50);
-  const debtScore = Number.isFinite(debtRatio)
-    ? debtRatio <= 30 ? 75 : debtRatio <= 50 ? 65 : debtRatio <= 70 ? 55 : 40
-    : 50;
-  const epsScore = Number.isFinite(eps) ? (eps > 0 ? 65 : 40) : 50;
-
-  const score = Math.round(
-    grossScore * 0.2 +
-    opScore * 0.25 +
-    netScore * 0.15 +
-    liquidityScore * 0.15 +
-    debtScore * 0.15 +
-    epsScore * 0.1
-  );
+  const complete = [grossMargin, operatingMargin, netMargin, currentRatio, debtRatio, eps].every(Number.isFinite);
+  const score = complete ? Math.round(
+    marginScore(grossMargin, [[50, 85], [35, 75], [25, 65], [15, 55], [-999, 45]]) * 0.2 +
+    marginScore(operatingMargin, [[20, 85], [10, 75], [5, 65], [0, 55], [-999, 35]]) * 0.25 +
+    marginScore(netMargin, [[15, 80], [8, 70], [0, 58], [-999, 35]]) * 0.15 +
+    scoreByThresholds(currentRatio, [[2, 75], [1.2, 65], [1, 55], [-999, 40]], 50) * 0.15 +
+    (debtRatio <= 30 ? 75 : debtRatio <= 50 ? 65 : debtRatio <= 70 ? 55 : 40) * 0.15 +
+    (eps > 0 ? 65 : 40) * 0.1
+  ) : null;
 
   return {
     score,
