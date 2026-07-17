@@ -1,12 +1,6 @@
 {
-  "version": "0.7.0",
-  "scoring_method": "跨產業研究分數由六項加權核心維度與一項產業證據調整組成。核心子測項必須具備公開資料；核心分數以 50 為中性點展開為百分制，產業調整只有在產業模板子檢核具備可追溯的正負向事實時才介入，資料未齊時以 0 分計。",
-  "core_score_calibration": {
-    "method": "neutral_centered_spread",
-    "neutral_score": 50,
-    "spread_factor": 1.25,
-    "description": "以 50 為中性點放大核心分數差異；所有結果限制於 0 到 100。"
-  },
+  "version": "0.8.0",
+  "scoring_method": "跨產業研究分數由六項加權核心維度與一項產業證據調整組成。核心子測項必須具備公開資料；六項核心分數直接依權重加總為 0 到 100 的百分制，產業調整只有在產業模板子檢核具備可追溯的正負向事實時才介入，資料未齊時以 0 分計。",
   "common_dimensions": [
     {
       "id": "catalyst",
@@ -23,7 +17,7 @@
     {
       "id": "revenueMomentum",
       "label": "營收動能",
-      "weight": 0.18,
+      "weight": 0.2,
       "description": "拆解單月年增、月增與累計年增，避免只靠單一營收數字判讀。",
       "high_score_signal": "單月與累計動能皆正向，且月增未顯著轉弱。",
       "submetrics": [
@@ -35,7 +29,7 @@
     {
       "id": "cashProfitQuality",
       "label": "獲利與財務韌性",
-      "weight": 0.17,
+      "weight": 0.2,
       "description": "分別檢視毛利、營益、短期償債能力與負債壓力。",
       "high_score_signal": "獲利率與流動性穩健，負債未造成明顯壓力。",
       "submetrics": [
@@ -64,21 +58,21 @@
       "description": "以可取得的大股東、內部人轉讓與申報違規資料建立可查核的治理基礎分。",
       "high_score_signal": "股權揭露可追溯，近期未見內部人異常移轉或申報違規。",
       "submetrics": [
-        { "id": "major_shareholder_visibility", "label": "主要股東揭露", "weight": 0.3, "formula": "threshold", "source": "ownership", "field": "major_shareholder_count", "direction": "higher", "bands": [{ "min": 5, "score": 85 }, { "min": 2, "score": 75 }, { "min": 1, "score": 65 }, { "min": 0, "score": 55 }] },
-        { "id": "insider_transfers", "label": "內部人轉讓壓力", "weight": 0.3, "formula": "threshold", "source": "ownership", "field": "insider_transfer_count", "direction": "lower", "bands": [{ "max": 0, "score": 78 }, { "max": 2, "score": 58 }, { "max": 5, "score": 40 }, { "max": 999, "score": 25 }] },
-        { "id": "governance_compliance", "label": "資訊申報合規", "weight": 0.4, "formula": "threshold", "source": "ownership", "field": "disclosure_violation_count", "direction": "lower", "bands": [{ "max": 0, "score": 92 }, { "max": 1, "score": 58 }, { "max": 3, "score": 32 }, { "max": 999, "score": 15 }] }
+        { "id": "major_shareholder_visibility", "label": "主要股東資料可追溯度", "weight": 0.15, "formula": "threshold", "source": "ownership", "field": "major_shareholder_count", "direction": "higher", "bands": [{ "min": 5, "score": 82 }, { "min": 2, "score": 75 }, { "min": 1, "score": 68 }, { "min": 0, "score": 60 }] },
+        { "id": "insider_transfers", "label": "內部人轉讓壓力", "weight": 0.35, "formula": "threshold", "source": "ownership", "field": "insider_transfer_count", "direction": "lower", "bands": [{ "max": 0, "score": 80 }, { "max": 2, "score": 62 }, { "max": 5, "score": 45 }, { "max": 999, "score": 28 }] },
+        { "id": "governance_compliance", "label": "資訊申報合規", "weight": 0.5, "formula": "threshold", "source": "ownership", "field": "disclosure_violation_count", "direction": "lower", "bands": [{ "max": 0, "score": 92 }, { "max": 1, "score": 68 }, { "max": 3, "score": 42 }, { "max": 999, "score": 20 }] }
       ]
     },
     {
       "id": "riskNews",
       "label": "事件與合規風險",
-      "weight": 0.1,
+      "weight": 0.15,
       "description": "拆解負向重大訊息、資訊申報違規與公開事件覆蓋程度。",
       "high_score_signal": "近期未見負向重大事件或違規，且公開事件資料可查。",
       "submetrics": [
-        { "id": "negative_event_pressure", "label": "負向事件壓力", "weight": 0.45, "formula": "event_balance", "source": "risk", "positive_field": "positive_event_count", "negative_field": "negative_event_count", "base": 78, "positive_weight": 0, "negative_weight": 26, "min_score": 15, "max_score": 88 },
-        { "id": "disclosure_compliance", "label": "資訊申報違規", "weight": 0.35, "formula": "threshold", "source": "risk", "field": "disclosure_violation_count", "direction": "lower", "bands": [{ "max": 0, "score": 92 }, { "max": 1, "score": 58 }, { "max": 3, "score": 30 }, { "max": 999, "score": 15 }] },
-        { "id": "event_coverage", "label": "公開事件覆蓋", "weight": 0.2, "formula": "threshold", "source": "risk", "field": "event_count", "direction": "higher", "bands": [{ "min": 3, "score": 82 }, { "min": 1, "score": 70 }, { "min": 0, "score": 55 }] }
+        { "id": "negative_event_pressure", "label": "重大負向事件壓力", "weight": 0.5, "formula": "threshold", "source": "risk", "field": "negative_event_points", "direction": "lower", "bands": [{ "max": 0, "score": 92 }, { "max": 6, "score": 86 }, { "max": 14, "score": 76 }, { "max": 24, "score": 60 }, { "max": 999, "score": 35 }] },
+        { "id": "disclosure_compliance", "label": "資訊申報違規", "weight": 0.35, "formula": "threshold", "source": "risk", "field": "disclosure_violation_count", "direction": "lower", "bands": [{ "max": 0, "score": 92 }, { "max": 1, "score": 68 }, { "max": 3, "score": 42 }, { "max": 999, "score": 20 }] },
+        { "id": "review_event_attention", "label": "待閱讀公告", "weight": 0.15, "formula": "threshold", "source": "risk", "field": "review_event_count", "direction": "lower", "bands": [{ "max": 0, "score": 90 }, { "max": 1, "score": 86 }, { "max": 3, "score": 78 }, { "max": 999, "score": 68 }] }
       ]
     },
     {
@@ -106,8 +100,8 @@
     }
   ],
   "score_bands": [
-    { "id": "priority", "min": 82, "label": "優先觀察", "description": "核心百分制訊號明確偏強，列為優先閱讀與後續追蹤對象；不構成買賣建議。", "color": "#46b88a" },
-    { "id": "monitor", "min": 65, "label": "持續追蹤", "description": "已有可追蹤條件，但部分子測項仍需確認趨勢、事件或風險。", "color": "#d6a94b" },
+    { "id": "priority", "min": 75, "label": "優先觀察", "description": "核心百分制訊號明確偏強，列為優先閱讀與後續追蹤對象；不構成買賣建議。", "color": "#46b88a" },
+    { "id": "monitor", "min": 60, "label": "持續追蹤", "description": "已有可追蹤條件，但部分子測項仍需確認趨勢、事件或風險。", "color": "#d6a94b" },
     { "id": "defer", "min": 0, "label": "訊號待確認", "description": "公開資料訊號尚待確認，應回到子測項、事件內容與資料日期進一步閱讀。", "color": "#cf6a6a" }
   ]
 }

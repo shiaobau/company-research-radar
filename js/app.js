@@ -1130,7 +1130,7 @@ function scoreDisplayTitle(score) {
     ? `${score.industryAdjustment >= 0 ? "+" : ""}${score.industryAdjustment}`
     : "0";
   const adjustmentScope = score.isProvisional ? "產業調整待補，暫以 0 分計" : score.industryAdjustmentLabel;
-  return `${score.band.label}（原始核心 ${score.rawCoreTotal}/100 -> 展開後核心 ${score.coreTotal}/100；${adjustment} 產業調整 = 綜合 ${score.total}/100；${adjustmentScope}；${submetricCount} 個公開資料子測項）`;
+  return `${score.band.label}（核心 ${score.coreTotal}/100；${adjustment} 產業調整 = 綜合 ${score.total}/100；${adjustmentScope}；${submetricCount} 個公開資料子測項）`;
 }
 
 function scoreMissingLabel(score) {
@@ -1438,7 +1438,7 @@ function renderDetail() {
       <span class="pill score-tier" title="${RadarRenderers.escapeHtml(scoreDisplayTitle(score))}" style="${scoreColorStyle(score)}">${Number.isFinite(score.total) ? `${score.total} · ${RadarRenderers.escapeHtml(score.band.label)}` : readinessLabel(company)}</span>
     </div>
     ${publicFacts}
-    ${score.complete ? `<p class="risk">原始核心分數 ${score.rawCoreTotal}/100，百分制展開後核心分數 ${score.coreTotal}/100；產業證據調整 ${score.industryAdjustment >= 0 ? "+" : ""}${score.industryAdjustment} 分（${RadarRenderers.escapeHtml(score.industryAdjustmentLabel)}）；綜合 ${score.total}/100。${score.isProvisional ? "產業證據待補時暫以 0 分計，不影響六項核心分數。" : ""}</p>` : ""}
+    ${score.complete ? `<p class="risk">核心分數 ${score.coreTotal}/100；產業證據調整 ${score.industryAdjustment >= 0 ? "+" : ""}${score.industryAdjustment} 分（${RadarRenderers.escapeHtml(score.industryAdjustmentLabel)}）；綜合 ${score.total}/100。${score.isProvisional ? "產業證據待補時暫以 0 分計，不影響六項核心分數。" : ""}</p>` : ""}
     ${score.complete ? "" : `<p class="risk">尚未產生核心分數。缺少：${RadarRenderers.escapeHtml(scoreMissingLabel(score))}</p>`}
     <div class="score-breakdown">${RadarRenderers.renderScoreRows(score)}</div>
     <details class="detail-fold">

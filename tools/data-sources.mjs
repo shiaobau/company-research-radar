@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-export const DATA_VERSION = "0.7.0";
+export const DATA_VERSION = "0.8.0";
 
 export const SOURCE_CATALOG = [
   {

@@ -20,6 +20,7 @@ import {
 } from "./data-sources.mjs";
 import { getCachedRows } from "./source-cache.mjs";
 import { generatePublicFacts } from "./generate-public-facts.mjs";
+import { classifyMaterialEvents, loadEventTaxonomy, scoreRiskDimension } from "./event-risk.mjs";
 
 const root = process.cwd();
 const dataDir = path.join(root, "data");
@@ -32,6 +33,9 @@ const companiesJson = await readJson(companiesPath);
 const companies = companiesJson.companies || [];
 const templatesJson = await readJson(path.join(dataDir, "industry_templates.json"));
 const industryTemplates = templatesJson.industries || {};
+const scoringRules = await readJson(path.join(dataDir, "scoring_rules.json"));
+const riskDimensionDefinition = (scoringRules.common_dimensions || []).find((dimension) => dimension.id === "riskNews");
+const eventTaxonomy = await loadEventTaxonomy(path.join(dataDir, "event_taxonomy.json"));
 const requestedTickers = new Set(
   (process.argv.find((arg) => arg.startsWith("--tickers=")) || "")
     .replace("--tickers=", "")
@@ -205,7 +209,7 @@ const neutralEventKeywords = [
   "承諾事項", "後續執行情形", "例行公告", "股東常會", "除息", "除權"
 ];
 
-function classifyEvents(events) {
+function classifyEventsLegacy(events) {
   let positive = 0;
   let negative = 0;
   const tagged = events.map((event) => {
@@ -221,6 +225,24 @@ function classifyEvents(events) {
     };
   });
   return { events: tagged, positive, negative };
+}
+
+function classifyEvents(events) {
+  const classifiedRisk = classifyMaterialEvents(events, eventTaxonomy);
+  let positive = 0;
+  const tagged = classifiedRisk.events.map((event) => {
+    const title = String(event.title || "");
+    const positiveHit = event.risk_class === "neutral" && positiveEventKeywords.some((keyword) => title.includes(keyword));
+    if (positiveHit) positive += 1;
+    return { ...event, sentiment: positiveHit ? "positive" : event.sentiment };
+  });
+  return {
+    ...classifiedRisk,
+    events: tagged,
+    positive,
+    negative: classifiedRisk.negative_event_count,
+    review: classifiedRisk.review_event_count
+  };
 }
 
 function catalystScoreFrom({ events, revenue, financial }) {
@@ -241,11 +263,11 @@ function catalystScoreFrom({ events, revenue, financial }) {
 
 function riskScoreFrom({ events, violations }) {
   const classified = classifyEvents(events);
-  let score = 76;
-  score -= Math.min(classified.negative * 10, 35);
-  score += Math.min(classified.positive * 2, 6);
-  score -= Math.min((violations?.length || 0) * 18, 40);
-  return clamp(Math.round(score), 25, 85);
+  return scoreRiskDimension({
+    negative_event_points: classified.negative_event_points,
+    review_event_count: classified.review_event_count,
+    disclosure_violation_count: violations?.length || 0
+  }, riskDimensionDefinition) ?? 50;
 }
 
 function ownershipScoreFrom({ holders, insiderTransfers, violations }) {
@@ -800,10 +822,14 @@ function buildCatalystAndRiskData(eventRows, revenueCompanies, financialCompanie
       evidence_level: "high",
       event_count: rows.length,
       negative_event_count: classified.negative,
+      positive_event_count: classified.positive,
+      review_event_count: classified.review,
+      negative_event_points: classified.negative_event_points,
+      negative_event_categories: classified.negative_event_categories,
       disclosure_violation_count: violations.length,
       score: riskScore,
       rationale: riskBits.join("；") + "。",
-      events: recentEvents.filter((event) => event.sentiment === "negative").slice(0, 5),
+      events: recentEvents.filter((event) => event.risk_class === "negative" || event.risk_class === "review").slice(0, 5),
       violations
     };
   }

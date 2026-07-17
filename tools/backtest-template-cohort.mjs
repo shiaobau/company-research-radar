@@ -15,6 +15,7 @@ import {
   writeJson
 } from "./data-sources.mjs";
 import { getCachedRows } from "./source-cache.mjs";
+import { classifyMaterialEvents, loadEventTaxonomy, scoreRiskDimension } from "./event-risk.mjs";
 
 const root = process.cwd();
 const dataDir = path.join(root, "data");
@@ -38,6 +39,9 @@ let scoreBands = [
   { id: "defer", min: 0, label: "訊號待確認" }
 ];
 let scoreCalibration = null;
+let eventTaxonomy = null;
+let riskDimensionDefinition = null;
+let coreWeights = {};
 
 const SCORE_DIMENSIONS = [
   { id: "catalyst", label: "催化事件", weight: 0.2 },
@@ -45,8 +49,7 @@ const SCORE_DIMENSIONS = [
   { id: "cashProfitQuality", label: "現金/獲利品質", weight: 0.17 },
   { id: "priceTrend", label: "股價趨勢", weight: 0.15 },
   { id: "ownership", label: "籌碼/治理結構", weight: 0.1 },
-  { id: "riskNews", label: "風險與重大訊息", weight: 0.1 },
-  { id: "industryFundamental", label: "產業基本面", weight: 0.1 }
+  { id: "riskNews", label: "風險與重大訊息", weight: 0.1 }
 ];
 
 function unique(values) {
@@ -253,7 +256,7 @@ function eventTitle(row) {
 const positiveKeywords = ["增資", "授權", "取得", "核准", "合作", "新產品", "訂單", "合約", "營收成長", "獲利", "通過", "併購"];
 const negativeKeywords = ["處分", "裁罰", "違反", "虧損", "訴訟", "減損", "終止", "解約", "下修", "停工", "召回", "警示"];
 
-function classifyEvents(events) {
+function classifyEventsLegacy(events) {
   let positive = 0;
   let negative = 0;
   const tagged = events.map((event) => {
@@ -265,6 +268,24 @@ function classifyEvents(events) {
     return { ...event, sentiment: neg ? "negative" : pos ? "positive" : "neutral" };
   });
   return { events: tagged, positive, negative };
+}
+
+function classifyEvents(events) {
+  const classifiedRisk = classifyMaterialEvents(events, eventTaxonomy);
+  let positive = 0;
+  const tagged = classifiedRisk.events.map((event) => {
+    const text = `${event.title} ${event.description || ""}`;
+    const positiveHit = event.risk_class === "neutral" && positiveKeywords.some((keyword) => text.includes(keyword));
+    if (positiveHit) positive += 1;
+    return { ...event, sentiment: positiveHit ? "positive" : event.sentiment };
+  });
+  return {
+    ...classifiedRisk,
+    events: tagged,
+    positive,
+    negative: classifiedRisk.negative_event_count,
+    review: classifiedRisk.review_event_count
+  };
 }
 
 function catalystScore({ events, revenueScore, financialScore }) {
@@ -283,11 +304,11 @@ function catalystScore({ events, revenueScore, financialScore }) {
 
 function riskScore({ events, violations }) {
   const classified = classifyEvents(events);
-  let score = 76;
-  score -= Math.min(classified.negative * 10, 35);
-  score += Math.min(classified.positive * 2, 6);
-  score -= Math.min((violations?.length || 0) * 18, 40);
-  return clamp(Math.round(score), 25, 85);
+  return scoreRiskDimension({
+    negative_event_points: classified.negative_event_points,
+    review_event_count: classified.review_event_count,
+    disclosure_violation_count: violations?.length || 0
+  }, riskDimensionDefinition) ?? 50;
 }
 
 function ownershipScore({ holders, insiderTransfers, violations }) {
@@ -371,8 +392,8 @@ function scorePriceAt(history, cutoffDate) {
 }
 
 function computeRawTotal(scores) {
-  const weighted = SCORE_DIMENSIONS.reduce((sum, dimension) => sum + (scores[dimension.id] || 0) * dimension.weight, 0);
-  const weightSum = SCORE_DIMENSIONS.reduce((sum, dimension) => sum + dimension.weight, 0);
+  const weighted = SCORE_DIMENSIONS.reduce((sum, dimension) => sum + (scores[dimension.id] || 0) * (coreWeights[dimension.id] || 0), 0);
+  const weightSum = Object.values(coreWeights).reduce((sum, weight) => sum + weight, 0);
   return Math.round(weighted / weightSum);
 }
 
@@ -775,6 +796,9 @@ function buildCompanyScores(company, reference, template, priceStart, priceEnd) 
       revenue_mom_pct: revenue.mom_pct,
       new_event_count: newEvents.length,
       new_negative_event_count: classifyEvents(newEvents).negative,
+      new_review_event_count: classifyEvents(newEvents).review,
+      new_negative_event_points: classifyEvents(newEvents).negative_event_points,
+      new_negative_event_categories: classifyEvents(newEvents).negative_event_categories,
       disclosure_violation_count: governanceEnd.violations.length
     },
     evidence_status: {
@@ -907,13 +931,19 @@ function summaryReport(summaries, rows, referenceWarnings = []) {
 
 async function main() {
   await mkdir(outDir, { recursive: true });
-  const [cohortJson, templatesJson, scoringRules] = await Promise.all([
+  const [cohortJson, templatesJson, scoringRules, taxonomy] = await Promise.all([
     readJson(cohortPath),
     readJson(path.join(dataDir, "industry_templates.json")),
-    readJson(path.join(dataDir, "scoring_rules.json"))
+    readJson(path.join(dataDir, "scoring_rules.json")),
+    loadEventTaxonomy(path.join(dataDir, "event_taxonomy.json"))
   ]);
   scoreBands = [...(scoringRules.score_bands || scoreBands)].sort((left, right) => right.min - left.min);
-  scoreCalibration = scoringRules.score_calibration || null;
+  scoreCalibration = null;
+  eventTaxonomy = taxonomy;
+  riskDimensionDefinition = (scoringRules.common_dimensions || []).find((dimension) => dimension.id === "riskNews");
+  coreWeights = Object.fromEntries((scoringRules.common_dimensions || [])
+    .filter((dimension) => dimension.role !== "adjustment")
+    .map((dimension) => [dimension.id, Number(dimension.weight) || 0]));
   const companies = cohortJson.companies || [];
   if (!companies.length) throw new Error(`No cohort companies found: ${cohortPath}`);
 

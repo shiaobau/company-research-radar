@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "description": "重大訊息的規則式事件分類。分類只作為公開資料的閱讀與風險訊號，不構成投資建議。",
+  "matching": {
+    "field": "title",
+    "review_overrides_negative": true
+  },
+  "review_categories": [
+    {
+      "id": "clarification",
+      "label": "澄清或說明",
+      "patterns": ["澄清", "說明"]
+    },
+    {
+      "id": "correction",
+      "label": "更正或補充",
+      "patterns": ["更正", "補充"]
+    },
+    {
+      "id": "routine",
+      "label": "例行或權利事件",
+      "patterns": ["例行公告", "股東常會", "股東會", "除息", "除權", "法人說明會"]
+    }
+  ],
+  "negative_categories": [
+    {
+      "id": "market_restriction",
+      "label": "交易或上市資格限制",
+      "severity": "critical",
+      "risk_points": 30,
+      "patterns": ["停止買賣", "終止上市", "終止上櫃", "下市", "下櫃", "撤銷公開發行", "變更交易方法"]
+    },
+    {
+      "id": "credit_distress",
+      "label": "信用或償債壓力",
+      "severity": "high",
+      "risk_points": 24,
+      "patterns": ["退票", "喪失債信", "債務協商", "聲請重整", "破產"]
+    },
+    {
+      "id": "regulatory_enforcement",
+      "label": "監理處分或重大內控缺失",
+      "severity": "high",
+      "risk_points": 18,
+      "patterns": ["裁罰", "處分", "重大缺失", "違反法令"]
+    },
+    {
+      "id": "operational_disruption",
+      "label": "營運或產品安全中斷",
+      "severity": "high",
+      "risk_points": 18,
+      "patterns": ["停工", "召回", "重大事故", "重大職災"]
+    },
+    {
+      "id": "contract_dispute",
+      "label": "重大合約或法律爭議",
+      "severity": "medium",
+      "risk_points": 10,
+      "patterns": ["終止契約", "終止合約", "解除契約", "重大違約", "訴訟", "假處分", "仲裁"]
+    },
+    {
+      "id": "asset_impairment",
+      "label": "資產減損",
+      "severity": "low",
+      "risk_points": 6,
+      "patterns": ["減損"]
+    }
+  ]
+}

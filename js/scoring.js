@@ -23,15 +23,6 @@
     return [...bands].sort((left, right) => right.min - left.min).find((band) => score >= band.min) || bands[bands.length - 1];
   }
 
-  function calibrateCoreScore(rawScore, rules) {
-    const calibration = rules?.core_score_calibration || {};
-    if (calibration.method !== "neutral_centered_spread") return clamp(rawScore);
-    const neutral = Number(calibration.neutral_score);
-    const factor = Number(calibration.spread_factor);
-    if (!Number.isFinite(neutral) || !Number.isFinite(factor) || factor <= 0) return clamp(rawScore);
-    return clamp(neutral + (rawScore - neutral) * factor);
-  }
-
   function dimensionsFor(company, rules) {
     if (rules.common_dimensions) return rules.common_dimensions;
     return rules.industries?.[company.industry_template]?.dimensions || [];
@@ -46,7 +37,13 @@
   function numberAt(record, field) {
     const value = String(field || "").split(".").reduce((result, key) => result?.[key], record);
     const numeric = Number(value);
-    return Number.isFinite(numeric) ? numeric : null;
+    if (Number.isFinite(numeric)) return numeric;
+    // Legacy risk snapshots can be scored safely until their next public-data refresh.
+    if (field === "review_event_count" && Number.isFinite(Number(record?.negative_event_count))) return 0;
+    if (field === "negative_event_points" && Number.isFinite(Number(record?.negative_event_count))) {
+      return Number(record.negative_event_count) * 18;
+    }
+    return null;
   }
 
   function thresholdScore(value, definition) {
@@ -209,7 +206,7 @@
     }
     const weightSum = coreRows.reduce((sum, row) => sum + Number(row.weight), 0);
     const rawCoreTotal = clamp(coreRows.reduce((sum, row) => sum + row.score * Number(row.weight), 0) / weightSum);
-    const coreTotal = calibrateCoreScore(rawCoreTotal, rules);
+    const coreTotal = rawCoreTotal;
     const industryRecord = recordFor(company, "industryEvidence", datasets);
     const industryDirection = adjustmentRow?.status === "ok"
       ? String(industryRecord?.direction || "neutral")
