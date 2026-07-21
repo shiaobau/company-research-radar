@@ -2,12 +2,6 @@
   "name": "company-research-radar-update",
   "main": "src/index.mjs",
   "compatibility_date": "2026-07-21",
-  "kv_namespaces": [
-    {
-      "binding": "UPDATE_ATTEMPTS",
-      "id": "87b433c36f4a4443b1c89ca9920c0c41"
-    }
-  ],
   "vars": {
     "DASHBOARD_ORIGIN": "https://shiaobau.github.io",
     "GITHUB_REPOSITORY": "shiaobau/company-research-radar",

@@ -1,6 +1,4 @@
 const encoder = new TextEncoder();
-const ATTEMPT_WINDOW_SECONDS = 10 * 60;
-const MAX_FAILED_ATTEMPTS = 5;
 
 function response(body, status, headers = {}) {
   return new Response(JSON.stringify(body), {
@@ -56,32 +54,6 @@ async function verifyPassword(password, encodedHash) {
   }
 }
 
-async function attemptKey(request) {
-  const address = request.headers.get("CF-Connecting-IP") || "unknown";
-  const digest = await crypto.subtle.digest("SHA-256", encoder.encode(address));
-  return `manual-update:${Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("")}`;
-}
-
-async function readAttempts(env, key) {
-  if (!env.UPDATE_ATTEMPTS) throw new Error("缺少更新嘗試節流設定。");
-  const stored = await env.UPDATE_ATTEMPTS.get(key, "json");
-  return stored && Number.isInteger(stored.count) ? stored : { count: 0 };
-}
-
-async function isRateLimited(env, key) {
-  const attempts = await readAttempts(env, key);
-  return attempts.count >= MAX_FAILED_ATTEMPTS;
-}
-
-async function recordFailure(env, key) {
-  const attempts = await readAttempts(env, key);
-  await env.UPDATE_ATTEMPTS.put(key, JSON.stringify({ count: attempts.count + 1 }), { expirationTtl: ATTEMPT_WINDOW_SECONDS });
-}
-
-async function clearFailures(env, key) {
-  await env.UPDATE_ATTEMPTS.delete(key);
-}
-
 async function readJsonBody(request) {
   const text = await request.text();
   if (text.length > 4096) throw new Error("請求內容過大。");
@@ -117,17 +89,11 @@ export default {
     }
 
     try {
-      const key = await attemptKey(request);
-      if (await isRateLimited(env, key)) {
-        return response({ status: "error", message: "嘗試次數過多，請 10 分鐘後再試。" }, 429, cors);
-      }
       const payload = await readJsonBody(request);
       const password = typeof payload.password === "string" ? payload.password : "";
       if (!password || password.length > 512 || !(await verifyPassword(password, env.UPDATE_PASSWORD_HASH))) {
-        await recordFailure(env, key);
         return response({ status: "error", message: "更新密碼不正確。" }, 401, cors);
       }
-      await clearFailures(env, key);
       await dispatchGithubWorkflow(env);
       return response({ status: "accepted", message: "完整更新已送出；GitHub Actions 會更新公開資料、官方公告事件與評分。" }, 202, cors);
     } catch (error) {
