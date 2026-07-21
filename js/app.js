@@ -668,6 +668,7 @@ function renderSchedulerPanel() {
   const order = ["morning", "evening"];
   const active = state.schedulerStatus.current_run;
   const localServer = ["127.0.0.1", "localhost"].includes(window.location.hostname);
+  const actionsUrl = "https://github.com/shiaobau/company-research-radar/actions/workflows/deploy-pages.yml";
   const coverage = state.researchStatus.summary || {};
   const calculatedReadiness = state.companies.map((company) => ({
     company,
@@ -681,7 +682,7 @@ function renderSchedulerPanel() {
     <div class="update-dashboard">
       <section class="update-section">
         <div><p class="eyebrow">Automatic</p><h2>自動更新</h2></div>
-        <p class="muted">平日早晚各一次完整更新，包含公開來源、評分資料、MOPS 歷史事件與完整性驗證。</p>
+        <p class="muted">平日早晚各一次完整更新，包含公開資料、評分、MOPS 歷史重大訊息、官方公告事件與完整性驗證。</p>
         <div class="scheduler-grid">
           ${order.map((id) => {
             const schedule = schedules[id] || {};
@@ -693,8 +694,10 @@ function renderSchedulerPanel() {
       </section>
       <section class="update-section update-manual">
         <div><p class="eyebrow">Manual</p><h2>手動更新</h2></div>
-        <p class="muted">立即執行與平日排程相同的完整更新與一次補抓。</p>
-        <button class="ghost-button" type="button" data-run-manual-update ${localServer ? "" : "disabled"} title="${localServer ? "更新後會重新驗證所有必要評分維度" : "手動更新僅能在本機服務執行"}">執行完整更新</button>
+        <p class="muted">完整更新會重新蒐集公開資料、MOPS 歷史重大訊息與官方公告事件，再驗證評分。</p>
+        ${localServer
+          ? '<button class="ghost-button" type="button" data-run-manual-update title="更新後會重新驗證所有必要評分維度">執行完整更新</button>'
+          : `<a class="ghost-button" href="${actionsUrl}" target="_blank" rel="noopener" title="在 GitHub Actions 按 Run workflow 後執行完整更新">前往 GitHub Actions 更新</a>`}
       </section>
       <section class="update-section update-status">
         <div><p class="eyebrow">Status</p><h2>更新情形 <span class="pill">${stateLabel}</span></h2></div>
@@ -713,11 +716,36 @@ async function runManualFullUpdate() {
     }
     const payload = await response.json();
     if (!response.ok) throw new Error(payload.message || "手動更新無法啟動");
-    setResearchStatus("手動完整更新已開始，完成後會驗證所有評分維度。");
-    window.setTimeout(refreshSchedulerStatus, 800);
-    window.setTimeout(refreshSchedulerStatus, 3500);
+    state.schedulerStatus.current_run = {
+      status: "running",
+      label: "手動完整更新",
+      progress_percent: 1,
+      current_step: { label: "已啟動完整更新" }
+    };
+    renderSchedulerPanel();
+    setResearchStatus("手動完整更新已開始，正在蒐集公開資料與官方公告事件。");
+    pollManualUpdateStatus();
   } catch (error) {
     setResearchStatus(`無法啟動手動完整更新：${error.message}`);
+  }
+}
+
+async function pollManualUpdateStatus() {
+  try {
+    const response = await fetch("/api/scheduler/status", { cache: "no-store" });
+    if (!response.ok) throw new Error("無法取得更新狀態。");
+    const update = await response.json();
+    if (update.status === "running") {
+      state.schedulerStatus.current_run = update;
+      renderSchedulerPanel();
+      window.setTimeout(pollManualUpdateStatus, 1200);
+      return;
+    }
+    await refreshSchedulerStatus();
+    if (update.status === "done") setResearchStatus("手動完整更新完成，已重新蒐集官方公告事件並驗證評分。");
+    if (update.status === "error") setResearchStatus(`手動完整更新失敗：${update.message || "請查看本機命令視窗。"}`);
+  } catch (error) {
+    setResearchStatus(`無法取得更新進度：${error.message}`);
   }
 }
 
@@ -1390,7 +1418,7 @@ function renderCollectedEvents(company) {
       ? "正在載入公告事件..."
       : indexed
         ? "公告事件快取已建立，正在載入。"
-        : "尚未建立公告事件快取。可使用「更新公告事件」開始蒐集。";
+        : "尚未建立公告事件快取；下次完整更新會自動蒐集。";
     return `<section class="module collected-events"><h3>官方公告事件</h3><p class="muted">${text}</p></section>`;
   }
 
@@ -1426,7 +1454,7 @@ function renderCollectedEvents(company) {
     <section class="module collected-events">
       <h3>官方公告事件 <span class="muted">${RadarRenderers.escapeHtml(record.collected_at || "")}</span></h3>
       <p class="muted">${RadarRenderers.escapeHtml(sourceStatus || "尚無來源狀態")}</p>
-      <div class="collector-event-list">${eventItems || "<p class=\"muted\">近期交易所重大訊息快取未找到此公司的公告；可透過 MOPS 歷史重大訊息連結進一步覆核。</p>"}</div>
+      <div class="collector-event-list">${eventItems || "<p class=\"muted\">近期公告快取暫無資料；早晚排程與完整更新都會重新蒐集 MOPS 歷史重大訊息及官方公告事件。</p>"}</div>
       <div class="source-links">${references}</div>
     </section>
   `;
@@ -1475,7 +1503,8 @@ function renderDetail() {
     ${renderCollectedEvents(company)}
     <section class="module">
       <h3>評分理由</h3>
-      ${score.rows.map((row) => `<p><b>${RadarRenderers.escapeHtml(row.label)}</b>：${RadarRenderers.escapeHtml(row.rationale)}</p>`).join("")}
+      <p class="muted">以下顯示各子測項取得的公開數值、對應門檻與換算分數。</p>
+      <div class="score-rationale-list">${RadarRenderers.renderScoreRationale(score)}</div>
     </section>
   `;
   loadResearchCacheFor(company);

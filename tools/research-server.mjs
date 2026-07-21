@@ -39,6 +39,8 @@ let collectorTask = {
 let schedulerTask = {
   status: "idle",
   message: "Manual update is idle.",
+  progress_percent: 0,
+  current_step: null,
   started_at: null,
   finished_at: null,
   output: ""
@@ -185,6 +187,8 @@ async function startManualFullUpdate() {
   schedulerTask = {
     status: "running",
     message: "Running the complete manual update.",
+    progress_percent: 1,
+    current_step: { label: "Starting complete update" },
     started_at: new Date().toISOString(),
     finished_at: null,
     output: ""
@@ -193,10 +197,13 @@ async function startManualFullUpdate() {
     await runCommand(nodePath, ["tools/scheduled-update.mjs", "--slot=evening"], (output) => { schedulerTask.output = output; }, 420000);
     schedulerTask.status = "done";
     schedulerTask.message = "Manual full update completed.";
+    schedulerTask.progress_percent = 100;
+    schedulerTask.current_step = null;
     schedulerTask.finished_at = new Date().toISOString();
   } catch (error) {
     schedulerTask.status = "error";
     schedulerTask.message = error.message;
+    schedulerTask.current_step = null;
     schedulerTask.finished_at = new Date().toISOString();
   }
 }
@@ -229,7 +236,15 @@ async function handleApi(request, response) {
   }
 
   if (request.method === "GET" && request.url.startsWith("/api/scheduler/status")) {
-    json(response, 200, schedulerTask);
+    let persisted = null;
+    try {
+      persisted = JSON.parse(await readFile(path.join(root, "data", "scheduler_status.json"), "utf8")).current_run;
+    } catch {
+      // The in-memory task still provides a useful status when the file is temporarily unavailable.
+    }
+    json(response, 200, persisted && schedulerTask.status === "running"
+      ? { ...schedulerTask, ...persisted, message: persisted.current_step?.label || schedulerTask.message }
+      : schedulerTask);
     return;
   }
 

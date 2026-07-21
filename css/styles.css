@@ -1200,6 +1200,43 @@ button:focus {
 
 .score-submetric-list b { color: var(--ink); }
 
+.score-rationale-list {
+  display: grid;
+  gap: 10px;
+}
+
+.score-rationale-item {
+  padding: 10px 12px;
+  border-left: 2px solid #3a7465;
+  background: #141716;
+}
+
+.score-rationale-item h4 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.score-rationale-item ul {
+  display: grid;
+  gap: 6px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.score-rationale-item li {
+  display: grid;
+  gap: 2px;
+  color: var(--soft);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.score-rationale-item li b { color: var(--ink); }
+
+.score-rationale-item p { margin: 8px 0 0; }
+
 .fact {
   padding: 10px;
   background: #141716;

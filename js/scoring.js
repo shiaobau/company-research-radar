@@ -58,6 +58,33 @@
     return match ? Number(match.score) : null;
   }
 
+  function thresholdBand(value, definition) {
+    const bands = definition.bands || [];
+    return definition.direction === "lower"
+      ? [...bands].sort((left, right) => left.max - right.max).find((band) => value <= Number(band.max))
+      : [...bands].sort((left, right) => right.min - left.min).find((band) => value >= Number(band.min));
+  }
+
+  function displayValue(value, field = "") {
+    if (!Number.isFinite(value)) return "未提供";
+    const rounded = Math.round(value * 100) / 100;
+    if (field.endsWith("_pct")) return `${rounded}%`;
+    return String(rounded);
+  }
+
+  function sourceLabel(source) {
+    return {
+      catalyst: "事件",
+      revenue: "營收",
+      financial: "財務",
+      market: "股價",
+      ownership: "股權",
+      risk: "風險",
+      industry: "產業",
+      industryEvidence: "產業證據"
+    }[source] || source;
+  }
+
   function weightedInputs(definition, company, datasets) {
     const values = (definition.inputs || []).map((input) => {
       const record = recordFor(company, input.source, datasets);
@@ -70,7 +97,7 @@
     return {
       score: values.reduce((sum, item) => sum + item.value * item.weight, 0) / weightSum,
       sourceIds: [...new Set(values.flatMap((item) => item.record.source_ids || []))],
-      rationale: values.map((item) => `${item.value}`).join("、")
+      inputs: values
     };
   }
 
@@ -82,7 +109,9 @@
         ...definition,
         score: result ? clamp(result.score) : null,
         status: result ? "ok" : "missing",
-        rationale: result ? `相關公開分數：${result.rationale}` : "尚未取得所有必要的公開資料。",
+        rationale: result
+          ? `${result.inputs.map((item, index) => `${sourceLabel(definition.inputs[index].source)} ${displayValue(item.value, definition.inputs[index].field)} 分 × ${Math.round(item.weight * 100)}%`).join("；")}；加權後 ${clamp(result.score)} 分。`
+          : "尚未取得所有必要的公開資料。",
         sourceIds: result?.sourceIds || []
       };
     }
@@ -108,11 +137,19 @@
       return { ...definition, score: null, status: "missing", rationale: "公開資料未提供此測項數值。", sourceIds: record.source_ids || [] };
     }
     const score = definition.formula === "threshold" ? thresholdScore(value, definition) : value;
+    const band = definition.formula === "threshold" ? thresholdBand(value, definition) : null;
+    const threshold = band
+      ? definition.direction === "lower" ? `不高於 ${band.max}` : `不低於 ${band.min}`
+      : "目前門檻";
     return {
       ...definition,
       score: Number.isFinite(score) ? clamp(score) : null,
       status: Number.isFinite(score) ? "ok" : "missing",
-      rationale: Number.isFinite(score) ? `公開數值：${value}` : "公開數值不符合目前的計分規則。",
+      rationale: Number.isFinite(score)
+        ? definition.formula === "threshold"
+          ? `公開數值 ${displayValue(value, definition.field)}；符合 ${threshold} 的區間，換算 ${clamp(score)} 分。`
+          : `公開評分 ${displayValue(value, definition.field)} 分。`
+        : "公開數值不符合目前的計分規則。",
       sourceIds: record.source_ids || []
     };
   }
@@ -185,7 +222,7 @@
       score,
       status: Number.isFinite(score) ? "ok" : "missing",
       rationale: Number.isFinite(score)
-        ? `${submetrics.length} 個子測項均已取得公開資料。`
+        ? `加權結果 ${score} 分；可展開查看各子測項的公開數值與門檻換算。`
         : `尚缺 ${missing.map((item) => item.label).join("、")}。`,
       evidenceLevel: Number.isFinite(score) ? "high" : "none",
       sourceIds: [...new Set(submetrics.flatMap((item) => item.sourceIds || []))],

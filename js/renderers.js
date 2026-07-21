@@ -98,12 +98,31 @@
     }).join("");
   }
 
+  function renderScoreRationale(score) {
+    const rows = score.rows.filter((row) => row.id !== "industryFundamental" || !score.isProvisional);
+    return rows.map((row) => {
+      const metrics = row.submetrics || [];
+      const title = row.id === "industryFundamental"
+        ? `${row.label} ${score.industryAdjustment > 0 ? "+" : ""}${score.industryAdjustment || 0} 分`
+        : `${row.label} ${Number.isFinite(row.score) ? `${row.score} 分` : "資料待補"}`;
+      return `
+        <article class="score-rationale-item">
+          <h4>${escapeHtml(title)}</h4>
+          ${metrics.length
+            ? `<ul>${metrics.map((metric) => `<li><b>${escapeHtml(metric.label)} ${Number.isFinite(metric.score) ? `${metric.score} 分` : "待補"}</b><span>${escapeHtml(metric.rationale)}</span></li>`).join("")}</ul>`
+            : `<p>${escapeHtml(row.rationale)}</p>`}
+        </article>
+      `;
+    }).join("");
+  }
+
   window.RadarRenderers = {
     escapeHtml,
     getFact,
     formatFactValue,
     sourceLinks,
     renderFact,
-    renderScoreRows
+    renderScoreRows,
+    renderScoreRationale
   };
 })();
