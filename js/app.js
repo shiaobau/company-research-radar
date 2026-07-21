@@ -1413,6 +1413,21 @@ function formatDashboardTimestamp() {
   });
 }
 
+function formatCacheTimestamp(record, dataset) {
+  const rawTimestamp = record?.refreshed_at || dataset?.generated_at;
+  const timestamp = Date.parse(rawTimestamp || "");
+  if (!Number.isFinite(timestamp)) return "資料快取：時間未提供";
+  const label = new Date(timestamp).toLocaleString("zh-TW", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false
+  });
+  return record?.cache_status === "stale" ? `資料快取：${label}（沿用上一版）` : `資料快取：${label}`;
+}
+
 function renderSummary(companies) {
   const scoredCompanies = companies.filter((company) => !company.__candidate);
   const candidateOnlyCount = companies.length - scoredCompanies.length;
@@ -1671,6 +1686,8 @@ function renderDataSnapshot(company, sourceIndex) {
   const cards = [
     {
       title: "催化事件",
+      dataset: state.catalystData,
+      record: catalyst,
       sourceIds: catalyst?.source_ids,
       rows: [
         ["分數", formatNumber(catalyst?.score)],
@@ -1681,6 +1698,8 @@ function renderDataSnapshot(company, sourceIndex) {
     },
     {
       title: "股價/趨勢",
+      dataset: state.marketData,
+      record: market,
       sourceIds: market?.source_ids,
       rows: [
         ["最近收盤", `${formatNumber(market?.latest_close)} (${RadarRenderers.escapeHtml(market?.latest_trade_date || "日期待補")})`],
@@ -1691,6 +1710,8 @@ function renderDataSnapshot(company, sourceIndex) {
     },
     {
       title: "月營收",
+      dataset: state.revenueData,
+      record: revenue,
       sourceIds: revenue?.source_ids,
       rows: [
         ["資料月份", revenue?.data_month || "尚無資料"],
@@ -1701,6 +1722,8 @@ function renderDataSnapshot(company, sourceIndex) {
     },
     {
       title: "財務品質",
+      dataset: state.financialData,
+      record: financial,
       sourceIds: financial?.source_ids,
       rows: company.industry_template === "financial"
         ? [
@@ -1718,6 +1741,8 @@ function renderDataSnapshot(company, sourceIndex) {
     },
     {
       title: "籌碼/股權",
+      dataset: state.ownershipData,
+      record: ownership,
       sourceIds: ownership?.source_ids,
       rows: [
         ["分數", formatNumber(ownership?.score)],
@@ -1728,6 +1753,8 @@ function renderDataSnapshot(company, sourceIndex) {
     },
     {
       title: "風險訊號",
+      dataset: state.riskData,
+      record: risk,
       sourceIds: risk?.source_ids,
       rows: [
         ["分數", formatNumber(risk?.score)],
@@ -1745,7 +1772,10 @@ function renderDataSnapshot(company, sourceIndex) {
         ${cards.map((card) => `
           <article class="data-card">
             <div class="data-card-heading">
-              <strong>${RadarRenderers.escapeHtml(card.title)}</strong>
+              <div class="data-card-title">
+                <strong>${RadarRenderers.escapeHtml(card.title)}</strong>
+                <small class="data-cache-time ${card.record?.cache_status === "stale" ? "is-stale" : ""}">${RadarRenderers.escapeHtml(formatCacheTimestamp(card.record, card.dataset))}</small>
+              </div>
               ${RadarRenderers.sourceLinks(card.sourceIds, sourceIndex)}
             </div>
             ${card.rows.map(([label, value]) => `
@@ -1757,7 +1787,6 @@ function renderDataSnapshot(company, sourceIndex) {
           </article>
         `).join("")}
       </div>
-      <p class="muted">各卡僅呈現已接入的公開資料；若官方 API 暫時失敗，更新腳本會使用上一版快取資料並保留資料狀態。</p>
     </section>
   `;
 }

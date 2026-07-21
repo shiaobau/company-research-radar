@@ -1287,6 +1287,20 @@ button:focus {
   gap: 6px 10px;
 }
 
+.data-card-title {
+  display: grid;
+  gap: 3px;
+}
+
+.data-cache-time {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.data-cache-time.is-stale {
+  color: var(--amber);
+}
+
 .data-card-heading .source-links {
   margin-top: 0;
 }

@@ -63,10 +63,10 @@ async function readGeneratedCompanies(fileName) {
 
 async function withGeneratedFallback(fileName, producer) {
   try {
-    return await producer();
+    return { records: await producer(), usedCache: false };
   } catch (error) {
     console.warn(`WARN: ${fileName} update failed, using cached data if available. ${error.message}`);
-    return readGeneratedCompanies(fileName);
+    return { records: await readGeneratedCompanies(fileName), usedCache: true };
   }
 }
 
@@ -1035,15 +1035,35 @@ function buildOwnershipData(governanceRows, companiesToUpdate = companies) {
   return companiesById;
 }
 
-function mergeUpdatedRecords(previousRecords, updatedRecords) {
+function markCachedRecords(records) {
+  const targetIds = new Set(targetCompanies.map((company) => company.id));
+  return Object.fromEntries(Object.entries(records).map(([id, record]) => {
+    if (!record || (targetedRun && !targetIds.has(id))) return [id, record];
+    return [id, {
+      ...record,
+      cache_status: "stale",
+      refreshed_at: record.refreshed_at || null
+    }];
+  }));
+}
+
+function mergeUpdatedRecords(previousRecords, updatedRecords, { usedCache = false } = {}) {
+  if (usedCache) {
+    const cached = markCachedRecords(updatedRecords);
+    return targetedRun ? { ...previousRecords, ...cached } : cached;
+  }
   const recovered = Object.fromEntries(Object.entries(updatedRecords).map(([id, record]) => {
     const previous = previousRecords[id];
     if (record?.status === "missing" && previous?.status === "ok") {
       return [id, {
         ...previous,
         cache_status: "stale",
+        refreshed_at: previous.refreshed_at || null,
         rationale: `${previous.rationale || "已使用先前公開資料。"} 本次端點未回傳資料，暫時保留上一版快取。`
       }];
+    }
+    if (record?.status === "ok") {
+      return [id, { ...record, cache_status: "fresh", refreshed_at: generatedAt }];
     }
     return [id, record];
   }));
@@ -1067,18 +1087,18 @@ async function build() {
     readGeneratedCompanies("ownership_data.json"),
     readGeneratedCompanies("risk_data.json")
   ]);
-  const marketUpdates = await withGeneratedFallback("market_data.json", async () => {
+  const marketResult = await withGeneratedFallback("market_data.json", async () => {
     const records = {};
     await mapWithConcurrency(targetCompanies, 3, async (company) => {
       records[company.id] = await fetchPriceHistory(company);
     });
     return records;
   });
-  const marketCompanies = mergeUpdatedRecords(previousMarket, marketUpdates);
-  const revenueUpdates = await withGeneratedFallback("revenue_data.json", () => fetchRevenueData(targetCompanies));
-  const revenueCompanies = mergeUpdatedRecords(previousRevenue, revenueUpdates);
-  const financialUpdates = await withGeneratedFallback("financial_data.json", () => fetchFinancialData(targetCompanies));
-  const financialCompanies = mergeUpdatedRecords(previousFinancial, financialUpdates);
+  const marketCompanies = mergeUpdatedRecords(previousMarket, marketResult.records, marketResult);
+  const revenueResult = await withGeneratedFallback("revenue_data.json", () => fetchRevenueData(targetCompanies));
+  const revenueCompanies = mergeUpdatedRecords(previousRevenue, revenueResult.records, revenueResult);
+  const financialResult = await withGeneratedFallback("financial_data.json", () => fetchFinancialData(targetCompanies));
+  const financialCompanies = mergeUpdatedRecords(previousFinancial, financialResult.records, financialResult);
 
   let ownershipCompanies;
   let catalystCompanies;
@@ -1102,9 +1122,9 @@ async function build() {
     riskCompanies = mergeUpdatedRecords(previousRisk, updates.riskCompanies);
   } catch (error) {
     console.warn(`WARN: event/governance update failed, using cached data if available. ${error.message}`);
-    ownershipCompanies = previousOwnership;
-    catalystCompanies = previousCatalyst;
-    riskCompanies = previousRisk;
+    ownershipCompanies = markCachedRecords(previousOwnership);
+    catalystCompanies = markCachedRecords(previousCatalyst);
+    riskCompanies = markCachedRecords(previousRisk);
   }
   const industryEvidenceCompanies = buildIndustryEvidenceData({
     revenueCompanies,
