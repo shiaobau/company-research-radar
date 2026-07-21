@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:04:10.665Z",
+  "generated_at": "2026-07-21T06:08:36.595Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T05:44:58.750Z"
+      "refreshed_at": "2026-07-21T06:08:36.595Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -50,7 +50,24 @@
       "rationale": "月營收分數 76；財務品質分數 71。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T05:44:58.750Z"
+      "refreshed_at": "2026-07-21T06:08:36.595Z"
+    },
+    "twse-2308": {
+      "ticker": "2308",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events"
+      ],
+      "evidence_level": "medium",
+      "event_count": 0,
+      "positive_event_count": 0,
+      "negative_event_count": 0,
+      "score": 73,
+      "rationale": "月營收分數 81；財務品質分數 70。",
+      "events": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:08:36.595Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -67,24 +84,7 @@
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T05:44:58.750Z"
-    },
-    "tpex-6023": {
-      "ticker": "6023",
-      "market": "TPEx",
-      "status": "ok",
-      "source_ids": [
-        "tpex_material_events"
-      ],
-      "evidence_level": "medium",
-      "event_count": 0,
-      "positive_event_count": 0,
-      "negative_event_count": 0,
-      "score": 77,
-      "rationale": "月營收分數 81；財務品質分數 78。",
-      "events": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T05:44:58.750Z"
+      "refreshed_at": "2026-07-21T06:08:36.595Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -117,41 +117,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T06:01:30.128Z"
-    },
-    "tpex-8279": {
-      "ticker": "8279",
-      "market": "TPEx",
-      "status": "ok",
-      "source_ids": [
-        "tpex_material_events"
-      ],
-      "evidence_level": "medium",
-      "event_count": 0,
-      "positive_event_count": 0,
-      "negative_event_count": 0,
-      "score": 53,
-      "rationale": "財務品質分數 70。",
-      "events": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T06:01:30.128Z"
-    },
-    "twse-2308": {
-      "ticker": "2308",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_material_events"
-      ],
-      "evidence_level": "medium",
-      "event_count": 0,
-      "positive_event_count": 0,
-      "negative_event_count": 0,
-      "score": 73,
-      "rationale": "月營收分數 81；財務品質分數 70。",
-      "events": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T06:04:10.665Z"
+      "refreshed_at": "2026-07-21T06:08:36.595Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -168,7 +134,41 @@
       "rationale": "月營收分數 77。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T06:04:10.665Z"
+      "refreshed_at": "2026-07-21T06:08:36.595Z"
+    },
+    "tpex-6023": {
+      "ticker": "6023",
+      "market": "TPEx",
+      "status": "ok",
+      "source_ids": [
+        "tpex_material_events"
+      ],
+      "evidence_level": "medium",
+      "event_count": 0,
+      "positive_event_count": 0,
+      "negative_event_count": 0,
+      "score": 77,
+      "rationale": "月營收分數 81；財務品質分數 78。",
+      "events": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:08:36.595Z"
+    },
+    "tpex-8279": {
+      "ticker": "8279",
+      "market": "TPEx",
+      "status": "ok",
+      "source_ids": [
+        "tpex_material_events"
+      ],
+      "evidence_level": "medium",
+      "event_count": 0,
+      "positive_event_count": 0,
+      "negative_event_count": 0,
+      "score": 53,
+      "rationale": "財務品質分數 70。",
+      "events": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:08:36.595Z"
     }
   }
 }

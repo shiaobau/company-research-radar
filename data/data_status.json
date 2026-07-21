@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:04:10.665Z",
+  "generated_at": "2026-07-21T06:08:36.595Z",
   "note": "由 tools/update-data.mjs 產生。資料來源為公開市場 API；缺少來源支持的產業子檢核會標示待補，不以預設分數代替。",
   "companies": {
     "twse-1231": {
