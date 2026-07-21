@@ -1073,6 +1073,20 @@ function quickCompanySearchText(company) {
   ].filter(Boolean).join(" ").toLowerCase();
 }
 
+function quickCompanySearchRank(company, keyword) {
+  const ticker = String(company.ticker || "").toLowerCase();
+  const names = [company.abbreviation, company.name]
+    .map((value) => String(value || "").trim().toLowerCase())
+    .filter(Boolean);
+
+  if (ticker === keyword) return 0;
+  if (ticker.startsWith(keyword)) return 1;
+  if (names.some((name) => name === keyword)) return 2;
+  if (names.some((name) => name.startsWith(keyword))) return 3;
+  if (names.some((name) => name.includes(keyword))) return 4;
+  return quickCompanySearchText(company).includes(keyword) ? 5 : Number.POSITIVE_INFINITY;
+}
+
 function quickCompanyDisplayName(company) {
   const shortName = String(company?.abbreviation || "").trim();
   const officialName = String(company?.name || "").trim();
@@ -1108,8 +1122,12 @@ function renderQuickCompanyResults(inputId = "quick-company-input") {
 
   const researchByTicker = new Map(state.companies.map((company) => [company.ticker, company]));
   const matches = (state.universe.companies || [])
-    .filter((company) => quickCompanySearchText(company).includes(keyword))
-    .slice(0, 8);
+    .map((company) => ({ company, rank: quickCompanySearchRank(company, keyword) }))
+    .filter(({ rank }) => Number.isFinite(rank))
+    .sort((left, right) => left.rank - right.rank
+      || String(left.company.ticker || "").localeCompare(String(right.company.ticker || "")))
+    .slice(0, 8)
+    .map(({ company }) => company);
 
   if (!matches.length) {
     results.innerHTML = `<p class="quick-company-empty">找不到符合的上市上櫃公司</p>`;
