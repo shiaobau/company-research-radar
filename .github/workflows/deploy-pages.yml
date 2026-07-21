@@ -18,6 +18,11 @@ on:
           - morning
           - evening
           - manual
+      tickers:
+        description: Optional comma-separated four-digit tickers to create and research
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -43,11 +48,25 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
+      - name: Create selected research files
+        if: github.event_name == 'workflow_dispatch' && inputs.tickers != ''
+        env:
+          RESEARCH_TICKERS: ${{ inputs.tickers }}
+        run: node tools/promote-candidates.mjs --tickers="$RESEARCH_TICKERS"
       - name: Refresh public research data
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           UPDATE_SLOT: ${{ github.event_name == 'workflow_dispatch' && inputs.slot || github.event.schedule == '15 0 * * 1-5' && 'morning' || 'evening' }}
-        run: node tools/scheduled-update.mjs --slot="$UPDATE_SLOT"
+          RESEARCH_TICKERS: ${{ github.event_name == 'workflow_dispatch' && inputs.tickers || '' }}
+        run: |
+          if [ -n "$RESEARCH_TICKERS" ]; then
+            node tools/source-cache.mjs --refresh
+            node tools/update-data.mjs --tickers="$RESEARCH_TICKERS"
+            node tools/verify-research-data.mjs --tickers="$RESEARCH_TICKERS" --retry
+            node tools/targeted-collector.mjs --tickers="$RESEARCH_TICKERS"
+          else
+            node tools/scheduled-update.mjs --slot="$UPDATE_SLOT"
+          fi
       - name: Commit refreshed data
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |

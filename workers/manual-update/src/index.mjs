@@ -62,7 +62,19 @@ async function readJsonBody(request) {
   return JSON.parse(text || "{}");
 }
 
-async function dispatchGithubWorkflow(env) {
+function normalizeTickers(value) {
+  if (value === undefined || value === null) return [];
+  if (!Array.isArray(value)) throw new Error("股票代碼格式不正確。");
+  const tickers = [...new Set(value
+    .map((ticker) => String(ticker || "").trim())
+    .filter((ticker) => /^\d{4}$/.test(ticker)))].sort();
+  if (tickers.length !== value.length || tickers.length > 20) {
+    throw new Error("一次最多可研究 20 家公司，且代碼必須為四碼股票代碼。");
+  }
+  return tickers;
+}
+
+async function dispatchGithubWorkflow(env, tickers = []) {
   const endpoint = `https://api.github.com/repos/${env.GITHUB_REPOSITORY}/actions/workflows/${encodeURIComponent(env.GITHUB_WORKFLOW)}/dispatches`;
   const result = await fetch(endpoint, {
     method: "POST",
@@ -73,7 +85,10 @@ async function dispatchGithubWorkflow(env) {
       "user-agent": "company-research-radar-update-worker",
       "x-github-api-version": "2022-11-28"
     },
-    body: JSON.stringify({ ref: env.GITHUB_REF, inputs: { slot: "manual" } })
+    body: JSON.stringify({
+      ref: env.GITHUB_REF,
+      inputs: { slot: "manual", tickers: tickers.join(",") }
+    })
   });
   if (result.status === 204) return new Date().toISOString();
   const detail = await result.text();
@@ -147,8 +162,12 @@ export default {
       if (!password || password.length > 512 || !(await verifyPassword(password, env.UPDATE_PASSWORD_HASH))) {
         return response({ status: "error", message: "更新密碼不正確。" }, 401, cors);
       }
-      const requestedAt = await dispatchGithubWorkflow(env);
-      return response({ status: "accepted", requested_at: requestedAt, message: "完整更新已送出，正在等待 GitHub Actions 啟動。" }, 202, cors);
+      const tickers = normalizeTickers(payload.tickers);
+      const requestedAt = await dispatchGithubWorkflow(env, tickers);
+      const message = tickers.length
+        ? `研究已送出：${tickers.join("、")}。GitHub Actions 會建立研究檔、更新資料並完成驗證。`
+        : "完整更新已送出，正在等待 GitHub Actions 啟動。";
+      return response({ status: "accepted", requested_at: requestedAt, tickers, message }, 202, cors);
     } catch (error) {
       return response({ status: "error", message: error.message || "無法啟動完整更新。" }, 500, cors);
     }

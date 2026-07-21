@@ -528,6 +528,11 @@ async function startResearchFromDashboard() {
     return;
   }
 
+  if (cloudManualUpdateReady()) {
+    await runCloudManualFullUpdate({ tickers });
+    return;
+  }
+
   setResearchProgress("研究流程啟動中...", 0);
   try {
     const response = await fetch("/api/research", {
@@ -536,7 +541,7 @@ async function startResearchFromDashboard() {
       body: JSON.stringify({ tickers })
     });
     if (!response.headers.get("content-type")?.includes("application/json")) {
-      throw new Error("研究功能只能在本機的 127.0.0.1:8768 使用。");
+      throw new Error("目前無法連線到研究服務。");
     }
     const payload = await response.json();
     if (!response.ok) throw new Error(payload.message || "研究 API 無法啟動");
@@ -544,7 +549,7 @@ async function startResearchFromDashboard() {
     setTimeout(pollResearchStatus, 1200);
   } catch (error) {
     sessionStorage.removeItem("researchAutoRefreshAfterRun");
-    setResearchStatus(`目前使用的是靜態伺服器，請改用動態研究伺服器後再按開始研究。${error.message}`);
+    setResearchStatus(`研究流程無法啟動：${error.message}`);
   }
 }
 
@@ -712,16 +717,21 @@ function renderSchedulerPanel() {
 function renderAdminUpdateButton(localServer, cloudManualReady) {
   const button = $("#admin-update-button");
   if (!button) return;
-  const action = localServer ? "local" : cloudManualReady ? "cloud" : "";
+  const action = cloudManualReady ? "cloud" : localServer ? "local" : "";
   button.hidden = !action;
   button.dataset.adminUpdateAction = action;
+}
+
+function cloudManualUpdateReady() {
+  const config = state.appConfig?.manual_update || {};
+  return config.enabled === true && /^https:\/\//.test(String(config.endpoint || "").trim());
 }
 
 async function runManualFullUpdate() {
   try {
     const response = await fetch("/api/scheduler/manual", { method: "POST" });
     if (!response.headers.get("content-type")?.includes("application/json")) {
-      throw new Error("手動完整更新只能在本機的 127.0.0.1:8768 使用。");
+      throw new Error("目前無法連線到更新服務。");
     }
     const payload = await response.json();
     if (!response.ok) throw new Error(payload.message || "手動更新無法啟動");
@@ -739,39 +749,42 @@ async function runManualFullUpdate() {
   }
 }
 
-async function runCloudManualFullUpdate() {
+async function runCloudManualFullUpdate({ tickers = [] } = {}) {
   const config = state.appConfig?.manual_update || {};
   const endpoint = String(config.endpoint || "").trim();
-  const password = window.prompt("輸入手動更新管理密碼");
+  const researchTickers = [...new Set(tickers
+    .map((ticker) => String(ticker || "").trim())
+    .filter((ticker) => /^\d{4}$/.test(ticker)))].sort();
+  const isResearchRun = researchTickers.length > 0;
+  const password = window.prompt(isResearchRun ? "輸入開始研究管理密碼" : "輸入手動更新管理密碼");
   if (!password) return;
   const button = $("#admin-update-button");
   try {
     if (button) button.disabled = true;
-    setResearchStatus("正在驗證管理密碼並啟動完整更新...");
+    setResearchStatus("", false);
     const controller = new AbortController();
     const timeout = window.setTimeout(() => controller.abort(), Number(config.request_timeout_ms) || 15000);
     const response = await fetch(endpoint, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ password }),
+      body: JSON.stringify({ password, tickers: researchTickers }),
       signal: controller.signal
     });
     window.clearTimeout(timeout);
     const payload = await response.json().catch(() => ({}));
     if (!response.ok) throw new Error(payload.message || "無法啟動完整更新。");
     const requestedAt = payload.requested_at || new Date().toISOString();
-    state.cloudManualUpdate = { endpoint, requestedAt };
+    state.cloudManualUpdate = { endpoint, requestedAt, tickers: researchTickers };
     state.schedulerStatus.current_run = {
       status: "running",
-      label: "手動完整更新",
+      label: isResearchRun ? "建立研究檔" : "手動完整更新",
       progress_percent: 3,
       current_step: { label: "等待 GitHub Actions 啟動" }
     };
     renderSchedulerPanel();
-    setResearchStatus(payload.message || "完整更新已送出，正在等待 GitHub Actions 啟動。");
     pollCloudManualUpdate();
   } catch (error) {
-    setResearchStatus(`無法啟動完整更新：${error.name === "AbortError" ? "連線逾時，請稍後再試。" : error.message}`);
+    setResearchStatus(`無法啟動${isResearchRun ? "研究" : "完整更新"}：${error.name === "AbortError" ? "連線逾時，請稍後再試。" : error.message}`);
   } finally {
     if (button) button.disabled = false;
   }
@@ -783,6 +796,7 @@ function cloudUpdatePhaseLabel(phase) {
     starting: "準備更新環境",
     "Check out source": "取得研究資料",
     "Set up Node": "準備更新環境",
+    "Create selected research files": "建立研究檔",
     "Refresh public research data": "更新公開資料與公告事件",
     "Commit refreshed data": "儲存研究資料",
     "Prepare static site": "準備網站內容",
@@ -806,14 +820,15 @@ async function pollCloudManualUpdate() {
     const label = cloudUpdatePhaseLabel(payload.phase);
     state.schedulerStatus.current_run = payload.status === "done" || payload.status === "error" ? null : {
       status: "running",
-      label: "手動完整更新",
+      label: update.tickers?.length ? "建立研究檔" : "手動完整更新",
       progress_percent: payload.progress_percent || 3,
       current_step: { label }
     };
     renderSchedulerPanel();
     if (payload.status === "done") {
       state.cloudManualUpdate = null;
-      setResearchStatus("完整更新完成，正在載入最新研究資料...", false);
+      if (update.tickers?.length) clearUniverseResearchRequest();
+      setResearchStatus("", false);
       window.setTimeout(() => window.location.reload(), 1600);
       return;
     }
@@ -822,7 +837,6 @@ async function pollCloudManualUpdate() {
       setResearchStatus(`完整更新未完成：${payload.conclusion || "請查看 GitHub Actions"}`, false);
       return;
     }
-    setResearchStatus(`${label}（${payload.progress_percent || 3}%）`);
     window.setTimeout(pollCloudManualUpdate, 8000);
   } catch (error) {
     setResearchStatus(`完整更新已送出，暫時無法讀取進度：${error.message}`);
@@ -1015,7 +1029,6 @@ function initControls() {
       return;
     }
     if (event.target.closest("[data-start-research]")) {
-      sessionStorage.setItem("researchAutoRefreshAfterRun", "1");
       startResearchFromDashboard();
       return;
     }
@@ -1594,15 +1607,14 @@ function renderCollectedEvents(company) {
 
 function renderDetail() {
   const company = companyById(state.selectedId);
+  const detailPanel = $("#company-detail").closest(".detail-panel");
   if (!company) {
+    if (detailPanel) detailPanel.hidden = true;
     $("#company-detail").className = "detail-empty";
-    $("#company-detail").innerHTML = `
-      <p class="eyebrow">Company File</p>
-      <h2>尚未選取公司</h2>
-      <p>請從左側觀察清單選取公司，或在上方載入研究候選。</p>
-    `;
+    $("#company-detail").replaceChildren();
     return;
   }
+  if (detailPanel) detailPanel.hidden = false;
   if (company.__candidate) {
     renderCandidateDetail(company);
     return;
