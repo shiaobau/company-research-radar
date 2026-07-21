@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T03:29:55.180Z",
+  "generated_at": "2026-07-21T05:44:58.750Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -51,7 +51,9 @@
       "score": 92,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
-      "violations": []
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -72,7 +74,9 @@
       "score": 92,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
-      "violations": []
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -93,7 +97,9 @@
       "score": 92,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
-      "violations": []
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -114,7 +120,9 @@
       "score": 92,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
-      "violations": []
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     }
   }
 }

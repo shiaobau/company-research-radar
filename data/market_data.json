@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T03:29:55.180Z",
+  "generated_at": "2026-07-21T05:44:58.750Z",
   "sources": [
     {
       "id": "twse_stock_day",
@@ -41,7 +41,9 @@
       "return_60d_pct": 13.17,
       "score": 63,
       "rationale": "近 256 個交易日，收盤 2320，位於一年區間 86.71%，20 日報酬 -3.73%，60 日報酬 13.17%。",
-      "errors": []
+      "errors": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -66,7 +68,9 @@
       "return_60d_pct": -13.2,
       "score": 48,
       "rationale": "近 256 個交易日，收盤 85.5，位於一年區間 17.88%，20 日報酬 -14.5%，60 日報酬 -13.2%。",
-      "errors": []
+      "errors": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -91,7 +95,9 @@
       "return_60d_pct": 65.39,
       "score": 65,
       "rationale": "近 256 個交易日，收盤 130，位於近 60 日區間 54.16%，20 日報酬 -10.65%，60 日報酬 65.39%。",
-      "errors": []
+      "errors": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "twse-1231": {
       "ticker": "1231",
@@ -116,7 +122,9 @@
       "return_60d_pct": 1.91,
       "score": 56,
       "rationale": "近 256 個交易日，收盤 90.6，位於一年區間 12.31%，20 日報酬 3.66%，60 日報酬 1.91%。",
-      "errors": []
+      "errors": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     }
   }
 }

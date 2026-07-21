@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T03:29:55.180Z",
+  "generated_at": "2026-07-21T05:44:58.750Z",
   "sources": [
     {
       "id": "twse_monthly_revenue",
@@ -35,7 +35,9 @@
       "cumulative_revenue_thousand_twd": 6373030,
       "cumulative_yoy_pct": 4.38,
       "score": 63,
-      "rationale": "2026-06 月營收 YoY 6.95%，MoM 4.44%，累計 YoY 4.38%。"
+      "rationale": "2026-06 月營收 YoY 6.95%，MoM 4.44%，累計 YoY 4.38%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -54,7 +56,9 @@
       "cumulative_revenue_thousand_twd": 129770564,
       "cumulative_yoy_pct": 11.28,
       "score": 76,
-      "rationale": "2026-06 月營收 YoY 22.85%，MoM 0.79%，累計 YoY 11.28%。"
+      "rationale": "2026-06 月營收 YoY 22.85%，MoM 0.79%，累計 YoY 11.28%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -73,7 +77,9 @@
       "cumulative_revenue_thousand_twd": 2404483690,
       "cumulative_yoy_pct": 35.61,
       "score": 79,
-      "rationale": "2026-06 月營收 YoY 67.87%，MoM 6.16%，累計 YoY 35.61%。"
+      "rationale": "2026-06 月營收 YoY 67.87%，MoM 6.16%，累計 YoY 35.61%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -92,7 +98,9 @@
       "cumulative_revenue_thousand_twd": 2478954,
       "cumulative_yoy_pct": 37.74,
       "score": 81,
-      "rationale": "2026-06 月營收 YoY 86.15%，MoM 12.45%，累計 YoY 37.74%。"
+      "rationale": "2026-06 月營收 YoY 86.15%，MoM 12.45%，累計 YoY 37.74%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T03:29:55.180Z",
+  "generated_at": "2026-07-21T05:44:58.750Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -31,7 +31,9 @@
       "negative_event_count": 0,
       "score": 53,
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
-      "events": []
+      "events": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -46,7 +48,9 @@
       "negative_event_count": 0,
       "score": 67,
       "rationale": "月營收分數 76；財務品質分數 71。",
-      "events": []
+      "events": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -61,7 +65,9 @@
       "negative_event_count": 0,
       "score": 71,
       "rationale": "月營收分數 79；財務品質分數 78。",
-      "events": []
+      "events": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -76,7 +82,9 @@
       "negative_event_count": 0,
       "score": 77,
       "rationale": "月營收分數 81；財務品質分數 78。",
-      "events": []
+      "events": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     }
   }
 }

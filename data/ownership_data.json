@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T03:29:55.180Z",
+  "generated_at": "2026-07-21T05:44:58.750Z",
   "sources": [
     {
       "id": "twse_major_shareholders",
@@ -72,7 +72,9 @@
         }
       ],
       "insider_transfers": [],
-      "violations": []
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -91,7 +93,9 @@
       "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
       "major_shareholders": [],
       "insider_transfers": [],
-      "violations": []
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -110,7 +114,9 @@
       "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
       "major_shareholders": [],
       "insider_transfers": [],
-      "violations": []
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -134,7 +140,9 @@
         }
       ],
       "insider_transfers": [],
-      "violations": []
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T05:44:58.750Z"
     }
   }
 }
