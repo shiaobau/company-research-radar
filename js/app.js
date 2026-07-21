@@ -178,6 +178,14 @@ function selectedUniverseCompanies() {
     .filter((item) => item.official || item.research);
 }
 
+function pendingResearchTickers() {
+  return selectedUniverseCompanies()
+    .filter(({ research }) => !research)
+    .map(({ ticker }) => ticker)
+    .filter((ticker) => /^\d{4}$/.test(String(ticker || "")))
+    .sort();
+}
+
 function setCandidateTickers(tickers) {
   const cleanTickers = [...new Set(
     tickers
@@ -520,9 +528,7 @@ async function pollResearchStatus() {
 }
 
 async function startResearchFromDashboard() {
-  const tickers = selectedUniverseCompanies()
-    .filter(({ research }) => !research)
-    .map(({ ticker }) => ticker);
+  const tickers = pendingResearchTickers();
   if (!tickers.length) {
     setResearchStatus("請先載入候選代號或候選種子檔。");
     return;
@@ -752,7 +758,8 @@ async function runManualFullUpdate() {
 async function runCloudManualFullUpdate({ tickers = [] } = {}) {
   const config = state.appConfig?.manual_update || {};
   const endpoint = String(config.endpoint || "").trim();
-  const researchTickers = [...new Set(tickers
+  const requestedTickers = tickers.length ? tickers : pendingResearchTickers();
+  const researchTickers = [...new Set(requestedTickers
     .map((ticker) => String(ticker || "").trim())
     .filter((ticker) => /^\d{4}$/.test(ticker)))].sort();
   const isResearchRun = researchTickers.length > 0;
@@ -787,6 +794,19 @@ async function runCloudManualFullUpdate({ tickers = [] } = {}) {
     setResearchStatus(`無法啟動${isResearchRun ? "研究" : "完整更新"}：${error.name === "AbortError" ? "連線逾時，請稍後再試。" : error.message}`);
   } finally {
     if (button) button.disabled = false;
+  }
+}
+
+async function researchFilesArePublished(tickers) {
+  if (!tickers.length) return true;
+  try {
+    const response = await fetch(`data/companies.json?published_at=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) return false;
+    const data = await response.json();
+    const published = new Set((data.companies || []).map((company) => String(company.ticker || "")));
+    return tickers.every((ticker) => published.has(ticker));
+  } catch {
+    return false;
   }
 }
 
@@ -826,6 +846,24 @@ async function pollCloudManualUpdate() {
     };
     renderSchedulerPanel();
     if (payload.status === "done") {
+      if (update.tickers?.length && !(await researchFilesArePublished(update.tickers))) {
+        const publishChecks = (update.publishChecks || 0) + 1;
+        if (publishChecks <= 12) {
+          state.cloudManualUpdate = { ...update, publishChecks };
+          state.schedulerStatus.current_run = {
+            status: "running",
+            label: "建立研究檔",
+            progress_percent: 97,
+            current_step: { label: `等待研究檔上線 (${publishChecks}/12)` }
+          };
+          renderSchedulerPanel();
+          window.setTimeout(pollCloudManualUpdate, 5000);
+          return;
+        }
+        state.cloudManualUpdate = null;
+        setResearchStatus("資料更新完成，但研究檔仍在同步至網站；候選清單會保留，請稍後重新載入確認。", false);
+        return;
+      }
       state.cloudManualUpdate = null;
       if (update.tickers?.length) clearUniverseResearchRequest();
       setResearchStatus("", false);
