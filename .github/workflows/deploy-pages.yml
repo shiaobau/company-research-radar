@@ -3,10 +3,6 @@ name: Deploy static dashboard to GitHub Pages
 on:
   push:
     branches: [main]
-  schedule:
-    # GitHub Actions cron is UTC. These are 08:15 and 20:30 on Taiwan weekdays.
-    - cron: "15 0 * * 1-5"
-    - cron: "30 12 * * 1-5"
   workflow_dispatch:
     inputs:
       slot:
@@ -54,10 +50,10 @@ jobs:
           RESEARCH_TICKERS: ${{ inputs.tickers }}
         run: node tools/promote-candidates.mjs --tickers="$RESEARCH_TICKERS"
       - name: Refresh public research data
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch'
         env:
-          UPDATE_SLOT: ${{ github.event_name == 'workflow_dispatch' && inputs.slot || github.event.schedule == '15 0 * * 1-5' && 'morning' || 'evening' }}
-          RESEARCH_TICKERS: ${{ github.event_name == 'workflow_dispatch' && inputs.tickers || '' }}
+          UPDATE_SLOT: ${{ inputs.slot }}
+          RESEARCH_TICKERS: ${{ inputs.tickers }}
         run: |
           if [ -n "$RESEARCH_TICKERS" ]; then
             node tools/source-cache.mjs --refresh --continue-on-error
@@ -68,7 +64,7 @@ jobs:
             node tools/scheduled-update.mjs --slot="$UPDATE_SLOT"
           fi
       - name: Commit refreshed data
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -2,6 +2,9 @@
   "name": "company-research-radar-update",
   "main": "src/index.mjs",
   "compatibility_date": "2026-07-21",
+  "triggers": {
+    "crons": ["15 0 * * 1-5", "30 12 * * 1-5"]
+  },
   "secrets": {
     "required": ["GITHUB_TOKEN", "UPDATE_PASSWORD_HASH"]
   },

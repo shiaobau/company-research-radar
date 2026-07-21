@@ -74,7 +74,7 @@ function normalizeTickers(value) {
   return tickers;
 }
 
-async function dispatchGithubWorkflow(env, tickers = []) {
+async function dispatchGithubWorkflow(env, tickers = [], slot = "manual") {
   const endpoint = `https://api.github.com/repos/${env.GITHUB_REPOSITORY}/actions/workflows/${encodeURIComponent(env.GITHUB_WORKFLOW)}/dispatches`;
   const result = await fetch(endpoint, {
     method: "POST",
@@ -87,7 +87,7 @@ async function dispatchGithubWorkflow(env, tickers = []) {
     },
     body: JSON.stringify({
       ref: env.GITHUB_REF,
-      inputs: { slot: "manual", tickers: tickers.join(",") }
+      inputs: { slot, tickers: tickers.join(",") }
     })
   });
   if (result.status === 204) return new Date().toISOString();
@@ -102,6 +102,12 @@ function githubHeaders(env) {
     "user-agent": "company-research-radar-update-worker",
     "x-github-api-version": "2022-11-28"
   };
+}
+
+function scheduledSlot(cron) {
+  if (cron === "15 0 * * 1-5") return "morning";
+  if (cron === "30 12 * * 1-5") return "evening";
+  return "manual";
 }
 
 async function workflowStatus(env, requestedAt) {
@@ -137,6 +143,11 @@ async function workflowStatus(env, requestedAt) {
 }
 
 export default {
+  async scheduled(controller, env, ctx) {
+    const slot = scheduledSlot(controller.cron);
+    ctx.waitUntil(dispatchGithubWorkflow(env, [], slot));
+  },
+
   async fetch(request, env) {
     const cors = corsHeaders(request, env);
     if (!cors) return response({ status: "error", message: "不允許的來源。" }, 403);
