@@ -187,16 +187,25 @@ async function main() {
   const ids = argValue("ids", "").split(",").map((item) => item.trim()).filter(Boolean);
   const statusOnly = process.argv.includes("--status");
   const force = process.argv.includes("--refresh");
+  const continueOnError = process.argv.includes("--continue-on-error");
   if (statusOnly) {
     console.log(JSON.stringify(await readStatus(), null, 2));
     return;
   }
   const catalog = await loadSourceCatalog();
   const targets = ids.length ? ids : catalog.map((source) => source.id);
+  const failures = [];
   for (const id of targets) {
-    const result = await getCachedSource(id, { force });
-    console.log(`${id}: ${result.cache_status}, ${result.row_count} rows, ${result.fetched_at}`);
+    try {
+      const result = await getCachedSource(id, { force });
+      console.log(`${id}: ${result.cache_status}, ${result.row_count} rows, ${result.fetched_at}`);
+    } catch (error) {
+      failures.push({ id, message: error.message });
+      console.error(`${id}: failed, ${error.message}`);
+      if (!continueOnError) throw error;
+    }
   }
+  if (failures.length) console.warn(`Completed with ${failures.length} unavailable source(s).`);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

@@ -60,7 +60,7 @@ jobs:
           RESEARCH_TICKERS: ${{ github.event_name == 'workflow_dispatch' && inputs.tickers || '' }}
         run: |
           if [ -n "$RESEARCH_TICKERS" ]; then
-            node tools/source-cache.mjs --refresh
+            node tools/source-cache.mjs --refresh --continue-on-error
             node tools/update-data.mjs --tickers="$RESEARCH_TICKERS"
             node tools/verify-research-data.mjs --tickers="$RESEARCH_TICKERS" --retry
             node tools/targeted-collector.mjs --tickers="$RESEARCH_TICKERS"

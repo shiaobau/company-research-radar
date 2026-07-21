@@ -30,7 +30,7 @@ const SCHEDULES = {
 };
 
 const FULL_UPDATE_STEPS = [
-  ["tools/source-cache.mjs", "--refresh"],
+  ["tools/source-cache.mjs", "--refresh", "--continue-on-error"],
   ["tools/update-data.mjs"],
   ["tools/verify-research-data.mjs", "--retry"],
   ["tools/targeted-collector.mjs"]
