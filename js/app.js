@@ -24,7 +24,8 @@ const state = {
   companyOrder: readWatchlistOrder(),
   pendingDeletionTicker: null,
   selectedManagerTickers: new Set(),
-  pendingDeletionTickers: []
+  pendingDeletionTickers: [],
+  openScoreRationaleCompanyId: null
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -917,6 +918,11 @@ function initControls() {
     if (moveTicker) moveResearchCompany(moveTicker, Number(event.target.dataset.moveDirection));
   });
 
+  document.addEventListener("toggle", (event) => {
+    if (!event.target.matches("#company-detail .score-rationale")) return;
+    state.openScoreRationaleCompanyId = event.target.open ? state.selectedId : null;
+  }, true);
+
   ensureOnboardingPanel();
   ensureSchedulerPanel();
   setupCollapsibleSections();
@@ -1495,12 +1501,9 @@ function renderDetail() {
     ${publicFacts}
     ${score.complete ? "" : `<p class="risk">尚未產生核心分數。缺少：${RadarRenderers.escapeHtml(scoreMissingLabel(score))}</p>`}
     <div class="score-breakdown">${RadarRenderers.renderScoreRows(score)}</div>
-    <details class="detail-fold">
-      <summary>公開資料快照</summary>
-      ${dataSnapshot}
-    </details>
+    ${dataSnapshot}
     ${renderCollectedEvents(company)}
-    <details class="module detail-fold score-rationale">
+    <details class="module detail-fold score-rationale" ${state.openScoreRationaleCompanyId === company.id ? "open" : ""}>
       <summary>評分理由</summary>
       <p class="muted">以下顯示各子測項取得的公開數值、對應門檻與換算分數。</p>
       <div class="score-rationale-list">${RadarRenderers.renderScoreRationale(score)}</div>
