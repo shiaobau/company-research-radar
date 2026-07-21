@@ -675,6 +675,7 @@ function renderSchedulerPanel() {
   const cloudManualUpdate = state.appConfig?.manual_update || {};
   const cloudEndpoint = String(cloudManualUpdate.endpoint || "").trim();
   const cloudManualReady = cloudManualUpdate.enabled === true && /^https:\/\//.test(cloudEndpoint);
+  renderAdminUpdateButton(localServer, cloudManualReady);
   const coverage = state.researchStatus.summary || {};
   const calculatedReadiness = state.companies.map((company) => ({
     company,
@@ -698,15 +699,6 @@ function renderSchedulerPanel() {
           }).join("")}
         </div>
       </section>
-      <section class="update-section update-manual">
-        <div><p class="eyebrow">Manual</p><h2>手動更新</h2></div>
-        <p class="muted">完整更新會重新蒐集公開資料、MOPS 歷史重大訊息與官方公告事件，再驗證評分。</p>
-        ${localServer
-          ? '<button class="ghost-button" type="button" data-run-manual-update title="更新後會重新驗證所有必要評分維度">執行完整更新</button>'
-          : cloudManualReady
-            ? '<button class="ghost-button" type="button" data-run-cloud-manual-update title="需要輸入管理更新密碼">執行完整更新</button>'
-            : '<span class="muted">手動更新後台設定中。</span>'}
-      </section>
       <section class="update-section update-status">
         <div><p class="eyebrow">Status</p><h2>更新情形 <span class="pill">${stateLabel}</span></h2></div>
         ${active ? `<div class="update-progress"><span class="progress-spinner" aria-hidden="true"></span><div><strong>${RadarRenderers.escapeHtml(active.current_step?.label || active.label || "更新中")}</strong><span>${activeProgress}%</span><div class="progress-track"><i style="--progress:${activeProgress}%"></i></div></div></div>` : `<p class="muted">完整分析 ${coverage.complete_count || 0}/${coverage.total || 0} 家；核心分析完成 ${coverage.core_complete_count || 0} 家</p>`}
@@ -714,6 +706,14 @@ function renderSchedulerPanel() {
       </section>
     </div>
   `;
+}
+
+function renderAdminUpdateButton(localServer, cloudManualReady) {
+  const button = $("#admin-update-button");
+  if (!button) return;
+  const action = localServer ? "local" : cloudManualReady ? "cloud" : "";
+  button.hidden = !action;
+  button.dataset.adminUpdateAction = action;
 }
 
 async function runManualFullUpdate() {
@@ -933,6 +933,15 @@ function initControls() {
   });
 
   document.addEventListener("click", (event) => {
+    const adminUpdateButton = event.target.closest("[data-admin-update-action]");
+    if (adminUpdateButton?.dataset.adminUpdateAction === "local") {
+      runManualFullUpdate();
+      return;
+    }
+    if (adminUpdateButton?.dataset.adminUpdateAction === "cloud") {
+      runCloudManualFullUpdate();
+      return;
+    }
     if (event.target.closest("[data-run-manual-update]")) {
       runManualFullUpdate();
       return;
