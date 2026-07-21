@@ -24,7 +24,7 @@ const SCHEDULES = {
   },
   test: {
     label: "測試完整更新",
-    time: "15:25",
+    time: "15:45",
     description: "暫時驗證 GitHub Actions 自動排程、資料更新與網站部署。"
   },
   manual: {
