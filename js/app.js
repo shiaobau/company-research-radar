@@ -681,7 +681,7 @@ function renderSchedulerPanel() {
   const panel = $("#scheduler-panel");
   if (!panel) return;
   const schedules = state.schedulerStatus.schedules || {};
-  const order = ["morning", "evening"];
+  const order = ["morning", "test", "evening"];
   const active = state.schedulerStatus.current_run;
   const localServer = ["127.0.0.1", "localhost"].includes(window.location.hostname);
   const cloudManualUpdate = state.appConfig?.manual_update || {};

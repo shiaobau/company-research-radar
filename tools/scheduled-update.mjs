@@ -22,6 +22,11 @@ const SCHEDULES = {
     time: "20:30",
     description: "完整更新公開資料、研究資料、MOPS 歷史事件與官方公告。"
   },
+  test: {
+    label: "測試完整更新",
+    time: "16:25",
+    description: "暫時驗證 Cloudflare Worker Cron、資料更新與網站部署。"
+  },
   manual: {
     label: "手動完整更新",
     time: "手動",
