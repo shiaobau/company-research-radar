@@ -960,7 +960,7 @@ function initControls() {
     ...Object.values(state.templates).map((template) => `<option value="${template.id}">${RadarRenderers.escapeHtml(template.label)}</option>`)
   ].join("");
 
-  ["search-input", "industry-filter", "score-filter"].forEach((id) => {
+  ["industry-filter", "score-filter"].forEach((id) => {
     $(`#${id}`).addEventListener("input", renderAll);
   });
 
@@ -976,13 +976,18 @@ function initControls() {
     renderCompanyManager();
   });
 
-  const quickCompanyInput = $("#quick-company-input");
-  quickCompanyInput.addEventListener("input", renderQuickCompanyResults);
-  quickCompanyInput.addEventListener("focus", renderQuickCompanyResults);
-  quickCompanyInput.addEventListener("keydown", (event) => {
-    if (event.key !== "Escape") return;
-    hideQuickCompanyResults();
-    quickCompanyInput.blur();
+  ["search-input", "quick-company-input"].forEach((id) => {
+    const input = $(`#${id}`);
+    input.addEventListener("input", () => {
+      if (id === "search-input") renderAll();
+      renderQuickCompanyResults(id);
+    });
+    input.addEventListener("focus", () => renderQuickCompanyResults(id));
+    input.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape") return;
+      hideQuickCompanyResults(id);
+      input.blur();
+    });
   });
 
   $("#candidate-seed-file").addEventListener("change", async (event) => {
@@ -1075,22 +1080,29 @@ function quickCompanyDisplayName(company) {
   return shortName || officialName || "公司名稱未提供";
 }
 
-function hideQuickCompanyResults() {
-  const results = $("#quick-company-results");
-  const input = $("#quick-company-input");
-  if (!results || !input) return;
-  results.hidden = true;
-  results.replaceChildren();
-  input.setAttribute("aria-expanded", "false");
+function resultIdForCompanySearch(inputId) {
+  return inputId === "search-input" ? "main-company-results" : "quick-company-results";
 }
 
-function renderQuickCompanyResults() {
-  const input = $("#quick-company-input");
-  const results = $("#quick-company-results");
+function hideQuickCompanyResults(inputId) {
+  const inputIds = inputId ? [inputId] : ["search-input", "quick-company-input"];
+  inputIds.forEach((id) => {
+    const input = $(`#${id}`);
+    const results = $(`#${resultIdForCompanySearch(id)}`);
+    if (!results || !input) return;
+    results.hidden = true;
+    results.replaceChildren();
+    input.setAttribute("aria-expanded", "false");
+  });
+}
+
+function renderQuickCompanyResults(inputId = "quick-company-input") {
+  const input = $(`#${inputId}`);
+  const results = $(`#${resultIdForCompanySearch(inputId)}`);
   if (!input || !results) return;
   const keyword = input.value.trim().toLowerCase();
   if (!keyword) {
-    hideQuickCompanyResults();
+    hideQuickCompanyResults(inputId);
     return;
   }
 
@@ -1123,11 +1135,13 @@ function renderQuickCompanyResults() {
 }
 
 async function handleQuickCompanyResult(ticker) {
-  const input = $("#quick-company-input");
   const existing = state.companies.find((company) => company.ticker === ticker);
   if (existing) {
     state.selectedId = existing.id;
-    if (input) input.value = "";
+    ["search-input", "quick-company-input"].forEach((id) => {
+      const input = $(`#${id}`);
+      if (input) input.value = "";
+    });
     hideQuickCompanyResults();
     renderAll();
     document.querySelector(`.company-card[data-id="${existing.id}"]`)?.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -1141,7 +1155,10 @@ async function handleQuickCompanyResult(ticker) {
   params.set("universe", "selected");
   params.set("tickers", tickers.join(","));
   window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}`);
-  if (input) input.value = "";
+  ["search-input", "quick-company-input"].forEach((id) => {
+    const input = $(`#${id}`);
+    if (input) input.value = "";
+  });
   hideQuickCompanyResults();
   state.selectedId = `candidate-${ticker}`;
   setResearchStatus(`${companyLabel} 已加入待研究清單。請按「開始研究」。`);

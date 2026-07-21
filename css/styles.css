@@ -139,7 +139,8 @@ h3 {
   padding: 6px;
 }
 
-.quick-company-search {
+.quick-company-search,
+.universe-company-search {
   position: relative;
   min-width: 0;
 }
@@ -1513,6 +1514,13 @@ a.source-chip {
 
   .status-panel {
     min-width: 0;
+  }
+
+  .quick-company-results {
+    position: static;
+    max-height: 320px;
+    margin-top: 6px;
+    overflow: auto;
   }
 
   .onboarding-actions {

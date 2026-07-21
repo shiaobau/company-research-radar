@@ -23,9 +23,10 @@
 
   <main class="layout">
     <section class="control-strip" aria-label="篩選工具">
-      <label class="search-box">
+      <label class="search-box universe-company-search">
         <span>搜尋</span>
-        <input id="search-input" type="search" placeholder="公司、產業、產品、標籤、訊號">
+        <input id="search-input" type="search" autocomplete="off" placeholder="輸入公司名稱或四碼代號" aria-controls="main-company-results" aria-expanded="false">
+        <div id="main-company-results" class="quick-company-results" role="listbox" hidden></div>
       </label>
       <label>
         <span>產業模板</span>
