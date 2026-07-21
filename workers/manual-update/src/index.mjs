@@ -37,7 +37,9 @@ function timingSafeEqual(left, right) {
 async function verifyPassword(password, encodedHash) {
   const [iterationsText, saltText, hashText] = String(encodedHash || "").split(":");
   const iterations = Number(iterationsText);
-  if (!Number.isInteger(iterations) || iterations < 100000 || iterations > 1000000 || !saltText || !hashText) return false;
+  if (!Number.isInteger(iterations) || iterations < 10000 || iterations > 100000 || !saltText || !hashText) {
+    throw new Error("管理密碼設定格式無效。");
+  }
   try {
     const salt = base64ToBytes(saltText);
     const expected = base64ToBytes(hashText);
@@ -49,8 +51,8 @@ async function verifyPassword(password, encodedHash) {
       iterations
     }, key, expected.byteLength * 8));
     return timingSafeEqual(derived, expected);
-  } catch {
-    return false;
+  } catch (error) {
+    throw new Error(`管理密碼驗證無法完成：${error.message || "未知錯誤"}`);
   }
 }
 
@@ -86,6 +88,9 @@ export default {
     const url = new URL(request.url);
     if (request.method !== "POST" || url.pathname !== "/manual-update") {
       return response({ status: "error", message: "找不到更新端點。" }, 404, cors);
+    }
+    if (!env.UPDATE_PASSWORD_HASH) {
+      return response({ status: "error", message: "尚未設定管理更新密碼。" }, 503, cors);
     }
 
     try {

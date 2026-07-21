@@ -24,9 +24,9 @@ $script = @'
 const crypto = require("crypto");
 const password = process.argv[1];
 const salt = crypto.randomBytes(16);
-crypto.pbkdf2(password, salt, 210000, 32, "sha256", (error, hash) => {
+crypto.pbkdf2(password, salt, 10000, 32, "sha256", (error, hash) => {
   if (error) throw error;
-  console.log(`210000:${salt.toString("base64")}:${hash.toString("base64")}`);
+  console.log(`10000:${salt.toString("base64")}:${hash.toString("base64")}`);
 });
 '@
 node -e $script -- $plain
