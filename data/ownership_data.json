@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T05:44:58.750Z",
+  "generated_at": "2026-07-21T06:01:30.128Z",
   "sources": [
     {
       "id": "twse_major_shareholders",
@@ -143,6 +143,53 @@
       "violations": [],
       "cache_status": "fresh",
       "refreshed_at": "2026-07-21T05:44:58.750Z"
+    },
+    "twse-2885": {
+      "ticker": "2885",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_major_shareholders",
+        "twse_insider_transfer",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "major_shareholder_count": 0,
+      "insider_transfer_count": 0,
+      "disclosure_violation_count": 0,
+      "score": 63,
+      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
+      "major_shareholders": [],
+      "insider_transfers": [],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:01:30.128Z"
+    },
+    "tpex-8279": {
+      "ticker": "8279",
+      "market": "TPEx",
+      "status": "ok",
+      "source_ids": [
+        "tpex_major_shareholders",
+        "tpex_insider_transfer",
+        "tpex_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "major_shareholder_count": 1,
+      "insider_transfer_count": 0,
+      "disclosure_violation_count": 0,
+      "score": 73,
+      "rationale": "持股逾 10% 大股東 1 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
+      "major_shareholders": [
+        {
+          "name": "生達化學製藥股份有限公司",
+          "source_id": "tpex_major_shareholders"
+        }
+      ],
+      "insider_transfers": [],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:01:30.128Z"
     }
   }
 }

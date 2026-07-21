@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-07-21T05:45:17.994Z",
+  "generated_at": "2026-07-21T06:01:41.982Z",
   "note": "六項核心評分維度必須具備公開資料；產業證據調整僅在通過來源支持的產業子檢核後才介入，未完成時維持核心分數。",
   "summary": {
-    "total": 4,
+    "total": 6,
     "complete_count": 0,
-    "core_complete_count": 4,
+    "core_complete_count": 6,
     "incomplete_count": 0
   },
   "companies": {
@@ -71,6 +71,38 @@
       "completed_count": 6,
       "total_count": 7,
       "checked_at": "2026-07-21T05:45:17.994Z",
+      "retried": false
+    },
+    "twse-2885": {
+      "id": "twse-2885",
+      "ticker": "2885",
+      "name": "元大金",
+      "status": "core_complete",
+      "missing_dimensions": [
+        {
+          "id": "industry",
+          "label": "產業證據調整"
+        }
+      ],
+      "completed_count": 6,
+      "total_count": 7,
+      "checked_at": "2026-07-21T06:01:41.982Z",
+      "retried": false
+    },
+    "tpex-8279": {
+      "id": "tpex-8279",
+      "ticker": "8279",
+      "name": "生展",
+      "status": "core_complete",
+      "missing_dimensions": [
+        {
+          "id": "industry",
+          "label": "產業證據調整"
+        }
+      ],
+      "completed_count": 6,
+      "total_count": 7,
+      "checked_at": "2026-07-21T06:01:41.982Z",
       "retried": false
     }
   }

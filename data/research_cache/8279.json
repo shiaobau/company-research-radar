@@ -1,0 +1,562 @@
+{
+  "version": "1.0.0",
+  "collected_at": "2026-07-21T06:01:42.022Z",
+  "company": {
+    "id": "tpex-8279",
+    "ticker": "8279",
+    "name": "生展",
+    "market": "TPEx",
+    "industry_template": "nutrition_health_food"
+  },
+  "collection_scope": "targeted_research_company",
+  "events": [
+    {
+      "id": "mops-history-8279-1150707-1",
+      "date": "2026-07-17",
+      "announced_date": "2026-07-17",
+      "fact_date": "2026-07-17",
+      "announced_time": "17:36:58",
+      "title": "公告115年第2季財務報告董事會召開日期",
+      "description": "1.董事會召集通知日:115/07/17 2.董事會預計召開日期:115/07/27 3.預計提報董事會或經董事會決議之財務報告或年度自結財務資訊年季:115年第2季 4.其他應敘明事項:無。",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1150707"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150602-2",
+      "date": "2026-06-03",
+      "announced_date": "2026-06-03",
+      "fact_date": "2026-05-27",
+      "announced_time": "16:30:05",
+      "title": "更正-公告本公司115年股東常會全面改選董事當選名單 (更正屬三分之一以上董事發生變動)",
+      "description": "1.發生變動日期:115/05/27 2.選任或變動人員別（請輸入法人董事、法人監察人、獨立董事、 自然人董事或自然人監察人）:法人董事、獨立董事、自然人董事 3.舊任者職稱及姓名: (1)董事:生達化學製藥股份有限公司代表人陳威仁 (2)董事:生達化學製藥股份有限公司代表人范滋庭 (3)董事:生達化學製藥股份有限公司代表人葉翠雯 (4)獨立董事:涂阿清 (5)獨立董事:王盛世 (6)獨立董事:李世傑 (7)獨立董事:黃昭媛 4.舊任者簡歷: (1)董事:生達化學製藥股份有限公司代表人陳威仁-本公司董事長 (2)董事:生達化學製藥股份有限公司代表人范滋庭-本公司董事 (3)董事:生達化學製藥股份有限公司代表人葉翠雯-本公司董事 (4)獨立董事:涂阿清-本公司獨立董事 (5)獨立董事:王盛世-本公司獨立董事 (6)獨立董事:李世傑-本公司獨立董事 (7)獨立董事:黃昭媛-本公司獨立董事 5.新任者職稱及姓名: (1)董事:生達化學製藥股份有限公司代表人陳威仁 (2)董事:生達化學製藥股份有限公司代表人范滋庭 (3)董事:生達化學製藥股份有限公司代表人葉翠雯 (4)獨立董事:倪衍玄 (5)獨立董事:黃昭媛 (6)獨立董事:張嘉桓 (7)獨立董事:林俊宏 6.新任者簡歷: (1)董事:生達化學製藥股份有限公司代表人陳威仁-本公司董事長 (2)董事:生達化學製藥股份有限公司代表人范滋庭-本公司董事 (3)董事:生達化學製藥股份有限公司代表人葉翠雯-本公司董事 (4)獨立董事:倪衍玄-本公司獨立董事 (5)獨立董事:黃昭媛-本公司獨立董事 (6)獨立董事:張嘉桓-本公司獨立董事 (7)獨立董事:林俊宏-本公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 任期屆滿 8.異動原因:任期屆滿全面改選 9.新任者選任時持股數: (1)董事:生達化學製藥股份有限公司代表人陳威仁12,651,146股 (2)董事:生達化學製藥股份有限公司代表人范滋庭12,651,146股 (3)董事:生達化學製藥股份有限公司代表人葉翠雯12,651,146股 (4)獨立董事:倪衍玄0股 (5)獨立董事:黃昭媛0股 (6)獨立董事:張嘉桓0股 (7)獨立董事:林俊宏0股 10.原任期（例xx/xx/xx ~ xx/xx/xx）:112/05/30~115/05/29 11.新任生效日期:115/05/27 12.同任期董事變動比率:任期屆滿全面改選董事，故不適用 13.同任期獨立董事變動比率:任期屆滿全面改選董事，故不適用 14.同任期監察人變動比率:任期屆滿全面改選董事，故不適用 15.屬三分之一以上董事發生變動（請輸入是或否）:是(更正前為不適用)。 16.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第6款所定 對股東權益或證券價格有重大影響之事項):無。",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "2",
+        "enterDate": "1150602"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150527-3",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": "2026-05-27",
+      "announced_time": "18:14:16",
+      "title": "公告本公司115年股東常會重要決議事項",
+      "description": "1.股東常會日期:115/05/27 2.重要決議事項一、盈餘分配或盈虧撥補: 通過承認114年度盈餘分派案。 3.重要決議事項二、章程修訂:無。 4.重要決議事項三、營業報告書及財務報表: 通過承認114年度營業報告書及財務報表案。 5.重要決議事項四、董監事選舉: 通過全面改選本公司董事7人(含獨立董事4人)案。 董事當選名單如下： 董事當選人:生達化學製藥股份有限公司法人代表人：陳威仁 董事當選人:生達化學製藥股份有限公司法人代表人：范滋庭 董事當選人:生達化學製藥股份有限公司法人代表人：葉翠雯 獨立董事當選人:倪衍玄 獨立董事當選人:黃昭媛 獨立董事當選人:張嘉桓 獨立董事當選人:林俊宏 6.重要決議事項五、其他事項: (1)通過本公司修訂「取得或處分資產處理程序」部分條文案。 (2)通過解除新任董事競業禁止限制案。 7.其他應敘明事項:無。",
+      "clause": "第18款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "3",
+        "enterDate": "1150527"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150527-2",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": "2026-05-27",
+      "announced_time": "18:12:58",
+      "title": "公告本公司115年股東常會全面改選董事當選名單",
+      "description": "1.發生變動日期:115/05/27 2.選任或變動人員別（請輸入法人董事、法人監察人、獨立董事、 自然人董事或自然人監察人）:法人董事、獨立董事、自然人董事 3.舊任者職稱及姓名: (1)董事:生達化學製藥股份有限公司代表人陳威仁 (2)董事:生達化學製藥股份有限公司代表人范滋庭 (3)董事:生達化學製藥股份有限公司代表人葉翠雯 (4)獨立董事:涂阿清 (5)獨立董事:王盛世 (6)獨立董事:李世傑 (7)獨立董事:黃昭媛 4.舊任者簡歷: (1)董事:生達化學製藥股份有限公司代表人陳威仁-本公司董事長 (2)董事:生達化學製藥股份有限公司代表人范滋庭-本公司董事 (3)董事:生達化學製藥股份有限公司代表人葉翠雯-本公司董事 (4)獨立董事:涂阿清-本公司獨立董事 (5)獨立董事:王盛世-本公司獨立董事 (6)獨立董事:李世傑-本公司獨立董事 (7)獨立董事:黃昭媛-本公司獨立董事 5.新任者職稱及姓名: (1)董事:生達化學製藥股份有限公司代表人陳威仁 (2)董事:生達化學製藥股份有限公司代表人范滋庭 (3)董事:生達化學製藥股份有限公司代表人葉翠雯 (4)獨立董事:倪衍玄 (5)獨立董事:黃昭媛 (6)獨立董事:張嘉桓 (7)獨立董事:林俊宏 6.新任者簡歷: (1)董事:生達化學製藥股份有限公司代表人陳威仁-本公司董事長 (2)董事:生達化學製藥股份有限公司代表人范滋庭-本公司董事 (3)董事:生達化學製藥股份有限公司代表人葉翠雯-本公司董事 (4)獨立董事:倪衍玄-本公司獨立董事 (5)獨立董事:黃昭媛-本公司獨立董事 (6)獨立董事:張嘉桓-本公司獨立董事 (7)獨立董事:林俊宏-本公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 任期屆滿 8.異動原因:任期屆滿全面改選 9.新任者選任時持股數: (1)董事:生達化學製藥股份有限公司代表人陳威仁12,651,146股 (2)董事:生達化學製藥股份有限公司代表人范滋庭12,651,146股 (3)董事:生達化學製藥股份有限公司代表人葉翠雯12,651,146股 (4)獨立董事:倪衍玄0股 (5)獨立董事:黃昭媛0股 (6)獨立董事:張嘉桓0股 (7)獨立董事:林俊宏0股 10.原任期（例xx/xx/xx ~ xx/xx/xx）:112/05/30~115/05/29 11.新任生效日期:115/05/27 12.同任期董事變動比率:任期屆滿全面改選董事，故不適用 13.同任期獨立董事變動比率:任期屆滿全面改選董事，故不適用 14.同任期監察人變動比率:任期屆滿全面改選董事，故不適用 15.屬三分之一以上董事發生變動（請輸入是或否）:全面改選，不適用 16.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第6款所定 對股東權益或證券價格有重大影響之事項):無。",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "2",
+        "enterDate": "1150527"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150525-3",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": null,
+      "announced_time": "18:12:04",
+      "title": "公告本公司115年股東常會同意解除新任董事競業禁止之限制案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "3",
+        "enterDate": "1150525"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150525-2",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": null,
+      "announced_time": "18:11:10",
+      "title": "公告本公司薪資報酬委員會成員變動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "2",
+        "enterDate": "1150525"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150527-1",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": null,
+      "announced_time": "18:10:14",
+      "title": "公告本公司審計委員會成員變動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1150527"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150523-2",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": null,
+      "announced_time": "18:08:18",
+      "title": "公告本公司董事會選任董事長",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "2",
+        "enterDate": "1150523"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150523-1",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": null,
+      "announced_time": "18:06:14",
+      "title": "公告本公司董事長決定配息基準日與發放日相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1150523"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150420-1",
+      "date": "2026-04-27",
+      "announced_date": "2026-04-27",
+      "fact_date": null,
+      "announced_time": "15:58:16",
+      "title": "公告本公司董事會決議通過115年第1季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1150420"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150416-1",
+      "date": "2026-04-17",
+      "announced_date": "2026-04-17",
+      "fact_date": null,
+      "announced_time": "17:40:59",
+      "title": "公告115年第1季財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1150416"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150223-3",
+      "date": "2026-02-23",
+      "announced_date": "2026-02-23",
+      "fact_date": null,
+      "announced_time": "16:09:48",
+      "title": "本公司董事會決議召開115年股東常會相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "3",
+        "enterDate": "1150223"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150223-2",
+      "date": "2026-02-23",
+      "announced_date": "2026-02-23",
+      "fact_date": null,
+      "announced_time": "16:00:21",
+      "title": "公告本公司董事會決議發放股利",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "2",
+        "enterDate": "1150223"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150207-2",
+      "date": "2026-02-23",
+      "announced_date": "2026-02-23",
+      "fact_date": null,
+      "announced_time": "15:40:20",
+      "title": "公告本公司董事會通過民國114年度合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "2",
+        "enterDate": "1150207"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150206-1",
+      "date": "2026-02-10",
+      "announced_date": "2026-02-10",
+      "fact_date": null,
+      "announced_time": "16:04:06",
+      "title": "公告114年第4季財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1150206"
+      }
+    },
+    {
+      "id": "mops-history-8279-1141224-1",
+      "date": "2025-12-24",
+      "announced_date": "2025-12-24",
+      "fact_date": null,
+      "announced_time": "16:41:52",
+      "title": "本公司受邀參加群益金鼎證券舉辦之線上法說會。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1141224"
+      }
+    },
+    {
+      "id": "mops-history-8279-1141023-1",
+      "date": "2025-10-28",
+      "announced_date": "2025-10-28",
+      "fact_date": null,
+      "announced_time": "16:55:14",
+      "title": "公告本公司董事會決議通過114年第3季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1141023"
+      }
+    },
+    {
+      "id": "mops-history-8279-1140930-1",
+      "date": "2025-10-20",
+      "announced_date": "2025-10-20",
+      "fact_date": null,
+      "announced_time": "17:22:47",
+      "title": "公告114年第3季財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1140930"
+      }
+    },
+    {
+      "id": "mops-history-8279-1140718-1",
+      "date": "2025-07-29",
+      "announced_date": "2025-07-29",
+      "fact_date": null,
+      "announced_time": "16:21:19",
+      "title": "公告本公司董事會決議通過114年第2季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1140718"
+      }
+    },
+    {
+      "id": "mops-history-8279-1140714-1",
+      "date": "2025-07-21",
+      "announced_date": "2025-07-21",
+      "fact_date": null,
+      "announced_time": "15:43:49",
+      "title": "公告114年第2季財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1140714"
+      }
+    },
+    {
+      "id": "mops-history-8279-1140513-3",
+      "date": "2025-05-28",
+      "announced_date": "2025-05-28",
+      "fact_date": null,
+      "announced_time": "17:04:59",
+      "title": "公告本公司114年股東常會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "3",
+        "enterDate": "1140513"
+      }
+    },
+    {
+      "id": "mops-history-8279-1140521-2",
+      "date": "2025-05-28",
+      "announced_date": "2025-05-28",
+      "fact_date": null,
+      "announced_time": "17:03:48",
+      "title": "公告本公司114年股東常會同意解除董事競業禁止之限制案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "2",
+        "enterDate": "1140521"
+      }
+    },
+    {
+      "id": "mops-history-8279-1140513-1",
+      "date": "2025-05-28",
+      "announced_date": "2025-05-28",
+      "fact_date": null,
+      "announced_time": "16:52:04",
+      "title": "公告本公司董事長決定配息基準日與發放日相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1140513"
+      }
+    },
+    {
+      "id": "mops-history-8279-1140424-1",
+      "date": "2025-04-28",
+      "announced_date": "2025-04-28",
+      "fact_date": null,
+      "announced_time": "15:40:38",
+      "title": "公告本公司董事會決議通過114年第1季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "8279",
+        "serialNumber": "1",
+        "enterDate": "1140424"
+      }
+    }
+  ],
+  "references": [
+    {
+      "id": "mops-history-8279",
+      "title": "生展 MOPS 歷史重大訊息",
+      "url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1",
+      "source_id": "mops_history_search",
+      "source_type": "official_history_api",
+      "claim_type": "official_search_reference",
+      "review_status": "reference_only",
+      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
+    },
+    {
+      "id": "company-website-8279",
+      "title": "生展 官方網站",
+      "url": "http://www.syngen.com.tw",
+      "source_id": "company_website",
+      "source_type": "company_reference",
+      "claim_type": "company_published_reference",
+      "review_status": "reference_only",
+      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
+    }
+  ],
+  "source_status": [
+    {
+      "source_id": "tpex_material_events",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-21T06:01:26.541Z",
+      "row_count": 66,
+      "available": true
+    },
+    {
+      "source_id": "mops_history_api",
+      "cache_status": "updated",
+      "fetched_at": "2026-07-21T06:02:04.205Z",
+      "row_count": 24,
+      "detail_count": 4,
+      "available": true
+    }
+  ],
+  "limitations": [
+    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
+    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
+    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
+  ]
+}

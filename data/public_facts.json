@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T05:44:58.750Z",
+  "generated_at": "2026-07-21T06:01:30.128Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -67,6 +67,20 @@
       "note": "上市公司每日重大訊息，用於催化事件與新聞/重大訊息風險評分。"
     },
     {
+      "id": "twse_financial_income_fh",
+      "title": "TWSE 上市公司綜合損益表（金控業）",
+      "short_title": "TWSE 金控業損益",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_fh",
+      "note": "上市金控業專用損益表，用於金融業獲利效率與 EPS。"
+    },
+    {
+      "id": "twse_financial_balance_fh",
+      "title": "TWSE 上市公司資產負債表（金控業）",
+      "short_title": "TWSE 金控業資產負債",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap07_L_fh",
+      "note": "上市金控業專用資產負債表，用於資產、權益與權益緩衝。"
+    },
+    {
       "id": "tpex_company_basic",
       "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司基本資料",
       "short_title": "TPEx 公司基本",
@@ -128,13 +142,27 @@
       "short_title": "TPEx 重大訊息",
       "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
       "note": "上櫃公司每日重大訊息，用於催化事件與新聞/重大訊息風險評分。"
+    },
+    {
+      "id": "tpex_income_statement",
+      "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司綜合損益表",
+      "short_title": "TPEx 損益",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap06_O_ci",
+      "note": "上櫃公司一般業綜合損益表，用於毛利率、營益率、淨利率與 EPS。"
+    },
+    {
+      "id": "tpex_balance_sheet",
+      "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司資產負債表",
+      "short_title": "TPEx 資產負債",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap07_O_ci",
+      "note": "上櫃公司一般業資產負債表，用於流動比率、負債比率與每股淨值。"
     }
   ],
   "companies": {
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-07-21T05:44:58.750Z",
+      "generated_at": "2026-07-21T06:01:30.128Z",
       "facts": [
         {
           "id": "official_classification",
@@ -201,7 +229,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-07-21T05:44:58.750Z",
+      "generated_at": "2026-07-21T06:01:30.128Z",
       "facts": [
         {
           "id": "official_classification",
@@ -260,7 +288,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-07-21T05:44:58.750Z",
+      "generated_at": "2026-07-21T06:01:30.128Z",
       "facts": [
         {
           "id": "official_classification",
@@ -316,10 +344,77 @@
         }
       ]
     },
+    "twse-2885": {
+      "ticker": "2885",
+      "market": "TWSE",
+      "generated_at": "2026-07-21T06:01:30.128Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：金融保險；追蹤模板：金融保險。",
+          "source_ids": [
+            "twse_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 72.83%；月增 -7.92%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：年化 ROE 16.14%；年化 ROA 1.34%；權益比率 8.33%；EPS 1.08。",
+          "source_ids": [
+            "twse_financial_income_fh",
+            "twse_financial_balance_fh"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-21 收盤 61.3；區間報酬：20日 -10.9%；60日 22.11%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
+          "id": "latest_disclosure",
+          "label": "近期重大訊息",
+          "value": "2026-07-20：元大金控公告114年度中文年報勘誤。",
+          "source_ids": [
+            "twse_material_events"
+          ]
+        },
+        {
+          "id": "governance_snapshot",
+          "label": "股權與治理",
+          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
+          "source_ids": [
+            "twse_major_shareholders",
+            "twse_insider_transfer",
+            "twse_disclosure_violations"
+          ]
+        },
+        {
+          "id": "event_risk_snapshot",
+          "label": "事件與合規",
+          "value": "官方事件 1 則；申報違規 0 筆。",
+          "source_ids": [
+            "twse_material_events",
+            "twse_disclosure_violations"
+          ]
+        }
+      ]
+    },
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-07-21T05:44:58.750Z",
+      "generated_at": "2026-07-21T06:01:30.128Z",
       "facts": [
         {
           "id": "official_classification",
@@ -358,6 +453,73 @@
           "id": "major_shareholders",
           "label": "大股東資料",
           "value": "持股逾 10% 大股東：元大金融控股股份有限公司。",
+          "source_ids": [
+            "tpex_major_shareholders"
+          ]
+        },
+        {
+          "id": "governance_snapshot",
+          "label": "股權與治理",
+          "value": "主要股東揭露 1 位；內部人轉讓 0 筆。",
+          "source_ids": [
+            "tpex_major_shareholders",
+            "tpex_insider_transfer",
+            "tpex_disclosure_violations"
+          ]
+        },
+        {
+          "id": "event_risk_snapshot",
+          "label": "事件與合規",
+          "value": "官方事件 0 則；申報違規 0 筆。",
+          "source_ids": [
+            "tpex_material_events",
+            "tpex_disclosure_violations"
+          ]
+        }
+      ]
+    },
+    "tpex-8279": {
+      "ticker": "8279",
+      "market": "TPEx",
+      "generated_at": "2026-07-21T06:01:30.128Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：生技醫療；追蹤模板：保健營養食品。",
+          "source_ids": [
+            "tpex_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 6%；月增 -3.21%。",
+          "source_ids": [
+            "tpex_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 32.97%；營益率 10.42%；EPS 1.23。",
+          "source_ids": [
+            "tpex_income_statement",
+            "tpex_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-20 收盤 87.6；區間報酬：20日 -9.69%；60日 -16.97%。",
+          "source_ids": [
+            "tpex_trading_stock"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：生達化學製藥股份有限公司。",
           "source_ids": [
             "tpex_major_shareholders"
           ]

@@ -1,0 +1,521 @@
+{
+  "version": "1.0.0",
+  "source_id": "mops_history_api",
+  "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1",
+  "ticker": "2885",
+  "fetched_at": "2026-07-21T06:01:54.336Z",
+  "cache_status": "updated",
+  "as_of_date": null,
+  "queried_roc_years": [
+    "115",
+    "114"
+  ],
+  "event_count": 24,
+  "detail_count": 4,
+  "events": [
+    {
+      "id": "mops-history-2885-1150720-1",
+      "date": "2026-07-20",
+      "announced_date": "2026-07-20",
+      "fact_date": "2026-07-20",
+      "announced_time": "14:35:14",
+      "title": "元大金控公告114年度中文年報勘誤",
+      "description": "1.事實發生日:115/07/20 2.公司名稱:元大金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:公告114年度中文年報勘誤 6.更正資訊項目/報表名稱:114年度中文年報 7.更正前金額/內容/頁次:刊印日期(無)/封面 8.更正後金額/內容/頁次:刊印日期(中華民國114年12月31日刊印)/封面 9.因應措施:上傳「股東會年報(股東會後修訂本)」至公開資訊觀測站 10.其他應敘明事項:無",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150720"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150713-1",
+      "date": "2026-07-13",
+      "announced_date": "2026-07-13",
+      "fact_date": "2026-07-13",
+      "announced_time": "14:00:30",
+      "title": "元大金控公告115年6月份自結合併損益",
+      "description": "1.事實發生日:115/07/13 2.公司名稱:元大金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:公告本公司及重要子公司自行結算115年6月份獲利情形 6月份 累積至6月份 ------------------ ------------------------------- 合併 母公司 合併 母公司 稅前 業主稅後 稅前 業主稅後 稅後每股 (億元) (億元) (億元) (億元) 盈餘(元) -------- ---------- --------- --------- ---------- 元大金控 86.80 75.12 467.93 365.72 2.74 元大證券 58.85 54.48 309.69 245.28 3.72 元大銀行 16.70 14.80 91.51 76.92 0.88 元大期貨 4.38 3.51 19.61 15.44 4.82 元大人壽 2.24 2.16 27.52 24.41 0.84 元大投信 7.77 6.25 36.82 29.67 13.08 註：累計6月未適用外匯價格變動準備金之EPS(元) 元大金控：2.77 元大人壽：0.96 以上資料係本公司自行結算結果，尚未經會計師查核簽證。 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項):無",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150713"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150708-1",
+      "date": "2026-07-08",
+      "announced_date": "2026-07-08",
+      "fact_date": "2026-07-08",
+      "announced_time": "17:46:37",
+      "title": "元大金控代子公司元大人壽公告向元大銀行提前終止租賃契約",
+      "description": "1. 原公告日期： 114/03/31 2. 簡述原公告申報內容： 元大人壽向關係人元大銀行取得台北市大安區仁愛路三段157號18樓部分面積： (1)租賃面積：約32.71坪 (2)每單位價格:每坪每月租金新台幣3,970元(含稅) (3)租金總金額:每月新台幣129,859元(含稅) (4)使用權資產金額:新台幣765,260元(含稅) (5)租賃期間：自民國114年4月25日至民國118年4月10日 3. 變動緣由及主要內容： 為提升營運效率，將辦理辦公場所遷址，故提前於民國115年7月24日終止租賃契約 4. 變動後對公司財務業務之影響： 無重大影響 5. 其他應敘明事項： 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150708"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150707-1",
+      "date": "2026-07-07",
+      "announced_date": "2026-07-07",
+      "fact_date": "2026-06-12",
+      "announced_time": "20:33:31",
+      "title": "元大金控代子公司元大投信補充公告股東常會重要決議事項",
+      "description": "1.股東常會日期:115/06/12 2.重要決議事項一、盈餘分配或盈虧撥補:承認114年度盈餘分派案 (經主席徵詢全體出席股東無異議照案通過) 3.重要決議事項二、章程修訂:無 4.重要決議事項三、營業報告書及財務報表:承認114年度營業報告書及財務報表案 (經主席徵詢全體出席股東無異議照案通過) 5.重要決議事項四、董監事選舉:無 6.重要決議事項五、其他事項: (1)通過修正本公司「取得或處分資產處理程序」部分條文案 (經主席徵詢全體出席股東無異議照案通過) (2)通過本公司與元大金融控股股份有限公司進行股份轉換案 (經投票表決結果，贊成權數191,331,505權，反對權數9,981,575權，無效權數0權， 棄權/未投票權數229,809權，贊成權數占總權數94.93%，本案照案通過) 7.其他應敘明事項: 謹補充元大投信115年6月12日股東常會承認事項及討論事項決議結果。",
+      "clause": "第18款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150707"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150706-1",
+      "date": "2026-07-06",
+      "announced_date": "2026-07-06",
+      "fact_date": null,
+      "announced_time": "18:54:13",
+      "title": "元大金控公告向元大證券原取得使用權資產內容調整",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150706"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150703-1",
+      "date": "2026-07-03",
+      "announced_date": "2026-07-03",
+      "fact_date": null,
+      "announced_time": "15:30:37",
+      "title": "元大金控公告114年度現金股利配發基準日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150703"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150702-1",
+      "date": "2026-07-02",
+      "announced_date": "2026-07-02",
+      "fact_date": null,
+      "announced_time": "17:14:06",
+      "title": "元大金控公告本公司代理發言人異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150702"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150701-2",
+      "date": "2026-07-01",
+      "announced_date": "2026-07-01",
+      "fact_date": null,
+      "announced_time": "16:22:35",
+      "title": "元大金控代子公司元大證券公告董事異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "2",
+        "enterDate": "1150701"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150701-1",
+      "date": "2026-07-01",
+      "announced_date": "2026-07-01",
+      "fact_date": null,
+      "announced_time": "16:21:10",
+      "title": "元大金控代子公司元大銀行公告發言人異動案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150701"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150630-5",
+      "date": "2026-06-30",
+      "announced_date": "2026-06-30",
+      "fact_date": null,
+      "announced_time": "16:52:56",
+      "title": "元大金控代子公司元大證券印尼公告年度股東常會 重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "5",
+        "enterDate": "1150630"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150630-4",
+      "date": "2026-06-30",
+      "announced_date": "2026-06-30",
+      "fact_date": null,
+      "announced_time": "16:52:18",
+      "title": "元大金控代子公司元大證券印尼公告召開股東常會事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "4",
+        "enterDate": "1150630"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150630-3",
+      "date": "2026-06-30",
+      "announced_date": "2026-06-30",
+      "fact_date": null,
+      "announced_time": "16:44:29",
+      "title": "元大金控代子公司元大儲蓄銀行(菲律賓)公告選任董事長",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "3",
+        "enterDate": "1150630"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150630-2",
+      "date": "2026-06-30",
+      "announced_date": "2026-06-30",
+      "fact_date": null,
+      "announced_time": "16:43:59",
+      "title": "元大金控代子公司元大儲蓄銀行(菲律賓)公告選任董事",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "2",
+        "enterDate": "1150630"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150630-1",
+      "date": "2026-06-30",
+      "announced_date": "2026-06-30",
+      "fact_date": null,
+      "announced_time": "16:43:32",
+      "title": "元大金控代子公司元大儲蓄銀行(菲律賓) 公告股東臨時會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150630"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150626-1",
+      "date": "2026-06-26",
+      "announced_date": "2026-06-26",
+      "fact_date": null,
+      "announced_time": "18:51:58",
+      "title": "元大金控代子公司元大證券補充公告於新加坡 新設財富管理子公司(補充110年09月30日之公告)",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150626"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150625-3",
+      "date": "2026-06-25",
+      "announced_date": "2026-06-25",
+      "fact_date": null,
+      "announced_time": "16:38:48",
+      "title": "元大金控代子公司元大證券公告董事會代行股東臨時會 重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "3",
+        "enterDate": "1150625"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150625-2",
+      "date": "2026-06-25",
+      "announced_date": "2026-06-25",
+      "fact_date": null,
+      "announced_time": "16:32:20",
+      "title": "元大金控代子公司元大證券公告114年度盈餘分配案之現金 股利除息基準日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "2",
+        "enterDate": "1150625"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150625-1",
+      "date": "2026-06-25",
+      "announced_date": "2026-06-25",
+      "fact_date": null,
+      "announced_time": "16:31:26",
+      "title": "元大金控代子公司元大證券公告董事會代行股東會重要決 議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150625"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150624-3",
+      "date": "2026-06-24",
+      "announced_date": "2026-06-24",
+      "fact_date": null,
+      "announced_time": "17:57:32",
+      "title": "元大金控公告行政長異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "3",
+        "enterDate": "1150624"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150624-2",
+      "date": "2026-06-24",
+      "announced_date": "2026-06-24",
+      "fact_date": null,
+      "announced_time": "17:02:35",
+      "title": "元大金控公告董事會決議通過認購子公司元大期貨115年度現金增資事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "2",
+        "enterDate": "1150624"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150624-1",
+      "date": "2026-06-24",
+      "announced_date": "2026-06-24",
+      "fact_date": null,
+      "announced_time": "16:16:03",
+      "title": "元大金控公告「風險管理委員會」更名為「風險管理暨資訊 安全委員會」",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150624"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150622-1",
+      "date": "2026-06-22",
+      "announced_date": "2026-06-22",
+      "fact_date": null,
+      "announced_time": "16:20:48",
+      "title": "元大金控代子公司元大儲蓄銀行(韓國)公告取得 Daehan Real Estate Trust Co., Ltd.發行之私募公司債",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150622"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150619-1",
+      "date": "2026-06-19",
+      "announced_date": "2026-06-19",
+      "fact_date": null,
+      "announced_time": "16:04:30",
+      "title": "元大金控代元大證券(韓國)公告取得 Shinhan-DS Productive Finance Mezzanine Fund 1",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1",
+        "enterDate": "1150619"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150617-5",
+      "date": "2026-06-17",
+      "announced_date": "2026-06-17",
+      "fact_date": null,
+      "announced_time": "18:05:03",
+      "title": "元大金控代元大證券(韓國)公告取得 KBI METAL CO., LTD.發行之第5次私募可轉換公司債",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "5",
+        "enterDate": "1150617"
+      }
+    }
+  ]
+}

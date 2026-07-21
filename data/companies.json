@@ -172,6 +172,44 @@
       "events": []
     },
     {
+      "id": "twse-2885",
+      "ticker": "2885",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "元大金",
+      "legal_name": "元大金融控股股份有限公司",
+      "category": "金融保險",
+      "industry_template": "financial",
+      "original_industry_template": "financial",
+      "official_industry_code": "17",
+      "official_industry_label": "金融保險",
+      "listing_date": "2002-02-04",
+      "website": "http://www.yuanta.com",
+      "data_quality": "Public structured datasets are refreshed by the research update workflow.",
+      "last_reviewed": "2026-07-21",
+      "tags": [
+        "上市",
+        "金融保險"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "sources": [
+        {
+          "id": "twse-2885_official",
+          "title": "元大金 官方網站",
+          "short_title": "官方網站",
+          "url": "http://www.yuanta.com",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {},
+      "risks": [],
+      "events": []
+    },
+    {
       "id": "tpex-6023",
       "ticker": "6023",
       "market": "TPEx",
@@ -202,6 +240,45 @@
           "title": "元大期貨 官方網站",
           "short_title": "官方網站",
           "url": "http://www.yuantafutures.com.tw/",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {},
+      "risks": [],
+      "events": []
+    },
+    {
+      "id": "tpex-8279",
+      "ticker": "8279",
+      "market": "TPEx",
+      "market_label": "上櫃",
+      "name": "生展",
+      "legal_name": "生展生物科技股份有限公司",
+      "category": "保健營養食品",
+      "industry_template": "nutrition_health_food",
+      "original_industry_template": "nutrition_health_food",
+      "official_industry_code": "22",
+      "official_industry_label": "生技醫療",
+      "listing_date": "2016-09-26",
+      "website": "http://www.syngen.com.tw",
+      "data_quality": "Public structured datasets are refreshed by the research update workflow.",
+      "last_reviewed": "2026-07-21",
+      "tags": [
+        "上櫃",
+        "保健營養食品",
+        "生技醫療"
+      ],
+      "primary_source_ids": [
+        "tpex_company_basic",
+        "mops",
+        "tpex"
+      ],
+      "sources": [
+        {
+          "id": "tpex-8279_official",
+          "title": "生展 官方網站",
+          "short_title": "官方網站",
+          "url": "http://www.syngen.com.tw",
           "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
         }
       ],

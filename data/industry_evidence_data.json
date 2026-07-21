@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T05:44:58.750Z",
+  "generated_at": "2026-07-21T06:01:30.128Z",
   "note": "產業證據層。各產業子檢核僅在取得公司事實與來源支持時評分；模板本身與未填入欄位不會產生分數。",
   "sources": [
     {
@@ -269,6 +269,87 @@
       ],
       "rationale": "半導體 產業證據僅 0/5 項具來源支持；未完成前不產生產業分數。"
     },
+    "twse-2885": {
+      "ticker": "2885",
+      "market": "TWSE",
+      "industry_template": "financial",
+      "status": "missing",
+      "source_ids": [],
+      "evidence_level": "none",
+      "completed_count": 0,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": null,
+      "direction": "pending",
+      "direction_matches": {
+        "positive": [],
+        "negative": [],
+        "severe_negative": []
+      },
+      "dimensions": [
+        {
+          "id": "asset_quality",
+          "label": "資產品質",
+          "weight": 0.24,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "逾放、備抵、投資部位、信用風險與資產組合品質。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「asset_quality、key_risk」及至少 1 個來源。"
+        },
+        {
+          "id": "capital_adequacy",
+          "label": "資本適足",
+          "weight": 0.22,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "資本適足率、淨值比、槓桿與風險承擔能力。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「capital_adequacy、balance_sheet_resilience」及至少 1 個來源。"
+        },
+        {
+          "id": "interest_rate_sensitivity",
+          "label": "利率敏感度",
+          "weight": 0.2,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "升降息對利差、債券評價與保險負債的影響。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「interest_rate_sensitivity、key_risk」及至少 1 個來源。"
+        },
+        {
+          "id": "fee_income_mix",
+          "label": "手續費與非利息收入",
+          "weight": 0.18,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "財管、證券、保險、租賃與其他非利息收入穩定度。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「fee_income_mix、revenue_driver」及至少 1 個來源。"
+        },
+        {
+          "id": "compliance_risk",
+          "label": "法遵與監理風險",
+          "weight": 0.16,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "裁罰、內控缺失、監理要求與重大訴訟。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「regulatory_status、key_risk、governance_signal」及至少 1 個來源。"
+        }
+      ],
+      "rationale": "金融保險 產業證據僅 0/5 項具來源支持；未完成前不產生產業分數。"
+    },
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
@@ -349,6 +430,87 @@
         }
       ],
       "rationale": "金融保險 產業證據僅 0/5 項具來源支持；未完成前不產生產業分數。"
+    },
+    "tpex-8279": {
+      "ticker": "8279",
+      "market": "TPEx",
+      "industry_template": "nutrition_health_food",
+      "status": "missing",
+      "source_ids": [],
+      "evidence_level": "none",
+      "completed_count": 0,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": null,
+      "direction": "pending",
+      "direction_matches": {
+        "positive": [],
+        "negative": [],
+        "severe_negative": []
+      },
+      "dimensions": [
+        {
+          "id": "tfda_health_food_permit",
+          "label": "TFDA 健康食品許可",
+          "weight": 0.24,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "是否有可查證的健康食品許可或明確法規定位。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「regulatory_status、key_catalyst、industry_quality」及至少 1 個來源。"
+        },
+        {
+          "id": "tfda_ad_compliance",
+          "label": "廣告合規",
+          "weight": 0.24,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "食品、健康食品與營養品廣告是否有違規或裁罰訊號。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「key_risk、regulatory_status」及至少 1 個來源。"
+        },
+        {
+          "id": "product_evidence",
+          "label": "產品證據",
+          "weight": 0.22,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "產品成分、功效宣稱、人體或文獻證據的可追蹤性。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「evidence_level、industry_focus、industry_quality」及至少 1 個來源。"
+        },
+        {
+          "id": "quality_system",
+          "label": "品質系統",
+          "weight": 0.16,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "GMP、HACCP、ISO、供應鏈與製程品質證據。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「quality_system」及至少 1 個來源。"
+        },
+        {
+          "id": "channel_repeatability",
+          "label": "通路回購性",
+          "weight": 0.14,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "品牌、會員、電商、藥局或通路是否具備重複銷售能力。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「channel_quality、revenue_driver」及至少 1 個來源。"
+        }
+      ],
+      "rationale": "保健營養食品 產業證據僅 0/5 項具來源支持；未完成前不產生產業分數。"
     }
   }
 }
