@@ -145,7 +145,21 @@ async function workflowStatus(env, requestedAt) {
 export default {
   async scheduled(controller, env, ctx) {
     const slot = scheduledSlot(controller.cron);
-    ctx.waitUntil(dispatchGithubWorkflow(env, [], slot));
+    ctx.waitUntil((async () => {
+      console.log(JSON.stringify({ event: "scheduled_update_started", cron: controller.cron, slot }));
+      try {
+        const requestedAt = await dispatchGithubWorkflow(env, [], slot);
+        console.log(JSON.stringify({ event: "scheduled_update_dispatched", cron: controller.cron, slot, requestedAt }));
+      } catch (error) {
+        console.error(JSON.stringify({
+          event: "scheduled_update_failed",
+          cron: controller.cron,
+          slot,
+          message: error instanceof Error ? error.message : String(error)
+        }));
+        throw error;
+      }
+    })());
   },
 
   async fetch(request, env) {
