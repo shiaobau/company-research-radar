@@ -36,7 +36,7 @@ Promise.all([
   fetch("data/industry_templates.json").then((response) => response.json()),
   fetch("data/field_definitions.json").then((response) => response.json()),
   fetch("data/scoring_rules.json").then((response) => response.json()),
-  fetch("data/companies.json").then((response) => response.json()),
+  fetch("data/companies.json", { cache: "no-store" }).then((response) => response.json()),
   fetch("data/signals.json").then((response) => response.json()).catch(() => ({ signals: [] })),
   fetch("data/market_data.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
   fetch("data/revenue_data.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
