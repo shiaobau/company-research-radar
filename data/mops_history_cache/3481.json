@@ -1,0 +1,521 @@
+{
+  "version": "1.0.0",
+  "source_id": "mops_history_api",
+  "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1",
+  "ticker": "3481",
+  "fetched_at": "2026-07-21T06:31:12.912Z",
+  "cache_status": "updated",
+  "as_of_date": null,
+  "queried_roc_years": [
+    "115",
+    "114"
+  ],
+  "event_count": 24,
+  "detail_count": 4,
+  "events": [
+    {
+      "id": "mops-history-3481-1150709-1",
+      "date": "2026-07-09",
+      "announced_date": "2026-07-09",
+      "fact_date": "2026-07-09",
+      "announced_time": "20:51:03",
+      "title": "公告本公司訂於115年7月10日發放現金股利，如因颱風影 響停止上班，現金股利發放將順延下一個營業日",
+      "description": "1.董事會決議或公司決定日期:115/07/09 2.原現金股利發放日:115/07/10 3.變更後現金股利發放日:115/07/13 4.變更原因:本公司現金股利訂於115年7月10日發放，如因受颱風停班影響， 致金融機構作業日程需順延，現金股利發放日將順延至下一營業日發放 5.其他應敘明事項:無",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150709"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150629-1",
+      "date": "2026-06-29",
+      "announced_date": "2026-06-29",
+      "fact_date": "2026-06-29",
+      "announced_time": "17:27:12",
+      "title": "代重要子公司CARUX TECHNOLOGY PTE. LTD.公告股東會重要決議事項",
+      "description": "1.股東常會日期:115/06/29 2.重要決議事項一、盈餘分配或盈虧撥補:無 3.重要決議事項二、章程修訂:無 4.重要決議事項三、營業報告書及財務報表: 承認2025年度財務報表 5.重要決議事項四、董監事選舉:無 6.重要決議事項五、其他事項:通過續聘會計師 7.其他應敘明事項:無",
+      "clause": "第18款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150629"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150622-1",
+      "date": "2026-06-22",
+      "announced_date": "2026-06-22",
+      "fact_date": "2026-06-22",
+      "announced_time": "15:55:44",
+      "title": "因本公司有價證券於集中交易市場達公布注意交易資訊標準， 故公布相關財務業務等重大訊息，以利投資人區別瞭解",
+      "description": "1.事實發生日:115/06/22 2.發生緣由:係因本公司有價證券於集中交易市場達公布注意交易資訊標準， 故公布相關財務業務等重大訊息，以利投資人區別瞭解 3.財務業務資訊: 科目 最近一個月 與去年同 最近一季 與去年同 114年第2季至 115年4月 期增減 115年第1季 期增減 115年第1季 合併自結數 合併核閱數 (%) 合併核閱數 --------- --------- ----------- --------- ------------- 營業收入(百萬) 21,237 12% 66,645 19% 237,437 稅前淨利(百萬) 2,313 935% 2,408 54% 1,145 本期淨利(百萬) 2,159 2654% 1,792 65% 1,373 每股盈餘(元) 0.27 2800% 0.20 67% 0.11 4.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理 程序」第4條所列重大訊息之情事（如「有」，請說明）:無。 5.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理 程序」第11條所列重大訊息說明記者會之情事:無。 6.完整財務資訊請至公開資訊觀測站查閱，路徑如下： (1)近期營業收入及損益資訊：基本資料>精華版 (2)歷史每月營業收入：營運概況>每月營收>採用IFRSs後之月營業收入資訊 (3)歷史損益(會計師查核/核閱數)：財務報表>採IFRSs後>合併/個別報表>綜合損益表 (4)歷史損益(自願性公告自結數)：營運概況>自結損益公告: 7.其他應敘明事項:無。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150622"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150605-1",
+      "date": "2026-06-05",
+      "announced_date": "2026-06-05",
+      "fact_date": "2026-06-05",
+      "announced_time": "23:08:50",
+      "title": "代子公司寧波群志光電有限公司公告擬處分有價證券",
+      "description": "1.證券名稱: 深圳天德鈺科技股份有限公司普通股 2.交易日期:115/6/5~115/6/5 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:依取得或處分資產處理程序辦理 民國115年6月5日 5.交易數量、每單位價格及交易總金額: 交易單位數量：不超過10,173,250股 每單位價格：依實際取得價格計算後另行公告 總金額：依實際取得價格計算後另行公告) 6.處分利益（或損失）（取得有價證券者不適用）: 待交易執行後另行公告 7.與交易標的公司之關係: 非關係人 8.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 累積持有數量: 待交易執行後另行公告 累積持有金額：待交易執行後另行公告 持股比例： 待交易執行後另行公告 權利受限情形：無 9.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列之有價證券投 資（含本次交易）占公司最近期財務報表中總資產及歸屬於母公司業主之權益之比例 暨最近期財務報表中營運資金數額: 占總資產比例：待交易執行後另行公告 占業主權益比例：待交易執行後另行公告 營運資金數額: 7,011,637 仟元 10.取得或處分之具體目的: 資金安排需要 11.本次交易表示異議董事之意見: 無 12.本次交易為關係人交易: 否 13.交易相對人及其與公司之關係: 不適用 14.監察人承認或審計委員會同意日期: 不適用，依取得或處分資產處理程序辦理 15.前已就同一件事件發布重大訊息日期: 不適用 16.其他敘明事項: 實際交易資訊(包含每股交易金額及總交易金額)待執行後公告",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150605"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150601-2",
+      "date": "2026-06-01",
+      "announced_date": "2026-06-01",
+      "fact_date": null,
+      "announced_time": "20:30:46",
+      "title": "公告本公司獨立董事辭任功能性委員會職務",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "2",
+        "enterDate": "1150601"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150601-1",
+      "date": "2026-06-01",
+      "announced_date": "2026-06-01",
+      "fact_date": null,
+      "announced_time": "20:30:28",
+      "title": "公告本公司獨立董事辭任",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150601"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150527-2",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": null,
+      "announced_time": "15:07:34",
+      "title": "公告本公司訂定民國115年發放現金股利及資本公積發 放現金基準日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "2",
+        "enterDate": "1150527"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150527-1",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": null,
+      "announced_time": "15:06:31",
+      "title": "公告本公司115年股東常會重要決議",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150527"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150525-2",
+      "date": "2026-05-25",
+      "announced_date": "2026-05-25",
+      "fact_date": null,
+      "announced_time": "15:21:29",
+      "title": "本公司受邀參加花旗證券所舉辦之「Citi 2026 Taiwan Conference」",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "2",
+        "enterDate": "1150525"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150525-1",
+      "date": "2026-05-25",
+      "announced_date": "2026-05-25",
+      "fact_date": null,
+      "announced_time": "15:20:49",
+      "title": "本公司受邀參加摩根史丹利證券所舉辦之「Asia AI Summit 2026」",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150525"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150515-1",
+      "date": "2026-05-15",
+      "announced_date": "2026-05-15",
+      "fact_date": null,
+      "announced_time": "17:05:37",
+      "title": "公告本公司法人董事改派代表人",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150515"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150511-1",
+      "date": "2026-05-11",
+      "announced_date": "2026-05-11",
+      "fact_date": null,
+      "announced_time": "15:55:46",
+      "title": "群創光電2026年第一季財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150511"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150430-1",
+      "date": "2026-04-30",
+      "announced_date": "2026-04-30",
+      "fact_date": null,
+      "announced_time": "17:18:04",
+      "title": "公告本公司民國115年第1季財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150430"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150415-1",
+      "date": "2026-04-15",
+      "announced_date": "2026-04-15",
+      "fact_date": null,
+      "announced_time": "18:04:32",
+      "title": "公告本公司處分南科Fab5廠房及附屬設施",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150415"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150326-1",
+      "date": "2026-03-26",
+      "announced_date": "2026-03-26",
+      "fact_date": null,
+      "announced_time": "14:55:48",
+      "title": "本公司受邀參加中信證券舉辦之法人說明會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150326"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150324-1",
+      "date": "2026-03-24",
+      "announced_date": "2026-03-24",
+      "fact_date": null,
+      "announced_time": "16:34:24",
+      "title": "公告本公司處分南科廠房及附屬設施",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150324"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150312-1",
+      "date": "2026-03-12",
+      "announced_date": "2026-03-12",
+      "fact_date": null,
+      "announced_time": "13:57:55",
+      "title": "公告公司受邀參加美林證券所舉辦之「 2026 Asia Tech Conference」",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1",
+        "enterDate": "1150312"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150310-8",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "16:30:08",
+      "title": "公告本公司處分南科廠房及附屬廠務設施",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "8",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150310-7",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "15:27:01",
+      "title": "公告本公司董事會決議授權董事長處分不動產相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "7",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150310-5",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "15:26:31",
+      "title": "本公司董事會決議召開民國115年股東常會公告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "5",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150310-6",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "15:25:28",
+      "title": "公告本公司董事會決議發行限制員工權利新股案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "6",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150310-4",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "15:24:37",
+      "title": "本公司董事會決議股利分派及資本公積發放現金",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "4",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150310-2",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "15:23:29",
+      "title": "本公司董事會核准資本預算案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "2",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150310-3",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "15:22:04",
+      "title": "群創光電2025年第四季財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "3",
+        "enterDate": "1150310"
+      }
+    }
+  ]
+}

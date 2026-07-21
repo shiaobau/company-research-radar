@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:08:36.595Z",
+  "generated_at": "2026-07-21T06:30:21.023Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -162,7 +162,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:08:36.595Z",
+      "generated_at": "2026-07-21T06:30:21.023Z",
       "facts": [
         {
           "id": "official_classification",
@@ -229,7 +229,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:08:36.595Z",
+      "generated_at": "2026-07-21T06:30:21.023Z",
       "facts": [
         {
           "id": "official_classification",
@@ -288,7 +288,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:08:36.595Z",
+      "generated_at": "2026-07-21T06:30:21.023Z",
       "facts": [
         {
           "id": "official_classification",
@@ -355,7 +355,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:08:36.595Z",
+      "generated_at": "2026-07-21T06:30:21.023Z",
       "facts": [
         {
           "id": "official_classification",
@@ -414,7 +414,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:08:36.595Z",
+      "generated_at": "2026-07-21T06:30:21.023Z",
       "facts": [
         {
           "id": "official_classification",
@@ -478,10 +478,69 @@
         }
       ]
     },
+    "twse-2886": {
+      "ticker": "2886",
+      "market": "TWSE",
+      "generated_at": "2026-07-21T06:30:21.023Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：金融保險；追蹤模板：金融保險。",
+          "source_ids": [
+            "twse_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 1.53%；月增 -3.31%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：年化 ROE 9.35%；年化 ROA 0.75%；權益比率 8.03%；EPS 0.63。",
+          "source_ids": [
+            "twse_financial_income_fh",
+            "twse_financial_balance_fh"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-21 收盤 48.6；區間報酬：20日 8.6%；60日 22.11%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
+          "id": "governance_snapshot",
+          "label": "股權與治理",
+          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
+          "source_ids": [
+            "twse_major_shareholders",
+            "twse_insider_transfer",
+            "twse_disclosure_violations"
+          ]
+        },
+        {
+          "id": "event_risk_snapshot",
+          "label": "事件與合規",
+          "value": "官方事件 0 則；申報違規 0 筆。",
+          "source_ids": [
+            "twse_material_events",
+            "twse_disclosure_violations"
+          ]
+        }
+      ]
+    },
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-07-21T06:08:36.595Z",
+      "generated_at": "2026-07-21T06:30:21.023Z",
       "facts": [
         {
           "id": "official_classification",
@@ -545,10 +604,69 @@
         }
       ]
     },
+    "twse-3481": {
+      "ticker": "3481",
+      "market": "TWSE",
+      "generated_at": "2026-07-21T06:30:21.023Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：光電業；追蹤模板：電子硬體與零組件。",
+          "source_ids": [
+            "twse_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 17.25%；月增 5.11%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 14.43%；營益率 2.25%；EPS 0.2。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-21 收盤 50.7；區間報酬：20日 -23.18%；60日 110.37%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
+          "id": "governance_snapshot",
+          "label": "股權與治理",
+          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
+          "source_ids": [
+            "twse_major_shareholders",
+            "twse_insider_transfer",
+            "twse_disclosure_violations"
+          ]
+        },
+        {
+          "id": "event_risk_snapshot",
+          "label": "事件與合規",
+          "value": "官方事件 0 則；申報違規 0 筆。",
+          "source_ids": [
+            "twse_material_events",
+            "twse_disclosure_violations"
+          ]
+        }
+      ]
+    },
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-07-21T06:08:36.595Z",
+      "generated_at": "2026-07-21T06:30:21.023Z",
       "facts": [
         {
           "id": "official_classification",
@@ -615,7 +733,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-07-21T06:08:36.595Z",
+      "generated_at": "2026-07-21T06:30:21.023Z",
       "facts": [
         {
           "id": "official_classification",

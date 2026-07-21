@@ -249,6 +249,44 @@
       "events": []
     },
     {
+      "id": "twse-2886",
+      "ticker": "2886",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "兆豐金",
+      "legal_name": "兆豐金融控股股份有限公司",
+      "category": "金融保險",
+      "industry_template": "financial",
+      "original_industry_template": "financial",
+      "official_industry_code": "17",
+      "official_industry_label": "金融保險",
+      "listing_date": "2002-02-04",
+      "website": "https://www.megaholdings.com.tw",
+      "data_quality": "Public structured datasets are refreshed by the research update workflow.",
+      "last_reviewed": "2026-07-21",
+      "tags": [
+        "上市",
+        "金融保險"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "sources": [
+        {
+          "id": "twse-2886_official",
+          "title": "兆豐金 官方網站",
+          "short_title": "官方網站",
+          "url": "https://www.megaholdings.com.tw",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {},
+      "risks": [],
+      "events": []
+    },
+    {
       "id": "tpex-3115",
       "ticker": "3115",
       "market": "TPEx",
@@ -280,6 +318,45 @@
           "title": "富榮綱 官方網站",
           "short_title": "官方網站",
           "url": "https://www.tscl.com.tw",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {},
+      "risks": [],
+      "events": []
+    },
+    {
+      "id": "twse-3481",
+      "ticker": "3481",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "群創",
+      "legal_name": "群創光電股份有限公司",
+      "category": "電子硬體與零組件",
+      "industry_template": "electronics_hardware",
+      "original_industry_template": "electronics_hardware",
+      "official_industry_code": "26",
+      "official_industry_label": "光電業",
+      "listing_date": "2006-10-24",
+      "website": "http://www.innolux.com",
+      "data_quality": "Public structured datasets are refreshed by the research update workflow.",
+      "last_reviewed": "2026-07-21",
+      "tags": [
+        "上市",
+        "電子硬體與零組件",
+        "光電業"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "sources": [
+        {
+          "id": "twse-3481_official",
+          "title": "群創 官方網站",
+          "short_title": "官方網站",
+          "url": "http://www.innolux.com",
           "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
         }
       ],

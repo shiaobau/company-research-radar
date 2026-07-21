@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:08:36.595Z",
+  "generated_at": "2026-07-21T06:30:21.023Z",
   "sources": [
     {
       "id": "twse_major_shareholders",
@@ -250,6 +250,48 @@
       "violations": [],
       "cache_status": "fresh",
       "refreshed_at": "2026-07-21T06:08:36.595Z"
+    },
+    "twse-2886": {
+      "ticker": "2886",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_major_shareholders",
+        "twse_insider_transfer",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "major_shareholder_count": 0,
+      "insider_transfer_count": 0,
+      "disclosure_violation_count": 0,
+      "score": 63,
+      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
+      "major_shareholders": [],
+      "insider_transfers": [],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:30:21.023Z"
+    },
+    "twse-3481": {
+      "ticker": "3481",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_major_shareholders",
+        "twse_insider_transfer",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "major_shareholder_count": 0,
+      "insider_transfer_count": 0,
+      "disclosure_violation_count": 0,
+      "score": 63,
+      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
+      "major_shareholders": [],
+      "insider_transfers": [],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:30:21.023Z"
     }
   }
 }

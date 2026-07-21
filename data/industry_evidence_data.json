@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:08:36.595Z",
+  "generated_at": "2026-07-21T06:30:21.023Z",
   "note": "產業證據層。各產業子檢核僅在取得公司事實與來源支持時評分；模板本身與未填入欄位不會產生分數。",
   "sources": [
     {
@@ -431,9 +431,171 @@
       ],
       "rationale": "金融保險 產業證據僅 0/5 項具來源支持；未完成前不產生產業分數。"
     },
+    "twse-2886": {
+      "ticker": "2886",
+      "market": "TWSE",
+      "industry_template": "financial",
+      "status": "missing",
+      "source_ids": [],
+      "evidence_level": "none",
+      "completed_count": 0,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": null,
+      "direction": "pending",
+      "direction_matches": {
+        "positive": [],
+        "negative": [],
+        "severe_negative": []
+      },
+      "dimensions": [
+        {
+          "id": "asset_quality",
+          "label": "資產品質",
+          "weight": 0.24,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "逾放、備抵、投資部位、信用風險與資產組合品質。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「asset_quality、key_risk」及至少 1 個來源。"
+        },
+        {
+          "id": "capital_adequacy",
+          "label": "資本適足",
+          "weight": 0.22,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "資本適足率、淨值比、槓桿與風險承擔能力。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「capital_adequacy、balance_sheet_resilience」及至少 1 個來源。"
+        },
+        {
+          "id": "interest_rate_sensitivity",
+          "label": "利率敏感度",
+          "weight": 0.2,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "升降息對利差、債券評價與保險負債的影響。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「interest_rate_sensitivity、key_risk」及至少 1 個來源。"
+        },
+        {
+          "id": "fee_income_mix",
+          "label": "手續費與非利息收入",
+          "weight": 0.18,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "財管、證券、保險、租賃與其他非利息收入穩定度。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「fee_income_mix、revenue_driver」及至少 1 個來源。"
+        },
+        {
+          "id": "compliance_risk",
+          "label": "法遵與監理風險",
+          "weight": 0.16,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "裁罰、內控缺失、監理要求與重大訴訟。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「regulatory_status、key_risk、governance_signal」及至少 1 個來源。"
+        }
+      ],
+      "rationale": "金融保險 產業證據僅 0/5 項具來源支持；未完成前不產生產業分數。"
+    },
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
+      "industry_template": "electronics_hardware",
+      "status": "missing",
+      "source_ids": [],
+      "evidence_level": "none",
+      "completed_count": 0,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": null,
+      "direction": "pending",
+      "direction_matches": {
+        "positive": [],
+        "negative": [],
+        "severe_negative": []
+      },
+      "dimensions": [
+        {
+          "id": "product_cycle",
+          "label": "產品週期",
+          "weight": 0.22,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "產品是否處於升級、替換、去庫存或成熟壓價週期。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「product_cycle、industry_focus」及至少 1 個來源。"
+        },
+        {
+          "id": "customer_structure",
+          "label": "客戶結構",
+          "weight": 0.22,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "主要客戶品質、集中度、終端需求與議價能力。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「customer_structure」及至少 1 個來源。"
+        },
+        {
+          "id": "supply_chain_role",
+          "label": "供應鏈角色",
+          "weight": 0.2,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "公司在模組、零組件、通路或代工環節中的不可替代性。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「supply_chain_role」及至少 1 個來源。"
+        },
+        {
+          "id": "certification_quality",
+          "label": "認證與規格品質",
+          "weight": 0.18,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "產品規格、品質認證、車用或高可靠度應用證據。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「quality_system、regulatory_status」及至少 1 個來源。"
+        },
+        {
+          "id": "margin_resilience",
+          "label": "毛利韌性",
+          "weight": 0.18,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "毛利率與營益率是否能抵抗匯率、價格與需求波動。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「margin_resilience」及至少 1 個來源。"
+        }
+      ],
+      "rationale": "電子硬體與零組件 產業證據僅 0/5 項具來源支持；未完成前不產生產業分數。"
+    },
+    "twse-3481": {
+      "ticker": "3481",
+      "market": "TWSE",
       "industry_template": "electronics_hardware",
       "status": "missing",
       "source_ids": [],

@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:08:36.595Z",
+  "generated_at": "2026-07-21T06:30:21.023Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -169,6 +169,40 @@
       "events": [],
       "cache_status": "fresh",
       "refreshed_at": "2026-07-21T06:08:36.595Z"
+    },
+    "twse-2886": {
+      "ticker": "2886",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events"
+      ],
+      "evidence_level": "medium",
+      "event_count": 0,
+      "positive_event_count": 0,
+      "negative_event_count": 0,
+      "score": 65,
+      "rationale": "財務品質分數 79。",
+      "events": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:30:21.023Z"
+    },
+    "twse-3481": {
+      "ticker": "3481",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events"
+      ],
+      "evidence_level": "medium",
+      "event_count": 0,
+      "positive_event_count": 0,
+      "negative_event_count": 0,
+      "score": 59,
+      "rationale": "月營收分數 74。",
+      "events": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:30:21.023Z"
     }
   }
 }

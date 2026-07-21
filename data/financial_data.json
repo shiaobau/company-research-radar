@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:08:36.595Z",
+  "generated_at": "2026-07-21T06:30:21.023Z",
   "sources": [
     {
       "id": "twse_income_statement",
@@ -345,6 +345,59 @@
       "rationale": "2026Q1 毛利率 32.97%，營益率 10.42%，流動比率 1.84，負債比率 25.82%。",
       "cache_status": "fresh",
       "refreshed_at": "2026-07-21T06:08:36.595Z"
+    },
+    "twse-2886": {
+      "ticker": "2886",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_financial_income_fh",
+        "twse_financial_balance_fh"
+      ],
+      "evidence_level": "high",
+      "year": "2026",
+      "quarter": 1,
+      "financial_report_profile": "fh",
+      "financial_report_profile_label": "金控業",
+      "net_income_thousand_twd": 9397352,
+      "total_assets_thousand_twd": 5003279677,
+      "total_equity_thousand_twd": 401953394,
+      "annualized_roe_pct": 9.35,
+      "annualized_roa_pct": 0.75,
+      "equity_ratio_pct": 8.03,
+      "eps": 0.63,
+      "book_value_per_share": 27.1,
+      "equity_buffer_score": 90,
+      "profitability_stability_score": 84,
+      "fundamental_support_score": 79,
+      "score": 79,
+      "rationale": "2026Q1 金控業財報：年化 ROE 9.35%、年化 ROA 0.75%、權益比率 8.03%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:30:21.023Z"
+    },
+    "twse-3481": {
+      "ticker": "3481",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_income_statement",
+        "twse_balance_sheet"
+      ],
+      "evidence_level": "high",
+      "year": "2026",
+      "quarter": "1",
+      "revenue_thousand_twd": 66644538,
+      "gross_margin_pct": 14.43,
+      "operating_margin_pct": 2.25,
+      "net_margin_pct": 2.69,
+      "current_ratio": 1.46,
+      "debt_ratio_pct": 40.84,
+      "eps": 0.2,
+      "book_value_per_share": 28.39,
+      "score": 57,
+      "rationale": "2026Q1 毛利率 14.43%，營益率 2.25%，流動比率 1.46，負債比率 40.84%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:30:21.023Z"
     }
   }
 }

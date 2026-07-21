@@ -1,0 +1,521 @@
+{
+  "version": "1.0.0",
+  "source_id": "mops_history_api",
+  "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1",
+  "ticker": "2886",
+  "fetched_at": "2026-07-21T06:31:06.825Z",
+  "cache_status": "updated",
+  "as_of_date": null,
+  "queried_roc_years": [
+    "115",
+    "114"
+  ],
+  "event_count": 24,
+  "detail_count": 4,
+  "events": [
+    {
+      "id": "mops-history-2886-1150717-1",
+      "date": "2026-07-17",
+      "announced_date": "2026-07-17",
+      "fact_date": "2026-07-17",
+      "announced_time": "17:18:50",
+      "title": "代本公司之子公司兆豐國際商業銀行公告出售聯貸案不良債權",
+      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: 金融機構不良債權(聯貸案) 2.事實發生日:115/7/17~115/7/17 3.董事會通過日期: 民國115年5月8日 4.其他核決日期: 不適用 5.交易單位數量、每單位價格及交易總金額: 數量：不適用 每單位價格：不適用 交易總金額：美金26,266,640.90元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: PIMCO Real Estate Special Situations Trust/非關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 處分之債權附隨擔保品種類：不動產 10.處分利益（或損失）（取得有價證券者不適用）（遞延者應列表說明 認列情形）: 依實際處分價格認列處分利得(或損失) 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依債權買賣合約條件付款 12.本次交易之決定方式、價格決定之參考依據及決策單位: (1)交易決定方式及價格決定之參考依據： 參酌市場行情，經雙方議價後決定交易價格 (2)董事會決議出售不良債權 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 不適用 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額: 不適用 16.經紀人及經紀費用: 無 17.取得或處分之具體目的或用途: 加速處分不良債權 18.本次交易表示異議董事之意見: 無 19.本次交易為關係人交易:否 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 不適用 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 債權買賣合約簽署日為美國紐約時間民國115年7月16日",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150717"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150714-2",
+      "date": "2026-07-14",
+      "announced_date": "2026-07-14",
+      "fact_date": "2026-07-14",
+      "announced_time": "15:15:40",
+      "title": "代本公司之子公司兆豐國際商業銀行公告董事會決議 解除經理人競業禁止之限制案。",
+      "description": "1.董事會決議日:115/07/14 2.許可從事競業行為之經理人姓名及職稱: (1)陳昭蓉：副總經理 (2)康惠如：處長 (3)李建華：主任 3.許可從事競業行為之項目:經指派兼任其他營利事業之經理人或經營 與兆豐國際商業銀行營業範圍相同或類似之公司業務 4.許可從事競業行為之期間:任職兆豐國際商業銀行經理人職務期間 5.決議情形（請依公司法第32條說明表決結果）: 本案利害關係人依規定予以迴避，經主席徵詢全體出席董事 無異議通過。 6.所許可之競業行為如屬大陸地區事業之營業者，經理人姓名及職稱 （非屬大陸地區事業之營業者，以下請輸〝不適用〞）:不適用 7.所擔任該大陸地區事業之公司名稱及職務:不適用 8.所擔任該大陸地區事業地址:不適用 9.所擔任該大陸地區事業營業項目:不適用 10.對本公司財務業務之影響程度:不適用 11.經理人如有對該大陸地區事業從事投資者，其投資金額及持股比例: 不適用 12.其他應敘明事項:無",
+      "clause": "第21款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "2",
+        "enterDate": "1150714"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150714-1",
+      "date": "2026-07-14",
+      "announced_date": "2026-07-14",
+      "fact_date": "2026-07-14",
+      "announced_time": "15:15:17",
+      "title": "公告本公司暨主要子公司115年6月份自結合併盈餘",
+      "description": "1.事實發生日:115/07/14 2.公司名稱:兆豐金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:公告本公司暨主要子公司115年6月份自結合併盈餘 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 公告本公司暨主要子公司115年6月份業績資料： 當月稅前 當月稅後 累積稅前 累積稅後 累積每股 盈餘 盈餘 盈餘 盈餘 稅後盈餘 (億元) (億元) (億元) (億元) (元) 兆豐金控 42.97 32.72 258.07 213.07 1.44 兆豐銀行 32.77 27.10 190.97 158.66 1.59 兆豐證券 5.21 4.13 40.04 35.26 2.96 兆豐票券 4.20 3.46 22.49 18.00 1.19 兆豐產險 1.03 1.17 6.56 5.63 1.71 註:兆豐金控115年6月30日每股淨值27.13元。 註:累計至6月未適用巨災保險準備金之累計每股稅後盈餘 兆豐金控為1.44元、兆豐產險為1.71元。 上述資料均係自結數字，未經會計師查核或核閱。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150714"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150713-2",
+      "date": "2026-07-13",
+      "announced_date": "2026-07-13",
+      "fact_date": "2026-08-31",
+      "announced_time": "16:07:08",
+      "title": "本公司將於115/08/31~115/09/02參與高盛(Goldman Sachs) 於香港舉辦之外資法人投資說明會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/08/31 1.召開法人說明會之日期：115/08/31 ~ 115/09/02 2.召開法人說明會之時間：09 時 00 分 3.召開法人說明會之地點：香港 4.法人說明會擇要訊息：揭露本公司2026年第2季營運概況 5.其他應敘明事項：本公司受邀參與高盛證券於香港舉辦之外資法人投資說明會 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "2",
+        "enterDate": "1150713"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150713-1",
+      "date": "2026-07-13",
+      "announced_date": "2026-07-13",
+      "fact_date": null,
+      "announced_time": "16:06:48",
+      "title": "公告本公司將召開2026年第二季線上法人說明會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150713"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150701-2",
+      "date": "2026-07-01",
+      "announced_date": "2026-07-01",
+      "fact_date": null,
+      "announced_time": "18:04:02",
+      "title": "代本公司之子公司兆豐國際證券投資信託股份有限公司公告 陳文雄先生代理總經理",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "2",
+        "enterDate": "1150701"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150701-1",
+      "date": "2026-07-01",
+      "announced_date": "2026-07-01",
+      "fact_date": null,
+      "announced_time": "18:03:41",
+      "title": "代本公司之子公司兆豐國際證券投資信託股份有限公司公告 張傳章先生代行董事長職務",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150701"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150625-2",
+      "date": "2026-06-25",
+      "announced_date": "2026-06-25",
+      "fact_date": null,
+      "announced_time": "17:49:42",
+      "title": "代本公司之子公司兆豐國際證券投資信託股份有限公司公告 董事長異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "2",
+        "enterDate": "1150625"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150625-1",
+      "date": "2026-06-25",
+      "announced_date": "2026-06-25",
+      "fact_date": null,
+      "announced_time": "17:49:18",
+      "title": "公告本公司之子公司兆豐國際證券投資信託(股)公司 董事異動案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150625"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150624-1",
+      "date": "2026-06-24",
+      "announced_date": "2026-06-24",
+      "fact_date": null,
+      "announced_time": "17:58:03",
+      "title": "代本公司之子公司兆豐證券公告董事會決議通過 銀行聯合授信案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150624"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150623-2",
+      "date": "2026-06-23",
+      "announced_date": "2026-06-23",
+      "fact_date": null,
+      "announced_time": "17:33:46",
+      "title": "公告本公司之子公司兆豐國際證券投資信託(股)公司 董事異動案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "2",
+        "enterDate": "1150623"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150623-1",
+      "date": "2026-06-23",
+      "announced_date": "2026-06-23",
+      "fact_date": null,
+      "announced_time": "17:33:10",
+      "title": "公告本公司內部稽核主管生效日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150623"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150622-2",
+      "date": "2026-06-22",
+      "announced_date": "2026-06-22",
+      "fact_date": null,
+      "announced_time": "18:14:35",
+      "title": "代從屬公司中銀財務管理顧問股份有限公司公告向關係人取得使用權資產",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "2",
+        "enterDate": "1150622"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150622-1",
+      "date": "2026-06-22",
+      "announced_date": "2026-06-22",
+      "fact_date": null,
+      "announced_time": "18:14:05",
+      "title": "代從屬公司雍興實業股份有限公司公告向關係人取得使用權資產",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150622"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150618-2",
+      "date": "2026-06-18",
+      "announced_date": "2026-06-18",
+      "fact_date": null,
+      "announced_time": "17:26:32",
+      "title": "公告本公司115年股東常會通過解除董事競業禁止案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "2",
+        "enterDate": "1150618"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150618-1",
+      "date": "2026-06-18",
+      "announced_date": "2026-06-18",
+      "fact_date": null,
+      "announced_time": "17:24:19",
+      "title": "公告本公司115年股東常會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150618"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150616-1",
+      "date": "2026-06-16",
+      "announced_date": "2026-06-16",
+      "fact_date": null,
+      "announced_time": "17:28:00",
+      "title": "代本公司之子公司兆豐國際商業銀行公告授信資產之轉讓",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150616"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150612-3",
+      "date": "2026-06-12",
+      "announced_date": "2026-06-12",
+      "fact_date": null,
+      "announced_time": "15:35:20",
+      "title": "代本公司之子公司兆豐國際商業銀行股份有限公司公告 其董事會通過參與國家發展委員會「企業投資美國融資保證 機制」，規劃出資5,000萬美元",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "3",
+        "enterDate": "1150612"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150612-2",
+      "date": "2026-06-12",
+      "announced_date": "2026-06-12",
+      "fact_date": null,
+      "announced_time": "15:34:47",
+      "title": "代本公司之子公司兆豐國際商業銀行公告董事會決議 解除經理人競業禁止之限制案。",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "2",
+        "enterDate": "1150612"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150612-1",
+      "date": "2026-06-12",
+      "announced_date": "2026-06-12",
+      "fact_date": null,
+      "announced_time": "15:33:28",
+      "title": "公告本公司暨主要子公司115年5月份自結合併盈餘",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150612"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150609-2",
+      "date": "2026-06-09",
+      "announced_date": "2026-06-09",
+      "fact_date": null,
+      "announced_time": "18:12:16",
+      "title": "代本公司之子公司兆豐證券(股)公司公告 審計委員會成員異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "2",
+        "enterDate": "1150609"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150609-1",
+      "date": "2026-06-09",
+      "announced_date": "2026-06-09",
+      "fact_date": null,
+      "announced_time": "18:11:32",
+      "title": "公告本公司之子公司兆豐證券(股)公司獨立董事異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150609"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150605-1",
+      "date": "2026-06-05",
+      "announced_date": "2026-06-05",
+      "fact_date": null,
+      "announced_time": "16:28:12",
+      "title": "本公司將於115/06/29參與高盛(Goldman Sachs) 舉辦之線上外資法人投資說明會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1",
+        "enterDate": "1150605"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150527-2",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": null,
+      "announced_time": "17:01:13",
+      "title": "公告本公司審計委員會、薪資報酬委員會委員異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "2",
+        "enterDate": "1150527"
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:08:36.595Z",
+  "generated_at": "2026-07-21T06:30:21.023Z",
   "note": "產業基本面公式化資料。未完成來源支持的產業子檢核時，不產生產業基本面分數。",
   "sources": [
     {
@@ -392,6 +392,33 @@
       "score": null,
       "rationale": "產業證據尚未完成所有來源支持的子檢核，因此不產生產業基本面分數。"
     },
+    "twse-2886": {
+      "ticker": "2886",
+      "market": "TWSE",
+      "industry_template": "financial",
+      "status": "missing",
+      "source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse",
+        "twse_monthly_revenue",
+        "twse_financial_income_fh",
+        "twse_financial_balance_fh",
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "none",
+      "traceability_score": 59,
+      "industry_evidence_score": null,
+      "industry_evidence_completed_count": 0,
+      "industry_evidence_total_count": 5,
+      "revenue_score": 64,
+      "financial_score": 79,
+      "catalyst_score": 65,
+      "risk_score": 92,
+      "score": null,
+      "rationale": "產業證據尚未完成所有來源支持的子檢核，因此不產生產業基本面分數。"
+    },
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
@@ -414,6 +441,33 @@
       "industry_evidence_total_count": 5,
       "revenue_score": 77,
       "financial_score": 58,
+      "catalyst_score": 59,
+      "risk_score": 92,
+      "score": null,
+      "rationale": "產業證據尚未完成所有來源支持的子檢核，因此不產生產業基本面分數。"
+    },
+    "twse-3481": {
+      "ticker": "3481",
+      "market": "TWSE",
+      "industry_template": "electronics_hardware",
+      "status": "missing",
+      "source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse",
+        "twse_monthly_revenue",
+        "twse_income_statement",
+        "twse_balance_sheet",
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "none",
+      "traceability_score": 59,
+      "industry_evidence_score": null,
+      "industry_evidence_completed_count": 0,
+      "industry_evidence_total_count": 5,
+      "revenue_score": 74,
+      "financial_score": 57,
       "catalyst_score": 59,
       "risk_score": 92,
       "score": null,
