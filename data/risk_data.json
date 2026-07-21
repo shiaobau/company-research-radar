@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-20T08:27:29.569Z",
+  "generated_at": "2026-07-21T03:14:42.419Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -83,7 +83,7 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 1,
+      "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
       "review_event_count": 0,

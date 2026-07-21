@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-20T08:27:29.569Z",
+  "generated_at": "2026-07-21T03:14:42.419Z",
   "note": "產業基本面公式化資料。未完成來源支持的產業子檢核時，不產生產業基本面分數。",
   "sources": [
     {
@@ -333,7 +333,7 @@
       "industry_evidence_total_count": 5,
       "revenue_score": 79,
       "financial_score": 78,
-      "catalyst_score": 74,
+      "catalyst_score": 71,
       "risk_score": 92,
       "score": null,
       "rationale": "產業證據尚未完成所有來源支持的子檢核，因此不產生產業基本面分數。"

@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-20T08:34:53.215Z",
+  "generated_at": "2026-07-21T03:14:42.419Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -134,7 +134,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-07-20T08:34:53.215Z",
+      "generated_at": "2026-07-21T03:14:42.419Z",
       "facts": [
         {
           "id": "official_classification",
@@ -164,7 +164,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-16 收盤 91.9；區間報酬：20日 5.15%；60日 3.14%。",
+          "value": "2026-07-20 收盤 90.6；區間報酬：20日 3.66%；60日 1.91%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -201,7 +201,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-07-20T08:34:53.215Z",
+      "generated_at": "2026-07-21T03:14:42.419Z",
       "facts": [
         {
           "id": "official_classification",
@@ -231,7 +231,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-16 收盤 160；區間報酬：20日 13.48%；60日 108.06%。",
+          "value": "2026-07-20 收盤 130；區間報酬：20日 -10.65%；60日 65.39%。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -260,7 +260,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-07-20T08:34:53.215Z",
+      "generated_at": "2026-07-21T03:14:42.419Z",
       "facts": [
         {
           "id": "official_classification",
@@ -290,17 +290,9 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-16 收盤 2,470；區間報酬：20日 2.92%；60日 21.98%。",
+          "value": "2026-07-20 收盤 2,320；區間報酬：20日 -3.73%；60日 13.17%。",
           "source_ids": [
             "twse_stock_day"
-          ]
-        },
-        {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-07-16：台積公司2026年第二季每股盈餘新台幣27.25元。",
-          "source_ids": [
-            "twse_material_events"
           ]
         },
         {
@@ -316,7 +308,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 1 則；申報違規 0 筆。",
+          "value": "官方事件 0 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -327,7 +319,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-07-20T08:34:53.215Z",
+      "generated_at": "2026-07-21T03:14:42.419Z",
       "facts": [
         {
           "id": "official_classification",
