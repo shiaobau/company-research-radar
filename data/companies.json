@@ -133,6 +133,45 @@
       "events": []
     },
     {
+      "id": "twse-2308",
+      "ticker": "2308",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "台達電",
+      "legal_name": "台達電子工業股份有限公司",
+      "category": "電子硬體與零組件",
+      "industry_template": "electronics_hardware",
+      "original_industry_template": "electronics_hardware",
+      "official_industry_code": "28",
+      "official_industry_label": "電子零組件業",
+      "listing_date": "1988-12-19",
+      "website": "https://www.deltaww.com/zh-TW/index",
+      "data_quality": "Public structured datasets are refreshed by the research update workflow.",
+      "last_reviewed": "2026-07-21",
+      "tags": [
+        "上市",
+        "電子硬體與零組件",
+        "電子零組件業"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "sources": [
+        {
+          "id": "twse-2308_official",
+          "title": "台達電 官方網站",
+          "short_title": "官方網站",
+          "url": "https://www.deltaww.com/zh-TW/index",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {},
+      "risks": [],
+      "events": []
+    },
+    {
       "id": "twse-2330",
       "ticker": "2330",
       "market": "TWSE",
@@ -202,6 +241,45 @@
           "title": "元大金 官方網站",
           "short_title": "官方網站",
           "url": "http://www.yuanta.com",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {},
+      "risks": [],
+      "events": []
+    },
+    {
+      "id": "tpex-3115",
+      "ticker": "3115",
+      "market": "TPEx",
+      "market_label": "上櫃",
+      "name": "富榮綱",
+      "legal_name": "富育榮綱股份有限公司",
+      "category": "電子硬體與零組件",
+      "industry_template": "electronics_hardware",
+      "original_industry_template": "electronics_hardware",
+      "official_industry_code": "28",
+      "official_industry_label": "電子零組件業",
+      "listing_date": "2005-04-08",
+      "website": "https://www.tscl.com.tw",
+      "data_quality": "Public structured datasets are refreshed by the research update workflow.",
+      "last_reviewed": "2026-07-21",
+      "tags": [
+        "上櫃",
+        "電子硬體與零組件",
+        "電子零組件業"
+      ],
+      "primary_source_ids": [
+        "tpex_company_basic",
+        "mops",
+        "tpex"
+      ],
+      "sources": [
+        {
+          "id": "tpex-3115_official",
+          "title": "富榮綱 官方網站",
+          "short_title": "官方網站",
+          "url": "https://www.tscl.com.tw",
           "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
         }
       ],

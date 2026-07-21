@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-07-21T06:01:41.982Z",
+  "generated_at": "2026-07-21T06:04:55.517Z",
   "note": "六項核心評分維度必須具備公開資料；產業證據調整僅在通過來源支持的產業子檢核後才介入，未完成時維持核心分數。",
   "summary": {
-    "total": 6,
+    "total": 8,
     "complete_count": 0,
-    "core_complete_count": 6,
+    "core_complete_count": 8,
     "incomplete_count": 0
   },
   "companies": {
@@ -103,6 +103,38 @@
       "completed_count": 6,
       "total_count": 7,
       "checked_at": "2026-07-21T06:01:41.982Z",
+      "retried": false
+    },
+    "twse-2308": {
+      "id": "twse-2308",
+      "ticker": "2308",
+      "name": "台達電",
+      "status": "core_complete",
+      "missing_dimensions": [
+        {
+          "id": "industry",
+          "label": "產業證據調整"
+        }
+      ],
+      "completed_count": 6,
+      "total_count": 7,
+      "checked_at": "2026-07-21T06:04:55.517Z",
+      "retried": false
+    },
+    "tpex-3115": {
+      "id": "tpex-3115",
+      "ticker": "3115",
+      "name": "富榮綱",
+      "status": "core_complete",
+      "missing_dimensions": [
+        {
+          "id": "industry",
+          "label": "產業證據調整"
+        }
+      ],
+      "completed_count": 6,
+      "total_count": 7,
+      "checked_at": "2026-07-21T06:04:55.517Z",
       "retried": false
     }
   }

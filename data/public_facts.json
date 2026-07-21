@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:01:30.128Z",
+  "generated_at": "2026-07-21T06:04:10.665Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -95,18 +95,18 @@
       "note": "上櫃公司每月營收、MoM、YoY 與累計 YoY。"
     },
     {
-      "id": "tpex_financial_income_bd",
-      "title": "TPEx 上櫃公司綜合損益表（證券期貨業）",
-      "short_title": "TPEx 證券期貨業損益",
-      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap06_O_bd",
-      "note": "上櫃證券期貨業專用損益表，用於金融業獲利效率與 EPS。"
+      "id": "tpex_income_statement",
+      "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司綜合損益表",
+      "short_title": "TPEx 損益",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap06_O_ci",
+      "note": "上櫃公司一般業綜合損益表，用於毛利率、營益率、淨利率與 EPS。"
     },
     {
-      "id": "tpex_financial_balance_bd",
-      "title": "TPEx 上櫃公司資產負債表（證券期貨業）",
-      "short_title": "TPEx 證券期貨業資產負債",
-      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap07_O_bd",
-      "note": "上櫃證券期貨業專用資產負債表，用於資產、權益與權益緩衝。"
+      "id": "tpex_balance_sheet",
+      "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司資產負債表",
+      "short_title": "TPEx 資產負債",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap07_O_ci",
+      "note": "上櫃公司一般業資產負債表，用於流動比率、負債比率與每股淨值。"
     },
     {
       "id": "tpex_trading_stock",
@@ -144,25 +144,25 @@
       "note": "上櫃公司每日重大訊息，用於催化事件與新聞/重大訊息風險評分。"
     },
     {
-      "id": "tpex_income_statement",
-      "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司綜合損益表",
-      "short_title": "TPEx 損益",
-      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap06_O_ci",
-      "note": "上櫃公司一般業綜合損益表，用於毛利率、營益率、淨利率與 EPS。"
+      "id": "tpex_financial_income_bd",
+      "title": "TPEx 上櫃公司綜合損益表（證券期貨業）",
+      "short_title": "TPEx 證券期貨業損益",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap06_O_bd",
+      "note": "上櫃證券期貨業專用損益表，用於金融業獲利效率與 EPS。"
     },
     {
-      "id": "tpex_balance_sheet",
-      "title": "證券櫃檯買賣中心 OpenAPI：上櫃公司資產負債表",
-      "short_title": "TPEx 資產負債",
-      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap07_O_ci",
-      "note": "上櫃公司一般業資產負債表，用於流動比率、負債比率與每股淨值。"
+      "id": "tpex_financial_balance_bd",
+      "title": "TPEx 上櫃公司資產負債表（證券期貨業）",
+      "short_title": "TPEx 證券期貨業資產負債",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap07_O_bd",
+      "note": "上櫃證券期貨業專用資產負債表，用於資產、權益與權益緩衝。"
     }
   ],
   "companies": {
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:01:30.128Z",
+      "generated_at": "2026-07-21T06:04:10.665Z",
       "facts": [
         {
           "id": "official_classification",
@@ -229,7 +229,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:01:30.128Z",
+      "generated_at": "2026-07-21T06:04:10.665Z",
       "facts": [
         {
           "id": "official_classification",
@@ -285,10 +285,77 @@
         }
       ]
     },
+    "twse-2308": {
+      "ticker": "2308",
+      "market": "TWSE",
+      "generated_at": "2026-07-21T06:04:10.665Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：電子零組件業；追蹤模板：電子硬體與零組件。",
+          "source_ids": [
+            "twse_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 55.43%；月增 11.26%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 37%；營益率 17.83%；EPS 7.91。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-21 收盤 1,835；區間報酬：20日 -14.65%；60日 -7.32%。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：香港商香達國際有限公司。",
+          "source_ids": [
+            "twse_major_shareholders"
+          ]
+        },
+        {
+          "id": "governance_snapshot",
+          "label": "股權與治理",
+          "value": "主要股東揭露 1 位；內部人轉讓 0 筆。",
+          "source_ids": [
+            "twse_major_shareholders",
+            "twse_insider_transfer",
+            "twse_disclosure_violations"
+          ]
+        },
+        {
+          "id": "event_risk_snapshot",
+          "label": "事件與合規",
+          "value": "官方事件 0 則；申報違規 0 筆。",
+          "source_ids": [
+            "twse_material_events",
+            "twse_disclosure_violations"
+          ]
+        }
+      ]
+    },
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:01:30.128Z",
+      "generated_at": "2026-07-21T06:04:10.665Z",
       "facts": [
         {
           "id": "official_classification",
@@ -347,7 +414,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:01:30.128Z",
+      "generated_at": "2026-07-21T06:04:10.665Z",
       "facts": [
         {
           "id": "official_classification",
@@ -411,10 +478,77 @@
         }
       ]
     },
+    "tpex-3115": {
+      "ticker": "3115",
+      "market": "TPEx",
+      "generated_at": "2026-07-21T06:04:10.665Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：電子零組件業；追蹤模板：電子硬體與零組件。",
+          "source_ids": [
+            "tpex_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 317.44%；月增 -0.61%。",
+          "source_ids": [
+            "tpex_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 100%；營益率 -570.44%；EPS -0.1。",
+          "source_ids": [
+            "tpex_income_statement",
+            "tpex_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-20 收盤 8.03；區間報酬：20日 -12.24%；60日 -15.03%。",
+          "source_ids": [
+            "tpex_trading_stock"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：禾琦企業有限公司、承育企業管理顧問有限公司、采育企業管理顧問有限公司。",
+          "source_ids": [
+            "tpex_major_shareholders"
+          ]
+        },
+        {
+          "id": "governance_snapshot",
+          "label": "股權與治理",
+          "value": "主要股東揭露 3 位；內部人轉讓 0 筆。",
+          "source_ids": [
+            "tpex_major_shareholders",
+            "tpex_insider_transfer",
+            "tpex_disclosure_violations"
+          ]
+        },
+        {
+          "id": "event_risk_snapshot",
+          "label": "事件與合規",
+          "value": "官方事件 0 則；申報違規 0 筆。",
+          "source_ids": [
+            "tpex_material_events",
+            "tpex_disclosure_violations"
+          ]
+        }
+      ]
+    },
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-07-21T06:01:30.128Z",
+      "generated_at": "2026-07-21T06:04:10.665Z",
       "facts": [
         {
           "id": "official_classification",
@@ -481,7 +615,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-07-21T06:01:30.128Z",
+      "generated_at": "2026-07-21T06:04:10.665Z",
       "facts": [
         {
           "id": "official_classification",

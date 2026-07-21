@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:01:30.128Z",
+  "generated_at": "2026-07-21T06:04:10.665Z",
   "note": "產業基本面公式化資料。未完成來源支持的產業子檢核時，不產生產業基本面分數。",
   "sources": [
     {
@@ -311,6 +311,33 @@
       "score": null,
       "rationale": "產業證據尚未完成所有來源支持的子檢核，因此不產生產業基本面分數。"
     },
+    "twse-2308": {
+      "ticker": "2308",
+      "market": "TWSE",
+      "industry_template": "electronics_hardware",
+      "status": "missing",
+      "source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse",
+        "twse_monthly_revenue",
+        "twse_income_statement",
+        "twse_balance_sheet",
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "none",
+      "traceability_score": 59,
+      "industry_evidence_score": null,
+      "industry_evidence_completed_count": 0,
+      "industry_evidence_total_count": 5,
+      "revenue_score": 81,
+      "financial_score": 70,
+      "catalyst_score": 73,
+      "risk_score": 92,
+      "score": null,
+      "rationale": "產業證據尚未完成所有來源支持的子檢核，因此不產生產業基本面分數。"
+    },
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
@@ -361,6 +388,33 @@
       "revenue_score": 77,
       "financial_score": 89,
       "catalyst_score": 74,
+      "risk_score": 92,
+      "score": null,
+      "rationale": "產業證據尚未完成所有來源支持的子檢核，因此不產生產業基本面分數。"
+    },
+    "tpex-3115": {
+      "ticker": "3115",
+      "market": "TPEx",
+      "industry_template": "electronics_hardware",
+      "status": "missing",
+      "source_ids": [
+        "tpex_company_basic",
+        "mops",
+        "tpex",
+        "tpex_monthly_revenue",
+        "tpex_income_statement",
+        "tpex_balance_sheet",
+        "tpex_material_events",
+        "tpex_disclosure_violations"
+      ],
+      "evidence_level": "none",
+      "traceability_score": 59,
+      "industry_evidence_score": null,
+      "industry_evidence_completed_count": 0,
+      "industry_evidence_total_count": 5,
+      "revenue_score": 77,
+      "financial_score": 58,
+      "catalyst_score": 59,
       "risk_score": 92,
       "score": null,
       "rationale": "產業證據尚未完成所有來源支持的子檢核，因此不產生產業基本面分數。"

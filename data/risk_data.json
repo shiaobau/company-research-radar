@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:01:30.128Z",
+  "generated_at": "2026-07-21T06:04:10.665Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -169,6 +169,52 @@
       "violations": [],
       "cache_status": "fresh",
       "refreshed_at": "2026-07-21T06:01:30.128Z"
+    },
+    "twse-2308": {
+      "ticker": "2308",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "event_count": 0,
+      "negative_event_count": 0,
+      "positive_event_count": 0,
+      "review_event_count": 0,
+      "negative_event_points": 0,
+      "negative_event_categories": {},
+      "disclosure_violation_count": 0,
+      "score": 92,
+      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
+      "events": [],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:04:10.665Z"
+    },
+    "tpex-3115": {
+      "ticker": "3115",
+      "market": "TPEx",
+      "status": "ok",
+      "source_ids": [
+        "tpex_material_events",
+        "tpex_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "event_count": 0,
+      "negative_event_count": 0,
+      "positive_event_count": 0,
+      "review_event_count": 0,
+      "negative_event_points": 0,
+      "negative_event_categories": {},
+      "disclosure_violation_count": 0,
+      "score": 92,
+      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
+      "events": [],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:04:10.665Z"
     }
   }
 }

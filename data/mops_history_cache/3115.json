@@ -1,0 +1,521 @@
+{
+  "version": "1.0.0",
+  "source_id": "mops_history_api",
+  "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1",
+  "ticker": "3115",
+  "fetched_at": "2026-07-21T06:05:18.062Z",
+  "cache_status": "updated",
+  "as_of_date": null,
+  "queried_roc_years": [
+    "115",
+    "114"
+  ],
+  "event_count": 24,
+  "detail_count": 4,
+  "events": [
+    {
+      "id": "mops-history-3115-1150715-1",
+      "date": "2026-07-15",
+      "announced_date": "2026-07-15",
+      "fact_date": "2026-07-15",
+      "announced_time": "20:57:10",
+      "title": "公告本公司內部稽核主管異動",
+      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管 (如:執行長、營運長、行銷長及策略長等)、財務主管、會計 主管、公司治理主管、資訊安全長、研發主管、內部稽核主管或訴訟及非 訟代理人）:內部稽核主管 2.發生變動日期:115/07/15 3.舊任者姓名、級職及簡歷:劉良泰/本公司稽核主管 4.新任者姓名、級職及簡歷:鄭俊益/統一精工(股)公司財務部經理 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、 「退休」、「死亡」、「新任」或「解任」）:職務調整 6.異動原因:經本公司115/07/15董事會決議通過任命。 7.生效日期:115/07/15 8.其他應敘明事項:無。",
+      "clause": "第8款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1150715"
+      }
+    },
+    {
+      "id": "mops-history-3115-1150630-1",
+      "date": "2026-06-30",
+      "announced_date": "2026-06-30",
+      "fact_date": "2026-06-30",
+      "announced_time": "18:54:27",
+      "title": "澄清115年6月29日聯合新聞網等媒體報導",
+      "description": "1.事實發生日:115/06/30 2.公司名稱:富育榮綱股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.傳播媒體名稱:聯合新聞網及其他網路媒體 6.報導內容:「…相關持股主體疑與溫峰泰、天逸集團及富育榮綱等有關， 涉及是否共同取得、資金來源、資訊揭露及表決權行使等疑義，已將 相關資料移送主管機關調查，請求裁示是否具有表決權。」之內容。 7.發生緣由:115年6月29日聯合新聞網等媒體報導。 8.因應措施:針對媒體報導我司疑似持有誠美材(4960)股權，介入其 臨時股東會表決事項。本公司特別澄清媒體報導，說明如下： 本公司並未持有報導所稱之誠美材(4960)股權，本公司無涉報導所提及 之相關事件，該事件與本公司業務及財務無涉，特此澄清。 9.其他應敘明事項:無。",
+      "clause": "第53款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1150630"
+      }
+    },
+    {
+      "id": "mops-history-3115-1150623-1",
+      "date": "2026-06-23",
+      "announced_date": "2026-06-23",
+      "fact_date": "2026-06-23",
+      "announced_time": "17:22:22",
+      "title": "公告本公司115年股東常會重要決議事項",
+      "description": "1.股東常會日期:115/06/23 2.重要決議事項一、盈餘分配或盈虧撥補:通過承認114年度虧損撥補案。 3.重要決議事項二、章程修訂:通過修訂本公司「公司章程」案。 4.重要決議事項三、營業報告書及財務報表:通過承認114年度營業報告書及財務報表案。 5.重要決議事項四、董監事選舉:無。 6.重要決議事項五、其他事項: (1)通過修訂本公司「取得或處分資產處理程序」案。 (2)通過修訂本公司「股東會議事規則」案。 7.其他應敘明事項:無。",
+      "clause": "第18款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1150623"
+      }
+    },
+    {
+      "id": "mops-history-3115-1150518-1",
+      "date": "2026-05-18",
+      "announced_date": "2026-05-18",
+      "fact_date": "2026-05-18",
+      "announced_time": "16:55:28",
+      "title": "本公司配合檢調單位搜索調查事宜",
+      "description": "1.事實發生日:115/05/18 2.發生緣由:檢調單位於今日至本公司進行調查與搜索。 3.因應措施:本公司依法配合調查，並提供相關資料以供釐清。 4.對公司財務業務之影響:本公司營運狀況一切正常，對財務業務並無重大影響。 5.其他應敘明事項:無。",
+      "clause": "第19款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1150518"
+      }
+    },
+    {
+      "id": "mops-history-3115-1150511-1",
+      "date": "2026-05-11",
+      "announced_date": "2026-05-11",
+      "fact_date": null,
+      "announced_time": "17:00:18",
+      "title": "公告本公司董事會通過115年度第一季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1150511"
+      }
+    },
+    {
+      "id": "mops-history-3115-1150426-1",
+      "date": "2026-04-26",
+      "announced_date": "2026-04-26",
+      "fact_date": null,
+      "announced_time": "15:58:06",
+      "title": "公告本公司115年第一季合併財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1150426"
+      }
+    },
+    {
+      "id": "mops-history-3115-1150309-3",
+      "date": "2026-03-09",
+      "announced_date": "2026-03-09",
+      "fact_date": null,
+      "announced_time": "20:57:50",
+      "title": "本公司董事會決議不分派股利",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "3",
+        "enterDate": "1150309"
+      }
+    },
+    {
+      "id": "mops-history-3115-1150309-2",
+      "date": "2026-03-09",
+      "announced_date": "2026-03-09",
+      "fact_date": null,
+      "announced_time": "20:57:30",
+      "title": "公告本公司董事會通過114年度合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "2",
+        "enterDate": "1150309"
+      }
+    },
+    {
+      "id": "mops-history-3115-1150309-1",
+      "date": "2026-03-09",
+      "announced_date": "2026-03-09",
+      "fact_date": null,
+      "announced_time": "20:57:03",
+      "title": "本公司115年股東常會召開相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1150309"
+      }
+    },
+    {
+      "id": "mops-history-3115-1150302-1",
+      "date": "2026-03-02",
+      "announced_date": "2026-03-02",
+      "fact_date": null,
+      "announced_time": "19:59:26",
+      "title": "公告本公司取得私募有價證券 Siegfried Supply Chain Finance Fund",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1150302"
+      }
+    },
+    {
+      "id": "mops-history-3115-1150301-1",
+      "date": "2026-03-01",
+      "announced_date": "2026-03-01",
+      "fact_date": null,
+      "announced_time": "18:19:20",
+      "title": "公告本公司114年第四季合併財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1150301"
+      }
+    },
+    {
+      "id": "mops-history-3115-1150113-2",
+      "date": "2026-01-13",
+      "announced_date": "2026-01-13",
+      "fact_date": null,
+      "announced_time": "19:49:47",
+      "title": "公告本公司董事會通過解除經理人競業行為之限制",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "2",
+        "enterDate": "1150113"
+      }
+    },
+    {
+      "id": "mops-history-3115-1150113-1",
+      "date": "2026-01-13",
+      "announced_date": "2026-01-13",
+      "fact_date": null,
+      "announced_time": "19:49:06",
+      "title": "公告本公司會計主管異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1150113"
+      }
+    },
+    {
+      "id": "mops-history-3115-1141218-1",
+      "date": "2025-12-18",
+      "announced_date": "2025-12-18",
+      "fact_date": null,
+      "announced_time": "17:31:27",
+      "title": "公告本公司會計主管異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1141218"
+      }
+    },
+    {
+      "id": "mops-history-3115-1141211-1",
+      "date": "2025-12-11",
+      "announced_date": "2025-12-11",
+      "fact_date": null,
+      "announced_time": "18:35:12",
+      "title": "公告本公司代理發言人、會計主管及公司治理主管異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1141211"
+      }
+    },
+    {
+      "id": "mops-history-3115-1141128-1",
+      "date": "2025-11-28",
+      "announced_date": "2025-11-28",
+      "fact_date": null,
+      "announced_time": "19:01:34",
+      "title": "代子公司富育榮綱電子(昆山)有限公司新增資金貸與 金額達公開發行公司資金貸與及背書保證處理準則 第22條第1項第2款及第3款規定公告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1141128"
+      }
+    },
+    {
+      "id": "mops-history-3115-1141120-2",
+      "date": "2025-11-20",
+      "announced_date": "2025-11-20",
+      "fact_date": null,
+      "announced_time": "17:13:01",
+      "title": "公告本公司董事會決議辦理114年第二次私募普通股及定價 相關事宜(更正本次私募增資基準日)",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "2",
+        "enterDate": "1141120"
+      }
+    },
+    {
+      "id": "mops-history-3115-1141120-1",
+      "date": "2025-11-20",
+      "announced_date": "2025-11-20",
+      "fact_date": null,
+      "announced_time": "17:12:23",
+      "title": "本公司受邀參加福邦證券舉辦之法人說明會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1141120"
+      }
+    },
+    {
+      "id": "mops-history-3115-1141117-1",
+      "date": "2025-11-17",
+      "announced_date": "2025-11-17",
+      "fact_date": null,
+      "announced_time": "18:10:06",
+      "title": "公告本公司董事會決議辦理114年第二次私募普通股及定價 相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1141117"
+      }
+    },
+    {
+      "id": "mops-history-3115-1141110-3",
+      "date": "2025-11-10",
+      "announced_date": "2025-11-10",
+      "fact_date": null,
+      "announced_time": "17:48:58",
+      "title": "本公司代重要子公司富育榮綱控股股份有限公司 (Wealth Prosper Holdings Limited)公告現金增資基準日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "3",
+        "enterDate": "1141110"
+      }
+    },
+    {
+      "id": "mops-history-3115-1141110-2",
+      "date": "2025-11-10",
+      "announced_date": "2025-11-10",
+      "fact_date": null,
+      "announced_time": "17:48:39",
+      "title": "本公司代重要子公司富育榮綱控股股份有限公司(Wealth Prosper Holdings Limited)公告董事會決議辦理現金增資發行新股",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "2",
+        "enterDate": "1141110"
+      }
+    },
+    {
+      "id": "mops-history-3115-1141110-1",
+      "date": "2025-11-10",
+      "announced_date": "2025-11-10",
+      "fact_date": null,
+      "announced_time": "17:48:15",
+      "title": "公告本公司董事會通過114年度第三季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1141110"
+      }
+    },
+    {
+      "id": "mops-history-3115-1141031-1",
+      "date": "2025-10-31",
+      "announced_date": "2025-10-31",
+      "fact_date": null,
+      "announced_time": "17:32:23",
+      "title": "公告本公司114年第三季合併財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1141031"
+      }
+    },
+    {
+      "id": "mops-history-3115-1140805-1",
+      "date": "2025-08-05",
+      "announced_date": "2025-08-05",
+      "fact_date": null,
+      "announced_time": "17:00:50",
+      "title": "公告本公司董事會通過114年度第二季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1",
+        "enterDate": "1140805"
+      }
+    }
+  ]
+}

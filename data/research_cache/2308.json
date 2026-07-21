@@ -1,0 +1,562 @@
+{
+  "version": "1.0.0",
+  "collected_at": "2026-07-21T06:04:55.559Z",
+  "company": {
+    "id": "twse-2308",
+    "ticker": "2308",
+    "name": "台達電",
+    "market": "TWSE",
+    "industry_template": "electronics_hardware"
+  },
+  "collection_scope": "targeted_research_company",
+  "events": [
+    {
+      "id": "mops-history-2308-1150715-2",
+      "date": "2026-07-15",
+      "announced_date": "2026-07-15",
+      "fact_date": "2026-07-15",
+      "announced_time": "15:59:04",
+      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告現金股利除息基準日",
+      "description": "1.董事會、股東會決議或公司決定日期:115/07/15 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.發放股利種類及金額:現金股利美金250,000,000元 4.除權（息）交易日:NA 5.最後過戶日:NA 6.停止過戶起始日期:NA 7.停止過戶截止日期:NA 8.除權（息）基準日:115/07/20 9.其他應敘明事項:無",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "2",
+        "enterDate": "1150715"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150715-1",
+      "date": "2026-07-15",
+      "announced_date": "2026-07-15",
+      "fact_date": "2026-07-15",
+      "announced_time": "15:57:59",
+      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告發放現金股利",
+      "description": "1.董事會決議日期:115/07/15 2.發放股利種類及金額:發放現金股利美金250,000,000元 3.其他應敘明事項:本公司持有Delta Electronics Int'l (Singapore) Pte. Ltd. 100% 股權。",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150715"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150714-1",
+      "date": "2026-07-14",
+      "announced_date": "2026-07-14",
+      "fact_date": "2026-07-30",
+      "announced_time": "19:42:45",
+      "title": "本公司自辦法人說明會之相關資訊",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/07/30 1.召開法人說明會之日期：115/07/30 2.召開法人說明會之時間：15 時 00 分 3.召開法人說明會之地點：台達電子台北總部 4.法人說明會擇要訊息：本公司自辦法人說明會，說明115年第2季財務報告相關資訊 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150714"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150709-1",
+      "date": "2026-07-09",
+      "announced_date": "2026-07-09",
+      "fact_date": "2026-07-09",
+      "announced_time": "14:32:31",
+      "title": "發布本公司115年06月份業績資料",
+      "description": "1.事實發生日:115/07/09 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:發布本公司115年06月份業績資料 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 本公司115年06月份合併營業額為新台幣656.03億元，較去年同期合併營業額 新台幣422.08億元成長55.4%，較上月份合併營業額新台幣589.62億元成長11.3%； 115年1~6月份累積合併營業額為新台幣3,426.09億元，較去年同期累積合併營業 額新台幣2,429.54億元成長41.0%。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150709"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150706-1",
+      "date": "2026-07-06",
+      "announced_date": "2026-07-06",
+      "fact_date": null,
+      "announced_time": "16:59:03",
+      "title": "本公司代子公司中達電子(蕪湖)有限公司公告決議興建蕪湖五廠相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150706"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150612-1",
+      "date": "2026-06-30",
+      "announced_date": "2026-06-30",
+      "fact_date": null,
+      "announced_time": "16:34:20",
+      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告115年股東常會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150612"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150618-1",
+      "date": "2026-06-18",
+      "announced_date": "2026-06-18",
+      "fact_date": null,
+      "announced_time": "17:12:28",
+      "title": "(補充公告)本公司代子公司DET公告決議興建泰國BP6廠、BP7廠及BP P-A廠",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150618"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150616-1",
+      "date": "2026-06-16",
+      "announced_date": "2026-06-16",
+      "fact_date": null,
+      "announced_time": "16:47:19",
+      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告決議召集115年股東常會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150616"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150608-2",
+      "date": "2026-06-09",
+      "announced_date": "2026-06-09",
+      "fact_date": null,
+      "announced_time": "14:32:27",
+      "title": "發布本公司115年05月份業績資料",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "2",
+        "enterDate": "1150608"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150605-4",
+      "date": "2026-06-05",
+      "announced_date": "2026-06-05",
+      "fact_date": null,
+      "announced_time": "16:22:35",
+      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告現金股利除息基準日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "4",
+        "enterDate": "1150605"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150605-3",
+      "date": "2026-06-05",
+      "announced_date": "2026-06-05",
+      "fact_date": null,
+      "announced_time": "16:22:01",
+      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告發放現金股利",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "3",
+        "enterDate": "1150605"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150604-1",
+      "date": "2026-06-04",
+      "announced_date": "2026-06-04",
+      "fact_date": null,
+      "announced_time": "17:31:47",
+      "title": "本公司代子公司Delta Electronics (Thailand) Public Company Limited公告向非關係 人取得機器設備",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150604"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150529-5",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "16:57:45",
+      "title": "公告本公司除息基準日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "5",
+        "enterDate": "1150529"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150528-4",
+      "date": "2026-05-28",
+      "announced_date": "2026-05-28",
+      "fact_date": null,
+      "announced_time": "16:58:56",
+      "title": "本公司受邀參加法人說明會之相關資訊",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "4",
+        "enterDate": "1150528"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150528-3",
+      "date": "2026-05-28",
+      "announced_date": "2026-05-28",
+      "fact_date": null,
+      "announced_time": "16:58:18",
+      "title": "本公司受邀參加法人說明會之相關資訊",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "3",
+        "enterDate": "1150528"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150528-2",
+      "date": "2026-05-28",
+      "announced_date": "2026-05-28",
+      "fact_date": null,
+      "announced_time": "16:04:17",
+      "title": "本公司受邀參加法人說明會之相關訊息",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "2",
+        "enterDate": "1150528"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150528-1",
+      "date": "2026-05-28",
+      "announced_date": "2026-05-28",
+      "fact_date": null,
+      "announced_time": "15:24:12",
+      "title": "本公司受邀參加法人說明會之相關資訊",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150528"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150526-2",
+      "date": "2026-05-28",
+      "announced_date": "2026-05-28",
+      "fact_date": null,
+      "announced_time": "14:59:55",
+      "title": "本公司115年股東常會通過解除董事競業禁止之限制案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "2",
+        "enterDate": "1150526"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150527-1",
+      "date": "2026-05-28",
+      "announced_date": "2026-05-28",
+      "fact_date": null,
+      "announced_time": "14:59:34",
+      "title": "本公司115年股東常會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150527"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150526-3",
+      "date": "2026-05-26",
+      "announced_date": "2026-05-26",
+      "fact_date": null,
+      "announced_time": "16:16:20",
+      "title": "本公司受邀參加法人說明會之相關資訊",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "3",
+        "enterDate": "1150526"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150508-3",
+      "date": "2026-05-08",
+      "announced_date": "2026-05-08",
+      "fact_date": null,
+      "announced_time": "17:51:27",
+      "title": "代子公司Delta Electronics (Netherlands) B.V.公告董事變更",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "3",
+        "enterDate": "1150508"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150508-1",
+      "date": "2026-05-08",
+      "announced_date": "2026-05-08",
+      "fact_date": null,
+      "announced_time": "17:51:10",
+      "title": "本公司代子公司Delta Electronics (Netherlands) B.V. 公告115年股東臨時會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150508"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150508-4",
+      "date": "2026-05-08",
+      "announced_date": "2026-05-08",
+      "fact_date": null,
+      "announced_time": "15:32:38",
+      "title": "發布本公司115年04月份業績資料",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "4",
+        "enterDate": "1150508"
+      }
+    },
+    {
+      "id": "mops-history-2308-1150506-1",
+      "date": "2026-05-06",
+      "announced_date": "2026-05-06",
+      "fact_date": null,
+      "announced_time": "17:57:41",
+      "title": "本公司受邀參加法人說明會之相關資訊",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150506"
+      }
+    }
+  ],
+  "references": [
+    {
+      "id": "mops-history-2308",
+      "title": "台達電 MOPS 歷史重大訊息",
+      "url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1",
+      "source_id": "mops_history_search",
+      "source_type": "official_history_api",
+      "claim_type": "official_search_reference",
+      "review_status": "reference_only",
+      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
+    },
+    {
+      "id": "company-website-2308",
+      "title": "台達電 官方網站",
+      "url": "https://www.deltaww.com/zh-TW/index",
+      "source_id": "company_website",
+      "source_type": "company_reference",
+      "claim_type": "company_published_reference",
+      "review_status": "reference_only",
+      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
+    }
+  ],
+  "source_status": [
+    {
+      "source_id": "twse_material_events",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-21T06:04:02.058Z",
+      "row_count": 95,
+      "available": true
+    },
+    {
+      "source_id": "mops_history_api",
+      "cache_status": "updated",
+      "fetched_at": "2026-07-21T06:05:10.191Z",
+      "row_count": 24,
+      "detail_count": 4,
+      "available": true
+    }
+  ],
+  "limitations": [
+    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
+    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
+    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
+  ]
+}

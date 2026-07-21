@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:01:30.128Z",
+  "generated_at": "2026-07-21T06:04:10.665Z",
   "sources": [
     {
       "id": "twse_income_statement",
@@ -297,6 +297,54 @@
       "rationale": "2026Q1 毛利率 32.97%，營益率 10.42%，流動比率 1.84，負債比率 25.82%。",
       "cache_status": "fresh",
       "refreshed_at": "2026-07-21T06:01:30.128Z"
+    },
+    "twse-2308": {
+      "ticker": "2308",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_income_statement",
+        "twse_balance_sheet"
+      ],
+      "evidence_level": "high",
+      "year": "2026",
+      "quarter": "1",
+      "revenue_thousand_twd": 159352652,
+      "gross_margin_pct": 37,
+      "operating_margin_pct": 17.83,
+      "net_margin_pct": 14.96,
+      "current_ratio": 1.95,
+      "debt_ratio_pct": 47.78,
+      "eps": 7.91,
+      "book_value_per_share": 115.32,
+      "score": 70,
+      "rationale": "2026Q1 毛利率 37%，營益率 17.83%，流動比率 1.95，負債比率 47.78%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:04:10.665Z"
+    },
+    "tpex-3115": {
+      "ticker": "3115",
+      "market": "TPEx",
+      "status": "ok",
+      "source_ids": [
+        "tpex_income_statement",
+        "tpex_balance_sheet"
+      ],
+      "evidence_level": "high",
+      "year": "2026",
+      "quarter": "1",
+      "revenue_thousand_twd": 1441,
+      "gross_margin_pct": 100,
+      "operating_margin_pct": -570.44,
+      "net_margin_pct": -509.85,
+      "current_ratio": 18.73,
+      "debt_ratio_pct": 6.82,
+      "eps": -0.1,
+      "book_value_per_share": 7.46,
+      "score": 58,
+      "rationale": "2026Q1 毛利率 100%，營益率 -570.44%，流動比率 18.73，負債比率 6.82%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-21T06:04:10.665Z"
     }
   }
 }
