@@ -20,7 +20,12 @@ const SCHEDULES = {
   evening: {
     label: "晚間完整更新",
     time: "20:30",
-    description: "完整更新公開資料、研究資料與 MOPS 歷史事件。"
+    description: "完整更新公開資料、研究資料、MOPS 歷史事件與官方公告。"
+  },
+  manual: {
+    label: "手動完整更新",
+    time: "手動",
+    description: "由管理者啟動的完整更新，包含公開資料、研究資料、MOPS 歷史事件與官方公告。"
   }
 };
 

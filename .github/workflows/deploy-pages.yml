@@ -12,11 +12,12 @@ on:
       slot:
         description: Update window to record in the dashboard status
         required: true
-        default: morning
+        default: manual
         type: choice
         options:
           - morning
           - evening
+          - manual
 
 permissions:
   contents: write

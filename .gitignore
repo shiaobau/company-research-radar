@@ -2,3 +2,5 @@ backtests/
 data/source_cache/
 server*.log
 tools/start-dashboard.cmd
+workers/manual-update/.dev.vars*
+workers/manual-update/.env*

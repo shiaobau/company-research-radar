@@ -1,0 +1,11 @@
+{
+  "name": "company-research-radar-update",
+  "main": "src/index.mjs",
+  "compatibility_date": "2026-07-21",
+  "vars": {
+    "DASHBOARD_ORIGIN": "https://shiaobau.github.io",
+    "GITHUB_REPOSITORY": "shiaobau/company-research-radar",
+    "GITHUB_WORKFLOW": "deploy-pages.yml",
+    "GITHUB_REF": "main"
+  }
+}

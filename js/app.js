@@ -18,6 +18,7 @@ const state = {
   researchCache: { index: { companies: [] }, records: {}, pending: new Set() },
   schedulerStatus: { schedules: {}, current_run: null },
   researchStatus: { summary: {}, companies: {} },
+  appConfig: { manual_update: { enabled: false, endpoint: "", request_timeout_ms: 15000 } },
   referenceSources: [],
   selectedId: null,
   managementMode: false,
@@ -50,7 +51,8 @@ Promise.all([
   fetch("data/research_cache/index.json", { cache: "no-store" }).then((response) => response.json()).catch(() => ({ companies: [] })),
   fetch("data/scheduler_status.json", { cache: "no-store" }).then((response) => response.json()).catch(() => ({ schedules: {}, current_run: null })),
   fetch("data/research_status.json", { cache: "no-store" }).then((response) => response.json()).catch(() => ({ summary: {}, companies: {} }))
-]).then(([templates, definitions, rules, companies, signals, marketData, revenueData, financialData, catalystData, ownershipData, riskData, industryEvidenceData, industryData, dataStatus, publicFactsData, universe, researchCacheIndex, schedulerStatus, researchStatus]) => {
+  , fetch("data/app_config.json", { cache: "no-store" }).then((response) => response.json()).catch(() => ({ manual_update: { enabled: false, endpoint: "", request_timeout_ms: 15000 } }))
+]).then(([templates, definitions, rules, companies, signals, marketData, revenueData, financialData, catalystData, ownershipData, riskData, industryEvidenceData, industryData, dataStatus, publicFactsData, universe, researchCacheIndex, schedulerStatus, researchStatus, appConfig]) => {
   state.templates = templates.industries;
   state.definitions = definitions.fields;
   state.rules = rules;
@@ -69,6 +71,7 @@ Promise.all([
   state.researchCache.index = researchCacheIndex;
   state.schedulerStatus = schedulerStatus;
   state.researchStatus = researchStatus;
+  state.appConfig = appConfig || state.appConfig;
   state.referenceSources = [
     ...(companies.reference_sources || []),
     ...(marketData.sources || []),
@@ -669,7 +672,9 @@ function renderSchedulerPanel() {
   const order = ["morning", "evening"];
   const active = state.schedulerStatus.current_run;
   const localServer = ["127.0.0.1", "localhost"].includes(window.location.hostname);
-  const actionsUrl = "https://github.com/shiaobau/company-research-radar/actions/workflows/deploy-pages.yml";
+  const cloudManualUpdate = state.appConfig?.manual_update || {};
+  const cloudEndpoint = String(cloudManualUpdate.endpoint || "").trim();
+  const cloudManualReady = cloudManualUpdate.enabled === true && /^https:\/\//.test(cloudEndpoint);
   const coverage = state.researchStatus.summary || {};
   const calculatedReadiness = state.companies.map((company) => ({
     company,
@@ -698,7 +703,9 @@ function renderSchedulerPanel() {
         <p class="muted">完整更新會重新蒐集公開資料、MOPS 歷史重大訊息與官方公告事件，再驗證評分。</p>
         ${localServer
           ? '<button class="ghost-button" type="button" data-run-manual-update title="更新後會重新驗證所有必要評分維度">執行完整更新</button>'
-          : `<a class="ghost-button" href="${actionsUrl}" target="_blank" rel="noopener" title="在 GitHub Actions 按 Run workflow 後執行完整更新">前往 GitHub Actions 更新</a>`}
+          : cloudManualReady
+            ? '<button class="ghost-button" type="button" data-run-cloud-manual-update title="需要輸入管理更新密碼">執行完整更新</button>'
+            : '<span class="muted">手動更新後台設定中。</span>'}
       </section>
       <section class="update-section update-status">
         <div><p class="eyebrow">Status</p><h2>更新情形 <span class="pill">${stateLabel}</span></h2></div>
@@ -728,6 +735,34 @@ async function runManualFullUpdate() {
     pollManualUpdateStatus();
   } catch (error) {
     setResearchStatus(`無法啟動手動完整更新：${error.message}`);
+  }
+}
+
+async function runCloudManualFullUpdate() {
+  const config = state.appConfig?.manual_update || {};
+  const endpoint = String(config.endpoint || "").trim();
+  const password = window.prompt("輸入管理更新密碼");
+  if (!password) return;
+  const button = $("[data-run-cloud-manual-update]");
+  try {
+    if (button) button.disabled = true;
+    setResearchStatus("正在驗證管理密碼並啟動完整更新...");
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), Number(config.request_timeout_ms) || 15000);
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ password }),
+      signal: controller.signal
+    });
+    window.clearTimeout(timeout);
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(payload.message || "無法啟動完整更新。");
+    setResearchStatus(payload.message || "完整更新已送出，稍後會自動重新部署研究資料。");
+  } catch (error) {
+    setResearchStatus(`無法啟動完整更新：${error.name === "AbortError" ? "連線逾時，請稍後再試。" : error.message}`);
+  } finally {
+    if (button) button.disabled = false;
   }
 }
 
@@ -900,6 +935,10 @@ function initControls() {
   document.addEventListener("click", (event) => {
     if (event.target.closest("[data-run-manual-update]")) {
       runManualFullUpdate();
+      return;
+    }
+    if (event.target.closest("[data-run-cloud-manual-update]")) {
+      runCloudManualFullUpdate();
       return;
     }
     if (event.target.closest("[data-start-research]")) {
