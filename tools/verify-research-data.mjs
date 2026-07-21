@@ -78,7 +78,7 @@ async function main() {
   let retried = false;
 
   if (retryMissing && missingTickers.length) {
-    await runNode("tools/source-cache.mjs", ["--refresh"]);
+    await runNode("tools/source-cache.mjs", ["--refresh", "--continue-on-error"]);
     await runNode("tools/update-data.mjs", [`--tickers=${missingTickers.join(",")}`]);
     ({ companies, dataStatus, industryEvidenceData } = await loadInputs());
     records = recordsFrom(dataStatus, industryEvidenceData, companies);
