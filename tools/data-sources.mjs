@@ -67,6 +67,45 @@ export const SOURCE_CATALOG = [
     url: "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap07_O_ci",
     note: "上櫃公司一般業資產負債表，用於流動比率、負債比率與每股淨值。"
   },
+  ...["basi", "bd", "fh", "ins"].flatMap((profile) => {
+    const labels = {
+      basi: "金融業",
+      bd: "證券期貨業",
+      fh: "金控業",
+      ins: "保險業"
+    };
+    const label = labels[profile];
+    return [
+      {
+        id: `twse_financial_income_${profile}`,
+        title: `TWSE 上市公司綜合損益表（${label}）`,
+        short_title: `TWSE ${label}損益`,
+        url: `https://openapi.twse.com.tw/v1/opendata/t187ap06_L_${profile}`,
+        note: `上市${label}專用損益表，用於金融業獲利效率與 EPS。`
+      },
+      {
+        id: `twse_financial_balance_${profile}`,
+        title: `TWSE 上市公司資產負債表（${label}）`,
+        short_title: `TWSE ${label}資產負債`,
+        url: `https://openapi.twse.com.tw/v1/opendata/t187ap07_L_${profile}`,
+        note: `上市${label}專用資產負債表，用於資產、權益與權益緩衝。`
+      },
+      {
+        id: `tpex_financial_income_${profile}`,
+        title: `TPEx 上櫃公司綜合損益表（${label}）`,
+        short_title: `TPEx ${label}損益`,
+        url: `https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap06_O_${profile}`,
+        note: `上櫃${label}專用損益表，用於金融業獲利效率與 EPS。`
+      },
+      {
+        id: `tpex_financial_balance_${profile}`,
+        title: `TPEx 上櫃公司資產負債表（${label}）`,
+        short_title: `TPEx ${label}資產負債`,
+        url: `https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap07_O_${profile}`,
+        note: `上櫃${label}專用資產負債表，用於資產、權益與權益緩衝。`
+      }
+    ];
+  }),
   {
     id: "twse_material_events",
     title: "臺灣證券交易所 OpenAPI：上市公司每日重大訊息",

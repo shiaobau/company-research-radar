@@ -1559,12 +1559,19 @@ function renderDataSnapshot(company, sourceIndex) {
     {
       title: "財務品質",
       sourceIds: financial?.source_ids,
-      rows: [
-        ["季度", financial?.year && financial?.quarter ? `${financial.year}Q${financial.quarter}` : "尚無資料"],
-        ["毛利/營益率", `${formatPercent(financial?.gross_margin_pct)} / ${formatPercent(financial?.operating_margin_pct)}`],
-        ["流動比率", formatNumber(financial?.current_ratio)],
-        ["負債比率 / EPS", `${formatPercent(financial?.debt_ratio_pct)} / ${formatNumber(financial?.eps)}`]
-      ]
+      rows: company.industry_template === "financial"
+        ? [
+            ["財報類型", financial?.financial_report_profile_label || "金融專用財報"],
+            ["季度", financial?.year && financial?.quarter ? `${financial.year}Q${financial.quarter}` : "尚無資料"],
+            ["年化 ROE / ROA", `${formatPercent(financial?.annualized_roe_pct)} / ${formatPercent(financial?.annualized_roa_pct)}`],
+            ["權益比率 / EPS", `${formatPercent(financial?.equity_ratio_pct)} / ${formatNumber(financial?.eps)}`]
+          ]
+        : [
+            ["季度", financial?.year && financial?.quarter ? `${financial.year}Q${financial.quarter}` : "尚無資料"],
+            ["毛利/營益率", `${formatPercent(financial?.gross_margin_pct)} / ${formatPercent(financial?.operating_margin_pct)}`],
+            ["流動比率", formatNumber(financial?.current_ratio)],
+            ["負債比率 / EPS", `${formatPercent(financial?.debt_ratio_pct)} / ${formatNumber(financial?.eps)}`]
+          ]
     },
     {
       title: "籌碼/股權",
@@ -1615,7 +1622,11 @@ function renderDataSnapshot(company, sourceIndex) {
 function renderStandards() {
   const industry = $("#industry-filter").value;
   const template = industry === "all" ? null : state.templates[industry];
-  const commonCards = state.rules.common_dimensions.map((dimension) => `
+  const standardsCompany = template ? { industry_template: template.id } : null;
+  const standardsDimensions = standardsCompany
+    ? RadarScoring.dimensionsFor(standardsCompany, state.rules)
+    : state.rules.common_dimensions;
+  const commonCards = standardsDimensions.map((dimension) => `
     <article class="standard-card">
       <strong>${RadarRenderers.escapeHtml(dimension.label)} · ${Math.round(dimension.weight * 100)}%</strong>
       <p>${RadarRenderers.escapeHtml(dimension.description)}</p>
@@ -1685,7 +1696,9 @@ function objectiveSignalsFor(company) {
       date: financial.year && financial.quarter ? `${financial.year}Q${financial.quarter}` : state.financialData.generated_at?.slice(0, 10) || "",
       type: "財務",
       company: company.name,
-      title: `毛利率 ${formatPercent(financial.gross_margin_pct)}，營益率 ${formatPercent(financial.operating_margin_pct)}，EPS ${formatNumber(financial.eps)}`,
+      title: company.industry_template === "financial"
+        ? `年化 ROE ${formatPercent(financial.annualized_roe_pct)}，年化 ROA ${formatPercent(financial.annualized_roa_pct)}，EPS ${formatNumber(financial.eps)}`
+        : `毛利率 ${formatPercent(financial.gross_margin_pct)}，營益率 ${formatPercent(financial.operating_margin_pct)}，EPS ${formatNumber(financial.eps)}`,
       impact: "objective"
     });
   }

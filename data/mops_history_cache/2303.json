@@ -1,15 +1,16 @@
 {
   "version": "1.0.0",
   "source_id": "mops_history_api",
-  "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+  "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1",
   "ticker": "2303",
-  "fetched_at": "2026-07-16T05:37:25.900Z",
+  "fetched_at": "2026-07-17T01:22:31.821Z",
   "cache_status": "updated",
+  "as_of_date": null,
   "queried_roc_years": [
     "115",
     "114"
   ],
-  "event_count": 60,
+  "event_count": 24,
   "detail_count": 4,
   "events": [
     {
@@ -23,7 +24,7 @@
       "clause": "第20款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -44,7 +45,7 @@
       "clause": "第12款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -65,7 +66,7 @@
       "clause": "第35款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -86,7 +87,7 @@
       "clause": "第51款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -107,7 +108,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -128,7 +129,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -149,7 +150,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -170,7 +171,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -191,7 +192,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -212,7 +213,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -233,7 +234,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -254,7 +255,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -275,7 +276,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -296,7 +297,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -317,7 +318,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -338,7 +339,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -359,7 +360,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -380,7 +381,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -401,7 +402,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -422,7 +423,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -443,7 +444,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -464,7 +465,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -485,7 +486,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -506,7 +507,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -514,762 +515,6 @@
         "companyId": "2303",
         "marketKind": "sii",
         "enterDate": "1150512"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150511-1",
-      "date": "2026-05-11",
-      "announced_date": "2026-05-11",
-      "fact_date": null,
-      "announced_time": "16:11:28",
-      "title": "公告本公司買回股份之金額達新台幣三億元以上",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150511"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150507-1",
-      "date": "2026-05-07",
-      "announced_date": "2026-05-07",
-      "fact_date": null,
-      "announced_time": "14:45:24",
-      "title": "公告本公司買回股份之⾦額達新台幣三億元以上",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150507"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150430-1",
-      "date": "2026-04-30",
-      "announced_date": "2026-04-30",
-      "fact_date": null,
-      "announced_time": "18:08:39",
-      "title": "公告本公司海外財務報告因適用兩地會計原則 不一致之差異內容",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150430"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150429-4",
-      "date": "2026-04-29",
-      "announced_date": "2026-04-29",
-      "fact_date": null,
-      "announced_time": "17:14:04",
-      "title": "本公司2026年第一季財務報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "4",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150429"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150429-5",
-      "date": "2026-04-29",
-      "announced_date": "2026-04-29",
-      "fact_date": null,
-      "announced_time": "17:11:10",
-      "title": "本公司董事會通過買回公司股份",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "5",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150429"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150429-3",
-      "date": "2026-04-29",
-      "announced_date": "2026-04-29",
-      "fact_date": null,
-      "announced_time": "17:04:55",
-      "title": "公告本公司董事會決議辦理限制員工權利新股收回 註銷減資事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150429"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150429-2",
-      "date": "2026-04-29",
-      "announced_date": "2026-04-29",
-      "fact_date": null,
-      "announced_time": "17:01:54",
-      "title": "本公司董事會通過資本預算執行案",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150429"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150429-1",
-      "date": "2026-04-29",
-      "announced_date": "2026-04-29",
-      "fact_date": null,
-      "announced_time": "17:00:55",
-      "title": "公告本公司董事會決議通過民國115年第一季合併財務報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150429"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150421-1",
-      "date": "2026-04-21",
-      "announced_date": "2026-04-21",
-      "fact_date": null,
-      "announced_time": "16:25:45",
-      "title": "公告本公司115年第一季合併財務報告董事會召開日期",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150421"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150415-1",
-      "date": "2026-04-15",
-      "announced_date": "2026-04-15",
-      "fact_date": null,
-      "announced_time": "14:38:57",
-      "title": "本公司召開2026年第一季法人說明會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150415"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150326-1",
-      "date": "2026-03-26",
-      "announced_date": "2026-03-26",
-      "fact_date": null,
-      "announced_time": "15:10:14",
-      "title": "美國證券交易法相關之董事與經理人揭露事項公告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150326"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150312-2",
-      "date": "2026-03-12",
-      "announced_date": "2026-03-12",
-      "fact_date": null,
-      "announced_time": "18:33:04",
-      "title": "公告本公司辦理限制員工權利新股註銷完成實收 資本額變更登記事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150312"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150312-1",
-      "date": "2026-03-12",
-      "announced_date": "2026-03-12",
-      "fact_date": null,
-      "announced_time": "14:47:04",
-      "title": "代重要子公司聯芯集成電路製造（廈門）有限公司 公告2026年股東會重要決議事項",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150312"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150302-2",
-      "date": "2026-03-02",
-      "announced_date": "2026-03-02",
-      "fact_date": null,
-      "announced_time": "15:20:12",
-      "title": "本公司受邀參與法人說明會相關資訊",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150302"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150302-1",
-      "date": "2026-03-02",
-      "announced_date": "2026-03-02",
-      "fact_date": null,
-      "announced_time": "15:19:55",
-      "title": "本公司受邀參與法人說明會相關資訊",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150302"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150225-14",
-      "date": "2026-02-25",
-      "announced_date": "2026-02-25",
-      "fact_date": null,
-      "announced_time": "17:27:20",
-      "title": "公告本公司取得機器設備之相關資料",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "14",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150225"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150225-6",
-      "date": "2026-02-25",
-      "announced_date": "2026-02-25",
-      "fact_date": null,
-      "announced_time": "17:26:12",
-      "title": "本公司捐贈財團法人聯華電子科技文教基金會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "6",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150225"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150225-5",
-      "date": "2026-02-25",
-      "announced_date": "2026-02-25",
-      "fact_date": null,
-      "announced_time": "17:25:19",
-      "title": "公告本公司董事會決議召開115年股東常會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "5",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150225"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150225-9",
-      "date": "2026-02-25",
-      "announced_date": "2026-02-25",
-      "fact_date": null,
-      "announced_time": "17:22:29",
-      "title": "公告本公司董事會決議發行限制員工權利新股",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "9",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150225"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150225-13",
-      "date": "2026-02-25",
-      "announced_date": "2026-02-25",
-      "fact_date": null,
-      "announced_time": "17:21:50",
-      "title": "本公司董事會決議股利分派",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "13",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150225"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150225-3",
-      "date": "2026-02-25",
-      "announced_date": "2026-02-25",
-      "fact_date": null,
-      "announced_time": "17:20:04",
-      "title": "公告本公司董事會決議辦理限制員工權利新股收回 註銷減資事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150225"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150225-2",
-      "date": "2026-02-25",
-      "announced_date": "2026-02-25",
-      "fact_date": null,
-      "announced_time": "17:19:15",
-      "title": "公告本公司董事會決議通過民國114年度合併財務報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150225"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150225-1",
-      "date": "2026-02-25",
-      "announced_date": "2026-02-25",
-      "fact_date": null,
-      "announced_time": "17:17:49",
-      "title": "本公司董事會通過之重要議案",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150225"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150225-12",
-      "date": "2026-02-25",
-      "announced_date": "2026-02-25",
-      "fact_date": null,
-      "announced_time": "17:15:22",
-      "title": "本公司高階主管人事異動",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "12",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150225"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150224-1",
-      "date": "2026-02-24",
-      "announced_date": "2026-02-24",
-      "fact_date": null,
-      "announced_time": "17:07:42",
-      "title": "代重要子公司聯芯集成電路製造（廈門）有限公司 公告董事會決議召開2026年股東會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150224"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150224-4",
-      "date": "2026-02-24",
-      "announced_date": "2026-02-24",
-      "fact_date": null,
-      "announced_time": "16:40:07",
-      "title": "代重要子公司 UMC GROUP（USA）公告董事會決議 不發放股利",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "4",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150224"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150224-3",
-      "date": "2026-02-24",
-      "announced_date": "2026-02-24",
-      "fact_date": null,
-      "announced_time": "14:35:19",
-      "title": "本公司法人董事代表人異動",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150224"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150210-1",
-      "date": "2026-02-13",
-      "announced_date": "2026-02-13",
-      "fact_date": null,
-      "announced_time": "15:00:32",
-      "title": "公告本公司114年度財務報告董事會召開日期",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150210"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150128-2",
-      "date": "2026-01-28",
-      "announced_date": "2026-01-28",
-      "fact_date": null,
-      "announced_time": "18:07:28",
-      "title": "(更正主旨)本公司2025年第四季財務報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150128"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150128-1",
-      "date": "2026-01-28",
-      "announced_date": "2026-01-28",
-      "fact_date": null,
-      "announced_time": "17:00:14",
-      "title": "本公司2024年第四季財務報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150128"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150114-1",
-      "date": "2026-01-14",
-      "announced_date": "2026-01-14",
-      "fact_date": null,
-      "announced_time": "14:29:06",
-      "title": "本公司召開2025年第四季法人說明會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150114"
-      }
-    },
-    {
-      "id": "mops-history-2303-1141219-1",
-      "date": "2025-12-19",
-      "announced_date": "2025-12-19",
-      "fact_date": null,
-      "announced_time": "14:06:54",
-      "title": "公告本公司取得機器設備之相關資料",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1141219"
-      }
-    },
-    {
-      "id": "mops-history-2303-1141217-3",
-      "date": "2025-12-17",
-      "announced_date": "2025-12-17",
-      "fact_date": null,
-      "announced_time": "16:01:37",
-      "title": "公告本公司董事會通過參與欣興電子股份有限公司現金增資",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1141217"
-      }
-    },
-    {
-      "id": "mops-history-2303-1141217-2",
-      "date": "2025-12-17",
-      "announced_date": "2025-12-17",
-      "fact_date": null,
-      "announced_time": "16:00:21",
-      "title": "本公司董事會通過資本預算執行案",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1141217"
-      }
-    },
-    {
-      "id": "mops-history-2303-1141205-1",
-      "date": "2025-12-05",
-      "announced_date": "2025-12-05",
-      "fact_date": null,
-      "announced_time": "17:11:27",
-      "title": "公告本公司114年限制員工權利新股之增資基準日",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1141205"
-      }
-    },
-    {
-      "id": "mops-history-2303-1141204-1",
-      "date": "2025-12-04",
-      "announced_date": "2025-12-04",
-      "fact_date": null,
-      "announced_time": "17:00:34",
-      "title": "本公司與Polar Semiconductor, LLC攜手合作強化美國 半導體在地製造能力",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1141204"
       }
     }
   ]

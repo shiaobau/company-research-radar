@@ -99,6 +99,38 @@
       ]
     }
   ],
+  "industry_overrides": {
+    "financial": {
+      "catalyst": {
+        "description": "以公告事件與金融獲利支撐判讀近期催化，不以月營收作為必要條件。",
+        "high_score_signal": "公開公告偏正向，且最新金融專用財報顯示獲利與權益緩衝穩健。",
+        "submetrics": [
+          { "id": "event_balance", "label": "事件正負平衡", "weight": 0.34, "formula": "event_balance", "source": "catalyst", "positive_field": "positive_event_count", "negative_field": "negative_event_count", "base": 60, "positive_weight": 12, "negative_weight": 24, "min_score": 20, "max_score": 92 },
+          { "id": "event_density", "label": "近期公告密度", "weight": 0.26, "formula": "threshold", "source": "catalyst", "field": "event_count", "direction": "higher", "bands": [{ "min": 4, "score": 88 }, { "min": 2, "score": 76 }, { "min": 1, "score": 68 }, { "min": 0, "score": 55 }] },
+          { "id": "financial_confirmation", "label": "金融基本面支撐", "weight": 0.4, "formula": "direct", "source": "financial", "field": "fundamental_support_score" }
+        ]
+      },
+      "revenueMomentum": {
+        "label": "獲利效率",
+        "description": "金融業以年化 ROE、年化 ROA 與是否維持獲利取代製造業月營收動能。",
+        "high_score_signal": "年化 ROE、ROA 與最新每股盈餘均呈現正向。",
+        "submetrics": [
+          { "id": "annualized_roe", "label": "年化 ROE", "weight": 0.42, "formula": "threshold", "source": "financial", "field": "annualized_roe_pct", "direction": "higher", "bands": [{ "min": 15, "score": 95 }, { "min": 10, "score": 86 }, { "min": 6, "score": 76 }, { "min": 3, "score": 62 }, { "min": 0, "score": 45 }, { "min": -999, "score": 25 }] },
+          { "id": "annualized_roa", "label": "年化 ROA", "weight": 0.38, "formula": "threshold", "source": "financial", "field": "annualized_roa_pct", "direction": "higher", "bands": [{ "min": 2, "score": 95 }, { "min": 1.2, "score": 86 }, { "min": 0.6, "score": 76 }, { "min": 0.2, "score": 62 }, { "min": 0, "score": 45 }, { "min": -999, "score": 25 }] },
+          { "id": "earnings_positive", "label": "本期每股盈餘", "weight": 0.2, "formula": "threshold", "source": "financial", "field": "eps", "direction": "higher", "bands": [{ "min": 0, "score": 80 }, { "min": -999, "score": 25 }] }
+        ]
+      },
+      "cashProfitQuality": {
+        "label": "資本與財務韌性",
+        "description": "以權益緩衝與當期獲利狀態檢視金融公司的承受能力；不把金融負債當作一般企業負債。",
+        "high_score_signal": "權益緩衝符合所屬金融業別的保守門檻，且最新期仍維持獲利。",
+        "submetrics": [
+          { "id": "equity_buffer", "label": "權益緩衝", "weight": 0.65, "formula": "direct", "source": "financial", "field": "equity_buffer_score" },
+          { "id": "profitability_stability", "label": "當期獲利狀態", "weight": 0.35, "formula": "direct", "source": "financial", "field": "profitability_stability_score" }
+        ]
+      }
+    }
+  },
   "score_bands": [
     { "id": "priority", "min": 75, "label": "優先觀察", "description": "核心百分制訊號明確偏強，列為優先閱讀與後續追蹤對象；不構成買賣建議。", "color": "#46b88a" },
     { "id": "monitor", "min": 60, "label": "持續追蹤", "description": "已有可追蹤條件，但部分子測項仍需確認趨勢、事件或風險。", "color": "#d6a94b" },

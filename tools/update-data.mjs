@@ -82,6 +82,109 @@ function sourceIdsForMarket(company, kind) {
   return [];
 }
 
+const FINANCIAL_REPORT_PROFILES = [
+  { id: "basi", label: "金融業", equityBands: [[8, 90], [6, 78], [4, 64], [2, 48], [-999, 30]] },
+  { id: "bd", label: "證券期貨業", equityBands: [[15, 90], [10, 78], [7, 64], [4, 48], [-999, 30]] },
+  { id: "fh", label: "金控業", equityBands: [[8, 90], [6, 78], [4, 64], [2, 48], [-999, 30]] },
+  { id: "ins", label: "保險業", equityBands: [[8, 90], [5, 78], [3, 64], [2, 48], [-999, 30]] }
+];
+
+function financialSourceId(market, statement, profile) {
+  return `${market === "TWSE" ? "twse" : "tpex"}_financial_${statement}_${profile}`;
+}
+
+function fieldValue(row, names) {
+  for (const name of names) {
+    if (Object.prototype.hasOwnProperty.call(row || {}, name)) return row[name];
+  }
+  return null;
+}
+
+function financialTicker(row) {
+  return String(fieldValue(row, ["SecuritiesCompanyCode", "\u516c\u53f8\u4ee3\u865f"]) || "").trim();
+}
+
+function financialProfileScore(income, balance, profile) {
+  const netIncome = toNumber(fieldValue(income, [
+    "\u672c\u671f\u6de8\u5229\uff08\u6de8\u640d\uff09",
+    "\u7e7c\u7e8c\u71df\u696d\u55ae\u4f4d\u672c\u671f\u6de8\u5229\uff08\u6de8\u640d\uff09"
+  ]));
+  const eps = toNumber(fieldValue(income, ["\u57fa\u672c\u6bcf\u80a1\u76c8\u9918\uff08\u5143\uff09"]));
+  const totalAssets = toNumber(fieldValue(balance, ["\u8cc7\u7522\u7e3d\u8a08"]));
+  const totalEquity = toNumber(fieldValue(balance, ["\u6b0a\u76ca\u7e3d\u8a08", "\u6b78\u5c6c\u65bc\u6bcd\u516c\u53f8\u696d\u4e3b\u4e4b\u6b0a\u76ca\u5408\u8a08"]));
+  const bookValue = toNumber(fieldValue(balance, ["\u6bcf\u80a1\u53c3\u8003\u6de8\u503c"]));
+  const complete = [netIncome, eps, totalAssets, totalEquity].every(Number.isFinite);
+  if (!complete) {
+    return {
+      net_income_thousand_twd: toNumber(netIncome),
+      total_assets_thousand_twd: toNumber(totalAssets),
+      total_equity_thousand_twd: toNumber(totalEquity),
+      annualized_roe_pct: null,
+      annualized_roa_pct: null,
+      equity_ratio_pct: null,
+      eps: round(eps, 2),
+      book_value_per_share: round(bookValue, 2),
+      equity_buffer_score: null,
+      profitability_stability_score: null,
+      fundamental_support_score: null
+    };
+  }
+  const quarter = toNumber(fieldValue(income, ["\u5b63\u5225", "Season"]));
+  const annualization = Number.isFinite(quarter) && quarter > 0 ? 4 / quarter : 4;
+  const annualizedRoe = totalEquity ? netIncome * annualization / totalEquity * 100 : null;
+  const annualizedRoa = totalAssets ? netIncome * annualization / totalAssets * 100 : null;
+  const equityRatio = totalAssets ? totalEquity / totalAssets * 100 : null;
+  const roeScore = scoreByThresholds(annualizedRoe, [[15, 95], [10, 86], [6, 76], [3, 62], [0, 45], [-999, 25]], 45);
+  const roaScore = scoreByThresholds(annualizedRoa, [[2, 95], [1.2, 86], [0.6, 76], [0.2, 62], [0, 45], [-999, 25]], 45);
+  const epsScore = scoreByThresholds(eps, [[0, 80], [-999, 25]], 25);
+  const equityBufferScore = scoreByThresholds(equityRatio, profile.equityBands, 30);
+  const profitabilityStabilityScore = Number.isFinite(netIncome) && Number.isFinite(eps)
+    ? (netIncome > 0 && eps >= 0 ? 84 : netIncome > 0 ? 68 : 28)
+    : null;
+  const fundamentalSupportScore = [roeScore, roaScore, epsScore, equityBufferScore]
+    .every(Number.isFinite)
+    ? Math.round(roeScore * 0.35 + roaScore * 0.3 + epsScore * 0.15 + equityBufferScore * 0.2)
+    : null;
+
+  return {
+    net_income_thousand_twd: toNumber(netIncome),
+    total_assets_thousand_twd: toNumber(totalAssets),
+    total_equity_thousand_twd: toNumber(totalEquity),
+    annualized_roe_pct: round(annualizedRoe),
+    annualized_roa_pct: round(annualizedRoa),
+    equity_ratio_pct: round(equityRatio),
+    eps: round(eps, 2),
+    book_value_per_share: round(bookValue, 2),
+    equity_buffer_score: Number.isFinite(equityBufferScore) ? Math.round(equityBufferScore) : null,
+    profitability_stability_score: profitabilityStabilityScore,
+    fundamental_support_score: fundamentalSupportScore
+  };
+}
+
+async function fetchSpecialFinancialStatements(companiesToUpdate) {
+  if (!companiesToUpdate.some((company) => company.industry_template === "financial")) return new Map();
+  const rows = await Promise.all(FINANCIAL_REPORT_PROFILES.flatMap((profile) => [
+    getCachedRows(financialSourceId("TWSE", "income", profile.id)),
+    getCachedRows(financialSourceId("TWSE", "balance", profile.id)),
+    getCachedRows(financialSourceId("TPEx", "income", profile.id)),
+    getCachedRows(financialSourceId("TPEx", "balance", profile.id))
+  ]));
+  const records = new Map();
+  let index = 0;
+  for (const profile of FINANCIAL_REPORT_PROFILES) {
+    for (const market of ["TWSE", "TPEx"]) {
+      const incomeRows = rows[index++];
+      const balanceRows = rows[index++];
+      for (const company of companiesToUpdate.filter((item) => item.industry_template === "financial" && item.market === market)) {
+        const income = incomeRows.find((row) => financialTicker(row) === company.ticker);
+        const balance = balanceRows.find((row) => financialTicker(row) === company.ticker);
+        if (income && balance && !records.has(company.id)) records.set(company.id, { profile, income, balance });
+      }
+    }
+  }
+  return records;
+}
+
 function pricePositionScore(positionPct) {
   if (!Number.isFinite(positionPct)) return 50;
   if (positionPct <= 15) return 45;
@@ -686,8 +789,55 @@ async function fetchFinancialData(companiesToUpdate = companies) {
   const incomeRows = [...twseIncome, ...tpexIncome];
   const balanceRows = [...twseBalance, ...tpexBalance];
   const companiesById = {};
+  const specialStatements = await fetchSpecialFinancialStatements(companiesToUpdate);
 
   for (const company of companiesToUpdate) {
+    if (company.industry_template === "financial") {
+      const statement = specialStatements.get(company.id);
+      const profileSourceIds = statement
+        ? [
+            financialSourceId(company.market, "income", statement.profile.id),
+            financialSourceId(company.market, "balance", statement.profile.id)
+          ]
+        : FINANCIAL_REPORT_PROFILES.flatMap((profile) => [
+            financialSourceId(company.market, "income", profile.id),
+            financialSourceId(company.market, "balance", profile.id)
+          ]);
+      if (!statement) {
+        companiesById[company.id] = {
+          ticker: company.ticker,
+          market: company.market,
+          status: "missing",
+          source_ids: profileSourceIds,
+          evidence_level: "none",
+          score: null,
+          rationale: "未在金融專用公開財報中找到可配對的損益表與資產負債表。"
+        };
+        continue;
+      }
+      const scoreData = financialProfileScore(statement.income, statement.balance, statement.profile);
+      const rocYear = toNumber(fieldValue(statement.income, ["\u5e74\u5ea6", "Year"]));
+      const fiscalYear = Number.isFinite(rocYear) ? String(rocYear + 1911) : null;
+      const fiscalQuarter = toNumber(fieldValue(statement.income, ["\u5b63\u5225", "Season"]));
+      const status = Number.isFinite(scoreData.fundamental_support_score) ? "ok" : "missing";
+      companiesById[company.id] = {
+        ticker: company.ticker,
+        market: company.market,
+        status,
+        source_ids: profileSourceIds,
+        evidence_level: status === "ok" ? "high" : "none",
+        year: fiscalYear,
+        quarter: fiscalQuarter,
+        financial_report_profile: statement.profile.id,
+        financial_report_profile_label: statement.profile.label,
+        ...scoreData,
+        score: scoreData.fundamental_support_score,
+        rationale: status === "ok"
+          ? `${fiscalYear || "最新"}Q${fiscalQuarter || ""} ${statement.profile.label}財報：年化 ROE ${scoreData.annualized_roe_pct}%、年化 ROA ${scoreData.annualized_roa_pct}%、權益比率 ${scoreData.equity_ratio_pct}%。`
+          : "金融專用財報欄位不足，暫不產生評分。"
+      };
+      continue;
+    }
     const income = incomeRows.find((item) => (item["公司代號"] || item.SecuritiesCompanyCode) === company.ticker);
     const balance = balanceRows.find((item) => (item["公司代號"] || item.SecuritiesCompanyCode) === company.ticker);
     if (!income || !balance) {

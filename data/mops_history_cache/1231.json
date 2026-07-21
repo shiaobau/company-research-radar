@@ -1,0 +1,521 @@
+{
+  "version": "1.0.0",
+  "source_id": "mops_history_api",
+  "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1",
+  "ticker": "1231",
+  "fetched_at": "2026-07-17T01:22:24.626Z",
+  "cache_status": "updated",
+  "as_of_date": null,
+  "queried_roc_years": [
+    "115",
+    "114"
+  ],
+  "event_count": 24,
+  "detail_count": 4,
+  "events": [
+    {
+      "id": "mops-history-1231-1150714-1",
+      "date": "2026-07-14",
+      "announced_date": "2026-07-14",
+      "fact_date": "2026-07-14",
+      "announced_time": "16:24:33",
+      "title": "公告本公司訂定115年除權息基準日及相關事宜",
+      "description": "1.董事會、股東會決議或公司決定日期:115/07/14 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除權息 3.普通股發放股利種類及金額: (1)現金股利：現金股利每股配發1.5元，總計新台幣447,681,718元。 (2)盈餘轉增資：股票股利每股配發1.0元，總計新台幣298,454,470元。 4.除權（息）交易日:115/07/30 5.最後過戶日:115/08/02 6.停止過戶起始日期:115/08/03 7.停止過戶截止日期:115/08/07 8.除權（息）基準日:115/08/07 9.債券最後申請轉換日期:不適用 10.債券停止轉換起始日期:不適用 11.債券停止轉換截止日期:不適用 12.普通股現金股利發放日期:115/09/04 13.現金股利之一部或全部是否以外幣發放(請填入「是」或「否」):否 14.外幣現金股利發放幣別:不適用 15.外幣現金股利發放對象:不適用 16.外幣現金股利匯率決定方式:不適用 17.其他應敘明事項: (1)本次盈餘轉增資發行新股案，業經金融監督管理委員會中華民國115年07月13日 金管會核准申報生效在案。 (2)增資股票採無實體發行以帳簿劃撥方式交付或以新股權利證書先行交付，發放 日期另行公告。",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150714"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150618-2",
+      "date": "2026-06-24",
+      "announced_date": "2026-06-24",
+      "fact_date": "2026-06-24",
+      "announced_time": "15:18:27",
+      "title": "公告本公司董事會授權董事長訂定除息除權基準日及相關事 宜",
+      "description": "1.事實發生日:115/06/24 2.公司名稱:聯華食品工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:本公司董事會授權董事長俟主管機關核准申報生效後，另訂除息除權基準日 並全權處理配息及配股率必要性之調整。 6.因應措施:除息除權基準日及相關事宜，俟董事長訂定後另行公告。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 無",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150618"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150618-1",
+      "date": "2026-06-24",
+      "announced_date": "2026-06-24",
+      "fact_date": "2026-06-24",
+      "announced_time": "15:17:04",
+      "title": "公告本公司115年股東常會重要決議事項",
+      "description": "1.股東常會日期:115/06/24 2.重要決議事項一、盈餘分配或盈虧撥補: 通過承認一一四年度盈餘分配案。 每股配發現金股利1.5元及股票股利1.0元。 3.重要決議事項二、章程修訂:無。 4.重要決議事項三、營業報告書及財務報表: 通過承認一一四年度營業報告書及財務報告案。 5.重要決議事項四、董監事選舉:無。 6.重要決議事項五、其他事項: 通過一一四年度盈餘轉增資發行新股案。 本次盈餘轉增資共計新台幣298,454,470元，發行新股29,845,447股。 7.其他應敘明事項:無。",
+      "clause": "第18款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150618"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150622-2",
+      "date": "2026-06-22",
+      "announced_date": "2026-06-22",
+      "fact_date": "2026-06-22",
+      "announced_time": "16:58:02",
+      "title": "公告本公司審計委員會、薪資報酬委員會及永續發展委員會 之委員逝世解任",
+      "description": "1.發生變動日期:115/06/22 2.功能性委員會名稱:審計委員會、薪資報酬委員會及永續發展委員會 3.舊任者姓名:張蔚誠 4.舊任者簡歷:本公司獨立董事 5.新任者姓名:不適用 6.新任者簡歷:不適用 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）:逝世 8.異動原因:逝世 9.原任期（例xx/xx/xx ~ xx/xx/xx）:審計委員會任期:114/06/19~117/06/18 薪資報酬委員會及永續發展委員會任期:114/06/30~117/06/18 10.新任生效日期:不適用 11.其他應敘明事項:本公司於115/06/22獲悉逝世消息。",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150622"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150622-1",
+      "date": "2026-06-22",
+      "announced_date": "2026-06-22",
+      "fact_date": null,
+      "announced_time": "16:57:10",
+      "title": "公告本公司獨立董事逝世解任",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150622"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150511-1",
+      "date": "2026-05-11",
+      "announced_date": "2026-05-11",
+      "fact_date": null,
+      "announced_time": "16:14:21",
+      "title": "更正公告本公司董事會通過對關係人捐贈事宜(更正事實發生 日)",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150511"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150505-2",
+      "date": "2026-05-08",
+      "announced_date": "2026-05-08",
+      "fact_date": null,
+      "announced_time": "17:15:41",
+      "title": "公告本公司董事會通過對關係人捐贈事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150505"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150505-1",
+      "date": "2026-05-08",
+      "announced_date": "2026-05-08",
+      "fact_date": null,
+      "announced_time": "17:14:45",
+      "title": "公告本公司董事會通過115年第一季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150505"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150420-1",
+      "date": "2026-04-30",
+      "announced_date": "2026-04-30",
+      "fact_date": null,
+      "announced_time": "16:52:19",
+      "title": "公告本公司115年第一季合併財務報告董事會預計召開日期為 115年5月8日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150420"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150226-1",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "18:20:47",
+      "title": "公告本公司董事會決議召開115年股東常會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150226"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150310-3",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "17:58:14",
+      "title": "董事會決議股利分派",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150310-2",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "17:57:10",
+      "title": "公告本公司董事會決議盈餘轉增資發行新股",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150310-1",
+      "date": "2026-03-10",
+      "announced_date": "2026-03-10",
+      "fact_date": null,
+      "announced_time": "17:38:12",
+      "title": "公告本公司董事會通過114年度合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150310"
+      }
+    },
+    {
+      "id": "mops-history-1231-1150209-1",
+      "date": "2026-03-02",
+      "announced_date": "2026-03-02",
+      "fact_date": null,
+      "announced_time": "16:05:18",
+      "title": "公告本公司114年度財務報告董事會預計召開日期為 115年3月10日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1150209"
+      }
+    },
+    {
+      "id": "mops-history-1231-1141231-1",
+      "date": "2025-12-31",
+      "announced_date": "2025-12-31",
+      "fact_date": null,
+      "announced_time": "17:21:58",
+      "title": "補充公告本公司觀音自地委建廠房工程及購置設備案相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1141231"
+      }
+    },
+    {
+      "id": "mops-history-1231-1141216-1",
+      "date": "2025-12-16",
+      "announced_date": "2025-12-16",
+      "fact_date": null,
+      "announced_time": "15:49:06",
+      "title": "公告本公司召開線上法說會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1141216"
+      }
+    },
+    {
+      "id": "mops-history-1231-1141105-1",
+      "date": "2025-11-07",
+      "announced_date": "2025-11-07",
+      "fact_date": null,
+      "announced_time": "17:25:30",
+      "title": "公告本公司董事會通過114年第三季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1141105"
+      }
+    },
+    {
+      "id": "mops-history-1231-1141030-1",
+      "date": "2025-10-30",
+      "announced_date": "2025-10-30",
+      "fact_date": null,
+      "announced_time": "17:25:00",
+      "title": "公告本公司114年第三季合併財務報告董事會預計召開日期為 114年11月7日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1141030"
+      }
+    },
+    {
+      "id": "mops-history-1231-1140807-1",
+      "date": "2025-08-07",
+      "announced_date": "2025-08-07",
+      "fact_date": null,
+      "announced_time": "17:17:10",
+      "title": "公告本公司董事會通過114年第二季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1140807"
+      }
+    },
+    {
+      "id": "mops-history-1231-1140804-1",
+      "date": "2025-08-05",
+      "announced_date": "2025-08-05",
+      "fact_date": null,
+      "announced_time": "14:40:09",
+      "title": "公告本公司訂定114年除權息基準日及相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1140804"
+      }
+    },
+    {
+      "id": "mops-history-1231-1140729-1",
+      "date": "2025-07-30",
+      "announced_date": "2025-07-30",
+      "fact_date": null,
+      "announced_time": "16:57:01",
+      "title": "公告本公司114年第二季合併財務報告董事會預計召開日期為 114年8月7日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1140729"
+      }
+    },
+    {
+      "id": "mops-history-1231-1140630-1",
+      "date": "2025-06-30",
+      "announced_date": "2025-06-30",
+      "fact_date": null,
+      "announced_time": "17:16:09",
+      "title": "公告本公司董事會通過總經理委任案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1140630"
+      }
+    },
+    {
+      "id": "mops-history-1231-1140627-6",
+      "date": "2025-06-30",
+      "announced_date": "2025-06-30",
+      "fact_date": null,
+      "announced_time": "17:14:33",
+      "title": "公告本公司董事會授權董事長訂定除息除權暨增資基準日及 相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "6",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1140627"
+      }
+    },
+    {
+      "id": "mops-history-1231-1140627-5",
+      "date": "2025-06-30",
+      "announced_date": "2025-06-30",
+      "fact_date": null,
+      "announced_time": "17:14:13",
+      "title": "公告本公司董事會決議委任第一屆永續發展委員會委員",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "5",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1140627"
+      }
+    }
+  ]
+}

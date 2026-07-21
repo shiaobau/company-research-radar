@@ -1,23 +1,54 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-07-16T06:26:11.601Z",
+  "generated_at": "2026-07-17T01:22:17.086Z",
   "collection_scope": "targeted_research_company",
   "source_status": [
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-16T06:19:38.979Z",
-      "row_count": 87,
+      "fetched_at": "2026-07-17T01:21:14.550Z",
+      "row_count": 101,
       "available": true
     },
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-16T06:19:39.321Z",
+      "fetched_at": "2026-07-17T01:21:14.901Z",
       "row_count": 69,
       "available": true
     }
   ],
-  "companies": [],
-  "total_events": 0
+  "companies": [
+    {
+      "ticker": "1231",
+      "company_id": "twse-1231",
+      "name": "聯華食",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-17T01:22:17.086Z",
+      "cache_path": "data/research_cache/1231.json"
+    },
+    {
+      "ticker": "2303",
+      "company_id": "twse-2303",
+      "name": "聯電",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-17T01:22:17.086Z",
+      "cache_path": "data/research_cache/2303.json"
+    },
+    {
+      "ticker": "2330",
+      "company_id": "twse-2330",
+      "name": "台積電",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-17T01:22:17.086Z",
+      "cache_path": "data/research_cache/2330.json"
+    }
+  ],
+  "total_events": 72
 }

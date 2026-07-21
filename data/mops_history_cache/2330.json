@@ -1,17 +1,39 @@
 {
   "version": "1.0.0",
   "source_id": "mops_history_api",
-  "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+  "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1",
   "ticker": "2330",
-  "fetched_at": "2026-07-16T05:37:30.262Z",
+  "fetched_at": "2026-07-17T01:22:39.474Z",
   "cache_status": "updated",
+  "as_of_date": null,
   "queried_roc_years": [
     "115",
     "114"
   ],
-  "event_count": 60,
+  "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2330-1150716-1",
+      "date": "2026-07-16",
+      "announced_date": "2026-07-16",
+      "fact_date": "2026-07-16",
+      "announced_time": "15:12:31",
+      "title": "台積公司2026年第二季每股盈餘新台幣27.25元",
+      "description": "1.事實發生日:115/07/16 2.公司名稱:台灣積體電路製造股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:不適用 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 台積公司今（16）日公佈2026年第二季財務報告，合併營收約新台幣1兆2,703億8千 萬元，稅後純益約新台幣7,065億6千萬元，每股盈餘為新台幣27.25元（折合美國存 託憑證每單位為4.31美元）。 與去年同期相較，2026年第二季營收增加了36.0%，稅後純益與每股盈餘皆增加了 77.4%。與前一季相較，2026年第二季營收增加了12.0%，稅後純益則增加了23.4%。 以上財務數字皆為合併財務報表數字，且係依照金管會認可之國際財務報導準則 （TIFRS）所編製。 若以美元計算，2026年第二季營收為402億，較去年同期增加了33.7%，較前一季增 加了12.0%。 2026年第二季毛利率為67.7%，營業利益率為60.3%，稅後純益率則為55.6%。 2奈米製程出貨佔台積公司2026年第二季晶圓銷售金額的3%；3奈米製程出貨佔全季 晶圓銷售金額的30%，5奈米製程出貨佔全季晶圓銷售金額的33%；7奈米製程出貨則 佔全季晶圓銷售金額的11%。總體而言，先進製程（包含7奈米及更先進製程）的營 收達到全季晶圓銷售金額的77%。 台積公司財務長暨發言人黃仁昭資深副總經理表示：「台積公司2026年第二季的業 績受惠於市場對我們先進製程技術的強大需求。進入2026年第三季，對台積公司先 進製程技術持續的強勁需求，包含2奈米製程技術的快速產能提升，將繼續支持我們 的業績表現。」 根據對當前業務狀況的評估，台積公司2026年第三季的業績展望如下： ‧合併營收預計介於446億美元到458億美元之間； 若以新台幣32元兌1美元匯率假設，則 ‧毛利率預計介於65%到67%之間； ‧營業利益率預計介於56%到58%之間。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2330",
+        "marketKind": "sii",
+        "enterDate": "1150716"
+      }
+    },
     {
       "id": "mops-history-2330-1150713-1",
       "date": "2026-07-13",
@@ -23,7 +45,7 @@
       "clause": "第51款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -44,7 +66,7 @@
       "clause": "第20款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -65,7 +87,7 @@
       "clause": "第8款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -79,14 +101,14 @@
       "id": "mops-history-2330-1150629-1",
       "date": "2026-06-29",
       "announced_date": "2026-06-29",
-      "fact_date": "2026-07-16",
+      "fact_date": null,
       "announced_time": "18:50:00",
       "title": "公告本公司115年第二季法人說明會將於115年7月16日召開",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/07/16 1.召開法人說明會之日期：115/07/16 2.召開法人說明會之時間：14 時 00 分 3.召開法人說明會之地點：台北文華東方酒店B2 文華廳（台北市松山區敦化北路158號） 4.法人說明會擇要訊息：(1)公布本公司2026年第2季財務報告及2026年第3季業績展望。(2)參加方式：請參見https://investor.tsmc.com/chinese/quarterly-results/2026/q2 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-      "clause": "第12款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -107,7 +129,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -128,7 +150,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -149,7 +171,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -170,7 +192,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -191,7 +213,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -212,7 +234,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -233,7 +255,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -254,7 +276,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -275,7 +297,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -296,7 +318,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -317,7 +339,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -338,7 +360,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -359,7 +381,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -380,7 +402,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -401,7 +423,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -422,7 +444,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -443,7 +465,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -464,7 +486,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -485,7 +507,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -493,783 +515,6 @@
         "companyId": "2330",
         "marketKind": "sii",
         "enterDate": "1150518"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150515-4",
-      "date": "2026-05-15",
-      "announced_date": "2026-05-15",
-      "fact_date": null,
-      "announced_time": "19:24:19",
-      "title": "本公司公告處分世界先進積體電路股份有限公司股票",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "4",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150515"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150515-3",
-      "date": "2026-05-15",
-      "announced_date": "2026-05-15",
-      "fact_date": null,
-      "announced_time": "19:01:24",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150515"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150515-1",
-      "date": "2026-05-15",
-      "announced_date": "2026-05-15",
-      "fact_date": null,
-      "announced_time": "15:15:47",
-      "title": "台積公司擬出售8.1%世界先進公司股權",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150515"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150514-1",
-      "date": "2026-05-14",
-      "announced_date": "2026-05-14",
-      "fact_date": null,
-      "announced_time": "18:12:05",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150514"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150513-2",
-      "date": "2026-05-13",
-      "announced_date": "2026-05-13",
-      "fact_date": null,
-      "announced_time": "18:49:50",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150513"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150513-1",
-      "date": "2026-05-13",
-      "announced_date": "2026-05-13",
-      "fact_date": null,
-      "announced_time": "14:29:32",
-      "title": "公告本公司115年度第2期無擔保普通公司債(綠色債券) 主要發行條件",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150513"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150512-9",
-      "date": "2026-05-12",
-      "announced_date": "2026-05-12",
-      "fact_date": null,
-      "announced_time": "19:31:56",
-      "title": "公告本公司董事會決議辦理限制員工權利新股收回註銷 減資事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "9",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150512"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150512-8",
-      "date": "2026-05-12",
-      "announced_date": "2026-05-12",
-      "fact_date": null,
-      "announced_time": "19:20:15",
-      "title": "本公司代子公司TSMC Arizona Corporation公告 董事會決議增資",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "8",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150512"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150512-7",
-      "date": "2026-05-12",
-      "announced_date": "2026-05-12",
-      "fact_date": null,
-      "announced_time": "19:17:00",
-      "title": "本公司董事會核准增資子公司TSMC Arizona",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "7",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150512"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150512-6",
-      "date": "2026-05-12",
-      "announced_date": "2026-05-12",
-      "fact_date": null,
-      "announced_time": "19:13:56",
-      "title": "本公司董事會核准機器設備、不動產及資本化租賃資產資本預算案",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "6",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150512"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150512-5",
-      "date": "2026-05-12",
-      "announced_date": "2026-05-12",
-      "fact_date": null,
-      "announced_time": "18:52:22",
-      "title": "本公司訂定民國115年第一季之現金股利除息交易日",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "5",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150512"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150512-4",
-      "date": "2026-05-12",
-      "announced_date": "2026-05-12",
-      "fact_date": null,
-      "announced_time": "18:46:42",
-      "title": "本公司董事會決議股利分派",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "4",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150512"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150512-3",
-      "date": "2026-05-12",
-      "announced_date": "2026-05-12",
-      "fact_date": null,
-      "announced_time": "18:33:04",
-      "title": "本公司民國115年度第一季合併財務報告業經 董事會決議通過",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150512"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150512-2",
-      "date": "2026-05-12",
-      "announced_date": "2026-05-12",
-      "fact_date": null,
-      "announced_time": "18:25:37",
-      "title": "台積公司董事會決議",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150512"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150512-1",
-      "date": "2026-05-12",
-      "announced_date": "2026-05-12",
-      "fact_date": null,
-      "announced_time": "16:46:26",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150512"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150511-1",
-      "date": "2026-05-11",
-      "announced_date": "2026-05-11",
-      "fact_date": null,
-      "announced_time": "17:22:32",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150511"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150508-4",
-      "date": "2026-05-08",
-      "announced_date": "2026-05-08",
-      "fact_date": null,
-      "announced_time": "17:52:16",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "4",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150508"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150508-3",
-      "date": "2026-05-08",
-      "announced_date": "2026-05-08",
-      "fact_date": null,
-      "announced_time": "16:48:50",
-      "title": "Sony與台積公司初步達成下一世代 影像感測器策略合作協議",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150508"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150508-2",
-      "date": "2026-05-08",
-      "announced_date": "2026-05-08",
-      "fact_date": null,
-      "announced_time": "14:10:19",
-      "title": "台積公司2026年4月營收報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150508"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150507-1",
-      "date": "2026-05-07",
-      "announced_date": "2026-05-07",
-      "fact_date": null,
-      "announced_time": "18:31:16",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150507"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150506-2",
-      "date": "2026-05-06",
-      "announced_date": "2026-05-06",
-      "fact_date": null,
-      "announced_time": "19:17:41",
-      "title": "本公司代子公司Emerging Fund, L.P.公告處分有價證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150506"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150506-1",
-      "date": "2026-05-06",
-      "announced_date": "2026-05-06",
-      "fact_date": null,
-      "announced_time": "17:50:48",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150506"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150505-1",
-      "date": "2026-05-05",
-      "announced_date": "2026-05-05",
-      "fact_date": null,
-      "announced_time": "18:19:27",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150505"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150430-1",
-      "date": "2026-04-30",
-      "announced_date": "2026-04-30",
-      "fact_date": null,
-      "announced_time": "16:29:38",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150430"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150429-2",
-      "date": "2026-04-29",
-      "announced_date": "2026-04-29",
-      "fact_date": null,
-      "announced_time": "17:58:29",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150429"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150429-1",
-      "date": "2026-04-29",
-      "announced_date": "2026-04-29",
-      "fact_date": null,
-      "announced_time": "06:44:29",
-      "title": "本公司代子公司TSMC Partners Ltd.公告處分Arm Holdings plc股票",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150429"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150428-1",
-      "date": "2026-04-28",
-      "announced_date": "2026-04-28",
-      "fact_date": null,
-      "announced_time": "18:14:10",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150428"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150427-1",
-      "date": "2026-04-27",
-      "announced_date": "2026-04-27",
-      "fact_date": null,
-      "announced_time": "18:08:27",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150427"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150424-1",
-      "date": "2026-04-24",
-      "announced_date": "2026-04-24",
-      "fact_date": null,
-      "announced_time": "17:07:08",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150424"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150423-2",
-      "date": "2026-04-23",
-      "announced_date": "2026-04-23",
-      "fact_date": null,
-      "announced_time": "18:06:50",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150423"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150423-1",
-      "date": "2026-04-23",
-      "announced_date": "2026-04-23",
-      "fact_date": null,
-      "announced_time": "17:27:45",
-      "title": "本公司將舉辦『TSMC 2026 Investor Day』",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150423"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150422-1",
-      "date": "2026-04-22",
-      "announced_date": "2026-04-22",
-      "fact_date": null,
-      "announced_time": "17:54:13",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150422"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150421-1",
-      "date": "2026-04-21",
-      "announced_date": "2026-04-21",
-      "fact_date": null,
-      "announced_time": "17:37:18",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150421"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150420-1",
-      "date": "2026-04-20",
-      "announced_date": "2026-04-20",
-      "fact_date": null,
-      "announced_time": "18:54:43",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150420"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150417-2",
-      "date": "2026-04-17",
-      "announced_date": "2026-04-17",
-      "fact_date": null,
-      "announced_time": "16:54:11",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150417"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150417-1",
-      "date": "2026-04-17",
-      "announced_date": "2026-04-17",
-      "fact_date": null,
-      "announced_time": "15:34:34",
-      "title": "本公司董事會決議變更民國115年股東常會召集事由",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150417"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150416-2",
-      "date": "2026-04-16",
-      "announced_date": "2026-04-16",
-      "fact_date": null,
-      "announced_time": "19:57:56",
-      "title": "公告本公司海外財務報告因適用兩地會計原則不一致 之差異調節內容",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2330",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii",
-        "enterDate": "1150416"
       }
     }
   ]

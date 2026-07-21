@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-16T06:19:50.905Z",
+  "collected_at": "2026-07-17T01:22:17.086Z",
   "company": {
-    "id": "tw-2303-umc",
+    "id": "twse-2303",
     "ticker": "2303",
     "name": "聯電",
     "market": "TWSE",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "0795027c792e8e64afd0",
-      "date": "2026-07-15",
-      "announced_date": "2026-07-15",
-      "fact_date": "2026-07-15",
-      "announced_time": "171127",
-      "title": "代子公司宏誠創業投資(股)公司公告處分台灣半導體(股)公司普通股之相關資料",
-      "description": "1.證券名稱: 台灣半導體(股)公司普通股 2.交易日期:115/1/23~115/7/15 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:不適用 民國115年07月15日 5.交易數量、每單位價格及交易總金額: 交易數量: 3,706,000股 每單位價格: 平均單價NTD 81.63 交易總金額: NTD 302,534,400 6.處分利益（或損失）（取得有價證券者不適用）: NTD 137,617,400 7.與交易標的公司之關係: 無 8.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 數量: 3,035,000股 金額: NTD 135,057,500 持股比例: 1.15% 權利受限情形:無 9.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列之有價證券投 資（含本次交易）占公司最近期財務報表中總資產及歸屬於母公司業主之權益之比例 暨最近期財務報表中營運資金數額: 佔總資產比率: 2.42% 佔歸屬於母公司股東權益比率:3.32% 最近期財務報表中營運資金: NTD44,980,640,000 10.取得或處分之具體目的: 理財計畫 11.本次交易表示異議董事之意見: 不適用 12.本次交易為關係人交易: 否 13.交易相對人及其與公司之關係: 不適用 14.監察人承認或審計委員會同意日期: 不適用 15.前已就同一件事件發布重大訊息日期: 不適用 16.其他敘明事項: 無",
-      "clause": "第20款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-2303-1150715-1",
       "date": "2026-07-15",
@@ -36,7 +21,7 @@
       "clause": "第20款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -57,7 +42,7 @@
       "clause": "第12款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -78,7 +63,7 @@
       "clause": "第35款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -99,7 +84,7 @@
       "clause": "第51款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -120,7 +105,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -141,7 +126,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -162,7 +147,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -183,7 +168,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -204,7 +189,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -225,7 +210,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -246,7 +231,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -267,7 +252,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -288,7 +273,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -309,7 +294,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -330,7 +315,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -351,7 +336,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -372,7 +357,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -393,7 +378,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -414,7 +399,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -435,7 +420,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -456,7 +441,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -477,7 +462,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -498,7 +483,7 @@
       "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
@@ -507,13 +492,34 @@
         "marketKind": "sii",
         "enterDate": "1150513"
       }
+    },
+    {
+      "id": "mops-history-2303-1150512-1",
+      "date": "2026-05-12",
+      "announced_date": "2026-05-12",
+      "fact_date": null,
+      "announced_time": "16:07:45",
+      "title": "公告本公司買回股份之金額達新台幣三億元以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150512"
+      }
     }
   ],
   "references": [
     {
       "id": "mops-history-2303",
       "title": "聯電 MOPS 歷史重大訊息",
-      "url": "https://mops.twse.com.tw/mops/#/web/t05st01?co_id=2303",
+      "url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1",
       "source_id": "mops_history_search",
       "source_type": "official_history_api",
       "claim_type": "official_search_reference",
@@ -523,7 +529,7 @@
     {
       "id": "company-website-2303",
       "title": "聯電 官方網站",
-      "url": "https://www.umc.com/en/Home/Index",
+      "url": "https://WWW.UMC.COM",
       "source_id": "company_website",
       "source_type": "company_reference",
       "claim_type": "company_published_reference",
@@ -535,15 +541,15 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-16T06:19:38.979Z",
-      "row_count": 87,
+      "fetched_at": "2026-07-17T01:21:14.550Z",
+      "row_count": 101,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-16T05:37:25.900Z",
-      "row_count": 60,
+      "cache_status": "updated",
+      "fetched_at": "2026-07-17T01:22:31.821Z",
+      "row_count": 24,
       "detail_count": 4,
       "available": true
     }

@@ -283,17 +283,39 @@ function eventRecord(history, observationDate, lookbackDays, taxonomy, positiveP
   };
 }
 
-async function governanceRecord(rawDir, company, observationDate) {
-  const file = path.join(rawDir, "governance", `${company.ticker}.json`);
-  const source = await optionalJson(file);
-  if (!source?.as_of_date || source.as_of_date > observationDate) {
-    return { status: "missing", reason: "No dated shareholder, insider-transfer and violation snapshot was collected." };
+function previousMonthPeriod(date) {
+  const value = new Date(`${date}T00:00:00Z`);
+  value.setUTCMonth(value.getUTCMonth() - 1);
+  return { year: value.getUTCFullYear(), month: value.getUTCMonth() + 1 };
+}
+
+async function datedGovernanceRecord(rawDir, company, observationDate, source) {
+  const period = previousMonthPeriod(observationDate);
+  const holdingFile = path.join(rawDir, "governance", "holdings", `${company.ticker}-${period.year}-${String(period.month).padStart(2, "0")}.json`);
+  const transferFile = path.join(rawDir, "governance", `transfers-${company.market}.json`);
+  const violationFile = path.join(rawDir, "governance", `violations-${company.market}.json`);
+  const [holding, transfers, violations] = await Promise.all([optionalJson(holdingFile), optionalJson(transferFile), optionalJson(violationFile)]);
+  const holdingAvailable = holding?.as_of_date && addDays(holding.as_of_date, Number(source.monthly_holdings_release_lag_days)) <= observationDate;
+  if (holding?.status !== "ok" || !holdingAvailable || transfers?.status !== "ok" || violations?.status !== "ok") {
+    return { status: "missing", reason: "A dated MOPS governance source was unavailable." };
   }
-  const required = ["major_shareholder_count", "insider_transfer_count", "disclosure_violation_count"];
-  if (required.some((field) => !Number.isFinite(Number(source[field])))) {
-    return { status: "missing", reason: "The dated governance snapshot did not include every required field." };
-  }
-  return { status: "ok", ...source, source_file: path.relative(root, file) };
+  const transferStart = addDays(observationDate, -Number(source.transfer_lookback_days));
+  const violationStart = addDays(observationDate, -Number(source.violation_lookback_days));
+  const transferRecords = (transfers.records || []).filter((record) => record.ticker === company.ticker && record.announced_date >= transferStart && record.announced_date <= observationDate);
+  const violationRecords = (violations.records || []).filter((record) => record.ticker === company.ticker && record.issued_date >= violationStart && record.issued_date <= observationDate);
+  return {
+    status: "ok",
+    as_of_date: holding.as_of_date,
+    major_shareholder_count: Number(holding.major_shareholder_count),
+    insider_transfer_count: transferRecords.length,
+    disclosure_violation_count: violationRecords.length,
+    source_ids: [holding.source_id, transfers.source_id, violations.source_id],
+    source_urls: [holding.source_url, transfers.source_url, violations.source_url],
+    source_files: [holdingFile, transferFile, violationFile].map((file) => path.relative(root, file)),
+    major_shareholders: holding.major_shareholders || [],
+    transfer_lookback_start: transferStart,
+    violation_lookback_start: violationStart
+  };
 }
 
 function evaluateDefinition(definition, sources) {
@@ -339,14 +361,29 @@ function scoreDimensions(rules, sources) {
   return { complete: true, score: Math.round(rows.reduce((sum, row) => sum + row.score * row.weight, 0) / weight), rows, missing_dimensions: [] };
 }
 
-function correlation(points) {
+function correlation(points, outcomeKey) {
   if (points.length < 3) return null;
   const xMean = average(points.map((point) => point.score));
-  const yMean = average(points.map((point) => point.return_60d_pct));
-  const numerator = points.reduce((sum, point) => sum + (point.score - xMean) * (point.return_60d_pct - yMean), 0);
+  const yMean = average(points.map((point) => point.outcomes[outcomeKey]));
+  const numerator = points.reduce((sum, point) => sum + (point.score - xMean) * (point.outcomes[outcomeKey] - yMean), 0);
   const x = Math.sqrt(points.reduce((sum, point) => sum + (point.score - xMean) ** 2, 0));
-  const y = Math.sqrt(points.reduce((sum, point) => sum + (point.return_60d_pct - yMean) ** 2, 0));
+  const y = Math.sqrt(points.reduce((sum, point) => sum + (point.outcomes[outcomeKey] - yMean) ** 2, 0));
   return x && y ? round(numerator / (x * y), 3) : null;
+}
+
+function coverageSummary(snapshots) {
+  const complete = snapshots.filter((snapshot) => snapshot.complete);
+  const insufficientHistory = snapshots.filter((snapshot) => {
+    if (snapshot.complete || !snapshot.company?.listing_date) return false;
+    const requiredHistoryStart = addDays(snapshot.observation_date, -365);
+    const needsHistory = snapshot.missing_dimensions.includes("營收動能") || snapshot.missing_dimensions.includes("股價位置與趨勢");
+    return needsHistory && snapshot.company.listing_date > requiredHistoryStart;
+  });
+  return {
+    complete_rate_pct: round(complete.length / snapshots.length * 100, 1),
+    incomplete_due_to_pre_observation_history: insufficientHistory.length,
+    incomplete_due_to_source_or_metric_coverage: snapshots.length - complete.length - insufficientHistory.length
+  };
 }
 
 async function main() {
@@ -360,6 +397,14 @@ async function main() {
     loadEventTaxonomy(path.join(dataDir, "event_taxonomy.json")),
     readJson(path.join(outputDir, "cohort.json"))
   ]);
+  const requestedObservations = argValue("observation-dates", "");
+  const observationDates = requestedObservations
+    ? requestedObservations.split(",").map((date) => date.trim()).filter(Boolean)
+    : (cohort.observation_dates || []);
+  const requestedForwardDays = argValue("forward-return-days", "");
+  const forwardReturnDays = requestedForwardDays
+    ? requestedForwardDays.split(",").map((days) => Number(days.trim())).filter(Number.isFinite)
+    : (cohort.timeline?.forward_return_days || config.timeline.forward_return_days);
   const snapshots = [];
   for (const template of cohort.templates || []) {
     for (const company of template.companies || []) {
@@ -368,14 +413,14 @@ async function main() {
       const historyFile = path.join(rawDir, "mops_history", `${company.ticker}.json`);
       const priceHistory = await optionalJson(priceFile);
       const history = await optionalJson(historyFile);
-      for (const observationDate of cohort.observation_dates || []) {
+      for (const observationDate of observationDates) {
         const [revenue, financial, ownership] = await Promise.all([
           selectRevenue(rawDir, enriched, observationDate, config.sources.mops_monthly_revenue.publication_lag_days),
           selectFinancial(rawDir, enriched, observationDate, config.sources.mops_financial_statements.publication_lag_days),
-          governanceRecord(rawDir, enriched, observationDate)
+          datedGovernanceRecord(rawDir, enriched, observationDate, config.sources.historical_governance)
         ]);
         const market = selectMarket(priceHistory, observationDate);
-        const catalyst = eventRecord(history, observationDate, config.timeline.event_lookback_days, taxonomy, config.event_classification.positive_patterns || []);
+        const catalyst = eventRecord(history, observationDate, cohort.timeline?.event_lookback_days || config.timeline.event_lookback_days, taxonomy, config.event_classification.positive_patterns || []);
         const risk = catalyst.status === "ok" && ownership.status === "ok"
           ? { status: "ok", negative_event_points: catalyst.negative_event_points, review_event_count: catalyst.review_event_count, disclosure_violation_count: ownership.disclosure_violation_count, source_id: catalyst.source_id }
           : { status: "missing", reason: "Risk requires both dated MOPS events and dated violation data." };
@@ -389,7 +434,7 @@ async function main() {
           missing_dimensions: scoring.missing_dimensions,
           dimensions: scoring.rows,
           sources,
-          outcomes: forwardReturns(priceHistory, observationDate, config.timeline.forward_return_days)
+          outcomes: forwardReturns(priceHistory, observationDate, forwardReturnDays)
         });
       }
     }
@@ -400,16 +445,20 @@ async function main() {
     version: "1.0.0",
     generated_at: new Date().toISOString(),
     backtest_id: backtestId,
+    observation_dates: observationDates,
+    forward_return_days: forwardReturnDays,
     methodology: "Point-in-time: every source record must be dated on or before observation_date. No current source-cache value is used as a historical substitute. Total score exists only when all six core dimensions are present.",
     observations: snapshots.length,
     complete_observations: complete.length,
     incomplete_observations: snapshots.length - complete.length,
+    coverage: coverageSummary(snapshots),
     missing_by_dimension: missing,
     complete_score_average: round(average(complete.map((snapshot) => snapshot.score))),
     forward_20d_average_pct: round(average(complete.map((snapshot) => snapshot.outcomes.return_20d_pct))),
     forward_60d_average_pct: round(average(complete.map((snapshot) => snapshot.outcomes.return_60d_pct))),
     forward_120d_average_pct: round(average(complete.map((snapshot) => snapshot.outcomes.return_120d_pct))),
-    score_return_60d_correlation: correlation(complete.filter((snapshot) => Number.isFinite(snapshot.outcomes.return_60d_pct))),
+    score_return_20d_correlation: correlation(complete.filter((snapshot) => Number.isFinite(snapshot.outcomes.return_20d_pct)), "return_20d_pct"),
+    score_return_60d_correlation: correlation(complete.filter((snapshot) => Number.isFinite(snapshot.outcomes.return_60d_pct)), "return_60d_pct"),
     note: "Incomplete observations are retained to expose source coverage gaps; they are excluded from any score-performance statistic."
   };
   await writeJson(path.join(outputDir, "snapshots.json"), { version: "1.0.0", generated_at: new Date().toISOString(), snapshots });

@@ -79,11 +79,18 @@ function buildFacts(company, datasets) {
   }
 
   if (financial?.status === "ok" && financial.year && financial.quarter) {
-    const metrics = [
-      isFiniteNumber(financial.gross_margin_pct) ? `毛利率 ${formatPercent(financial.gross_margin_pct)}` : "",
-      isFiniteNumber(financial.operating_margin_pct) ? `營益率 ${formatPercent(financial.operating_margin_pct)}` : "",
-      isFiniteNumber(financial.eps) ? `EPS ${formatNumber(financial.eps)}` : ""
-    ].filter(Boolean);
+    const metrics = company.industry_template === "financial"
+      ? [
+          isFiniteNumber(financial.annualized_roe_pct) ? `年化 ROE ${formatPercent(financial.annualized_roe_pct)}` : "",
+          isFiniteNumber(financial.annualized_roa_pct) ? `年化 ROA ${formatPercent(financial.annualized_roa_pct)}` : "",
+          isFiniteNumber(financial.equity_ratio_pct) ? `權益比率 ${formatPercent(financial.equity_ratio_pct)}` : "",
+          isFiniteNumber(financial.eps) ? `EPS ${formatNumber(financial.eps)}` : ""
+        ].filter(Boolean)
+      : [
+          isFiniteNumber(financial.gross_margin_pct) ? `毛利率 ${formatPercent(financial.gross_margin_pct)}` : "",
+          isFiniteNumber(financial.operating_margin_pct) ? `營益率 ${formatPercent(financial.operating_margin_pct)}` : "",
+          isFiniteNumber(financial.eps) ? `EPS ${formatNumber(financial.eps)}` : ""
+        ].filter(Boolean);
     facts.push(fact("financial_snapshot", "最新財報", metrics.length ? `${financial.year} Q${financial.quarter}：${metrics.join("；")}。` : "", financial.source_ids));
   }
 

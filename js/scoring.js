@@ -24,7 +24,14 @@
   }
 
   function dimensionsFor(company, rules) {
-    if (rules.common_dimensions) return rules.common_dimensions;
+    if (rules.common_dimensions) {
+      const overrides = rules.industry_overrides?.[company.industry_template] || {};
+      return rules.common_dimensions.map((dimension) => (
+        overrides[dimension.id]
+          ? { ...dimension, ...overrides[dimension.id], id: dimension.id }
+          : dimension
+      ));
+    }
     return rules.industries?.[company.industry_template]?.dimensions || [];
   }
 
@@ -229,5 +236,5 @@
     };
   }
 
-  window.RadarScoring = { computeCompanyScore, scoreBand };
+  window.RadarScoring = { computeCompanyScore, dimensionsFor, scoreBand };
 })();

@@ -13,6 +13,14 @@
     "forward_return_days": [20, 60, 120],
     "event_lookback_days": 90
   },
+  "presets": {
+    "full_six_2026_h1": {
+      "description": "Three point-in-time observations with a complete 90-day governance and violation lookback window.",
+      "observation_dates": ["2026-04-20", "2026-05-20", "2026-06-19"],
+      "forward_return_days": [20],
+      "event_lookback_days": 90
+    }
+  },
   "event_classification": {
     "positive_patterns": ["取得訂單", "簽訂合約", "策略合作", "新產品", "量產", "啟用", "獲准", "核准", "收購", "併購"],
     "note": "僅把未被風險分類器標記為負向或待閱讀的公告，且命中此清單者計為正向催化；模式本身不使用產業專屬字詞。"
@@ -51,7 +59,17 @@
     },
     "historical_governance": {
       "enabled": true,
-      "require_dated_source": true
+      "require_dated_source": true,
+      "monthly_holdings_api": "https://mops.twse.com.tw/mops/api/query6_1",
+      "monthly_holdings_release_lag_days": 15,
+      "transfer_redirect_api": "https://mops.twse.com.tw/mops/api/redirectToOld",
+      "transfer_result_api": "https://mopsov.twse.com.tw/mops/web/ajax_t56sb21",
+      "transfer_lookback_days": 90,
+      "violation_lookback_days": 90,
+      "violation_sources": {
+        "TWSE": "https://openapi.twse.com.tw/v1/opendata/t187ap23_L",
+        "TPEx": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap23_O"
+      }
     }
   },
   "scoring": {

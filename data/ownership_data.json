@@ -1,6 +1,6 @@
 {
-  "version": "0.7.0",
-  "generated_at": "2026-07-16T06:28:16.589Z",
+  "version": "0.8.0",
+  "generated_at": "2026-07-20T08:27:29.569Z",
   "sources": [
     {
       "id": "twse_major_shareholders",
@@ -46,8 +46,8 @@
     }
   ],
   "companies": {
-    "twse-1213": {
-      "ticker": "1213",
+    "twse-1231": {
+      "ticker": "1231",
       "market": "TWSE",
       "status": "ok",
       "source_ids": [
@@ -63,99 +63,18 @@
       "rationale": "持股逾 10% 大股東 2 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
       "major_shareholders": [
         {
-          "name": "旭順食品股份有限公司",
+          "name": "國衡投資有限公司",
           "source_id": "twse_major_shareholders"
         },
         {
-          "name": "寶亞有限公司",
+          "name": "鑫德投資有限公司",
           "source_id": "twse_major_shareholders"
         }
       ],
       "insider_transfers": [],
       "violations": []
     },
-    "tpex-1595": {
-      "ticker": "1595",
-      "market": "TPEx",
-      "status": "ok",
-      "source_ids": [
-        "tpex_major_shareholders",
-        "tpex_insider_transfer",
-        "tpex_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 0,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 63,
-      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "tw-1707-grapeking": {
-      "ticker": "1707",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_major_shareholders",
-        "twse_insider_transfer",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 0,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 63,
-      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "twse-1909": {
-      "ticker": "1909",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_major_shareholders",
-        "twse_insider_transfer",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 1,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 73,
-      "rationale": "持股逾 10% 大股東 1 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [
-        {
-          "name": "寶隆國際股份有限公司",
-          "source_id": "twse_major_shareholders"
-        }
-      ],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "twse-2301": {
-      "ticker": "2301",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_major_shareholders",
-        "twse_insider_transfer",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 0,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 63,
-      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "tw-2303-umc": {
+    "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
       "status": "ok",
@@ -174,7 +93,7 @@
       "insider_transfers": [],
       "violations": []
     },
-    "tw-2330-tsmc": {
+    "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
       "status": "ok",
@@ -193,156 +112,8 @@
       "insider_transfers": [],
       "violations": []
     },
-    "twse-2344": {
-      "ticker": "2344",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_major_shareholders",
-        "twse_insider_transfer",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 1,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 73,
-      "rationale": "持股逾 10% 大股東 1 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [
-        {
-          "name": "華新麗華股份有限公司",
-          "source_id": "twse_major_shareholders"
-        }
-      ],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "twse-2345": {
-      "ticker": "2345",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_major_shareholders",
-        "twse_insider_transfer",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 0,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 63,
-      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "tw-2454-mediatek": {
-      "ticker": "2454",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_major_shareholders",
-        "twse_insider_transfer",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 0,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 63,
-      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "twse-3044": {
-      "ticker": "3044",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_major_shareholders",
-        "twse_insider_transfer",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 0,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 63,
-      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "tw-3164-genmont": {
-      "ticker": "3164",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_major_shareholders",
-        "twse_insider_transfer",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 0,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 63,
-      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "tw-3711-aseh": {
-      "ticker": "3711",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_major_shareholders",
-        "twse_insider_transfer",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 1,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 73,
-      "rationale": "持股逾 10% 大股東 1 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [
-        {
-          "name": "張虔生",
-          "source_id": "twse_major_shareholders"
-        }
-      ],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "twse-3712": {
-      "ticker": "3712",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_major_shareholders",
-        "twse_insider_transfer",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 1,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 73,
-      "rationale": "持股逾 10% 大股東 1 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [
-        {
-          "name": "富士臨國際投資股份有限公司",
-          "source_id": "twse_major_shareholders"
-        }
-      ],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "tpex-6167": {
-      "ticker": "6167",
+    "tpex-6023": {
+      "ticker": "6023",
       "market": "TPEx",
       "status": "ok",
       "source_ids": [
@@ -358,153 +129,10 @@
       "rationale": "持股逾 10% 大股東 1 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
       "major_shareholders": [
         {
-          "name": "佰鴻工業股份有限公司",
+          "name": "元大金融控股股份有限公司",
           "source_id": "tpex_major_shareholders"
         }
       ],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "tpex-6171": {
-      "ticker": "6171",
-      "market": "TPEx",
-      "status": "ok",
-      "source_ids": [
-        "tpex_major_shareholders",
-        "tpex_insider_transfer",
-        "tpex_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 2,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 73,
-      "rationale": "持股逾 10% 大股東 2 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [
-        {
-          "name": "大城建設股份有限公司",
-          "source_id": "tpex_major_shareholders"
-        },
-        {
-          "name": "賴源釗",
-          "source_id": "tpex_major_shareholders"
-        }
-      ],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "tw-6488-globalwafers": {
-      "ticker": "6488",
-      "market": "TPEx",
-      "status": "ok",
-      "source_ids": [
-        "tpex_major_shareholders",
-        "tpex_insider_transfer",
-        "tpex_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 1,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 73,
-      "rationale": "持股逾 10% 大股東 1 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [
-        {
-          "name": "中美矽晶製品股份有限公司",
-          "source_id": "tpex_major_shareholders"
-        }
-      ],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "tpex-6735": {
-      "ticker": "6735",
-      "market": "TPEx",
-      "status": "ok",
-      "source_ids": [
-        "tpex_major_shareholders",
-        "tpex_insider_transfer",
-        "tpex_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 1,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 73,
-      "rationale": "持股逾 10% 大股東 1 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [
-        {
-          "name": "陳梅開發投資有限公司",
-          "source_id": "tpex_major_shareholders"
-        }
-      ],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "tw-7780-daiken": {
-      "ticker": "7780",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_major_shareholders",
-        "twse_insider_transfer",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 1,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 73,
-      "rationale": "持股逾 10% 大股東 1 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [
-        {
-          "name": "尚凡國際創新科技股份有限公司",
-          "source_id": "twse_major_shareholders"
-        }
-      ],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "tw-8279-syngen": {
-      "ticker": "8279",
-      "market": "TPEx",
-      "status": "ok",
-      "source_ids": [
-        "tpex_major_shareholders",
-        "tpex_insider_transfer",
-        "tpex_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 1,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 73,
-      "rationale": "持股逾 10% 大股東 1 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [
-        {
-          "name": "生達化學製藥股份有限公司",
-          "source_id": "tpex_major_shareholders"
-        }
-      ],
-      "insider_transfers": [],
-      "violations": []
-    },
-    "tw-8436-tci": {
-      "ticker": "8436",
-      "market": "TPEx",
-      "status": "ok",
-      "source_ids": [
-        "tpex_major_shareholders",
-        "tpex_insider_transfer",
-        "tpex_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 0,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 63,
-      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [],
       "insider_transfers": [],
       "violations": []
     }

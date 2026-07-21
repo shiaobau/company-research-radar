@@ -3,10 +3,23 @@ name: Deploy static dashboard to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # GitHub Actions cron is UTC. These are 08:15 and 20:30 on Taiwan weekdays.
+    - cron: "15 0 * * 1-5"
+    - cron: "30 12 * * 1-5"
   workflow_dispatch:
+    inputs:
+      slot:
+        description: Update window to record in the dashboard status
+        required: true
+        default: morning
+        type: choice
+        options:
+          - morning
+          - evening
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -23,6 +36,29 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Refresh public research data
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          UPDATE_SLOT: ${{ github.event_name == 'workflow_dispatch' && inputs.slot || github.event.schedule == '15 0 * * 1-5' && 'morning' || 'evening' }}
+        run: node tools/scheduled-update.mjs --slot="$UPDATE_SLOT"
+      - name: Commit refreshed data
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No public-data changes to commit."
+          else
+            git commit -m "chore(data): scheduled research refresh"
+            git push
+          fi
       - name: Prepare static site
         run: |
           mkdir -p _site
