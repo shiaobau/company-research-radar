@@ -1198,7 +1198,7 @@ button:focus {
   font-size: 12px;
 }
 
-.score-submetric-list b { color: var(--ink); }
+.score-submetric-list b { color: var(--text); }
 
 .score-rationale-list {
   display: grid;
@@ -1213,7 +1213,7 @@ button:focus {
 
 .score-rationale-item h4 {
   margin: 0;
-  color: var(--ink);
+  color: var(--text);
   font-size: 14px;
 }
 
@@ -1233,7 +1233,7 @@ button:focus {
   line-height: 1.5;
 }
 
-.score-rationale-item li b { color: var(--ink); }
+.score-rationale-item li b { color: var(--text); }
 
 .score-rationale-item p { margin: 8px 0 0; }
 

@@ -1436,7 +1436,6 @@ function renderCollectedEvents(company) {
       <article class="collector-event">
         <div class="collector-event-head">
           <span class="timeline-date">${RadarRenderers.escapeHtml(event.date || "未提供日期")}</span>
-          <span class="tag">${RadarRenderers.escapeHtml(event.claim_type || "official_disclosure")}</span>
         </div>
         <strong>${RadarRenderers.escapeHtml(title)}</strong>
         ${clause ? `<p class="muted">${RadarRenderers.escapeHtml(clause)}</p>` : ""}
@@ -1501,11 +1500,11 @@ function renderDetail() {
       ${dataSnapshot}
     </details>
     ${renderCollectedEvents(company)}
-    <section class="module">
-      <h3>評分理由</h3>
+    <details class="module detail-fold score-rationale">
+      <summary>評分理由</summary>
       <p class="muted">以下顯示各子測項取得的公開數值、對應門檻與換算分數。</p>
       <div class="score-rationale-list">${RadarRenderers.renderScoreRationale(score)}</div>
-    </section>
+    </details>
   `;
   loadResearchCacheFor(company);
 }
