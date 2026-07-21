@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T06:30:21.023Z",
+  "generated_at": "2026-07-21T09:22:38.387Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -162,7 +162,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:30:21.023Z",
+      "generated_at": "2026-07-21T09:22:38.387Z",
       "facts": [
         {
           "id": "official_classification",
@@ -229,7 +229,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:30:21.023Z",
+      "generated_at": "2026-07-21T09:22:38.387Z",
       "facts": [
         {
           "id": "official_classification",
@@ -288,7 +288,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:30:21.023Z",
+      "generated_at": "2026-07-21T09:22:38.387Z",
       "facts": [
         {
           "id": "official_classification",
@@ -355,7 +355,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:30:21.023Z",
+      "generated_at": "2026-07-21T09:22:38.387Z",
       "facts": [
         {
           "id": "official_classification",
@@ -414,7 +414,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:30:21.023Z",
+      "generated_at": "2026-07-21T09:22:38.387Z",
       "facts": [
         {
           "id": "official_classification",
@@ -481,7 +481,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:30:21.023Z",
+      "generated_at": "2026-07-21T09:22:38.387Z",
       "facts": [
         {
           "id": "official_classification",
@@ -540,7 +540,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-07-21T06:30:21.023Z",
+      "generated_at": "2026-07-21T09:22:38.387Z",
       "facts": [
         {
           "id": "official_classification",
@@ -570,7 +570,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-20 收盤 8.03；區間報酬：20日 -12.24%；60日 -15.03%。",
+          "value": "2026-07-21 收盤 8.33；區間報酬：20日 -12.32%；60日 -13.23%。",
           "source_ids": [
             "tpex_trading_stock"
           ]
@@ -607,7 +607,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-07-21T06:30:21.023Z",
+      "generated_at": "2026-07-21T09:22:38.387Z",
       "facts": [
         {
           "id": "official_classification",
@@ -666,7 +666,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-07-21T06:30:21.023Z",
+      "generated_at": "2026-07-21T09:22:38.387Z",
       "facts": [
         {
           "id": "official_classification",
@@ -696,7 +696,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-20 收盤 85.5；區間報酬：20日 -14.5%；60日 -13.2%。",
+          "value": "2026-07-21 收盤 86.8；區間報酬：20日 -13.2%；60日 -12.23%。",
           "source_ids": [
             "tpex_trading_stock"
           ]
@@ -733,7 +733,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-07-21T06:30:21.023Z",
+      "generated_at": "2026-07-21T09:22:38.387Z",
       "facts": [
         {
           "id": "official_classification",
@@ -763,7 +763,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-20 收盤 87.6；區間報酬：20日 -9.69%；60日 -16.97%。",
+          "value": "2026-07-21 收盤 88.5；區間報酬：20日 -7.14%；60日 -16.11%。",
           "source_ids": [
             "tpex_trading_stock"
           ]
