@@ -632,6 +632,15 @@ button:focus {
   margin-top: 6px;
 }
 
+.card-fact-tags {
+  margin-top: 4px;
+}
+
+.fact-tag {
+  color: var(--teal);
+  cursor: help;
+}
+
 .candidate-actions,
 .candidate-list {
   display: flex;

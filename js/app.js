@@ -1376,6 +1376,24 @@ function renderPublicFacts(company, sourceIndex, compact = false) {
   `;
 }
 
+function renderCompactFactTags(company) {
+  const facts = publicFactsFor(company).slice(0, 3);
+  if (!facts.length) return "";
+  return `
+    <div class="card-tags card-fact-tags">
+      ${facts.map((item) => `
+        <span class="fact-source-tooltip" tabindex="0" role="note" aria-label="${RadarRenderers.escapeHtml(`${item.label}：${item.value}`)}">
+          <span class="tag fact-tag">${RadarRenderers.escapeHtml(item.label)}</span>
+          <span class="fact-tooltip-content" role="tooltip">
+            <strong>${RadarRenderers.escapeHtml(item.label)}</strong>
+            <span>${RadarRenderers.escapeHtml(item.value)}</span>
+          </span>
+        </span>
+      `).join("")}
+    </div>
+  `;
+}
+
 function dataCoverageLabel(company) {
   const status = state.dataStatus.companies?.[company.id];
   if (!status) return "客觀資料待建立";
@@ -1514,6 +1532,36 @@ function formatCacheTimestamp(record, dataset) {
   return record?.cache_status === "stale" ? `資料快取：${label}（沿用上一版）` : `資料快取：${label}`;
 }
 
+function companyDataTimestamp(company) {
+  const id = company?.id;
+  const sources = [
+    [state.marketData, state.marketData.companies?.[id]],
+    [state.revenueData, state.revenueData.companies?.[id]],
+    [state.financialData, state.financialData.companies?.[id]],
+    [state.catalystData, state.catalystData.companies?.[id]],
+    [state.ownershipData, state.ownershipData.companies?.[id]],
+    [state.riskData, state.riskData.companies?.[id]],
+    [state.industryEvidenceData, state.industryEvidenceData.companies?.[id]]
+  ];
+  const timestamps = sources
+    .map(([dataset, record]) => Date.parse(record?.refreshed_at || dataset?.generated_at || ""))
+    .filter(Number.isFinite);
+  return timestamps.length ? new Date(Math.max(...timestamps)) : null;
+}
+
+function formatCompanyDataTimestamp(company) {
+  const timestamp = companyDataTimestamp(company);
+  if (!timestamp) return "未提供";
+  return timestamp.toLocaleString("zh-TW", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false
+  });
+}
+
 function renderSummary(companies) {
   const scoredCompanies = companies.filter((company) => !company.__candidate);
   const candidateOnlyCount = companies.length - scoredCompanies.length;
@@ -1565,8 +1613,6 @@ function renderCompanyList(companies) {
 
     const template = state.templates[company.industry_template];
     const score = RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets());
-    const summary = renderPublicFacts(company, {}, true);
-
     const readiness = researchReadiness(company);
     const missingLabels = (readiness.missing_dimensions || []).map((item) => item.label).join("、");
     const scoreValue = Number.isFinite(score.total) ? score.total : "待補";
@@ -1579,8 +1625,8 @@ function renderCompanyList(companies) {
           <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))}</p>
           ${score.complete ? "" : `<p class="muted">缺少：${RadarRenderers.escapeHtml(scoreMissingLabel(score) || missingLabels || "評分資料")}</p>`}
           <div class="card-tags">${displayTags(company).map((tag) => `<span class="tag">${RadarRenderers.escapeHtml(tag)}</span>`).join("")}</div>
+          ${renderCompactFactTags(company)}
         </div>
-        <div class="mini-fields">${summary}</div>
       </article>
     `;
   }).join("");
@@ -1706,7 +1752,7 @@ function renderDetail() {
         <p class="eyebrow">${RadarRenderers.escapeHtml(template.label)} · ${RadarRenderers.escapeHtml(score.band.label)}</p>
         <h2>${RadarRenderers.escapeHtml(company.name)}</h2>
         <p class="stock-meta">${RadarRenderers.escapeHtml(stockLabel(company))}${company.legal_name ? ` · ${RadarRenderers.escapeHtml(company.legal_name)}` : ""}</p>
-        <p class="muted">資料更新：${RadarRenderers.escapeHtml(company.last_reviewed || "未提供")}</p>
+        <p class="muted">研究檔建立：${RadarRenderers.escapeHtml(company.last_reviewed || "未提供")} · 資料快取更新：${RadarRenderers.escapeHtml(formatCompanyDataTimestamp(company))}</p>
       </div>
       <span class="pill score-tier" title="${RadarRenderers.escapeHtml(scoreDisplayTitle(score))}" style="${scoreColorStyle(score)}">${Number.isFinite(score.total) ? `${score.total} · ${RadarRenderers.escapeHtml(score.band.label)}` : readinessLabel(company)}</span>
     </div>
@@ -1765,9 +1811,6 @@ function renderDataSnapshot(company, sourceIndex) {
   const catalyst = state.catalystData.companies?.[company.id];
   const ownership = state.ownershipData.companies?.[company.id];
   const risk = state.riskData.companies?.[company.id];
-  const status = state.dataStatus.companies?.[company.id];
-  const statusText = status ? `${status.completed_count}/${status.total_count} 類資料已接入` : "資料狀態未建立";
-
   const cards = [
     {
       title: "催化事件",
@@ -1852,7 +1895,7 @@ function renderDataSnapshot(company, sourceIndex) {
 
   return `
     <section class="module">
-      <h3>客觀資料快照 <span class="muted">${RadarRenderers.escapeHtml(statusText)}</span></h3>
+      <h3>客觀資料快照</h3>
       <div class="data-grid">
         ${cards.map((card) => `
           <article class="data-card">
