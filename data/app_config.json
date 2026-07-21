@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "manual_update": {
-    "enabled": false,
-    "endpoint": "",
+    "enabled": true,
+    "endpoint": "https://company-research-radar-update.shiaobau.workers.dev/manual-update",
     "request_timeout_ms": 15000
   }
 }
