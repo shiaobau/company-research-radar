@@ -16,7 +16,7 @@ function corsHeaders(request, env) {
   if (!origin || origin !== env.DASHBOARD_ORIGIN) return null;
   return {
     "access-control-allow-origin": origin,
-    "access-control-allow-methods": "POST, OPTIONS",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
     "access-control-allow-headers": "content-type",
     "access-control-max-age": "600",
     "vary": "Origin"
@@ -75,9 +75,50 @@ async function dispatchGithubWorkflow(env) {
     },
     body: JSON.stringify({ ref: env.GITHUB_REF, inputs: { slot: "manual" } })
   });
-  if (result.status === 204) return;
+  if (result.status === 204) return new Date().toISOString();
   const detail = await result.text();
   throw new Error(`GitHub 更新工作無法啟動（${result.status}）。${detail.slice(0, 240)}`);
+}
+
+function githubHeaders(env) {
+  return {
+    "accept": "application/vnd.github+json",
+    "authorization": `Bearer ${env.GITHUB_TOKEN}`,
+    "user-agent": "company-research-radar-update-worker",
+    "x-github-api-version": "2022-11-28"
+  };
+}
+
+async function workflowStatus(env, requestedAt) {
+  const requestedMs = Date.parse(requestedAt || "");
+  if (!Number.isFinite(requestedMs)) throw new Error("Missing update request time.");
+  const runsEndpoint = `https://api.github.com/repos/${env.GITHUB_REPOSITORY}/actions/workflows/${encodeURIComponent(env.GITHUB_WORKFLOW)}/runs?event=workflow_dispatch&per_page=10`;
+  const runsResponse = await fetch(runsEndpoint, { headers: githubHeaders(env) });
+  if (!runsResponse.ok) throw new Error(`GitHub status request failed (${runsResponse.status}).`);
+  const runsPayload = await runsResponse.json();
+  const run = (runsPayload.workflow_runs || []).find((item) => Date.parse(item.created_at || "") >= requestedMs - 60000);
+  if (!run) return { status: "queued", progress_percent: 3, phase: "queued" };
+  if (run.status === "completed") {
+    const succeeded = run.conclusion === "success";
+    return {
+      status: succeeded ? "done" : "error",
+      progress_percent: succeeded ? 100 : 0,
+      phase: succeeded ? "done" : "error",
+      conclusion: run.conclusion || "unknown"
+    };
+  }
+  const jobsResponse = await fetch(run.jobs_url, { headers: githubHeaders(env) });
+  if (!jobsResponse.ok) return { status: "running", progress_percent: 10, phase: "starting" };
+  const jobsPayload = await jobsResponse.json();
+  const job = (jobsPayload.jobs || []).find((item) => item.status === "in_progress") || (jobsPayload.jobs || [])[0];
+  const steps = job?.steps || [];
+  const activeStep = steps.find((step) => step.status === "in_progress" || step.status === "queued");
+  const completed = steps.filter((step) => step.status === "completed" && step.conclusion === "success").length;
+  return {
+    status: "running",
+    progress_percent: Math.max(8, Math.min(95, Math.round((completed / Math.max(steps.length, 1)) * 100))),
+    phase: activeStep?.name || job?.name || "running"
+  };
 }
 
 export default {
@@ -86,6 +127,13 @@ export default {
     if (!cors) return response({ status: "error", message: "不允許的來源。" }, 403);
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
     const url = new URL(request.url);
+    if (request.method === "GET" && url.pathname === "/manual-update/status") {
+      try {
+        return response(await workflowStatus(env, url.searchParams.get("requested_at")), 200, cors);
+      } catch (error) {
+        return response({ status: "error", message: error.message || "Unable to read update status." }, 500, cors);
+      }
+    }
     if (request.method !== "POST" || url.pathname !== "/manual-update") {
       return response({ status: "error", message: "找不到更新端點。" }, 404, cors);
     }
@@ -99,8 +147,8 @@ export default {
       if (!password || password.length > 512 || !(await verifyPassword(password, env.UPDATE_PASSWORD_HASH))) {
         return response({ status: "error", message: "更新密碼不正確。" }, 401, cors);
       }
-      await dispatchGithubWorkflow(env);
-      return response({ status: "accepted", message: "完整更新已送出；GitHub Actions 會更新公開資料、官方公告事件與評分。" }, 202, cors);
+      const requestedAt = await dispatchGithubWorkflow(env);
+      return response({ status: "accepted", requested_at: requestedAt, message: "完整更新已送出，正在等待 GitHub Actions 啟動。" }, 202, cors);
     } catch (error) {
       return response({ status: "error", message: error.message || "無法啟動完整更新。" }, 500, cors);
     }

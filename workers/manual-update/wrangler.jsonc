@@ -2,6 +2,9 @@
   "name": "company-research-radar-update",
   "main": "src/index.mjs",
   "compatibility_date": "2026-07-21",
+  "secrets": {
+    "required": ["GITHUB_TOKEN", "UPDATE_PASSWORD_HASH"]
+  },
   "vars": {
     "DASHBOARD_ORIGIN": "https://shiaobau.github.io",
     "GITHUB_REPOSITORY": "shiaobau/company-research-radar",

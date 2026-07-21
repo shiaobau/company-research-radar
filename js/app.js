@@ -19,6 +19,7 @@ const state = {
   schedulerStatus: { schedules: {}, current_run: null },
   researchStatus: { summary: {}, companies: {} },
   appConfig: { manual_update: { enabled: false, endpoint: "", request_timeout_ms: 15000 } },
+  cloudManualUpdate: null,
   referenceSources: [],
   selectedId: null,
   managementMode: false,
@@ -741,9 +742,9 @@ async function runManualFullUpdate() {
 async function runCloudManualFullUpdate() {
   const config = state.appConfig?.manual_update || {};
   const endpoint = String(config.endpoint || "").trim();
-  const password = window.prompt("輸入管理更新密碼");
+  const password = window.prompt("輸入手動更新管理密碼");
   if (!password) return;
-  const button = $("[data-run-cloud-manual-update]");
+  const button = $("#admin-update-button");
   try {
     if (button) button.disabled = true;
     setResearchStatus("正在驗證管理密碼並啟動完整更新...");
@@ -758,11 +759,74 @@ async function runCloudManualFullUpdate() {
     window.clearTimeout(timeout);
     const payload = await response.json().catch(() => ({}));
     if (!response.ok) throw new Error(payload.message || "無法啟動完整更新。");
-    setResearchStatus(payload.message || "完整更新已送出，稍後會自動重新部署研究資料。");
+    const requestedAt = payload.requested_at || new Date().toISOString();
+    state.cloudManualUpdate = { endpoint, requestedAt };
+    state.schedulerStatus.current_run = {
+      status: "running",
+      label: "手動完整更新",
+      progress_percent: 3,
+      current_step: { label: "等待 GitHub Actions 啟動" }
+    };
+    renderSchedulerPanel();
+    setResearchStatus(payload.message || "完整更新已送出，正在等待 GitHub Actions 啟動。");
+    pollCloudManualUpdate();
   } catch (error) {
     setResearchStatus(`無法啟動完整更新：${error.name === "AbortError" ? "連線逾時，請稍後再試。" : error.message}`);
   } finally {
     if (button) button.disabled = false;
+  }
+}
+
+function cloudUpdatePhaseLabel(phase) {
+  const labels = {
+    queued: "等待 GitHub Actions 啟動",
+    starting: "準備更新環境",
+    "Check out source": "取得研究資料",
+    "Set up Node": "準備更新環境",
+    "Refresh public research data": "更新公開資料與公告事件",
+    "Commit refreshed data": "儲存研究資料",
+    "Prepare static site": "準備網站內容",
+    "Configure Pages": "準備網站部署",
+    "Upload Pages artifact": "上傳網站內容",
+    "Deploy to GitHub Pages": "部署更新結果",
+    done: "完整更新完成",
+    error: "完整更新未完成"
+  };
+  return labels[phase] || "GitHub Actions 更新中";
+}
+
+async function pollCloudManualUpdate() {
+  const update = state.cloudManualUpdate;
+  if (!update) return;
+  try {
+    const statusEndpoint = update.endpoint.replace(/\/manual-update$/, "/manual-update/status");
+    const response = await fetch(`${statusEndpoint}?requested_at=${encodeURIComponent(update.requestedAt)}`, { cache: "no-store" });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(payload.message || "無法取得 GitHub Actions 更新狀態。");
+    const label = cloudUpdatePhaseLabel(payload.phase);
+    state.schedulerStatus.current_run = payload.status === "done" || payload.status === "error" ? null : {
+      status: "running",
+      label: "手動完整更新",
+      progress_percent: payload.progress_percent || 3,
+      current_step: { label }
+    };
+    renderSchedulerPanel();
+    if (payload.status === "done") {
+      state.cloudManualUpdate = null;
+      setResearchStatus("完整更新完成，正在載入最新研究資料...", false);
+      window.setTimeout(() => window.location.reload(), 1600);
+      return;
+    }
+    if (payload.status === "error") {
+      state.cloudManualUpdate = null;
+      setResearchStatus(`完整更新未完成：${payload.conclusion || "請查看 GitHub Actions"}`, false);
+      return;
+    }
+    setResearchStatus(`${label}（${payload.progress_percent || 3}%）`);
+    window.setTimeout(pollCloudManualUpdate, 8000);
+  } catch (error) {
+    setResearchStatus(`完整更新已送出，暫時無法讀取進度：${error.message}`);
+    window.setTimeout(pollCloudManualUpdate, 12000);
   }
 }
 
