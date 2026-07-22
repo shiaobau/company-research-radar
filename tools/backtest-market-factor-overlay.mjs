@@ -1,5 +1,6 @@
 import { mkdir, readFile } from "node:fs/promises";
 import { spawn } from "node:child_process";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import { fetchJson, readJson, round, toNumber, writeJson } from "./data-sources.mjs";
 
@@ -10,7 +11,8 @@ const factorDefinitions = [
   { id: "valuation_favorable_pct", label: "同業估值有利度", direction: "higher_is_more_favorable" },
   { id: "institutional_net_percentile", label: "法人淨買賣同業百分位", direction: "higher_is_more_buying" },
   { id: "financing_change_percentile", label: "融資增減同業百分位", direction: "higher_is_more_financing" },
-  { id: "short_change_percentile", label: "融券增減同業百分位", direction: "higher_is_more_shorting" }
+  { id: "short_change_percentile", label: "融券增減同業百分位", direction: "higher_is_more_shorting" },
+  { id: "volume_activity_percentile", label: "量能活躍度同業百分位", direction: "higher_is_more_active" }
 ];
 
 function argValue(name, fallback = "") {
@@ -70,6 +72,15 @@ async function fetchJsonViaPowerShell(url) {
 }
 
 async function fetchOfficialJson(url) {
+  const sourceCache = argValue("source-cache", "");
+  if (sourceCache) {
+    const filename = `${createHash("sha256").update(url).digest("hex")}.json`;
+    try {
+      return JSON.parse(await readFile(path.join(root, sourceCache, filename), "utf8"));
+    } catch (error) {
+      if (error?.code !== "ENOENT") throw error;
+    }
+  }
   if (process.env.MARKET_FACTOR_FORCE_POWERSHELL === "1") return fetchJsonViaPowerShell(url);
   try {
     return await fetchJson(url, 3, 20000);
@@ -224,6 +235,20 @@ function normalizeTpexInstitutional(payload) {
   })).filter((row) => row.ticker);
 }
 
+function normalizeTwseDailyVolume(payload) {
+  return tableRows(payload, 8).map((row) => ({
+    ticker: codeFrom(row, ["證券代號"]),
+    volume_shares: numberFrom(row, ["成交股數"])
+  })).filter((row) => row.ticker && Number.isFinite(row.volume_shares));
+}
+
+function normalizeTpexDailyVolume(payload) {
+  return tableRows(payload).map((row) => ({
+    ticker: codeFrom(row, ["代號"]),
+    volume_shares: numberFrom(row, ["成交股數"])
+  })).filter((row) => row.ticker && Number.isFinite(row.volume_shares));
+}
+
 function indexRows(rows) {
   return new Map(rows.map((row) => [row.ticker, row]));
 }
@@ -237,7 +262,7 @@ function groupUniverse(universe) {
   return groups;
 }
 
-function buildMarketFactors(universe, payloads) {
+function buildMarketFactors(universe, payloads, volumeHistory) {
   const valuation = {
     TWSE: indexRows(normalizeTwseValuation(payloads.twseValuation)),
     TPEx: indexRows(normalizeTpexValuation(payloads.tpexValuation))
@@ -250,6 +275,10 @@ function buildMarketFactors(universe, payloads) {
     TWSE: indexRows(normalizeTwseInstitutional(payloads.twseInstitutional)),
     TPEx: indexRows(normalizeTpexInstitutional(payloads.tpexInstitutional))
   };
+  const volumeByDate = volumeHistory.map((day) => ({
+    TWSE: indexRows(normalizeTwseDailyVolume(day.payloads.twseDailyVolume)),
+    TPEx: indexRows(normalizeTpexDailyVolume(day.payloads.tpexDailyVolume))
+  }));
   const groups = groupUniverse(universe);
   const factors = new Map();
 
@@ -259,9 +288,19 @@ function buildMarketFactors(universe, payloads) {
     const peerInstitutional = peers.map((item) => institutional[item.market]?.get(item.ticker)?.total_net_shares).filter(Number.isFinite);
     const peerFinancing = peers.map((item) => margin[item.market]?.get(item.ticker)?.financing_change_lots).filter(Number.isFinite);
     const peerShort = peers.map((item) => margin[item.market]?.get(item.ticker)?.short_change_lots).filter(Number.isFinite);
+    const volumeRatioFor = (item) => {
+      const current = volumeByDate.at(-1)?.[item.market]?.get(item.ticker)?.volume_shares;
+      const history = volumeByDate.slice(0, -1)
+        .map((day) => day[item.market]?.get(item.ticker)?.volume_shares)
+        .filter(Number.isFinite);
+      const baseline = mean(history);
+      return Number.isFinite(current) && Number.isFinite(baseline) && baseline > 0 ? current / baseline : null;
+    };
+    const peerVolumeRatios = peers.map(volumeRatioFor).filter(Number.isFinite);
     const currentValuation = valuation[company.market]?.get(company.ticker);
     const currentMargin = margin[company.market]?.get(company.ticker);
     const currentInstitutional = institutional[company.market]?.get(company.ticker);
+    const volumeRatio20d = volumeRatioFor(company);
     const valuationComponents = currentValuation ? [
       // Lower PE/PB and higher yield are treated as favourable only for this diagnostic.
       Number.isFinite(currentValuation.pe_ratio) ? 100 - percentile(currentValuation.pe_ratio, peerValuation.map((item) => item.pe_ratio)) : null,
@@ -274,13 +313,15 @@ function buildMarketFactors(universe, payloads) {
       institutional_net_percentile: percentile(currentInstitutional?.total_net_shares, peerInstitutional),
       financing_change_percentile: percentile(currentMargin?.financing_change_lots, peerFinancing),
       short_change_percentile: percentile(currentMargin?.short_change_lots, peerShort),
+      volume_activity_percentile: percentile(volumeRatio20d, peerVolumeRatios),
       raw: {
         pe_ratio: currentValuation?.pe_ratio ?? null,
         pb_ratio: currentValuation?.pb_ratio ?? null,
         dividend_yield_pct: currentValuation?.dividend_yield_pct ?? null,
         institutional_net_shares: currentInstitutional?.total_net_shares ?? null,
         financing_change_lots: currentMargin?.financing_change_lots ?? null,
-        short_change_lots: currentMargin?.short_change_lots ?? null
+        short_change_lots: currentMargin?.short_change_lots ?? null,
+        volume_ratio_20d: Number.isFinite(volumeRatio20d) ? round(volumeRatio20d, 2) : null
       }
     });
   }
@@ -308,6 +349,33 @@ async function fetchHistoricalPayloads(date) {
     if (hasTpexValuation && hasTwseMargin && hasTwseInstitutional) return { payloads, urls, sourceDate };
   }
   throw new Error(`No complete market-data trading day was found on or before ${date}.`);
+}
+
+async function fetchFullMarketVolume(date) {
+  const twseDate = dateParam(date);
+  const tpexDate = tpexDateParam(date);
+  const urls = {
+    twseDailyVolume: `https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=${twseDate}&type=ALLBUT0999&response=json`,
+    tpexDailyVolume: `https://www.tpex.org.tw/web/stock/aftertrading/daily_close_quotes/stk_quote_result.php?l=zh-tw&o=json&d=${encodeURIComponent(tpexDate)}`
+  };
+  const payloads = Object.fromEntries(await Promise.all(Object.entries(urls).map(async ([id, url]) => [id, await fetchOfficialJson(url)])));
+  const rows = {
+    twse: normalizeTwseDailyVolume(payloads.twseDailyVolume).length,
+    tpex: normalizeTpexDailyVolume(payloads.tpexDailyVolume).length
+  };
+  return { date, urls, payloads, rows };
+}
+
+async function fetchVolumeHistory(asOfDate, requiredDays = 21) {
+  const history = [];
+  for (let offset = 0; offset < 45 && history.length < requiredDays; offset += 1) {
+    const date = previousCalendarDate(asOfDate, offset);
+    const day = await fetchFullMarketVolume(date);
+    // TPEx includes roughly 900 four-digit listed companies; the raw table also carries funds and other instruments.
+    if (day.rows.twse > 1000 && day.rows.tpex > 700) history.push(day);
+  }
+  if (history.length < requiredDays) throw new Error(`Only ${history.length}/${requiredDays} historical full-market volume days were available by ${asOfDate}.`);
+  return history.reverse();
 }
 
 function topBottomSpread(rows, factorKey) {
@@ -363,18 +431,28 @@ async function main() {
     JSON.parse(await readFile(inputPath, "utf8")),
     readJson(path.join(dataDir, "listed_companies_universe.json"))
   ]);
-  const snapshots = snapshotPayload.snapshots || [];
+  const requestedDates = new Set(argValue("observation-dates", "").split(",").map((date) => date.trim()).filter(Boolean));
+  const snapshots = (snapshotPayload.snapshots || []).filter((snapshot) => !requestedDates.size || requestedDates.has(snapshot.observation_date));
+  if (!snapshots.length) throw new Error("No snapshots matched --observation-dates.");
   const observationDates = [...new Set(snapshots.map((snapshot) => snapshot.observation_date).filter(Boolean))].sort();
   const factorByDate = new Map();
   const sourceRequests = {};
   for (const date of observationDates) {
+    console.log(`Fetching core market factors for ${date}.`);
     const { payloads, urls, sourceDate } = await fetchHistoricalPayloads(date);
-    factorByDate.set(date, buildMarketFactors(universePayload.companies || [], payloads));
+    const volumeHistory = await fetchVolumeHistory(sourceDate);
+    factorByDate.set(date, buildMarketFactors(universePayload.companies || [], payloads, volumeHistory));
     sourceRequests[date] = Object.fromEntries(Object.entries(payloads).map(([id, payload]) => [id, {
       url: urls[id],
       source_date: sourceDate,
       rows: sourceRowCount(payload)
     }]));
+    sourceRequests[date].volume_history = {
+      calculation: "Observation-day volume divided by the preceding 20 available trading-day average volume.",
+      trading_dates: volumeHistory.map((day) => day.date),
+      rows_per_day: volumeHistory.map((day) => ({ date: day.date, ...day.rows })),
+      urls: volumeHistory.map((day) => ({ date: day.date, ...day.urls }))
+    };
     console.log(`Collected historical market factors for ${date} using ${sourceDate}.`);
   }
 
@@ -403,6 +481,7 @@ async function main() {
       forward_horizon: "20 trading days",
       relative_return: "Same-observation-date company return minus the cross-sectional mean return.",
       peer_definition: "All listed and OTC companies sharing the official industry label; values require at least 10 peer observations.",
+      volume_factor: "Observation-day volume divided by the preceding 20 available full-market trading-day average volume, then ranked within official-industry peers.",
       guardrail: "Factors are tested independently. This report does not tune or modify the production score."
     },
     source_requests: sourceRequests,
@@ -420,4 +499,9 @@ async function main() {
   console.log(JSON.stringify({ outputDir, observations: rows.length, factors: Object.keys(report.factors) }, null, 2));
 }
 
-await main();
+try {
+  await main();
+} catch (error) {
+  console.error(error?.stack || error?.message || String(error));
+  process.exitCode = 1;
+}
