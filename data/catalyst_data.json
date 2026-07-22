@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-22T00:16:17.979Z",
+  "generated_at": "2026-07-22T01:56:44.747Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-22T00:16:17.979Z"
+      "refreshed_at": "2026-07-22T01:56:44.747Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -81,7 +81,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-22T00:16:17.979Z"
+      "refreshed_at": "2026-07-22T01:56:44.747Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -114,7 +114,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-22T00:16:17.979Z"
+      "refreshed_at": "2026-07-22T01:56:44.747Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -131,7 +131,7 @@
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-22T00:16:17.979Z"
+      "refreshed_at": "2026-07-22T01:56:44.747Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -217,7 +217,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-22T00:16:17.979Z"
+      "refreshed_at": "2026-07-22T01:56:44.747Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -234,7 +234,7 @@
       "rationale": "財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-22T00:16:17.979Z"
+      "refreshed_at": "2026-07-22T01:56:44.747Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -251,7 +251,7 @@
       "rationale": "月營收分數 77。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-22T00:16:17.979Z"
+      "refreshed_at": "2026-07-22T01:56:44.747Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -268,7 +268,7 @@
       "rationale": "月營收分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-22T00:16:17.979Z"
+      "refreshed_at": "2026-07-22T01:56:44.747Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -285,7 +285,7 @@
       "rationale": "月營收分數 81；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-22T00:16:17.979Z"
+      "refreshed_at": "2026-07-22T01:56:44.747Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -302,7 +302,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-22T00:16:17.979Z"
+      "refreshed_at": "2026-07-22T01:56:44.747Z"
     }
   }
 }
