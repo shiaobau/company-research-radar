@@ -21,6 +21,7 @@ import {
 import { getCachedRows } from "./source-cache.mjs";
 import { generatePublicFacts } from "./generate-public-facts.mjs";
 import { classifyMaterialEvents, loadEventTaxonomy, scoreRiskDimension } from "./event-risk.mjs";
+import { updateMarketFactors } from "./update-market-factors.mjs";
 
 const root = process.cwd();
 const dataDir = path.join(root, "data");
@@ -699,6 +700,8 @@ async function fetchPriceHistory(company) {
   const close60 = closes.length > 60 ? closes.at(-61) : null;
   const return20d = close20 ? ((latest.close / close20) - 1) * 100 : null;
   const return60d = close60 ? ((latest.close / close60) - 1) * 100 : null;
+  const averageVolume20 = average(history.slice(-21, -1).map((row) => row.volume));
+  const volumeRatio20d = latest?.volume && averageVolume20 ? latest.volume / averageVolume20 : null;
   const score = Math.round(
     pricePositionScore(positionPct) * 0.4 +
     return20Score(return20d) * 0.3 +
@@ -724,6 +727,8 @@ async function fetchPriceHistory(company) {
     ma60: round(ma60),
     return_20d_pct: round(return20d),
     return_60d_pct: round(return60d),
+    average_volume_20d: round(averageVolume20, 0),
+    volume_ratio_20d: round(volumeRatio20d),
     score: clamp(score),
     rationale: latest
       ? `近 ${history.length} 個交易日，收盤 ${latest.close}，位於${extremeRange ? "近 60 日" : "一年"}區間 ${round(positionPct)}%，20 日報酬 ${round(return20d)}%，60 日報酬 ${round(return60d)}%。`
@@ -1095,6 +1100,11 @@ async function build() {
     return records;
   });
   const marketCompanies = mergeUpdatedRecords(previousMarket, marketResult.records, marketResult);
+  try {
+    await updateMarketFactors({ generatedAt });
+  } catch (error) {
+    console.warn(`WARN: market_factors.json update failed; retaining the previous background factor snapshot. ${error.message}`);
+  }
   const revenueResult = await withGeneratedFallback("revenue_data.json", () => fetchRevenueData(targetCompanies));
   const revenueCompanies = mergeUpdatedRecords(previousRevenue, revenueResult.records, revenueResult);
   const financialResult = await withGeneratedFallback("financial_data.json", () => fetchFinancialData(targetCompanies));

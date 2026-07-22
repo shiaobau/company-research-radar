@@ -1,0 +1,426 @@
+{
+  "version": "0.9.0",
+  "generated_at": "2026-07-22T03:33:24.269Z",
+  "note": "全市場背景因子。估值百分位依上市櫃官方產業全樣本計算；官方產業樣本不足 10 家時才回退為全市場模板樣本，兩者皆不使用觀察清單。資料僅供研究快照與回測，尚未納入核心分數。",
+  "sources": [
+    "twse_valuation",
+    "tpex_valuation",
+    "twse_margin_balance",
+    "tpex_margin_balance",
+    "twse_institutional_trading",
+    "tpex_institutional_trading"
+  ],
+  "coverage": {
+    "universe_count": 1974,
+    "research_company_count": 10,
+    "valuation_count": 1966,
+    "margin_count": 1848,
+    "institutional_count": 1869
+  },
+  "companies": {
+    "TWSE:1231": {
+      "ticker": "1231",
+      "market": "TWSE",
+      "official_industry_label": "食品工業",
+      "peer_group": {
+        "basis": "official_industry",
+        "label": "食品工業",
+        "sample_count": 34
+      },
+      "valuation": {
+        "as_of": "2026-07-21",
+        "pe_ratio": 20.95,
+        "pb_ratio": 3.64,
+        "dividend_yield_pct": 2.71,
+        "favorable_percentiles": {
+          "pe_ratio": 35,
+          "pb_ratio": 6,
+          "dividend_yield_pct": 30
+        }
+      },
+      "margin": {
+        "as_of": null,
+        "financing_balance_lots": 240,
+        "short_balance_lots": null,
+        "financing_change_lots": null,
+        "short_change_lots": null
+      },
+      "institutional": {
+        "as_of": "2026-07-21",
+        "foreign_net_shares": 104107,
+        "trust_net_shares": 0,
+        "dealer_net_shares": 5841,
+        "total_net_shares": 109948
+      },
+      "source_ids": [
+        "twse_valuation",
+        "twse_margin_balance",
+        "twse_institutional_trading"
+      ],
+      "status": "ok"
+    },
+    "TWSE:2303": {
+      "ticker": "2303",
+      "market": "TWSE",
+      "official_industry_label": "半導體業",
+      "peer_group": {
+        "basis": "official_industry",
+        "label": "半導體業",
+        "sample_count": 205
+      },
+      "valuation": {
+        "as_of": "2026-07-21",
+        "pe_ratio": 33.79,
+        "pb_ratio": 4.16,
+        "dividend_yield_pct": 1.94,
+        "favorable_percentiles": {
+          "pe_ratio": 56,
+          "pb_ratio": 39,
+          "dividend_yield_pct": 61
+        }
+      },
+      "margin": {
+        "as_of": null,
+        "financing_balance_lots": 220752,
+        "short_balance_lots": 1408,
+        "financing_change_lots": null,
+        "short_change_lots": null
+      },
+      "institutional": {
+        "as_of": "2026-07-21",
+        "foreign_net_shares": -11396333,
+        "trust_net_shares": -6127119,
+        "dealer_net_shares": 2579027,
+        "total_net_shares": -14944425
+      },
+      "source_ids": [
+        "twse_valuation",
+        "twse_margin_balance",
+        "twse_institutional_trading"
+      ],
+      "status": "ok"
+    },
+    "TWSE:2308": {
+      "ticker": "2308",
+      "market": "TWSE",
+      "official_industry_label": "電子零組件業",
+      "peer_group": {
+        "basis": "official_industry",
+        "label": "電子零組件業",
+        "sample_count": 210
+      },
+      "valuation": {
+        "as_of": "2026-07-21",
+        "pe_ratio": 67.66,
+        "pb_ratio": 15.91,
+        "dividend_yield_pct": 0.63,
+        "favorable_percentiles": {
+          "pe_ratio": 32,
+          "pb_ratio": 3,
+          "dividend_yield_pct": 27
+        }
+      },
+      "margin": {
+        "as_of": null,
+        "financing_balance_lots": 7786,
+        "short_balance_lots": 33,
+        "financing_change_lots": null,
+        "short_change_lots": null
+      },
+      "institutional": {
+        "as_of": "2026-07-21",
+        "foreign_net_shares": -1380580,
+        "trust_net_shares": 1886409,
+        "dealer_net_shares": 238080,
+        "total_net_shares": 743909
+      },
+      "source_ids": [
+        "twse_valuation",
+        "twse_margin_balance",
+        "twse_institutional_trading"
+      ],
+      "status": "ok"
+    },
+    "TWSE:2330": {
+      "ticker": "2330",
+      "market": "TWSE",
+      "official_industry_label": "半導體業",
+      "peer_group": {
+        "basis": "official_industry",
+        "label": "半導體業",
+        "sample_count": 205
+      },
+      "valuation": {
+        "as_of": "2026-07-21",
+        "pe_ratio": 32.4,
+        "pb_ratio": 10.61,
+        "dividend_yield_pct": 0.91,
+        "favorable_percentiles": {
+          "pe_ratio": 60,
+          "pb_ratio": 9,
+          "dividend_yield_pct": 39
+        }
+      },
+      "margin": {
+        "as_of": null,
+        "financing_balance_lots": 31823,
+        "short_balance_lots": 98,
+        "financing_change_lots": null,
+        "short_change_lots": null
+      },
+      "institutional": {
+        "as_of": "2026-07-21",
+        "foreign_net_shares": 4975729,
+        "trust_net_shares": 973707,
+        "dealer_net_shares": 213634,
+        "total_net_shares": 6163070
+      },
+      "source_ids": [
+        "twse_valuation",
+        "twse_margin_balance",
+        "twse_institutional_trading"
+      ],
+      "status": "ok"
+    },
+    "TWSE:2885": {
+      "ticker": "2885",
+      "market": "TWSE",
+      "official_industry_label": "金融保險",
+      "peer_group": {
+        "basis": "official_industry",
+        "label": "金融保險",
+        "sample_count": 41
+      },
+      "valuation": {
+        "as_of": "2026-07-21",
+        "pe_ratio": 18.86,
+        "pb_ratio": 2.28,
+        "dividend_yield_pct": 3.59,
+        "favorable_percentiles": {
+          "pe_ratio": 17,
+          "pb_ratio": 7,
+          "dividend_yield_pct": 25
+        }
+      },
+      "margin": {
+        "as_of": null,
+        "financing_balance_lots": 3449,
+        "short_balance_lots": 39,
+        "financing_change_lots": null,
+        "short_change_lots": null
+      },
+      "institutional": {
+        "as_of": "2026-07-21",
+        "foreign_net_shares": 23763184,
+        "trust_net_shares": -5553385,
+        "dealer_net_shares": -2415713,
+        "total_net_shares": 15794086
+      },
+      "source_ids": [
+        "twse_valuation",
+        "twse_margin_balance",
+        "twse_institutional_trading"
+      ],
+      "status": "ok"
+    },
+    "TWSE:2886": {
+      "ticker": "2886",
+      "market": "TWSE",
+      "official_industry_label": "金融保險",
+      "peer_group": {
+        "basis": "official_industry",
+        "label": "金融保險",
+        "sample_count": 41
+      },
+      "valuation": {
+        "as_of": "2026-07-21",
+        "pe_ratio": 19.76,
+        "pb_ratio": 1.79,
+        "dividend_yield_pct": 3.6,
+        "favorable_percentiles": {
+          "pe_ratio": 10,
+          "pb_ratio": 27,
+          "dividend_yield_pct": 28
+        }
+      },
+      "margin": {
+        "as_of": null,
+        "financing_balance_lots": 604,
+        "short_balance_lots": 58,
+        "financing_change_lots": null,
+        "short_change_lots": null
+      },
+      "institutional": {
+        "as_of": "2026-07-21",
+        "foreign_net_shares": -3030954,
+        "trust_net_shares": 7391549,
+        "dealer_net_shares": 2314479,
+        "total_net_shares": 6675074
+      },
+      "source_ids": [
+        "twse_valuation",
+        "twse_margin_balance",
+        "twse_institutional_trading"
+      ],
+      "status": "ok"
+    },
+    "TPEx:3115": {
+      "ticker": "3115",
+      "market": "TPEx",
+      "official_industry_label": "電子零組件業",
+      "peer_group": {
+        "basis": "official_industry",
+        "label": "電子零組件業",
+        "sample_count": 210
+      },
+      "valuation": {
+        "as_of": "2026-07-21",
+        "pe_ratio": null,
+        "pb_ratio": 1.12,
+        "dividend_yield_pct": 0,
+        "favorable_percentiles": {
+          "pe_ratio": null,
+          "pb_ratio": 87,
+          "dividend_yield_pct": 15
+        }
+      },
+      "margin": null,
+      "institutional": {
+        "as_of": "2026-07-21",
+        "foreign_net_shares": -2000,
+        "trust_net_shares": -2000,
+        "dealer_net_shares": 0,
+        "total_net_shares": -2000
+      },
+      "source_ids": [
+        "tpex_valuation",
+        "tpex_margin_balance",
+        "tpex_institutional_trading"
+      ],
+      "status": "ok"
+    },
+    "TWSE:3481": {
+      "ticker": "3481",
+      "market": "TWSE",
+      "official_industry_label": "光電業",
+      "peer_group": {
+        "basis": "official_industry",
+        "label": "光電業",
+        "sample_count": 116
+      },
+      "valuation": {
+        "as_of": "2026-07-21",
+        "pe_ratio": 460.91,
+        "pb_ratio": 1.79,
+        "dividend_yield_pct": 1.97,
+        "favorable_percentiles": {
+          "pe_ratio": 7,
+          "pb_ratio": 43,
+          "dividend_yield_pct": 54
+        }
+      },
+      "margin": {
+        "as_of": null,
+        "financing_balance_lots": 384356,
+        "short_balance_lots": 9174,
+        "financing_change_lots": null,
+        "short_change_lots": null
+      },
+      "institutional": {
+        "as_of": "2026-07-21",
+        "foreign_net_shares": -62999176,
+        "trust_net_shares": -20771159,
+        "dealer_net_shares": -6388966,
+        "total_net_shares": -90159301
+      },
+      "source_ids": [
+        "twse_valuation",
+        "twse_margin_balance",
+        "twse_institutional_trading"
+      ],
+      "status": "ok"
+    },
+    "TPEx:6023": {
+      "ticker": "6023",
+      "market": "TPEx",
+      "official_industry_label": "金融保險",
+      "peer_group": {
+        "basis": "official_industry",
+        "label": "金融保險",
+        "sample_count": 41
+      },
+      "valuation": {
+        "as_of": "2026-07-21",
+        "pe_ratio": 10.14,
+        "pb_ratio": 1.37,
+        "dividend_yield_pct": 6.34,
+        "favorable_percentiles": {
+          "pe_ratio": 76,
+          "pb_ratio": 49,
+          "dividend_yield_pct": 95
+        }
+      },
+      "margin": {
+        "as_of": "2026-07-21",
+        "financing_balance_lots": 411,
+        "short_balance_lots": 0,
+        "financing_change_lots": 12,
+        "short_change_lots": 0
+      },
+      "institutional": {
+        "as_of": "2026-07-21",
+        "foreign_net_shares": 98000,
+        "trust_net_shares": 98000,
+        "dealer_net_shares": 0,
+        "total_net_shares": 98000
+      },
+      "source_ids": [
+        "tpex_valuation",
+        "tpex_margin_balance",
+        "tpex_institutional_trading"
+      ],
+      "status": "ok"
+    },
+    "TPEx:8279": {
+      "ticker": "8279",
+      "market": "TPEx",
+      "official_industry_label": "生技醫療",
+      "peer_group": {
+        "basis": "official_industry",
+        "label": "生技醫療",
+        "sample_count": 159
+      },
+      "valuation": {
+        "as_of": "2026-07-21",
+        "pe_ratio": 9.83,
+        "pb_ratio": 1.06,
+        "dividend_yield_pct": 5.65,
+        "favorable_percentiles": {
+          "pe_ratio": 97,
+          "pb_ratio": 86,
+          "dividend_yield_pct": 82
+        }
+      },
+      "margin": {
+        "as_of": "2026-07-21",
+        "financing_balance_lots": 119,
+        "short_balance_lots": 2,
+        "financing_change_lots": 6,
+        "short_change_lots": 0
+      },
+      "institutional": {
+        "as_of": "2026-07-21",
+        "foreign_net_shares": -2000,
+        "trust_net_shares": -2000,
+        "dealer_net_shares": 0,
+        "total_net_shares": -2000
+      },
+      "source_ids": [
+        "tpex_valuation",
+        "tpex_margin_balance",
+        "tpex_institutional_trading"
+      ],
+      "status": "ok"
+    }
+  }
+}

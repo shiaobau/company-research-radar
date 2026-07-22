@@ -53,6 +53,7 @@ function sourceIdsForClassification(company) {
 
 function buildFacts(company, datasets) {
   const market = datasets.market.companies?.[company.id];
+  const marketFactors = datasets.marketFactors.companies?.[`${company.market}:${company.ticker}`];
   const revenue = datasets.revenue.companies?.[company.id];
   const financial = datasets.financial.companies?.[company.id];
   const catalyst = datasets.catalyst.companies?.[company.id];
@@ -99,11 +100,57 @@ function buildFacts(company, datasets) {
       isFiniteNumber(market.return_20d_pct) ? `20日 ${formatPercent(market.return_20d_pct)}` : "",
       isFiniteNumber(market.return_60d_pct) ? `60日 ${formatPercent(market.return_60d_pct)}` : ""
     ].filter(Boolean).join("；");
+    const volume = isFiniteNumber(market.volume_ratio_20d)
+      ? `；當日量為 20 日均量 ${formatNumber(market.volume_ratio_20d)} 倍`
+      : "";
     facts.push(fact(
       "market_snapshot",
       "股價資料",
-      `${market.latest_trade_date} 收盤 ${formatNumber(market.latest_close)}${returns ? `；區間報酬：${returns}` : ""}。`,
+      `${market.latest_trade_date} 收盤 ${formatNumber(market.latest_close)}${returns ? `；區間報酬：${returns}` : ""}${volume}。`,
       market.source_ids
+    ));
+  }
+
+  if (marketFactors?.valuation) {
+    const valuation = marketFactors.valuation;
+    const peer = marketFactors.peer_group || {};
+    const metrics = [
+      isFiniteNumber(valuation.pe_ratio) ? `本益比 ${formatNumber(valuation.pe_ratio)}` : "",
+      isFiniteNumber(valuation.pb_ratio) ? `股價淨值比 ${formatNumber(valuation.pb_ratio)}` : "",
+      isFiniteNumber(valuation.dividend_yield_pct) ? `殖利率 ${formatPercent(valuation.dividend_yield_pct)}` : ""
+    ].filter(Boolean);
+    const percentiles = [
+      isFiniteNumber(valuation.favorable_percentiles?.pe_ratio) ? `本益比相對有利 ${formatNumber(valuation.favorable_percentiles.pe_ratio, 0)} 百分位` : "",
+      isFiniteNumber(valuation.favorable_percentiles?.pb_ratio) ? `股淨比相對有利 ${formatNumber(valuation.favorable_percentiles.pb_ratio, 0)} 百分位` : "",
+      isFiniteNumber(valuation.favorable_percentiles?.dividend_yield_pct) ? `殖利率相對有利 ${formatNumber(valuation.favorable_percentiles.dividend_yield_pct, 0)} 百分位` : ""
+    ].filter(Boolean);
+    const peerDescription = peer.sample_count >= 10 && peer.label
+      ? `比較母體：${peer.label} ${formatNumber(peer.sample_count, 0)} 家。`
+      : "同業樣本不足，僅列示原始估值。";
+    facts.push(fact(
+      "valuation_peer_snapshot",
+      "同業估值",
+      metrics.length ? `${metrics.join("；")}。${percentiles.length ? `${percentiles.join("；")}。` : ""}${peerDescription}` : "",
+      marketFactors.source_ids?.filter((id) => id.includes("valuation"))
+    ));
+  }
+
+  if (marketFactors?.institutional || marketFactors?.margin) {
+    const institutional = marketFactors.institutional || {};
+    const margin = marketFactors.margin || {};
+    const items = [
+      isFiniteNumber(institutional.foreign_net_shares) ? `外資淨買賣 ${formatNumber(institutional.foreign_net_shares, 0)} 股` : "",
+      isFiniteNumber(institutional.trust_net_shares) ? `投信淨買賣 ${formatNumber(institutional.trust_net_shares, 0)} 股` : "",
+      isFiniteNumber(institutional.total_net_shares) ? `三大法人合計 ${formatNumber(institutional.total_net_shares, 0)} 股` : "",
+      isFiniteNumber(margin.financing_balance_lots) ? `融資餘額 ${formatNumber(margin.financing_balance_lots, 0)} 張` : "",
+      isFiniteNumber(margin.short_balance_lots) ? `融券餘額 ${formatNumber(margin.short_balance_lots, 0)} 張` : ""
+    ].filter(Boolean);
+    const asOf = institutional.as_of || margin.as_of || "最新交易日";
+    facts.push(fact(
+      "market_positioning_snapshot",
+      "法人與融資券",
+      items.length ? `${asOf}：${items.join("；")}。` : "",
+      marketFactors.source_ids?.filter((id) => id.includes("margin") || id.includes("institutional"))
     ));
   }
 
@@ -172,10 +219,11 @@ function buildFacts(company, datasets) {
 }
 
 export async function generatePublicFacts({ generatedAt = new Date().toISOString() } = {}) {
-  const [companiesJson, templates, market, revenue, financial, catalyst, ownership, risk] = await Promise.all([
+  const [companiesJson, templates, market, marketFactors, revenue, financial, catalyst, ownership, risk] = await Promise.all([
     readJson(path.join(dataDir, "companies.json")),
     readJson(path.join(dataDir, "industry_templates.json")),
     readData("market_data.json"),
+    readData("market_factors.json"),
     readData("revenue_data.json"),
     readData("financial_data.json"),
     readData("catalyst_data.json"),
@@ -183,7 +231,7 @@ export async function generatePublicFacts({ generatedAt = new Date().toISOString
     readData("risk_data.json")
   ]);
 
-  const datasets = { templates, market, revenue, financial, catalyst, ownership, risk };
+  const datasets = { templates, market, marketFactors, revenue, financial, catalyst, ownership, risk };
   const companies = Object.fromEntries((companiesJson.companies || []).map((company) => [company.id, {
     ticker: company.ticker,
     market: company.market,

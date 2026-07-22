@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-export const DATA_VERSION = "0.8.0";
+export const DATA_VERSION = "0.9.0";
 
 export const SOURCE_CATALOG = [
   {
@@ -17,6 +17,48 @@ export const SOURCE_CATALOG = [
     short_title: "TPEx 股價",
     url: "https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock",
     note: "上櫃公司個股日成交資訊，用於計算近一年價格區間、20/60 日趨勢。"
+  },
+  {
+    id: "twse_valuation",
+    title: "臺灣證券交易所 OpenAPI：上市個股本益比、殖利率與股價淨值比",
+    short_title: "TWSE 估值",
+    url: "https://openapi.twse.com.tw/v1/exchangeReport/BWIBBU_ALL",
+    note: "全市場上市估值資料，用於官方產業同業百分位；不以觀察清單作比較母體。"
+  },
+  {
+    id: "tpex_valuation",
+    title: "證券櫃檯買賣中心：上櫃個股本益比、殖利率與股價淨值比",
+    short_title: "TPEx 估值",
+    url: "https://www.tpex.org.tw/web/stock/aftertrading/peratio_analysis/pera_result.php?l=zh-tw&o=json&s=0",
+    note: "全市場上櫃估值資料，用於官方產業同業百分位；不以觀察清單作比較母體。"
+  },
+  {
+    id: "twse_margin_balance",
+    title: "臺灣證券交易所 OpenAPI：上市融資融券餘額",
+    short_title: "TWSE 融資券",
+    url: "https://openapi.twse.com.tw/v1/exchangeReport/MI_MARGN",
+    note: "上市公司每日融資融券餘額與增減。"
+  },
+  {
+    id: "tpex_margin_balance",
+    title: "證券櫃檯買賣中心：上櫃融資融券餘額",
+    short_title: "TPEx 融資券",
+    url: "https://www.tpex.org.tw/web/stock/margin_trading/margin_balance/margin_bal_result.php?l=zh-tw&o=json",
+    note: "上櫃公司每日融資融券餘額與增減。"
+  },
+  {
+    id: "twse_institutional_trading",
+    title: "臺灣證券交易所：上市三大法人買賣超",
+    short_title: "TWSE 三大法人",
+    url: "https://www.twse.com.tw/rwd/zh/fund/T86",
+    note: "上市公司每日外資、投信、自營商與合計買賣超。"
+  },
+  {
+    id: "tpex_institutional_trading",
+    title: "證券櫃檯買賣中心：上櫃三大法人買賣超",
+    short_title: "TPEx 三大法人",
+    url: "https://www.tpex.org.tw/web/stock/3insti/daily_trade/3itrade_hedge_result.php",
+    note: "上櫃公司每日外資、投信、自營商與合計買賣超。"
   },
   {
     id: "yahoo_finance_chart",
