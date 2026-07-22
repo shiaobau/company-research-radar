@@ -42,7 +42,7 @@ function valueByTerms(record, terms, excludes = []) {
 
 function recordFromTables(tables, ticker) {
   for (const table of tables || []) {
-    const headerIndex = table.findIndex((row) => row.some((cell) => String(cell).includes("公司代號")));
+    const headerIndex = table.findIndex((row) => row.some((cell) => normalizeKey(cell).includes("公司代號")));
     if (headerIndex < 0) continue;
     const header = table[headerIndex].map((cell) => normalizeKey(cell));
     for (const row of table.slice(headerIndex + 1)) {
@@ -54,10 +54,16 @@ function recordFromTables(tables, ticker) {
   return null;
 }
 
+const jsonCache = new Map();
+
 async function optionalJson(file) {
+  if (jsonCache.has(file)) return jsonCache.get(file);
   try {
-    return JSON.parse(await readFile(file, "utf8"));
+    const value = JSON.parse(await readFile(file, "utf8"));
+    jsonCache.set(file, value);
+    return value;
   } catch {
+    jsonCache.set(file, null);
     return null;
   }
 }
@@ -99,10 +105,10 @@ async function selectRevenue(rawDir, company, observationDate, publicationLag) {
     const previous = valueByTerms(row, ["上月營收"]) ?? valueByTerms(row, ["上月", "營業收入"]);
     const lastYear = valueByTerms(row, ["去年當月營收"]) ?? valueByTerms(row, ["去年", "當月", "營業收入"]);
     const cumulative = valueByTerms(row, ["當月累計營收"]) ?? valueByTerms(row, ["累計", "營業收入"], ["去年"]);
-    const priorCumulative = valueByTerms(row, ["去年當月累計營收"]) ?? valueByTerms(row, ["去年", "累計", "營業收入"]);
+    const priorCumulative = valueByTerms(row, ["去年累計營收"]) ?? valueByTerms(row, ["去年", "累計", "營業收入"]);
     const yoy = valueByTerms(row, ["去年同月增減", "%"]) ?? (current && lastYear ? (current - lastYear) / Math.abs(lastYear) * 100 : null);
     const mom = valueByTerms(row, ["上月比較增減", "%"]) ?? (current && previous ? (current - previous) / Math.abs(previous) * 100 : null);
-    const cumulativeYoy = valueByTerms(row, ["累計", "增減", "%"]) ?? (cumulative && priorCumulative ? (cumulative - priorCumulative) / Math.abs(priorCumulative) * 100 : null);
+    const cumulativeYoy = valueByTerms(row, ["前期比較增減", "%"]) ?? (cumulative && priorCumulative ? (cumulative - priorCumulative) / Math.abs(priorCumulative) * 100 : null);
     if (![yoy, mom, cumulativeYoy].every(Number.isFinite)) continue;
     return {
       status: "ok",

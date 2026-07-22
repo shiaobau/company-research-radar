@@ -8,6 +8,8 @@ import { readJson, rocDateToIso, toNumber, tpexDateParam, twDateParam, writeJson
 const root = process.cwd();
 const dataDir = path.join(root, "data");
 const mopsWebBase = "https://mops.twse.com.tw/mops/web";
+const mopsLegacyBase = "https://mopsov.twse.com.tw";
+const mopsRedirectUrl = "https://mops.twse.com.tw/mops/api/redirectToOld";
 
 async function optionalJson(file) {
   try {
@@ -86,8 +88,9 @@ function evenlySpaced(items, count) {
   });
 }
 
-function buildCohort(universe, templates, startDate, perTemplate) {
+function buildCohort(universe, templates, startDate, perTemplate, minimumListingDays = 0) {
   const minListing = new Date(`${startDate}T00:00:00Z`);
+  minListing.setUTCDate(minListing.getUTCDate() - minimumListingDays);
   const rows = [];
   for (const [templateId, template] of Object.entries(templates)) {
     const eligible = (universe.companies || [])
@@ -184,6 +187,30 @@ async function postMopsHtml(endpoint, params) {
   } finally {
     clearTimeout(timeout);
   }
+}
+
+async function getDecodedHtml(url, encoding = "big5") {
+  let lastError;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 40000);
+    try {
+      const response = await fetch(url, {
+        headers: { "user-agent": "Mozilla/5.0 (compatible; company-research-radar/1.0)" },
+        signal: controller.signal
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const html = new TextDecoder(encoding).decode(await response.arrayBuffer());
+      if (/FOR SECURITY REASONS/i.test(html)) throw new Error("MOPS security response");
+      return html;
+    } catch (error) {
+      lastError = error;
+      if (attempt < 3) await sleep(500 * attempt);
+    } finally {
+      clearTimeout(timeout);
+    }
+  }
+  throw lastError;
 }
 
 async function getOfficialJson(url) {
@@ -286,6 +313,13 @@ async function runPowerShellHtml(command, environment) {
   });
 }
 
+async function getSignedMopsHtml(apiName, parameters) {
+  const redirect = await postJson(mopsRedirectUrl, { apiName, parameters });
+  const signedUrl = redirect?.result?.url;
+  if (!signedUrl) throw new Error("MOPS signed redirect did not return a URL.");
+  return getDecodedHtml(signedUrl, "utf-8");
+}
+
 function endOfMonth(year, month) {
   return new Date(Date.UTC(year, month, 0)).toISOString().slice(0, 10);
 }
@@ -368,7 +402,8 @@ function transferRecordsFromHtml(html) {
 async function collectMopsTransferHistory(market, years, source, outputDir) {
   const file = path.join(outputDir, "raw", "governance", `transfers-${market}.json`);
   const existing = await optionalJson(file);
-  if (!process.argv.includes("--refresh") && existing?.status === "ok") return existing;
+  const existingYears = new Set((existing?.years || []).map(Number));
+  if (!process.argv.includes("--refresh") && existing?.status === "ok" && years.every((year) => existingYears.has(Number(year)))) return existing;
   const records = [];
   const payload = {
     source_id: "mops_insider_transfer_daily_report",
@@ -441,7 +476,9 @@ async function collectFinmindDataset(company, source, datasetKey, startDate, end
   const dataset = source.datasets?.[datasetKey];
   const file = path.join(outputDir, "raw", "finmind", `${company.ticker}-${dataset}.json`);
   const existing = await optionalJson(file);
-  if (!process.argv.includes("--refresh") && ["ok", "no_data"].includes(existing?.status)) return existing;
+  const cachedRange = existing?.requested_range;
+  const coversRange = cachedRange?.start_date <= startDate && cachedRange?.end_date >= endDate;
+  if (!process.argv.includes("--refresh") && ["ok", "no_data"].includes(existing?.status) && coversRange) return existing;
   if (budget.used >= budget.limit) {
     return { status: "deferred", dataset, reason: "FinMind request budget reached; run the collector again to resume from cache." };
   }
@@ -494,6 +531,9 @@ function marketType(market) {
 async function collectQuarterlyReport(kind, market, year, quarter, outputDir) {
   const endpoint = kind === "income" ? "ajax_t163sb04" : "ajax_t163sb05";
   const file = path.join(outputDir, "raw", "financial", `${kind}-${market}-${year}-Q${quarter}.json`);
+  const existing = await optionalJson(file);
+  const expectedLabel = kind === "income" ? "營業收入" : "資產總計";
+  if (!process.argv.includes("--refresh") && existing?.status === "ok" && JSON.stringify(existing.tables || []).includes(expectedLabel)) return existing;
   const payload = {
     source_id: `mops_${kind}_summary`,
     endpoint,
@@ -506,7 +546,7 @@ async function collectQuarterlyReport(kind, market, year, quarter, outputDir) {
     rows: []
   };
   try {
-    const html = await postMopsHtml(endpoint, {
+    const html = await getSignedMopsHtml(endpoint, {
       encodeURIComponent: "1",
       step: "1",
       firstin: "1",
@@ -527,12 +567,16 @@ async function collectQuarterlyReport(kind, market, year, quarter, outputDir) {
 }
 
 async function collectMonthlyRevenue(market, year, month, outputDir) {
-  const endpoint = "ajax_t05st10_ifrs";
+  const endpoint = "t21sc03";
   const file = path.join(outputDir, "raw", "revenue", `${market}-${year}-${String(month).padStart(2, "0")}.json`);
+  const existing = await optionalJson(file);
+  if (!process.argv.includes("--refresh") && existing?.status === "ok" && JSON.stringify(existing.tables || []).includes("當月營收")) return existing;
+  const legacyMarket = market === "TPEx" ? "otc" : "sii";
+  const sourceUrl = `${mopsLegacyBase}/nas/t21/${legacyMarket}/t21sc03_${year - 1911}_${month}_0.html`;
   const payload = {
     source_id: "mops_monthly_revenue_history",
     endpoint,
-    source_url: `${mopsWebBase}/t05st10_ifrs`,
+    source_url: sourceUrl,
     market,
     roc_year: String(year - 1911),
     month: String(month).padStart(2, "0"),
@@ -541,15 +585,7 @@ async function collectMonthlyRevenue(market, year, month, outputDir) {
     tables: []
   };
   try {
-    const html = await postMopsHtml(endpoint, {
-      encodeURIComponent: "1",
-      step: "1",
-      firstin: "1",
-      off: "1",
-      TYPEK: marketType(market),
-      year: payload.roc_year,
-      month: payload.month
-    });
+    const html = await getDecodedHtml(sourceUrl);
     payload.status = "ok";
     payload.html_length = html.length;
     payload.tables = parseTables(html);
@@ -563,12 +599,17 @@ async function collectMonthlyRevenue(market, year, month, outputDir) {
 async function fetchPriceHistory(company, startDate, endDate, outputDir) {
   const file = path.join(outputDir, "raw", "prices", `${company.ticker}.json`);
   const existing = await optionalJson(file);
-  if (!process.argv.includes("--refresh") && existing?.status === "ok" && Array.isArray(existing.prices) && existing.prices.length >= 260) return existing;
   const start = new Date(`${startDate}T00:00:00Z`);
   start.setUTCMonth(start.getUTCMonth() - 13);
   start.setUTCDate(1);
   const end = new Date(`${endDate}T00:00:00Z`);
   end.setUTCDate(1);
+  const existingPrices = Array.isArray(existing?.prices) ? existing.prices : [];
+  const cachedStart = existingPrices.at(0)?.date;
+  const cachedEnd = existingPrices.at(-1)?.date;
+  const requiredStart = isoDate(start);
+  const requiredEnd = isoDate(end);
+  if (!process.argv.includes("--refresh") && existing?.status === "ok" && existingPrices.length >= 260 && cachedStart <= requiredStart && cachedEnd >= requiredEnd) return existing;
   const months = [];
   for (let month = new Date(start); month <= end; month.setUTCMonth(month.getUTCMonth() + 1)) {
     months.push(new Date(month));
@@ -645,7 +686,7 @@ async function main() {
   const startDate = observations[0];
   const priceEnd = new Date(`${endDate}T00:00:00Z`);
   priceEnd.setUTCDate(priceEnd.getUTCDate() + Math.max(...timeline.forward_return_days) + 10);
-  const cohort = buildCohort(universe, templates, startDate, perTemplate);
+  const cohort = buildCohort(universe, templates, startDate, perTemplate, Number(config.cohort.minimum_listing_days || 0));
   const companies = cohort.flatMap((group) => group.companies.map((company) => ({ ...company, industry_template: group.industry_template, template_label: group.template_label })));
   const selectedCompanies = maxCompanies > 0 ? companies.slice(0, maxCompanies) : companies;
   const selectedTickers = new Set(selectedCompanies.map((company) => company.ticker));
@@ -671,8 +712,17 @@ async function main() {
   const quartersToFetch = new Map();
   for (const observation of observations) {
     const date = new Date(`${observation}T00:00:00Z`);
-    monthsToFetch.set(monthKey(date), { year: date.getUTCFullYear(), month: date.getUTCMonth() + 1 });
-    quartersToFetch.set(quarterKey(date), quarterFromKey(quarterKey(date)));
+    // The report for the observation month/quarter is not yet public at the
+    // observation date. Keep enough preceding periods for publication lags.
+    for (let offset = 0; offset <= 2; offset += 1) {
+      const monthDate = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth() - offset, 1));
+      monthsToFetch.set(monthKey(monthDate), { year: monthDate.getUTCFullYear(), month: monthDate.getUTCMonth() + 1 });
+    }
+    for (let offset = 0; offset <= 3; offset += 1) {
+      const quarterDate = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth() - offset * 3, 1));
+      const key = quarterKey(quarterDate);
+      quartersToFetch.set(key, quarterFromKey(key));
+    }
   }
   const reportStatus = [];
   if (!skipMopsReports) {
@@ -688,6 +738,15 @@ async function main() {
         await sleep(350);
       }
     }
+  }
+
+  if (process.argv.includes("--reports-only")) {
+    console.log(JSON.stringify({
+      backtest_id: backtestId,
+      reports_ok: reportStatus.filter((item) => item.status === "ok").length,
+      reports_unavailable: reportStatus.filter((item) => item.status !== "ok").length
+    }, null, 2));
+    return;
   }
 
   const companyConcurrency = Math.max(1, Number(argValue("company-concurrency", "3")));

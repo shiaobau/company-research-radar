@@ -19,6 +19,30 @@
       "observation_dates": ["2026-04-20", "2026-05-20", "2026-06-19"],
       "forward_return_days": [20],
       "event_lookback_days": 90
+    },
+    "historical_calibration_15x10_12m": {
+      "description": "Twelve non-overlapping monthly observations for a fixed cross-industry calibration panel, with the final four months reserved for validation and holdout testing.",
+      "observation_dates": [
+        "2025-07-18",
+        "2025-08-20",
+        "2025-09-19",
+        "2025-10-20",
+        "2025-11-20",
+        "2025-12-19",
+        "2026-01-20",
+        "2026-02-20",
+        "2026-03-20",
+        "2026-04-20",
+        "2026-05-20",
+        "2026-06-19"
+      ],
+      "forward_return_days": [20],
+      "event_lookback_days": 90,
+      "split": {
+        "training_months": 8,
+        "validation_months": 2,
+        "test_months": 2
+      }
     }
   },
   "event_classification": {
