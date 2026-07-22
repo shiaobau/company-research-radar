@@ -31,28 +31,30 @@ const state = {
 };
 
 const $ = (selector) => document.querySelector(selector);
+const fetchFreshJson = (path) => fetch(`${path}?updated_at=${Date.now()}`, { cache: "no-store" })
+  .then((response) => response.json());
 
 Promise.all([
   fetch("data/industry_templates.json").then((response) => response.json()),
   fetch("data/field_definitions.json").then((response) => response.json()),
   fetch("data/scoring_rules.json").then((response) => response.json()),
-  fetch("data/companies.json", { cache: "no-store" }).then((response) => response.json()),
-  fetch("data/signals.json").then((response) => response.json()).catch(() => ({ signals: [] })),
-  fetch("data/market_data.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
-  fetch("data/revenue_data.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
-  fetch("data/financial_data.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
-  fetch("data/catalyst_data.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
-  fetch("data/ownership_data.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
-  fetch("data/risk_data.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
-  fetch("data/industry_evidence_data.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
-  fetch("data/industry_data.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
-  fetch("data/data_status.json").then((response) => response.json()).catch(() => ({ companies: {} })),
-  fetch("data/public_facts.json").then((response) => response.json()).catch(() => ({ companies: {}, sources: [] })),
-  fetch("data/listed_companies_universe.json").then((response) => response.json()).catch(() => ({ companies: [] })),
-  fetch("data/research_cache/index.json", { cache: "no-store" }).then((response) => response.json()).catch(() => ({ companies: [] })),
-  fetch("data/scheduler_status.json", { cache: "no-store" }).then((response) => response.json()).catch(() => ({ schedules: {}, current_run: null })),
-  fetch("data/research_status.json", { cache: "no-store" }).then((response) => response.json()).catch(() => ({ summary: {}, companies: {} }))
-  , fetch("data/app_config.json", { cache: "no-store" }).then((response) => response.json()).catch(() => ({ manual_update: { enabled: false, endpoint: "", request_timeout_ms: 15000 } }))
+  fetchFreshJson("data/companies.json"),
+  fetchFreshJson("data/signals.json").catch(() => ({ signals: [] })),
+  fetchFreshJson("data/market_data.json").catch(() => ({ companies: {}, sources: [] })),
+  fetchFreshJson("data/revenue_data.json").catch(() => ({ companies: {}, sources: [] })),
+  fetchFreshJson("data/financial_data.json").catch(() => ({ companies: {}, sources: [] })),
+  fetchFreshJson("data/catalyst_data.json").catch(() => ({ companies: {}, sources: [] })),
+  fetchFreshJson("data/ownership_data.json").catch(() => ({ companies: {}, sources: [] })),
+  fetchFreshJson("data/risk_data.json").catch(() => ({ companies: {}, sources: [] })),
+  fetchFreshJson("data/industry_evidence_data.json").catch(() => ({ companies: {}, sources: [] })),
+  fetchFreshJson("data/industry_data.json").catch(() => ({ companies: {}, sources: [] })),
+  fetchFreshJson("data/data_status.json").catch(() => ({ companies: {} })),
+  fetchFreshJson("data/public_facts.json").catch(() => ({ companies: {}, sources: [] })),
+  fetchFreshJson("data/listed_companies_universe.json").catch(() => ({ companies: [] })),
+  fetchFreshJson("data/research_cache/index.json").catch(() => ({ companies: [] })),
+  fetchFreshJson("data/scheduler_status.json").catch(() => ({ schedules: {}, current_run: null })),
+  fetchFreshJson("data/research_status.json").catch(() => ({ summary: {}, companies: {} })),
+  fetchFreshJson("data/app_config.json").catch(() => ({ manual_update: { enabled: false, endpoint: "", request_timeout_ms: 15000 } }))
 ]).then(([templates, definitions, rules, companies, signals, marketData, revenueData, financialData, catalystData, ownershipData, riskData, industryEvidenceData, industryData, dataStatus, publicFactsData, universe, researchCacheIndex, schedulerStatus, researchStatus, appConfig]) => {
   state.templates = templates.industries;
   state.definitions = definitions.fields;
@@ -1492,6 +1494,8 @@ function renderAll() {
 }
 
 function latestDataTimestamp() {
+  const completedAt = Date.parse(state.schedulerStatus?.generated_at || "");
+  if (Number.isFinite(completedAt)) return new Date(completedAt);
   const timestamps = [
     state.publicFactsData.generated_at,
     state.marketData.generated_at,
@@ -1574,7 +1578,7 @@ function renderSummary(companies) {
 
   $("#company-count").textContent = `${companies.length} ${modeLabel}`;
   $("#visible-count").textContent = `${companies.length} 筆`;
-  $("#last-updated").textContent = `資料更新：${formatDashboardTimestamp()}`;
+  $("#last-updated").textContent = `最近完整更新：${formatDashboardTimestamp()}`;
   $("#summary-grid").innerHTML = [
     ["平均評分", average],
     ["完成研究", `${scores.length}/${companies.length}`],
