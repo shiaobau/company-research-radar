@@ -106,7 +106,6 @@ function githubHeaders(env) {
 
 function scheduledSlot(cron) {
   if (cron === "15 0 * * 1-5") return "morning";
-  if (cron === "55 1 * * 1-5") return "manual";
   if (cron === "30 12 * * 1-5") return "evening";
   return "manual";
 }
