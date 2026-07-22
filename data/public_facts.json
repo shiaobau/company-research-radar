@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T12:31:22.152Z",
+  "generated_at": "2026-07-22T00:16:17.979Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -162,7 +162,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-07-21T12:31:22.152Z",
+      "generated_at": "2026-07-22T00:16:17.979Z",
       "facts": [
         {
           "id": "official_classification",
@@ -229,7 +229,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-07-21T12:31:22.152Z",
+      "generated_at": "2026-07-22T00:16:17.979Z",
       "facts": [
         {
           "id": "official_classification",
@@ -265,6 +265,14 @@
           ]
         },
         {
+          "id": "latest_disclosure",
+          "label": "近期重大訊息",
+          "value": "2026-07-21：公告本公司115年第二季合併財務報告董事會召開日期。",
+          "source_ids": [
+            "twse_material_events"
+          ]
+        },
+        {
           "id": "governance_snapshot",
           "label": "股權與治理",
           "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
@@ -277,7 +285,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 0 則；申報違規 0 筆。",
+          "value": "官方事件 2 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -288,7 +296,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-07-21T12:31:22.152Z",
+      "generated_at": "2026-07-22T00:16:17.979Z",
       "facts": [
         {
           "id": "official_classification",
@@ -324,6 +332,14 @@
           ]
         },
         {
+          "id": "latest_disclosure",
+          "label": "近期重大訊息",
+          "value": "2026-07-21：公告本公司民國115年第二季財務報告董事會召開日期。",
+          "source_ids": [
+            "twse_material_events"
+          ]
+        },
+        {
           "id": "major_shareholders",
           "label": "大股東資料",
           "value": "持股逾 10% 大股東：香港商香達國際有限公司。",
@@ -344,7 +360,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 0 則；申報違規 0 筆。",
+          "value": "官方事件 1 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -355,7 +371,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-07-21T12:31:22.152Z",
+      "generated_at": "2026-07-22T00:16:17.979Z",
       "facts": [
         {
           "id": "official_classification",
@@ -414,7 +430,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-07-21T12:31:22.152Z",
+      "generated_at": "2026-07-22T00:16:17.979Z",
       "facts": [
         {
           "id": "official_classification",
@@ -452,7 +468,7 @@
         {
           "id": "latest_disclosure",
           "label": "近期重大訊息",
-          "value": "2026-07-20：元大金控公告114年度中文年報勘誤。",
+          "value": "2026-07-21：元大金控代子公司元大銀行公告114年度盈餘分配之除權 基準日。。",
           "source_ids": [
             "twse_material_events"
           ]
@@ -470,7 +486,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 1 則；申報違規 0 筆。",
+          "value": "官方事件 4 則；待閱讀 4 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -481,7 +497,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-07-21T12:31:22.152Z",
+      "generated_at": "2026-07-22T00:16:17.979Z",
       "facts": [
         {
           "id": "official_classification",
@@ -540,7 +556,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-07-21T12:31:22.152Z",
+      "generated_at": "2026-07-22T00:16:17.979Z",
       "facts": [
         {
           "id": "official_classification",
@@ -607,7 +623,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-07-21T12:31:22.152Z",
+      "generated_at": "2026-07-22T00:16:17.979Z",
       "facts": [
         {
           "id": "official_classification",
@@ -666,7 +682,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-07-21T12:31:22.152Z",
+      "generated_at": "2026-07-22T00:16:17.979Z",
       "facts": [
         {
           "id": "official_classification",
@@ -733,7 +749,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-07-21T12:31:22.152Z",
+      "generated_at": "2026-07-22T00:16:17.979Z",
       "facts": [
         {
           "id": "official_classification",

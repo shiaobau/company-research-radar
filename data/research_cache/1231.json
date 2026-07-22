@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-21T12:32:21.091Z",
+  "collected_at": "2026-07-22T00:16:37.427Z",
   "company": {
     "id": "twse-1231",
     "ticker": "1231",
@@ -541,8 +541,8 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-21T12:31:18.285Z",
-      "row_count": 95,
+      "fetched_at": "2026-07-22T00:16:15.302Z",
+      "row_count": 104,
       "available": true
     },
     {

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-07-21T12:32:21.050Z",
+  "generated_at": "2026-07-22T00:16:37.384Z",
   "note": "六項核心評分維度必須具備公開資料；產業證據調整僅在通過來源支持的產業子檢核後才介入，未完成時維持核心分數。",
   "summary": {
     "total": 10,
@@ -22,7 +22,7 @@
       ],
       "completed_count": 6,
       "total_count": 7,
-      "checked_at": "2026-07-21T12:32:21.050Z",
+      "checked_at": "2026-07-22T00:16:37.384Z",
       "retried": false
     },
     "twse-2330": {
@@ -38,7 +38,7 @@
       ],
       "completed_count": 6,
       "total_count": 7,
-      "checked_at": "2026-07-21T12:32:21.050Z",
+      "checked_at": "2026-07-22T00:16:37.384Z",
       "retried": false
     },
     "twse-1231": {
@@ -54,7 +54,7 @@
       ],
       "completed_count": 6,
       "total_count": 7,
-      "checked_at": "2026-07-21T12:32:21.050Z",
+      "checked_at": "2026-07-22T00:16:37.384Z",
       "retried": false
     },
     "tpex-6023": {
@@ -70,7 +70,7 @@
       ],
       "completed_count": 6,
       "total_count": 7,
-      "checked_at": "2026-07-21T12:32:21.050Z",
+      "checked_at": "2026-07-22T00:16:37.384Z",
       "retried": false
     },
     "twse-2885": {
@@ -86,7 +86,7 @@
       ],
       "completed_count": 6,
       "total_count": 7,
-      "checked_at": "2026-07-21T12:32:21.050Z",
+      "checked_at": "2026-07-22T00:16:37.384Z",
       "retried": false
     },
     "tpex-8279": {
@@ -102,7 +102,7 @@
       ],
       "completed_count": 6,
       "total_count": 7,
-      "checked_at": "2026-07-21T12:32:21.050Z",
+      "checked_at": "2026-07-22T00:16:37.384Z",
       "retried": false
     },
     "twse-2308": {
@@ -118,7 +118,7 @@
       ],
       "completed_count": 6,
       "total_count": 7,
-      "checked_at": "2026-07-21T12:32:21.050Z",
+      "checked_at": "2026-07-22T00:16:37.384Z",
       "retried": false
     },
     "tpex-3115": {
@@ -134,7 +134,7 @@
       ],
       "completed_count": 6,
       "total_count": 7,
-      "checked_at": "2026-07-21T12:32:21.050Z",
+      "checked_at": "2026-07-22T00:16:37.384Z",
       "retried": false
     },
     "twse-2886": {
@@ -150,7 +150,7 @@
       ],
       "completed_count": 6,
       "total_count": 7,
-      "checked_at": "2026-07-21T12:32:21.050Z",
+      "checked_at": "2026-07-22T00:16:37.384Z",
       "retried": false
     },
     "twse-3481": {
@@ -166,7 +166,7 @@
       ],
       "completed_count": 6,
       "total_count": 7,
-      "checked_at": "2026-07-21T12:32:21.050Z",
+      "checked_at": "2026-07-22T00:16:37.384Z",
       "retried": false
     }
   }

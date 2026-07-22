@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "generated_at": "2026-07-21T12:31:22.152Z",
+  "generated_at": "2026-07-22T00:16:17.979Z",
   "sources": [
     {
       "id": "twse_income_statement",
@@ -166,7 +166,7 @@
       "score": 62,
       "rationale": "2026Q1 毛利率 21.66%，營益率 9.51%，流動比率 1.42，負債比率 50.96%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T12:31:22.152Z"
+      "refreshed_at": "2026-07-22T00:16:17.979Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -190,7 +190,7 @@
       "score": 71,
       "rationale": "2026Q1 毛利率 29.19%，營益率 18.47%，流動比率 2.72，負債比率 32.2%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T12:31:22.152Z"
+      "refreshed_at": "2026-07-22T00:16:17.979Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -214,7 +214,7 @@
       "score": 70,
       "rationale": "2026Q1 毛利率 37%，營益率 17.83%，流動比率 1.95，負債比率 47.78%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T12:31:22.152Z"
+      "refreshed_at": "2026-07-22T00:16:17.979Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -238,7 +238,7 @@
       "score": 78,
       "rationale": "2026Q1 毛利率 66.25%，營益率 58.1%，流動比率 2.49，負債比率 31.5%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T12:31:22.152Z"
+      "refreshed_at": "2026-07-22T00:16:17.979Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -267,7 +267,7 @@
       "score": 89,
       "rationale": "2026Q1 金控業財報：年化 ROE 16.14%、年化 ROA 1.34%、權益比率 8.33%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T12:31:22.152Z"
+      "refreshed_at": "2026-07-22T00:16:17.979Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -296,7 +296,7 @@
       "score": 79,
       "rationale": "2026Q1 金控業財報：年化 ROE 9.35%、年化 ROA 0.75%、權益比率 8.03%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T12:31:22.152Z"
+      "refreshed_at": "2026-07-22T00:16:17.979Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -320,7 +320,7 @@
       "score": 58,
       "rationale": "2026Q1 毛利率 100%，營益率 -570.44%，流動比率 18.73，負債比率 6.82%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T12:31:22.152Z"
+      "refreshed_at": "2026-07-22T00:16:17.979Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -344,7 +344,7 @@
       "score": 57,
       "rationale": "2026Q1 毛利率 14.43%，營益率 2.25%，流動比率 1.46，負債比率 40.84%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T12:31:22.152Z"
+      "refreshed_at": "2026-07-22T00:16:17.979Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -373,7 +373,7 @@
       "score": 78,
       "rationale": "2026Q1 證券期貨業財報：年化 ROE 13.84%、年化 ROA 1.16%、權益比率 8.39%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T12:31:22.152Z"
+      "refreshed_at": "2026-07-22T00:16:17.979Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -397,7 +397,7 @@
       "score": 70,
       "rationale": "2026Q1 毛利率 32.97%，營益率 10.42%，流動比率 1.84，負債比率 25.82%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-21T12:31:22.152Z"
+      "refreshed_at": "2026-07-22T00:16:17.979Z"
     }
   }
 }

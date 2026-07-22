@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-21T12:32:21.091Z",
+  "collected_at": "2026-07-22T00:16:37.427Z",
   "company": {
     "id": "twse-2308",
     "ticker": "2308",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "78b5ab5715fe7bef9ec9",
+      "date": "2026-07-21",
+      "announced_date": "2026-07-21",
+      "fact_date": "2026-07-21",
+      "announced_time": "155440",
+      "title": "公告本公司民國115年第二季財務報告董事會召開日期",
+      "description": "1.董事會召集通知日:115/07/21 2.董事會預計召開日期:115/07/29 3.預計提報董事會或經董事會決議之財務報告或 年度自結財務資訊年季:民國115年第二季財務報告 4.其他應敘明事項:無",
+      "clause": "第31款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2308-1150715-2",
       "date": "2026-07-15",
@@ -492,27 +507,6 @@
         "serialNumber": "4",
         "enterDate": "1150508"
       }
-    },
-    {
-      "id": "mops-history-2308-1150506-1",
-      "date": "2026-05-06",
-      "announced_date": "2026-05-06",
-      "fact_date": null,
-      "announced_time": "17:57:41",
-      "title": "本公司受邀參加法人說明會之相關資訊",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150506"
-      }
     }
   ],
   "references": [
@@ -541,8 +535,8 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-21T12:31:18.285Z",
-      "row_count": 95,
+      "fetched_at": "2026-07-22T00:16:15.302Z",
+      "row_count": 104,
       "available": true
     },
     {
