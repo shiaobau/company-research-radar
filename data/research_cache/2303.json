@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-22T01:57:32.582Z",
+  "collected_at": "2026-07-22T12:31:18.725Z",
   "company": {
     "id": "twse-2303",
     "ticker": "2303",
@@ -39,6 +39,48 @@
       "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed"
+    },
+    {
+      "id": "mops-history-2303-1150721-2",
+      "date": "2026-07-21",
+      "announced_date": "2026-07-21",
+      "fact_date": "2026-07-21",
+      "announced_time": "16:07:02",
+      "title": "公告本公司發行國內第一次暨第二次無擔保轉換公司債代收 價款行庫及存儲專戶行庫",
+      "description": "1.事實發生日:115/07/21 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依據「發行人募集與發行有價證券處理準則」第9條第1項第2款規定辦理 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): (1)訂約日期：115/7/21 (2)委託代收價款行庫：華南商業銀行總行營業部 (3)委託存儲專戶機構：中國信託商業銀行敦南分行",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150721",
+        "marketKind": "sii",
+        "companyId": "2303",
+        "serialNumber": "2"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150721-1",
+      "date": "2026-07-21",
+      "announced_date": "2026-07-21",
+      "fact_date": "2026-07-21",
+      "announced_time": "16:02:44",
+      "title": "公告本公司115年第二季合併財務報告董事會召開日期",
+      "description": "1.董事會召集通知日:115/07/21 2.董事會預計召開日期:115/07/29 3.預計提報董事會或經董事會決議之財務報告或 年度自結財務資訊年季:115年第二季合併財務報告 4.其他應敘明事項:無",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150721",
+        "marketKind": "sii",
+        "companyId": "2303",
+        "serialNumber": "1"
+      }
     },
     {
       "id": "mops-history-2303-1150715-1",
@@ -86,11 +128,11 @@
       "id": "mops-history-2303-1150629-1",
       "date": "2026-06-29",
       "announced_date": "2026-06-29",
-      "fact_date": "2026-06-29",
+      "fact_date": null,
       "announced_time": "17:52:39",
       "title": "公告本公司第二十二次買回公司股份期間屆滿及執行情形",
-      "description": "1.原預定買回股份總金額上限(元):212,951,478,175 2.原預定買回之期間:115/04/30~115/06/29 3.原預定買回之數量(股):50,000,000 4.原預定買回區間價格(元):52.50~109.50 5.本次實際買回期間:115/05/05~115/05/20 6.本次已買回股份數量(股):30,551,000 7.本次已買回股份總金額(元):3,095,665,789 8.本次平均每股買回價格(元):101.33 9.累積已持有自己公司股份數量(股):30,551,000 10.累積已持有自己公司股份數量占公司已發行股份總數之比率(%):0.24 11.本次未執行完畢之原因: 為考量市場機制及整體股東權益，本次庫藏股未執行完畢。 12.其他應敘明事項: 無",
-      "clause": "第35款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
@@ -107,11 +149,11 @@
       "id": "mops-history-2303-1150623-6",
       "date": "2026-06-23",
       "announced_date": "2026-06-23",
-      "fact_date": "2026-06-23",
+      "fact_date": null,
       "announced_time": "17:08:40",
       "title": "係因本公司有價證券於集中交易市場達公布注意交易資訊 標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
-      "description": "1.事實發生日:115/06/23 2.發生緣由:依據臺灣證券交易所股份有限公司通知辦理 3.財務業務資訊: 本公司合併財務資訊： 科目 最近一月 與去年同期 最近一季 與去年同期 最近四季累計 期間 115年05月 增 減% 115年第1季 增 減% 114年第2季至 115年第1季 (自結數) (核閱數) (查核/核閱數) =========================================================================== 營業收入 22,944 17.8% 61,038 5.5% 240,732 (百萬) 稅前淨利 8,379 202.9% 16,644 78.1% 56,945 (百萬) 歸屬母公司 8,449 203.0% 16,171 107.9% 50,111 業主淨利 (百萬) 每股盈餘 0.68 195.7% 1.29 108.1% 4.01 (元) 4.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理 程序」第4條所列重大訊息之情事（如「有」，請說明）:無 5.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理 程序」第11條所列重大訊息說明記者會之情事:無 6.完整財務資訊請至公開資訊觀測站查閱，路徑如下： (1)近期營業收入及損益資訊：基本資料>精華版 (2)歷史每月營業收入：營運概況>每月營收>採用IFRSs後之月營業收入資訊 (3)歷史損益(會計師查核/核閱數)：財務報表>採IFRSs後>合併/個別報表>綜合損益表 (4)歷史損益(自願性公告自結數)：營運概況>自結損益公告:無 7.其他應敘明事項: 本次公告之單月財務數字係屬公司自結數，未經會計師查核或核閱。 另本公司對採用權益法所認列之投資損益係按季評估及認列，上述單月自結數字 並未包含該等權益法投資損益，投資人審閱時請務必注意此項會計處理時程之限 制，並請以未來公告之經會計師核閱季報數字為準。",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
@@ -459,48 +501,6 @@
         "companyId": "2303",
         "serialNumber": "1"
       }
-    },
-    {
-      "id": "mops-history-2303-1150515-1",
-      "date": "2026-05-15",
-      "announced_date": "2026-05-15",
-      "fact_date": null,
-      "announced_time": "14:30:28",
-      "title": "公告本公司買回股份之金額達新台幣三億元以上",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150515",
-        "marketKind": "sii",
-        "companyId": "2303",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150513-2",
-      "date": "2026-05-13",
-      "announced_date": "2026-05-13",
-      "fact_date": null,
-      "announced_time": "16:07:19",
-      "title": "公告本公司買回股份之金額達新台幣三億元以上",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150513",
-        "marketKind": "sii",
-        "companyId": "2303",
-        "serialNumber": "2"
-      }
     }
   ],
   "references": [
@@ -529,14 +529,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-22T01:56:42.620Z",
+      "fetched_at": "2026-07-22T12:30:28.503Z",
       "row_count": 104,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-21T03:15:16.388Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-07-22T12:31:30.841Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1",
   "ticker": "8279",
-  "fetched_at": "2026-07-21T06:02:04.205Z",
+  "fetched_at": "2026-07-22T12:32:17.776Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -28,10 +28,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150707",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1150707"
+        "serialNumber": "1"
       }
     },
     {
@@ -49,10 +49,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150602",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "2",
-        "enterDate": "1150602"
+        "serialNumber": "2"
       }
     },
     {
@@ -70,10 +70,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150527",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "3",
-        "enterDate": "1150527"
+        "serialNumber": "3"
       }
     },
     {
@@ -91,10 +91,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150527",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "2",
-        "enterDate": "1150527"
+        "serialNumber": "2"
       }
     },
     {
@@ -112,10 +112,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150525",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "3",
-        "enterDate": "1150525"
+        "serialNumber": "3"
       }
     },
     {
@@ -133,10 +133,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150525",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "2",
-        "enterDate": "1150525"
+        "serialNumber": "2"
       }
     },
     {
@@ -154,10 +154,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150527",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1150527"
+        "serialNumber": "1"
       }
     },
     {
@@ -175,10 +175,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150523",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "2",
-        "enterDate": "1150523"
+        "serialNumber": "2"
       }
     },
     {
@@ -196,10 +196,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150523",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1150523"
+        "serialNumber": "1"
       }
     },
     {
@@ -217,10 +217,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150420",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1150420"
+        "serialNumber": "1"
       }
     },
     {
@@ -238,10 +238,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150416",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1150416"
+        "serialNumber": "1"
       }
     },
     {
@@ -259,10 +259,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150223",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "3",
-        "enterDate": "1150223"
+        "serialNumber": "3"
       }
     },
     {
@@ -280,10 +280,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150223",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "2",
-        "enterDate": "1150223"
+        "serialNumber": "2"
       }
     },
     {
@@ -301,10 +301,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150207",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "2",
-        "enterDate": "1150207"
+        "serialNumber": "2"
       }
     },
     {
@@ -322,10 +322,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150206",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1150206"
+        "serialNumber": "1"
       }
     },
     {
@@ -343,10 +343,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1141224",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1141224"
+        "serialNumber": "1"
       }
     },
     {
@@ -364,10 +364,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1141023",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1141023"
+        "serialNumber": "1"
       }
     },
     {
@@ -385,10 +385,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1140930",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1140930"
+        "serialNumber": "1"
       }
     },
     {
@@ -406,10 +406,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1140718",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1140718"
+        "serialNumber": "1"
       }
     },
     {
@@ -427,10 +427,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1140714",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1140714"
+        "serialNumber": "1"
       }
     },
     {
@@ -448,10 +448,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1140513",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "3",
-        "enterDate": "1140513"
+        "serialNumber": "3"
       }
     },
     {
@@ -469,10 +469,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1140521",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "2",
-        "enterDate": "1140521"
+        "serialNumber": "2"
       }
     },
     {
@@ -490,10 +490,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1140513",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1140513"
+        "serialNumber": "1"
       }
     },
     {
@@ -511,10 +511,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1140424",
         "marketKind": "otc",
         "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1140424"
+        "serialNumber": "1"
       }
     }
   ]

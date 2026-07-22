@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1",
   "ticker": "2330",
-  "fetched_at": "2026-07-21T03:15:35.648Z",
+  "fetched_at": "2026-07-22T12:31:43.077Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2330-1150722-1",
+      "date": "2026-07-22",
+      "announced_date": "2026-07-22",
+      "fact_date": "2026-07-22",
+      "announced_time": "18:32:47",
+      "title": "公告本公司115年度第3期無擔保普通公司債(綠色債券) 主要發行條件",
+      "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞: 台灣積體電路製造股份有限公司115年度第3期無擔保普通公司債(綠色債券) 3.是否採總括申報發行公司債(是/否):否 4.發行總額:發行總額為新台幣185億元整， 依發行期限之不同分為甲類及乙類2種， 甲類發行金額為新台幣140億元整、乙類發行金額為新台幣45億元整 5.每張面額:新台幣壹仟萬元 6.發行價格:按票面十足發行 7.發行期間:甲類發行期限為5年期、乙類發行期限為10年期 8.發行利率:甲類固定年利率2.03%、乙類固定年利率2.10% 9.擔保品之種類、名稱、金額及約定事項:無 10.募得價款之用途及運用計畫:綠建築及綠色環保相關之支出 11.承銷方式:委託證券承銷商以洽商銷售方式對外公開承銷 12.公司債受託人:台北富邦商業銀行股份有限公司 13.承銷或代銷機構:委任台新綜合證券股份有限公司為主辦承銷商 14.發行保證人:無 15.代理還本付息機構:台北富邦商業銀行股份有限公司市府分公司 16.簽證機構:無 17.能轉換股份者，其轉換辦法:不適用 18.賣回條件:無 19.買回條件:無 20.附有轉換、交換或認股者，其換股基準日:不適用 21.附有轉換、交換或認股者，對股權可能稀釋情形:不適用 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用 23.其他應敘明事項: 本公司於115/2/10董事會通過募集無擔保普通公司債，此為完成115年度 第3期公司債(綠色債券)定價後之說明。",
+      "clause": "第11款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150722",
+        "marketKind": "sii",
+        "companyId": "2330",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2330-1150716-1",
       "date": "2026-07-16",
@@ -80,11 +101,11 @@
       "id": "mops-history-2330-1150702-1",
       "date": "2026-07-02",
       "announced_date": "2026-07-02",
-      "fact_date": "2026-07-02",
+      "fact_date": null,
       "announced_time": "17:36:13",
       "title": "本公司代重要子公司TSMC Arizona Corporation公告其 Treasurer異動",
-      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、 行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、 內部稽核主管或訴訟及非訟代理人）:Treasurer 2.發生變動日期:115/07/02 3.舊任者姓名、級職及簡歷:Gina Proctor，TSMC Arizona Corporation, Treasurer 4.新任者姓名、級職及簡歷:無 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新 任」或「解任」）:職務調整 6.異動原因:職務調整 7.生效日期:115/07/02 8.其他應敘明事項:新任Treasurer待TSMC Arizona Corporation董事會任命後另行公告。",
-      "clause": "第8款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
@@ -494,27 +515,6 @@
         "marketKind": "sii",
         "companyId": "2330",
         "serialNumber": "3"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150518-2",
-      "date": "2026-05-18",
-      "announced_date": "2026-05-18",
-      "fact_date": null,
-      "announced_time": "18:01:44",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150518",
-        "marketKind": "sii",
-        "companyId": "2330",
-        "serialNumber": "2"
       }
     }
   ]
