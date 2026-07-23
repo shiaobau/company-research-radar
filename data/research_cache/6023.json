@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-23T00:17:06.344Z",
+  "collected_at": "2026-07-23T12:32:08.859Z",
   "company": {
     "id": "tpex-6023",
     "ticker": "6023",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-6023-1150723-1",
+      "date": "2026-07-23",
+      "announced_date": "2026-07-23",
+      "fact_date": "2026-07-23",
+      "announced_time": "13:51:17",
+      "title": "元大期貨公告向元大銀行提前終止租賃契約",
+      "description": "1. 原公告日期： 113/02/21 2. 簡述原公告申報內容： 標的物：台南市中西區民生路一段165號4樓及地下一層平面停車位1席 (1)租賃面積：約165.34坪(含公設) (2)每單位價格：每坪每月租金新台幣370元(含稅) (3)地下一層平面停車位每月租金新台幣2,200元 (4)租金總金額：每月新台幣63,376元(含稅) (5)使用權資產金額：新台幣3,644,787元(含稅) (6)租期期間：自民國113年3月1日起至民國118年2月28日 3. 變動緣由及主要內容： 為業務整合考量，台南擬將相關業務移轉至高雄分公司， 故提前於民國115年9月15日終止租賃契約 4. 變動後對公司財務業務之影響： 無重大影響 5. 其他應敘明事項： 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150723",
+        "marketKind": "otc",
+        "companyId": "6023",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-6023-1150708-1",
       "date": "2026-07-08",
@@ -77,11 +98,11 @@
       "id": "mops-history-6023-1150617-1",
       "date": "2026-06-17",
       "announced_date": "2026-06-17",
-      "fact_date": "2026-06-17",
+      "fact_date": null,
       "announced_time": "13:51:14",
       "title": "元大期貨公告董事會決議114年度股票股利及現金股利 之除權息基準日",
-      "description": "1.董事會、股東會決議或公司決定日期:115/06/17 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除權息 3.發放普通股股利種類及金額:普通股配發47,996,444股，共計479,964,440元 (每股配發1.5元)，現金股利總額1,279,905,152元(每股配發4元)。 4.除權（息）交易日:115/07/17 5.最後過戶日:115/07/20 6.停止過戶起始日期:115/07/21 7.停止過戶截止日期:115/07/25 8.除權（息）基準日:115/07/25 9.債券最後申請轉換日期:不適用 10.債券停止轉換起始日期:不適用 11.債券停止轉換截止日期:不適用 12.普通股現金股利發放日期:115/08/07 13.其他應敘明事項: 嗣後如因事實需要、法令變更或主管機關核示致現金股利及股票股利分派基準日 流通在外股數發生變動者，授權董事長以該基準日流通在外股數重新計算股票股 利配股率、現金股利配息率及全權處理相關事宜。",
-      "clause": "第14款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
         "companyId": "6023",
         "serialNumber": "1"
       }
-    },
-    {
-      "id": "mops-history-6023-1141113-1",
-      "date": "2025-11-13",
-      "announced_date": "2025-11-13",
-      "fact_date": null,
-      "announced_time": "14:15:41",
-      "title": "元大期貨公告向元大銀行取得使用權資產",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1141113",
-        "marketKind": "otc",
-        "companyId": "6023",
-        "serialNumber": "1"
-      }
     }
   ],
   "references": [
@@ -541,14 +541,14 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-23T00:16:29.702Z",
-      "row_count": 54,
+      "fetched_at": "2026-07-23T12:31:05.696Z",
+      "row_count": 77,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-22T12:32:11.745Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-07-23T12:33:01.466Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
