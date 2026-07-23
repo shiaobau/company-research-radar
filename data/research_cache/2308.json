@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-22T12:31:18.725Z",
+  "collected_at": "2026-07-23T00:17:06.344Z",
   "company": {
     "id": "twse-2308",
     "ticker": "2308",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "78b5ab5715fe7bef9ec9",
-      "date": "2026-07-21",
-      "announced_date": "2026-07-21",
-      "fact_date": "2026-07-21",
-      "announced_time": "155440",
-      "title": "公告本公司民國115年第二季財務報告董事會召開日期",
-      "description": "1.董事會召集通知日:115/07/21 2.董事會預計召開日期:115/07/29 3.預計提報董事會或經董事會決議之財務報告或 年度自結財務資訊年季:民國115年第二季財務報告 4.其他應敘明事項:無",
-      "clause": "第31款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-2308-1150720-1",
       "date": "2026-07-21",
@@ -507,6 +492,27 @@
         "companyId": "2308",
         "serialNumber": "1"
       }
+    },
+    {
+      "id": "mops-history-2308-1150508-4",
+      "date": "2026-05-08",
+      "announced_date": "2026-05-08",
+      "fact_date": null,
+      "announced_time": "15:32:38",
+      "title": "發布本公司115年04月份業績資料",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150508",
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "4"
+      }
     }
   ],
   "references": [
@@ -535,13 +541,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-22T12:30:28.503Z",
-      "row_count": 104,
+      "fetched_at": "2026-07-23T00:16:29.436Z",
+      "row_count": 108,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-07-22T12:31:36.573Z",
       "row_count": 24,
       "detail_count": 4,

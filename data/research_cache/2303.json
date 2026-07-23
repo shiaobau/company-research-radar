@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-22T12:31:18.725Z",
+  "collected_at": "2026-07-23T00:17:06.344Z",
   "company": {
     "id": "twse-2303",
     "ticker": "2303",
@@ -10,36 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "d0ab831ea89d662645df",
-      "date": "2026-07-21",
-      "announced_date": "2026-07-21",
-      "fact_date": "2026-07-21",
-      "announced_time": "160702",
-      "title": "公告本公司發行國內第一次暨第二次無擔保轉換公司債代收 價款行庫及存儲專戶行庫",
-      "description": "1.事實發生日:115/07/21 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依據「發行人募集與發行有價證券處理準則」第9條第1項第2款規定辦理 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): (1)訂約日期：115/7/21 (2)委託代收價款行庫：華南商業銀行總行營業部 (3)委託存儲專戶機構：中國信託商業銀行敦南分行",
-      "clause": "第51款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
-    {
-      "id": "fb9fed83fedd686b02b5",
-      "date": "2026-07-21",
-      "announced_date": "2026-07-21",
-      "fact_date": "2026-07-21",
-      "announced_time": "160244",
-      "title": "公告本公司115年第二季合併財務報告董事會召開日期",
-      "description": "1.董事會召集通知日:115/07/21 2.董事會預計召開日期:115/07/29 3.預計提報董事會或經董事會決議之財務報告或 年度自結財務資訊年季:115年第二季合併財務報告 4.其他應敘明事項:無",
-      "clause": "第31款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-2303-1150721-2",
       "date": "2026-07-21",
@@ -501,6 +471,48 @@
         "companyId": "2303",
         "serialNumber": "1"
       }
+    },
+    {
+      "id": "mops-history-2303-1150515-1",
+      "date": "2026-05-15",
+      "announced_date": "2026-05-15",
+      "fact_date": null,
+      "announced_time": "14:30:28",
+      "title": "公告本公司買回股份之金額達新台幣三億元以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150515",
+        "marketKind": "sii",
+        "companyId": "2303",
+        "serialNumber": "1"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150513-2",
+      "date": "2026-05-13",
+      "announced_date": "2026-05-13",
+      "fact_date": null,
+      "announced_time": "16:07:19",
+      "title": "公告本公司買回股份之金額達新台幣三億元以上",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150513",
+        "marketKind": "sii",
+        "companyId": "2303",
+        "serialNumber": "2"
+      }
     }
   ],
   "references": [
@@ -529,13 +541,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-22T12:30:28.503Z",
-      "row_count": 104,
+      "fetched_at": "2026-07-23T00:16:29.436Z",
+      "row_count": 108,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-07-22T12:31:30.841Z",
       "row_count": 24,
       "detail_count": 4,
