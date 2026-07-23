@@ -4,3 +4,10 @@ server*.log
 tools/start-dashboard.cmd
 workers/manual-update/.dev.vars*
 workers/manual-update/.env*
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
