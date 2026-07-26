@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-23T12:31:07.161Z",
+  "generated_at": "2026-07-26T00:16:26.039Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-23T12:31:07.161Z"
+      "refreshed_at": "2026-07-26T00:16:26.039Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -50,7 +50,7 @@
       "rationale": "月營收分數 76；財務品質分數 71。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-23T12:31:07.161Z"
+      "refreshed_at": "2026-07-26T00:16:26.039Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -67,7 +67,7 @@
       "rationale": "月營收分數 81；財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-23T12:31:07.161Z"
+      "refreshed_at": "2026-07-26T00:16:26.039Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -76,31 +76,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 74,
+      "score": 71,
       "rationale": "月營收分數 79；財務品質分數 78。",
-      "events": [
-        {
-          "date": "2026-07-22",
-          "announce_date": "2026-07-22",
-          "time": "183247",
-          "title": "公告本公司115年度第3期無擔保普通公司債(綠色債券) 主要發行條件",
-          "clause": "第11款",
-          "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞: 台灣積體電路製造股份有限公司115年度第3期無擔保普通公司債(綠色債券) 3.是否採總括申報發行公司債(是/否):否 4.發行總額:發行總額為新台幣185億元整， 依發行期限之不同分為甲類及乙類2種， 甲類發行金額為新台幣140億元整、乙類發行金額為新台幣45億元整 5.每張面額:新台幣壹仟萬元 6.發行價格:按票面十足發行 7.發行期間:甲類發行期限為5年期、乙類發行期限為10年期 8.發行利率:甲類固定年利率2.03%、乙類固定年利率2.10% 9.擔保品之種類、名稱、金額及約定事項:無 10.募得價款之用途及運用計畫:綠建築及綠色環保相關之支出 11.承銷方式:委託證券承銷商以洽商銷售方式對外公開承銷 12.公司債受託人:台北富邦商業銀行股份有限公司 13.承銷或代銷機構:委任台新綜合證券股份有限公司為主辦承銷商 14.發行保證人:無 15.代理還本付息機構:台北富邦商業銀行股份有限公司市府分公司 16.簽證機構:無 17.能轉換股份者，其轉換辦法:不適用 18.賣回條件:無 19.買回條件:無 20.附有轉換、交換或認股者，其換股基準日:不適用 21.附有轉換、交換或認股者，對股權可能稀釋情形:不適用 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用 23.其他應敘明事項: 本公司於115/2/10董事會通過募集無擔保普通公司債，此為完成115年度 第3期公司債(綠色債券)定價後之說明。",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-23T12:31:07.161Z"
+      "refreshed_at": "2026-07-26T00:16:26.039Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -117,7 +101,7 @@
       "rationale": "月營收分數 77；財務品質分數 89。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-23T12:31:07.161Z"
+      "refreshed_at": "2026-07-26T00:16:26.039Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -134,7 +118,7 @@
       "rationale": "財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-23T12:31:07.161Z"
+      "refreshed_at": "2026-07-26T00:16:26.039Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -151,7 +135,7 @@
       "rationale": "月營收分數 77。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-23T12:31:07.161Z"
+      "refreshed_at": "2026-07-26T00:16:26.039Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -168,7 +152,7 @@
       "rationale": "月營收分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-23T12:31:07.161Z"
+      "refreshed_at": "2026-07-26T00:16:26.039Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -185,7 +169,7 @@
       "rationale": "月營收分數 81；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-23T12:31:07.161Z"
+      "refreshed_at": "2026-07-26T00:16:26.039Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -202,7 +186,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-23T12:31:07.161Z"
+      "refreshed_at": "2026-07-26T00:16:26.039Z"
     }
   }
 }
