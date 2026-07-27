@@ -86,6 +86,7 @@ h3 {
 .status-panel {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 6px 12px;
   min-width: 0;
   padding: 8px 10px;
@@ -94,6 +95,37 @@ h3 {
   border-radius: 8px;
   color: var(--soft);
   box-shadow: var(--shadow);
+}
+
+.research-universe-nav {
+  display: inline-flex;
+  gap: 3px;
+  padding-right: 10px;
+  border-right: 1px solid var(--line);
+}
+
+.research-universe-nav a {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.research-universe-nav a:hover,
+.research-universe-nav a:focus-visible {
+  border-color: var(--teal);
+  color: var(--text);
+}
+
+.research-universe-nav a.active {
+  background: var(--teal);
+  color: var(--ink);
 }
 
 .layout {

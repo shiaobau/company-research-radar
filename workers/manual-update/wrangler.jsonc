@@ -10,6 +10,7 @@
   },
   "vars": {
     "DASHBOARD_ORIGIN": "https://shiaobau.github.io",
+    "DASHBOARD_ORIGINS": "https://shiaobau.github.io,https://company-watch-u1-u5.pages.dev",
     "GITHUB_REPOSITORY": "shiaobau/company-research-radar",
     "GITHUB_WORKFLOW": "deploy-pages.yml",
     "GITHUB_REF": "main"

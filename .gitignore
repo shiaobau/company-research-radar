@@ -4,3 +4,4 @@ server*.log
 tools/start-dashboard.cmd
 workers/manual-update/.dev.vars*
 workers/manual-update/.env*
+_site/

@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-07-27T00:00:00.000Z",
+  "default_universe_id": "u1",
+  "universes": [
+    {
+      "id": "u1",
+      "name": "公司觀察站 U1",
+      "short_name": "U1",
+      "path": "/u1/",
+      "tickers": [
+        "1231",
+        "2303",
+        "2308",
+        "2330",
+        "2885",
+        "2886",
+        "3115",
+        "3481",
+        "6023",
+        "8279"
+      ]
+    },
+    {
+      "id": "u2",
+      "name": "公司觀察站 U2",
+      "short_name": "U2",
+      "path": "/u2/",
+      "tickers": []
+    },
+    {
+      "id": "u3",
+      "name": "公司觀察站 U3",
+      "short_name": "U3",
+      "path": "/u3/",
+      "tickers": []
+    },
+    {
+      "id": "u4",
+      "name": "公司觀察站 U4",
+      "short_name": "U4",
+      "path": "/u4/",
+      "tickers": []
+    },
+    {
+      "id": "u5",
+      "name": "公司觀察站 U5",
+      "short_name": "U5",
+      "path": "/u5/",
+      "tickers": []
+    }
+  ]
+}

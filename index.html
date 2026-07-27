@@ -5,16 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>台股公司觀察站</title>
   <meta name="description" content="台股公司公開資料追蹤與評分觀察工具，使用可追溯資料與產業模板整理公司變化。">
-  <link rel="stylesheet" href="css/styles.css?v=0.30">
+  <script>
+    (() => {
+      const base = location.hostname.endsWith("github.io") ? "/company-research-radar/" : "/";
+      document.write(`<base href="${base}">`);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css?v=0.31">
 </head>
 <body>
   <header class="app-header">
     <div>
       <p class="eyebrow">Taiwan Company Watch</p>
-      <h1>台股公司觀察站</h1>
+      <h1 id="active-universe-title">公司觀察站 U1</h1>
       <p class="subtitle">以官方公開資料、產業證據層與可追溯公式計算七個評分維度，再用產業模板保留跨產業擴充能力。</p>
     </div>
     <div class="status-panel" aria-label="資料狀態">
+      <nav id="research-universe-nav" class="research-universe-nav" aria-label="切換公司觀察站"></nav>
       <span id="company-count">-- 家公司</span>
       <span id="last-updated">資料載入中</span>
       <button id="admin-update-button" class="admin-update-button" type="button" hidden aria-label="輸入手動更新管理密碼" title="輸入手動更新管理密碼">&#9881;</button>
@@ -123,6 +130,6 @@
 
   <script src="js/scoring.js?v=0.26"></script>
   <script src="js/renderers.js?v=0.21"></script>
-  <script src="js/app.js?v=0.56"></script>
+  <script src="js/app.js?v=0.57"></script>
 </body>
 </html>

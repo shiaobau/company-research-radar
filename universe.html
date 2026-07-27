@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>台股公司庫</title>
+  <title>公司觀察站 U1 選股</title>
   <meta name="description" content="依產業模板搜尋、分區與勾選上市上櫃公司，作為公司觀察清單的批次篩選工具。">
-  <link rel="stylesheet" href="css/universe.css?v=0.18">
+  <script>
+    (() => {
+      const base = location.hostname.endsWith("github.io") ? "/company-research-radar/" : "/";
+      document.write(`<base href="${base}">`);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/universe.css?v=0.19">
 </head>
 <body>
   <header class="page-header">
     <div>
       <p class="eyebrow">Company Library</p>
-      <h1>台股公司庫</h1>
+      <h1 id="universe-page-title">公司觀察站 U1 選股</h1>
       <p class="subtitle">用官方產業代碼建立第一層分類，再用少量可追蹤規則細分成 15 個產業模板。先勾選有興趣的公司，下一步再建立研究檔與接資料。</p>
     </div>
     <nav class="header-actions" aria-label="頁面切換">
-      <a href="index.html">回到評分儀表板</a>
+      <a id="dashboard-back-link" href="index.html">回到公司觀察站 U1</a>
     </nav>
   </header>
 
@@ -77,6 +83,6 @@
     <section id="template-sections" class="template-sections" aria-live="polite"></section>
   </main>
 
-  <script src="js/universe.js?v=0.18"></script>
+  <script src="js/universe.js?v=0.19"></script>
 </body>
 </html>

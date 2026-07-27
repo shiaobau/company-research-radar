@@ -184,3 +184,34 @@ http://127.0.0.1:8767/universe.html
 - `tools/update-data.mjs`：產業證據分數會依新維度對應到可解釋欄位。
 
 下一步適合接資料來源管線，讓各產業的專屬欄位從公開資料逐步補強。
+# 公司觀察站 U1-U5
+
+前台支援五個彼此獨立的公司觀察清單，但共用公司研究資料、評分公式與自動更新流程：
+
+- `/u1/`：公司觀察站 U1
+- `/u2/`：公司觀察站 U2
+- `/u3/`：公司觀察站 U3
+- `/u4/`：公司觀察站 U4
+- `/u5/`：公司觀察站 U5
+
+清單定義在 `data/research_universes.json`。新增或移除公司時，前端會把 `universe_id` 與操作送到 Worker，再由 GitHub Actions 更新該檔案。公司研究資料仍集中在 `data/companies.json`，同一家公司同時出現在多個觀察站時不會建立重複研究檔。
+
+## Cloudflare Pages
+
+建議使用 Cloudflare Pages 的 Git 整合連接此儲存庫：
+
+- Production branch：`main`
+- Build command：`node tools/build-static-site.mjs`
+- Build output directory：`_site`
+
+預定專案名稱為 `company-watch-u1-u5`，成功後網址為：
+
+```text
+https://company-watch-u1-u5.pages.dev/u1/
+https://company-watch-u1-u5.pages.dev/u2/
+https://company-watch-u1-u5.pages.dev/u3/
+https://company-watch-u1-u5.pages.dev/u4/
+https://company-watch-u1-u5.pages.dev/u5/
+```
+
+Cloudflare Pages 專案名稱若已被使用，可以更換名稱，並同步將實際來源網址加入 Worker 的 `DASHBOARD_ORIGINS`。

@@ -1,3 +1,29 @@
+const RESEARCH_UNIVERSE_IDS = new Set(["u1", "u2", "u3", "u4", "u5"]);
+
+function researchUniverseIdFromLocation() {
+  const pathMatch = window.location.pathname.match(/\/(u[1-5])(?:\/|$)/i);
+  const queryValue = new URLSearchParams(window.location.search).get("space");
+  const candidate = String(pathMatch?.[1] || queryValue || "u1").toLowerCase();
+  return RESEARCH_UNIVERSE_IDS.has(candidate) ? candidate : "u1";
+}
+
+const ACTIVE_RESEARCH_UNIVERSE_ID = researchUniverseIdFromLocation();
+
+function universeStorageKey(base) {
+  return `${base}:${ACTIVE_RESEARCH_UNIVERSE_ID}`;
+}
+
+function researchUniverseHref(universeId) {
+  if (window.location.hostname.endsWith("github.io")) {
+    return `index.html?space=${encodeURIComponent(universeId)}`;
+  }
+  return `/${encodeURIComponent(universeId)}/`;
+}
+
+function companyLibraryHref() {
+  return `universe.html?space=${encodeURIComponent(ACTIVE_RESEARCH_UNIVERSE_ID)}`;
+}
+
 const state = {
   companies: [],
   templates: {},
@@ -15,6 +41,8 @@ const state = {
   dataStatus: { companies: {} },
   publicFactsData: { companies: {}, sources: [] },
   universe: { companies: [] },
+  researchUniverses: { universes: [] },
+  activeResearchUniverse: null,
   researchCache: { index: { companies: [] }, records: {}, pending: new Set() },
   schedulerStatus: { schedules: {}, current_run: null },
   researchStatus: { summary: {}, companies: {} },
@@ -23,7 +51,7 @@ const state = {
   referenceSources: [],
   selectedId: null,
   managementMode: false,
-  companyOrder: readWatchlistOrder(),
+  companyOrder: [],
   pendingDeletionTicker: null,
   selectedManagerTickers: new Set(),
   pendingDeletionTickers: [],
@@ -54,8 +82,9 @@ Promise.all([
   fetchFreshJson("data/research_cache/index.json").catch(() => ({ companies: [] })),
   fetchFreshJson("data/scheduler_status.json").catch(() => ({ schedules: {}, current_run: null })),
   fetchFreshJson("data/research_status.json").catch(() => ({ summary: {}, companies: {} })),
+  fetchFreshJson("data/research_universes.json").catch(() => ({ default_universe_id: "u1", universes: [] })),
   fetchFreshJson("data/app_config.json").catch(() => ({ manual_update: { enabled: false, endpoint: "", request_timeout_ms: 15000 } }))
-]).then(([templates, definitions, rules, companies, signals, marketData, revenueData, financialData, catalystData, ownershipData, riskData, industryEvidenceData, industryData, dataStatus, publicFactsData, universe, researchCacheIndex, schedulerStatus, researchStatus, appConfig]) => {
+]).then(([templates, definitions, rules, companies, signals, marketData, revenueData, financialData, catalystData, ownershipData, riskData, industryEvidenceData, industryData, dataStatus, publicFactsData, universe, researchCacheIndex, schedulerStatus, researchStatus, researchUniverses, appConfig]) => {
   state.templates = templates.industries;
   state.definitions = definitions.fields;
   state.rules = rules;
@@ -74,6 +103,12 @@ Promise.all([
   state.researchCache.index = researchCacheIndex;
   state.schedulerStatus = schedulerStatus;
   state.researchStatus = researchStatus;
+  state.researchUniverses = researchUniverses;
+  state.activeResearchUniverse = (researchUniverses.universes || [])
+    .find((item) => item.id === ACTIVE_RESEARCH_UNIVERSE_ID)
+    || (researchUniverses.universes || [])[0]
+    || { id: ACTIVE_RESEARCH_UNIVERSE_ID, name: `公司觀察站 ${ACTIVE_RESEARCH_UNIVERSE_ID.toUpperCase()}`, tickers: [] };
+  state.companyOrder = readWatchlistOrder();
   state.appConfig = appConfig || state.appConfig;
   state.referenceSources = [
     ...(companies.reference_sources || []),
@@ -88,16 +123,50 @@ Promise.all([
     ...(publicFactsData.sources || [])
   ];
   state.signals = signals.signals || [];
+  configureResearchUniverseUi();
   pruneCompletedUniverseCandidates();
   initControls();
-  state.selectedId = universeSelectionMode()
-    ? candidateWatchlistItems()[0]?.id || state.companies[0]?.id || null
-    : state.companies[0]?.id || null;
+  state.selectedId = candidateWatchlistItems()[0]?.id || activeResearchCompanies()[0]?.id || null;
   renderAll();
   autoStartResearchFromUrl();
 }).catch((error) => {
   $("#company-list").innerHTML = `<p class="risk">資料載入失敗：${RadarRenderers.escapeHtml(error.message)}</p>`;
 });
+
+function activeResearchUniverseTickers() {
+  return Array.isArray(state.activeResearchUniverse?.tickers)
+    ? state.activeResearchUniverse.tickers.map(String)
+    : [];
+}
+
+function activeResearchTickerSet() {
+  return new Set(activeResearchUniverseTickers());
+}
+
+function activeResearchCompanies() {
+  const members = activeResearchTickerSet();
+  return state.companies.filter((company) => members.has(String(company.ticker)));
+}
+
+function configureResearchUniverseUi() {
+  const active = state.activeResearchUniverse;
+  document.title = active?.name || `公司觀察站 ${ACTIVE_RESEARCH_UNIVERSE_ID.toUpperCase()}`;
+  const title = $("#active-universe-title");
+  if (title) title.textContent = document.title;
+
+  const nav = $("#research-universe-nav");
+  if (nav) {
+    nav.innerHTML = (state.researchUniverses.universes || []).map((universe) => `
+      <a href="${researchUniverseHref(universe.id)}" class="${universe.id === active?.id ? "active" : ""}"
+        ${universe.id === active?.id ? 'aria-current="page"' : ""}
+        title="${RadarRenderers.escapeHtml(universe.name)}">${RadarRenderers.escapeHtml(universe.short_name || universe.id.toUpperCase())}</a>
+    `).join("");
+  }
+
+  document.querySelectorAll('a[href="universe.html"]').forEach((link) => {
+    link.href = companyLibraryHref();
+  });
+}
 
 function selectedUniverseTickers() {
   const urlTickers = new URLSearchParams(window.location.search)
@@ -108,13 +177,13 @@ function selectedUniverseTickers() {
 
   if (urlTickers.length) {
     const tickers = [...new Set(urlTickers)].sort((a, b) => a.localeCompare(b, "zh-Hant-TW"));
-    localStorage.setItem("researchUniverseSelectedTickers", JSON.stringify(tickers));
+    localStorage.setItem(universeStorageKey("researchUniverseSelectedTickers"), JSON.stringify(tickers));
     return tickers;
   }
 
   let storedTickers = [];
   try {
-    storedTickers = JSON.parse(localStorage.getItem("researchUniverseSelectedTickers") || "[]")
+    storedTickers = JSON.parse(localStorage.getItem(universeStorageKey("researchUniverseSelectedTickers")) || "[]")
       .filter((ticker) => typeof ticker === "string" && ticker.trim());
   } catch {
     storedTickers = [];
@@ -133,7 +202,7 @@ function autoStartResearchFromUrl() {
 }
 
 function clearUniverseResearchRequest() {
-  localStorage.removeItem("researchUniverseSelectedTickers");
+  localStorage.removeItem(universeStorageKey("researchUniverseSelectedTickers"));
   const params = new URLSearchParams(window.location.search);
   params.delete("universe");
   params.delete("tickers");
@@ -144,20 +213,20 @@ function clearUniverseResearchRequest() {
 
 function pruneCompletedUniverseCandidates() {
   const params = new URLSearchParams(window.location.search);
-  if (params.get("universe") !== "selected" || params.get("autostart") === "1") return;
+  if (params.get("autostart") === "1") return;
 
   const tickers = selectedUniverseTickers();
   if (!tickers.length) return;
 
-  const researchedTickers = new Set(state.companies.map((company) => company.ticker));
-  const pendingTickers = tickers.filter((ticker) => !researchedTickers.has(ticker));
+  const memberTickers = activeResearchTickerSet();
+  const pendingTickers = tickers.filter((ticker) => !memberTickers.has(ticker));
   if (pendingTickers.length === tickers.length) return;
   if (!pendingTickers.length) {
     clearUniverseResearchRequest();
     return;
   }
 
-  localStorage.setItem("researchUniverseSelectedTickers", JSON.stringify(pendingTickers));
+  localStorage.setItem(universeStorageKey("researchUniverseSelectedTickers"), JSON.stringify(pendingTickers));
   params.set("tickers", pendingTickers.join(","));
   window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}`);
 }
@@ -182,7 +251,7 @@ function selectedUniverseCompanies() {
 
 function pendingResearchTickers() {
   return selectedUniverseCompanies()
-    .filter(({ research }) => !research)
+    .filter(({ ticker }) => !activeResearchTickerSet().has(ticker))
     .map(({ ticker }) => ticker)
     .filter((ticker) => /^\d{4}$/.test(String(ticker || "")))
     .sort();
@@ -194,7 +263,7 @@ function setCandidateTickers(tickers) {
       .map((ticker) => String(ticker).trim())
       .filter(Boolean)
   )].sort((a, b) => a.localeCompare(b, "zh-Hant-TW"));
-  localStorage.setItem("researchUniverseSelectedTickers", JSON.stringify(cleanTickers));
+  localStorage.setItem(universeStorageKey("researchUniverseSelectedTickers"), JSON.stringify(cleanTickers));
   updateUniverseUrl(cleanTickers);
   const input = $("#candidate-tickers-input");
   if (input) input.value = cleanTickers.join(", ");
@@ -227,21 +296,21 @@ function parseTickerText(text) {
 
 function candidateWatchlistItems() {
   return selectedUniverseCompanies().map(({ ticker, official, research }) => {
-    if (research) return research;
-    const templateId = official?.industry_template || "other";
+    const templateId = research?.industry_template || official?.industry_template || "other";
     return {
       __candidate: true,
       id: `candidate-${ticker}`,
       ticker,
-      market: official?.market || "",
-      market_label: official?.market_label || "",
-      name: official?.abbreviation || official?.name || ticker,
-      legal_name: official?.name || "",
+      market: research?.market || official?.market || "",
+      market_label: research?.market_label || official?.market_label || "",
+      name: research?.name || official?.abbreviation || official?.name || ticker,
+      legal_name: research?.legal_name || official?.name || "",
       industry_template: templateId,
-      template_label: official?.template_label || templateId,
-      official_industry_label: official?.official_industry_label || "",
-      thesis: "已加入研究候選，公開資料蒐集中。",
-      tags: ["研究候選", "研究準備中"],
+      template_label: state.templates[templateId]?.label || official?.template_label || templateId,
+      official_industry_label: research?.official_industry_label || official?.official_industry_label || "",
+      thesis: research ? "研究資料已存在，等待加入此觀察站。" : "已加入研究候選，公開資料蒐集中。",
+      tags: research ? ["待加入觀察站"] : ["研究候選", "研究準備中"],
+      research,
       official
     };
   });
@@ -254,7 +323,7 @@ function companyById(id) {
 
 function readWatchlistOrder() {
   try {
-    const stored = JSON.parse(localStorage.getItem("researchWatchlistOrder") || "[]");
+    const stored = JSON.parse(localStorage.getItem(universeStorageKey("researchWatchlistOrder")) || "[]");
     return Array.isArray(stored) ? stored.filter((ticker) => typeof ticker === "string") : [];
   } catch {
     return [];
@@ -274,19 +343,19 @@ function orderedResearchCompanies(companies) {
 }
 
 function moveResearchCompany(ticker, direction) {
-  const ordered = orderedResearchCompanies(state.companies);
+  const ordered = orderedResearchCompanies(activeResearchCompanies());
   const fromIndex = ordered.findIndex((company) => company.ticker === ticker);
   const toIndex = fromIndex + direction;
   if (fromIndex < 0 || toIndex < 0 || toIndex >= ordered.length) return;
   [ordered[fromIndex], ordered[toIndex]] = [ordered[toIndex], ordered[fromIndex]];
   state.companyOrder = ordered.map((company) => company.ticker);
-  localStorage.setItem("researchWatchlistOrder", JSON.stringify(state.companyOrder));
+  localStorage.setItem(universeStorageKey("researchWatchlistOrder"), JSON.stringify(state.companyOrder));
   renderAll();
 }
 
 function placeResearchCompanyBefore(ticker, targetTicker) {
   if (!ticker || ticker === targetTicker) return;
-  const ordered = orderedResearchCompanies(state.companies);
+  const ordered = orderedResearchCompanies(activeResearchCompanies());
   const fromIndex = ordered.findIndex((company) => company.ticker === ticker);
   const targetIndex = ordered.findIndex((company) => company.ticker === targetTicker);
   if (fromIndex < 0 || targetIndex < 0) return;
@@ -294,7 +363,7 @@ function placeResearchCompanyBefore(ticker, targetTicker) {
   const nextTargetIndex = ordered.findIndex((company) => company.ticker === targetTicker);
   ordered.splice(nextTargetIndex, 0, moved);
   state.companyOrder = ordered.map((company) => company.ticker);
-  localStorage.setItem("researchWatchlistOrder", JSON.stringify(state.companyOrder));
+  localStorage.setItem(universeStorageKey("researchWatchlistOrder"), JSON.stringify(state.companyOrder));
   renderAll();
 }
 
@@ -309,7 +378,7 @@ function renderCompanyManager() {
   if (heading?.nextElementSibling !== panel) heading.insertAdjacentElement("afterend", panel);
   if (!state.managementMode) return;
 
-  const companies = orderedResearchCompanies(state.companies);
+  const companies = orderedResearchCompanies(activeResearchCompanies());
   const selected = state.selectedManagerTickers;
   const allSelected = companies.length > 0 && companies.every((company) => selected.has(company.ticker));
   panel.innerHTML = `
@@ -389,7 +458,8 @@ function ensureCandidatePanel() {
 
 function renderUniverseCandidates() {
   const panel = ensureCandidatePanel();
-  const candidates = selectedUniverseCompanies().filter(({ research }) => !research);
+  const activeMembers = activeResearchTickerSet();
+  const candidates = selectedUniverseCompanies().filter(({ ticker }) => !activeMembers.has(ticker));
   if (!candidates.length) {
     panel.style.display = "none";
     return;
@@ -405,7 +475,7 @@ function renderUniverseCandidates() {
       <div class="candidate-actions">
         <span class="pill">${candidates.length}</span>
         <button class="ghost-button" type="button" data-start-research>開始研究</button>
-        <a class="ghost-button" href="universe.html">回選股頁</a>
+        <a class="ghost-button" href="${companyLibraryHref()}">回選股頁</a>
       </div>
     </div>
     <div class="candidate-list">
@@ -441,10 +511,10 @@ function updateUniverseUrl(tickers) {
 
 function removeUniverseCandidate(ticker) {
   const tickers = selectedUniverseTickers().filter((item) => item !== ticker);
-  localStorage.setItem("researchUniverseSelectedTickers", JSON.stringify(tickers));
+  localStorage.setItem(universeStorageKey("researchUniverseSelectedTickers"), JSON.stringify(tickers));
   updateUniverseUrl(tickers);
   if (state.selectedId === `candidate-${ticker}`) {
-    state.selectedId = candidateWatchlistItems()[0]?.id || state.companies[0]?.id || null;
+    state.selectedId = candidateWatchlistItems()[0]?.id || activeResearchCompanies()[0]?.id || null;
   }
   const input = $("#candidate-tickers-input");
   if (input) input.value = tickers.join(", ");
@@ -466,7 +536,8 @@ function ensureDeletionDialog() {
 }
 
 function requestResearchDeletion(tickers) {
-  const selected = [...new Set(tickers)].filter((ticker) => state.companies.some((company) => company.ticker === ticker));
+  const activeTickers = activeResearchTickerSet();
+  const selected = [...new Set(tickers)].filter((ticker) => activeTickers.has(ticker));
   if (!selected.length) return;
   const companies = selected.map((ticker) => state.companies.find((company) => company.ticker === ticker));
   state.pendingDeletionTickers = selected;
@@ -484,18 +555,11 @@ function requestResearchDeletion(tickers) {
 
 async function deleteResearchCompanies(tickers) {
   if (!tickers.length) return;
-  setResearchStatus(`移除 ${tickers.length} 家公司中...`);
-  try {
-    const response = await fetch(`/api/company?tickers=${encodeURIComponent(tickers.join(","))}`, { method: "DELETE" });
-    const payload = await response.json();
-    if (!response.ok) throw new Error(payload.message || "刪除失敗");
-    setCandidateTickers(selectedUniverseTickers().filter((item) => !tickers.includes(item)));
-    state.selectedManagerTickers = new Set();
-    setResearchStatus(`已移除 ${tickers.length} 家公司，正在重新整理...`);
-    window.location.reload();
-  } catch (error) {
-    setResearchStatus(`無法移除公司：${error.message}`);
+  if (cloudManualUpdateReady()) {
+    await runCloudManualFullUpdate({ tickers, action: "remove" });
+    return;
   }
+  setResearchStatus("目前未連接雲端管理服務，無法變更觀察站清單。");
 }
 
 async function pollResearchStatus() {
@@ -690,12 +754,18 @@ function renderSchedulerPanel() {
   const cloudEndpoint = String(cloudManualUpdate.endpoint || "").trim();
   const cloudManualReady = cloudManualUpdate.enabled === true && /^https:\/\//.test(cloudEndpoint);
   renderAdminUpdateButton(localServer, cloudManualReady);
-  const coverage = state.researchStatus.summary || {};
-  const calculatedReadiness = state.companies.map((company) => ({
+  const calculatedReadiness = activeResearchCompanies().map((company) => ({
     company,
     score: RadarScoring.computeCompanyScore(company, state.rules, scoringDatasets())
   }));
-  const incomplete = calculatedReadiness.filter(({ score }) => !score.complete).map(({ company }) => researchReadiness(company));
+  const coverage = {
+    total: calculatedReadiness.length,
+    complete_count: calculatedReadiness.filter(({ score }) => score.complete && !score.isProvisional).length,
+    core_complete_count: calculatedReadiness.filter(({ score }) => score.complete && score.isProvisional).length
+  };
+  const incomplete = calculatedReadiness
+    .filter(({ score }) => !score.complete)
+    .map(({ company }) => ({ ...researchReadiness(company), ticker: company.ticker, name: company.name }));
   const coreComplete = calculatedReadiness.filter(({ score }) => score.complete && score.isProvisional);
   const stateLabel = active ? "更新中" : incomplete.length ? "資料待補" : coreComplete.length ? "核心分析完成" : "完成分析";
   const activeProgress = Math.max(0, Math.min(99, Number(active?.progress_percent) || 0));
@@ -757,7 +827,7 @@ async function runManualFullUpdate() {
   }
 }
 
-async function runCloudManualFullUpdate({ tickers = [] } = {}) {
+async function runCloudManualFullUpdate({ tickers = [], action = "refresh" } = {}) {
   const config = state.appConfig?.manual_update || {};
   const endpoint = String(config.endpoint || "").trim();
   const requestedTickers = tickers.length ? tickers : pendingResearchTickers();
@@ -765,7 +835,13 @@ async function runCloudManualFullUpdate({ tickers = [] } = {}) {
     .map((ticker) => String(ticker || "").trim())
     .filter((ticker) => /^\d{4}$/.test(ticker)))].sort();
   const isResearchRun = researchTickers.length > 0;
-  const password = window.prompt(isResearchRun ? "輸入開始研究管理密碼" : "輸入手動更新管理密碼");
+  const universeAction = action === "remove" ? "remove" : (isResearchRun ? "add" : "refresh");
+  const promptLabel = universeAction === "remove"
+    ? `輸入 ${state.activeResearchUniverse?.name || "此觀察站"} 管理密碼以確認移除`
+    : isResearchRun
+      ? `輸入 ${state.activeResearchUniverse?.name || "此觀察站"} 管理密碼以開始研究`
+      : "輸入手動更新管理密碼";
+  const password = window.prompt(promptLabel);
   if (!password) return;
   const button = $("#admin-update-button");
   try {
@@ -776,37 +852,49 @@ async function runCloudManualFullUpdate({ tickers = [] } = {}) {
     const response = await fetch(endpoint, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ password, tickers: researchTickers }),
+      body: JSON.stringify({
+        password,
+        tickers: researchTickers,
+        universe_id: ACTIVE_RESEARCH_UNIVERSE_ID,
+        action: universeAction
+      }),
       signal: controller.signal
     });
     window.clearTimeout(timeout);
     const payload = await response.json().catch(() => ({}));
     if (!response.ok) throw new Error(payload.message || "無法啟動完整更新。");
     const requestedAt = payload.requested_at || new Date().toISOString();
-    state.cloudManualUpdate = { endpoint, requestedAt, tickers: researchTickers };
+    state.cloudManualUpdate = { endpoint, requestedAt, tickers: researchTickers, action: universeAction };
     state.schedulerStatus.current_run = {
       status: "running",
-      label: isResearchRun ? "建立研究檔" : "手動完整更新",
+      label: universeAction === "remove" ? "更新觀察清單" : isResearchRun ? "建立研究檔" : "手動完整更新",
       progress_percent: 3,
       current_step: { label: "等待 GitHub Actions 啟動" }
     };
     renderSchedulerPanel();
     pollCloudManualUpdate();
   } catch (error) {
-    setResearchStatus(`無法啟動${isResearchRun ? "研究" : "完整更新"}：${error.name === "AbortError" ? "連線逾時，請稍後再試。" : error.message}`);
+    const actionLabel = universeAction === "remove" ? "移除" : isResearchRun ? "研究" : "完整更新";
+    setResearchStatus(`無法啟動${actionLabel}：${error.name === "AbortError" ? "連線逾時，請稍後再試。" : error.message}`);
   } finally {
     if (button) button.disabled = false;
   }
 }
 
-async function researchFilesArePublished(tickers) {
+async function researchFilesArePublished(tickers, action = "add") {
   if (!tickers.length) return true;
   try {
-    const response = await fetch(`data/companies.json?published_at=${Date.now()}`, { cache: "no-store" });
-    if (!response.ok) return false;
-    const data = await response.json();
-    const published = new Set((data.companies || []).map((company) => String(company.ticker || "")));
-    return tickers.every((ticker) => published.has(ticker));
+    const [companiesResponse, universesResponse] = await Promise.all([
+      fetch(`data/companies.json?published_at=${Date.now()}`, { cache: "no-store" }),
+      fetch(`data/research_universes.json?published_at=${Date.now()}`, { cache: "no-store" })
+    ]);
+    if (!companiesResponse.ok || !universesResponse.ok) return false;
+    const [companiesData, universesData] = await Promise.all([companiesResponse.json(), universesResponse.json()]);
+    const published = new Set((companiesData.companies || []).map((company) => String(company.ticker || "")));
+    const universe = (universesData.universes || []).find((item) => item.id === ACTIVE_RESEARCH_UNIVERSE_ID);
+    const members = new Set((universe?.tickers || []).map(String));
+    if (action === "remove") return tickers.every((ticker) => !members.has(ticker));
+    return tickers.every((ticker) => published.has(ticker) && members.has(ticker));
   } catch {
     return false;
   }
@@ -818,6 +906,7 @@ function cloudUpdatePhaseLabel(phase) {
     starting: "準備更新環境",
     "Check out source": "取得研究資料",
     "Set up Node": "準備更新環境",
+    "Update research universe membership": "更新觀察清單",
     "Create selected research files": "建立研究檔",
     "Refresh public research data": "更新公開資料與公告事件",
     "Commit refreshed data": "儲存研究資料",
@@ -842,32 +931,35 @@ async function pollCloudManualUpdate() {
     const label = cloudUpdatePhaseLabel(payload.phase);
     state.schedulerStatus.current_run = payload.status === "done" || payload.status === "error" ? null : {
       status: "running",
-      label: update.tickers?.length ? "建立研究檔" : "手動完整更新",
+      label: update.action === "remove" ? "更新觀察清單" : update.tickers?.length ? "建立研究檔" : "手動完整更新",
       progress_percent: payload.progress_percent || 3,
       current_step: { label }
     };
     renderSchedulerPanel();
     if (payload.status === "done") {
-      if (update.tickers?.length && !(await researchFilesArePublished(update.tickers))) {
+      if (update.tickers?.length && !(await researchFilesArePublished(update.tickers, update.action))) {
         const publishChecks = (update.publishChecks || 0) + 1;
         if (publishChecks <= 12) {
           state.cloudManualUpdate = { ...update, publishChecks };
           state.schedulerStatus.current_run = {
             status: "running",
-            label: "建立研究檔",
+            label: update.action === "remove" ? "更新觀察清單" : "建立研究檔",
             progress_percent: 97,
-            current_step: { label: `等待研究檔上線 (${publishChecks}/12)` }
+            current_step: { label: `${update.action === "remove" ? "等待清單更新上線" : "等待研究檔上線"} (${publishChecks}/12)` }
           };
           renderSchedulerPanel();
           window.setTimeout(pollCloudManualUpdate, 5000);
           return;
         }
         state.cloudManualUpdate = null;
-        setResearchStatus("資料更新完成，但研究檔仍在同步至網站；候選清單會保留，請稍後重新載入確認。", false);
+        setResearchStatus(update.action === "remove"
+          ? "更新已完成，但觀察清單仍在同步至網站，請稍後重新載入確認。"
+          : "資料更新完成，但研究檔仍在同步至網站；候選清單會保留，請稍後重新載入確認。", false);
         return;
       }
       state.cloudManualUpdate = null;
-      if (update.tickers?.length) clearUniverseResearchRequest();
+      if (update.action === "add" && update.tickers?.length) clearUniverseResearchRequest();
+      if (update.action === "remove") state.selectedManagerTickers = new Set();
       setResearchStatus("", false);
       window.setTimeout(() => window.location.reload(), 1600);
       return;
@@ -949,7 +1041,7 @@ function ensureOnboardingPanel() {
 function renderOnboarding() {
   const panel = $("#onboarding-panel");
   if (!panel) return;
-  if (state.companies.length) {
+  if (activeResearchCompanies().length) {
     panel.hidden = true;
     return;
   }
@@ -961,7 +1053,7 @@ function renderOnboarding() {
       <h2>${selectedTickers.length ? "回到選股頁建立研究檔" : "從選股頁選擇公司"}</h2>
       <p>勾選公司後在選股頁開始研究；完成後，研究結果會自動出現在這裡。</p>
     </div>
-    <div class="onboarding-actions"><a class="ghost-button onboarding-action" href="universe.html">開啟選股頁</a></div>
+    <div class="onboarding-actions"><a class="ghost-button onboarding-action" href="${companyLibraryHref()}">開啟選股頁</a></div>
   `;
 }
 
@@ -1045,7 +1137,7 @@ function initControls() {
       params.set("universe", "selected");
       params.set("tickers", selectedUniverseTickers().join(","));
       window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}`);
-      state.selectedId = candidateWatchlistItems()[0]?.id || state.companies[0]?.id || null;
+      state.selectedId = candidateWatchlistItems()[0]?.id || activeResearchCompanies()[0]?.id || null;
       renderAll();
     } catch (error) {
       $("#universe-candidate-panel")?.remove();
@@ -1161,6 +1253,7 @@ function renderQuickCompanyResults(inputId = "quick-company-input") {
   }
 
   const researchByTicker = new Map(state.companies.map((company) => [company.ticker, company]));
+  const activeMembers = activeResearchTickerSet();
   const matches = (state.universe.companies || [])
     .map((company) => ({ company, rank: quickCompanySearchRank(company, keyword) }))
     .filter(({ rank }) => Number.isFinite(rank))
@@ -1174,9 +1267,10 @@ function renderQuickCompanyResults(inputId = "quick-company-input") {
   } else {
     results.innerHTML = matches.map((company) => {
       const researched = researchByTicker.has(company.ticker);
+      const activeMember = activeMembers.has(company.ticker);
       const name = quickCompanyDisplayName(company);
       const legalName = String(company.name || name).trim();
-      const status = researched ? "查看研究" : "加入研究";
+      const status = activeMember ? "查看研究" : researched ? "加入此觀察站" : "加入研究";
       return `
         <button class="quick-company-result" type="button" role="option" data-quick-company-ticker="${RadarRenderers.escapeHtml(company.ticker)}">
           <span class="quick-company-name"><b>${RadarRenderers.escapeHtml(company.ticker)}</b><strong>${RadarRenderers.escapeHtml(name)}</strong></span>
@@ -1194,7 +1288,7 @@ function renderQuickCompanyResults(inputId = "quick-company-input") {
 
 async function handleQuickCompanyResult(ticker) {
   const existing = state.companies.find((company) => company.ticker === ticker);
-  if (existing) {
+  if (existing && activeResearchTickerSet().has(ticker)) {
     state.selectedId = existing.id;
     ["search-input", "quick-company-input"].forEach((id) => {
       const input = $(`#${id}`);
@@ -1460,7 +1554,7 @@ function filteredCompanies() {
   const query = $("#search-input").value.trim().toLowerCase();
   const industry = $("#industry-filter").value;
   const minimumScore = $("#score-filter").value;
-  const sourceCompanies = universeSelectionMode() ? candidateWatchlistItems() : state.companies;
+  const sourceCompanies = [...activeResearchCompanies(), ...candidateWatchlistItems()];
 
   const matches = sourceCompanies.filter((company) => {
     if (company.__candidate) {
@@ -1574,7 +1668,7 @@ function renderSummary(companies) {
     .filter(Number.isFinite);
   const average = scores.length ? Math.round(scores.reduce((sum, score) => sum + score, 0) / scores.length) : "尚未評分";
   const researchInProgress = candidateOnlyCount + scoredCompanies.length - scores.length;
-  const modeLabel = universeSelectionMode() ? "候選" : "公司";
+  const modeLabel = "公司";
 
   $("#company-count").textContent = `${companies.length} ${modeLabel}`;
   $("#visible-count").textContent = `${companies.length} 筆`;

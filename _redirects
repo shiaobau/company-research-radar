@@ -1,0 +1,11 @@
+/ /u1/ 302
+/u1 /index.html 200
+/u1/* /index.html 200
+/u2 /index.html 200
+/u2/* /index.html 200
+/u3 /index.html 200
+/u3/* /index.html 200
+/u4 /index.html 200
+/u4/* /index.html 200
+/u5 /index.html 200
+/u5/* /index.html 200

@@ -1,16 +1,33 @@
+const RESEARCH_UNIVERSE_IDS = new Set(["u1", "u2", "u3", "u4", "u5"]);
+const queryUniverseId = String(new URLSearchParams(window.location.search).get("space") || "u1").toLowerCase();
+const ACTIVE_RESEARCH_UNIVERSE_ID = RESEARCH_UNIVERSE_IDS.has(queryUniverseId) ? queryUniverseId : "u1";
+const selectionStorageKey = `researchUniverseSelectedTickers:${ACTIVE_RESEARCH_UNIVERSE_ID}`;
+const RESEARCH_SESSION_KEY = `researchUniversePendingFlow:${ACTIVE_RESEARCH_UNIVERSE_ID}`;
+
+function dashboardHref(autoStart = false, tickers = []) {
+  const params = new URLSearchParams();
+  params.set("space", ACTIVE_RESEARCH_UNIVERSE_ID);
+  params.set("universe", "selected");
+  if (tickers.length) params.set("tickers", tickers.join(","));
+  if (autoStart) params.set("autostart", "1");
+  if (window.location.hostname.endsWith("github.io")) return `index.html?${params.toString()}`;
+  params.delete("space");
+  return `/${ACTIVE_RESEARCH_UNIVERSE_ID}/?${params.toString()}`;
+}
+
 const state = {
   universe: null,
+  researchUniverses: null,
+  activeResearchUniverse: null,
   companies: [],
   visibleCompanies: [],
-  selected: new Set(JSON.parse(localStorage.getItem("researchUniverseSelectedTickers") || "[]")),
+  selected: new Set(JSON.parse(localStorage.getItem(selectionStorageKey) || "[]")),
   filters: {
     search: "",
     template: "all",
     market: "all"
   }
 };
-
-const RESEARCH_SESSION_KEY = "researchUniversePendingFlow";
 
 const els = {
   searchInput: document.querySelector("#search-input"),
@@ -38,7 +55,7 @@ function escapeHtml(value) {
 }
 
 function saveSelection() {
-  localStorage.setItem("researchUniverseSelectedTickers", JSON.stringify([...state.selected].sort()));
+  localStorage.setItem(selectionStorageKey, JSON.stringify([...state.selected].sort()));
 }
 
 function selectedTickers() {
@@ -268,6 +285,8 @@ function saveCandidateSeed() {
     type: "research_candidate_seed",
     generated_at: new Date().toISOString(),
     source: "universe.html",
+    research_universe_id: ACTIVE_RESEARCH_UNIVERSE_ID,
+    research_universe_name: state.activeResearchUniverse?.name,
     total_count: tickers.length,
     tickers,
     companies: selectedCompaniesForSeed(),
@@ -287,12 +306,8 @@ function saveCandidateSeed() {
 }
 
 function dashboardUrlForSelection(autoStart = false) {
-  const params = new URLSearchParams();
-  params.set("universe", "selected");
   const tickers = selectedTickers();
-  if (tickers.length) params.set("tickers", tickers.join(","));
-  if (autoStart) params.set("autostart", "1");
-  return `index.html?${params.toString()}`;
+  return dashboardHref(autoStart, tickers);
 }
 
 function startResearch() {
@@ -376,10 +391,26 @@ function bindEvents() {
 
 async function init() {
   try {
-    const response = await fetch("data/listed_companies_universe.json");
+    const [response, researchUniversesResponse] = await Promise.all([
+      fetch("data/listed_companies_universe.json"),
+      fetch("data/research_universes.json")
+    ]);
     if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+    if (!researchUniversesResponse.ok) throw new Error(`${researchUniversesResponse.status} ${researchUniversesResponse.statusText}`);
     state.universe = await response.json();
+    state.researchUniverses = await researchUniversesResponse.json();
+    state.activeResearchUniverse = (state.researchUniverses.universes || [])
+      .find((item) => item.id === ACTIVE_RESEARCH_UNIVERSE_ID)
+      || { id: ACTIVE_RESEARCH_UNIVERSE_ID, name: `公司觀察站 ${ACTIVE_RESEARCH_UNIVERSE_ID.toUpperCase()}` };
     state.companies = state.universe.companies || [];
+    document.title = `${state.activeResearchUniverse.name} 選股`;
+    const pageTitle = document.querySelector("#universe-page-title");
+    const backLink = document.querySelector("#dashboard-back-link");
+    if (pageTitle) pageTitle.textContent = document.title;
+    if (backLink) {
+      backLink.textContent = `回到${state.activeResearchUniverse.name}`;
+      backLink.href = dashboardHref();
+    }
     renderTemplateOptions();
     bindEvents();
     render();

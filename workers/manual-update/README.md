@@ -9,7 +9,17 @@
 3. 在 Worker 的 **Secrets** 新增：
    - `GITHUB_TOKEN`：GitHub fine-grained personal access token，只授權 `shiaobau/company-research-radar`，並給予觸發 Actions 所需的最小寫入權限。
    - `UPDATE_PASSWORD_HASH`：格式為 `iterations:saltBase64:hashBase64` 的 PBKDF2-SHA-256 雜湊。
-4. 保留 `DASHBOARD_ORIGIN` 為 `https://shiaobau.github.io`。若日後改用自訂網域，再一併調整。
+4. `DASHBOARD_ORIGINS` 可用逗號列出允許操作 Worker 的網站來源。目前預留 GitHub Pages 與 `https://company-watch-u1-u5.pages.dev`。
+
+## 五個觀察站密碼
+
+未設定其他值時，U1-U5 都會沿用 `UPDATE_PASSWORD_HASH`。日後若要分開密碼，在 Worker Secrets 新增 `UNIVERSE_PASSWORD_HASHES`，值為單行 JSON：
+
+```json
+{"u1":"雜湊值1","u2":"雜湊值2","u3":"雜湊值3","u4":"雜湊值4","u5":"雜湊值5"}
+```
+
+未列在這個 JSON 的觀察站仍會沿用 `UPDATE_PASSWORD_HASH`。原始密碼與雜湊值都不可提交到 Git。
 
 ## 產生密碼雜湊
 

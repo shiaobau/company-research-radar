@@ -13,7 +13,11 @@ function response(body, status, headers = {}) {
 
 function corsHeaders(request, env) {
   const origin = request.headers.get("Origin");
-  if (!origin || origin !== env.DASHBOARD_ORIGIN) return null;
+  const allowedOrigins = String(env.DASHBOARD_ORIGINS || env.DASHBOARD_ORIGIN || "")
+    .split(",")
+    .map((value) => value.trim())
+    .filter(Boolean);
+  if (!origin || !allowedOrigins.includes(origin)) return null;
   return {
     "access-control-allow-origin": origin,
     "access-control-allow-methods": "GET, POST, OPTIONS",
@@ -37,7 +41,7 @@ function timingSafeEqual(left, right) {
 async function verifyPassword(password, encodedHash) {
   const [iterationsText, saltText, hashText] = String(encodedHash || "").split(":");
   const iterations = Number(iterationsText);
-  if (!Number.isInteger(iterations) || iterations < 10000 || iterations > 100000 || !saltText || !hashText) {
+  if (!Number.isInteger(iterations) || iterations < 10000 || iterations > 1000000 || !saltText || !hashText) {
     throw new Error("管理密碼設定格式無效。");
   }
   try {
@@ -74,7 +78,35 @@ function normalizeTickers(value) {
   return tickers;
 }
 
-async function dispatchGithubWorkflow(env, tickers = [], slot = "manual") {
+function normalizeUniverseId(value) {
+  const universeId = String(value || "u1").trim().toLowerCase();
+  if (!/^u[1-5]$/.test(universeId)) throw new Error("研究宇宙必須為 U1 至 U5。");
+  return universeId;
+}
+
+function normalizeUniverseAction(value, tickers) {
+  const fallback = tickers.length ? "add" : "refresh";
+  const action = String(value || fallback).trim().toLowerCase();
+  if (!["add", "remove", "refresh"].includes(action)) throw new Error("不支援的觀察站操作。");
+  if ((action === "add" || action === "remove") && !tickers.length) {
+    throw new Error("變更觀察站清單時至少需要一個股票代碼。");
+  }
+  return action;
+}
+
+function passwordHashForUniverse(env, universeId) {
+  if (env.UNIVERSE_PASSWORD_HASHES) {
+    try {
+      const hashes = JSON.parse(env.UNIVERSE_PASSWORD_HASHES);
+      if (typeof hashes?.[universeId] === "string" && hashes[universeId]) return hashes[universeId];
+    } catch {
+      throw new Error("各觀察站密碼設定格式無效。");
+    }
+  }
+  return env.UPDATE_PASSWORD_HASH;
+}
+
+async function dispatchGithubWorkflow(env, tickers = [], slot = "manual", universeId = "u1", universeAction = "refresh") {
   const endpoint = `https://api.github.com/repos/${env.GITHUB_REPOSITORY}/actions/workflows/${encodeURIComponent(env.GITHUB_WORKFLOW)}/dispatches`;
   const result = await fetch(endpoint, {
     method: "POST",
@@ -87,7 +119,12 @@ async function dispatchGithubWorkflow(env, tickers = [], slot = "manual") {
     },
     body: JSON.stringify({
       ref: env.GITHUB_REF,
-      inputs: { slot, tickers: tickers.join(",") }
+      inputs: {
+        slot,
+        tickers: tickers.join(","),
+        universe_id: universeId,
+        universe_action: universeAction
+      }
     })
   });
   if (result.status === 204) return new Date().toISOString();
@@ -148,7 +185,7 @@ export default {
     ctx.waitUntil((async () => {
       console.log(JSON.stringify({ event: "scheduled_update_started", cron: controller.cron, slot }));
       try {
-        const requestedAt = await dispatchGithubWorkflow(env, [], slot);
+        const requestedAt = await dispatchGithubWorkflow(env, [], slot, "u1", "refresh");
         console.log(JSON.stringify({ event: "scheduled_update_dispatched", cron: controller.cron, slot, requestedAt }));
       } catch (error) {
         console.error(JSON.stringify({
@@ -177,22 +214,33 @@ export default {
     if (request.method !== "POST" || url.pathname !== "/manual-update") {
       return response({ status: "error", message: "找不到更新端點。" }, 404, cors);
     }
-    if (!env.UPDATE_PASSWORD_HASH) {
-      return response({ status: "error", message: "尚未設定管理更新密碼。" }, 503, cors);
-    }
-
     try {
       const payload = await readJsonBody(request);
+      const tickers = normalizeTickers(payload.tickers);
+      const universeId = normalizeUniverseId(payload.universe_id);
+      const universeAction = normalizeUniverseAction(payload.action, tickers);
+      const passwordHash = passwordHashForUniverse(env, universeId);
+      if (!passwordHash) {
+        return response({ status: "error", message: "尚未設定管理更新密碼。" }, 503, cors);
+      }
       const password = typeof payload.password === "string" ? payload.password : "";
-      if (!password || password.length > 512 || !(await verifyPassword(password, env.UPDATE_PASSWORD_HASH))) {
+      if (!password || password.length > 512 || !(await verifyPassword(password, passwordHash))) {
         return response({ status: "error", message: "更新密碼不正確。" }, 401, cors);
       }
-      const tickers = normalizeTickers(payload.tickers);
-      const requestedAt = await dispatchGithubWorkflow(env, tickers);
-      const message = tickers.length
-        ? `研究已送出：${tickers.join("、")}。GitHub Actions 會建立研究檔、更新資料並完成驗證。`
+      const requestedAt = await dispatchGithubWorkflow(env, tickers, "manual", universeId, universeAction);
+      const message = universeAction === "remove"
+        ? `已送出從 ${universeId.toUpperCase()} 移除 ${tickers.join("、")} 的要求。`
+        : tickers.length
+        ? `研究已送出：${tickers.join("、")} 將加入 ${universeId.toUpperCase()}，並更新資料與完成驗證。`
         : "完整更新已送出，正在等待 GitHub Actions 啟動。";
-      return response({ status: "accepted", requested_at: requestedAt, tickers, message }, 202, cors);
+      return response({
+        status: "accepted",
+        requested_at: requestedAt,
+        tickers,
+        universe_id: universeId,
+        action: universeAction,
+        message
+      }, 202, cors);
     } catch (error) {
       return response({ status: "error", message: error.message || "無法啟動完整更新。" }, 500, cors);
     }
