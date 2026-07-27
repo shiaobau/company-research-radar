@@ -3,7 +3,7 @@
   "timezone": "Asia/Taipei",
   "frequency": "weekday",
   "frequency_label": "平日",
-  "generated_at": "2026-07-26T12:33:06.669Z",
+  "generated_at": "2026-07-27T00:16:15.692Z",
   "current_run": null,
   "schedules": {
     "morning": {
@@ -14,7 +14,7 @@
         "slot": "morning",
         "label": "早間完整更新",
         "status": "done",
-        "started_at": "2026-07-26T00:16:08.641Z",
+        "started_at": "2026-07-27T00:15:21.694Z",
         "steps": [
           {
             "script": "tools/source-cache.mjs",
@@ -23,17 +23,17 @@
               "--continue-on-error"
             ],
             "status": "done",
-            "started_at": "2026-07-26T00:16:08.643Z",
-            "finished_at": "2026-07-26T00:16:26.004Z",
-            "output_tail": "d, 7 rows, 2026-07-26T00:16:20.307Z\ntpex_financial_balance_bd: updated, 7 rows, 2026-07-26T00:16:20.559Z\ntwse_financial_income_fh: updated, 13 rows, 2026-07-26T00:16:20.764Z\ntwse_financial_balance_fh: updated, 13 rows, 2026-07-26T00:16:20.968Z\ntpex_financial_income_fh: updated, 1 rows, 2026-07-26T00:16:21.223Z\ntpex_financial_balance_fh: updated, 1 rows, 2026-07-26T00:16:21.473Z\ntwse_financial_income_ins: updated, 6 rows, 2026-07-26T00:16:21.677Z\ntwse_financial_balance_ins: updated, 6 rows, 2026-07-26T00:16:21.880Z\ntpex_financial_income_ins: updated, 1 rows, 2026-07-26T00:16:22.131Z\ntpex_financial_balance_ins: updated, 1 rows, 2026-07-26T00:16:22.381Z\ntwse_material_events: updated, 8 rows, 2026-07-26T00:16:22.586Z\ntpex_material_events: updated, 70 rows, 2026-07-26T00:16:22.841Z\ntwse_major_shareholders: updated, 1058 rows, 2026-07-26T00:16:23.245Z\ntpex_major_shareholders: updated, 1001 rows, 2026-07-26T00:16:25.027Z\ntwse_insider_transfer: updated, 3 rows, 2026-07-26T00:16:25.232Z\ntpex_insider_transfer: updated, 0 rows, 2026-07-26T00:16:25.504Z\ntwse_disclosure_violations: updated, 31 rows, 2026-07-26T00:16:25.712Z\ntpex_disclosure_violations: updated, 15 rows, 2026-07-26T00:16:25.991Z\n"
+            "started_at": "2026-07-27T00:15:21.696Z",
+            "finished_at": "2026-07-27T00:15:33.530Z",
+            "output_tail": "ed, 7 rows, 2026-07-27T00:15:30.860Z\ntpex_financial_balance_bd: updated, 7 rows, 2026-07-27T00:15:31.004Z\ntwse_financial_income_fh: updated, 13 rows, 2026-07-27T00:15:31.142Z\ntwse_financial_balance_fh: updated, 13 rows, 2026-07-27T00:15:31.282Z\ntpex_financial_income_fh: updated, 1 rows, 2026-07-27T00:15:31.428Z\ntpex_financial_balance_fh: updated, 1 rows, 2026-07-27T00:15:31.574Z\ntwse_financial_income_ins: updated, 6 rows, 2026-07-27T00:15:31.712Z\ntwse_financial_balance_ins: updated, 6 rows, 2026-07-27T00:15:31.850Z\ntpex_financial_income_ins: updated, 1 rows, 2026-07-27T00:15:31.993Z\ntpex_financial_balance_ins: updated, 1 rows, 2026-07-27T00:15:32.135Z\ntwse_material_events: updated, 4 rows, 2026-07-27T00:15:32.273Z\ntpex_material_events: updated, 3 rows, 2026-07-27T00:15:32.417Z\ntwse_major_shareholders: updated, 1058 rows, 2026-07-27T00:15:32.688Z\ntpex_major_shareholders: updated, 1001 rows, 2026-07-27T00:15:32.951Z\ntwse_insider_transfer: updated, 3 rows, 2026-07-27T00:15:33.091Z\ntpex_insider_transfer: updated, 0 rows, 2026-07-27T00:15:33.233Z\ntwse_disclosure_violations: updated, 31 rows, 2026-07-27T00:15:33.372Z\ntpex_disclosure_violations: updated, 15 rows, 2026-07-27T00:15:33.517Z\n"
           },
           {
             "script": "tools/update-data.mjs",
             "args": [],
             "status": "done",
-            "started_at": "2026-07-26T00:16:26.005Z",
-            "finished_at": "2026-07-26T00:16:55.759Z",
-            "output_tail": "TWSE 三大法人 20260726 unavailable: 307 Temporary Redirect for https://www.twse.com.tw/rwd/zh/fund/T86?date=20260726&selectType=ALLBUT0999&response=json\nTWSE 三大法人 20260725 unavailable: 307 Temporary Redirect for https://www.twse.com.tw/rwd/zh/fund/T86?date=20260725&selectType=ALLBUT0999&response=json\nGenerated objective data for 10 research companies.\n"
+            "started_at": "2026-07-27T00:15:33.531Z",
+            "finished_at": "2026-07-27T00:16:15.585Z",
+            "output_tail": "TWSE 三大法人 20260727 unavailable: 307 Temporary Redirect for https://www.twse.com.tw/rwd/zh/fund/T86?date=20260727&selectType=ALLBUT0999&response=json\nTWSE 三大法人 20260726 unavailable: 307 Temporary Redirect for https://www.twse.com.tw/rwd/zh/fund/T86?date=20260726&selectType=ALLBUT0999&response=json\nTWSE 三大法人 20260725 unavailable: 307 Temporary Redirect for https://www.twse.com.tw/rwd/zh/fund/T86?date=20260725&selectType=ALLBUT0999&response=json\nGenerated objective data for 10 research companies.\n"
           },
           {
             "script": "tools/verify-research-data.mjs",
@@ -41,22 +41,22 @@
               "--retry"
             ],
             "status": "done",
-            "started_at": "2026-07-26T00:16:55.760Z",
-            "finished_at": "2026-07-26T00:16:55.796Z",
+            "started_at": "2026-07-27T00:16:15.587Z",
+            "finished_at": "2026-07-27T00:16:15.624Z",
             "output_tail": "\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    },\n    {\n      \"id\": \"tpex-3115\",\n      \"ticker\": \"3115\",\n      \"name\": \"富榮綱\",\n      \"status\": \"core_complete\",\n      \"missing_dimensions\": [\n        {\n          \"id\": \"industry\",\n          \"label\": \"產業證據調整\"\n        }\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    },\n    {\n      \"id\": \"twse-3481\",\n      \"ticker\": \"3481\",\n      \"name\": \"群創\",\n      \"status\": \"core_complete\",\n      \"missing_dimensions\": [\n        {\n          \"id\": \"industry\",\n          \"label\": \"產業證據調整\"\n        }\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    },\n    {\n      \"id\": \"tpex-6023\",\n      \"ticker\": \"6023\",\n      \"name\": \"元大期貨\",\n      \"status\": \"core_complete\",\n      \"missing_dimensions\": [\n        {\n          \"id\": \"industry\",\n          \"label\": \"產業證據調整\"\n        }\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    },\n    {\n      \"id\": \"tpex-8279\",\n      \"ticker\": \"8279\",\n      \"name\": \"生展\",\n      \"status\": \"core_complete\",\n      \"missing_dimensions\": [\n        {\n          \"id\": \"industry\",\n          \"label\": \"產業證據調整\"\n        }\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    }\n  ]\n}\n"
           },
           {
             "script": "tools/targeted-collector.mjs",
             "args": [],
             "status": "done",
-            "started_at": "2026-07-26T00:16:55.797Z",
-            "finished_at": "2026-07-26T00:17:56.798Z",
+            "started_at": "2026-07-27T00:16:15.625Z",
+            "finished_at": "2026-07-27T00:16:15.691Z",
             "output_tail": "{\n  \"status\": \"done\",\n  \"companies\": 10,\n  \"researched_companies\": 10,\n  \"total_events\": 240,\n  \"cache\": \"data/research_cache\"\n}\n"
           }
         ],
         "progress_percent": 100,
         "current_step": null,
-        "finished_at": "2026-07-26T00:17:56.799Z",
+        "finished_at": "2026-07-27T00:16:15.692Z",
         "company_count": 10
       }
     },
