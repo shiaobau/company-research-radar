@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-27T00:16:15.661Z",
+  "collected_at": "2026-07-27T12:31:46.023Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -10,6 +10,69 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2885-1150727-3",
+      "date": "2026-07-27",
+      "announced_date": "2026-07-27",
+      "fact_date": "2026-07-27",
+      "announced_time": "18:49:46",
+      "title": "元大金控代元大香港國際投資公告取消投資私募基金 Japan Activation Capital III L.P.(補充114/2/17公告)",
+      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件， 如股息率等）: Japan Activation Capital III L.P. 2.事實發生日:115/07/27 3.交易單位數量、每單位價格及交易總金額: 交易單位數量：不適用 每單位價格：不適用 交易總金額：零(原公告日圓30億元) 4.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司 之關係人者，得免揭露其姓名）: 交易相對人：Japan Activation Capital III L.P. 與公司之關係：非利害關係人 5.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及 前次移轉之所有人、前次移轉之所有人與公司及交易相對人間相互之 關係、前次移轉日期及移轉金額: 不適用 6.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告 關係人之取得及處分日期、價格及交易當時與公司之關係: 不適用 7.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分 債權如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人 之債權帳面金額: 不適用 8.處分利益（或損失）（取得有價證券者不適用）（遞延者應列表 說明認列情形）: 不適用 9.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要 約定事項: 依據合約約定 10.本次交易之決定方式、價格決定之參考依據及決策單位: 元大香港國際投資董事會 11.取得或處分有價證券標的公司每股淨值:不適用 12.有價證券標的公司私募參考價格與每股交易金額差距達20%以上:不適用 13.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、 持股比例及權利受限情形（如質押情形）: 累積數量：不適用 累積金額：零(原公告日圓30億元) 持股比例：不適用 權利受限情形：無 14.迄目前為止，私募有價證券投資（含本次交易）占公司最近期財 務報表中總資產及歸屬於母公司業主之權益之比例暨最近期財務報表中營運資金數額: 總資產比率：0.00000077% 股東權益比率：0.00000089% 營運資金：不適用 15.經理人及經紀費用: 不適用 16.取得或處分之具體目的或用途: 投資目的 17.本次交易表示異議董事之意見: 無 18.本次交易為關係人交易: 否 19.董事會通過日期: 不適用 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.其他敘明事項: 考量共同投資人參與情形、基金募集進度及市場環境變化， 經綜合評估後，決議取消參與本投資案。 總交易金額(台幣)欄位為114/02/17公告之總交易金額(台幣)， 實際交易金額為零。",
+      "clause": "第24款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "enterDate": "1150727",
+        "marketKind": "sii",
+        "companyId": "2885"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150727-2",
+      "date": "2026-07-27",
+      "announced_date": "2026-07-27",
+      "fact_date": "2026-07-27",
+      "announced_time": "16:48:49",
+      "title": "元大金控代子公司元大證券(香港)公告董事會決議不發放 114年度股利",
+      "description": "1.董事會決議日期:115/07/27 2.發放股利種類及金額:董事會決議不發放114年度股利 3.其他應敘明事項:無",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1150727",
+        "marketKind": "sii",
+        "companyId": "2885"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150727-1",
+      "date": "2026-07-27",
+      "announced_date": "2026-07-27",
+      "fact_date": "2026-07-27",
+      "announced_time": "16:48:09",
+      "title": "元大金控代子公司元大證券(香港)公告股東會召開事宜",
+      "description": "1.董事會決議日期:115/07/27 2.股東會召開日期:115/08/12 3.股東會召開地點:不適用 4.召集事由一、報告事項:無 5.召集事由二、承認事項: (A)114年財務報告 (B)不發放114年度股利 (C)董事酬金 6.召集事由三、討論事項:簽證會計師之聘任及授權董事會決定其簽證之費用 7.召集事由四、選舉事項:重選董事案 8.召集事由五、其他議案:無 9.召集事由六、臨時動議:無 10.停止過戶起始日期:NA 11.停止過戶截止日期:NA 12.其他應敘明事項:元大證券(香港)由單一股東持有，得不以實體方式舉行股東常會， 本次將以單一股東書面決議方式表決股東常會議案。",
+      "clause": "第17款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150727",
+        "marketKind": "sii",
+        "companyId": "2885"
+      }
+    },
     {
       "id": "mops-history-2885-1150723-1",
       "date": "2026-07-23",
@@ -25,73 +88,73 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "1",
-        "enterDate": "1150723"
+        "enterDate": "1150723",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
       "id": "mops-history-2885-1150721-4",
       "date": "2026-07-21",
       "announced_date": "2026-07-21",
-      "fact_date": "2026-07-21",
+      "fact_date": null,
       "announced_time": "16:54:46",
       "title": "元大金控代子公司元大投資(韓國)補充112年3月21日公告之 Yuanta Secondary No. II Fund到期清算事",
-      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件， 如股息率等）: 元大投資(韓國)擔任普通合夥人之 「Yuanta Secondary No. II Fund」(下簡稱旨揭私募基金) 2.事實發生日:115/07/21 3.交易單位數量、每單位價格及交易總金額: 旨揭私募基金已於115年7月21日完成清算。 本次獲配現金合計約當韓圜78.95億元(約新臺幣1.70億元)， 元大投資(韓國)累計分回總金額: 韓圜92.46億元 (約新臺幣1.99億元) 4.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司 之關係人者，得免揭露其姓名）: 不適用 5.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及 前次移轉之所有人、前次移轉之所有人與公司及交易相對人間相互之 關係、前次移轉日期及移轉金額: 不適用 6.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告 關係人之取得及處分日期、價格及交易當時與公司之關係: 不適用 7.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分 債權如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人 之債權帳面金額: 不適用 8.處分利益（或損失）（取得有價證券者不適用）（遞延者應列表 說明認列情形）: 元大投資(韓國)自旨揭私募基金累積取得之利益(含管理報酬) 為韓圜176.14億元(約新臺幣3.79億元) 9.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要 約定事項: 依據旨揭私募基金合夥契約辦理 10.本次交易之決定方式、價格決定之參考依據及決策單位: 依據旨揭私募基金合夥契約辦理 11.取得或處分有價證券標的公司每股淨值:不適用 12.有價證券標的公司私募參考價格與每股交易金額差距達20%以上:不適用 13.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、 持股比例及權利受限情形（如質押情形）: 不適用 14.迄目前為止，私募有價證券投資（含本次交易）占公司最近期財 務報表中總資產及歸屬於母公司業主之權益之比例暨最近期財務報表中營運資金數額: 總資產比率：0.36% 股東權益比率：0.42% 營運資金：不適用 15.經理人及經紀費用: 不適用 16.取得或處分之具體目的或用途: 不適用 17.本次交易表示異議董事之意見: 不適用 18.本次交易為關係人交易: 否 19.董事會通過日期: 不適用 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.其他敘明事項: 本公告匯率以韓圜兌新臺幣0.021540為準。",
-      "clause": "第24款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "4",
-        "enterDate": "1150721"
+        "enterDate": "1150721",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
       "id": "mops-history-2885-1150721-3",
       "date": "2026-07-21",
       "announced_date": "2026-07-21",
-      "fact_date": "2026-07-21",
+      "fact_date": null,
       "announced_time": "16:53:31",
       "title": "元大金控代子公司元大證券(韓國)補充112年3月21日公告之 Yuanta Secondary No. II Fund到期清算事",
-      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件， 如股息率等）: 元大證券(韓國)擔任有限合夥人之 「Yuanta Secondary No. II Fund」(下簡稱旨揭私募基金) 2.事實發生日:115/07/21 3.交易單位數量、每單位價格及交易總金額: 旨揭私募基金已於115年7月21日完成清算， 本次獲配現金合計約當韓圜1.58億元(約新臺幣340.3萬元)， 元大證券(韓國)累計分回總金額: 韓圜38億元 (約新臺幣8,185.2萬元) 4.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司 之關係人者，得免揭露其姓名）: 不適用 5.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及 前次移轉之所有人、前次移轉之所有人與公司及交易相對人間相互之 關係、前次移轉日期及移轉金額: 不適用 6.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告 關係人之取得及處分日期、價格及交易當時與公司之關係: 不適用 7.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分 債權如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人 之債權帳面金額: 不適用 8.處分利益（或損失）（取得有價證券者不適用）（遞延者應列表 說明認列情形）: 元大證券(韓國)自旨揭私募基金累積取得之利益為韓圜18億元(約新臺幣3,877.2萬元) 9.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要 約定事項: 依據旨揭私募基金合夥契約辦理 10.本次交易之決定方式、價格決定之參考依據及決策單位: 依據旨揭私募基金合夥契約辦理 11.取得或處分有價證券標的公司每股淨值:不適用 12.有價證券標的公司私募參考價格與每股交易金額差距達20%以上:不適用 13.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、 持股比例及權利受限情形（如質押情形）: 不適用 14.迄目前為止，私募有價證券投資（含本次交易）占公司最近期財 務報表中總資產及歸屬於母公司業主之權益之比例暨最近期財務報表中營運資金數額: 總資產比率：2.45% 股東權益比率：2.84% 營運資金：不適用 15.經理人及經紀費用: 不適用 16.取得或處分之具體目的或用途: 不適用 17.本次交易表示異議董事之意見: 不適用 18.本次交易為關係人交易: 否 19.董事會通過日期: 不適用 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.其他敘明事項: 本公告匯率以韓圜兌新臺幣0.02154為準。",
-      "clause": "第24款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "3",
-        "enterDate": "1150721"
+        "enterDate": "1150721",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
       "id": "mops-history-2885-1150721-2",
       "date": "2026-07-21",
       "announced_date": "2026-07-21",
-      "fact_date": "2026-07-21",
+      "fact_date": null,
       "announced_time": "15:38:11",
       "title": "元大金控代子公司元大證券公告114年度盈餘分配案之除權 基準日",
-      "description": "1.董事會、股東會決議或公司決定日期:115/07/21 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除權 3.發放股利種類及金額: 股票股利新臺幣5,284,370,810元，每股分配股票股利約0.80157888元。 4.除權（息）交易日:NA 5.最後過戶日:NA 6.停止過戶起始日期:NA 7.停止過戶截止日期:NA 8.除權（息）基準日:115/07/23 9.其他應敘明事項:無",
-      "clause": "第14款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "2",
-        "enterDate": "1150721"
+        "enterDate": "1150721",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -109,10 +172,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "1",
-        "enterDate": "1150721"
+        "enterDate": "1150721",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -130,10 +193,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "1",
-        "enterDate": "1150720"
+        "enterDate": "1150720",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -151,10 +214,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "1",
-        "enterDate": "1150713"
+        "enterDate": "1150713",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -172,10 +235,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "1",
-        "enterDate": "1150708"
+        "enterDate": "1150708",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -193,10 +256,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "1",
-        "enterDate": "1150707"
+        "enterDate": "1150707",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -214,10 +277,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "1",
-        "enterDate": "1150706"
+        "enterDate": "1150706",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -235,10 +298,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "1",
-        "enterDate": "1150703"
+        "enterDate": "1150703",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -256,10 +319,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "1",
-        "enterDate": "1150702"
+        "enterDate": "1150702",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -277,10 +340,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "2",
-        "enterDate": "1150701"
+        "enterDate": "1150701",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -298,10 +361,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "1",
-        "enterDate": "1150701"
+        "enterDate": "1150701",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -319,10 +382,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "5",
-        "enterDate": "1150630"
+        "enterDate": "1150630",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -340,10 +403,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "4",
-        "enterDate": "1150630"
+        "enterDate": "1150630",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -361,10 +424,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "3",
-        "enterDate": "1150630"
+        "enterDate": "1150630",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -382,10 +445,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "2",
-        "enterDate": "1150630"
+        "enterDate": "1150630",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -403,10 +466,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "1",
-        "enterDate": "1150630"
+        "enterDate": "1150630",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -424,10 +487,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "1",
-        "enterDate": "1150626"
+        "enterDate": "1150626",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -445,73 +508,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
         "serialNumber": "3",
-        "enterDate": "1150625"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150625-2",
-      "date": "2026-06-25",
-      "announced_date": "2026-06-25",
-      "fact_date": null,
-      "announced_time": "16:32:20",
-      "title": "元大金控代子公司元大證券公告114年度盈餘分配案之現金 股利除息基準日",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
+        "enterDate": "1150625",
         "marketKind": "sii",
-        "companyId": "2885",
-        "serialNumber": "2",
-        "enterDate": "1150625"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150625-1",
-      "date": "2026-06-25",
-      "announced_date": "2026-06-25",
-      "fact_date": null,
-      "announced_time": "16:31:26",
-      "title": "元大金控代子公司元大證券公告董事會代行股東會重要決 議事項",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
-        "serialNumber": "1",
-        "enterDate": "1150625"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150624-3",
-      "date": "2026-06-24",
-      "announced_date": "2026-06-24",
-      "fact_date": null,
-      "announced_time": "17:57:32",
-      "title": "元大金控公告行政長異動",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2885",
-        "serialNumber": "3",
-        "enterDate": "1150624"
+        "companyId": "2885"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-27T00:15:32.273Z",
+      "fetched_at": "2026-07-27T12:30:56.289Z",
       "row_count": 4,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-26T00:17:27.664Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-07-27T12:32:30.356Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

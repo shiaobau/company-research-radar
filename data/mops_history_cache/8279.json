@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1",
   "ticker": "8279",
-  "fetched_at": "2026-07-26T00:17:56.787Z",
+  "fetched_at": "2026-07-27T12:33:05.620Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,69 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-8279-1150721-4",
+      "date": "2026-07-27",
+      "announced_date": "2026-07-27",
+      "fact_date": "2026-07-27",
+      "announced_time": "16:53:14",
+      "title": "公告本公司董事會決議通過115年第2季合併財務報告",
+      "description": "1.提報董事會或經董事會決議日期:115/07/27 2.審計委員會通過日期:115/07/27 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/06/30 4.1月1日累計至本期止營業收入(仟元):1,010,074 5.1月1日累計至本期止營業毛利(毛損) (仟元):324,088 6.1月1日累計至本期止營業利益(損失) (仟元):127,482 7.1月1日累計至本期止稅前淨利(淨損) (仟元):128,009 8.1月1日累計至本期止本期淨利(淨損) (仟元):103,120 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):103,120 10.1月1日累計至本期止基本每股盈餘(損失) (元):3.81 11.期末總資產(仟元):3,160,568 12.期末總負債(仟元): 819,388 13.期末歸屬於母公司業主之權益(仟元):2,341,180 14.其他應敘明事項:無。",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "enterDate": "1150721",
+        "marketKind": "otc",
+        "companyId": "8279"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150721-2",
+      "date": "2026-07-27",
+      "announced_date": "2026-07-27",
+      "fact_date": "2026-07-27",
+      "announced_time": "16:52:39",
+      "title": "公告本公司董事會決議通過設立永續發展暨提名委員會及委員名單",
+      "description": "1.發生變動日期:115/07/27 2.功能性委員會名稱:永續發展暨提名委員會 3.舊任者姓名:不適用 4.舊任者簡歷:不適用 5.新任者姓名: 倪衍玄 黃昭媛 林俊宏 張嘉桓 6.新任者簡歷: 倪衍玄，本公司獨立董事 黃昭媛，本公司獨立董事 林俊宏，本公司獨立董事 張嘉桓，本公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 新任 8.異動原因:董事會決議通過設立永續發展暨提名委員會 9.原任期（例xx/xx/xx ~ xx/xx/xx）:不適用 10.新任生效日期:115/07/27 11.其他應敘明事項:永續發展暨提名委員會經由委員共同推舉倪衍玄獨立董事， 擔任召集人及會議主席。",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1150721",
+        "marketKind": "otc",
+        "companyId": "8279"
+      }
+    },
+    {
+      "id": "mops-history-8279-1150721-1",
+      "date": "2026-07-27",
+      "announced_date": "2026-07-27",
+      "fact_date": "2026-07-27",
+      "announced_time": "16:52:02",
+      "title": "公告本公司董事會委任第五屆薪資報酬委員會委員",
+      "description": "1.發生變動日期:115/07/27 2.功能性委員會名稱:薪資報酬委員會 3.舊任者姓名: 涂阿清 王盛世 李世傑 4.舊任者簡歷: 涂阿清，本公司獨立董事 王盛世，本公司獨立董事 李世傑，本公司獨立董事 5.新任者姓名: 倪衍玄 黃昭媛 林俊宏 張嘉桓 6.新任者簡歷: 倪衍玄，本公司獨立董事 黃昭媛，本公司獨立董事 林俊宏，本公司獨立董事 張嘉桓，本公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 新任 8.異動原因:配合董事改選，薪資報酬委員會委員任期與董事任期相同 9.原任期（例xx/xx/xx ~ xx/xx/xx）:112/08/07~115/05/27 10.新任生效日期:115/07/27 11.其他應敘明事項:薪資報酬委員會經由委員共同推舉倪衍玄獨立董事， 擔任召集人及會議主席。",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150721",
+        "marketKind": "otc",
+        "companyId": "8279"
+      }
+    },
     {
       "id": "mops-history-8279-1150707-1",
       "date": "2026-07-17",
@@ -28,73 +91,73 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "1",
-        "enterDate": "1150707"
+        "enterDate": "1150707",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
       "id": "mops-history-8279-1150602-2",
       "date": "2026-06-03",
       "announced_date": "2026-06-03",
-      "fact_date": "2026-05-27",
+      "fact_date": null,
       "announced_time": "16:30:05",
       "title": "更正-公告本公司115年股東常會全面改選董事當選名單 (更正屬三分之一以上董事發生變動)",
-      "description": "1.發生變動日期:115/05/27 2.選任或變動人員別（請輸入法人董事、法人監察人、獨立董事、 自然人董事或自然人監察人）:法人董事、獨立董事、自然人董事 3.舊任者職稱及姓名: (1)董事:生達化學製藥股份有限公司代表人陳威仁 (2)董事:生達化學製藥股份有限公司代表人范滋庭 (3)董事:生達化學製藥股份有限公司代表人葉翠雯 (4)獨立董事:涂阿清 (5)獨立董事:王盛世 (6)獨立董事:李世傑 (7)獨立董事:黃昭媛 4.舊任者簡歷: (1)董事:生達化學製藥股份有限公司代表人陳威仁-本公司董事長 (2)董事:生達化學製藥股份有限公司代表人范滋庭-本公司董事 (3)董事:生達化學製藥股份有限公司代表人葉翠雯-本公司董事 (4)獨立董事:涂阿清-本公司獨立董事 (5)獨立董事:王盛世-本公司獨立董事 (6)獨立董事:李世傑-本公司獨立董事 (7)獨立董事:黃昭媛-本公司獨立董事 5.新任者職稱及姓名: (1)董事:生達化學製藥股份有限公司代表人陳威仁 (2)董事:生達化學製藥股份有限公司代表人范滋庭 (3)董事:生達化學製藥股份有限公司代表人葉翠雯 (4)獨立董事:倪衍玄 (5)獨立董事:黃昭媛 (6)獨立董事:張嘉桓 (7)獨立董事:林俊宏 6.新任者簡歷: (1)董事:生達化學製藥股份有限公司代表人陳威仁-本公司董事長 (2)董事:生達化學製藥股份有限公司代表人范滋庭-本公司董事 (3)董事:生達化學製藥股份有限公司代表人葉翠雯-本公司董事 (4)獨立董事:倪衍玄-本公司獨立董事 (5)獨立董事:黃昭媛-本公司獨立董事 (6)獨立董事:張嘉桓-本公司獨立董事 (7)獨立董事:林俊宏-本公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 任期屆滿 8.異動原因:任期屆滿全面改選 9.新任者選任時持股數: (1)董事:生達化學製藥股份有限公司代表人陳威仁12,651,146股 (2)董事:生達化學製藥股份有限公司代表人范滋庭12,651,146股 (3)董事:生達化學製藥股份有限公司代表人葉翠雯12,651,146股 (4)獨立董事:倪衍玄0股 (5)獨立董事:黃昭媛0股 (6)獨立董事:張嘉桓0股 (7)獨立董事:林俊宏0股 10.原任期（例xx/xx/xx ~ xx/xx/xx）:112/05/30~115/05/29 11.新任生效日期:115/05/27 12.同任期董事變動比率:任期屆滿全面改選董事，故不適用 13.同任期獨立董事變動比率:任期屆滿全面改選董事，故不適用 14.同任期監察人變動比率:任期屆滿全面改選董事，故不適用 15.屬三分之一以上董事發生變動（請輸入是或否）:是(更正前為不適用)。 16.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第6款所定 對股東權益或證券價格有重大影響之事項):無。",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "2",
-        "enterDate": "1150602"
+        "enterDate": "1150602",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
       "id": "mops-history-8279-1150527-3",
       "date": "2026-05-27",
       "announced_date": "2026-05-27",
-      "fact_date": "2026-05-27",
+      "fact_date": null,
       "announced_time": "18:14:16",
       "title": "公告本公司115年股東常會重要決議事項",
-      "description": "1.股東常會日期:115/05/27 2.重要決議事項一、盈餘分配或盈虧撥補: 通過承認114年度盈餘分派案。 3.重要決議事項二、章程修訂:無。 4.重要決議事項三、營業報告書及財務報表: 通過承認114年度營業報告書及財務報表案。 5.重要決議事項四、董監事選舉: 通過全面改選本公司董事7人(含獨立董事4人)案。 董事當選名單如下： 董事當選人:生達化學製藥股份有限公司法人代表人：陳威仁 董事當選人:生達化學製藥股份有限公司法人代表人：范滋庭 董事當選人:生達化學製藥股份有限公司法人代表人：葉翠雯 獨立董事當選人:倪衍玄 獨立董事當選人:黃昭媛 獨立董事當選人:張嘉桓 獨立董事當選人:林俊宏 6.重要決議事項五、其他事項: (1)通過本公司修訂「取得或處分資產處理程序」部分條文案。 (2)通過解除新任董事競業禁止限制案。 7.其他應敘明事項:無。",
-      "clause": "第18款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "3",
-        "enterDate": "1150527"
+        "enterDate": "1150527",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
       "id": "mops-history-8279-1150527-2",
       "date": "2026-05-27",
       "announced_date": "2026-05-27",
-      "fact_date": "2026-05-27",
+      "fact_date": null,
       "announced_time": "18:12:58",
       "title": "公告本公司115年股東常會全面改選董事當選名單",
-      "description": "1.發生變動日期:115/05/27 2.選任或變動人員別（請輸入法人董事、法人監察人、獨立董事、 自然人董事或自然人監察人）:法人董事、獨立董事、自然人董事 3.舊任者職稱及姓名: (1)董事:生達化學製藥股份有限公司代表人陳威仁 (2)董事:生達化學製藥股份有限公司代表人范滋庭 (3)董事:生達化學製藥股份有限公司代表人葉翠雯 (4)獨立董事:涂阿清 (5)獨立董事:王盛世 (6)獨立董事:李世傑 (7)獨立董事:黃昭媛 4.舊任者簡歷: (1)董事:生達化學製藥股份有限公司代表人陳威仁-本公司董事長 (2)董事:生達化學製藥股份有限公司代表人范滋庭-本公司董事 (3)董事:生達化學製藥股份有限公司代表人葉翠雯-本公司董事 (4)獨立董事:涂阿清-本公司獨立董事 (5)獨立董事:王盛世-本公司獨立董事 (6)獨立董事:李世傑-本公司獨立董事 (7)獨立董事:黃昭媛-本公司獨立董事 5.新任者職稱及姓名: (1)董事:生達化學製藥股份有限公司代表人陳威仁 (2)董事:生達化學製藥股份有限公司代表人范滋庭 (3)董事:生達化學製藥股份有限公司代表人葉翠雯 (4)獨立董事:倪衍玄 (5)獨立董事:黃昭媛 (6)獨立董事:張嘉桓 (7)獨立董事:林俊宏 6.新任者簡歷: (1)董事:生達化學製藥股份有限公司代表人陳威仁-本公司董事長 (2)董事:生達化學製藥股份有限公司代表人范滋庭-本公司董事 (3)董事:生達化學製藥股份有限公司代表人葉翠雯-本公司董事 (4)獨立董事:倪衍玄-本公司獨立董事 (5)獨立董事:黃昭媛-本公司獨立董事 (6)獨立董事:張嘉桓-本公司獨立董事 (7)獨立董事:林俊宏-本公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 任期屆滿 8.異動原因:任期屆滿全面改選 9.新任者選任時持股數: (1)董事:生達化學製藥股份有限公司代表人陳威仁12,651,146股 (2)董事:生達化學製藥股份有限公司代表人范滋庭12,651,146股 (3)董事:生達化學製藥股份有限公司代表人葉翠雯12,651,146股 (4)獨立董事:倪衍玄0股 (5)獨立董事:黃昭媛0股 (6)獨立董事:張嘉桓0股 (7)獨立董事:林俊宏0股 10.原任期（例xx/xx/xx ~ xx/xx/xx）:112/05/30~115/05/29 11.新任生效日期:115/05/27 12.同任期董事變動比率:任期屆滿全面改選董事，故不適用 13.同任期獨立董事變動比率:任期屆滿全面改選董事，故不適用 14.同任期監察人變動比率:任期屆滿全面改選董事，故不適用 15.屬三分之一以上董事發生變動（請輸入是或否）:全面改選，不適用 16.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第6款所定 對股東權益或證券價格有重大影響之事項):無。",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "2",
-        "enterDate": "1150527"
+        "enterDate": "1150527",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -112,10 +175,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "3",
-        "enterDate": "1150525"
+        "enterDate": "1150525",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -133,10 +196,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "2",
-        "enterDate": "1150525"
+        "enterDate": "1150525",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -154,10 +217,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "1",
-        "enterDate": "1150527"
+        "enterDate": "1150527",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -175,10 +238,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "2",
-        "enterDate": "1150523"
+        "enterDate": "1150523",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -196,10 +259,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "1",
-        "enterDate": "1150523"
+        "enterDate": "1150523",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -217,10 +280,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "1",
-        "enterDate": "1150420"
+        "enterDate": "1150420",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -238,10 +301,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "1",
-        "enterDate": "1150416"
+        "enterDate": "1150416",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -259,10 +322,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "3",
-        "enterDate": "1150223"
+        "enterDate": "1150223",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -280,10 +343,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "2",
-        "enterDate": "1150223"
+        "enterDate": "1150223",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -301,10 +364,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "2",
-        "enterDate": "1150207"
+        "enterDate": "1150207",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -322,10 +385,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "1",
-        "enterDate": "1150206"
+        "enterDate": "1150206",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -343,10 +406,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "1",
-        "enterDate": "1141224"
+        "enterDate": "1141224",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -364,10 +427,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "1",
-        "enterDate": "1141023"
+        "enterDate": "1141023",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -385,10 +448,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "1",
-        "enterDate": "1140930"
+        "enterDate": "1140930",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -406,10 +469,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "1",
-        "enterDate": "1140718"
+        "enterDate": "1140718",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -427,10 +490,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "1",
-        "enterDate": "1140714"
+        "enterDate": "1140714",
+        "marketKind": "otc",
+        "companyId": "8279"
       }
     },
     {
@@ -448,73 +511,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
         "serialNumber": "3",
-        "enterDate": "1140513"
-      }
-    },
-    {
-      "id": "mops-history-8279-1140521-2",
-      "date": "2025-05-28",
-      "announced_date": "2025-05-28",
-      "fact_date": null,
-      "announced_time": "17:03:48",
-      "title": "公告本公司114年股東常會同意解除董事競業禁止之限制案",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
+        "enterDate": "1140513",
         "marketKind": "otc",
-        "companyId": "8279",
-        "serialNumber": "2",
-        "enterDate": "1140521"
-      }
-    },
-    {
-      "id": "mops-history-8279-1140513-1",
-      "date": "2025-05-28",
-      "announced_date": "2025-05-28",
-      "fact_date": null,
-      "announced_time": "16:52:04",
-      "title": "公告本公司董事長決定配息基準日與發放日相關事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1140513"
-      }
-    },
-    {
-      "id": "mops-history-8279-1140424-1",
-      "date": "2025-04-28",
-      "announced_date": "2025-04-28",
-      "fact_date": null,
-      "announced_time": "15:40:38",
-      "title": "公告本公司董事會決議通過114年第1季合併財務報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "8279",
-        "serialNumber": "1",
-        "enterDate": "1140424"
+        "companyId": "8279"
       }
     }
   ]
