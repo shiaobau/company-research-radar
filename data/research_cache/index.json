@@ -1,24 +1,34 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-07-28T11:28:37.299Z",
+  "generated_at": "2026-07-28T12:32:17.374Z",
   "collection_scope": "targeted_research_company",
   "source_status": [
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-28T11:28:27.076Z",
+      "fetched_at": "2026-07-28T12:30:58.654Z",
       "row_count": 180,
       "available": true
     },
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-28T11:28:27.254Z",
+      "fetched_at": "2026-07-28T12:30:59.098Z",
       "row_count": 104,
       "available": true
     }
   ],
   "companies": [
+    {
+      "ticker": "1231",
+      "company_id": "twse-1231",
+      "name": "聯華食",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-28T12:32:17.374Z",
+      "cache_path": "data/research_cache/1231.json"
+    },
     {
       "ticker": "1707",
       "company_id": "twse-1707",
@@ -26,9 +36,109 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-28T11:28:37.299Z",
+      "collected_at": "2026-07-28T12:32:17.374Z",
       "cache_path": "data/research_cache/1707.json"
+    },
+    {
+      "ticker": "2303",
+      "company_id": "twse-2303",
+      "name": "聯電",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-28T12:32:17.374Z",
+      "cache_path": "data/research_cache/2303.json"
+    },
+    {
+      "ticker": "2308",
+      "company_id": "twse-2308",
+      "name": "台達電",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-28T12:32:17.374Z",
+      "cache_path": "data/research_cache/2308.json"
+    },
+    {
+      "ticker": "2330",
+      "company_id": "twse-2330",
+      "name": "台積電",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-28T12:32:17.374Z",
+      "cache_path": "data/research_cache/2330.json"
+    },
+    {
+      "ticker": "2885",
+      "company_id": "twse-2885",
+      "name": "元大金",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-28T12:32:17.374Z",
+      "cache_path": "data/research_cache/2885.json"
+    },
+    {
+      "ticker": "2886",
+      "company_id": "twse-2886",
+      "name": "兆豐金",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-28T12:32:17.374Z",
+      "cache_path": "data/research_cache/2886.json"
+    },
+    {
+      "ticker": "3115",
+      "company_id": "tpex-3115",
+      "name": "富榮綱",
+      "market": "TPEx",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-28T12:32:17.374Z",
+      "cache_path": "data/research_cache/3115.json"
+    },
+    {
+      "ticker": "3481",
+      "company_id": "twse-3481",
+      "name": "群創",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-28T12:32:17.374Z",
+      "cache_path": "data/research_cache/3481.json"
+    },
+    {
+      "ticker": "6023",
+      "company_id": "tpex-6023",
+      "name": "元大期貨",
+      "market": "TPEx",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-28T12:32:17.374Z",
+      "cache_path": "data/research_cache/6023.json"
+    },
+    {
+      "ticker": "8279",
+      "company_id": "tpex-8279",
+      "name": "生展",
+      "market": "TPEx",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-28T12:32:17.374Z",
+      "cache_path": "data/research_cache/8279.json"
+    },
+    {
+      "ticker": "9939",
+      "company_id": "twse-9939",
+      "name": "宏全",
+      "market": "TWSE",
+      "status": "ok",
+      "event_count": 24,
+      "collected_at": "2026-07-28T12:32:17.374Z",
+      "cache_path": "data/research_cache/9939.json"
     }
   ],
-  "total_events": 24
+  "total_events": 288
 }

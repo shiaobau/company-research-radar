@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T11:28:28.268Z",
+  "generated_at": "2026-07-28T12:31:06.381Z",
   "note": "全市場背景因子。估值百分位依上市櫃官方產業全樣本計算；官方產業樣本不足 10 家時才回退為全市場模板樣本，兩者皆不使用觀察清單。資料僅供研究快照與回測，尚未納入核心分數。",
   "sources": [
     "twse_valuation",
@@ -130,9 +130,9 @@
       "institutional": {
         "as_of": "2026-07-28",
         "foreign_net_shares": -5965155,
-        "trust_net_shares": 1278139,
+        "trust_net_shares": 3341139,
         "dealer_net_shares": 1457999,
-        "total_net_shares": -3229017
+        "total_net_shares": -1166017
       },
       "source_ids": [
         "twse_valuation",
@@ -171,9 +171,9 @@
       "institutional": {
         "as_of": "2026-07-28",
         "foreign_net_shares": -5958854,
-        "trust_net_shares": -21243,
+        "trust_net_shares": -38313,
         "dealer_net_shares": 219409,
-        "total_net_shares": -5760688
+        "total_net_shares": -5777758
       },
       "source_ids": [
         "twse_valuation",
@@ -212,9 +212,9 @@
       "institutional": {
         "as_of": "2026-07-28",
         "foreign_net_shares": -14659332,
-        "trust_net_shares": 280400,
+        "trust_net_shares": 284295,
         "dealer_net_shares": 5123396,
-        "total_net_shares": -9255536
+        "total_net_shares": -9251641
       },
       "source_ids": [
         "twse_valuation",

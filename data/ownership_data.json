@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T11:28:28.268Z",
+  "generated_at": "2026-07-28T12:31:06.381Z",
   "sources": [
     {
       "id": "twse_major_shareholders",
@@ -74,7 +74,28 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T00:16:09.435Z"
+      "refreshed_at": "2026-07-28T12:31:06.381Z"
+    },
+    "twse-1707": {
+      "ticker": "1707",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_major_shareholders",
+        "twse_insider_transfer",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "major_shareholder_count": 0,
+      "insider_transfer_count": 0,
+      "disclosure_violation_count": 0,
+      "score": 63,
+      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
+      "major_shareholders": [],
+      "insider_transfers": [],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-28T12:31:06.381Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -95,7 +116,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T00:16:09.435Z"
+      "refreshed_at": "2026-07-28T12:31:06.381Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -121,7 +142,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T00:16:09.435Z"
+      "refreshed_at": "2026-07-28T12:31:06.381Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -142,7 +163,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T00:16:09.435Z"
+      "refreshed_at": "2026-07-28T12:31:06.381Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -163,7 +184,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T00:16:09.435Z"
+      "refreshed_at": "2026-07-28T12:31:06.381Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -184,7 +205,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T00:16:09.435Z"
+      "refreshed_at": "2026-07-28T12:31:06.381Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -218,7 +239,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T00:16:09.435Z"
+      "refreshed_at": "2026-07-28T12:31:06.381Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -239,7 +260,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T00:16:09.435Z"
+      "refreshed_at": "2026-07-28T12:31:06.381Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -265,7 +286,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T00:16:09.435Z"
+      "refreshed_at": "2026-07-28T12:31:06.381Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -291,7 +312,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T00:16:09.435Z"
+      "refreshed_at": "2026-07-28T12:31:06.381Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -312,28 +333,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T10:24:21.775Z"
-    },
-    "twse-1707": {
-      "ticker": "1707",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_major_shareholders",
-        "twse_insider_transfer",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "major_shareholder_count": 0,
-      "insider_transfer_count": 0,
-      "disclosure_violation_count": 0,
-      "score": 63,
-      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [],
-      "insider_transfers": [],
-      "violations": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T11:28:28.268Z"
+      "refreshed_at": "2026-07-28T12:31:06.381Z"
     }
   }
 }

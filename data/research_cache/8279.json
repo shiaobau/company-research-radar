@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-28T00:16:51.828Z",
+  "collected_at": "2026-07-28T12:32:17.374Z",
   "company": {
     "id": "tpex-8279",
     "ticker": "8279",
@@ -10,6 +10,51 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "448db48db2d5306a5f00",
+      "date": "2026-07-27",
+      "announced_date": "2026-07-27",
+      "fact_date": "2026-07-27",
+      "announced_time": "165314",
+      "title": "公告本公司董事會決議通過115年第2季合併財務報告",
+      "description": "1.提報董事會或經董事會決議日期:115/07/27 2.審計委員會通過日期:115/07/27 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/06/30 4.1月1日累計至本期止營業收入(仟元):1,010,074 5.1月1日累計至本期止營業毛利(毛損) (仟元):324,088 6.1月1日累計至本期止營業利益(損失) (仟元):127,482 7.1月1日累計至本期止稅前淨利(淨損) (仟元):128,009 8.1月1日累計至本期止本期淨利(淨損) (仟元):103,120 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):103,120 10.1月1日累計至本期止基本每股盈餘(損失) (元):3.81 11.期末總資產(仟元):3,160,568 12.期末總負債(仟元): 819,388 13.期末歸屬於母公司業主之權益(仟元):2,341,180 14.其他應敘明事項:無。",
+      "clause": "第31款",
+      "source_id": "tpex_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "b356fe6705cee3a03d69",
+      "date": "2026-07-27",
+      "announced_date": "2026-07-27",
+      "fact_date": "2026-07-27",
+      "announced_time": "165239",
+      "title": "公告本公司董事會決議通過設立永續發展暨提名委員會及委員名單",
+      "description": "1.發生變動日期:115/07/27 2.功能性委員會名稱:永續發展暨提名委員會 3.舊任者姓名:不適用 4.舊任者簡歷:不適用 5.新任者姓名: 倪衍玄 黃昭媛 林俊宏 張嘉桓 6.新任者簡歷: 倪衍玄，本公司獨立董事 黃昭媛，本公司獨立董事 林俊宏，本公司獨立董事 張嘉桓，本公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 新任 8.異動原因:董事會決議通過設立永續發展暨提名委員會 9.原任期（例xx/xx/xx ~ xx/xx/xx）:不適用 10.新任生效日期:115/07/27 11.其他應敘明事項:永續發展暨提名委員會經由委員共同推舉倪衍玄獨立董事， 擔任召集人及會議主席。",
+      "clause": "第6款",
+      "source_id": "tpex_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "3504dcfd6e0fb77fa68a",
+      "date": "2026-07-27",
+      "announced_date": "2026-07-27",
+      "fact_date": "2026-07-27",
+      "announced_time": "165202",
+      "title": "公告本公司董事會委任第五屆薪資報酬委員會委員",
+      "description": "1.發生變動日期:115/07/27 2.功能性委員會名稱:薪資報酬委員會 3.舊任者姓名: 涂阿清 王盛世 李世傑 4.舊任者簡歷: 涂阿清，本公司獨立董事 王盛世，本公司獨立董事 李世傑，本公司獨立董事 5.新任者姓名: 倪衍玄 黃昭媛 林俊宏 張嘉桓 6.新任者簡歷: 倪衍玄，本公司獨立董事 黃昭媛，本公司獨立董事 林俊宏，本公司獨立董事 張嘉桓，本公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 新任 8.異動原因:配合董事改選，薪資報酬委員會委員任期與董事任期相同 9.原任期（例xx/xx/xx ~ xx/xx/xx）:112/08/07~115/05/27 10.新任生效日期:115/07/27 11.其他應敘明事項:薪資報酬委員會經由委員共同推舉倪衍玄獨立董事， 擔任召集人及會議主席。",
+      "clause": "第6款",
+      "source_id": "tpex_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-8279-1150721-4",
       "date": "2026-07-27",
@@ -450,69 +495,6 @@
         "marketKind": "otc",
         "companyId": "8279"
       }
-    },
-    {
-      "id": "mops-history-8279-1140718-1",
-      "date": "2025-07-29",
-      "announced_date": "2025-07-29",
-      "fact_date": null,
-      "announced_time": "16:21:19",
-      "title": "公告本公司董事會決議通過114年第2季合併財務報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1140718",
-        "marketKind": "otc",
-        "companyId": "8279"
-      }
-    },
-    {
-      "id": "mops-history-8279-1140714-1",
-      "date": "2025-07-21",
-      "announced_date": "2025-07-21",
-      "fact_date": null,
-      "announced_time": "15:43:49",
-      "title": "公告114年第2季財務報告董事會召開日期",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1140714",
-        "marketKind": "otc",
-        "companyId": "8279"
-      }
-    },
-    {
-      "id": "mops-history-8279-1140513-3",
-      "date": "2025-05-28",
-      "announced_date": "2025-05-28",
-      "fact_date": null,
-      "announced_time": "17:04:59",
-      "title": "公告本公司114年股東常會重要決議事項",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=8279&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "enterDate": "1140513",
-        "marketKind": "otc",
-        "companyId": "8279"
-      }
     }
   ],
   "references": [
@@ -541,14 +523,14 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-28T00:16:05.760Z",
-      "row_count": 6,
+      "fetched_at": "2026-07-28T12:30:59.098Z",
+      "row_count": 104,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-27T12:33:05.620Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-07-28T12:33:19.545Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
