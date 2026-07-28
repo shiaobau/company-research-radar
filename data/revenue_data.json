@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T00:16:09.435Z",
+  "generated_at": "2026-07-28T10:24:21.775Z",
   "sources": [
     {
       "id": "twse_monthly_revenue",
@@ -227,6 +227,27 @@
       "rationale": "2026-06 月營收 YoY 6%，MoM -3.21%，累計 YoY -7.63%。",
       "cache_status": "fresh",
       "refreshed_at": "2026-07-28T00:16:09.435Z"
+    },
+    "twse-9939": {
+      "ticker": "9939",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_monthly_revenue"
+      ],
+      "evidence_level": "high",
+      "data_month": "2026-06",
+      "current_revenue_thousand_twd": 2957178,
+      "previous_month_revenue_thousand_twd": 2880317,
+      "last_year_month_revenue_thousand_twd": 2637200,
+      "mom_pct": 2.67,
+      "yoy_pct": 12.13,
+      "cumulative_revenue_thousand_twd": 15483887,
+      "cumulative_yoy_pct": 3.43,
+      "score": 68,
+      "rationale": "2026-06 月營收 YoY 12.13%，MoM 2.67%，累計 YoY 3.43%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-28T10:24:21.775Z"
     }
   }
 }

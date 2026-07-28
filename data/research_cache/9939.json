@@ -1,0 +1,562 @@
+{
+  "version": "1.0.0",
+  "collected_at": "2026-07-28T10:24:31.629Z",
+  "company": {
+    "id": "twse-9939",
+    "ticker": "9939",
+    "name": "宏全",
+    "market": "TWSE",
+    "industry_template": "other"
+  },
+  "collection_scope": "targeted_research_company",
+  "events": [
+    {
+      "id": "mops-history-9939-1150616-1",
+      "date": "2026-06-16",
+      "announced_date": "2026-06-16",
+      "fact_date": "2026-06-16",
+      "announced_time": "16:56:32",
+      "title": "公告本公司國內第二次無擔保轉換公司債轉換價格調整",
+      "description": "1.事實發生日:115/06/16 2.公司名稱:宏全國際股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:本公司因配發普通股現金股利，依本公司國內第二次無擔保轉換公司債發行 及轉換辦法第11條規定調整轉換價格。 6.因應措施:自除息基準日(115月7月8日)起，國內第二次無擔保轉換公司債轉換價格由 新台幣161.2元調整為153.7元。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 無",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150616",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150604-1",
+      "date": "2026-06-04",
+      "announced_date": "2026-06-04",
+      "fact_date": "2026-06-04",
+      "announced_time": "11:59:53",
+      "title": "公告宏全國際股份有限公司國內第二次無擔保(例：第一次有擔保)轉(交)換公司債(簡稱：宏全二，代碼：99392)停止受理轉交換等相關事項。",
+      "description": "內容：本公司國內第二次無擔保轉換公司債發行及轉換辦法。<br>(一)停止受理轉交換之事由：辦理配股配息作業事宜。<br>(其他事項敘明：)<br>(二)停止受理轉交換登記起訖日期：115年06月12日至115年07月08日止。<br>(三)債券持有人如擬申請轉換，最遲應於停止受理轉換登記之始日（115年06月12日）之前一營業日前（115年06月10日），向往來證券商辦理轉換手續。<br>無",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150604",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150603-1",
+      "date": "2026-06-04",
+      "announced_date": "2026-06-04",
+      "fact_date": "2026-06-04",
+      "announced_time": "11:59:13",
+      "title": "公告本公司董事會授權董事長訂定除息基準日",
+      "description": "1.董事會、股東會決議或公司決定日期:115/06/04 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.普通股發放股利種類及金額: 每股配發現金股利6.2元(普通股現金股利:NT$1,833,876,145元) 4.除權（息）交易日:115/07/02 5.最後過戶日:115/07/03 6.停止過戶起始日期:115/07/04 7.停止過戶截止日期:115/07/08 8.除權（息）基準日:115/07/08 9.債券最後申請轉換日期:115/06/10 10.債券停止轉換起始日期:115/06/12 11.債券停止轉換截止日期:115/07/08 12.普通股現金股利發放日期:115/07/22 13.其他應敘明事項: (1)除息交易日:115/07/02，本日及以後買進無權參加配息。 (2)嗣後如因本公司流通在外股數變動致配息率發生變動時，授權董事長全權處理並 公告之。",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150603",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150529-12",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": "2026-05-29",
+      "announced_time": "18:11:47",
+      "title": "公告本公司董事會決議委任第六屆薪資報酬委員會委員",
+      "description": "1.發生變動日期:115/05/29 2.功能性委員會名稱:薪資報酬委員會 3.舊任者姓名: (1)洪昭男 (2)黃祥穎 (3)卓伯源 4.舊任者簡歷: (1)洪昭男–宏全國際(股)公司獨立董事 (2)黃祥穎–建智聯合會計師事務所合夥會計師 宏全國際(股)公司獨立董事 昱泉國際(股)公司獨立董事 華豫寧股份有限公司獨立董事 立隆電子(股)公司薪酬委員會委員 立敦科技(股)公司薪酬委員會委員 (3)卓伯源–宏全國際(股)公司獨立董事 國立台灣大學校友總會副總會長 朝陽科技大學董事 臺灣發展研究院副院長 台灣上市櫃公司協會中台灣社團聯合會會長 5.新任者姓名: (1)黃祥穎 (2)卓伯源 (3)黃國銘 6.新任者簡歷: (1)黃祥穎–建智聯合會計師事務所合夥會計師 宏全國際(股)公司獨立董事 昱泉國際(股)公司獨立董事 華豫寧股份有限公司獨立董事 立隆電子(股)公司薪酬委員會委員 立敦科技(股)公司薪酬委員會委員 (2)卓伯源–宏全國際(股)公司獨立董事 國立台灣大學校友總會副總會長 朝陽科技大學董事 臺灣發展研究院副院長 台灣上市櫃公司協會中台灣社團聯合會會長 (3)黃國銘- 寰瀛法律事務所主持律師 財團法人證券暨期貨市場發展基金會、中華民國內部稽核協會等 多家機構講師 寶綠特資源再生工程(股)公司獨立董事 首利實業股份有限公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 任期屆滿 8.異動原因:董事任期屆滿改選，董事會重新委任薪資報酬委員會委員 9.原任期（例xx/xx/xx ~ xx/xx/xx）:112/05/31~115/05/30 10.新任生效日期:115/05/29 11.其他應敘明事項:無",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "12",
+        "enterDate": "1150529",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150529-11",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "18:11:20",
+      "title": "代重要子公司蘇州宏星食品包裝有限公司公告 總經理異動案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "11",
+        "enterDate": "1150529",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150529-9",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "18:10:56",
+      "title": "代重要子公司蘇州宏星食品包裝有限公司公告 董事異動案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "9",
+        "enterDate": "1150529",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150528-8",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "18:10:27",
+      "title": "公告本公司第四屆審計委員會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "8",
+        "enterDate": "1150528",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150528-7",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "18:10:00",
+      "title": "公告本公司董事會決議委任第二屆提名委員會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "7",
+        "enterDate": "1150528",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150528-6",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "18:09:29",
+      "title": "公告本公司董事會決議委任第二屆永續暨風險管理委員會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "6",
+        "enterDate": "1150528",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150528-4",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "18:08:57",
+      "title": "公告本公司董事會通過董事長續任",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "enterDate": "1150528",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150529-13",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "18:08:05",
+      "title": "公告本公司115年度股東常會全面改選董事選舉結果",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "13",
+        "enterDate": "1150529",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150528-3",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "18:07:37",
+      "title": "公告本公司股東常會解除新任董事競業禁止之限制",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "enterDate": "1150528",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150528-1",
+      "date": "2026-05-29",
+      "announced_date": "2026-05-29",
+      "fact_date": null,
+      "announced_time": "18:07:09",
+      "title": "公告本公司115年股東常會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150528",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150522-7",
+      "date": "2026-05-22",
+      "announced_date": "2026-05-22",
+      "fact_date": null,
+      "announced_time": "18:23:44",
+      "title": "代重要子公司宏全食品包裝（清新）有限公司公告 董監事異動案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "7",
+        "enterDate": "1150522",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150522-5",
+      "date": "2026-05-22",
+      "announced_date": "2026-05-22",
+      "fact_date": null,
+      "announced_time": "18:22:50",
+      "title": "代重要子公司宏全食品包裝（清新）有限公司公告 總經理異動案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "5",
+        "enterDate": "1150522",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150522-8",
+      "date": "2026-05-22",
+      "announced_date": "2026-05-22",
+      "fact_date": null,
+      "announced_time": "18:22:07",
+      "title": "代重要子公司宏全食品包裝（漳州）有限公司公告 董事異動案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "8",
+        "enterDate": "1150522",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150522-2",
+      "date": "2026-05-22",
+      "announced_date": "2026-05-22",
+      "fact_date": null,
+      "announced_time": "18:21:19",
+      "title": "代重要子公司宏全食品包裝（漳州）有限公司公告 總經理異動案",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1150522",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150520-1",
+      "date": "2026-05-21",
+      "announced_date": "2026-05-21",
+      "fact_date": null,
+      "announced_time": "08:39:47",
+      "title": "本公司受邀參加華南永昌證券2026年夏季產業暨企業論壇",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150520",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150507-1",
+      "date": "2026-05-08",
+      "announced_date": "2026-05-08",
+      "fact_date": null,
+      "announced_time": "17:41:24",
+      "title": "公告本公司董事會通過115年度第1季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150507",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150430-1",
+      "date": "2026-04-30",
+      "announced_date": "2026-04-30",
+      "fact_date": null,
+      "announced_time": "14:54:43",
+      "title": "公告本公司115年第1季合併財務報告董事會召開日期 為115年5月8日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150430",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150309-1",
+      "date": "2026-03-09",
+      "announced_date": "2026-03-09",
+      "fact_date": null,
+      "announced_time": "15:33:19",
+      "title": "澄清媒體報導",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150309",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150306-1",
+      "date": "2026-03-06",
+      "announced_date": "2026-03-06",
+      "fact_date": null,
+      "announced_time": "17:03:27",
+      "title": "董事會決議股利分派",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150306",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150304-2",
+      "date": "2026-03-06",
+      "announced_date": "2026-03-06",
+      "fact_date": null,
+      "announced_time": "17:02:57",
+      "title": "公告本公司董事會通過114年度合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1150304",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1150304-1",
+      "date": "2026-03-06",
+      "announced_date": "2026-03-06",
+      "fact_date": null,
+      "announced_time": "17:01:31",
+      "title": "董事會決議召開115年度股東常會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150304",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    }
+  ],
+  "references": [
+    {
+      "id": "mops-history-9939",
+      "title": "宏全 MOPS 歷史重大訊息",
+      "url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1",
+      "source_id": "mops_history_search",
+      "source_type": "official_history_api",
+      "claim_type": "official_search_reference",
+      "review_status": "reference_only",
+      "note": "以公開資訊觀測站歷史重大訊息 API 依公司代號與民國年度蒐集，保留查詢頁來源與詳細資料欄位。"
+    },
+    {
+      "id": "company-website-9939",
+      "title": "宏全 官方網站",
+      "url": "https://www.honchuan.com",
+      "source_id": "company_website",
+      "source_type": "company_reference",
+      "claim_type": "company_published_reference",
+      "review_status": "reference_only",
+      "note": "保留公司自行揭露頁面的來源連結；未經欄位驗證的內容不直接視為客觀事實。"
+    }
+  ],
+  "source_status": [
+    {
+      "source_id": "twse_material_events",
+      "cache_status": "fresh",
+      "fetched_at": "2026-07-28T10:24:17.880Z",
+      "row_count": 180,
+      "available": true
+    },
+    {
+      "source_id": "mops_history_api",
+      "cache_status": "updated",
+      "fetched_at": "2026-07-28T10:24:37.566Z",
+      "row_count": 24,
+      "detail_count": 4,
+      "available": true
+    }
+  ],
+  "limitations": [
+    "官方交易所重大訊息快取為近期資料；歷史範圍應透過 MOPS 歷史查詢頁覆核。",
+    "公司網站連結僅為研究參考，未經欄位驗證的內容不直接納入評分。",
+    "事件保留原始公告文字摘要，不代表投資建議或系統判定。"
+  ]
+}

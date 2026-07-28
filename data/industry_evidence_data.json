@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T00:16:09.435Z",
+  "generated_at": "2026-07-28T10:24:21.775Z",
   "note": "產業證據層。各產業子檢核僅在取得公司事實與來源支持時評分；模板本身與未填入欄位不會產生分數。",
   "sources": [
     {
@@ -835,6 +835,87 @@
         }
       ],
       "rationale": "保健營養食品 產業證據僅 0/5 項具來源支持；未完成前不產生產業分數。"
+    },
+    "twse-9939": {
+      "ticker": "9939",
+      "market": "TWSE",
+      "industry_template": "other",
+      "status": "missing",
+      "source_ids": [],
+      "evidence_level": "none",
+      "completed_count": 0,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": null,
+      "direction": "pending",
+      "direction_matches": {
+        "positive": [],
+        "negative": [],
+        "severe_negative": []
+      },
+      "dimensions": [
+        {
+          "id": "business_clarity",
+          "label": "商業模式清楚度",
+          "weight": 0.24,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "公司收入來源、客戶、產品與市場定位是否可理解。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「business_clarity、business_model、industry_focus」及至少 1 個來源。"
+        },
+        {
+          "id": "revenue_visibility",
+          "label": "營收能見度",
+          "weight": 0.22,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "月營收、合約、訂單或需求是否能支持未來判讀。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「revenue_visibility、revenue_driver」及至少 1 個來源。"
+        },
+        {
+          "id": "balance_sheet_resilience",
+          "label": "資產負債韌性",
+          "weight": 0.2,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "現金、負債、流動性與財務壓力。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「balance_sheet_resilience、key_risk」及至少 1 個來源。"
+        },
+        {
+          "id": "governance_signal",
+          "label": "治理訊號",
+          "weight": 0.18,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "內部人、重大訊息、資訊揭露與治理風險。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「governance_signal、key_risk」及至少 1 個來源。"
+        },
+        {
+          "id": "traceability",
+          "label": "資料可追蹤性",
+          "weight": 0.16,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "公開資料是否足以支持研究判斷。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「industry_quality、business_model」及至少 1 個來源。"
+        }
+      ],
+      "rationale": "其他與待分類 產業證據僅 0/5 項具來源支持；未完成前不產生產業分數。"
     }
   }
 }

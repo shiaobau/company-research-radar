@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T00:16:09.435Z",
+  "generated_at": "2026-07-28T10:24:21.775Z",
   "sources": [
     {
       "id": "twse_stock_day",
@@ -307,6 +307,35 @@
       "errors": [],
       "cache_status": "fresh",
       "refreshed_at": "2026-07-28T00:16:09.435Z"
+    },
+    "twse-9939": {
+      "ticker": "9939",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_stock_day"
+      ],
+      "evidence_level": "high",
+      "trading_days": 262,
+      "latest_trade_date": "2026-07-28",
+      "latest_close": 128,
+      "year_high": 157.5,
+      "year_low": 110,
+      "price_range_basis": "近一年交易區間",
+      "scoring_high": 157.5,
+      "scoring_low": 110,
+      "position_pct": 37.89,
+      "ma20": 126.28,
+      "ma60": 125.3,
+      "return_20d_pct": 0.79,
+      "return_60d_pct": 14.8,
+      "average_volume_20d": 2106667,
+      "volume_ratio_20d": 0.52,
+      "score": 68,
+      "rationale": "近 262 個交易日，收盤 128，位於一年區間 37.89%，20 日報酬 0.79%，60 日報酬 14.8%。",
+      "errors": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-28T10:24:21.775Z"
     }
   }
 }

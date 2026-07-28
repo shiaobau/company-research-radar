@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T00:16:09.435Z",
+  "generated_at": "2026-07-28T10:24:21.775Z",
   "sources": [
     {
       "id": "twse_margin_balance",
@@ -412,6 +412,30 @@
       "rationale": "2026Q1 毛利率 32.97%，營益率 10.42%，流動比率 1.84，負債比率 25.82%。",
       "cache_status": "fresh",
       "refreshed_at": "2026-07-28T00:16:09.435Z"
+    },
+    "twse-9939": {
+      "ticker": "9939",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_income_statement",
+        "twse_balance_sheet"
+      ],
+      "evidence_level": "high",
+      "year": "2026",
+      "quarter": "1",
+      "revenue_thousand_twd": 6859793,
+      "gross_margin_pct": 22.34,
+      "operating_margin_pct": 13.21,
+      "net_margin_pct": 9.85,
+      "current_ratio": 1.03,
+      "debt_ratio_pct": 59.36,
+      "eps": 2.25,
+      "book_value_per_share": 64.23,
+      "score": 63,
+      "rationale": "2026Q1 毛利率 22.34%，營益率 13.21%，流動比率 1.03，負債比率 59.36%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-28T10:24:21.775Z"
     }
   }
 }

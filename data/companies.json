@@ -440,6 +440,45 @@
       "facts": {},
       "risks": [],
       "events": []
+    },
+    {
+      "id": "twse-9939",
+      "ticker": "9939",
+      "market": "TWSE",
+      "market_label": "上市",
+      "name": "宏全",
+      "legal_name": "宏全國際股份有限公司",
+      "category": "其他與待分類",
+      "industry_template": "other",
+      "original_industry_template": "other",
+      "official_industry_code": "20",
+      "official_industry_label": "其他",
+      "listing_date": "2001-03-02",
+      "website": "https://www.honchuan.com",
+      "data_quality": "Public structured datasets are refreshed by the research update workflow.",
+      "last_reviewed": "2026-07-28",
+      "tags": [
+        "上市",
+        "其他與待分類",
+        "其他"
+      ],
+      "primary_source_ids": [
+        "twse_company_basic",
+        "mops",
+        "twse"
+      ],
+      "sources": [
+        {
+          "id": "twse-9939_official",
+          "title": "宏全 官方網站",
+          "short_title": "官方網站",
+          "url": "https://www.honchuan.com",
+          "note": "由選股宇宙公司基本資料帶入；後續可作為人工查核來源。"
+        }
+      ],
+      "facts": {},
+      "risks": [],
+      "events": []
     }
   ]
 }
