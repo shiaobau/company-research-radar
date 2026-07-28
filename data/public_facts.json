@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T10:24:21.775Z",
+  "generated_at": "2026-07-28T11:27:38.937Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -204,7 +204,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-07-28T10:24:21.775Z",
+      "generated_at": "2026-07-28T11:27:38.937Z",
       "facts": [
         {
           "id": "official_classification",
@@ -285,10 +285,86 @@
         }
       ]
     },
+    "twse-1707": {
+      "ticker": "1707",
+      "market": "TWSE",
+      "generated_at": "2026-07-28T11:27:38.937Z",
+      "facts": [
+        {
+          "id": "official_classification",
+          "label": "公司分類",
+          "value": "官方產業：生技醫療；追蹤模板：保健營養食品。",
+          "source_ids": [
+            "twse_company_basic"
+          ]
+        },
+        {
+          "id": "monthly_revenue",
+          "label": "月營收",
+          "value": "2026-06 月營收年增 -7.24%；月增 4.06%。",
+          "source_ids": [
+            "twse_monthly_revenue"
+          ]
+        },
+        {
+          "id": "financial_snapshot",
+          "label": "最新財報",
+          "value": "2026 Q1：毛利率 69.7%；營益率 14.72%；EPS 1.18。",
+          "source_ids": [
+            "twse_income_statement",
+            "twse_balance_sheet"
+          ]
+        },
+        {
+          "id": "market_snapshot",
+          "label": "股價資料",
+          "value": "2026-07-28 收盤 90.6；區間報酬：20日 -3.41%；60日 -19.47%；當日量為 20 日均量 0.7 倍。",
+          "source_ids": [
+            "twse_stock_day"
+          ]
+        },
+        {
+          "id": "valuation_peer_snapshot",
+          "label": "同業估值",
+          "value": "本益比 11.35；股價淨值比 1.35；殖利率 6.61%。本益比相對有利 92 百分位；股淨比相對有利 74 百分位；殖利率相對有利 93 百分位。比較母體：生技醫療 158 家。",
+          "source_ids": [
+            "twse_valuation"
+          ]
+        },
+        {
+          "id": "market_positioning_snapshot",
+          "label": "法人與融資券",
+          "value": "2026-07-28：外資淨買賣 14,989 股；投信淨買賣 0 股；三大法人合計 15,989 股；融資餘額 347 張；融券餘額 20 張。",
+          "source_ids": [
+            "twse_margin_balance",
+            "twse_institutional_trading"
+          ]
+        },
+        {
+          "id": "governance_snapshot",
+          "label": "股權與治理",
+          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
+          "source_ids": [
+            "twse_major_shareholders",
+            "twse_insider_transfer",
+            "twse_disclosure_violations"
+          ]
+        },
+        {
+          "id": "event_risk_snapshot",
+          "label": "事件與合規",
+          "value": "官方事件 0 則；申報違規 0 筆。",
+          "source_ids": [
+            "twse_material_events",
+            "twse_disclosure_violations"
+          ]
+        }
+      ]
+    },
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-07-28T10:24:21.775Z",
+      "generated_at": "2026-07-28T11:27:38.937Z",
       "facts": [
         {
           "id": "official_classification",
@@ -364,7 +440,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-07-28T10:24:21.775Z",
+      "generated_at": "2026-07-28T11:27:38.937Z",
       "facts": [
         {
           "id": "official_classification",
@@ -448,7 +524,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-07-28T10:24:21.775Z",
+      "generated_at": "2026-07-28T11:27:38.937Z",
       "facts": [
         {
           "id": "official_classification",
@@ -524,7 +600,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-07-28T10:24:21.775Z",
+      "generated_at": "2026-07-28T11:27:38.937Z",
       "facts": [
         {
           "id": "official_classification",
@@ -608,7 +684,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-07-28T10:24:21.775Z",
+      "generated_at": "2026-07-28T11:27:38.937Z",
       "facts": [
         {
           "id": "official_classification",
@@ -684,7 +760,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-07-28T10:24:21.775Z",
+      "generated_at": "2026-07-28T11:27:38.937Z",
       "facts": [
         {
           "id": "official_classification",
@@ -759,7 +835,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-07-28T10:24:21.775Z",
+      "generated_at": "2026-07-28T11:27:38.937Z",
       "facts": [
         {
           "id": "official_classification",
@@ -835,7 +911,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-07-28T10:24:21.775Z",
+      "generated_at": "2026-07-28T11:27:38.937Z",
       "facts": [
         {
           "id": "official_classification",
@@ -919,7 +995,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-07-28T10:24:21.775Z",
+      "generated_at": "2026-07-28T11:27:38.937Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1003,7 +1079,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-07-28T10:24:21.775Z",
+      "generated_at": "2026-07-28T11:27:38.937Z",
       "facts": [
         {
           "id": "official_classification",

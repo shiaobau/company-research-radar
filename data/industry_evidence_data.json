@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T10:24:21.775Z",
+  "generated_at": "2026-07-28T11:27:38.937Z",
   "note": "產業證據層。各產業子檢核僅在取得公司事實與來源支持時評分；模板本身與未填入欄位不會產生分數。",
   "sources": [
     {
@@ -106,6 +106,87 @@
         }
       ],
       "rationale": "消費、食品、零售與生活 產業證據僅 0/5 項具來源支持；未完成前不產生產業分數。"
+    },
+    "twse-1707": {
+      "ticker": "1707",
+      "market": "TWSE",
+      "industry_template": "nutrition_health_food",
+      "status": "missing",
+      "source_ids": [],
+      "evidence_level": "none",
+      "completed_count": 0,
+      "total_count": 5,
+      "traceability_score": 59,
+      "score": null,
+      "direction": "pending",
+      "direction_matches": {
+        "positive": [],
+        "negative": [],
+        "severe_negative": []
+      },
+      "dimensions": [
+        {
+          "id": "tfda_health_food_permit",
+          "label": "TFDA 健康食品許可",
+          "weight": 0.24,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "是否有可查證的健康食品許可或明確法規定位。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「regulatory_status、key_catalyst、industry_quality」及至少 1 個來源。"
+        },
+        {
+          "id": "tfda_ad_compliance",
+          "label": "廣告合規",
+          "weight": 0.24,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "食品、健康食品與營養品廣告是否有違規或裁罰訊號。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「key_risk、regulatory_status」及至少 1 個來源。"
+        },
+        {
+          "id": "product_evidence",
+          "label": "產品證據",
+          "weight": 0.22,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "產品成分、功效宣稱、人體或文獻證據的可追蹤性。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「evidence_level、industry_focus、industry_quality」及至少 1 個來源。"
+        },
+        {
+          "id": "quality_system",
+          "label": "品質系統",
+          "weight": 0.16,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "GMP、HACCP、ISO、供應鏈與製程品質證據。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「quality_system」及至少 1 個來源。"
+        },
+        {
+          "id": "channel_repeatability",
+          "label": "通路回購性",
+          "weight": 0.14,
+          "status": "missing",
+          "score": null,
+          "evidence_level": "none",
+          "source_ids": [],
+          "evidence_text": "",
+          "description": "品牌、會員、電商、藥局或通路是否具備重複銷售能力。",
+          "rationale": "尚未取得可追溯的公司事實；需要欄位「channel_quality、revenue_driver」及至少 1 個來源。"
+        }
+      ],
+      "rationale": "保健營養食品 產業證據僅 0/5 項具來源支持；未完成前不產生產業分數。"
     },
     "twse-2303": {
       "ticker": "2303",

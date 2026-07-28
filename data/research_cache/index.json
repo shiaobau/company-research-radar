@@ -1,33 +1,33 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-07-28T10:24:31.629Z",
+  "generated_at": "2026-07-28T11:27:49.267Z",
   "collection_scope": "targeted_research_company",
   "source_status": [
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-28T10:24:17.880Z",
+      "fetched_at": "2026-07-28T11:27:37.195Z",
       "row_count": 180,
       "available": true
     },
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-28T10:24:18.214Z",
+      "fetched_at": "2026-07-28T11:27:37.451Z",
       "row_count": 104,
       "available": true
     }
   ],
   "companies": [
     {
-      "ticker": "9939",
-      "company_id": "twse-9939",
-      "name": "宏全",
+      "ticker": "1707",
+      "company_id": "twse-1707",
+      "name": "葡萄王",
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-28T10:24:31.629Z",
-      "cache_path": "data/research_cache/9939.json"
+      "collected_at": "2026-07-28T11:27:49.267Z",
+      "cache_path": "data/research_cache/1707.json"
     }
   ],
   "total_events": 24

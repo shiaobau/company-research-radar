@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T10:24:21.775Z",
+  "generated_at": "2026-07-28T11:27:38.937Z",
   "note": "全市場背景因子。估值百分位依上市櫃官方產業全樣本計算；官方產業樣本不足 10 家時才回退為全市場模板樣本，兩者皆不使用觀察清單。資料僅供研究快照與回測，尚未納入核心分數。",
   "sources": [
     "twse_valuation",
@@ -12,7 +12,7 @@
   ],
   "coverage": {
     "universe_count": 1974,
-    "research_company_count": 11,
+    "research_company_count": 12,
     "valuation_count": 1965,
     "margin_count": 1851,
     "institutional_count": 1867
@@ -51,6 +51,47 @@
         "trust_net_shares": 0,
         "dealer_net_shares": 703,
         "total_net_shares": 154844
+      },
+      "source_ids": [
+        "twse_valuation",
+        "twse_margin_balance",
+        "twse_institutional_trading"
+      ],
+      "status": "ok"
+    },
+    "TWSE:1707": {
+      "ticker": "1707",
+      "market": "TWSE",
+      "official_industry_label": "生技醫療",
+      "peer_group": {
+        "basis": "official_industry",
+        "label": "生技醫療",
+        "sample_count": 158
+      },
+      "valuation": {
+        "as_of": "2026-07-27",
+        "pe_ratio": 11.35,
+        "pb_ratio": 1.35,
+        "dividend_yield_pct": 6.61,
+        "favorable_percentiles": {
+          "pe_ratio": 92,
+          "pb_ratio": 74,
+          "dividend_yield_pct": 93
+        }
+      },
+      "margin": {
+        "as_of": null,
+        "financing_balance_lots": 347,
+        "short_balance_lots": 20,
+        "financing_change_lots": null,
+        "short_change_lots": null
+      },
+      "institutional": {
+        "as_of": "2026-07-28",
+        "foreign_net_shares": 14989,
+        "trust_net_shares": 0,
+        "dealer_net_shares": 1000,
+        "total_net_shares": 15989
       },
       "source_ids": [
         "twse_valuation",
