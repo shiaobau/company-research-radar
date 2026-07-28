@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-07-28T11:27:49.228Z",
+  "generated_at": "2026-07-28T11:28:37.182Z",
   "note": "六項核心評分維度必須具備公開資料；產業證據調整僅在通過來源支持的產業子檢核後才介入，未完成時維持核心分數。",
   "summary": {
     "total": 12,
@@ -198,7 +198,7 @@
       ],
       "completed_count": 6,
       "total_count": 7,
-      "checked_at": "2026-07-28T11:27:49.228Z",
+      "checked_at": "2026-07-28T11:28:37.182Z",
       "retried": false
     }
   }

@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T11:27:38.937Z",
+  "generated_at": "2026-07-28T11:28:28.268Z",
   "sources": [
     {
       "id": "twse_margin_balance",
@@ -459,7 +459,7 @@
       "score": 74,
       "rationale": "2026Q1 毛利率 69.7%，營益率 14.72%，流動比率 1.6，負債比率 23.5%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T11:27:38.937Z"
+      "refreshed_at": "2026-07-28T11:28:28.268Z"
     }
   }
 }

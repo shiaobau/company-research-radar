@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T11:27:38.937Z",
+  "generated_at": "2026-07-28T11:28:28.268Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -341,7 +341,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T11:27:38.937Z"
+      "refreshed_at": "2026-07-28T11:28:28.268Z"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T11:27:38.937Z",
+  "generated_at": "2026-07-28T11:28:28.268Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -270,7 +270,7 @@
       "rationale": "財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T11:27:38.937Z"
+      "refreshed_at": "2026-07-28T11:28:28.268Z"
     }
   }
 }

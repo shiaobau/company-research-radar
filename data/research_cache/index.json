@@ -1,19 +1,19 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-07-28T11:27:49.267Z",
+  "generated_at": "2026-07-28T11:28:37.299Z",
   "collection_scope": "targeted_research_company",
   "source_status": [
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-28T11:27:37.195Z",
+      "fetched_at": "2026-07-28T11:28:27.076Z",
       "row_count": 180,
       "available": true
     },
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-28T11:27:37.451Z",
+      "fetched_at": "2026-07-28T11:28:27.254Z",
       "row_count": 104,
       "available": true
     }
@@ -26,7 +26,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-07-28T11:27:49.267Z",
+      "collected_at": "2026-07-28T11:28:37.299Z",
       "cache_path": "data/research_cache/1707.json"
     }
   ],

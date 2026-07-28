@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T11:27:38.937Z",
+  "generated_at": "2026-07-28T11:28:28.268Z",
   "sources": [
     {
       "id": "twse_stock_day",
@@ -364,7 +364,7 @@
       "rationale": "近 262 個交易日，收盤 90.6，位於一年區間 0%，20 日報酬 -3.41%，60 日報酬 -19.47%。",
       "errors": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T11:27:38.937Z"
+      "refreshed_at": "2026-07-28T11:28:28.268Z"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-28T11:27:38.937Z",
+  "generated_at": "2026-07-28T11:28:28.268Z",
   "sources": [
     {
       "id": "twse_monthly_revenue",
@@ -268,7 +268,7 @@
       "score": 50,
       "rationale": "2026-06 月營收 YoY -7.24%，MoM 4.06%，累計 YoY -2.69%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-28T11:27:38.937Z"
+      "refreshed_at": "2026-07-28T11:28:28.268Z"
     }
   }
 }
