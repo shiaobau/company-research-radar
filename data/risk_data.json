@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-29T00:15:35.897Z",
+  "generated_at": "2026-07-29T12:31:15.530Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-29T00:15:35.897Z"
+      "refreshed_at": "2026-07-29T12:31:15.530Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-29T00:15:35.897Z"
+      "refreshed_at": "2026-07-29T12:31:15.530Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -99,7 +99,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-29T00:15:35.897Z"
+      "refreshed_at": "2026-07-29T12:31:15.530Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -122,7 +122,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-29T00:15:35.897Z"
+      "refreshed_at": "2026-07-29T12:31:15.530Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -145,7 +145,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-29T00:15:35.897Z"
+      "refreshed_at": "2026-07-29T12:31:15.530Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -203,7 +203,7 @@
       ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-29T00:15:35.897Z"
+      "refreshed_at": "2026-07-29T12:31:15.530Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -226,7 +226,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-29T00:15:35.897Z"
+      "refreshed_at": "2026-07-29T12:31:15.530Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -249,7 +249,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-29T00:15:35.897Z"
+      "refreshed_at": "2026-07-29T12:31:15.530Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -272,7 +272,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-29T00:15:35.897Z"
+      "refreshed_at": "2026-07-29T12:31:15.530Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -295,7 +295,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-29T00:15:35.897Z"
+      "refreshed_at": "2026-07-29T12:31:15.530Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -318,7 +318,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-29T00:15:35.897Z"
+      "refreshed_at": "2026-07-29T12:31:15.530Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -341,7 +341,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-29T00:15:35.897Z"
+      "refreshed_at": "2026-07-29T12:31:15.530Z"
     }
   }
 }
