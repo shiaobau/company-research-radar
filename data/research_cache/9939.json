@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-29T12:32:19.149Z",
+  "collected_at": "2026-07-30T00:16:57.173Z",
   "company": {
     "id": "twse-9939",
     "ticker": "9939",
@@ -541,13 +541,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-29T12:31:13.173Z",
+      "fetched_at": "2026-07-30T00:15:57.162Z",
       "row_count": 180,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-07-29T12:32:30.403Z",
       "row_count": 24,
       "detail_count": 4,
