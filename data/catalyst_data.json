@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-30T00:15:58.779Z",
+  "generated_at": "2026-07-30T12:31:41.509Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-30T00:15:58.779Z"
+      "refreshed_at": "2026-07-30T12:31:41.509Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,7 +50,7 @@
       "rationale": "財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-30T00:15:58.779Z"
+      "refreshed_at": "2026-07-30T12:31:41.509Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -67,7 +67,7 @@
       "rationale": "月營收分數 76；財務品質分數 71。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-30T00:15:58.779Z"
+      "refreshed_at": "2026-07-30T12:31:41.509Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -84,7 +84,7 @@
       "rationale": "月營收分數 81；財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-30T00:15:58.779Z"
+      "refreshed_at": "2026-07-30T12:31:41.509Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -101,7 +101,7 @@
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-30T00:15:58.779Z"
+      "refreshed_at": "2026-07-30T12:31:41.509Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -168,7 +168,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-30T00:15:58.779Z"
+      "refreshed_at": "2026-07-30T12:31:41.509Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -185,7 +185,7 @@
       "rationale": "財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-30T00:15:58.779Z"
+      "refreshed_at": "2026-07-30T12:31:41.509Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -202,7 +202,7 @@
       "rationale": "月營收分數 77。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-30T00:15:58.779Z"
+      "refreshed_at": "2026-07-30T12:31:41.509Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -219,10 +219,43 @@
       "rationale": "月營收分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-30T00:15:58.779Z"
+      "refreshed_at": "2026-07-30T12:31:41.509Z"
     },
     "tpex-6023": {
       "ticker": "6023",
+      "market": "TPEx",
+      "status": "ok",
+      "source_ids": [
+        "tpex_material_events"
+      ],
+      "evidence_level": "high",
+      "event_count": 1,
+      "positive_event_count": 0,
+      "negative_event_count": 0,
+      "score": 80,
+      "rationale": "月營收分數 81；財務品質分數 78。",
+      "events": [
+        {
+          "date": "2026-07-29",
+          "announce_date": "2026-07-29",
+          "time": "174758",
+          "title": "元大期貨公告法人董事代表人異動",
+          "clause": "第6款",
+          "description": "1.發生變動日期:115/07/29 2.法人名稱:元大金融控股股份有限公司 3.舊任者姓名:蘇詠筑 4.舊任者簡歷:元大期貨股份有限公司董事 5.新任者姓名:周紋祺 6.新任者簡歷:元大金融控股股份有限公司副總經理 7.異動原因:改派 8.原任期（例xx/xx/xx至xx/xx/xx）:113/05/27~116/05/26 9.新任生效日期:115/08/01 10.其他應敘明事項:無",
+          "source_id": "tpex_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-07-30T12:31:41.509Z"
+    },
+    "tpex-8279": {
+      "ticker": "8279",
       "market": "TPEx",
       "status": "ok",
       "source_ids": [
@@ -232,74 +265,11 @@
       "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 77,
-      "rationale": "月營收分數 81；財務品質分數 78。",
+      "score": 53,
+      "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-30T00:15:58.779Z"
-    },
-    "tpex-8279": {
-      "ticker": "8279",
-      "market": "TPEx",
-      "status": "ok",
-      "source_ids": [
-        "tpex_material_events"
-      ],
-      "evidence_level": "high",
-      "event_count": 3,
-      "positive_event_count": 2,
-      "negative_event_count": 0,
-      "score": 72,
-      "rationale": "財務品質分數 70；正向重大訊息 2 則。",
-      "events": [
-        {
-          "date": "2026-07-27",
-          "announce_date": "2026-07-27",
-          "time": "165202",
-          "title": "公告本公司董事會委任第五屆薪資報酬委員會委員",
-          "clause": "第6款",
-          "description": "1.發生變動日期:115/07/27 2.功能性委員會名稱:薪資報酬委員會 3.舊任者姓名: 涂阿清 王盛世 李世傑 4.舊任者簡歷: 涂阿清，本公司獨立董事 王盛世，本公司獨立董事 李世傑，本公司獨立董事 5.新任者姓名: 倪衍玄 黃昭媛 林俊宏 張嘉桓 6.新任者簡歷: 倪衍玄，本公司獨立董事 黃昭媛，本公司獨立董事 林俊宏，本公司獨立董事 張嘉桓，本公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 新任 8.異動原因:配合董事改選，薪資報酬委員會委員任期與董事任期相同 9.原任期（例xx/xx/xx ~ xx/xx/xx）:112/08/07~115/05/27 10.新任生效日期:115/07/27 11.其他應敘明事項:薪資報酬委員會經由委員共同推舉倪衍玄獨立董事， 擔任召集人及會議主席。",
-          "source_id": "tpex_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        },
-        {
-          "date": "2026-07-27",
-          "announce_date": "2026-07-27",
-          "time": "165239",
-          "title": "公告本公司董事會決議通過設立永續發展暨提名委員會及委員名單",
-          "clause": "第6款",
-          "description": "1.發生變動日期:115/07/27 2.功能性委員會名稱:永續發展暨提名委員會 3.舊任者姓名:不適用 4.舊任者簡歷:不適用 5.新任者姓名: 倪衍玄 黃昭媛 林俊宏 張嘉桓 6.新任者簡歷: 倪衍玄，本公司獨立董事 黃昭媛，本公司獨立董事 林俊宏，本公司獨立董事 張嘉桓，本公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 新任 8.異動原因:董事會決議通過設立永續發展暨提名委員會 9.原任期（例xx/xx/xx ~ xx/xx/xx）:不適用 10.新任生效日期:115/07/27 11.其他應敘明事項:永續發展暨提名委員會經由委員共同推舉倪衍玄獨立董事， 擔任召集人及會議主席。",
-          "source_id": "tpex_material_events",
-          "sentiment": "positive",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        },
-        {
-          "date": "2026-07-27",
-          "announce_date": "2026-07-27",
-          "time": "165314",
-          "title": "公告本公司董事會決議通過115年第2季合併財務報告",
-          "clause": "第31款",
-          "description": "1.提報董事會或經董事會決議日期:115/07/27 2.審計委員會通過日期:115/07/27 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/06/30 4.1月1日累計至本期止營業收入(仟元):1,010,074 5.1月1日累計至本期止營業毛利(毛損) (仟元):324,088 6.1月1日累計至本期止營業利益(損失) (仟元):127,482 7.1月1日累計至本期止稅前淨利(淨損) (仟元):128,009 8.1月1日累計至本期止本期淨利(淨損) (仟元):103,120 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):103,120 10.1月1日累計至本期止基本每股盈餘(損失) (元):3.81 11.期末總資產(仟元):3,160,568 12.期末總負債(仟元): 819,388 13.期末歸屬於母公司業主之權益(仟元):2,341,180 14.其他應敘明事項:無。",
-          "source_id": "tpex_material_events",
-          "sentiment": "positive",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-07-30T00:15:58.779Z"
+      "refreshed_at": "2026-07-30T12:31:41.509Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -316,7 +286,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-07-30T00:15:58.779Z"
+      "refreshed_at": "2026-07-30T12:31:41.509Z"
     }
   }
 }

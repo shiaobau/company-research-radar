@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-30T00:16:57.173Z",
+  "collected_at": "2026-07-30T12:32:47.010Z",
   "company": {
     "id": "twse-9939",
     "ticker": "9939",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-9939-1150730-1",
+      "date": "2026-07-30",
+      "announced_date": "2026-07-30",
+      "fact_date": "2026-07-30",
+      "announced_time": "16:53:25",
+      "title": "公告本公司115年第2季合併財務報告董事會召開日期 為115年8月7日",
+      "description": "1.董事會召集通知日:115/07/30 2.董事會預計召開日期:115/08/07 3.預計提報董事會或經董事會決議之財務報告或 年度自結財務資訊年季:115年第2季合併財務報告 4.其他應敘明事項:無",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "9939",
+        "serialNumber": "1",
+        "enterDate": "1150730"
+      }
+    },
     {
       "id": "mops-history-9939-1150616-1",
       "date": "2026-06-16",
@@ -77,11 +98,11 @@
       "id": "mops-history-9939-1150529-12",
       "date": "2026-05-29",
       "announced_date": "2026-05-29",
-      "fact_date": "2026-05-29",
+      "fact_date": null,
       "announced_time": "18:11:47",
       "title": "公告本公司董事會決議委任第六屆薪資報酬委員會委員",
-      "description": "1.發生變動日期:115/05/29 2.功能性委員會名稱:薪資報酬委員會 3.舊任者姓名: (1)洪昭男 (2)黃祥穎 (3)卓伯源 4.舊任者簡歷: (1)洪昭男–宏全國際(股)公司獨立董事 (2)黃祥穎–建智聯合會計師事務所合夥會計師 宏全國際(股)公司獨立董事 昱泉國際(股)公司獨立董事 華豫寧股份有限公司獨立董事 立隆電子(股)公司薪酬委員會委員 立敦科技(股)公司薪酬委員會委員 (3)卓伯源–宏全國際(股)公司獨立董事 國立台灣大學校友總會副總會長 朝陽科技大學董事 臺灣發展研究院副院長 台灣上市櫃公司協會中台灣社團聯合會會長 5.新任者姓名: (1)黃祥穎 (2)卓伯源 (3)黃國銘 6.新任者簡歷: (1)黃祥穎–建智聯合會計師事務所合夥會計師 宏全國際(股)公司獨立董事 昱泉國際(股)公司獨立董事 華豫寧股份有限公司獨立董事 立隆電子(股)公司薪酬委員會委員 立敦科技(股)公司薪酬委員會委員 (2)卓伯源–宏全國際(股)公司獨立董事 國立台灣大學校友總會副總會長 朝陽科技大學董事 臺灣發展研究院副院長 台灣上市櫃公司協會中台灣社團聯合會會長 (3)黃國銘- 寰瀛法律事務所主持律師 財團法人證券暨期貨市場發展基金會、中華民國內部稽核協會等 多家機構講師 寶綠特資源再生工程(股)公司獨立董事 首利實業股份有限公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 任期屆滿 8.異動原因:董事任期屆滿改選，董事會重新委任薪資報酬委員會委員 9.原任期（例xx/xx/xx ~ xx/xx/xx）:112/05/31~115/05/30 10.新任生效日期:115/05/29 11.其他應敘明事項:無",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
         "serialNumber": "2",
         "enterDate": "1150304"
       }
-    },
-    {
-      "id": "mops-history-9939-1150304-1",
-      "date": "2026-03-06",
-      "announced_date": "2026-03-06",
-      "fact_date": null,
-      "announced_time": "17:01:31",
-      "title": "董事會決議召開115年度股東常會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "9939",
-        "serialNumber": "1",
-        "enterDate": "1150304"
-      }
     }
   ],
   "references": [
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-30T00:15:57.162Z",
+      "fetched_at": "2026-07-30T12:31:39.138Z",
       "row_count": 180,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-29T12:32:30.403Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-07-30T12:33:04.094Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

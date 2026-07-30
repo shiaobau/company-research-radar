@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-30T00:16:57.173Z",
+  "collected_at": "2026-07-30T12:32:47.010Z",
   "company": {
     "id": "tpex-6023",
     "ticker": "6023",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "f9b299f99cfc2642faa2",
+      "date": "2026-07-29",
+      "announced_date": "2026-07-29",
+      "fact_date": "2026-07-29",
+      "announced_time": "174758",
+      "title": "元大期貨公告法人董事代表人異動",
+      "description": "1.發生變動日期:115/07/29 2.法人名稱:元大金融控股股份有限公司 3.舊任者姓名:蘇詠筑 4.舊任者簡歷:元大期貨股份有限公司董事 5.新任者姓名:周紋祺 6.新任者簡歷:元大金融控股股份有限公司副總經理 7.異動原因:改派 8.原任期（例xx/xx/xx至xx/xx/xx）:113/05/27~116/05/26 9.新任生效日期:115/08/01 10.其他應敘明事項:無",
+      "clause": "第6款",
+      "source_id": "tpex_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-6023-1150729-1",
       "date": "2026-07-29",
@@ -492,27 +507,6 @@
         "serialNumber": "1",
         "enterDate": "1150108"
       }
-    },
-    {
-      "id": "mops-history-6023-1141231-1",
-      "date": "2025-12-31",
-      "announced_date": "2025-12-31",
-      "fact_date": null,
-      "announced_time": "17:00:09",
-      "title": "元大期貨公告法人董事代表人異動",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
-        "serialNumber": "1",
-        "enterDate": "1141231"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-30T00:15:57.402Z",
-      "row_count": 104,
+      "fetched_at": "2026-07-30T12:31:39.650Z",
+      "row_count": 184,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-07-30T00:17:54.755Z",
       "row_count": 24,
       "detail_count": 4,
