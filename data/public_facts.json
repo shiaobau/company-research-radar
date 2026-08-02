@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-07-30T12:31:41.509Z",
+  "generated_at": "2026-08-02T00:17:31.805Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -204,7 +204,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-07-30T12:31:41.509Z",
+      "generated_at": "2026-08-02T00:17:31.805Z",
       "facts": [
         {
           "id": "official_classification",
@@ -234,7 +234,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-30 收盤 82；區間報酬：20日 -7.03%；60日 -6.07%；當日量為 20 日均量 1.98 倍。",
+          "value": "2026-07-31 收盤 81.5；區間報酬：20日 -7.28%；60日 -6.11%；當日量為 20 日均量 1.32 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -257,17 +257,9 @@
           ]
         },
         {
-          "id": "major_shareholders",
-          "label": "大股東資料",
-          "value": "持股逾 10% 大股東：國衡投資有限公司、鑫德投資有限公司。",
-          "source_ids": [
-            "twse_major_shareholders"
-          ]
-        },
-        {
           "id": "governance_snapshot",
           "label": "股權與治理",
-          "value": "主要股東揭露 2 位；內部人轉讓 0 筆。",
+          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
           "source_ids": [
             "twse_major_shareholders",
             "twse_insider_transfer",
@@ -288,7 +280,7 @@
     "twse-1707": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-07-30T12:31:41.509Z",
+      "generated_at": "2026-08-02T00:17:31.805Z",
       "facts": [
         {
           "id": "official_classification",
@@ -318,7 +310,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-30 收盤 91.1；區間報酬：20日 0%；60日 -19.02%；當日量為 20 日均量 0.67 倍。",
+          "value": "2026-07-31 收盤 89.3；區間報酬：20日 -1.54%；60日 -20.62%；當日量為 20 日均量 1.92 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -364,7 +356,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-07-30T12:31:41.509Z",
+      "generated_at": "2026-08-02T00:17:31.805Z",
       "facts": [
         {
           "id": "official_classification",
@@ -385,7 +377,7 @@
         {
           "id": "financial_snapshot",
           "label": "最新財報",
-          "value": "2026 Q1：毛利率 29.19%；營益率 18.47%；EPS 1.29。",
+          "value": "2026 Q2：毛利率 30.93%；營益率 20.21%；EPS 4.68。",
           "source_ids": [
             "twse_income_statement",
             "twse_balance_sheet"
@@ -394,7 +386,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-30 收盤 110；區間報酬：20日 -34.91%；60日 32.37%；當日量為 20 日均量 2.55 倍。",
+          "value": "2026-07-31 收盤 121；區間報酬：20日 -26.89%；60日 32.39%；當日量為 20 日均量 0.29 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -440,7 +432,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-07-30T12:31:41.509Z",
+      "generated_at": "2026-08-02T00:17:31.805Z",
       "facts": [
         {
           "id": "official_classification",
@@ -461,7 +453,7 @@
         {
           "id": "financial_snapshot",
           "label": "最新財報",
-          "value": "2026 Q1：毛利率 37%；營益率 17.83%；EPS 7.91。",
+          "value": "2026 Q2：毛利率 36.27%；營益率 17.22%；EPS 17.59。",
           "source_ids": [
             "twse_income_statement",
             "twse_balance_sheet"
@@ -470,7 +462,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-30 收盤 1,530；區間報酬：20日 -23.12%；60日 -29.33%；當日量為 20 日均量 2.06 倍。",
+          "value": "2026-07-31 收盤 1,640；區間報酬：20日 -16.75%；60日 -25.79%；當日量為 20 日均量 2.7 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -493,17 +485,9 @@
           ]
         },
         {
-          "id": "major_shareholders",
-          "label": "大股東資料",
-          "value": "持股逾 10% 大股東：香港商香達國際有限公司。",
-          "source_ids": [
-            "twse_major_shareholders"
-          ]
-        },
-        {
           "id": "governance_snapshot",
           "label": "股權與治理",
-          "value": "主要股東揭露 1 位；內部人轉讓 0 筆。",
+          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
           "source_ids": [
             "twse_major_shareholders",
             "twse_insider_transfer",
@@ -524,7 +508,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-07-30T12:31:41.509Z",
+      "generated_at": "2026-08-02T00:17:31.805Z",
       "facts": [
         {
           "id": "official_classification",
@@ -554,7 +538,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-30 收盤 2,205；區間報酬：20日 -11.98%；60日 -2%；當日量為 20 日均量 1.33 倍。",
+          "value": "2026-07-31 收盤 2,425；區間報酬：20日 -1.62%；60日 7.78%；當日量為 20 日均量 1.77 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -579,7 +563,7 @@
         {
           "id": "governance_snapshot",
           "label": "股權與治理",
-          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
+          "value": "主要股東揭露 0 位；內部人轉讓 1 筆。",
           "source_ids": [
             "twse_major_shareholders",
             "twse_insider_transfer",
@@ -600,7 +584,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-07-30T12:31:41.509Z",
+      "generated_at": "2026-08-02T00:17:31.805Z",
       "facts": [
         {
           "id": "official_classification",
@@ -630,7 +614,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-30 收盤 63.1；區間報酬：20日 -4.39%；60日 13.9%；當日量為 20 日均量 1.03 倍。",
+          "value": "2026-07-31 收盤 68.1；區間報酬：20日 3.5%；60日 21.17%；當日量為 20 日均量 1.54 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -653,14 +637,6 @@
           ]
         },
         {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-07-27：元大金控代子公司元大證券(香港)公告股東會召開事宜。",
-          "source_ids": [
-            "twse_material_events"
-          ]
-        },
-        {
           "id": "governance_snapshot",
           "label": "股權與治理",
           "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
@@ -673,7 +649,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 3 則；待閱讀 2 則；申報違規 0 筆。",
+          "value": "官方事件 0 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -684,7 +660,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-07-30T12:31:41.509Z",
+      "generated_at": "2026-08-02T00:17:31.805Z",
       "facts": [
         {
           "id": "official_classification",
@@ -714,7 +690,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-30 收盤 51.5；區間報酬：20日 11.59%；60日 31.71%；當日量為 20 日均量 1.31 倍。",
+          "value": "2026-07-31 收盤 53.1；區間報酬：20日 15.43%；60日 34.26%；當日量為 20 日均量 1.33 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -760,7 +736,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-07-30T12:31:41.509Z",
+      "generated_at": "2026-08-02T00:17:31.805Z",
       "facts": [
         {
           "id": "official_classification",
@@ -804,17 +780,9 @@
           ]
         },
         {
-          "id": "major_shareholders",
-          "label": "大股東資料",
-          "value": "持股逾 10% 大股東：禾琦企業有限公司、承育企業管理顧問有限公司、采育企業管理顧問有限公司。",
-          "source_ids": [
-            "tpex_major_shareholders"
-          ]
-        },
-        {
           "id": "governance_snapshot",
           "label": "股權與治理",
-          "value": "主要股東揭露 3 位；內部人轉讓 0 筆。",
+          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
           "source_ids": [
             "tpex_major_shareholders",
             "tpex_insider_transfer",
@@ -835,7 +803,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-07-30T12:31:41.509Z",
+      "generated_at": "2026-08-02T00:17:31.805Z",
       "facts": [
         {
           "id": "official_classification",
@@ -865,7 +833,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-30 收盤 41.4；區間報酬：20日 -38.58%；60日 51.93%；當日量為 20 日均量 1.31 倍。",
+          "value": "2026-07-31 收盤 45.5；區間報酬：20日 -32.69%；60日 61.92%；當日量為 20 日均量 0.95 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -911,7 +879,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-07-30T12:31:41.509Z",
+      "generated_at": "2026-08-02T00:17:31.805Z",
       "facts": [
         {
           "id": "official_classification",
@@ -941,7 +909,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-30 收盤 86；區間報酬：20日 -14.43%；60日 -14%；當日量為 20 日均量 0.63 倍。",
+          "value": "2026-07-31 收盤 87.6；區間報酬：20日 -13.27%；60日 -12.84%；當日量為 20 日均量 0.77 倍。",
           "source_ids": [
             "tpex_trading_stock"
           ]
@@ -964,25 +932,9 @@
           ]
         },
         {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-07-29：元大期貨公告法人董事代表人異動。",
-          "source_ids": [
-            "tpex_material_events"
-          ]
-        },
-        {
-          "id": "major_shareholders",
-          "label": "大股東資料",
-          "value": "持股逾 10% 大股東：元大金融控股股份有限公司。",
-          "source_ids": [
-            "tpex_major_shareholders"
-          ]
-        },
-        {
           "id": "governance_snapshot",
           "label": "股權與治理",
-          "value": "主要股東揭露 1 位；內部人轉讓 0 筆。",
+          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
           "source_ids": [
             "tpex_major_shareholders",
             "tpex_insider_transfer",
@@ -992,7 +944,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 1 則；申報違規 0 筆。",
+          "value": "官方事件 0 則；申報違規 0 筆。",
           "source_ids": [
             "tpex_material_events",
             "tpex_disclosure_violations"
@@ -1003,7 +955,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-07-30T12:31:41.509Z",
+      "generated_at": "2026-08-02T00:17:31.805Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1024,7 +976,7 @@
         {
           "id": "financial_snapshot",
           "label": "最新財報",
-          "value": "2026 Q1：毛利率 32.97%；營益率 10.42%；EPS 1.23。",
+          "value": "2026 Q2：毛利率 32.09%；營益率 12.62%；EPS 3.81。",
           "source_ids": [
             "tpex_income_statement",
             "tpex_balance_sheet"
@@ -1033,7 +985,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-30 收盤 87.5；區間報酬：20日 -0.79%；60日 -8.85%；當日量為 20 日均量 0.63 倍。",
+          "value": "2026-07-31 收盤 87.8；區間報酬：20日 -0.57%；60日 -9.39%；當日量為 20 日均量 0.22 倍。",
           "source_ids": [
             "tpex_trading_stock"
           ]
@@ -1056,17 +1008,9 @@
           ]
         },
         {
-          "id": "major_shareholders",
-          "label": "大股東資料",
-          "value": "持股逾 10% 大股東：生達化學製藥股份有限公司。",
-          "source_ids": [
-            "tpex_major_shareholders"
-          ]
-        },
-        {
           "id": "governance_snapshot",
           "label": "股權與治理",
-          "value": "主要股東揭露 1 位；內部人轉讓 0 筆。",
+          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
           "source_ids": [
             "tpex_major_shareholders",
             "tpex_insider_transfer",
@@ -1087,7 +1031,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-07-30T12:31:41.509Z",
+      "generated_at": "2026-08-02T00:17:31.805Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1117,7 +1061,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-07-30 收盤 129；區間報酬：20日 1.18%；60日 15.7%；當日量為 20 日均量 1.04 倍。",
+          "value": "2026-07-31 收盤 128；區間報酬：20日 8.47%；60日 15.32%；當日量為 20 日均量 0.85 倍。",
           "source_ids": [
             "twse_stock_day"
           ]

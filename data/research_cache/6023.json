@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-07-30T12:32:47.010Z",
+  "collected_at": "2026-08-02T00:18:46.800Z",
   "company": {
     "id": "tpex-6023",
     "ticker": "6023",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "f9b299f99cfc2642faa2",
-      "date": "2026-07-29",
-      "announced_date": "2026-07-29",
-      "fact_date": "2026-07-29",
-      "announced_time": "174758",
-      "title": "元大期貨公告法人董事代表人異動",
-      "description": "1.發生變動日期:115/07/29 2.法人名稱:元大金融控股股份有限公司 3.舊任者姓名:蘇詠筑 4.舊任者簡歷:元大期貨股份有限公司董事 5.新任者姓名:周紋祺 6.新任者簡歷:元大金融控股股份有限公司副總經理 7.異動原因:改派 8.原任期（例xx/xx/xx至xx/xx/xx）:113/05/27~116/05/26 9.新任生效日期:115/08/01 10.其他應敘明事項:無",
-      "clause": "第6款",
-      "source_id": "tpex_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-6023-1150729-1",
       "date": "2026-07-29",
@@ -40,10 +25,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150729"
+        "enterDate": "1150729",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -61,10 +46,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150728"
+        "enterDate": "1150728",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -82,10 +67,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150723"
+        "enterDate": "1150723",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -103,10 +88,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150708"
+        "enterDate": "1150708",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -124,10 +109,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "4",
-        "enterDate": "1150617"
+        "enterDate": "1150617",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -145,10 +130,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "2",
-        "enterDate": "1150617"
+        "enterDate": "1150617",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -166,10 +151,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150617"
+        "enterDate": "1150617",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -187,10 +172,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150608"
+        "enterDate": "1150608",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -208,10 +193,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150527"
+        "enterDate": "1150527",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -229,10 +214,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150508"
+        "enterDate": "1150508",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -250,10 +235,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "2",
-        "enterDate": "1150506"
+        "enterDate": "1150506",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -271,10 +256,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150506"
+        "enterDate": "1150506",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -292,10 +277,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150420"
+        "enterDate": "1150420",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -313,10 +298,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150409"
+        "enterDate": "1150409",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -334,10 +319,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150320"
+        "enterDate": "1150320",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -355,10 +340,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "5",
-        "enterDate": "1150311"
+        "enterDate": "1150311",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -376,10 +361,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "4",
-        "enterDate": "1150311"
+        "enterDate": "1150311",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -397,10 +382,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "3",
-        "enterDate": "1150311"
+        "enterDate": "1150311",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -418,10 +403,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "2",
-        "enterDate": "1150311"
+        "enterDate": "1150311",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -439,10 +424,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150311"
+        "enterDate": "1150311",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -460,10 +445,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150306"
+        "enterDate": "1150306",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -481,10 +466,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150206"
+        "enterDate": "1150206",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     },
     {
@@ -502,10 +487,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "otc",
-        "companyId": "6023",
         "serialNumber": "1",
-        "enterDate": "1150108"
+        "enterDate": "1150108",
+        "marketKind": "otc",
+        "companyId": "6023"
+      }
+    },
+    {
+      "id": "mops-history-6023-1141231-1",
+      "date": "2025-12-31",
+      "announced_date": "2025-12-31",
+      "fact_date": null,
+      "announced_time": "17:00:09",
+      "title": "元大期貨公告法人董事代表人異動",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1141231",
+        "marketKind": "otc",
+        "companyId": "6023"
       }
     }
   ],
@@ -535,14 +541,14 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-07-30T12:31:39.650Z",
-      "row_count": 184,
+      "fetched_at": "2026-08-02T00:17:30.777Z",
+      "row_count": 221,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-07-30T00:17:54.755Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-08-02T00:19:45.675Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

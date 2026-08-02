@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1",
   "ticker": "2303",
-  "fetched_at": "2026-07-30T00:17:11.338Z",
+  "fetched_at": "2026-08-02T00:19:02.669Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,48 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2303-1150730-2",
+      "date": "2026-07-30",
+      "announced_date": "2026-07-30",
+      "fact_date": "2026-07-30",
+      "announced_time": "16:51:02",
+      "title": "代子公司宏誠創業投資(股)公司公告處分源傑科技(股)公司普通股之相關資料",
+      "description": "1.證券名稱: 源傑科技(股)公司普通股 2.交易日期:115/7/29~115/7/30 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:不適用 民國115年07月30日 5.交易數量、每單位價格及交易總金額: 交易數量: 870,000股 每單位價格: 平均單價NTD375.45 交易總金額: NTD 326,642,500 6.處分利益（或損失）（取得有價證券者不適用）: NTD 248,883,331 7.與交易標的公司之關係: 無 8.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 數量: 933,662股 金額: NTD 83,449,174 持股比例: 1.40% 權利受限情形:無 9.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列之有價證券投 資（含本次交易）占公司最近期財務報表中總資產及歸屬於母公司業主之權益之比例 暨最近期財務報表中營運資金數額: 佔總資產比率: 2.42% 佔歸屬於母公司股東權益比率:3.03% 最近期財務報表中營運資金: NTD44,980,640,000 10.取得或處分之具體目的: 理財計畫 11.本次交易表示異議董事之意見: 不適用 12.本次交易為關係人交易: 否 13.交易相對人及其與公司之關係: 不適用 14.監察人承認或審計委員會同意日期: 不適用 15.前已就同一件事件發布重大訊息日期: 不適用 16.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1150730",
+        "marketKind": "sii",
+        "companyId": "2303"
+      }
+    },
+    {
+      "id": "mops-history-2303-1150730-1",
+      "date": "2026-07-30",
+      "announced_date": "2026-07-30",
+      "fact_date": "2026-07-30",
+      "announced_time": "16:49:24",
+      "title": "公告本公司國內第一次無擔保轉換公司債之轉換價格及 溢價率",
+      "description": "1.事實發生日:115/07/30 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依據本公司「國內第一次無擔保轉換公司債發行及轉換辦法」辦理 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): (1)本公司發行國內第一次無擔保轉換公司債，業經金融監督管理委員會 民國115年7月17日金管證發字第1150348929號函申報生效在案。 (2)以民國115年7月30日為轉換價格訂定基準日之前五個營業日普通股 平均收盤價121.7元為基準價格，轉換溢價率為119.97%。 (3)以上述方式訂定轉換價格為每股新台幣146.0元。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150730",
+        "marketKind": "sii",
+        "companyId": "2303"
+      }
+    },
     {
       "id": "mops-history-2303-1150729-7",
       "date": "2026-07-29",
@@ -28,10 +70,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "7",
-        "enterDate": "1150729"
+        "enterDate": "1150729",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -49,52 +91,52 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "5",
-        "enterDate": "1150729"
+        "enterDate": "1150729",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
       "id": "mops-history-2303-1150729-4",
       "date": "2026-07-29",
       "announced_date": "2026-07-29",
-      "fact_date": "2026-07-29",
+      "fact_date": null,
       "announced_time": "17:06:54",
       "title": "公告本公司董事會決議解除經理人競業禁止之限制",
-      "description": "1.董事會決議日:115/07/29 2.許可從事競業行為之經理人姓名及職稱: 徐明志 總經理暨營運長 3.許可從事競業行為之項目: 聯穎光電(股)公司 董事 4.許可從事競業行為之期間:任職期間 5.決議情形（請依公司法第32條說明表決結果）: 經參與表決之出席董事無異議通過 6.所許可之競業行為如屬大陸地區事業之營業者，經理人姓名及職稱 （非屬大陸地區事業之營業者，以下請輸〝不適用〞）:不適用 7.所擔任該大陸地區事業之公司名稱及職務:不適用 8.所擔任該大陸地區事業地址:不適用 9.所擔任該大陸地區事業營業項目:不適用 10.對本公司財務業務之影響程度:無 11.經理人如有對該大陸地區事業從事投資者，其投資金額及持股比例:不適用 12.其他應敘明事項:無",
-      "clause": "第21款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "4",
-        "enterDate": "1150729"
+        "enterDate": "1150729",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
       "id": "mops-history-2303-1150729-6",
       "date": "2026-07-29",
       "announced_date": "2026-07-29",
-      "fact_date": "2026-07-29",
+      "fact_date": null,
       "announced_time": "17:05:55",
       "title": "公告本公司董事會通過投資台灣閎鼎亞洲參有限合夥",
-      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: 台灣閎鼎亞洲參有限合夥 2.事實發生日:115/7/29~115/7/29 3.董事會通過日期: 民國115年7月29日 4.其他核決日期: 不適用 5.交易數量、每單位價格及交易總金額: 台灣閎鼎亞洲參有限合夥為有限合夥組織，無交易數量及單位交易價格。 交易總金額：不超過新台幣1,700,000,000元。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: 不適用 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依據有限合夥合約約定，並依台灣閎鼎亞洲參有限合夥撥款通知，分次撥款。 12.本次交易之決定方式、價格決定之參考依據及決策單位: 本次交易之決定方式、價格決定之參考依據：依取得或處分資產處理程序及 合約規定辦理； 決策單位:董事會。 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 數量: 不適用； 金額: NTD 1700000000； 持股比例: 不適用； 權利受限情形:無。 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 總資產比率：49.27%；股東權益比率：61.78%。 最近期財務報告營運資金：新台幣44,980,640仟元。 16.經紀人及經紀費用: 無 17.取得或處分之具體目的或用途: 長期投資 18.本次交易表示異議董事之意見: 無 19.本次交易為關係人交易:否 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:否 22.會計師事務所名稱: 高威聯合會計師事務所 23.會計師姓名: 蔡文精 24.會計師開業證書字號: 台財證登(六)字第一四九四號 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 無 28.資金來源: 不適用 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無",
-      "clause": "第20款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "6",
-        "enterDate": "1150729"
+        "enterDate": "1150729",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -112,10 +154,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "3",
-        "enterDate": "1150729"
+        "enterDate": "1150729",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -133,10 +175,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "2",
-        "enterDate": "1150729"
+        "enterDate": "1150729",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -154,10 +196,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "1",
-        "enterDate": "1150729"
+        "enterDate": "1150729",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -175,10 +217,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "2",
-        "enterDate": "1150721"
+        "enterDate": "1150721",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -196,10 +238,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "1",
-        "enterDate": "1150721"
+        "enterDate": "1150721",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -217,10 +259,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "1",
-        "enterDate": "1150715"
+        "enterDate": "1150715",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -238,10 +280,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "1",
-        "enterDate": "1150714"
+        "enterDate": "1150714",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -259,10 +301,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "1",
-        "enterDate": "1150629"
+        "enterDate": "1150629",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -280,10 +322,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "6",
-        "enterDate": "1150623"
+        "enterDate": "1150623",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -301,10 +343,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "7",
-        "enterDate": "1150623"
+        "enterDate": "1150623",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -322,10 +364,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "2",
-        "enterDate": "1150623"
+        "enterDate": "1150623",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -343,10 +385,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "1",
-        "enterDate": "1150623"
+        "enterDate": "1150623",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -364,10 +406,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "2",
-        "enterDate": "1150622"
+        "enterDate": "1150622",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -385,10 +427,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "1",
-        "enterDate": "1150622"
+        "enterDate": "1150622",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -406,10 +448,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "1",
-        "enterDate": "1150618"
+        "enterDate": "1150618",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -427,10 +469,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "1",
-        "enterDate": "1150616"
+        "enterDate": "1150616",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -448,10 +490,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "2",
-        "enterDate": "1150603"
+        "enterDate": "1150603",
+        "marketKind": "sii",
+        "companyId": "2303"
       }
     },
     {
@@ -469,52 +511,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
         "serialNumber": "1",
-        "enterDate": "1150603"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150527-1",
-      "date": "2026-05-27",
-      "announced_date": "2026-05-27",
-      "fact_date": null,
-      "announced_time": "15:04:01",
-      "title": "公告本公司一一五年股東常會重要決議事項",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
+        "enterDate": "1150603",
         "marketKind": "sii",
-        "companyId": "2303",
-        "serialNumber": "1",
-        "enterDate": "1150527"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150526-2",
-      "date": "2026-05-26",
-      "announced_date": "2026-05-26",
-      "fact_date": null,
-      "announced_time": "13:47:39",
-      "title": "公告本公司取得廠務設備之相關資料",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2303",
-        "serialNumber": "2",
-        "enterDate": "1150526"
+        "companyId": "2303"
       }
     }
   ]
