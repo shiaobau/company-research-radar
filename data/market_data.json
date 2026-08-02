@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-02T00:17:31.805Z",
+  "generated_at": "2026-08-02T12:31:20.866Z",
   "sources": [
     {
       "id": "twse_stock_day",
@@ -47,7 +47,7 @@
         "2026-08: 官方端點回覆 很抱歉，沒有符合條件的資料!"
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-02T00:17:31.805Z"
+      "refreshed_at": "2026-08-02T12:31:20.866Z"
     },
     "twse-1231": {
       "ticker": "1231",
@@ -78,7 +78,7 @@
         "2026-08: 官方端點回覆 很抱歉，沒有符合條件的資料!"
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-02T00:17:31.805Z"
+      "refreshed_at": "2026-08-02T12:31:20.866Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -109,38 +109,7 @@
         "2026-08: 官方端點回覆 很抱歉，沒有符合條件的資料!"
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-02T00:17:31.805Z"
-    },
-    "twse-2308": {
-      "ticker": "2308",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_stock_day"
-      ],
-      "evidence_level": "high",
-      "trading_days": 242,
-      "latest_trade_date": "2026-07-31",
-      "latest_close": 1640,
-      "year_high": 2520,
-      "year_low": 588,
-      "price_range_basis": "近 60 個交易日區間；一年高低價比例過大，可能受面額、除權息或未調整價格影響。",
-      "scoring_high": 2520,
-      "scoring_low": 1495,
-      "position_pct": 14.15,
-      "ma20": 1804.5,
-      "ma60": 2052.67,
-      "return_20d_pct": -16.75,
-      "return_60d_pct": -25.79,
-      "average_volume_20d": 11640786,
-      "volume_ratio_20d": 2.7,
-      "score": 42,
-      "rationale": "近 242 個交易日，收盤 1640，位於近 60 日區間 14.15%，20 日報酬 -16.75%，60 日報酬 -25.79%。",
-      "errors": [
-        "2026-08: 官方端點回覆 很抱歉，沒有符合條件的資料!"
-      ],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-08-02T00:17:31.805Z"
+      "refreshed_at": "2026-08-02T12:31:20.866Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -171,7 +140,38 @@
         "2026-08: 官方端點回覆 很抱歉，沒有符合條件的資料!"
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-02T00:17:31.805Z"
+      "refreshed_at": "2026-08-02T12:31:20.866Z"
+    },
+    "twse-2308": {
+      "ticker": "2308",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_stock_day"
+      ],
+      "evidence_level": "high",
+      "trading_days": 242,
+      "latest_trade_date": "2026-07-31",
+      "latest_close": 1640,
+      "year_high": 2520,
+      "year_low": 588,
+      "price_range_basis": "近 60 個交易日區間；一年高低價比例過大，可能受面額、除權息或未調整價格影響。",
+      "scoring_high": 2520,
+      "scoring_low": 1495,
+      "position_pct": 14.15,
+      "ma20": 1804.5,
+      "ma60": 2052.67,
+      "return_20d_pct": -16.75,
+      "return_60d_pct": -25.79,
+      "average_volume_20d": 11640786,
+      "volume_ratio_20d": 2.7,
+      "score": 42,
+      "rationale": "近 242 個交易日，收盤 1640，位於近 60 日區間 14.15%，20 日報酬 -16.75%，60 日報酬 -25.79%。",
+      "errors": [
+        "2026-08: 官方端點回覆 很抱歉，沒有符合條件的資料!"
+      ],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-08-02T12:31:20.866Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -202,7 +202,7 @@
         "2026-08: 官方端點回覆 很抱歉，沒有符合條件的資料!"
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-02T00:17:31.805Z"
+      "refreshed_at": "2026-08-02T12:31:20.866Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -231,7 +231,7 @@
       "rationale": "近 221 個交易日，收盤 9.5，位於一年區間 29.06%，20 日報酬 5.56%，60 日報酬 0.53%。",
       "errors": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-02T00:17:31.805Z"
+      "refreshed_at": "2026-08-02T12:31:20.866Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -260,7 +260,7 @@
       "rationale": "近 242 個交易日，收盤 87.6，位於一年區間 19.37%，20 日報酬 -13.27%，60 日報酬 -12.84%。",
       "errors": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-02T00:17:31.805Z"
+      "refreshed_at": "2026-08-02T12:31:20.866Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -289,7 +289,7 @@
       "rationale": "近 241 個交易日，收盤 87.8，位於一年區間 2.38%，20 日報酬 -0.57%，60 日報酬 -9.39%。",
       "errors": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-02T00:17:31.805Z"
+      "refreshed_at": "2026-08-02T12:31:20.866Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -320,7 +320,7 @@
         "2026-08: 官方端點回覆 很抱歉，沒有符合條件的資料!"
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-02T00:17:31.805Z"
+      "refreshed_at": "2026-08-02T12:31:20.866Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -351,7 +351,7 @@
         "2026-08: 官方端點回覆 很抱歉，沒有符合條件的資料!"
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-02T00:17:31.805Z"
+      "refreshed_at": "2026-08-02T12:31:20.866Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -382,7 +382,7 @@
         "2026-08: 官方端點回覆 很抱歉，沒有符合條件的資料!"
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-02T00:17:31.805Z"
+      "refreshed_at": "2026-08-02T12:31:20.866Z"
     }
   }
 }
