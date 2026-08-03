@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-02T12:31:20.866Z",
+  "generated_at": "2026-08-03T00:16:17.850Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -204,7 +204,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-08-02T12:31:20.866Z",
+      "generated_at": "2026-08-03T00:16:17.850Z",
       "facts": [
         {
           "id": "official_classification",
@@ -280,7 +280,7 @@
     "twse-1707": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-08-02T12:31:20.866Z",
+      "generated_at": "2026-08-03T00:16:17.850Z",
       "facts": [
         {
           "id": "official_classification",
@@ -356,7 +356,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-08-02T12:31:20.866Z",
+      "generated_at": "2026-08-03T00:16:17.850Z",
       "facts": [
         {
           "id": "official_classification",
@@ -432,7 +432,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-08-02T12:31:20.866Z",
+      "generated_at": "2026-08-03T00:16:17.850Z",
       "facts": [
         {
           "id": "official_classification",
@@ -508,7 +508,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-08-02T12:31:20.866Z",
+      "generated_at": "2026-08-03T00:16:17.850Z",
       "facts": [
         {
           "id": "official_classification",
@@ -584,7 +584,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-08-02T12:31:20.866Z",
+      "generated_at": "2026-08-03T00:16:17.850Z",
       "facts": [
         {
           "id": "official_classification",
@@ -660,7 +660,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-08-02T12:31:20.866Z",
+      "generated_at": "2026-08-03T00:16:17.850Z",
       "facts": [
         {
           "id": "official_classification",
@@ -736,7 +736,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-08-02T12:31:20.866Z",
+      "generated_at": "2026-08-03T00:16:17.850Z",
       "facts": [
         {
           "id": "official_classification",
@@ -803,7 +803,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-08-02T12:31:20.866Z",
+      "generated_at": "2026-08-03T00:16:17.850Z",
       "facts": [
         {
           "id": "official_classification",
@@ -879,7 +879,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-08-02T12:31:20.866Z",
+      "generated_at": "2026-08-03T00:16:17.850Z",
       "facts": [
         {
           "id": "official_classification",
@@ -955,7 +955,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-08-02T12:31:20.866Z",
+      "generated_at": "2026-08-03T00:16:17.850Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1031,7 +1031,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-08-02T12:31:20.866Z",
+      "generated_at": "2026-08-03T00:16:17.850Z",
       "facts": [
         {
           "id": "official_classification",
