@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-03T00:17:20.243Z",
+  "collected_at": "2026-08-03T12:32:18.048Z",
   "company": {
     "id": "tpex-3115",
     "ticker": "3115",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-3115-1150803-1",
+      "date": "2026-08-03",
+      "announced_date": "2026-08-03",
+      "fact_date": "2026-08-03",
+      "announced_time": "16:55:30",
+      "title": "公告本公司115年第二季合併財務報告董事會召開日期",
+      "description": "1.董事會召集通知日:115/08/03 2.董事會預計召開日期:115/08/11 3.預計提報董事會或經董事會決議之財務報告或年度自結財務資訊年季:115年第二季 4.其他應敘明事項:無",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150803",
+        "marketKind": "otc",
+        "companyId": "3115"
+      }
+    },
     {
       "id": "mops-history-3115-1150715-1",
       "date": "2026-07-15",
@@ -77,11 +98,11 @@
       "id": "mops-history-3115-1150518-1",
       "date": "2026-05-18",
       "announced_date": "2026-05-18",
-      "fact_date": "2026-05-18",
+      "fact_date": null,
       "announced_time": "16:55:28",
       "title": "本公司配合檢調單位搜索調查事宜",
-      "description": "1.事實發生日:115/05/18 2.發生緣由:檢調單位於今日至本公司進行調查與搜索。 3.因應措施:本公司依法配合調查，並提供相關資料以供釐清。 4.對公司財務業務之影響:本公司營運狀況一切正常，對財務業務並無重大影響。 5.其他應敘明事項:無。",
-      "clause": "第19款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
         "marketKind": "otc",
         "companyId": "3115"
       }
-    },
-    {
-      "id": "mops-history-3115-1140805-1",
-      "date": "2025-08-05",
-      "announced_date": "2025-08-05",
-      "fact_date": null,
-      "announced_time": "17:00:50",
-      "title": "公告本公司董事會通過114年度第二季合併財務報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1140805",
-        "marketKind": "otc",
-        "companyId": "3115"
-      }
     }
   ],
   "references": [
@@ -541,14 +541,14 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-03T00:16:16.605Z",
-      "row_count": 10,
+      "fetched_at": "2026-08-03T12:31:18.050Z",
+      "row_count": 8,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-08-02T00:19:29.759Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-08-03T12:33:07.836Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
