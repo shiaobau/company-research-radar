@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-03T12:31:19.292Z",
+  "generated_at": "2026-08-04T00:15:25.818Z",
   "sources": [
     {
       "id": "twse_major_shareholders",
@@ -65,7 +65,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-03T12:31:19.292Z"
+      "refreshed_at": "2026-08-04T00:15:25.818Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -86,7 +86,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-03T12:31:19.292Z"
+      "refreshed_at": "2026-08-04T00:15:25.818Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -107,7 +107,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-03T12:31:19.292Z"
+      "refreshed_at": "2026-08-04T00:15:25.818Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -128,7 +128,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-03T12:31:19.292Z"
+      "refreshed_at": "2026-08-04T00:15:25.818Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -141,22 +141,15 @@
       ],
       "evidence_level": "high",
       "major_shareholder_count": 0,
-      "insider_transfer_count": 1,
+      "insider_transfer_count": 0,
       "disclosure_violation_count": 0,
-      "score": 45,
-      "rationale": "未列示持股逾 10% 大股東；近期內部人轉讓申報 1 筆；未偵測到資訊申報違規。",
+      "score": 63,
+      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
       "major_shareholders": [],
-      "insider_transfers": [
-        {
-          "date": null,
-          "holder": "曾繁城",
-          "shares": null,
-          "source_id": "twse_insider_transfer"
-        }
-      ],
+      "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-03T12:31:19.292Z"
+      "refreshed_at": "2026-08-04T00:15:25.818Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -177,7 +170,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-03T12:31:19.292Z"
+      "refreshed_at": "2026-08-04T00:15:25.818Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -198,7 +191,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-03T12:31:19.292Z"
+      "refreshed_at": "2026-08-04T00:15:25.818Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -219,7 +212,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-03T12:31:19.292Z"
+      "refreshed_at": "2026-08-04T00:15:25.818Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -240,7 +233,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-03T12:31:19.292Z"
+      "refreshed_at": "2026-08-04T00:15:25.818Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -261,7 +254,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-03T12:31:19.292Z"
+      "refreshed_at": "2026-08-04T00:15:25.818Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -282,7 +275,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-03T12:31:19.292Z"
+      "refreshed_at": "2026-08-04T00:15:25.818Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -303,7 +296,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-03T12:31:19.292Z"
+      "refreshed_at": "2026-08-04T00:15:25.818Z"
     }
   }
 }
