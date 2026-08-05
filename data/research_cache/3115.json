@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-05T00:16:35.787Z",
+  "collected_at": "2026-08-05T12:32:07.088Z",
   "company": {
     "id": "tpex-3115",
     "ticker": "3115",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "10ebf5b3c09541081f53",
-      "date": "2026-08-03",
-      "announced_date": "2026-08-03",
-      "fact_date": "2026-08-03",
-      "announced_time": "165530",
-      "title": "公告本公司115年第二季合併財務報告董事會召開日期",
-      "description": "1.董事會召集通知日:115/08/03 2.董事會預計召開日期:115/08/11 3.預計提報董事會或經董事會決議之財務報告或年度自結財務資訊年季:115年第二季 4.其他應敘明事項:無",
-      "clause": "第31款",
-      "source_id": "tpex_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-3115-1150803-1",
       "date": "2026-08-03",
@@ -507,6 +492,27 @@
         "marketKind": "otc",
         "companyId": "3115"
       }
+    },
+    {
+      "id": "mops-history-3115-1141031-1",
+      "date": "2025-10-31",
+      "announced_date": "2025-10-31",
+      "fact_date": null,
+      "announced_time": "17:32:23",
+      "title": "公告本公司114年第三季合併財務報告董事會召開日期",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1141031",
+        "marketKind": "otc",
+        "companyId": "3115"
+      }
     }
   ],
   "references": [
@@ -535,8 +541,8 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-05T00:15:34.501Z",
-      "row_count": 217,
+      "fetched_at": "2026-08-05T12:31:02.844Z",
+      "row_count": 226,
       "available": true
     },
     {

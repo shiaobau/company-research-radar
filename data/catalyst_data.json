@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-05T00:15:36.036Z",
+  "generated_at": "2026-08-05T12:31:04.454Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-05T00:15:36.036Z"
+      "refreshed_at": "2026-08-05T12:31:04.454Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,7 +50,7 @@
       "rationale": "財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-05T00:15:36.036Z"
+      "refreshed_at": "2026-08-05T12:31:04.454Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -67,7 +67,7 @@
       "rationale": "月營收分數 76；財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-05T00:15:36.036Z"
+      "refreshed_at": "2026-08-05T12:31:04.454Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -84,7 +84,7 @@
       "rationale": "月營收分數 81；財務品質分數 69。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-05T00:15:36.036Z"
+      "refreshed_at": "2026-08-05T12:31:04.454Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -101,7 +101,7 @@
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-05T00:15:36.036Z"
+      "refreshed_at": "2026-08-05T12:31:04.454Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -118,7 +118,7 @@
       "rationale": "月營收分數 77；財務品質分數 89。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-05T00:15:36.036Z"
+      "refreshed_at": "2026-08-05T12:31:04.454Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -135,7 +135,7 @@
       "rationale": "財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-05T00:15:36.036Z"
+      "refreshed_at": "2026-08-05T12:31:04.454Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -144,31 +144,15 @@
       "source_ids": [
         "tpex_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 62,
+      "score": 59,
       "rationale": "月營收分數 77。",
-      "events": [
-        {
-          "date": "2026-08-03",
-          "announce_date": "2026-08-03",
-          "time": "165530",
-          "title": "公告本公司115年第二季合併財務報告董事會召開日期",
-          "clause": "第31款",
-          "description": "1.董事會召集通知日:115/08/03 2.董事會預計召開日期:115/08/11 3.預計提報董事會或經董事會決議之財務報告或年度自結財務資訊年季:115年第二季 4.其他應敘明事項:無",
-          "source_id": "tpex_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-05T00:15:36.036Z"
+      "refreshed_at": "2026-08-05T12:31:04.454Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -185,7 +169,7 @@
       "rationale": "月營收分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-05T00:15:36.036Z"
+      "refreshed_at": "2026-08-05T12:31:04.454Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -202,7 +186,7 @@
       "rationale": "月營收分數 81；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-05T00:15:36.036Z"
+      "refreshed_at": "2026-08-05T12:31:04.454Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -219,7 +203,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-05T00:15:36.036Z"
+      "refreshed_at": "2026-08-05T12:31:04.454Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -236,7 +220,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-05T00:15:36.036Z"
+      "refreshed_at": "2026-08-05T12:31:04.454Z"
     }
   }
 }
