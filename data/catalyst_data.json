@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-04T12:31:24.542Z",
+  "generated_at": "2026-08-05T00:15:36.036Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-04T12:31:24.542Z"
+      "refreshed_at": "2026-08-05T00:15:36.036Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,7 +50,7 @@
       "rationale": "財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-04T12:31:24.542Z"
+      "refreshed_at": "2026-08-05T00:15:36.036Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -67,7 +67,7 @@
       "rationale": "月營收分數 76；財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-04T12:31:24.542Z"
+      "refreshed_at": "2026-08-05T00:15:36.036Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -76,33 +76,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 76,
+      "score": 73,
       "rationale": "月營收分數 81；財務品質分數 69。",
-      "events": [
-        {
-          "date": "2026-08-03",
-          "announce_date": "2026-08-03",
-          "time": "164908",
-          "title": "(補充公告)本公司董事會決議重建桃園一廠相關事宜公告",
-          "clause": "第20款",
-          "description": "1.契約種類:工程合約 2.事實發生日:115/8/3~115/8/3 3.董事會通過日期: 民國115年4月29日 4.其他核決日期: 不適用 5.契約相對人及其與公司之關係: 本案土建工程契約相對人為麗明營造股份有限公司(以下簡稱麗明)。 麗明非本公司之關係人。 6.契約主要內容（含契約總金額、預計參與投入之金額及契約起迄日期） 、限制條款及其他重要約定事項: 本公司董事會於民國115年4月29日決議通過重建桃園一廠，暫估工程總價款約新台幣18億 元，本案土建工程將由麗明承攬，總價款為新台幣16.55億元。 限制條款及其他重要約定事項：麗明需配合本建案達到申請美國LEED綠建築標章之規範標 準。 7.專業估價者事務所或公司名稱及其估價結果: 係自地委建，故不適用。 8.不動產估價師姓名: 不適用 9.不動產估價師開業證書字號: 不適用 10.取得之具體目的: 因應未來業務發展所需 11.本次交易表示異議之董事意見: 無 12.本次交易為關係人交易:否 13.監察人承認或審計委員會同意日期: 民國115年4月29日 14.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 15.是否尚未取得估價報告:否或不適用 16.尚未取得估價報告之原因: 不適用 17.估價結果有重大差異時，其差異原因及會計師意見: 不適用 18.會計師事務所名稱: 不適用 19.會計師姓名: 不適用 20.會計師開業證書字號: 不適用 21.前已就同一件事件發布重大訊息日期: 民國115年4月29日 22.其他敘明事項: 無",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "correction",
-          "risk_category_label": "更正或補充",
-          "risk_points": 0,
-          "matched_patterns": [
-            "補充"
-          ]
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-04T12:31:24.542Z"
+      "refreshed_at": "2026-08-05T00:15:36.036Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -119,7 +101,7 @@
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-04T12:31:24.542Z"
+      "refreshed_at": "2026-08-05T00:15:36.036Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -136,7 +118,7 @@
       "rationale": "月營收分數 77；財務品質分數 89。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-04T12:31:24.542Z"
+      "refreshed_at": "2026-08-05T00:15:36.036Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -153,7 +135,7 @@
       "rationale": "財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-04T12:31:24.542Z"
+      "refreshed_at": "2026-08-05T00:15:36.036Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -186,7 +168,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-04T12:31:24.542Z"
+      "refreshed_at": "2026-08-05T00:15:36.036Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -203,7 +185,7 @@
       "rationale": "月營收分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-04T12:31:24.542Z"
+      "refreshed_at": "2026-08-05T00:15:36.036Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -220,7 +202,7 @@
       "rationale": "月營收分數 81；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-04T12:31:24.542Z"
+      "refreshed_at": "2026-08-05T00:15:36.036Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -237,7 +219,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-04T12:31:24.542Z"
+      "refreshed_at": "2026-08-05T00:15:36.036Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -254,7 +236,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-04T12:31:24.542Z"
+      "refreshed_at": "2026-08-05T00:15:36.036Z"
     }
   }
 }

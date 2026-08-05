@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-04T12:32:26.129Z",
+  "collected_at": "2026-08-05T00:16:35.787Z",
   "company": {
     "id": "tpex-8279",
     "ticker": "8279",
@@ -541,13 +541,13 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-04T12:31:10.198Z",
+      "fetched_at": "2026-08-05T00:15:34.501Z",
       "row_count": 217,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-08-04T12:33:33.702Z",
       "row_count": 24,
       "detail_count": 4,
