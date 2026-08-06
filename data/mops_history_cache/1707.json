@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1",
   "ticker": "1707",
-  "fetched_at": "2026-08-04T12:32:38.134Z",
+  "fetched_at": "2026-08-06T00:17:59.437Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-1707-1150805-1",
+      "date": "2026-08-05",
+      "announced_date": "2026-08-05",
+      "fact_date": "2026-08-05",
+      "announced_time": "14:30:23",
+      "title": "公告本公司115年第二季財務報告 董事會預計召開日期為115年8月13日",
+      "description": "1.董事會召集通知日:115/08/05 2.董事會預計召開日期:115/08/13 3.預計提報董事會或經董事會決議之財務報告或 年度自結財務資訊年季:115年第二季 4.其他應敘明事項:無",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150805",
+        "marketKind": "sii",
+        "companyId": "1707"
+      }
+    },
     {
       "id": "mops-history-1707-1150714-1",
       "date": "2026-07-14",
@@ -80,11 +101,11 @@
       "id": "mops-history-1707-1150511-3",
       "date": "2026-05-11",
       "announced_date": "2026-05-11",
-      "fact_date": "2026-05-11",
+      "fact_date": null,
       "announced_time": "14:39:41",
       "title": "公告本公司董事會決議通過解除經理人競業禁止之限制",
-      "description": "1.董事會決議日:115/05/11 2.許可從事競業行為之經理人姓名及職稱:周弘益 供應鏈處長 3.許可從事競業行為之項目:本集團持股67%之上海葡迅供應鏈管理有限公司董事長， 由本公司之營業處副總經理林源從改派為供應鏈處長周弘益兼任。 4.許可從事競業行為之期間:擔任上述與本公司營業範圍類似之公司之經理人任職期間。 5.決議情形（請依公司法第32條說明表決結果）:全體出席董事同意通過。 6.所許可之競業行為如屬大陸地區事業之營業者，經理人姓名及職稱 （非屬大陸地區事業之營業者，以下請輸〝不適用〞）:周弘益 供應鏈處長 7.所擔任該大陸地區事業之公司名稱及職務:上海葡迅供應鏈管理有限公司 董事長 8.所擔任該大陸地區事業地址:上海市松江區車新公路518號3幢一層。 9.所擔任該大陸地區事業營業項目:供應鏈管理服務、國內貨物運輸代理等。 10.對本公司財務業務之影響程度:無 11.經理人如有對該大陸地區事業從事投資者，其投資金額及持股比例:無 12.其他應敘明事項:無",
-      "clause": "第21款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
       "detail_parameters": {
         "serialNumber": "1",
         "enterDate": "1141118",
-        "marketKind": "sii",
-        "companyId": "1707"
-      }
-    },
-    {
-      "id": "mops-history-1707-1141112-3",
-      "date": "2025-11-12",
-      "announced_date": "2025-11-12",
-      "fact_date": null,
-      "announced_time": "14:36:10",
-      "title": "本公司受邀參加元大證券舉辦之線上法說會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "enterDate": "1141112",
         "marketKind": "sii",
         "companyId": "1707"
       }

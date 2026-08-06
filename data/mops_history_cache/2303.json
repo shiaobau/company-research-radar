@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1",
   "ticker": "2303",
-  "fetched_at": "2026-08-04T12:32:43.815Z",
+  "fetched_at": "2026-08-06T00:18:05.017Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2303-1150805-1",
+      "date": "2026-08-05",
+      "announced_date": "2026-08-05",
+      "fact_date": "2026-08-05",
+      "announced_time": "15:08:44",
+      "title": "公告本公司國內第一次無擔保轉換公司債收足債款",
+      "description": "1.事實發生日:115/08/05 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依據「發行人募集與發行有價證券處理準則」第9條第1項第2款規定辦理 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 本公司發行國內第一次無擔保轉換公司債至公告日止，債款代收銀行業已收足所有 應募款項共計新台幣12,120,000,000元整，並匯撥至存儲專戶銀行，特此公告。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150805",
+        "marketKind": "sii",
+        "companyId": "2303"
+      }
+    },
     {
       "id": "mops-history-2303-1150730-2",
       "date": "2026-07-30",
@@ -80,11 +101,11 @@
       "id": "mops-history-2303-1150729-5",
       "date": "2026-07-29",
       "announced_date": "2026-07-29",
-      "fact_date": "2026-07-29",
+      "fact_date": null,
       "announced_time": "17:07:39",
       "title": "本公司2026年第二季財務報告",
-      "description": "1.事實發生日:115/07/29 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由: 聯華電子公佈2026年第二季財務報告 2026年資本支出上調至20億美元，以支應分階段擴產計畫 第二季營業利益季增32.6%，第三季產能利用率可望突破90% 2026年第二季概觀： ‧合併營收：新台幣687.3億元 ($21.8億美元) ‧毛利率：32.5%；營業利益率：21.8% ‧22/28奈米晶圓營收佔比：37% ‧晶圓製造產能利用率：85% ‧歸屬母公司淨利：新台幣422.6億元 ($13.4億美元) ‧每股盈餘：新台幣3.39元；每ADS盈餘：$0.537美元 聯華電子股份有限公司今(29)日公佈2026年第二季營運報告，合併營收為新台幣 687.3億元，較上季的610.4億元增加12.6%。與去年同期相比，本季的合併營收增 加17.0%。2026年第二季毛利率達到32.5%，歸屬母公司淨利為新台幣422.6億元， 普通股每股獲利為新台幣3.39元。 聯電執行長王石表示：「第二季晶圓出貨量較上季成長10.6%，主要受惠於通訊及 消費性電子的強勁需求，進一步推升產能利用率至85%。22/28奈米製程營收續創 歷史新高，其中22奈米銷售佔第二季整體營收達17.5%。本月聯電已將首批12吋矽 光子量產晶圓交付客戶，這是我們展現12吋矽光子量產製造能力的重要里程碑， 2027年將進一步推出可供更多客戶導入之矽光子平台。」 聯電執行長王石補充：「展望第三季，電腦、通訊與消費性電子需求持續穩健， 預期出貨量將呈高個位數成長。受惠於電源管理IC、感測器與微控制器的強勁需 求，8吋產品組合顯著復甦，第三季產能利用率預期將大幅提升。12吋產能利用率 則維持在健康水位，並持續驅動核心業務。與此同時，我們亦積極布局，確保能 充分掌握AI未來商機。為使聯電具備迅速擴產能力以因應客戶需求，今日董事會 通過擴建新加坡P4廠區無塵室產能，並於台灣台南興建一座新晶圓廠。此計畫將 分階段推進，在維持資本紀律的同時，亦能靈活佈建產能以滿足客戶需求。為支 應上述擴產計畫，2026年資本支出上調至20億美元。」 王石執行長說明：「第二季聯電很榮幸連續十年入選『臺灣永續指數(FTSE4Good TIP Taiwan ESG Index)』。此指數依據國際永續標準，評選台灣上市公司中表現 卓越之企業。聯電《2025年永續報告書》將於七月底發布，屆時將向投資人揭露 公司永續目標與最新進展。」 Third Quarter 2026 Outlook & Guidance ‧Wafer Shipments: Will increase by high-single digit ‧ASP in USD: Remain firm ‧Gross Profit Margin: Mid-30% range ‧Capacity Utilization: 90%+ ‧2026 CAPEX: US$2.0 billion 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 無",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
@@ -491,27 +512,6 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1150603",
-        "marketKind": "sii",
-        "companyId": "2303"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150603-1",
-      "date": "2026-06-03",
-      "announced_date": "2026-06-03",
-      "fact_date": null,
-      "announced_time": "17:19:05",
-      "title": "本公司董事會決議發行國內第一次無擔保轉換公司債 相關事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150603",
         "marketKind": "sii",
         "companyId": "2303"
