@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-06T00:17:48.483Z",
+  "collected_at": "2026-08-09T00:17:30.826Z",
   "company": {
     "id": "twse-1707",
     "ticker": "1707",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "58b72150cc95b51e6236",
-      "date": "2026-08-05",
-      "announced_date": "2026-08-05",
-      "fact_date": "2026-08-05",
-      "announced_time": "143023",
-      "title": "公告本公司115年第二季財務報告 董事會預計召開日期為115年8月13日",
-      "description": "1.董事會召集通知日:115/08/05 2.董事會預計召開日期:115/08/13 3.預計提報董事會或經董事會決議之財務報告或 年度自結財務資訊年季:115年第二季 4.其他應敘明事項:無",
-      "clause": "第31款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-1707-1150805-1",
       "date": "2026-08-05",
@@ -507,6 +492,27 @@
         "marketKind": "sii",
         "companyId": "1707"
       }
+    },
+    {
+      "id": "mops-history-1707-1141118-1",
+      "date": "2025-11-18",
+      "announced_date": "2025-11-18",
+      "fact_date": null,
+      "announced_time": "15:30:37",
+      "title": "公告本公司董事長訂定114年上半年度現金股利 除息基準日相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1141118",
+        "marketKind": "sii",
+        "companyId": "1707"
+      }
     }
   ],
   "references": [
@@ -535,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-06T00:16:23.857Z",
-      "row_count": 375,
+      "fetched_at": "2026-08-09T00:16:19.242Z",
+      "row_count": 6,
       "available": true
     },
     {
       "source_id": "mops_history_api",
       "cache_status": "updated",
-      "fetched_at": "2026-08-06T00:17:59.437Z",
+      "fetched_at": "2026-08-09T00:17:42.576Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

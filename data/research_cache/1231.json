@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-06T00:17:48.483Z",
+  "collected_at": "2026-08-09T00:17:30.826Z",
   "company": {
     "id": "twse-1231",
     "ticker": "1231",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-1231-1150731-1",
+      "date": "2026-08-06",
+      "announced_date": "2026-08-06",
+      "fact_date": "2026-08-06",
+      "announced_time": "17:18:38",
+      "title": "公告本公司董事會通過115年第二季合併財務報告",
+      "description": "1.提報董事會或經董事會決議日期:115/08/06 2.審計委員會通過日期:115/08/06 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/06/30 4.1月1日累計至本期止營業收入(仟元):6,325,950 5.1月1日累計至本期止營業毛利(毛損) (仟元):1,271,623 6.1月1日累計至本期止營業利益(損失) (仟元):474,177 7.1月1日累計至本期止稅前淨利(淨損) (仟元):778,392 8.1月1日累計至本期止本期淨利(淨損) (仟元):687,730 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):688,496 10.1月1日累計至本期止基本每股盈餘(損失) (元):2.31 11.期末總資產(仟元):16,317,886 12.期末總負債(仟元):8,798,733 13.期末歸屬於母公司業主之權益(仟元):7,501,256 14.其他應敘明事項:無",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150731",
+        "marketKind": "sii",
+        "companyId": "1231"
+      }
+    },
     {
       "id": "mops-history-1231-1150729-1",
       "date": "2026-07-29",
@@ -77,11 +98,11 @@
       "id": "mops-history-1231-1150618-1",
       "date": "2026-06-24",
       "announced_date": "2026-06-24",
-      "fact_date": "2026-06-24",
+      "fact_date": null,
       "announced_time": "15:17:04",
       "title": "公告本公司115年股東常會重要決議事項",
-      "description": "1.股東常會日期:115/06/24 2.重要決議事項一、盈餘分配或盈虧撥補: 通過承認一一四年度盈餘分配案。 每股配發現金股利1.5元及股票股利1.0元。 3.重要決議事項二、章程修訂:無。 4.重要決議事項三、營業報告書及財務報表: 通過承認一一四年度營業報告書及財務報告案。 5.重要決議事項四、董監事選舉:無。 6.重要決議事項五、其他事項: 通過一一四年度盈餘轉增資發行新股案。 本次盈餘轉增資共計新台幣298,454,470元，發行新股29,845,447股。 7.其他應敘明事項:無。",
-      "clause": "第18款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
         "marketKind": "sii",
         "companyId": "1231"
       }
-    },
-    {
-      "id": "mops-history-1231-1140627-6",
-      "date": "2025-06-30",
-      "announced_date": "2025-06-30",
-      "fact_date": null,
-      "announced_time": "17:14:33",
-      "title": "公告本公司董事會授權董事長訂定除息除權暨增資基準日及 相關事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "6",
-        "enterDate": "1140627",
-        "marketKind": "sii",
-        "companyId": "1231"
-      }
     }
   ],
   "references": [
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-06T00:16:23.857Z",
-      "row_count": 375,
+      "fetched_at": "2026-08-09T00:16:19.242Z",
+      "row_count": 6,
       "available": true
     },
     {
       "source_id": "mops_history_api",
       "cache_status": "updated",
-      "fetched_at": "2026-08-06T00:17:54.245Z",
+      "fetched_at": "2026-08-09T00:17:37.085Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

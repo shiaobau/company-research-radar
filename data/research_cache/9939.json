@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-06T00:17:48.483Z",
+  "collected_at": "2026-08-09T00:17:30.826Z",
   "company": {
     "id": "twse-9939",
     "ticker": "9939",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-9939-1150807-1",
+      "date": "2026-08-07",
+      "announced_date": "2026-08-07",
+      "fact_date": "2026-08-07",
+      "announced_time": "17:19:18",
+      "title": "公告本公司董事會通過115年度第2季合併財務報告",
+      "description": "1.提報董事會或經董事會決議日期:115/08/07 2.審計委員會通過日期:115/08/07 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/06/30 4.1月1日累計至本期止營業收入(仟元):15,483,887 5.1月1日累計至本期止營業毛利(毛損) (仟元):3,895,983 6.1月1日累計至本期止營業利益(損失) (仟元):2,510,569 7.1月1日累計至本期止稅前淨利(淨損) (仟元):2,432,625 8.1月1日累計至本期止本期淨利(淨損) (仟元):1,978,402 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):1,937,260 10.1月1日累計至本期止基本每股盈餘(損失) (元):6.55 11.期末總資產(仟元):49,292,815 12.期末總負債(仟元):29,112,314 13.期末歸屬於母公司業主之權益(仟元):19,777,192 14.其他應敘明事項:有關115年度第2季合併財務報表詳細資訊 將於主管機關規定期限內完成上傳作業，屆時相關之訊息請逕 向台灣證券交易所股市觀測站查詢。",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150807",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
     {
       "id": "mops-history-9939-1150730-1",
       "date": "2026-07-30",
@@ -77,11 +98,11 @@
       "id": "mops-history-9939-1150603-1",
       "date": "2026-06-04",
       "announced_date": "2026-06-04",
-      "fact_date": "2026-06-04",
+      "fact_date": null,
       "announced_time": "11:59:13",
       "title": "公告本公司董事會授權董事長訂定除息基準日",
-      "description": "1.董事會、股東會決議或公司決定日期:115/06/04 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.普通股發放股利種類及金額: 每股配發現金股利6.2元(普通股現金股利:NT$1,833,876,145元) 4.除權（息）交易日:115/07/02 5.最後過戶日:115/07/03 6.停止過戶起始日期:115/07/04 7.停止過戶截止日期:115/07/08 8.除權（息）基準日:115/07/08 9.債券最後申請轉換日期:115/06/10 10.債券停止轉換起始日期:115/06/12 11.債券停止轉換截止日期:115/07/08 12.普通股現金股利發放日期:115/07/22 13.其他應敘明事項: (1)除息交易日:115/07/02，本日及以後買進無權參加配息。 (2)嗣後如因本公司流通在外股數變動致配息率發生變動時，授權董事長全權處理並 公告之。",
-      "clause": "第14款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
         "marketKind": "sii",
         "companyId": "9939"
       }
-    },
-    {
-      "id": "mops-history-9939-1150304-2",
-      "date": "2026-03-06",
-      "announced_date": "2026-03-06",
-      "fact_date": null,
-      "announced_time": "17:02:57",
-      "title": "公告本公司董事會通過114年度合併財務報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150304",
-        "marketKind": "sii",
-        "companyId": "9939"
-      }
     }
   ],
   "references": [
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-06T00:16:23.857Z",
-      "row_count": 375,
+      "fetched_at": "2026-08-09T00:16:19.242Z",
+      "row_count": 6,
       "available": true
     },
     {
       "source_id": "mops_history_api",
       "cache_status": "updated",
-      "fetched_at": "2026-08-06T00:18:55.327Z",
+      "fetched_at": "2026-08-09T00:18:44.580Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
