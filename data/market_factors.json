@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-09T00:16:21.651Z",
+  "generated_at": "2026-08-09T12:30:51.866Z",
   "note": "全市場背景因子。估值百分位依上市櫃官方產業全樣本計算；官方產業樣本不足 10 家時才回退為全市場模板樣本，兩者皆不使用觀察清單。資料僅供研究快照與回測，尚未納入核心分數。",
   "sources": [
     "twse_valuation",
@@ -15,7 +15,7 @@
     "research_company_count": 12,
     "valuation_count": 1965,
     "margin_count": 1855,
-    "institutional_count": 1851
+    "institutional_count": 1842
   },
   "companies": {
     "TWSE:1231": {
@@ -46,11 +46,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-08-06",
-        "foreign_net_shares": -170940,
+        "as_of": "2026-08-07",
+        "foreign_net_shares": 11000,
         "trust_net_shares": 0,
-        "dealer_net_shares": -8000,
-        "total_net_shares": -178940
+        "dealer_net_shares": 5000,
+        "total_net_shares": 16000
       },
       "source_ids": [
         "twse_valuation",
@@ -87,11 +87,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-08-06",
-        "foreign_net_shares": -127094,
+        "as_of": "2026-08-07",
+        "foreign_net_shares": 75180,
         "trust_net_shares": 0,
-        "dealer_net_shares": 5000,
-        "total_net_shares": -122094
+        "dealer_net_shares": -3000,
+        "total_net_shares": 72180
       },
       "source_ids": [
         "twse_valuation",
@@ -128,11 +128,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-08-06",
-        "foreign_net_shares": 14462884,
-        "trust_net_shares": -6458657,
-        "dealer_net_shares": 1375932,
-        "total_net_shares": 9380159
+        "as_of": "2026-08-07",
+        "foreign_net_shares": -23200666,
+        "trust_net_shares": -6691000,
+        "dealer_net_shares": -2838812,
+        "total_net_shares": -32730478
       },
       "source_ids": [
         "twse_valuation",
@@ -169,11 +169,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-08-06",
-        "foreign_net_shares": 73326,
-        "trust_net_shares": 482140,
-        "dealer_net_shares": 39082,
-        "total_net_shares": 594548
+        "as_of": "2026-08-07",
+        "foreign_net_shares": -1697088,
+        "trust_net_shares": 55554,
+        "dealer_net_shares": -158250,
+        "total_net_shares": -1799784
       },
       "source_ids": [
         "twse_valuation",
@@ -210,11 +210,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-08-06",
-        "foreign_net_shares": -4011452,
-        "trust_net_shares": -82362,
-        "dealer_net_shares": -583413,
-        "total_net_shares": -4677227
+        "as_of": "2026-08-07",
+        "foreign_net_shares": 641660,
+        "trust_net_shares": 61000,
+        "dealer_net_shares": 1242950,
+        "total_net_shares": 1945610
       },
       "source_ids": [
         "twse_valuation",
@@ -251,11 +251,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-08-06",
-        "foreign_net_shares": -5344096,
-        "trust_net_shares": -1821000,
-        "dealer_net_shares": -2837,
-        "total_net_shares": -7167933
+        "as_of": "2026-08-07",
+        "foreign_net_shares": 2635069,
+        "trust_net_shares": 351000,
+        "dealer_net_shares": -25364,
+        "total_net_shares": 2960705
       },
       "source_ids": [
         "twse_valuation",
@@ -292,11 +292,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-08-06",
-        "foreign_net_shares": -16130823,
-        "trust_net_shares": 7520000,
-        "dealer_net_shares": 927483,
-        "total_net_shares": -7683340
+        "as_of": "2026-08-07",
+        "foreign_net_shares": -9246612,
+        "trust_net_shares": 2849000,
+        "dealer_net_shares": 576133,
+        "total_net_shares": -5821479
       },
       "source_ids": [
         "twse_valuation",
@@ -362,11 +362,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-08-06",
-        "foreign_net_shares": 37748203,
-        "trust_net_shares": -36000,
-        "dealer_net_shares": 2937250,
-        "total_net_shares": 40649453
+        "as_of": "2026-08-07",
+        "foreign_net_shares": -51201712,
+        "trust_net_shares": 0,
+        "dealer_net_shares": -2717673,
+        "total_net_shares": -53919385
       },
       "source_ids": [
         "twse_valuation",
@@ -485,11 +485,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-08-06",
-        "foreign_net_shares": 3241161,
-        "trust_net_shares": 0,
-        "dealer_net_shares": 30534,
-        "total_net_shares": 3271695
+        "as_of": "2026-08-07",
+        "foreign_net_shares": 1292040,
+        "trust_net_shares": -1000,
+        "dealer_net_shares": 27177,
+        "total_net_shares": 1318217
       },
       "source_ids": [
         "twse_valuation",

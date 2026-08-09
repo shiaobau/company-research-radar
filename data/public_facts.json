@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-09T00:16:21.651Z",
+  "generated_at": "2026-08-09T12:30:51.866Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -204,7 +204,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-08-09T00:16:21.651Z",
+      "generated_at": "2026-08-09T12:30:51.866Z",
       "facts": [
         {
           "id": "official_classification",
@@ -250,7 +250,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-08-06：外資淨買賣 -170,940 股；投信淨買賣 0 股；三大法人合計 -178,940 股；融資餘額 266 張；融券餘額 0 張。",
+          "value": "2026-08-07：外資淨買賣 11,000 股；投信淨買賣 0 股；三大法人合計 16,000 股；融資餘額 266 張；融券餘額 0 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -288,7 +288,7 @@
     "twse-1707": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-08-09T00:16:21.651Z",
+      "generated_at": "2026-08-09T12:30:51.866Z",
       "facts": [
         {
           "id": "official_classification",
@@ -334,7 +334,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-08-06：外資淨買賣 -127,094 股；投信淨買賣 0 股；三大法人合計 -122,094 股；融資餘額 329 張；融券餘額 29 張。",
+          "value": "2026-08-07：外資淨買賣 75,180 股；投信淨買賣 0 股；三大法人合計 72,180 股；融資餘額 329 張；融券餘額 29 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -364,7 +364,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-08-09T00:16:21.651Z",
+      "generated_at": "2026-08-09T12:30:51.866Z",
       "facts": [
         {
           "id": "official_classification",
@@ -410,7 +410,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-08-06：外資淨買賣 14,462,884 股；投信淨買賣 -6,458,657 股；三大法人合計 9,380,159 股；融資餘額 160,961 張；融券餘額 1,248 張。",
+          "value": "2026-08-07：外資淨買賣 -23,200,666 股；投信淨買賣 -6,691,000 股；三大法人合計 -32,730,478 股；融資餘額 160,961 張；融券餘額 1,248 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -440,7 +440,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-08-09T00:16:21.651Z",
+      "generated_at": "2026-08-09T12:30:51.866Z",
       "facts": [
         {
           "id": "official_classification",
@@ -486,7 +486,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-08-06：外資淨買賣 73,326 股；投信淨買賣 482,140 股；三大法人合計 594,548 股；融資餘額 8,379 張；融券餘額 28 張。",
+          "value": "2026-08-07：外資淨買賣 -1,697,088 股；投信淨買賣 55,554 股；三大法人合計 -1,799,784 股；融資餘額 8,379 張；融券餘額 28 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -524,7 +524,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-08-09T00:16:21.651Z",
+      "generated_at": "2026-08-09T12:30:51.866Z",
       "facts": [
         {
           "id": "official_classification",
@@ -570,7 +570,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-08-06：外資淨買賣 -4,011,452 股；投信淨買賣 -82,362 股；三大法人合計 -4,677,227 股；融資餘額 29,657 張；融券餘額 33 張。",
+          "value": "2026-08-07：外資淨買賣 641,660 股；投信淨買賣 61,000 股；三大法人合計 1,945,610 股；融資餘額 29,657 張；融券餘額 33 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -600,7 +600,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-08-09T00:16:21.651Z",
+      "generated_at": "2026-08-09T12:30:51.866Z",
       "facts": [
         {
           "id": "official_classification",
@@ -646,7 +646,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-08-06：外資淨買賣 -5,344,096 股；投信淨買賣 -1,821,000 股；三大法人合計 -7,167,933 股；融資餘額 2,202 張；融券餘額 4 張。",
+          "value": "2026-08-07：外資淨買賣 2,635,069 股；投信淨買賣 351,000 股；三大法人合計 2,960,705 股；融資餘額 2,202 張；融券餘額 4 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -676,7 +676,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-08-09T00:16:21.651Z",
+      "generated_at": "2026-08-09T12:30:51.866Z",
       "facts": [
         {
           "id": "official_classification",
@@ -722,7 +722,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-08-06：外資淨買賣 -16,130,823 股；投信淨買賣 7,520,000 股；三大法人合計 -7,683,340 股；融資餘額 1,256 張；融券餘額 3 張。",
+          "value": "2026-08-07：外資淨買賣 -9,246,612 股；投信淨買賣 2,849,000 股；三大法人合計 -5,821,479 股；融資餘額 1,256 張；融券餘額 3 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -752,7 +752,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-08-09T00:16:21.651Z",
+      "generated_at": "2026-08-09T12:30:51.866Z",
       "facts": [
         {
           "id": "official_classification",
@@ -827,7 +827,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-08-09T00:16:21.651Z",
+      "generated_at": "2026-08-09T12:30:51.866Z",
       "facts": [
         {
           "id": "official_classification",
@@ -873,7 +873,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-08-06：外資淨買賣 37,748,203 股；投信淨買賣 -36,000 股；三大法人合計 40,649,453 股；融資餘額 332,234 張；融券餘額 4,981 張。",
+          "value": "2026-08-07：外資淨買賣 -51,201,712 股；投信淨買賣 0 股；三大法人合計 -53,919,385 股；融資餘額 332,234 張；融券餘額 4,981 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -903,7 +903,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-08-09T00:16:21.651Z",
+      "generated_at": "2026-08-09T12:30:51.866Z",
       "facts": [
         {
           "id": "official_classification",
@@ -956,14 +956,6 @@
           ]
         },
         {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-08-07：元大期貨公告115年7月份營運概況。",
-          "source_ids": [
-            "tpex_material_events"
-          ]
-        },
-        {
           "id": "major_shareholders",
           "label": "大股東資料",
           "value": "持股逾 10% 大股東：元大金融控股股份有限公司。",
@@ -984,7 +976,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 1 則；申報違規 0 筆。",
+          "value": "官方事件 0 則；申報違規 0 筆。",
           "source_ids": [
             "tpex_material_events",
             "tpex_disclosure_violations"
@@ -995,7 +987,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-08-09T00:16:21.651Z",
+      "generated_at": "2026-08-09T12:30:51.866Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1079,7 +1071,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-08-09T00:16:21.651Z",
+      "generated_at": "2026-08-09T12:30:51.866Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1125,7 +1117,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-08-06：外資淨買賣 3,241,161 股；投信淨買賣 0 股；三大法人合計 3,271,695 股；融資餘額 1,121 張；融券餘額 3 張。",
+          "value": "2026-08-07：外資淨買賣 1,292,040 股；投信淨買賣 -1,000 股；三大法人合計 1,318,217 股；融資餘額 1,121 張；融券餘額 3 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
