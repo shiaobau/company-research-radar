@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1",
   "ticker": "2330",
-  "fetched_at": "2026-08-09T00:18:00.537Z",
+  "fetched_at": "2026-08-10T12:33:08.760Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2330-1150810-1",
+      "date": "2026-08-10",
+      "announced_date": "2026-08-10",
+      "fact_date": "2026-08-10",
+      "announced_time": "13:51:09",
+      "title": "台積公司2026年7月營收報告",
+      "description": "1.事實發生日:115/08/10 2.公司名稱:台灣積體電路製造股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:不適用 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 台積公司今（10）日公佈2026年7月營收報告。2026年7月合併營收約為 新台幣4,675億8,000萬元，較上月增加了5.6%，較去年同期增加了44.7%。 累計2026年1至7月營收約為新台幣2兆8,720億6,400萬元，較去年同期增加 了37.0%。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150810",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
+    },
     {
       "id": "mops-history-2330-1150722-1",
       "date": "2026-07-22",
@@ -80,11 +101,11 @@
       "id": "mops-history-2330-1150708-1",
       "date": "2026-07-08",
       "announced_date": "2026-07-08",
-      "fact_date": "2026-07-08",
+      "fact_date": null,
       "announced_time": "19:34:35",
       "title": "本公司代子公司 Emerging Fund, L.P.公告處分有價證券",
-      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: Empower Semiconductor (\"Empower\") 之特別股；無到期日、具轉換權。 2.事實發生日:115/7/8~115/7/8 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:不適用 民國115年07月08日 5.交易數量、每單位價格及交易總金額: (1)交易數量：867,573股； (2)每單位價格：每股US$25.06元； (3)交易總金額：US$22佰萬元。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: Analog Devices Inc. (\"ADI\")；與公司之關係：無。 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 保留盈餘影響數：US$17佰萬元。(不影響損益) 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依ADI與Empower間之合併契約條件辦理。 12.本次交易之決定方式、價格決定之參考依據及決策單位: 交易決定方式：由Emerging Fund之General Partner依特別股投資合約決定。 價格決定之參考依據及決策單位：經Empower內部決議。 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 無。 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 0.11%；0.13%；NT$325,002佰萬元。 16.經紀人及經紀費用: 不適用 17.取得或處分之具體目的或用途: 因ADI併購Empower。 18.本次交易表示異議董事之意見: 不適用 19.本次交易為關係人交易:否 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:否 22.會計師事務所名稱: 立勳聯合會計師事務所 23.會計師姓名: 甘逸偉 24.會計師開業證書字號: 金管會證字第5223號 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 不適用 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無。",
-      "clause": "第20款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
       "detail_parameters": {
         "serialNumber": "1",
         "enterDate": "1150519",
-        "marketKind": "sii",
-        "companyId": "2330"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150518-3",
-      "date": "2026-05-18",
-      "announced_date": "2026-05-18",
-      "fact_date": null,
-      "announced_time": "19:12:13",
-      "title": "本公司公告處分世界先進積體電路股份有限公司股票 (補充115/05/15公告)",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "enterDate": "1150518",
         "marketKind": "sii",
         "companyId": "2330"
       }

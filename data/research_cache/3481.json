@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-10T00:16:35.488Z",
+  "collected_at": "2026-08-10T12:32:34.145Z",
   "company": {
     "id": "twse-3481",
     "ticker": "3481",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-3481-1150810-1",
+      "date": "2026-08-10",
+      "announced_date": "2026-08-10",
+      "fact_date": "2026-08-10",
+      "announced_time": "17:42:26",
+      "title": "公告修正本公司114年度股東會年報部分內容",
+      "description": "1.事實發生日:115/08/10 2.公司名稱:群創光電股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依臺灣證券交易所指示修正本公司民國114年度股東會年報部分內容 6.更正資訊項目/報表名稱:民國114年度年報 7.更正前金額/內容/頁次: 中文版:第9~10、26、28、85及111頁 英文版:第8、24、26、87及109~110頁 8.更正後金額/內容/頁次: 中文版:第9~10、26、28、85及111頁 英文版:第8、24、26、87及109~110頁 9.因應措施:重新上傳股東會年報至公開資訊觀測站(股東會後修訂本) 10.其他應敘明事項:無",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150810",
+        "marketKind": "sii",
+        "companyId": "3481"
+      }
+    },
     {
       "id": "mops-history-3481-1150806-3",
       "date": "2026-08-06",
@@ -77,11 +98,11 @@
       "id": "mops-history-3481-1150709-1",
       "date": "2026-07-09",
       "announced_date": "2026-07-09",
-      "fact_date": "2026-07-09",
+      "fact_date": null,
       "announced_time": "20:51:03",
       "title": "公告本公司訂於115年7月10日發放現金股利，如因颱風影 響停止上班，現金股利發放將順延下一個營業日",
-      "description": "1.董事會決議或公司決定日期:115/07/09 2.原現金股利發放日:115/07/10 3.變更後現金股利發放日:115/07/13 4.變更原因:本公司現金股利訂於115年7月10日發放，如因受颱風停班影響， 致金融機構作業日程需順延，現金股利發放日將順延至下一營業日發放 5.其他應敘明事項:無",
-      "clause": "第14款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
         "marketKind": "sii",
         "companyId": "3481"
       }
-    },
-    {
-      "id": "mops-history-3481-1150310-6",
-      "date": "2026-03-10",
-      "announced_date": "2026-03-10",
-      "fact_date": null,
-      "announced_time": "15:25:28",
-      "title": "公告本公司董事會決議發行限制員工權利新股案",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "6",
-        "enterDate": "1150310",
-        "marketKind": "sii",
-        "companyId": "3481"
-      }
     }
   ],
   "references": [
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-10T00:15:25.770Z",
+      "fetched_at": "2026-08-10T12:31:29.831Z",
       "row_count": 3,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-08-09T00:18:27.119Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-08-10T12:33:39.092Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
