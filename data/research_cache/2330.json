@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-10T12:32:34.145Z",
+  "collected_at": "2026-08-11T00:16:52.802Z",
   "company": {
     "id": "twse-2330",
     "ticker": "2330",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "b2e47d237913123783ff",
+      "date": "2026-08-10",
+      "announced_date": "2026-08-10",
+      "fact_date": "2026-08-10",
+      "announced_time": "135109",
+      "title": "台積公司2026年7月營收報告",
+      "description": "1.事實發生日:115/08/10 2.公司名稱:台灣積體電路製造股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:不適用 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 台積公司今（10）日公佈2026年7月營收報告。2026年7月合併營收約為 新台幣4,675億8,000萬元，較上月增加了5.6%，較去年同期增加了44.7%。 累計2026年1至7月營收約為新台幣2兆8,720億6,400萬元，較去年同期增加 了37.0%。",
+      "clause": "第51款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2330-1150810-1",
       "date": "2026-08-10",
@@ -492,27 +507,6 @@
         "marketKind": "sii",
         "companyId": "2330"
       }
-    },
-    {
-      "id": "mops-history-2330-1150519-1",
-      "date": "2026-05-19",
-      "announced_date": "2026-05-19",
-      "fact_date": null,
-      "announced_time": "16:29:46",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150519",
-        "marketKind": "sii",
-        "companyId": "2330"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-10T12:31:29.831Z",
-      "row_count": 3,
+      "fetched_at": "2026-08-11T00:15:48.383Z",
+      "row_count": 291,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-08-10T12:33:08.760Z",
       "row_count": 24,
       "detail_count": 4,

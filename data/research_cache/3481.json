@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-10T12:32:34.145Z",
+  "collected_at": "2026-08-11T00:16:52.802Z",
   "company": {
     "id": "twse-3481",
     "ticker": "3481",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "ebfbc711ffe34a45b459",
+      "date": "2026-08-10",
+      "announced_date": "2026-08-10",
+      "fact_date": "2026-08-10",
+      "announced_time": "174226",
+      "title": "公告修正本公司114年度股東會年報部分內容",
+      "description": "1.事實發生日:115/08/10 2.公司名稱:群創光電股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依臺灣證券交易所指示修正本公司民國114年度股東會年報部分內容 6.更正資訊項目/報表名稱:民國114年度年報 7.更正前金額/內容/頁次: 中文版:第9~10、26、28、85及111頁 英文版:第8、24、26、87及109~110頁 8.更正後金額/內容/頁次: 中文版:第9~10、26、28、85及111頁 英文版:第8、24、26、87及109~110頁 9.因應措施:重新上傳股東會年報至公開資訊觀測站(股東會後修訂本) 10.其他應敘明事項:無",
+      "clause": "第51款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-3481-1150810-1",
       "date": "2026-08-10",
@@ -492,27 +507,6 @@
         "marketKind": "sii",
         "companyId": "3481"
       }
-    },
-    {
-      "id": "mops-history-3481-1150310-5",
-      "date": "2026-03-10",
-      "announced_date": "2026-03-10",
-      "fact_date": null,
-      "announced_time": "15:26:31",
-      "title": "本公司董事會決議召開民國115年股東常會公告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "5",
-        "enterDate": "1150310",
-        "marketKind": "sii",
-        "companyId": "3481"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-10T12:31:29.831Z",
-      "row_count": 3,
+      "fetched_at": "2026-08-11T00:15:48.383Z",
+      "row_count": 291,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-08-10T12:33:39.092Z",
       "row_count": 24,
       "detail_count": 4,

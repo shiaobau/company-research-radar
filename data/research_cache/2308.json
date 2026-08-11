@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-10T12:32:34.145Z",
+  "collected_at": "2026-08-11T00:16:52.802Z",
   "company": {
     "id": "twse-2308",
     "ticker": "2308",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "648a017fa98bde6a1ec1",
+      "date": "2026-08-10",
+      "announced_date": "2026-08-10",
+      "fact_date": "2026-08-10",
+      "announced_time": "153144",
+      "title": "發布本公司115年07月份業績資料",
+      "description": "1.事實發生日:115/08/10 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:發布本公司115年07月份業績資料 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 本公司115年07月份合併營業額為新台幣670.73億元，較去年同期合併營業額 新台幣453.97億元成長47.7%，較上月份合併營業額新台幣656.03億元成長2.2%； 115年1~7月份累積合併營業額為新台幣4,096.82億元，較去年同期累積合併營業 額新台幣2,883.52億元成長42.1%。",
+      "clause": "第51款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2308-1150810-1",
       "date": "2026-08-10",
@@ -492,27 +507,6 @@
         "marketKind": "sii",
         "companyId": "2308"
       }
-    },
-    {
-      "id": "mops-history-2308-1150528-2",
-      "date": "2026-05-28",
-      "announced_date": "2026-05-28",
-      "fact_date": null,
-      "announced_time": "16:04:17",
-      "title": "本公司受邀參加法人說明會之相關訊息",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150528",
-        "marketKind": "sii",
-        "companyId": "2308"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-10T12:31:29.831Z",
-      "row_count": 3,
+      "fetched_at": "2026-08-11T00:15:48.383Z",
+      "row_count": 291,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-08-10T12:33:01.071Z",
       "row_count": 24,
       "detail_count": 4,
