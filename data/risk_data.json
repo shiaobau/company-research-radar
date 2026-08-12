@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-11T12:31:26.549Z",
+  "generated_at": "2026-08-12T00:15:38.591Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-11T12:31:26.549Z"
+      "refreshed_at": "2026-08-12T00:15:38.591Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-11T12:31:26.549Z"
+      "refreshed_at": "2026-08-12T00:15:38.591Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -87,7 +87,7 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 1,
       "negative_event_count": 0,
       "positive_event_count": 0,
       "review_event_count": 0,
@@ -99,7 +99,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-11T12:31:26.549Z"
+      "refreshed_at": "2026-08-12T00:15:38.591Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -110,52 +110,6 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 1,
-      "negative_event_count": 0,
-      "positive_event_count": 0,
-      "review_event_count": 0,
-      "negative_event_points": 0,
-      "negative_event_categories": {},
-      "disclosure_violation_count": 0,
-      "score": 92,
-      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
-      "violations": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-08-11T12:31:26.549Z"
-    },
-    "twse-2330": {
-      "ticker": "2330",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_material_events",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "event_count": 1,
-      "negative_event_count": 0,
-      "positive_event_count": 0,
-      "review_event_count": 0,
-      "negative_event_points": 0,
-      "negative_event_categories": {},
-      "disclosure_violation_count": 0,
-      "score": 92,
-      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
-      "violations": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-08-11T12:31:26.549Z"
-    },
-    "twse-2885": {
-      "ticker": "2885",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_material_events",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
       "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
@@ -168,7 +122,71 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-11T12:31:26.549Z"
+      "refreshed_at": "2026-08-12T00:15:38.591Z"
+    },
+    "twse-2330": {
+      "ticker": "2330",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "event_count": 7,
+      "negative_event_count": 0,
+      "positive_event_count": 4,
+      "review_event_count": 1,
+      "negative_event_points": 0,
+      "negative_event_categories": {},
+      "disclosure_violation_count": 0,
+      "score": 91,
+      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
+      "events": [
+        {
+          "date": "2026-08-11",
+          "announce_date": "2026-08-11",
+          "time": "190129",
+          "title": "本公司訂定民國115年第二季之現金股利除息交易日",
+          "clause": "第14款",
+          "description": "1.董事會、股東會決議或公司決定日期:115/08/11 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.普通股發放股利種類及金額:現金股利 NT$181,526,590,469元(每股 NT$7.0 元) 4.除權（息）交易日:115/12/10 5.最後過戶日:115/12/11 6.停止過戶起始日期:115/12/12 7.停止過戶截止日期:115/12/16 8.除權（息）基準日:115/12/16 9.債券最後申請轉換日期:不適用 10.債券停止轉換起始日期:不適用 11.債券停止轉換截止日期:不適用 12.普通股現金股利發放日期:116/01/07 13.現金股利之一部或全部是否以外幣發放(請填入「是」或「否」):是 14.外幣現金股利發放幣別:美元 15.外幣現金股利發放對象: 依金管證交字第1150381112號函，為依「華僑及外國人投資證券 管理辦法」規定投資國內證券之境外華僑及外國人 16.外幣現金股利匯率決定方式: 以股利發放日前一週週五上午11點台北外匯經紀公司之美元 兌新台幣成交匯率為換算匯率 (遇假日提前至前一營業日) 17.其他應敘明事項: (1) 本公司在美國紐約證券交易所上市之美國存託憑證之除息交易日及配息基準 日皆為2026年12月10日。 (2) 境外華僑及外國人股東請透過保管機構向本公司股務代理機構中國信託登 記欲以美元或新台幣收受股利。未於保管機構所訂期限前完成幣別選擇、或 同一戶號股東對幣別選擇有不同意思表示者，其股利幣別選擇將視為美元。 (3) 將依金管證交字第1150381112號函，由保管機構代收美元現金股利後匯款 至華僑及外國人股東指定之境外或國內外匯存款帳戶。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "routine",
+          "risk_category_label": "例行或權利事件",
+          "risk_points": 0,
+          "matched_patterns": [
+            "除息"
+          ]
+        }
+      ],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-08-12T00:15:38.591Z"
+    },
+    "twse-2885": {
+      "ticker": "2885",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "event_count": 1,
+      "negative_event_count": 0,
+      "positive_event_count": 0,
+      "review_event_count": 0,
+      "negative_event_points": 0,
+      "negative_event_categories": {},
+      "disclosure_violation_count": 0,
+      "score": 92,
+      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
+      "events": [],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-08-12T00:15:38.591Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -191,7 +209,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-11T12:31:26.549Z"
+      "refreshed_at": "2026-08-12T00:15:38.591Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -214,7 +232,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-11T12:31:26.549Z"
+      "refreshed_at": "2026-08-12T00:15:38.591Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -225,37 +243,19 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 1,
+      "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
-      "review_event_count": 1,
+      "review_event_count": 0,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 91,
+      "score": 92,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [
-        {
-          "date": "2026-08-10",
-          "announce_date": "2026-08-10",
-          "time": "174226",
-          "title": "公告修正本公司114年度股東會年報部分內容",
-          "clause": "第51款",
-          "description": "1.事實發生日:115/08/10 2.公司名稱:群創光電股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依臺灣證券交易所指示修正本公司民國114年度股東會年報部分內容 6.更正資訊項目/報表名稱:民國114年度年報 7.更正前金額/內容/頁次: 中文版:第9~10、26、28、85及111頁 英文版:第8、24、26、87及109~110頁 8.更正後金額/內容/頁次: 中文版:第9~10、26、28、85及111頁 英文版:第8、24、26、87及109~110頁 9.因應措施:重新上傳股東會年報至公開資訊觀測站(股東會後修訂本) 10.其他應敘明事項:無",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "routine",
-          "risk_category_label": "例行或權利事件",
-          "risk_points": 0,
-          "matched_patterns": [
-            "股東會"
-          ]
-        }
-      ],
+      "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-11T12:31:26.549Z"
+      "refreshed_at": "2026-08-12T00:15:38.591Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -278,7 +278,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-11T12:31:26.549Z"
+      "refreshed_at": "2026-08-12T00:15:38.591Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -301,7 +301,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-11T12:31:26.549Z"
+      "refreshed_at": "2026-08-12T00:15:38.591Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -324,7 +324,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-11T12:31:26.549Z"
+      "refreshed_at": "2026-08-12T00:15:38.591Z"
     }
   }
 }
