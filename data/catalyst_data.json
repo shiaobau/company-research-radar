@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-12T00:15:38.591Z",
+  "generated_at": "2026-08-12T12:31:12.724Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T00:15:38.591Z"
+      "refreshed_at": "2026-08-12T12:31:12.724Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,7 +50,7 @@
       "rationale": "財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T00:15:38.591Z"
+      "refreshed_at": "2026-08-12T12:31:12.724Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -83,7 +83,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T00:15:38.591Z"
+      "refreshed_at": "2026-08-12T12:31:12.724Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -100,7 +100,7 @@
       "rationale": "月營收分數 79；財務品質分數 69。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T00:15:38.591Z"
+      "refreshed_at": "2026-08-12T12:31:12.724Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -225,7 +225,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T00:15:38.591Z"
+      "refreshed_at": "2026-08-12T12:31:12.724Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -258,7 +258,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T00:15:38.591Z"
+      "refreshed_at": "2026-08-12T12:31:12.724Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -275,7 +275,7 @@
       "rationale": "財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T00:15:38.591Z"
+      "refreshed_at": "2026-08-12T12:31:12.724Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -284,15 +284,46 @@
       "source_ids": [
         "tpex_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
-      "positive_event_count": 0,
+      "evidence_level": "high",
+      "event_count": 2,
+      "positive_event_count": 1,
       "negative_event_count": 0,
-      "score": 59,
-      "rationale": "月營收分數 76。",
-      "events": [],
+      "score": 70,
+      "rationale": "月營收分數 76；正向重大訊息 1 則。",
+      "events": [
+        {
+          "date": "2026-08-11",
+          "announce_date": "2026-08-11",
+          "time": "172346",
+          "title": "公告本公司董事會通過115年度第二季合併財務報告",
+          "clause": "第31款",
+          "description": "1.提報董事會或經董事會決議日期:115/08/11 2.審計委員會通過日期:115/08/11 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/06/30 4.1月1日累計至本期止營業收入(仟元):3,947 5.1月1日累計至本期止營業毛利(毛損) (仟元):3,947 6.1月1日累計至本期止營業利益(損失) (仟元):(13,389) 7.1月1日累計至本期止稅前淨利(淨損) (仟元):(5,900) 8.1月1日累計至本期止本期淨利(淨損) (仟元):(6,190) 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):(6,190) 10.1月1日累計至本期止基本每股盈餘(損失) (元):(0.09) 11.期末總資產(仟元):603,488 12.期末總負債(仟元):62,646 13.期末歸屬於母公司業主之權益(仟元):540,842 14.其他應敘明事項:無",
+          "source_id": "tpex_material_events",
+          "sentiment": "positive",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        },
+        {
+          "date": "2026-08-11",
+          "announce_date": "2026-08-11",
+          "time": "172423",
+          "title": "公告本公司會計主管異動",
+          "clause": "第8款",
+          "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管 (如:執行長、營運長、行銷長及策略長等)、財務主管、會計 主管、公司治理主管、資訊安全長、研發主管、內部稽核主管或訴訟及非 訟代理人）:會計主管 2.發生變動日期:115/08/11 3.舊任者姓名、級職及簡歷:羅晉仁/本公司總經理兼會計主管 4.新任者姓名、級職及簡歷:陳映彤/本公司財會處協理兼會計主管 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、 「退休」、「死亡」、「新任」或「解任」）:職務調整 6.異動原因:經本公司115/08/11董事會決議通過任命。 7.生效日期:115/08/11 8.其他應敘明事項:無。",
+          "source_id": "tpex_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T00:15:38.591Z"
+      "refreshed_at": "2026-08-12T12:31:12.724Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -309,7 +340,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T00:15:38.591Z"
+      "refreshed_at": "2026-08-12T12:31:12.724Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -326,7 +357,7 @@
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T00:15:38.591Z"
+      "refreshed_at": "2026-08-12T12:31:12.724Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -343,7 +374,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T00:15:38.591Z"
+      "refreshed_at": "2026-08-12T12:31:12.724Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -360,7 +391,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T00:15:38.591Z"
+      "refreshed_at": "2026-08-12T12:31:12.724Z"
     }
   }
 }
