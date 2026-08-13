@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-12T12:31:12.724Z",
+  "generated_at": "2026-08-13T00:16:20.589Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T12:31:12.724Z"
+      "refreshed_at": "2026-08-13T00:16:20.589Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,43 +50,10 @@
       "rationale": "財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T12:31:12.724Z"
+      "refreshed_at": "2026-08-13T00:16:20.589Z"
     },
     "twse-2303": {
       "ticker": "2303",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_material_events"
-      ],
-      "evidence_level": "high",
-      "event_count": 1,
-      "positive_event_count": 0,
-      "negative_event_count": 0,
-      "score": 70,
-      "rationale": "月營收分數 71；財務品質分數 74。",
-      "events": [
-        {
-          "date": "2026-08-11",
-          "announce_date": "2026-08-11",
-          "time": "152741",
-          "title": "公告本公司辦理限制員工權利新股註銷完成實收 資本額變更登記事宜",
-          "clause": "第36款",
-          "description": "1.主管機關核准減資日期:115/08/10 2.辦理資本變更登記完成日期:115/08/10 3.對財務報告之影響（含實收資本額與流通在外股數之差異與對每股淨值之影響）: (1)收回已發行之限制員工權利新股註銷減資前：本公司實收資本額為新台幣 125,769,848,700元，在外流通股數為12,546,433,870股，每股淨值為新台幣35.38元。 (2)收回已發行之限制員工權利新股註銷減資後：本公司實收資本額為新台幣 125,700,938,990元，在外流通股數為12,539,542,899股，每股淨值為新台幣35.40元。 (註:每股淨值係以115年第2季經會計師核閱之合併財務報表計算。) 4.預計換股作業計畫:不適用 5.預計減資新股上市後之上市普通股股數:不適用 6.預計減資新股上市後之上市普通股股數占已發行普通股比率 （減資後上市普通股股數/減資後已發行普通股股數）:不適用 7.前二項預計減資後上巿普通股股數未達6000萬股且未達25%者，請說明股權流通性偏低 之因應措施:不適用 8.其他應敘明事項:無。",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T12:31:12.724Z"
-    },
-    "twse-2308": {
-      "ticker": "2308",
       "market": "TWSE",
       "status": "ok",
       "source_ids": [
@@ -97,138 +64,13 @@
       "positive_event_count": 0,
       "negative_event_count": 0,
       "score": 67,
-      "rationale": "月營收分數 79；財務品質分數 69。",
+      "rationale": "月營收分數 71；財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T12:31:12.724Z"
+      "refreshed_at": "2026-08-13T00:16:20.589Z"
     },
-    "twse-2330": {
-      "ticker": "2330",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_material_events"
-      ],
-      "evidence_level": "high",
-      "event_count": 7,
-      "positive_event_count": 4,
-      "negative_event_count": 0,
-      "score": 90,
-      "rationale": "月營收分數 79；財務品質分數 78；正向重大訊息 4 則。",
-      "events": [
-        {
-          "date": "2026-08-11",
-          "announce_date": "2026-08-11",
-          "time": "180301",
-          "title": "台積公司董事會決議",
-          "clause": "第51款",
-          "description": "1.事實發生日:115/08/11 2.公司名稱:台灣積體電路製造股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:不適用 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 台積公司今（11）日召開董事會，會中重要決議如下： 一、核准2026年第二季營業報告書及財務報表，其中第二季合併營收約新台幣1兆 2,703億8千萬元，稅後純益約新台幣7,065億6千萬元，每股盈餘為新台幣 27.25元。 二、核准配發2026年第二季之每股現金股利7.0元，其普通股配息基準日訂定為2026 年12月16日，除息交易日則為2026年12月10日。依公司法第一六五條規定，在公 司決定分派股息之基準日前五日內，亦即自2026年12月12日起至12月16日止，停 止普通股股票過戶，並於2027年1月7日發放。此外，因應台灣金管會法規修訂， 台積公司將自本次股利分派開始提供依「華僑及外國人投資證券管理辦法」投資 之外資股東以美元收受現金股利之選擇權利。台積公司在美國紐約證券交易所上 市之美國存託憑證之除息交易日及配息基準日皆為2026年12月10日。 三、為了因應基於市場需求預測及技術開發藍圖所制定的長期產能規劃，核准資本 預算約美金294億4,250萬元，內容主要包括：1. 建置及升級先進製程產能； 2. 建置及升級先進封裝、成熟及/或特殊製程產能；3. 廠房興建及廠務設施 工程。 四、核准與索尼半導體解決方案公司（Sony Semiconductor Solutions Corporation）合資成立新公司，以研發與製造下一世代影像感測器，以及於不 超過日幣2,820億元之額度內認購該合資公司之股份。",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        },
-        {
-          "date": "2026-08-11",
-          "announce_date": "2026-08-11",
-          "time": "184658",
-          "title": "本公司民國115年度第二季合併財務報告業經 董事會決議通過",
-          "clause": "第31款",
-          "description": "1.提報董事會或經董事會決議日期:115/08/11 2.審計委員會通過日期:115/08/10 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/06/30 4.1月1日累計至本期止營業收入(仟元):2,404,483,690 5.1月1日累計至本期止營業毛利(毛損) (仟元):1,611,606,116 6.1月1日累計至本期止營業利益(損失) (仟元):1,425,568,793 7.1月1日累計至本期止稅前淨利(淨損) (仟元):1,550,229,773 8.1月1日累計至本期止本期淨利(淨損) (仟元):1,279,582,227 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):1,279,041,690 10.1月1日累計至本期止基本每股盈餘(損失) (元):49.33 11.期末總資產(仟元):9,375,654,727 12.期末總負債(仟元):2,901,183,746 13.期末歸屬於母公司業主之權益(仟元):6,432,518,334 14.其他應敘明事項:無",
-          "source_id": "twse_material_events",
-          "sentiment": "positive",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        },
-        {
-          "date": "2026-08-11",
-          "announce_date": "2026-08-11",
-          "time": "185334",
-          "title": "本公司董事會決議股利分派",
-          "clause": "第14款",
-          "description": "1. 董事會決議日期：115/08/11 2. 股利所屬年(季)度：115年 第2季 3. 股利所屬期間：115/04/01 至 115/06/30 4. 股東配發內容： (1)盈餘分配之現金股利(元/股)：7.00000000 (2)法定盈餘公積發放之現金(元/股)：0 (3)資本公積發放之現金(元/股)：0 (4)股東配發之現金(股利)總金額(元)：181,526,590,469 (5)盈餘轉增資配股(元/股)：0 (6)法定盈餘公積轉增資配股(元/股)：0 (7)資本公積轉增資配股(元/股)：0 (8)股東配股總股數(股)：0 5. 其他應敘明事項： 無。 6. 普通股每股面額欄位：新台幣10.0000元",
-          "source_id": "twse_material_events",
-          "sentiment": "positive",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        },
-        {
-          "date": "2026-08-11",
-          "announce_date": "2026-08-11",
-          "time": "190129",
-          "title": "本公司訂定民國115年第二季之現金股利除息交易日",
-          "clause": "第14款",
-          "description": "1.董事會、股東會決議或公司決定日期:115/08/11 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.普通股發放股利種類及金額:現金股利 NT$181,526,590,469元(每股 NT$7.0 元) 4.除權（息）交易日:115/12/10 5.最後過戶日:115/12/11 6.停止過戶起始日期:115/12/12 7.停止過戶截止日期:115/12/16 8.除權（息）基準日:115/12/16 9.債券最後申請轉換日期:不適用 10.債券停止轉換起始日期:不適用 11.債券停止轉換截止日期:不適用 12.普通股現金股利發放日期:116/01/07 13.現金股利之一部或全部是否以外幣發放(請填入「是」或「否」):是 14.外幣現金股利發放幣別:美元 15.外幣現金股利發放對象: 依金管證交字第1150381112號函，為依「華僑及外國人投資證券 管理辦法」規定投資國內證券之境外華僑及外國人 16.外幣現金股利匯率決定方式: 以股利發放日前一週週五上午11點台北外匯經紀公司之美元 兌新台幣成交匯率為換算匯率 (遇假日提前至前一營業日) 17.其他應敘明事項: (1) 本公司在美國紐約證券交易所上市之美國存託憑證之除息交易日及配息基準 日皆為2026年12月10日。 (2) 境外華僑及外國人股東請透過保管機構向本公司股務代理機構中國信託登 記欲以美元或新台幣收受股利。未於保管機構所訂期限前完成幣別選擇、或 同一戶號股東對幣別選擇有不同意思表示者，其股利幣別選擇將視為美元。 (3) 將依金管證交字第1150381112號函，由保管機構代收美元現金股利後匯款 至華僑及外國人股東指定之境外或國內外匯存款帳戶。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "routine",
-          "risk_category_label": "例行或權利事件",
-          "risk_points": 0,
-          "matched_patterns": [
-            "除息"
-          ]
-        },
-        {
-          "date": "2026-08-11",
-          "announce_date": "2026-08-11",
-          "time": "193843",
-          "title": "Sony與台積公司同意成立合資公司 支援下一世代影像感測器",
-          "clause": "第51款",
-          "description": "1.事實發生日:115/08/11 2.公司名稱:台灣積體電路製造股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:不適用 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 索尼半導體解決方案公司（Sony）與台積公司今（11）日宣布雙方簽署具法律效 力之最終合作協議，於日本熊本縣合志市成立合資公司Advanced Vision Semiconductor Manufacturing Corporation。此合資公司將採用先進製程技術， 作為量產智慧型手機影像感測器所需之研發及製造的核心樞紐，並預計於2029年 開始量產。 此合資公司將由Sony作為單一控制股東，並計畫以索尼集團（Sony Group）公 司之合併子公司營運。此合資公司之代表董事將由Sony指派。 依據最終協議，Sony計畫透過現金投入及公司分割之資產轉移(註)方式，挹注合 資公司共約4,650億日圓；台積公司則計畫投資現金約2,820億日圓。這些資金的 投入將基於市場需求及其他相關業務條件分階段進行。除了Sony與台積公司所投 入的資金，有關實現此合資公司產能規畫所需要的投資，其考量前提是必須能夠 獲得來自日本政府的支持。 在此策略合作夥伴關係下，Sony將在核心影像感測器技術的研發、產品規劃與 設計中擔任領導角色，而此合資公司計畫利用台積公司的先進製程技術與製造專 業來推動量產所需的生產研發與製造。透過此次合作，雙方將加速推動受客戶需 求驅動的影像感測器產品進入市場，同時促進技術創新與強化製造能力。 此合資公司的設立與交易完成條件皆須取得必要的主管機關核准，並遵循交易 常規。 有關此策略合作夥伴關係的其他事宜，請依Sony與台積公司於今年5月8日發布 之「Sony與台積公司初步達成下一世代影像感測器策略合作協議」新聞稿為準。 註：Sony在日本熊本縣合志市已投資之新建廠房。",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        },
-        {
-          "date": "2026-08-11",
-          "announce_date": "2026-08-11",
-          "time": "195854",
-          "title": "本公司董事會核准機器設備、不動產及資本化租賃資產資本預算案",
-          "clause": "第20款",
-          "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: (1) 先進製程產能機器設備 (2) 先進封裝、成熟及/或特殊製程產能機器設備 (3) 不動產及資本化租賃資產 2.事實發生日:115/8/11~115/8/11 3.董事會通過日期: 民國115年8月11日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: (1) 先進製程產能機器設備 美金16,035佰萬元 (2) 先進封裝、成熟及/或特殊製程產能機器設備 美金4,791佰萬元 (3) 不動產及資本化租賃資產 美金8,616佰萬元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 預期交易相對人及其與公司之關係（實際交易相對人應依本公司訂單為準）： (1) 先進製程產能機器設備： Applied Materials South East Asia Pte. Ltd.; ASML Hong Kong Ltd.; DAIFUKU CO., LTD; KLA Corporation; Lam Research International Sarl; Tokyo Electron Ltd. 等45公司；與公司關係：皆無。 (2) 先進封裝、成熟及/或特殊製程產能機器設備： Applied Materials South East Asia Pte. Ltd.; Murata Machinery Taiwan, LTD.; Teradyne Asia Pte. Ltd. 等77公司；與公司關係：皆無。 (3) 不動產及資本化租賃資產： ABB Ltd.; ABM Building Services, LLC; ACCO Engineered Systems, Inc.; Accurate Technology Enterprise Co.; ACME Control System Corporation; Air Liquide Electronics US, LP; Allis Electric Co., Ltd.; Am-Power Machine International Enterprise Co., Ltd.; Apollo Sheet Metal, Inc.; Arizona/Albuquerque Valve & Fitting Corporation; Atlas Technology Corp.; Austin Commercial, L.P.; B and D Industries, Inc.; Banner Industries of N.E., Inc; BESTCHEN INTERNATIONAL COMPANY LTD.; BMWC Constructors, Inc.; BrandSafway Solutions, LLC; Brycon Corporation; Camfil Taiwan Co., Ltd.; Camfil USA, Inc.; Carollo Engineers, Inc.; Challentech International Corporation; Chang Chun Petrochemical Co., Ltd.; China Steel Structure Co., Ltd.; Chun Yuan Steel Industry Co., Ltd.; Copper State Bolt and Nut Co.; Corbins, LLC; CURRIE & BROWN, INC.; CYH TECHNOLOGY USA LLC; D.P. Electric, Inc.; Da-Cin Construction Co., Ltd.; Daifuku Intralogistics America; Ele-Garden Landscape Construction CO.; EnerMech Mechanical Services, Inc.; Entegris Inc.; ENVIRONETICS DESIGN GROUP, INC.; Evergreen Steel Corporation; EXCEL AIR COND. CO., LTD.; Exyte Taiwan Co., Ltd.; Exyte Trading (Singapore) Pte. Ltd; FARO Technologies, Inc; Fastenal Company; Fisk Electric Company; Foresight Technologies, Inc.; FU ENERGY CORP.; Fu Tsu Construction Co., Ltd.; G2 Technology Corp.; GHA Technologies, Inc.; Great BIM Engineering Information Integration Co., Ltd.; Greenberry Industrial LLC; GREENFILTEC LTD.; Gudeng Equipment Co., Ltd.; H.K.B. Inc dba Southwest Industrial Rigging; Handling Systems, Inc.; Hansen Supply Company; Harder Mechanical Contractors, Inc.; Helix Electric, Inc.; Hitachi Energy Taiwan Co., Ltd.; Hitachi Energy USA Inc.; HMT System USA LLC; Hoffman Instrumentation Supply, Inc.; IES Communications, LLC; Independent Electric Supply, Inc.; Intertek Testing Services Taiwan Ltd.; J.J. PAN AND PARTNERS, ARCHITECTS AND PLANNERS; Jack B. Henderson Construction Company, Inc.; Jack's Mechanical Solutions, Inc.; Jacobs Project Management Company; Jensen Hughes, Inc.; Jing Yuan Technology Co., Ltd.; JT Thorpe Industrial, Inc.; Jung Chung Technology Corp.; Justrite Safety Group; JY Techs Inc.; KAEKO, Inc.; Kao Hsin Engineering Co., Ltd.; Kedge Construction Co., Ltd.; Kinetic Systems, Inc.; KRUSS Scientific Instruments, Inc.; L&K Engineering Co., Ltd.; LayerZero Power Systems, Inc.; Lee Ming Construction Co., Ltd.; LI YEI ENTERPRISE CO., LTD.; Linde Gas & Equipment Inc.; Logical Systems, LLC; LSW Engineers Arizona, Incorporated; Lumax Controls, Inc.; M Consultants, LLC; Mandartech Interiors Inc.; Marketech International Corporation; Masthead International, Inc.; MEITEC, Inc.; METTLER TOLEDO LLC; Milling Machinery, Inc.; MornstAir Inc.; MRAK LLC dba Points North; MSR-FSR, LLC; MTC-MERCURY TRADING CO., LTD.; MUAQUA ENGINEERING INC.; NAGASE (TAIWAN) CO., LTD.; OBR Cooling Towers, Inc; Okland Construction Company, Inc.; Organo USA, Inc.; Particle Measuring Systems, Inc.; Performance Contracting Inc.; Pfeiffer Vacuum Inc.; Port Plastics, Inc.; Prime Controls LP; Propersys Corporation; Pure Plastics LLC; Reiju Construction Co., Ltd.; Revolution Industrial, LLC; Rosendin Electric, Inc.; S Plus C Design Consultant Co., Ltd; Schneider Electric USA, Inc.; SGC USA, INC; SHENG YI TECH & ANALYTICS CO., LTD.; Shihlin Electric & Engineering Corporation; Siemens Energy Limited; Siemens Industry, Inc.; Siemens Limited; Southland Industries; SSOE Inc.; Streimer Sheet Metal Works, Inc.; Sundt Construction, Inc; Taiwan Gleno Enterprise Co., Ltd.; TAIWAN POWER COMPANY; TASA Construction Corporation; TC Boiler, Inc.; Technical Manufacturing Corporation; Tianding construction industry Co., Ltd.; Trident Mechanical Services, LLC; Tung Kang Steel Structure Corp.; UNITED INTEGRATED SERVICES (USA) CORP.; United Integrated Services Co., Ltd.; UNIVERSITY MECHANICAL AND ENGINEERING CONTRACTORS, INC.; VERO VERIA CORPORATION; Versum Materials US, LLC; WAYNE ENTERPRISE, LTD.; Welmade Technology Corporation; Western State Sales DBA Cleanroom World; WITS America Corp.; World Wide Professional Solutions, LLC; Yankey Engineering Co., Ltd.; Yuan Yi Construction Co., Ltd.; Yu-Cheng Kids Enterprise Co. 等192家公司；與公司關係：皆無。 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依訂單條件付款。 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 比價及議價；廠商提供之報價單及市場行情；依本公司董事會核決辦理。 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 供生產、營運用。 24.本次交易表示異議之董事之意見: 無。 25.本次交易為關係人交易:否 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無。",
-          "source_id": "twse_material_events",
-          "sentiment": "positive",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        },
-        {
-          "date": "2026-08-11",
-          "announce_date": "2026-08-11",
-          "time": "200053",
-          "title": "本公司董事會核准於日本投資設立合資公司",
-          "clause": "第20款",
-          "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: Advanced Vision Semiconductor Manufacturing Corporation之普通股及特別股 2.事實發生日:115/8/11~115/8/11 3.董事會通過日期: 民國115年8月11日 4.其他核決日期: 不適用 5.交易數量、每單位價格及交易總金額: 不超過日幣2,820億元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: Advanced Vision Semiconductor Manufacturing Corporation； 採權益法投資之關聯企業 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 分批增資；無 12.本次交易之決定方式、價格決定之參考依據及決策單位: 係經本公司董事會決議，並依本公司與索尼半導體解決方案公司（Sony Semiconductor Solutions Corporation）之股東協議決定 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 不超過日幣2,820億元；37.8%；無 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 44.14%；49.93%；NT$325,002佰萬元。 16.經紀人及經紀費用: 不適用 17.取得或處分之具體目的或用途: 與索尼半導體解決方案公司（Sony Semiconductor Solutions Corporation） 合資設立新公司 18.本次交易表示異議董事之意見: 無 19.本次交易為關係人交易:否 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 不適用 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無",
-          "source_id": "twse_material_events",
-          "sentiment": "positive",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T12:31:12.724Z"
-    },
-    "twse-2885": {
-      "ticker": "2885",
+    "twse-2308": {
+      "ticker": "2308",
       "market": "TWSE",
       "status": "ok",
       "source_ids": [
@@ -238,16 +80,16 @@
       "event_count": 1,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 74,
-      "rationale": "月營收分數 77；財務品質分數 89。",
+      "score": 70,
+      "rationale": "月營收分數 79；財務品質分數 69。",
       "events": [
         {
-          "date": "2026-08-11",
-          "announce_date": "2026-08-11",
-          "time": "165953",
-          "title": "元大金控公告向元大證券取得使用權資產",
+          "date": "2026-08-12",
+          "announce_date": "2026-08-12",
+          "time": "175301",
+          "title": "本公司代子公司台達電子(重慶)有限公司公告決議興建重慶二期廠房相關事宜",
           "clause": "第20款",
-          "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 台北市中山區南京東路三段229號21樓、21樓之1部分面積， 地下三層車位1席及地下四層車位1席 2.事實發生日:115/8/11~115/8/11 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:董事長核決 民國115年08月11日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 租賃面積：40.99坪 每單位價格：每坪每月租金新臺幣4,106元(含稅) 地下三層車位每席每月租金新臺幣8,400元(含稅) 地下四層車位每席每月租金新臺幣7,875元(含稅) 租金總金額：每月新臺幣184,580元(含稅) 使用權資產金額：新臺幣9,681,210元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：元大證券股份有限公司。 其與公司之關係：關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 選定關係人為交易對象之原因：作為自用辦公場所使用 前次移轉之所有人：不適用 前次移轉日期：不適用 前次移轉金額：不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 租賃期間：自租賃標的物完成綠建築會勘之翌日起算5年 付款條件：每月支付一次，每次支付新臺幣184,580元（含稅） 其他重要約定：租期內含5個月裝潢期免付租金 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 經參考不動產估價師聯合事務所出具之不動產估價報告書後由董事長核定 12.專業估價者事務所或公司名稱及其估價金額: 世邦魏理仕不動產估價師聯合事務所，每坪每月租金新臺幣4,106元(含稅) 地下三層坡道平面車位每席每月租金新臺幣 8,400 元(含稅) 地下四層坡道平面車位每席每月租金新臺幣 7,875 元(含稅) 13.專業估價師姓名: 張致嘉 14.專業估價師開業證書字號: (109) 北市估字第000289號 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 作為自用&#36775;公場所使用 24.本次交易表示異議之董事之意見: 不適用 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:是 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 實際租賃面積將依標的物建物所有權第一次登記權狀記載為準， 並配合實際租賃面積調整租金金額。",
+          "description": "1.契約種類:工程合約 2.事實發生日:115/8/12~115/8/12 3.董事會通過日期: 民國115年8月12日 4.其他核決日期: 不適用 5.契約相對人及其與公司之關係: 工程契約相對人待確定後另行公告。 6.契約主要內容（含契約總金額、預計參與投入之金額及契約起迄日期） 、限制條款及其他重要約定事項: 台達電子(重慶)有限公司董事會於民國115年08月12日決議通過興建重慶二期廠房， 暫估工程總價款約人民幣5.46億元(含稅)，其他相關事宜待確定後另行公告。 7.專業估價者事務所或公司名稱及其估價結果: 係租地委建，故不適用 8.不動產估價師姓名: 不適用 9.不動產估價師開業證書字號: 不適用 10.取得之具體目的: 因應未來業務發展所需 11.本次交易表示異議之董事意見: 無 12.本次交易為關係人交易:否 13.監察人承認或審計委員會同意日期: 不適用 14.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 15.是否尚未取得估價報告:否或不適用 16.尚未取得估價報告之原因: 不適用 17.估價結果有重大差異時，其差異原因及會計師意見: 不適用 18.會計師事務所名稱: 不適用 19.會計師姓名: 不適用 20.會計師開業證書字號: 不適用 21.前已就同一件事件發布重大訊息日期: 不適用 22.其他敘明事項: 無",
           "source_id": "twse_material_events",
           "sentiment": "neutral",
           "risk_class": "neutral",
@@ -258,7 +100,121 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T12:31:12.724Z"
+      "refreshed_at": "2026-08-13T00:16:20.589Z"
+    },
+    "twse-2330": {
+      "ticker": "2330",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events"
+      ],
+      "evidence_level": "medium",
+      "event_count": 0,
+      "positive_event_count": 0,
+      "negative_event_count": 0,
+      "score": 71,
+      "rationale": "月營收分數 79；財務品質分數 78。",
+      "events": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-08-13T00:16:20.589Z"
+    },
+    "twse-2885": {
+      "ticker": "2885",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events"
+      ],
+      "evidence_level": "high",
+      "event_count": 5,
+      "positive_event_count": 0,
+      "negative_event_count": 0,
+      "score": 74,
+      "rationale": "月營收分數 77；財務品質分數 89。",
+      "events": [
+        {
+          "date": "2026-08-12",
+          "announce_date": "2026-08-12",
+          "time": "151541",
+          "title": "元大金控公告補充說明本公司於114年08月22日公告董事會 決議發行之無擔保普通公司債發行條件",
+          "clause": "第11款",
+          "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:元大金融控股股份有限公司 115年度第一次無擔保普通公司債 3.是否採總括申報發行公司債(是/否):是 4.發行總額:發行總額新臺幣柒拾捌億元整。 5.每張面額:新台幣壹佰萬元整。 6.發行價格:依票面金額十足發行。 7.發行期間:五年期。 8.發行利率:固定年利率2.25%。 9.擔保品之種類、名稱、金額及約定事項:不適用。 10.募得價款之用途及運用計畫:償還115年度到期之111-2期公司債及 償還因營運所需借入之銀行借款或發行之商業本票。 11.承銷方式:委託證券承銷商對外公開承銷。 12.公司債受託人:台新國際商業銀行股份有限公司。 13.承銷或代銷機構:元大證券股份有限公司為主辦承銷商。 14.發行保證人:不適用。 15.代理還本付息機構:台新國際商業銀行股份有限公司建北分公司。 16.簽證機構:不適用。 17.能轉換股份者，其轉換辦法:不適用。 18.賣回條件:不適用。 19.買回條件:不適用。 20.附有轉換、交換或認股者，其換股基準日:不適用。 21.附有轉換、交換或認股者，對股權可能稀釋情形:不適用。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用。 23.其他應敘明事項:不適用。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        },
+        {
+          "date": "2026-08-12",
+          "announce_date": "2026-08-12",
+          "time": "153056",
+          "title": "元大金控公告115年7月份自結合併損益",
+          "clause": "第51款",
+          "description": "1.事實發生日:115/08/12 2.公司名稱:元大金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:公告本公司及重要子公司自行結算115年7月份獲利情形 7月份 累積至7月份 ------------------ ------------------------------- 合併 母公司 合併 母公司 稅前 業主稅後 稅前 業主稅後 稅後每股 (億元) (億元) (億元) (億元) 盈餘(元) -------- ---------- --------- --------- ---------- 元大金控 75.24 63.59 543.17 429.31 3.22 元大證券 50.55 48.00 360.24 293.28 4.12 元大銀行 18.43 15.35 109.94 92.27 1.00 元大期貨 5.33 4.38 24.95 19.82 5.39 元大人壽 0.62 0.03 28.14 24.44 0.84 元大投信 7.69 6.12 44.51 35.79 15.77 註：累計7月未適用外匯價格變動準備金之EPS(元) 元大金控：3.24 元大人壽：0.93 以上資料係本公司自行結算結果，尚未經會計師查核簽證。 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項):無",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        },
+        {
+          "date": "2026-08-12",
+          "announce_date": "2026-08-12",
+          "time": "162038",
+          "title": "元大金控代子公司元大證券公告取得元大金控115年度第一次無擔保普通公司債",
+          "clause": "第20款",
+          "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: 元大金融控股股份有限公司115年度第一次無擔保普通公司債 2.事實發生日:115/8/12~115/8/12 3.董事會通過日期: 民國115年6月25日 4.其他核決日期: 不適用 5.交易單位數量、每單位價格及交易總金額: 交易數量：5,900張 單位價格：依票面金額均為新臺幣1,000仟元 交易總金額：新臺幣59億元整 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: 交易相對人：元大金融控股股份有限公司 與公司關係：利害關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 選定關係人為交易對象之原因：為本公司長期往來客戶 前次轉移資訊：不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 交付或付款條件：一次付清/現金交割 契約限制條款及其他重要約定事項：無 12.本次交易之決定方式、價格決定之參考依據及決策單位: 本次交易之決定方式：議價 價格決定之參考依據：依議價結果 決策單位：依元大證券核決權限核決 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 數量：5,900張 金額：新臺幣59億元整 持股比例：不適用 權利受限情形：無 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額: 1.佔總資產比例：25.86% 2.佔股東權益比例：153.64% 3.營運資金：新臺幣110,442,192,032元 16.經紀人及經紀費用: 不適用 17.取得或處分之具體目的或用途: 執行一般業務 18.本次交易表示異議董事之意見: 不適用 19.本次交易為關係人交易:是 20.監察人承認或審計委員會同意日期: 民國115年6月16日 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 營運資金 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        },
+        {
+          "date": "2026-08-12",
+          "announce_date": "2026-08-12",
+          "time": "162637",
+          "title": "元大金控代子公司元大證券(香港)公告115年度股東常會 重要決議事項",
+          "clause": "第18款",
+          "description": "1.股東常會日期:115/08/12 2.重要決議事項一、盈餘分配或盈虧撥補:不發放114年度股利 3.重要決議事項二、章程修訂:無 4.重要決議事項三、營業報告書及財務報表:承認114年度財務報告 5.重要決議事項四、董監事選舉: 重選董事案，當選名單如下: 黃維誠 王義明 郭明正 陳妙如 陳貝山 溫宗憲 盧慧蓉 錢韋靜 6.重要決議事項五、其他事項: (A)確認114年度董事酬金港幣8,920,197元 (B)通過簽證會計師之聘任及授權董事會決定其簽證之費用 7.其他應敘明事項:無",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "routine",
+          "risk_category_label": "例行或權利事件",
+          "risk_points": 0,
+          "matched_patterns": [
+            "股東常會"
+          ]
+        },
+        {
+          "date": "2026-08-12",
+          "announce_date": "2026-08-12",
+          "time": "163218",
+          "title": "元大金控代子公司元大證券(香港)公告重新選任董事會成員",
+          "clause": "第6款",
+          "description": "1.發生變動日期:115/08/12 2.選任或變動人員別（請輸入法人董事、法人監察人、獨立董事、自然人董事 或自然人監察人）:自然人董事 3.舊任者職稱及姓名: (1)黃維誠/元大證券(香港)董事 (2)王義明/元大證券(香港)董事 (3)郭明正/元大證券(香港)董事 (4)陳妙如/元大證券(香港)董事 (5)陳貝山/元大證券(香港)董事 (6)溫宗憲/元大證券(香港)董事 (7)盧慧蓉/元大證券(香港)董事 (8)錢韋靜/元大證券(香港)董事 4.舊任者簡歷: (1)黃維誠/元大證券(香港)董事 (2)王義明/元大證券(香港)董事 (3)郭明正/元大證券(香港)董事 (4)陳妙如/元大證券(香港)董事 (5)陳貝山/元大證券(香港)董事 (6)溫宗憲/元大證券(香港)董事 (7)盧慧蓉/元大證券(香港)董事 (8)錢韋靜/元大證券(香港)董事 5.新任者職稱及姓名: (1)黃維誠/元大證券(香港)董事 (2)王義明/元大證券(香港)董事 (3)郭明正/元大證券(香港)董事 (4)陳妙如/元大證券(香港)董事 (5)陳貝山/元大證券(香港)董事 (6)溫宗憲/元大證券(香港)董事 (7)盧慧蓉/元大證券(香港)董事 (8)錢韋靜/元大證券(香港)董事 6.新任者簡歷: (1)黃維誠/元大證券(香港)董事、元大證券董事 (2)王義明/元大證券(香港)董事、元大證券副董事長 (3)郭明正/元大證券(香港)董事、元大證券總經理 (4)陳妙如/元大證券(香港)董事、元大證券(香港)總經理 (5)陳貝山/元大證券(香港)董事、元大亞金董事 (6)溫宗憲/元大證券(香港)董事、元大證券(香港)營運長 (7)盧慧蓉/元大證券(香港)董事、元大證券資深副總經理 (8)錢韋靜/元大證券(香港)董事、元大證券副總經理 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 任期屆滿 8.異動原因:任期屆滿，重新選任現任八席董事 9.新任者選任時持股數:無 10.原任期（例xx/xx/xx ~ xx/xx/xx）:114/08/14~115/08/12 11.新任生效日期:115/08/12 12.同任期董事變動比率:不適用 13.同任期獨立董事變動比率:不適用 14.同任期監察人變動比率:不適用 15.屬三分之一以上董事發生變動（請輸入是或否）:否 16.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第6款所定對股東權益或證券價格有重大影響之事項): 無",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-08-13T00:16:20.589Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -275,7 +231,7 @@
       "rationale": "財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T12:31:12.724Z"
+      "refreshed_at": "2026-08-13T00:16:20.589Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -323,7 +279,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T12:31:12.724Z"
+      "refreshed_at": "2026-08-13T00:16:20.589Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -340,7 +296,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T12:31:12.724Z"
+      "refreshed_at": "2026-08-13T00:16:20.589Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -357,7 +313,7 @@
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T12:31:12.724Z"
+      "refreshed_at": "2026-08-13T00:16:20.589Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -374,7 +330,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T12:31:12.724Z"
+      "refreshed_at": "2026-08-13T00:16:20.589Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -387,11 +343,11 @@
       "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 45,
-      "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
+      "score": 53,
+      "rationale": "財務品質分數 65。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-12T12:31:12.724Z"
+      "refreshed_at": "2026-08-13T00:16:20.589Z"
     }
   }
 }

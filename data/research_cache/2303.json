@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-12T12:31:59.361Z",
+  "collected_at": "2026-08-13T00:17:17.710Z",
   "company": {
     "id": "twse-2303",
     "ticker": "2303",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "7344323d8ba927820d8c",
-      "date": "2026-08-11",
-      "announced_date": "2026-08-11",
-      "fact_date": "2026-08-11",
-      "announced_time": "152741",
-      "title": "公告本公司辦理限制員工權利新股註銷完成實收 資本額變更登記事宜",
-      "description": "1.主管機關核准減資日期:115/08/10 2.辦理資本變更登記完成日期:115/08/10 3.對財務報告之影響（含實收資本額與流通在外股數之差異與對每股淨值之影響）: (1)收回已發行之限制員工權利新股註銷減資前：本公司實收資本額為新台幣 125,769,848,700元，在外流通股數為12,546,433,870股，每股淨值為新台幣35.38元。 (2)收回已發行之限制員工權利新股註銷減資後：本公司實收資本額為新台幣 125,700,938,990元，在外流通股數為12,539,542,899股，每股淨值為新台幣35.40元。 (註:每股淨值係以115年第2季經會計師核閱之合併財務報表計算。) 4.預計換股作業計畫:不適用 5.預計減資新股上市後之上市普通股股數:不適用 6.預計減資新股上市後之上市普通股股數占已發行普通股比率 （減資後上市普通股股數/減資後已發行普通股股數）:不適用 7.前二項預計減資後上巿普通股股數未達6000萬股且未達25%者，請說明股權流通性偏低 之因應措施:不適用 8.其他應敘明事項:無。",
-      "clause": "第36款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-2303-1150811-1",
       "date": "2026-08-11",
@@ -507,6 +492,27 @@
         "marketKind": "sii",
         "companyId": "2303"
       }
+    },
+    {
+      "id": "mops-history-2303-1150616-1",
+      "date": "2026-06-16",
+      "announced_date": "2026-06-16",
+      "fact_date": null,
+      "announced_time": "17:40:05",
+      "title": "公告本公司處分聯詠科技股份有限公司證券之相關資料",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150616",
+        "marketKind": "sii",
+        "companyId": "2303"
+      }
     }
   ],
   "references": [
@@ -535,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-12T12:31:09.944Z",
-      "row_count": 472,
+      "fetched_at": "2026-08-13T00:16:18.752Z",
+      "row_count": 580,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-08-12T00:16:40.629Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-08-13T00:17:35.489Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

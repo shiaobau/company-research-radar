@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-12T12:31:59.361Z",
+  "collected_at": "2026-08-13T00:17:17.710Z",
   "company": {
     "id": "twse-2330",
     "ticker": "2330",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "5acdc10c78950c5e3d14",
-      "date": "2026-08-11",
-      "announced_date": "2026-08-11",
-      "fact_date": "2026-08-11",
-      "announced_time": "200053",
-      "title": "本公司董事會核准於日本投資設立合資公司",
-      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: Advanced Vision Semiconductor Manufacturing Corporation之普通股及特別股 2.事實發生日:115/8/11~115/8/11 3.董事會通過日期: 民國115年8月11日 4.其他核決日期: 不適用 5.交易數量、每單位價格及交易總金額: 不超過日幣2,820億元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: Advanced Vision Semiconductor Manufacturing Corporation； 採權益法投資之關聯企業 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 分批增資；無 12.本次交易之決定方式、價格決定之參考依據及決策單位: 係經本公司董事會決議，並依本公司與索尼半導體解決方案公司（Sony Semiconductor Solutions Corporation）之股東協議決定 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 不超過日幣2,820億元；37.8%；無 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 44.14%；49.93%；NT$325,002佰萬元。 16.經紀人及經紀費用: 不適用 17.取得或處分之具體目的或用途: 與索尼半導體解決方案公司（Sony Semiconductor Solutions Corporation） 合資設立新公司 18.本次交易表示異議董事之意見: 無 19.本次交易為關係人交易:否 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 不適用 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無",
-      "clause": "第20款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-2330-1150811-7",
       "date": "2026-08-11",
@@ -45,51 +30,6 @@
         "marketKind": "sii",
         "companyId": "2330"
       }
-    },
-    {
-      "id": "caabf07e2b1de565958c",
-      "date": "2026-08-11",
-      "announced_date": "2026-08-11",
-      "fact_date": "2026-08-11",
-      "announced_time": "195854",
-      "title": "本公司董事會核准機器設備、不動產及資本化租賃資產資本預算案",
-      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: (1) 先進製程產能機器設備 (2) 先進封裝、成熟及/或特殊製程產能機器設備 (3) 不動產及資本化租賃資產 2.事實發生日:115/8/11~115/8/11 3.董事會通過日期: 民國115年8月11日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: (1) 先進製程產能機器設備 美金16,035佰萬元 (2) 先進封裝、成熟及/或特殊製程產能機器設備 美金4,791佰萬元 (3) 不動產及資本化租賃資產 美金8,616佰萬元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 預期交易相對人及其與公司之關係（實際交易相對人應依本公司訂單為準）： (1) 先進製程產能機器設備： Applied Materials South East Asia Pte. Ltd.; ASML Hong Kong Ltd.; DAIFUKU CO., LTD; KLA Corporation; Lam Research International Sarl; Tokyo Electron Ltd. 等45公司；與公司關係：皆無。 (2) 先進封裝、成熟及/或特殊製程產能機器設備： Applied Materials South East Asia Pte. Ltd.; Murata Machinery Taiwan, LTD.; Teradyne Asia Pte. Ltd. 等77公司；與公司關係：皆無。 (3) 不動產及資本化租賃資產： ABB Ltd.; ABM Building Services, LLC; ACCO Engineered Systems, Inc.; Accurate Technology Enterprise Co.; ACME Control System Corporation; Air Liquide Electronics US, LP; Allis Electric Co., Ltd.; Am-Power Machine International Enterprise Co., Ltd.; Apollo Sheet Metal, Inc.; Arizona/Albuquerque Valve & Fitting Corporation; Atlas Technology Corp.; Austin Commercial, L.P.; B and D Industries, Inc.; Banner Industries of N.E., Inc; BESTCHEN INTERNATIONAL COMPANY LTD.; BMWC Constructors, Inc.; BrandSafway Solutions, LLC; Brycon Corporation; Camfil Taiwan Co., Ltd.; Camfil USA, Inc.; Carollo Engineers, Inc.; Challentech International Corporation; Chang Chun Petrochemical Co., Ltd.; China Steel Structure Co., Ltd.; Chun Yuan Steel Industry Co., Ltd.; Copper State Bolt and Nut Co.; Corbins, LLC; CURRIE & BROWN, INC.; CYH TECHNOLOGY USA LLC; D.P. Electric, Inc.; Da-Cin Construction Co., Ltd.; Daifuku Intralogistics America; Ele-Garden Landscape Construction CO.; EnerMech Mechanical Services, Inc.; Entegris Inc.; ENVIRONETICS DESIGN GROUP, INC.; Evergreen Steel Corporation; EXCEL AIR COND. CO., LTD.; Exyte Taiwan Co., Ltd.; Exyte Trading (Singapore) Pte. Ltd; FARO Technologies, Inc; Fastenal Company; Fisk Electric Company; Foresight Technologies, Inc.; FU ENERGY CORP.; Fu Tsu Construction Co., Ltd.; G2 Technology Corp.; GHA Technologies, Inc.; Great BIM Engineering Information Integration Co., Ltd.; Greenberry Industrial LLC; GREENFILTEC LTD.; Gudeng Equipment Co., Ltd.; H.K.B. Inc dba Southwest Industrial Rigging; Handling Systems, Inc.; Hansen Supply Company; Harder Mechanical Contractors, Inc.; Helix Electric, Inc.; Hitachi Energy Taiwan Co., Ltd.; Hitachi Energy USA Inc.; HMT System USA LLC; Hoffman Instrumentation Supply, Inc.; IES Communications, LLC; Independent Electric Supply, Inc.; Intertek Testing Services Taiwan Ltd.; J.J. PAN AND PARTNERS, ARCHITECTS AND PLANNERS; Jack B. Henderson Construction Company, Inc.; Jack's Mechanical Solutions, Inc.; Jacobs Project Management Company; Jensen Hughes, Inc.; Jing Yuan Technology Co., Ltd.; JT Thorpe Industrial, Inc.; Jung Chung Technology Corp.; Justrite Safety Group; JY Techs Inc.; KAEKO, Inc.; Kao Hsin Engineering Co., Ltd.; Kedge Construction Co., Ltd.; Kinetic Systems, Inc.; KRUSS Scientific Instruments, Inc.; L&K Engineering Co., Ltd.; LayerZero Power Systems, Inc.; Lee Ming Construction Co., Ltd.; LI YEI ENTERPRISE CO., LTD.; Linde Gas & Equipment Inc.; Logical Systems, LLC; LSW Engineers Arizona, Incorporated; Lumax Controls, Inc.; M Consultants, LLC; Mandartech Interiors Inc.; Marketech International Corporation; Masthead International, Inc.; MEITEC, Inc.; METTLER TOLEDO LLC; Milling Machinery, Inc.; MornstAir Inc.; MRAK LLC dba Points North; MSR-FSR, LLC; MTC-MERCURY TRADING CO., LTD.; MUAQUA ENGINEERING INC.; NAGASE (TAIWAN) CO., LTD.; OBR Cooling Towers, Inc; Okland Construction Company, Inc.; Organo USA, Inc.; Particle Measuring Systems, Inc.; Performance Contracting Inc.; Pfeiffer Vacuum Inc.; Port Plastics, Inc.; Prime Controls LP; Propersys Corporation; Pure Plastics LLC; Reiju Construction Co., Ltd.; Revolution Industrial, LLC; Rosendin Electric, Inc.; S Plus C Design Consultant Co., Ltd; Schneider Electric USA, Inc.; SGC USA, INC; SHENG YI TECH & ANALYTICS CO., LTD.; Shihlin Electric & Engineering Corporation; Siemens Energy Limited; Siemens Industry, Inc.; Siemens Limited; Southland Industries; SSOE Inc.; Streimer Sheet Metal Works, Inc.; Sundt Construction, Inc; Taiwan Gleno Enterprise Co., Ltd.; TAIWAN POWER COMPANY; TASA Construction Corporation; TC Boiler, Inc.; Technical Manufacturing Corporation; Tianding construction industry Co., Ltd.; Trident Mechanical Services, LLC; Tung Kang Steel Structure Corp.; UNITED INTEGRATED SERVICES (USA) CORP.; United Integrated Services Co., Ltd.; UNIVERSITY MECHANICAL AND ENGINEERING CONTRACTORS, INC.; VERO VERIA CORPORATION; Versum Materials US, LLC; WAYNE ENTERPRISE, LTD.; Welmade Technology Corporation; Western State Sales DBA Cleanroom World; WITS America Corp.; World Wide Professional Solutions, LLC; Yankey Engineering Co., Ltd.; Yuan Yi Construction Co., Ltd.; Yu-Cheng Kids Enterprise Co. 等192家公司；與公司關係：皆無。 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依訂單條件付款。 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 比價及議價；廠商提供之報價單及市場行情；依本公司董事會核決辦理。 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 供生產、營運用。 24.本次交易表示異議之董事之意見: 無。 25.本次交易為關係人交易:否 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無。",
-      "clause": "第20款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
-    {
-      "id": "a2efd76984d0faccaf39",
-      "date": "2026-08-11",
-      "announced_date": "2026-08-11",
-      "fact_date": "2026-08-11",
-      "announced_time": "193843",
-      "title": "Sony與台積公司同意成立合資公司 支援下一世代影像感測器",
-      "description": "1.事實發生日:115/08/11 2.公司名稱:台灣積體電路製造股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:不適用 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 索尼半導體解決方案公司（Sony）與台積公司今（11）日宣布雙方簽署具法律效 力之最終合作協議，於日本熊本縣合志市成立合資公司Advanced Vision Semiconductor Manufacturing Corporation。此合資公司將採用先進製程技術， 作為量產智慧型手機影像感測器所需之研發及製造的核心樞紐，並預計於2029年 開始量產。 此合資公司將由Sony作為單一控制股東，並計畫以索尼集團（Sony Group）公 司之合併子公司營運。此合資公司之代表董事將由Sony指派。 依據最終協議，Sony計畫透過現金投入及公司分割之資產轉移(註)方式，挹注合 資公司共約4,650億日圓；台積公司則計畫投資現金約2,820億日圓。這些資金的 投入將基於市場需求及其他相關業務條件分階段進行。除了Sony與台積公司所投 入的資金，有關實現此合資公司產能規畫所需要的投資，其考量前提是必須能夠 獲得來自日本政府的支持。 在此策略合作夥伴關係下，Sony將在核心影像感測器技術的研發、產品規劃與 設計中擔任領導角色，而此合資公司計畫利用台積公司的先進製程技術與製造專 業來推動量產所需的生產研發與製造。透過此次合作，雙方將加速推動受客戶需 求驅動的影像感測器產品進入市場，同時促進技術創新與強化製造能力。 此合資公司的設立與交易完成條件皆須取得必要的主管機關核准，並遵循交易 常規。 有關此策略合作夥伴關係的其他事宜，請依Sony與台積公司於今年5月8日發布 之「Sony與台積公司初步達成下一世代影像感測器策略合作協議」新聞稿為準。 註：Sony在日本熊本縣合志市已投資之新建廠房。",
-      "clause": "第51款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
-    {
-      "id": "2a09af60037593718234",
-      "date": "2026-08-11",
-      "announced_date": "2026-08-11",
-      "fact_date": "2026-08-11",
-      "announced_time": "190129",
-      "title": "本公司訂定民國115年第二季之現金股利除息交易日",
-      "description": "1.董事會、股東會決議或公司決定日期:115/08/11 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.普通股發放股利種類及金額:現金股利 NT$181,526,590,469元(每股 NT$7.0 元) 4.除權（息）交易日:115/12/10 5.最後過戶日:115/12/11 6.停止過戶起始日期:115/12/12 7.停止過戶截止日期:115/12/16 8.除權（息）基準日:115/12/16 9.債券最後申請轉換日期:不適用 10.債券停止轉換起始日期:不適用 11.債券停止轉換截止日期:不適用 12.普通股現金股利發放日期:116/01/07 13.現金股利之一部或全部是否以外幣發放(請填入「是」或「否」):是 14.外幣現金股利發放幣別:美元 15.外幣現金股利發放對象: 依金管證交字第1150381112號函，為依「華僑及外國人投資證券 管理辦法」規定投資國內證券之境外華僑及外國人 16.外幣現金股利匯率決定方式: 以股利發放日前一週週五上午11點台北外匯經紀公司之美元 兌新台幣成交匯率為換算匯率 (遇假日提前至前一營業日) 17.其他應敘明事項: (1) 本公司在美國紐約證券交易所上市之美國存託憑證之除息交易日及配息基準 日皆為2026年12月10日。 (2) 境外華僑及外國人股東請透過保管機構向本公司股務代理機構中國信託登 記欲以美元或新台幣收受股利。未於保管機構所訂期限前完成幣別選擇、或 同一戶號股東對幣別選擇有不同意思表示者，其股利幣別選擇將視為美元。 (3) 將依金管證交字第1150381112號函，由保管機構代收美元現金股利後匯款 至華僑及外國人股東指定之境外或國內外匯存款帳戶。",
-      "clause": "第14款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
     },
     {
       "id": "mops-history-2330-1150811-6",
@@ -153,51 +93,6 @@
         "marketKind": "sii",
         "companyId": "2330"
       }
-    },
-    {
-      "id": "3c4278b7ea7cccddf2ac",
-      "date": "2026-08-11",
-      "announced_date": "2026-08-11",
-      "fact_date": "2026-08-11",
-      "announced_time": "185334",
-      "title": "本公司董事會決議股利分派",
-      "description": "1. 董事會決議日期：115/08/11 2. 股利所屬年(季)度：115年 第2季 3. 股利所屬期間：115/04/01 至 115/06/30 4. 股東配發內容： (1)盈餘分配之現金股利(元/股)：7.00000000 (2)法定盈餘公積發放之現金(元/股)：0 (3)資本公積發放之現金(元/股)：0 (4)股東配發之現金(股利)總金額(元)：181,526,590,469 (5)盈餘轉增資配股(元/股)：0 (6)法定盈餘公積轉增資配股(元/股)：0 (7)資本公積轉增資配股(元/股)：0 (8)股東配股總股數(股)：0 5. 其他應敘明事項： 無。 6. 普通股每股面額欄位：新台幣10.0000元",
-      "clause": "第14款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
-    {
-      "id": "851deda3372f36db7dc6",
-      "date": "2026-08-11",
-      "announced_date": "2026-08-11",
-      "fact_date": "2026-08-11",
-      "announced_time": "184658",
-      "title": "本公司民國115年度第二季合併財務報告業經 董事會決議通過",
-      "description": "1.提報董事會或經董事會決議日期:115/08/11 2.審計委員會通過日期:115/08/10 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/06/30 4.1月1日累計至本期止營業收入(仟元):2,404,483,690 5.1月1日累計至本期止營業毛利(毛損) (仟元):1,611,606,116 6.1月1日累計至本期止營業利益(損失) (仟元):1,425,568,793 7.1月1日累計至本期止稅前淨利(淨損) (仟元):1,550,229,773 8.1月1日累計至本期止本期淨利(淨損) (仟元):1,279,582,227 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):1,279,041,690 10.1月1日累計至本期止基本每股盈餘(損失) (元):49.33 11.期末總資產(仟元):9,375,654,727 12.期末總負債(仟元):2,901,183,746 13.期末歸屬於母公司業主之權益(仟元):6,432,518,334 14.其他應敘明事項:無",
-      "clause": "第31款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
-    {
-      "id": "8fa124e88c2dac02ff65",
-      "date": "2026-08-11",
-      "announced_date": "2026-08-11",
-      "fact_date": "2026-08-11",
-      "announced_time": "180301",
-      "title": "台積公司董事會決議",
-      "description": "1.事實發生日:115/08/11 2.公司名稱:台灣積體電路製造股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:不適用 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 台積公司今（11）日召開董事會，會中重要決議如下： 一、核准2026年第二季營業報告書及財務報表，其中第二季合併營收約新台幣1兆 2,703億8千萬元，稅後純益約新台幣7,065億6千萬元，每股盈餘為新台幣 27.25元。 二、核准配發2026年第二季之每股現金股利7.0元，其普通股配息基準日訂定為2026 年12月16日，除息交易日則為2026年12月10日。依公司法第一六五條規定，在公 司決定分派股息之基準日前五日內，亦即自2026年12月12日起至12月16日止，停 止普通股股票過戶，並於2027年1月7日發放。此外，因應台灣金管會法規修訂， 台積公司將自本次股利分派開始提供依「華僑及外國人投資證券管理辦法」投資 之外資股東以美元收受現金股利之選擇權利。台積公司在美國紐約證券交易所上 市之美國存託憑證之除息交易日及配息基準日皆為2026年12月10日。 三、為了因應基於市場需求預測及技術開發藍圖所制定的長期產能規劃，核准資本 預算約美金294億4,250萬元，內容主要包括：1. 建置及升級先進製程產能； 2. 建置及升級先進封裝、成熟及/或特殊製程產能；3. 廠房興建及廠務設施 工程。 四、核准與索尼半導體解決方案公司（Sony Semiconductor Solutions Corporation）合資成立新公司，以研發與製造下一世代影像感測器，以及於不 超過日幣2,820億元之額度內認購該合資公司之股份。",
-      "clause": "第51款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
     },
     {
       "id": "mops-history-2330-1150811-3",
@@ -471,6 +366,153 @@
         "marketKind": "sii",
         "companyId": "2330"
       }
+    },
+    {
+      "id": "mops-history-2330-1150603-1",
+      "date": "2026-06-03",
+      "announced_date": "2026-06-03",
+      "fact_date": null,
+      "announced_time": "17:34:11",
+      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150603",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
+    },
+    {
+      "id": "mops-history-2330-1150602-1",
+      "date": "2026-06-02",
+      "announced_date": "2026-06-02",
+      "fact_date": null,
+      "announced_time": "18:04:55",
+      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150602",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
+    },
+    {
+      "id": "mops-history-2330-1150601-2",
+      "date": "2026-06-01",
+      "announced_date": "2026-06-01",
+      "fact_date": null,
+      "announced_time": "17:53:40",
+      "title": "本公司代子公司 TSMC Global Ltd. 公告處分固定收益證券",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1150601",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
+    },
+    {
+      "id": "mops-history-2330-1150601-1",
+      "date": "2026-06-01",
+      "announced_date": "2026-06-01",
+      "fact_date": null,
+      "announced_time": "17:50:38",
+      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150601",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
+    },
+    {
+      "id": "mops-history-2330-1150527-2",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": null,
+      "announced_time": "17:18:30",
+      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1150527",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
+    },
+    {
+      "id": "mops-history-2330-1150527-1",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": null,
+      "announced_time": "16:32:10",
+      "title": "公告本公司調整民國114年第四季每股現金股利金額",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150527",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
+    },
+    {
+      "id": "mops-history-2330-1150525-3",
+      "date": "2026-05-25",
+      "announced_date": "2026-05-25",
+      "fact_date": null,
+      "announced_time": "20:00:03",
+      "title": "本公司受邀參加機構投資人說明會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "enterDate": "1150525",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
     }
   ],
   "references": [
@@ -499,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-12T12:31:09.944Z",
-      "row_count": 472,
+      "fetched_at": "2026-08-13T00:16:18.752Z",
+      "row_count": 580,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-08-12T00:16:53.098Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-08-13T00:17:46.985Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
