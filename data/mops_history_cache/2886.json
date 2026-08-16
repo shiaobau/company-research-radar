@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1",
   "ticker": "2886",
-  "fetched_at": "2026-08-13T00:17:58.378Z",
+  "fetched_at": "2026-08-16T00:17:18.424Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2886-1150813-1",
+      "date": "2026-08-13",
+      "announced_date": "2026-08-13",
+      "fact_date": "2026-08-13",
+      "announced_time": "16:52:51",
+      "title": "公告本公司暨主要子公司115年7月份自結合併盈餘",
+      "description": "1.事實發生日:115/08/13 2.公司名稱:兆豐金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:公告本公司暨主要子公司115年7月份自結合併盈餘 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 公告本公司暨主要子公司115年7月份業績資料： 當月稅前 當月稅後 累積稅前 累積稅後 累積每股 盈餘 盈餘 盈餘 盈餘 稅後盈餘 (億元) (億元) (億元) (億元) (元) 兆豐金控 53.64 43.52 311.71 256.59 1.73 兆豐銀行 50.48 42.12 241.45 200.78 2.01 兆豐證券 (3.06) (3.93) 36.98 31.32 2.62 兆豐票券 4.34 3.50 26.84 21.51 1.42 兆豐產險 1.11 1.01 7.66 6.63 2.02 註:兆豐金控115年7月31日每股淨值26.99元。 註:累計至7月未適用巨災保險準備金之累計每股稅後盈餘 兆豐金控為1.73元、兆豐產險為2.02元。 上述資料均係自結數字，未經會計師查核或核閱。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150813",
+        "marketKind": "sii",
+        "companyId": "2886"
+      }
+    },
     {
       "id": "mops-history-2886-1150730-1",
       "date": "2026-07-30",
@@ -80,11 +101,11 @@
       "id": "mops-history-2886-1150729-3",
       "date": "2026-07-29",
       "announced_date": "2026-07-29",
-      "fact_date": "2026-07-29",
+      "fact_date": null,
       "announced_time": "17:28:54",
       "title": "代本公司之子公司兆豐期貨股份有限公司公告董事會聘任 黃世奎先生為總經理。",
-      "description": "1.董事會決議日期或發生變動日期:115/07/29 2.人員別（請輸入董事長或總經理）:總經理 3.舊任者姓名:黃世奎 4.舊任者簡歷:兆豐期貨股份有限公司董事兼總經理 5.新任者姓名:黃世奎 6.新任者簡歷:兆豐期貨股份有限公司董事兼總經理 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「職務調整」、「資遣」、 「退休」、「逝世」或「新任」）:任期屆滿 8.異動原因:配合董監改派重新聘任 9.新任生效日期:115/07/29 10.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第6款所定對股東權益或證券價格有重大影響之事項): 無",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
       "detail_parameters": {
         "serialNumber": "1",
         "enterDate": "1150622",
-        "marketKind": "sii",
-        "companyId": "2886"
-      }
-    },
-    {
-      "id": "mops-history-2886-1150618-2",
-      "date": "2026-06-18",
-      "announced_date": "2026-06-18",
-      "fact_date": null,
-      "announced_time": "17:26:32",
-      "title": "公告本公司115年股東常會通過解除董事競業禁止案",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150618",
         "marketKind": "sii",
         "companyId": "2886"
       }

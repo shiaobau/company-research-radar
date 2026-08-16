@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-13T12:31:42.131Z",
+  "generated_at": "2026-08-16T00:15:42.497Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-13T12:31:42.131Z"
+      "refreshed_at": "2026-08-16T00:15:42.497Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-13T12:31:42.131Z"
+      "refreshed_at": "2026-08-16T00:15:42.497Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -99,7 +99,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-13T12:31:42.131Z"
+      "refreshed_at": "2026-08-16T00:15:42.497Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -110,7 +110,7 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 1,
+      "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
       "review_event_count": 0,
@@ -122,7 +122,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-13T12:31:42.131Z"
+      "refreshed_at": "2026-08-16T00:15:42.497Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -145,7 +145,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-13T12:31:42.131Z"
+      "refreshed_at": "2026-08-16T00:15:42.497Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -156,54 +156,19 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 5,
+      "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
-      "review_event_count": 2,
+      "review_event_count": 0,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 90,
+      "score": 92,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [
-        {
-          "date": "2026-08-12",
-          "announce_date": "2026-08-12",
-          "time": "151541",
-          "title": "元大金控公告補充說明本公司於114年08月22日公告董事會 決議發行之無擔保普通公司債發行條件",
-          "clause": "第11款",
-          "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:元大金融控股股份有限公司 115年度第一次無擔保普通公司債 3.是否採總括申報發行公司債(是/否):是 4.發行總額:發行總額新臺幣柒拾捌億元整。 5.每張面額:新台幣壹佰萬元整。 6.發行價格:依票面金額十足發行。 7.發行期間:五年期。 8.發行利率:固定年利率2.25%。 9.擔保品之種類、名稱、金額及約定事項:不適用。 10.募得價款之用途及運用計畫:償還115年度到期之111-2期公司債及 償還因營運所需借入之銀行借款或發行之商業本票。 11.承銷方式:委託證券承銷商對外公開承銷。 12.公司債受託人:台新國際商業銀行股份有限公司。 13.承銷或代銷機構:元大證券股份有限公司為主辦承銷商。 14.發行保證人:不適用。 15.代理還本付息機構:台新國際商業銀行股份有限公司建北分公司。 16.簽證機構:不適用。 17.能轉換股份者，其轉換辦法:不適用。 18.賣回條件:不適用。 19.買回條件:不適用。 20.附有轉換、交換或認股者，其換股基準日:不適用。 21.附有轉換、交換或認股者，對股權可能稀釋情形:不適用。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用。 23.其他應敘明事項:不適用。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
-          "risk_points": 0,
-          "matched_patterns": [
-            "說明"
-          ]
-        },
-        {
-          "date": "2026-08-12",
-          "announce_date": "2026-08-12",
-          "time": "162637",
-          "title": "元大金控代子公司元大證券(香港)公告115年度股東常會 重要決議事項",
-          "clause": "第18款",
-          "description": "1.股東常會日期:115/08/12 2.重要決議事項一、盈餘分配或盈虧撥補:不發放114年度股利 3.重要決議事項二、章程修訂:無 4.重要決議事項三、營業報告書及財務報表:承認114年度財務報告 5.重要決議事項四、董監事選舉: 重選董事案，當選名單如下: 黃維誠 王義明 郭明正 陳妙如 陳貝山 溫宗憲 盧慧蓉 錢韋靜 6.重要決議事項五、其他事項: (A)確認114年度董事酬金港幣8,920,197元 (B)通過簽證會計師之聘任及授權董事會決定其簽證之費用 7.其他應敘明事項:無",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "routine",
-          "risk_category_label": "例行或權利事件",
-          "risk_points": 0,
-          "matched_patterns": [
-            "股東常會"
-          ]
-        }
-      ],
+      "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-13T12:31:42.131Z"
+      "refreshed_at": "2026-08-16T00:15:42.497Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -226,7 +191,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-13T12:31:42.131Z"
+      "refreshed_at": "2026-08-16T00:15:42.497Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -249,7 +214,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-13T12:31:42.131Z"
+      "refreshed_at": "2026-08-16T00:15:42.497Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -272,7 +237,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-13T12:31:42.131Z"
+      "refreshed_at": "2026-08-16T00:15:42.497Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -295,7 +260,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-13T12:31:42.131Z"
+      "refreshed_at": "2026-08-16T00:15:42.497Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -318,7 +283,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-13T12:31:42.131Z"
+      "refreshed_at": "2026-08-16T00:15:42.497Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -341,7 +306,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-13T12:31:42.131Z"
+      "refreshed_at": "2026-08-16T00:15:42.497Z"
     }
   }
 }
