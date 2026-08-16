@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-16T00:16:35.796Z",
+  "collected_at": "2026-08-16T12:31:25.189Z",
   "company": {
     "id": "twse-2303",
     "ticker": "2303",
@@ -541,13 +541,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-16T00:15:40.971Z",
+      "fetched_at": "2026-08-16T12:30:41.418Z",
       "row_count": 7,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-08-16T00:16:53.090Z",
       "row_count": 24,
       "detail_count": 4,
