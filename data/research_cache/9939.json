@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-17T12:32:14.698Z",
+  "collected_at": "2026-08-18T00:17:30.321Z",
   "company": {
     "id": "twse-9939",
     "ticker": "9939",
@@ -10,6 +10,42 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "01e278bb50855d528849",
+      "date": "2026-08-17",
+      "announced_date": "2026-08-17",
+      "fact_date": "2026-08-17",
+      "announced_time": "181534",
+      "title": "代重要子公司宏全控股有限公司公告董事會新增 對單一企業宏全中國控股有限公司資金貸與金額達新台幣一千萬 以上且達本公司最近期財務報表淨值百分之二以上",
+      "description": "1.事實發生日:115/08/17 2.接受資金貸與之: (1)公司名稱:宏全中國控股股份有限公司 (2)與資金貸與他人公司之關係: 宏全中國控股股份有限公司係為宏全控股有限公司持有100%之子公司 (3)資金貸與之限額(仟元):11,182,239 (4)原資金貸與之餘額(仟元):3,996,747 (5)本次新增資金貸與之金額(仟元):740,306 (6)是否為董事會授權董事長對同一貸與對象分次撥貸或循環動用之資金貸與:否 (7)迄事實發生日止資金貸與餘額(仟元):4,737,053 (8)本次新增資金貸與之原因: 因前期借款到期償還所需 3.接受資金貸與公司所提供擔保品之: (1)內容: 無 (2)價值(仟元):0 4.接受資金貸與公司最近期財務報表之: (1)資本(仟元):452,604 (2)累積盈虧金額(仟元):4,235,412 5.計息方式: 2%+浮動利率 6.還款之: (1)條件: 無 (2)日期: 每筆借款期限以一年為限 7.迄事實發生日為止，資金貸與餘額(仟元): 6,081,126 8.迄事實發生日為止，資金貸與餘額占公開發行公司最近期財務報表淨值之比率: 30.75 9.公司貸與他人資金之來源: 子公司本身 10.其他應敘明事項: 無",
+      "clause": "第23款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "mops-history-9939-1150817-1",
+      "date": "2026-08-17",
+      "announced_date": "2026-08-17",
+      "fact_date": "2026-08-17",
+      "announced_time": "18:15:34",
+      "title": "代重要子公司宏全控股有限公司公告董事會新增 對單一企業宏全中國控股有限公司資金貸與金額達新台幣一千萬 以上且達本公司最近期財務報表淨值百分之二以上",
+      "description": "1.事實發生日:115/08/17 2.接受資金貸與之: (1)公司名稱:宏全中國控股股份有限公司 (2)與資金貸與他人公司之關係: 宏全中國控股股份有限公司係為宏全控股有限公司持有100%之子公司 (3)資金貸與之限額(仟元):11,182,239 (4)原資金貸與之餘額(仟元):3,996,747 (5)本次新增資金貸與之金額(仟元):740,306 (6)是否為董事會授權董事長對同一貸與對象分次撥貸或循環動用之資金貸與:否 (7)迄事實發生日止資金貸與餘額(仟元):4,737,053 (8)本次新增資金貸與之原因: 因前期借款到期償還所需 3.接受資金貸與公司所提供擔保品之: (1)內容: 無 (2)價值(仟元):0 4.接受資金貸與公司最近期財務報表之: (1)資本(仟元):452,604 (2)累積盈虧金額(仟元):4,235,412 5.計息方式: 2%+浮動利率 6.還款之: (1)條件: 無 (2)日期: 每筆借款期限以一年為限 7.迄事實發生日為止，資金貸與餘額(仟元): 6,081,126 8.迄事實發生日為止，資金貸與餘額占公開發行公司最近期財務報表淨值之比率: 30.75 9.公司貸與他人資金之來源: 子公司本身 10.其他應敘明事項: 無",
+      "clause": "第23款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150817",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
     {
       "id": "mops-history-9939-1150807-1",
       "date": "2026-08-07",
@@ -25,10 +61,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "enterDate": "1150807",
-        "serialNumber": "1"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -46,10 +82,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "enterDate": "1150730",
-        "serialNumber": "1"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -67,31 +103,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "enterDate": "1150616",
-        "serialNumber": "1"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
       "id": "mops-history-9939-1150604-1",
       "date": "2026-06-04",
       "announced_date": "2026-06-04",
-      "fact_date": "2026-06-04",
+      "fact_date": null,
       "announced_time": "11:59:53",
       "title": "公告宏全國際股份有限公司國內第二次無擔保(例：第一次有擔保)轉(交)換公司債(簡稱：宏全二，代碼：99392)停止受理轉交換等相關事項。",
-      "description": "內容：本公司國內第二次無擔保轉換公司債發行及轉換辦法。<br>(一)停止受理轉交換之事由：辦理配股配息作業事宜。<br>(其他事項敘明：)<br>(二)停止受理轉交換登記起訖日期：115年06月12日至115年07月08日止。<br>(三)債券持有人如擬申請轉換，最遲應於停止受理轉換登記之始日（115年06月12日）之前一營業日前（115年06月10日），向往來證券商辦理轉換手續。<br>無",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "enterDate": "1150604",
-        "serialNumber": "1"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -109,10 +145,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "enterDate": "1150603",
-        "serialNumber": "1"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -130,10 +166,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "12",
         "enterDate": "1150529",
-        "serialNumber": "12"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -151,10 +187,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "11",
         "enterDate": "1150529",
-        "serialNumber": "11"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -172,10 +208,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "9",
         "enterDate": "1150529",
-        "serialNumber": "9"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -193,10 +229,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "8",
         "enterDate": "1150528",
-        "serialNumber": "8"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -214,10 +250,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "7",
         "enterDate": "1150528",
-        "serialNumber": "7"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -235,10 +271,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "6",
         "enterDate": "1150528",
-        "serialNumber": "6"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -256,10 +292,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "4",
         "enterDate": "1150528",
-        "serialNumber": "4"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -277,10 +313,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "13",
         "enterDate": "1150529",
-        "serialNumber": "13"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -298,10 +334,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "3",
         "enterDate": "1150528",
-        "serialNumber": "3"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -319,10 +355,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "enterDate": "1150528",
-        "serialNumber": "1"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -340,10 +376,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "7",
         "enterDate": "1150522",
-        "serialNumber": "7"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -361,10 +397,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "5",
         "enterDate": "1150522",
-        "serialNumber": "5"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -382,10 +418,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "8",
         "enterDate": "1150522",
-        "serialNumber": "8"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -403,10 +439,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "2",
         "enterDate": "1150522",
-        "serialNumber": "2"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -424,10 +460,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "enterDate": "1150520",
-        "serialNumber": "1"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -445,10 +481,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "enterDate": "1150507",
-        "serialNumber": "1"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -466,52 +502,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "enterDate": "1150430",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-9939-1150309-1",
-      "date": "2026-03-09",
-      "announced_date": "2026-03-09",
-      "fact_date": null,
-      "announced_time": "15:33:19",
-      "title": "澄清媒體報導",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "9939",
         "marketKind": "sii",
-        "enterDate": "1150309",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-9939-1150306-1",
-      "date": "2026-03-06",
-      "announced_date": "2026-03-06",
-      "fact_date": null,
-      "announced_time": "17:03:27",
-      "title": "董事會決議股利分派",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "9939",
-        "marketKind": "sii",
-        "enterDate": "1150306",
-        "serialNumber": "1"
+        "companyId": "9939"
       }
     }
   ],
@@ -541,14 +535,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-17T12:31:04.460Z",
-      "row_count": 6,
+      "fetched_at": "2026-08-18T00:16:22.359Z",
+      "row_count": 94,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-08-17T00:17:54.117Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-08-18T00:18:50.949Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
