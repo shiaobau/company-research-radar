@@ -3,7 +3,7 @@
   "timezone": "Asia/Taipei",
   "frequency": "weekday",
   "frequency_label": "平日",
-  "generated_at": "2026-08-18T00:18:50.962Z",
+  "generated_at": "2026-08-18T12:32:25.002Z",
   "current_run": null,
   "schedules": {
     "morning": {
@@ -68,7 +68,7 @@
         "slot": "evening",
         "label": "晚間完整更新",
         "status": "done",
-        "started_at": "2026-08-17T12:30:31.606Z",
+        "started_at": "2026-08-18T12:30:40.518Z",
         "steps": [
           {
             "script": "tools/source-cache.mjs",
@@ -77,16 +77,16 @@
               "--continue-on-error"
             ],
             "status": "done",
-            "started_at": "2026-08-17T12:30:31.607Z",
-            "finished_at": "2026-08-17T12:31:07.399Z",
-            "output_tail": "pex_financial_balance_bd: updated, 2 rows, 2026-08-17T12:31:02.508Z\ntwse_financial_income_fh: updated, 1 rows, 2026-08-17T12:31:02.680Z\ntwse_financial_balance_fh: updated, 1 rows, 2026-08-17T12:31:02.853Z\ntpex_financial_income_fh: updated, 1 rows, 2026-08-17T12:31:03.132Z\ntpex_financial_balance_fh: updated, 1 rows, 2026-08-17T12:31:03.409Z\ntwse_financial_income_ins: updated, 1 rows, 2026-08-17T12:31:03.581Z\ntwse_financial_balance_ins: updated, 1 rows, 2026-08-17T12:31:03.753Z\ntpex_financial_income_ins: updated, 1 rows, 2026-08-17T12:31:04.027Z\ntpex_financial_balance_ins: updated, 1 rows, 2026-08-17T12:31:04.287Z\ntwse_material_events: updated, 6 rows, 2026-08-17T12:31:04.460Z\ntpex_material_events: updated, 5 rows, 2026-08-17T12:31:04.703Z\ntwse_major_shareholders: updated, 1068 rows, 2026-08-17T12:31:05.246Z\ntpex_major_shareholders: updated, 1003 rows, 2026-08-17T12:31:05.536Z\ntwse_insider_transfer: updated, 6 rows, 2026-08-17T12:31:05.710Z\ntpex_insider_transfer: updated, 1 rows, 2026-08-17T12:31:05.943Z\ntwse_disclosure_violations: updated, 31 rows, 2026-08-17T12:31:06.483Z\ntpex_disclosure_violations: updated, 16 rows, 2026-08-17T12:31:07.387Z\nCompleted with 1 unavailable source(s).\n"
+            "started_at": "2026-08-18T12:30:40.520Z",
+            "finished_at": "2026-08-18T12:31:05.120Z",
+            "output_tail": "ed, 2 rows, 2026-08-18T12:30:58.947Z\ntpex_financial_balance_bd: updated, 2 rows, 2026-08-18T12:30:59.177Z\ntwse_financial_income_fh: updated, 1 rows, 2026-08-18T12:30:59.377Z\ntwse_financial_balance_fh: updated, 1 rows, 2026-08-18T12:30:59.579Z\ntpex_financial_income_fh: updated, 1 rows, 2026-08-18T12:30:59.824Z\ntpex_financial_balance_fh: updated, 1 rows, 2026-08-18T12:31:00.683Z\ntwse_financial_income_ins: updated, 1 rows, 2026-08-18T12:31:01.297Z\ntwse_financial_balance_ins: updated, 1 rows, 2026-08-18T12:31:01.496Z\ntpex_financial_income_ins: updated, 1 rows, 2026-08-18T12:31:01.731Z\ntpex_financial_balance_ins: updated, 1 rows, 2026-08-18T12:31:01.962Z\ntwse_material_events: updated, 94 rows, 2026-08-18T12:31:02.739Z\ntpex_material_events: updated, 50 rows, 2026-08-18T12:31:03.387Z\ntwse_major_shareholders: updated, 1068 rows, 2026-08-18T12:31:03.786Z\ntpex_major_shareholders: updated, 1003 rows, 2026-08-18T12:31:04.232Z\ntwse_insider_transfer: updated, 3 rows, 2026-08-18T12:31:04.440Z\ntpex_insider_transfer: updated, 2 rows, 2026-08-18T12:31:04.675Z\ntwse_disclosure_violations: updated, 31 rows, 2026-08-18T12:31:04.875Z\ntpex_disclosure_violations: updated, 16 rows, 2026-08-18T12:31:05.108Z\n"
           },
           {
             "script": "tools/update-data.mjs",
             "args": [],
             "status": "done",
-            "started_at": "2026-08-17T12:31:07.400Z",
-            "finished_at": "2026-08-17T12:32:14.617Z",
+            "started_at": "2026-08-18T12:31:05.121Z",
+            "finished_at": "2026-08-18T12:32:24.894Z",
             "output_tail": "Generated objective data for 12 research companies.\n"
           },
           {
@@ -95,22 +95,22 @@
               "--retry"
             ],
             "status": "done",
-            "started_at": "2026-08-17T12:32:14.618Z",
-            "finished_at": "2026-08-17T12:32:14.661Z",
+            "started_at": "2026-08-18T12:32:24.895Z",
+            "finished_at": "2026-08-18T12:32:24.930Z",
             "output_tail": "}\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    },\n    {\n      \"id\": \"twse-3481\",\n      \"ticker\": \"3481\",\n      \"name\": \"群創\",\n      \"status\": \"core_complete\",\n      \"missing_dimensions\": [\n        {\n          \"id\": \"industry\",\n          \"label\": \"產業證據調整\"\n        }\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    },\n    {\n      \"id\": \"tpex-6023\",\n      \"ticker\": \"6023\",\n      \"name\": \"元大期貨\",\n      \"status\": \"core_complete\",\n      \"missing_dimensions\": [\n        {\n          \"id\": \"industry\",\n          \"label\": \"產業證據調整\"\n        }\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    },\n    {\n      \"id\": \"tpex-8279\",\n      \"ticker\": \"8279\",\n      \"name\": \"生展\",\n      \"status\": \"core_complete\",\n      \"missing_dimensions\": [\n        {\n          \"id\": \"industry\",\n          \"label\": \"產業證據調整\"\n        }\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    },\n    {\n      \"id\": \"twse-9939\",\n      \"ticker\": \"9939\",\n      \"name\": \"宏全\",\n      \"status\": \"core_complete\",\n      \"missing_dimensions\": [\n        {\n          \"id\": \"industry\",\n          \"label\": \"產業證據調整\"\n        }\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    }\n  ]\n}\n"
           },
           {
             "script": "tools/targeted-collector.mjs",
             "args": [],
             "status": "done",
-            "started_at": "2026-08-17T12:32:14.662Z",
-            "finished_at": "2026-08-17T12:32:14.727Z",
+            "started_at": "2026-08-18T12:32:24.932Z",
+            "finished_at": "2026-08-18T12:32:25.002Z",
             "output_tail": "{\n  \"status\": \"done\",\n  \"companies\": 12,\n  \"researched_companies\": 12,\n  \"total_events\": 288,\n  \"cache\": \"data/research_cache\"\n}\n"
           }
         ],
         "progress_percent": 100,
         "current_step": null,
-        "finished_at": "2026-08-17T12:32:14.728Z",
+        "finished_at": "2026-08-18T12:32:25.002Z",
         "company_count": 12
       }
     },
