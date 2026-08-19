@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-19T00:17:07.927Z",
+  "collected_at": "2026-08-19T12:34:29.736Z",
   "company": {
     "id": "tpex-6023",
     "ticker": "6023",
@@ -10,6 +10,69 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-6023-1150819-3",
+      "date": "2026-08-19",
+      "announced_date": "2026-08-19",
+      "fact_date": "2026-08-19",
+      "announced_time": "14:12:11",
+      "title": "元大期貨公告董事會通過捐贈元大文教基金會事宜",
+      "description": "1.事實發生日:115/08/19 2.捐贈緣由:為支持財團法人元大文教基金會執行115年重要工作計畫 3.捐贈金額:新臺幣參佰陸拾萬元整 4.受贈對象:財團法人元大文教基金會 5.與公司關係:本公司關係人 6.表示反對或保留意見之獨立董事姓名及簡歷:無 7.前揭獨立董事表示反對或保留之意見:無 8.其他應敘明事項:無",
+      "clause": "第43款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150819",
+        "serialNumber": "3",
+        "companyId": "6023",
+        "marketKind": "otc"
+      }
+    },
+    {
+      "id": "mops-history-6023-1150819-2",
+      "date": "2026-08-19",
+      "announced_date": "2026-08-19",
+      "fact_date": "2026-08-19",
+      "announced_time": "14:11:39",
+      "title": "元大期貨公告補充說明本公司於115年3月11日公告董事會 決議發行之有擔保次順位普通公司債發行條件",
+      "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:元大期貨股份有限公司 115年度第三次有擔保次順位普通公司債 3.是否採總括申報發行公司債(是/否):否 4.發行總額:新台幣貳拾億伍仟萬元整。 5.每張面額:新台幣壹佰萬元整。 6.發行價格:依票面金額十足發行。 7.發行期間:五年期。 8.發行利率:固定年利率2.50% 9.擔保品之總類、名稱、金額及約定事項:銀行保證。 10.募得價款之用途及運用計畫:充實營運資金、強化財務結構、 提高調整後淨資本額比率。 11.承銷方式:委託證券承銷商對外公開承銷。 12.公司債受託人:永豐商業銀行股份有限公司。 13.承銷或代銷機構:元大證券股份有限公司為主辦承銷商。 14.發行保證人:中國信託商業銀行股份有限公司。 15.代理還本付息機構:永豐商業銀行股份有限公司營業部。 16.簽證機構:不適用。 17.能轉換股份者，其轉換價格及轉換辦法:不適用。 18.賣回條件:不適用。 19.買回條件:不適用。 20.附有轉換、交換或認股者，其換股基準日:不適用。 21.附有轉換、交換或認股者，對股權可能稀釋情形:不適用。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用。 23.其他應敘明事項:無",
+      "clause": "第11款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150819",
+        "serialNumber": "2",
+        "companyId": "6023",
+        "marketKind": "otc"
+      }
+    },
+    {
+      "id": "mops-history-6023-1150819-1",
+      "date": "2026-08-19",
+      "announced_date": "2026-08-19",
+      "fact_date": "2026-08-19",
+      "announced_time": "14:00:14",
+      "title": "元大期貨公告115年第二季合併財務報告經董事會決議通過",
+      "description": "1.提報董事會或經董事會決議日期:115/08/19 2.審計委員會通過日期:115/08/19 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/06/30 4.1月1日累計至本期止營業收入(仟元):2,477,649 5.1月1日累計至本期止營業毛利(毛損) (仟元):不適用 6.1月1日累計至本期止營業利益(損失) (仟元):(414,396) 7.1月1日累計至本期止稅前淨利(淨損) (仟元):1,961,454 8.1月1日累計至本期止本期淨利(淨損) (仟元):1,543,614 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):1,543,614 10.1月1日累計至本期止基本每股盈餘(損失) (元):4.19 11.期末總資產(仟元):315,532,878 12.期末總負債(仟元):295,554,399 13.期末歸屬於母公司業主之權益(仟元):19,978,479 14.其他應敘明事項:無",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150819",
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
+      }
+    },
     {
       "id": "mops-history-6023-1150807-1",
       "date": "2026-08-07",
@@ -25,73 +88,73 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150807",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
       "id": "mops-history-6023-1150805-1",
       "date": "2026-08-05",
       "announced_date": "2026-08-05",
-      "fact_date": "2026-08-05",
+      "fact_date": null,
       "announced_time": "14:08:35",
       "title": "元大期貨公告訂定現金增資認購價格暨 代收及專戶存儲價款行庫等相關事宜",
-      "description": "1.董事會決議或公司決定增資基準日期:115/07/28 2.是否採總括申報發行新股(是，請併敘明預定發行期間/否):否 3.主管機關申報生效日期:115/07/24 4.董事會決議(追補)發行日期:115/06/17 5.發行總金額及股數:發行總金額新台幣800,000,000元；發行股數80,000,000股 6.採總括申報發行新股案件，本次發行金額及股數:不適用 7.採總括申報發行新股案件，本次發行後，剩餘之金額及股數餘額:不適用 8.每股面額:新台幣10元 9.發行價格:新台幣73.5元 10.員工認股股數:本次現金增資發行新股總數10%，計8,000,000股。 11.原股東認購比率:本次現金增資發行新股總數80%，計64,000,000股由原股東按認股 基準日股東名簿所載股東持股比例認購之，每仟股可認購173.92593101股。 12.公開銷售方式及股數:依證券交易法第28條之1規定，提撥增資發行股數之10%，計 8,000,000股，對外公開承銷。 13.畸零股及逾期未認購股份之處理方式:原股東認購不足一股之畸零股得由原股東自停止 過戶日起五日內，逕向本公司股務代理機構辦理併湊，其併湊不足一股之畸零股及原股 東、員工與對外公開承銷放棄認購或認購不足及逾期未申報併湊之部分，授權董事長 洽特定人按發行價格認購之。 14.本次發行新股之權利義務:與原已發行普通股相同。 15.本次增資資金用途:充實營運資金 16.現金增資認股基準日:115/08/18 17.最後過戶日:115/08/13 18.停止過戶起始日期:115/08/14 19.停止過戶截止日期:115/08/18 20.股款繳納期間:(1)原股東及員工認股繳款期間115/08/21至115/08/27 (2)特定人認股繳款期間115/08/28至115/09/01 21.與代收及專戶存儲價款行庫訂約日期:115/08/05 22.委託代收存款機構:合作金庫商業銀行敦南分行暨全國各分行 23.委託存儲款項機構:合作金庫商業銀行台北分行 24.其他應敘明事項: (1)本次現金增資發行新股業經金融監督管理委員會115年7月24日 金管證期字第1150348455號函申報生效在案。 (2)本次現金增資之實際發行計畫、計畫項目、 預定資金運用進度、預計可能產生效益 及其他相關事宜如因主管機關要求修正， 或因法令規定及因客觀環境而需變更時， 授權董事長全權處理。 (3)凡持有本公司股票而尚未辦理過戶之股東， 請於民國115年8月13日16時30分前親臨 本公司股務代理機構「元大證券股份有限公司股務代理部」 (臺北市大安區敦化南路2段67號地下1樓)， 辦理過戶手續，掛號郵寄者以民國115年8月13日 (最後過戶日)郵戳日期為憑。 (4)凡參加臺灣集中保管結算所股份有限公司進行集中辦理過戶者， 本公司股務代理機構將依其送交之資料逕行辦理過戶手續。",
-      "clause": "第11款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150805",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
       "id": "mops-history-6023-1150729-1",
       "date": "2026-07-29",
       "announced_date": "2026-07-29",
-      "fact_date": "2026-07-29",
+      "fact_date": null,
       "announced_time": "17:47:58",
       "title": "元大期貨公告法人董事代表人異動",
-      "description": "1.發生變動日期:115/07/29 2.法人名稱:元大金融控股股份有限公司 3.舊任者姓名:蘇詠筑 4.舊任者簡歷:元大期貨股份有限公司董事 5.新任者姓名:周紋祺 6.新任者簡歷:元大金融控股股份有限公司副總經理 7.異動原因:改派 8.原任期（例xx/xx/xx至xx/xx/xx）:113/05/27~116/05/26 9.新任生效日期:115/08/01 10.其他應敘明事項:無",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150729",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
       "id": "mops-history-6023-1150728-1",
       "date": "2026-07-28",
       "announced_date": "2026-07-28",
-      "fact_date": "2026-07-28",
+      "fact_date": null,
       "announced_time": "13:54:27",
       "title": "元大期貨公告115年度現金增資發行新股認股基準日 及其他相關事宜",
-      "description": "1.董事會決議或公司決定增資基準日期:115/07/28 2.是否採總括申報發行新股(是，請併敘明預定發行期間/否):否 3.主管機關申報生效日期:115/07/24 4.董事會決議(追補)發行日期:115/06/17 5.發行總金額及股數:發行總金額新台幣800,000,000元；發行股數80,000,000股 6.採總括申報發行新股案件，本次發行金額及股數:不適用 7.採總括申報發行新股案件，本次發行後，剩餘之金額及股數餘額:不適用 8.每股面額:新台幣10元 9.發行價格:未定，另行公告 10.員工認股股數:本次現金增資發行新股總數10%，計8,000,000股 11.原股東認購比率:本次現金增資發行新股總數80%，計64,000,000股由原股東按認股 基準日股東名簿所載股東持股比例認購之，每仟股可認購173.92593101股 12.公開銷售方式及股數:依證券交易法第28條之1規定，提撥增資發行股數之10%，計 8,000,000股，對外公開承銷 13.畸零股及逾期未認購股份之處理方式:原股東認購不足一股之畸零股得由原股東自停止 過戶日起五日內，逕向本公司股務代理機構辦理併湊，其併湊不足一股之畸零股及原股 東、員工與對外公開承銷放棄認購或認購不足及逾期未申報併湊之部分，授權董事長 洽特定人按發行價格認購之 14.本次發行新股之權利義務:與原已發行普通股相同 15.本次增資資金用途:充實營運資金 16.現金增資認股基準日:115/08/18 17.最後過戶日:115/08/13 18.停止過戶起始日期:115/08/14 19.停止過戶截止日期:115/08/18 20.股款繳納期間:(1)原股東及員工認股繳款期間115/08/21至115/08/27 (2)特定人認股繳款期間115/08/28至115/09/01 21.與代收及專戶存儲價款行庫訂約日期:俟正式簽約後另行公告 22.委託代收存款機構:俟正式簽約後另行公告 23.委託存儲款項機構:俟正式簽約後另行公告 24.其他應敘明事項: (1)本次現金增資發行新股業經金融監督管理委員會115年7月24日金管證期字第 1150348455號函申報生效在案 (2)本次現金增資之實際發行計畫、計畫項目、預定資金運用進度、預計可能產生效益 及其他相關事宜如因主管機關要求修正，或因法令規定及因客觀環境而需變更時，授權 董事長全權處理",
-      "clause": "第11款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150728",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -109,10 +172,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150723",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -130,10 +193,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150708",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -151,10 +214,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "4",
         "enterDate": "1150617",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "4",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -172,10 +235,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1150617",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "2",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -193,10 +256,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150617",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -214,10 +277,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150608",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -235,10 +298,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150527",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -256,10 +319,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150508",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -277,10 +340,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1150506",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "2",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -298,10 +361,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150506",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -319,10 +382,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150420",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -340,10 +403,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150409",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -361,10 +424,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150320",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -382,10 +445,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "5",
         "enterDate": "1150311",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "5",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -403,10 +466,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "4",
         "enterDate": "1150311",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "4",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -424,10 +487,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "3",
         "enterDate": "1150311",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "serialNumber": "3",
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     },
     {
@@ -445,73 +508,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "enterDate": "1150311",
         "serialNumber": "2",
-        "enterDate": "1150311",
-        "marketKind": "otc",
-        "companyId": "6023"
-      }
-    },
-    {
-      "id": "mops-history-6023-1150311-1",
-      "date": "2026-03-11",
-      "announced_date": "2026-03-11",
-      "fact_date": null,
-      "announced_time": "14:00:22",
-      "title": "元大期貨公告114年度合併財務報告經董事會決議通過",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150311",
-        "marketKind": "otc",
-        "companyId": "6023"
-      }
-    },
-    {
-      "id": "mops-history-6023-1150306-1",
-      "date": "2026-03-06",
-      "announced_date": "2026-03-06",
-      "fact_date": null,
-      "announced_time": "13:52:03",
-      "title": "元大期貨公告115年2月份營運概況",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150306",
-        "marketKind": "otc",
-        "companyId": "6023"
-      }
-    },
-    {
-      "id": "mops-history-6023-1150206-1",
-      "date": "2026-02-06",
-      "announced_date": "2026-02-06",
-      "fact_date": null,
-      "announced_time": "13:50:07",
-      "title": "元大期貨公告115年1月份營運概況",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150206",
-        "marketKind": "otc",
-        "companyId": "6023"
+        "companyId": "6023",
+        "marketKind": "otc"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-19T00:16:07.899Z",
+      "fetched_at": "2026-08-19T12:31:43.952Z",
       "row_count": 50,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-08-18T00:18:38.095Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-08-19T12:35:32.405Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
