@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-18T12:32:24.966Z",
+  "collected_at": "2026-08-19T00:17:07.927Z",
   "company": {
     "id": "twse-2330",
     "ticker": "2330",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "96f43e7b40fe91aeb757",
-      "date": "2026-08-17",
-      "announced_date": "2026-08-17",
-      "fact_date": "2026-08-24",
-      "announced_time": "183431",
-      "title": "本公司受邀參加機構投資人說明會",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/08/24 1.召開法人說明會之日期：115/08/24 ~ 115/08/27 2.召開法人說明會之時間：21 時 30 分 3.召開法人說明會之地點：Four Seasons Hotel Chicago 4.法人說明會擇要訊息：本公司受邀參加傑富瑞(Jefferies)舉辦之『Jefferies 2026 Semiconductor, IT Hardware & Communications Technology Conference』，會中就本公司7/16法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-      "clause": "第12款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-2330-1150817-1",
       "date": "2026-08-17",
@@ -507,6 +492,27 @@
         "marketKind": "sii",
         "companyId": "2330"
       }
+    },
+    {
+      "id": "mops-history-2330-1150527-1",
+      "date": "2026-05-27",
+      "announced_date": "2026-05-27",
+      "fact_date": null,
+      "announced_time": "16:32:10",
+      "title": "公告本公司調整民國114年第四季每股現金股利金額",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150527",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
     }
   ],
   "references": [
@@ -535,8 +541,8 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-18T12:31:02.739Z",
-      "row_count": 94,
+      "fetched_at": "2026-08-19T00:16:07.644Z",
+      "row_count": 122,
       "available": true
     },
     {

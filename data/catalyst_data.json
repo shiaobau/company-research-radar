@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-18T12:31:05.154Z",
+  "generated_at": "2026-08-19T00:16:09.213Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,7 +50,7 @@
       "rationale": "財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -67,7 +67,7 @@
       "rationale": "月營收分數 71；財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -84,7 +84,7 @@
       "rationale": "月營收分數 79；財務品質分數 69。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -93,33 +93,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 74,
+      "score": 71,
       "rationale": "月營收分數 79；財務品質分數 78。",
-      "events": [
-        {
-          "date": "2026-08-24",
-          "announce_date": "2026-08-17",
-          "time": "183431",
-          "title": "本公司受邀參加機構投資人說明會",
-          "clause": "第12款",
-          "description": "符合條款第四條第XX款：12 事實發生日：115/08/24 1.召開法人說明會之日期：115/08/24 ~ 115/08/27 2.召開法人說明會之時間：21 時 30 分 3.召開法人說明會之地點：Four Seasons Hotel Chicago 4.法人說明會擇要訊息：本公司受邀參加傑富瑞(Jefferies)舉辦之『Jefferies 2026 Semiconductor, IT Hardware & Communications Technology Conference』，會中就本公司7/16法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
-          "risk_points": 0,
-          "matched_patterns": [
-            "說明"
-          ]
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -136,7 +118,7 @@
       "rationale": "月營收分數 76；財務品質分數 89。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -153,7 +135,7 @@
       "rationale": "財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -170,7 +152,7 @@
       "rationale": "月營收分數 76。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -187,7 +169,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -204,7 +186,7 @@
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -221,7 +203,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -230,31 +212,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 56,
+      "score": 53,
       "rationale": "財務品質分數 65。",
-      "events": [
-        {
-          "date": "2026-08-17",
-          "announce_date": "2026-08-17",
-          "time": "181534",
-          "title": "代重要子公司宏全控股有限公司公告董事會新增 對單一企業宏全中國控股有限公司資金貸與金額達新台幣一千萬 以上且達本公司最近期財務報表淨值百分之二以上",
-          "clause": "第23款",
-          "description": "1.事實發生日:115/08/17 2.接受資金貸與之: (1)公司名稱:宏全中國控股股份有限公司 (2)與資金貸與他人公司之關係: 宏全中國控股股份有限公司係為宏全控股有限公司持有100%之子公司 (3)資金貸與之限額(仟元):11,182,239 (4)原資金貸與之餘額(仟元):3,996,747 (5)本次新增資金貸與之金額(仟元):740,306 (6)是否為董事會授權董事長對同一貸與對象分次撥貸或循環動用之資金貸與:否 (7)迄事實發生日止資金貸與餘額(仟元):4,737,053 (8)本次新增資金貸與之原因: 因前期借款到期償還所需 3.接受資金貸與公司所提供擔保品之: (1)內容: 無 (2)價值(仟元):0 4.接受資金貸與公司最近期財務報表之: (1)資本(仟元):452,604 (2)累積盈虧金額(仟元):4,235,412 5.計息方式: 2%+浮動利率 6.還款之: (1)條件: 無 (2)日期: 每筆借款期限以一年為限 7.迄事實發生日為止，資金貸與餘額(仟元): 6,081,126 8.迄事實發生日為止，資金貸與餘額占公開發行公司最近期財務報表淨值之比率: 30.75 9.公司貸與他人資金之來源: 子公司本身 10.其他應敘明事項: 無",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     }
   }
 }

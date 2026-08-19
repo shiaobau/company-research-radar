@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-18T12:32:24.966Z",
+  "collected_at": "2026-08-19T00:17:07.927Z",
   "company": {
     "id": "tpex-3115",
     "ticker": "3115",
@@ -541,7 +541,7 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-18T12:31:03.387Z",
+      "fetched_at": "2026-08-19T00:16:07.899Z",
       "row_count": 50,
       "available": true
     },

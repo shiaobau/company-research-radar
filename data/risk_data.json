@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-18T12:31:05.154Z",
+  "generated_at": "2026-08-19T00:16:09.213Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -99,7 +99,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -122,7 +122,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -133,37 +133,19 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 1,
+      "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
-      "review_event_count": 1,
+      "review_event_count": 0,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 91,
+      "score": 92,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [
-        {
-          "date": "2026-08-24",
-          "announce_date": "2026-08-17",
-          "time": "183431",
-          "title": "本公司受邀參加機構投資人說明會",
-          "clause": "第12款",
-          "description": "符合條款第四條第XX款：12 事實發生日：115/08/24 1.召開法人說明會之日期：115/08/24 ~ 115/08/27 2.召開法人說明會之時間：21 時 30 分 3.召開法人說明會之地點：Four Seasons Hotel Chicago 4.法人說明會擇要訊息：本公司受邀參加傑富瑞(Jefferies)舉辦之『Jefferies 2026 Semiconductor, IT Hardware & Communications Technology Conference』，會中就本公司7/16法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
-          "risk_points": 0,
-          "matched_patterns": [
-            "說明"
-          ]
-        }
-      ],
+      "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -186,7 +168,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -209,7 +191,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -232,7 +214,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -255,7 +237,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -278,7 +260,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -301,7 +283,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -312,7 +294,7 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 1,
+      "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
       "review_event_count": 0,
@@ -324,7 +306,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-18T12:31:05.154Z"
+      "refreshed_at": "2026-08-19T00:16:09.213Z"
     }
   }
 }
