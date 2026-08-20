@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-20T00:16:19.825Z",
+  "generated_at": "2026-08-20T12:31:14.337Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -99,7 +99,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -122,7 +122,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -145,7 +145,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -168,7 +168,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -191,7 +191,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -214,7 +214,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -237,7 +237,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -248,19 +248,37 @@
         "tpex_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 3,
       "negative_event_count": 0,
-      "positive_event_count": 0,
-      "review_event_count": 0,
+      "positive_event_count": 2,
+      "review_event_count": 1,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 92,
+      "score": 91,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-08-19",
+          "announce_date": "2026-08-19",
+          "time": "141139",
+          "title": "元大期貨公告補充說明本公司於115年3月11日公告董事會 決議發行之有擔保次順位普通公司債發行條件",
+          "clause": "第11款",
+          "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:元大期貨股份有限公司 115年度第三次有擔保次順位普通公司債 3.是否採總括申報發行公司債(是/否):否 4.發行總額:新台幣貳拾億伍仟萬元整。 5.每張面額:新台幣壹佰萬元整。 6.發行價格:依票面金額十足發行。 7.發行期間:五年期。 8.發行利率:固定年利率2.50% 9.擔保品之總類、名稱、金額及約定事項:銀行保證。 10.募得價款之用途及運用計畫:充實營運資金、強化財務結構、 提高調整後淨資本額比率。 11.承銷方式:委託證券承銷商對外公開承銷。 12.公司債受託人:永豐商業銀行股份有限公司。 13.承銷或代銷機構:元大證券股份有限公司為主辦承銷商。 14.發行保證人:中國信託商業銀行股份有限公司。 15.代理還本付息機構:永豐商業銀行股份有限公司營業部。 16.簽證機構:不適用。 17.能轉換股份者，其轉換價格及轉換辦法:不適用。 18.賣回條件:不適用。 19.買回條件:不適用。 20.附有轉換、交換或認股者，其換股基準日:不適用。 21.附有轉換、交換或認股者，對股權可能稀釋情形:不適用。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用。 23.其他應敘明事項:無",
+          "source_id": "tpex_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -283,7 +301,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -306,7 +324,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     }
   }
 }

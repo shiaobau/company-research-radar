@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-20T00:16:19.825Z",
+  "generated_at": "2026-08-20T12:31:14.337Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,7 +50,7 @@
       "rationale": "財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -67,7 +67,7 @@
       "rationale": "月營收分數 71；財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -84,7 +84,7 @@
       "rationale": "月營收分數 79；財務品質分數 69。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -101,7 +101,7 @@
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -134,7 +134,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -151,7 +151,7 @@
       "rationale": "財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -168,7 +168,7 @@
       "rationale": "月營收分數 76。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -185,7 +185,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -194,15 +194,63 @@
       "source_ids": [
         "tpex_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
-      "positive_event_count": 0,
+      "evidence_level": "high",
+      "event_count": 3,
+      "positive_event_count": 2,
       "negative_event_count": 0,
-      "score": 71,
-      "rationale": "月營收分數 79；財務品質分數 78。",
-      "events": [],
+      "score": 90,
+      "rationale": "月營收分數 79；財務品質分數 78；正向重大訊息 2 則。",
+      "events": [
+        {
+          "date": "2026-08-19",
+          "announce_date": "2026-08-19",
+          "time": "140014",
+          "title": "元大期貨公告115年第二季合併財務報告經董事會決議通過",
+          "clause": "第31款",
+          "description": "1.提報董事會或經董事會決議日期:115/08/19 2.審計委員會通過日期:115/08/19 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/06/30 4.1月1日累計至本期止營業收入(仟元):2,477,649 5.1月1日累計至本期止營業毛利(毛損) (仟元):不適用 6.1月1日累計至本期止營業利益(損失) (仟元):(414,396) 7.1月1日累計至本期止稅前淨利(淨損) (仟元):1,961,454 8.1月1日累計至本期止本期淨利(淨損) (仟元):1,543,614 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):1,543,614 10.1月1日累計至本期止基本每股盈餘(損失) (元):4.19 11.期末總資產(仟元):315,532,878 12.期末總負債(仟元):295,554,399 13.期末歸屬於母公司業主之權益(仟元):19,978,479 14.其他應敘明事項:無",
+          "source_id": "tpex_material_events",
+          "sentiment": "positive",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        },
+        {
+          "date": "2026-08-19",
+          "announce_date": "2026-08-19",
+          "time": "141139",
+          "title": "元大期貨公告補充說明本公司於115年3月11日公告董事會 決議發行之有擔保次順位普通公司債發行條件",
+          "clause": "第11款",
+          "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:元大期貨股份有限公司 115年度第三次有擔保次順位普通公司債 3.是否採總括申報發行公司債(是/否):否 4.發行總額:新台幣貳拾億伍仟萬元整。 5.每張面額:新台幣壹佰萬元整。 6.發行價格:依票面金額十足發行。 7.發行期間:五年期。 8.發行利率:固定年利率2.50% 9.擔保品之總類、名稱、金額及約定事項:銀行保證。 10.募得價款之用途及運用計畫:充實營運資金、強化財務結構、 提高調整後淨資本額比率。 11.承銷方式:委託證券承銷商對外公開承銷。 12.公司債受託人:永豐商業銀行股份有限公司。 13.承銷或代銷機構:元大證券股份有限公司為主辦承銷商。 14.發行保證人:中國信託商業銀行股份有限公司。 15.代理還本付息機構:永豐商業銀行股份有限公司營業部。 16.簽證機構:不適用。 17.能轉換股份者，其轉換價格及轉換辦法:不適用。 18.賣回條件:不適用。 19.買回條件:不適用。 20.附有轉換、交換或認股者，其換股基準日:不適用。 21.附有轉換、交換或認股者，對股權可能稀釋情形:不適用。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用。 23.其他應敘明事項:無",
+          "source_id": "tpex_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        },
+        {
+          "date": "2026-08-19",
+          "announce_date": "2026-08-19",
+          "time": "141211",
+          "title": "元大期貨公告董事會通過捐贈元大文教基金會事宜",
+          "clause": "第43款",
+          "description": "1.事實發生日:115/08/19 2.捐贈緣由:為支持財團法人元大文教基金會執行115年重要工作計畫 3.捐贈金額:新臺幣參佰陸拾萬元整 4.受贈對象:財團法人元大文教基金會 5.與公司關係:本公司關係人 6.表示反對或保留意見之獨立董事姓名及簡歷:無 7.前揭獨立董事表示反對或保留之意見:無 8.其他應敘明事項:無",
+          "source_id": "tpex_material_events",
+          "sentiment": "positive",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -219,7 +267,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -236,7 +284,7 @@
       "rationale": "財務品質分數 65。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-20T00:16:19.825Z"
+      "refreshed_at": "2026-08-20T12:31:14.337Z"
     }
   }
 }
