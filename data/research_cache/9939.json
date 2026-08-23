@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-20T12:31:58.348Z",
+  "collected_at": "2026-08-23T00:16:07.228Z",
   "company": {
     "id": "twse-9939",
     "ticker": "9939",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-9939-1150820-1",
+      "date": "2026-08-20",
+      "announced_date": "2026-08-20",
+      "fact_date": "2026-08-21",
+      "announced_time": "17:54:08",
+      "title": "本公司受邀參加宏遠證券所舉辦之線上法說會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/08/21 1.召開法人說明會之日期：115/08/21 2.召開法人說明會之時間：14 時 00 分 3.召開法人說明會之地點：線上法說會 4.法人說明會擇要訊息：公司簡介財務、業務及相關資訊作業說明 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150820",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
     {
       "id": "mops-history-9939-1150817-1",
       "date": "2026-08-17",
@@ -25,10 +46,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150817",
         "serialNumber": "1",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150817",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -46,10 +67,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150807",
         "serialNumber": "1",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150807",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -67,31 +88,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150730",
         "serialNumber": "1",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150730",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
       "id": "mops-history-9939-1150616-1",
       "date": "2026-06-16",
       "announced_date": "2026-06-16",
-      "fact_date": "2026-06-16",
+      "fact_date": null,
       "announced_time": "16:56:32",
       "title": "公告本公司國內第二次無擔保轉換公司債轉換價格調整",
-      "description": "1.事實發生日:115/06/16 2.公司名稱:宏全國際股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:本公司因配發普通股現金股利，依本公司國內第二次無擔保轉換公司債發行 及轉換辦法第11條規定調整轉換價格。 6.因應措施:自除息基準日(115月7月8日)起，國內第二次無擔保轉換公司債轉換價格由 新台幣161.2元調整為153.7元。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 無",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150616",
         "serialNumber": "1",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150616",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -109,10 +130,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150604",
         "serialNumber": "1",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150604",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -130,10 +151,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150603",
         "serialNumber": "1",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150603",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -151,10 +172,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150529",
         "serialNumber": "12",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150529",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -172,10 +193,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150529",
         "serialNumber": "11",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150529",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -193,10 +214,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150529",
         "serialNumber": "9",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150529",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -214,10 +235,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150528",
         "serialNumber": "8",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150528",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -235,10 +256,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150528",
         "serialNumber": "7",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150528",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -256,10 +277,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150528",
         "serialNumber": "6",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150528",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -277,10 +298,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150528",
         "serialNumber": "4",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150528",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -298,10 +319,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150529",
         "serialNumber": "13",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150529",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -319,10 +340,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150528",
         "serialNumber": "3",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150528",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -340,10 +361,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150528",
         "serialNumber": "1",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150528",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -361,10 +382,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150522",
         "serialNumber": "7",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150522",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -382,10 +403,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150522",
         "serialNumber": "5",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150522",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -403,10 +424,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150522",
         "serialNumber": "8",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150522",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -424,10 +445,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150522",
         "serialNumber": "2",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150522",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -445,10 +466,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150520",
         "serialNumber": "1",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150520",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -466,10 +487,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150507",
         "serialNumber": "1",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "enterDate": "1150507",
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     },
     {
@@ -487,31 +508,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "serialNumber": "1",
         "enterDate": "1150430",
-        "serialNumber": "1",
-        "companyId": "9939",
-        "marketKind": "sii"
-      }
-    },
-    {
-      "id": "mops-history-9939-1150309-1",
-      "date": "2026-03-09",
-      "announced_date": "2026-03-09",
-      "fact_date": null,
-      "announced_time": "15:33:19",
-      "title": "澄清媒體報導",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150309",
-        "serialNumber": "1",
-        "companyId": "9939",
-        "marketKind": "sii"
+        "marketKind": "sii",
+        "companyId": "9939"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-20T12:31:10.757Z",
-      "row_count": 121,
+      "fetched_at": "2026-08-23T00:15:25.709Z",
+      "row_count": 7,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-08-19T12:35:43.388Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-08-23T00:17:27.239Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

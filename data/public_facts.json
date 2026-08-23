@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-20T12:31:14.337Z",
+  "generated_at": "2026-08-23T00:15:27.729Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -198,13 +198,20 @@
       "short_title": "TPEx 三大法人",
       "url": "https://www.tpex.org.tw/web/stock/3insti/daily_trade/3itrade_hedge_result.php",
       "note": "上櫃公司每日外資、投信、自營商與合計買賣超。"
+    },
+    {
+      "id": "yahoo_finance_chart",
+      "title": "Yahoo Finance：台股歷史日線資料",
+      "short_title": "Yahoo Finance 股價",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/",
+      "note": "當交易所歷史查詢暫時不可用時，作為次要公開市場資料備援；使用 .TW 或 .TWO 代號，並在每筆資料標示來源。"
     }
   ],
   "companies": {
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-08-20T12:31:14.337Z",
+      "generated_at": "2026-08-23T00:15:27.729Z",
       "facts": [
         {
           "id": "official_classification",
@@ -234,7 +241,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-20 收盤 82.4；區間報酬：20日 -10.43%；60日 -3.74%；當日量為 20 日均量 0.6 倍。",
+          "value": "2026-08-21 收盤 82.4；區間報酬：20日 -10.34%；60日 -3.74%；當日量為 20 日均量 0.43 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -288,7 +295,7 @@
     "twse-1707": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-08-20T12:31:14.337Z",
+      "generated_at": "2026-08-23T00:15:27.729Z",
       "facts": [
         {
           "id": "official_classification",
@@ -318,7 +325,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-20 收盤 90.5；區間報酬：20日 -0.33%；60日 -9.95%；當日量為 20 日均量 1.02 倍。",
+          "value": "2026-08-21 收盤 90.1；區間報酬：20日 -1.53%；60日 -9.54%；當日量為 20 日均量 1.21 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -364,7 +371,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-08-20T12:31:14.337Z",
+      "generated_at": "2026-08-23T00:15:27.729Z",
       "facts": [
         {
           "id": "official_classification",
@@ -394,7 +401,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-20 收盤 115.5；區間報酬：20日 -16.61%；60日 -11.49%；當日量為 20 日均量 0.6 倍。",
+          "value": "2026-08-21 收盤 116.5；區間報酬：20日 -8.98%；60日 -18.82%；當日量為 20 日均量 0.34 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -440,7 +447,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-08-20T12:31:14.337Z",
+      "generated_at": "2026-08-23T00:15:27.729Z",
       "facts": [
         {
           "id": "official_classification",
@@ -470,7 +477,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-20 收盤 1,745；區間報酬：20日 -7.18%；60日 -25.74%；當日量為 20 日均量 0.74 倍。",
+          "value": "2026-08-21 收盤 1,750；區間報酬：20日 -1.96%；60日 -30.56%；當日量為 20 日均量 0.38 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -524,7 +531,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-08-20T12:31:14.337Z",
+      "generated_at": "2026-08-23T00:15:27.729Z",
       "facts": [
         {
           "id": "official_classification",
@@ -554,7 +561,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-20 收盤 2,375；區間報酬：20日 -1.25%；60日 4.63%；當日量為 20 日均量 0.53 倍。",
+          "value": "2026-08-21 收盤 2,410；區間報酬：20日 2.55%；60日 4.78%；當日量為 20 日均量 0.6 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -600,7 +607,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-08-20T12:31:14.337Z",
+      "generated_at": "2026-08-23T00:15:27.729Z",
       "facts": [
         {
           "id": "official_classification",
@@ -630,7 +637,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-20 收盤 62.1；區間報酬：20日 -1.9%；60日 8.38%；當日量為 20 日均量 0.92 倍。",
+          "value": "2026-08-21 收盤 64；區間報酬：20日 1.43%；60日 7.56%；當日量為 20 日均量 0.82 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -653,14 +660,6 @@
           ]
         },
         {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-08-19：元大金控代子公司元大證券公告取得 元大期貨股份有限公司115年度第三次有擔保次順位普通公司債。",
-          "source_ids": [
-            "twse_material_events"
-          ]
-        },
-        {
           "id": "governance_snapshot",
           "label": "股權與治理",
           "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
@@ -673,7 +672,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 1 則；申報違規 0 筆。",
+          "value": "官方事件 0 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -684,7 +683,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-08-20T12:31:14.337Z",
+      "generated_at": "2026-08-23T00:15:27.729Z",
       "facts": [
         {
           "id": "official_classification",
@@ -714,7 +713,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-20 收盤 46.4；區間報酬：20日 -3.63%；60日 17.77%；當日量為 20 日均量 0.86 倍。",
+          "value": "2026-08-21 收盤 46.95；區間報酬：20日 -3.1%；60日 19.01%；當日量為 20 日均量 0.74 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -760,7 +759,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-08-20T12:31:14.337Z",
+      "generated_at": "2026-08-23T00:15:27.729Z",
       "facts": [
         {
           "id": "official_classification",
@@ -790,7 +789,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-20 收盤 9.14；區間報酬：20日 0.33%；60日 -3.79%；當日量為 20 日均量 0.47 倍。",
+          "value": "2026-08-21 收盤 9.09；區間報酬：20日 1.91%；60日 -6.86%；當日量為 20 日均量 0.99 倍。",
           "source_ids": [
             "tpex_trading_stock"
           ]
@@ -835,7 +834,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-08-20T12:31:14.337Z",
+      "generated_at": "2026-08-23T00:15:27.729Z",
       "facts": [
         {
           "id": "official_classification",
@@ -865,7 +864,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-20 收盤 46；區間報酬：20日 -11.37%；60日 0%；當日量為 20 日均量 0.71 倍。",
+          "value": "2026-08-21 收盤 46.05；區間報酬：20日 -6.97%；60日 -8.27%；當日量為 20 日均量 0.41 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -911,7 +910,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-08-20T12:31:14.337Z",
+      "generated_at": "2026-08-23T00:15:27.729Z",
       "facts": [
         {
           "id": "official_classification",
@@ -941,7 +940,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-20 收盤 82.5；區間報酬：20日 -5.61%；60日 -15.99%；當日量為 20 日均量 1.26 倍。",
+          "value": "2026-08-21 收盤 82.8；區間報酬：20日 -4.94%；60日 -16.19%；當日量為 20 日均量 1.15 倍。",
           "source_ids": [
             "tpex_trading_stock"
           ]
@@ -961,14 +960,6 @@
           "source_ids": [
             "tpex_margin_balance",
             "tpex_institutional_trading"
-          ]
-        },
-        {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-08-19：元大期貨公告115年第二季合併財務報告經董事會決議通過。",
-          "source_ids": [
-            "tpex_material_events"
           ]
         },
         {
@@ -992,7 +983,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 3 則；待閱讀 1 則；申報違規 0 筆。",
+          "value": "官方事件 0 則；申報違規 0 筆。",
           "source_ids": [
             "tpex_material_events",
             "tpex_disclosure_violations"
@@ -1003,7 +994,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-08-20T12:31:14.337Z",
+      "generated_at": "2026-08-23T00:15:27.729Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1033,7 +1024,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-20 收盤 84.8；區間報酬：20日 -4.18%；60日 -13.47%；當日量為 20 日均量 10.49 倍。",
+          "value": "2026-08-21 收盤 85；區間報酬：20日 -3.74%；60日 -11.73%；當日量為 20 日均量 2.26 倍。",
           "source_ids": [
             "tpex_trading_stock"
           ]
@@ -1087,7 +1078,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-08-20T12:31:14.337Z",
+      "generated_at": "2026-08-23T00:15:27.729Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1117,9 +1108,9 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-20 收盤 132；區間報酬：20日 1.54%；60日 0%；當日量為 20 日均量 0.36 倍。",
+          "value": "2026-08-21 收盤 134；區間報酬：20日 3.47%；60日 8.94%；當日量為 20 日均量 0.88 倍。",
           "source_ids": [
-            "twse_stock_day"
+            "yahoo_finance_chart"
           ]
         },
         {
