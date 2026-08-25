@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-24T12:34:13.466Z",
+  "collected_at": "2026-08-25T00:21:52.652Z",
   "company": {
     "id": "twse-1707",
     "ticker": "1707",
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-24T12:31:26.797Z",
-      "row_count": 4,
+      "fetched_at": "2026-08-25T00:16:13.283Z",
+      "row_count": 114,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-08-24T00:20:35.523Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-08-25T00:22:05.114Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

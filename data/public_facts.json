@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-24T12:31:33.327Z",
+  "generated_at": "2026-08-25T00:16:15.813Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -204,7 +204,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-08-24T12:31:33.327Z",
+      "generated_at": "2026-08-25T00:16:15.813Z",
       "facts": [
         {
           "id": "official_classification",
@@ -288,7 +288,7 @@
     "twse-1707": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-08-24T12:31:33.327Z",
+      "generated_at": "2026-08-25T00:16:15.813Z",
       "facts": [
         {
           "id": "official_classification",
@@ -364,7 +364,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-08-24T12:31:33.327Z",
+      "generated_at": "2026-08-25T00:16:15.813Z",
       "facts": [
         {
           "id": "official_classification",
@@ -440,7 +440,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-08-24T12:31:33.327Z",
+      "generated_at": "2026-08-25T00:16:15.813Z",
       "facts": [
         {
           "id": "official_classification",
@@ -524,7 +524,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-08-24T12:31:33.327Z",
+      "generated_at": "2026-08-25T00:16:15.813Z",
       "facts": [
         {
           "id": "official_classification",
@@ -600,7 +600,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-08-24T12:31:33.327Z",
+      "generated_at": "2026-08-25T00:16:15.813Z",
       "facts": [
         {
           "id": "official_classification",
@@ -653,6 +653,14 @@
           ]
         },
         {
+          "id": "latest_disclosure",
+          "label": "近期重大訊息",
+          "value": "2026-08-24：元大金控公告115年第二季合併財務報告經董事會決議通過。",
+          "source_ids": [
+            "twse_material_events"
+          ]
+        },
+        {
           "id": "governance_snapshot",
           "label": "股權與治理",
           "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
@@ -665,7 +673,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 0 則；申報違規 0 筆。",
+          "value": "官方事件 5 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -676,7 +684,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-08-24T12:31:33.327Z",
+      "generated_at": "2026-08-25T00:16:15.813Z",
       "facts": [
         {
           "id": "official_classification",
@@ -752,7 +760,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-08-24T12:31:33.327Z",
+      "generated_at": "2026-08-25T00:16:15.813Z",
       "facts": [
         {
           "id": "official_classification",
@@ -827,7 +835,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-08-24T12:31:33.327Z",
+      "generated_at": "2026-08-25T00:16:15.813Z",
       "facts": [
         {
           "id": "official_classification",
@@ -903,7 +911,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-08-24T12:31:33.327Z",
+      "generated_at": "2026-08-25T00:16:15.813Z",
       "facts": [
         {
           "id": "official_classification",
@@ -987,7 +995,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-08-24T12:31:33.327Z",
+      "generated_at": "2026-08-25T00:16:15.813Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1071,7 +1079,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-08-24T12:31:33.327Z",
+      "generated_at": "2026-08-25T00:16:15.813Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1101,7 +1109,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-24 收盤 134.5；區間報酬：20日 0%；60日 0%；當日量為 20 日均量 0.53 倍。",
+          "value": "2026-07-31 收盤 128；區間報酬：20日 8.47%；60日 0%；當日量為 20 日均量 0.85 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
