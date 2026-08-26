@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-25T12:31:41.463Z",
+  "generated_at": "2026-08-26T00:15:45.922Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-25T12:31:41.463Z"
+      "refreshed_at": "2026-08-26T00:15:45.922Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-25T12:31:41.463Z"
+      "refreshed_at": "2026-08-26T00:15:45.922Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -99,7 +99,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-25T12:31:41.463Z"
+      "refreshed_at": "2026-08-26T00:15:45.922Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -122,7 +122,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-25T12:31:41.463Z"
+      "refreshed_at": "2026-08-26T00:15:45.922Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -145,33 +145,10 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-25T12:31:41.463Z"
+      "refreshed_at": "2026-08-26T00:15:45.922Z"
     },
     "twse-2885": {
       "ticker": "2885",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_material_events",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "event_count": 5,
-      "negative_event_count": 0,
-      "positive_event_count": 1,
-      "review_event_count": 0,
-      "negative_event_points": 0,
-      "negative_event_categories": {},
-      "disclosure_violation_count": 0,
-      "score": 92,
-      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
-      "violations": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-08-25T12:31:41.463Z"
-    },
-    "twse-2886": {
-      "ticker": "2886",
       "market": "TWSE",
       "status": "ok",
       "source_ids": [
@@ -191,7 +168,30 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-25T12:31:41.463Z"
+      "refreshed_at": "2026-08-26T00:15:45.922Z"
+    },
+    "twse-2886": {
+      "ticker": "2886",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "event_count": 2,
+      "negative_event_count": 0,
+      "positive_event_count": 1,
+      "review_event_count": 0,
+      "negative_event_points": 0,
+      "negative_event_categories": {},
+      "disclosure_violation_count": 0,
+      "score": 92,
+      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
+      "events": [],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-08-26T00:15:45.922Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -214,7 +214,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-25T12:31:41.463Z"
+      "refreshed_at": "2026-08-26T00:15:45.922Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -237,7 +237,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-25T12:31:41.463Z"
+      "refreshed_at": "2026-08-26T00:15:45.922Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -260,7 +260,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-25T12:31:41.463Z"
+      "refreshed_at": "2026-08-26T00:15:45.922Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -283,7 +283,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-25T12:31:41.463Z"
+      "refreshed_at": "2026-08-26T00:15:45.922Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -306,7 +306,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-25T12:31:41.463Z"
+      "refreshed_at": "2026-08-26T00:15:45.922Z"
     }
   }
 }

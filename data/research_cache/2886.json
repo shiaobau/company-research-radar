@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-25T12:32:15.948Z",
+  "collected_at": "2026-08-26T00:19:34.204Z",
   "company": {
     "id": "twse-2886",
     "ticker": "2886",
@@ -10,6 +10,36 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "f3a677fdc58fbdb561c3",
+      "date": "2026-08-25",
+      "announced_date": "2026-08-25",
+      "fact_date": "2026-08-25",
+      "announced_time": "154339",
+      "title": "公告本公司之子公司兆豐國際商業銀行(股)公司 董事異動案",
+      "description": "1.發生變動日期:115/08/25 2.法人名稱:兆豐金融控股股份有限公司 3.舊任者姓名:葉盛 4.舊任者簡歷:前中央銀行經濟研究處副處長 5.新任者姓名:蔡美芬 6.新任者簡歷:中央銀行經濟研究處副處長 7.異動原因:董事會決議改派 8.原任期（例xx/xx/xx至xx/xx/xx）:114/04/08至117/04/07 9.新任生效日期:115/08/25 10.其他應敘明事項:無",
+      "clause": "第6款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "2a8eb6859010c92e3820",
+      "date": "2026-08-25",
+      "announced_date": "2026-08-25",
+      "fact_date": "2026-08-25",
+      "announced_time": "154317",
+      "title": "公告本公司115年第二季合併財務報告業經審計委員會及 董事會決議通過",
+      "description": "1.提報董事會或經董事會決議日期:115/08/25 2.審計委員會通過日期:115/08/18 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/06/30 4.1月1日累計至本期止利息淨收益(仟元):21,211,248 5.1月1日累計至本期止淨收益(仟元):46,292,555 6.1月1日累計至本期止稅前淨利(損) (仟元):25,806,856 7.1月1日累計至本期止本期淨利(淨損) (仟元):21,307,220 8.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):21,307,220 9.1月1日累計至本期止基本每股盈餘(損失) (元):1.44 10.期末總資產(仟元):5,232,546,775 11.期末總負債(仟元):4,830,190,750 12.期末歸屬於母公司業主之權益(仟元):402,356,025 13.其他應敘明事項:無",
+      "clause": "第31款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2886-1150813-1",
       "date": "2026-08-13",
@@ -471,48 +501,6 @@
         "marketKind": "sii",
         "companyId": "2886"
       }
-    },
-    {
-      "id": "mops-history-2886-1150622-2",
-      "date": "2026-06-22",
-      "announced_date": "2026-06-22",
-      "fact_date": null,
-      "announced_time": "18:14:35",
-      "title": "代從屬公司中銀財務管理顧問股份有限公司公告向關係人取得使用權資產",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150622",
-        "marketKind": "sii",
-        "companyId": "2886"
-      }
-    },
-    {
-      "id": "mops-history-2886-1150622-1",
-      "date": "2026-06-22",
-      "announced_date": "2026-06-22",
-      "fact_date": null,
-      "announced_time": "18:14:05",
-      "title": "代從屬公司雍興實業股份有限公司公告向關係人取得使用權資產",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150622",
-        "marketKind": "sii",
-        "companyId": "2886"
-      }
     }
   ],
   "references": [
@@ -541,8 +529,8 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-25T12:31:38.819Z",
-      "row_count": 114,
+      "fetched_at": "2026-08-26T00:15:43.773Z",
+      "row_count": 101,
       "available": true
     },
     {
