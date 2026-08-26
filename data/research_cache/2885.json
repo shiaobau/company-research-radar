@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-08-26T00:19:34.204Z",
+  "collected_at": "2026-08-26T12:31:38.297Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -10,6 +10,69 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2885-1150826-3",
+      "date": "2026-08-26",
+      "announced_date": "2026-08-26",
+      "fact_date": "2026-08-24",
+      "announced_time": "17:38:38",
+      "title": "元大金控公告訂定與元大證券投資信託股份有限公司股份 轉換基準日暨增資基準日(更正115年8月24日公告內容)",
+      "description": "1.事實發生日:115/08/24 2.公司名稱:元大金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由: (1)本公司擬以股份轉換方式將元大證券投資信託股份有限公司(以下簡稱元大投信) 納為本公司100%持股之子公司，雙方業於115年6月12日分別召開股東常會通過 本股份轉換案及股份轉換契約，並獲金融監督管理委員會115年7月29日 金管銀控字第1150224616號函核准在案。 (2)本股份轉換案交易對價，經考量雙方除權息之影響後，每1股元大投信普通股 換發本公司5.2981股普通股；另為支付與元大投信股份轉換所需之股份對價， 本公司擬辦理增資發行普通股新股，並訂定股份轉換基準日暨增資基準日 為115年12月4日。 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): (1)前揭股份轉換基準日係由本公司與元大投信雙方董事長共同議定之。 (2)本公司115年8月24日公告有關與元大投信股份轉換案之交易對價調整， 並自同日(本公司除權基準日)起生效。 (3)更正115年8月24日公告內容之「7.其他應敘明事項(2)」，其中 「並自同日(本公司除權交易日)起生效」，更正為「並自同日(本公司除權基準日) 起生效」，生效日期不變。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2885",
+        "marketKind": "sii",
+        "enterDate": "1150826",
+        "serialNumber": "3"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150826-2",
+      "date": "2026-08-26",
+      "announced_date": "2026-08-26",
+      "fact_date": "2026-08-26",
+      "announced_time": "16:33:27",
+      "title": "元大金控代子公司元大證券公告取得 中國信託商業銀行一一五年度第一百五十期無擔保次順位金融債券",
+      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: 中國信託商業銀行股份有限公司一一五年度第一百五十期無擔保次順位金融債券 2.事實發生日:115/8/26~115/8/26 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:董事長核決 民國115年8月19日 5.交易單位數量、每單位價格及交易總金額: 交易數量：280張 單位價格：依票面金額均為新臺幣10,000仟元 交易總金額：新臺幣28億元整 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: 交易相對人：中國信託商業銀行股份有限公司 與公司關係：非利害關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 交付或付款條件：一次付清/現金交割 契約限制條款及其他重要約定事項：無 12.本次交易之決定方式、價格決定之參考依據及決策單位: 本次交易之決定方式：議價 價格決定之參考依據：依議價結果 決策單位：依元大證券核決權限核決 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 數量：280張 金額：新臺幣28億元整 持股比例：不適用 權利受限情形：無 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額: 1.佔總資產比例：21.55% 2.佔股東權益比例：145.64% 3.營運資金：新臺幣129,738,104,410元 16.經紀人及經紀費用: 不適用 17.取得或處分之具體目的或用途: 執行一般業務 18.本次交易表示異議董事之意見: 不適用 19.本次交易為關係人交易:否 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 營運資金 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2885",
+        "marketKind": "sii",
+        "enterDate": "1150826",
+        "serialNumber": "2"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150826-1",
+      "date": "2026-08-26",
+      "announced_date": "2026-08-26",
+      "fact_date": "2026-08-26",
+      "announced_time": "15:28:48",
+      "title": "元大金控代子公司元大投信公告董事會通過對關係人 捐贈事宜",
+      "description": "1.事實發生日:115/08/26 2.捐贈原由:支持財團法人元大文教基金會執行115年工作計畫 3.捐贈金額:新臺幣660萬元整 4.受贈對象:財團法人元大文教基金會 5.與公司關係:關係人 6.表示反對或保留意見之獨立董事姓名及簡歷:無 7.前揭獨立董事表示反對或保留之意見:不適用 8.其他應敘明事項:無",
+      "clause": "第43款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2885",
+        "marketKind": "sii",
+        "enterDate": "1150826",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2885-1150824-5",
       "date": "2026-08-24",
@@ -25,73 +88,73 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "5",
-        "enterDate": "1150824",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150824",
+        "serialNumber": "5"
       }
     },
     {
       "id": "mops-history-2885-1150824-4",
       "date": "2026-08-24",
       "announced_date": "2026-08-24",
-      "fact_date": "2026-08-24",
+      "fact_date": null,
       "announced_time": "20:36:21",
       "title": "元大金控公告訂定與元大證券投資信託股份有限公司 股份轉換基準日暨增資基準日",
-      "description": "1.事實發生日:115/08/24 2.公司名稱:元大金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由: (1)本公司擬以股份轉換方式將元大證券投資信託股份有限公司(以下簡稱元大投信) 納為本公司100%持股之子公司，雙方業於115年6月12日分別召開股東常會通過 本股份轉換案及股份轉換契約，並獲金融監督管理委員會115年7月29日 金管銀控字第1150224616號函核准在案。 (2)本股份轉換案交易對價，經考量雙方除權息之影響後，每1股元大投信普通股 換發本公司5.2981股普通股；另為支付與元大投信股份轉換所需之股份對價， 本公司擬辦理增資發行普通股新股，並訂定股份轉換基準日暨增資基準日 為115年12月4日。 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): (1)前揭股份轉換基準日係由本公司與元大投信雙方董事長共同議定之。 (2)本公司115年8月24日公告有關與元大投信股份轉換案之交易對價調整， 並自同日(本公司除權交易日)起生效。",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "4",
-        "enterDate": "1150824",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150824",
+        "serialNumber": "4"
       }
     },
     {
       "id": "mops-history-2885-1150824-3",
       "date": "2026-08-24",
       "announced_date": "2026-08-24",
-      "fact_date": "2026-08-24",
+      "fact_date": null,
       "announced_time": "20:24:49",
       "title": "元大金控公告本公司董事會決議增資發行新股",
-      "description": "1.董事會決議日期:115/08/24 2.增資資金來源:不適用 3.是否採總括申報發行新股(是，請併敘明預定發行期間/否):否 4.全案發行總金額及股數(如屬盈餘或公積轉增資，發行股數則不含配發給員工部分): 新臺幣2,464,361,090元(依每股面額新臺幣10元計算)及普通股246,436,109股 5.採總括申報發行新股案件，本次發行金額及股數:不適用 6.採總括申報發行新股案件，本次發行後，剩餘之金額及股數餘額:不適用 7.每股面額:新臺幣10元 8.發行價格:不適用 9.員工認購股數或配發金額:不適用 10.公開銷售股數:不適用 11.原股東認購或無償配發比例:不適用 12.畸零股及逾期未認購股份之處理方式:依本公司與元大證券投資信託股份有限公司之 股份轉換契約第三條，股東因股份轉換取得不足本公司普通股一股之畸零股部分， 由本公司依普通股於股份轉換基準日前之最後交易日收盤價，按比例折算現金支付予 元大證券投資信託股份有限公司股東(折算之單位數額， 四捨五入至新臺幣「元」為止)。 13.本次發行新股之權利義務:新股之權利義務與原有股份相同 14.本次增資資金用途:不適用 15.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用 16.其他應敘明事項:授權董事長訂定增資基準日並全權辦理增資發行新股相關事宜。",
-      "clause": "第11款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "3",
-        "enterDate": "1150824",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150824",
+        "serialNumber": "3"
       }
     },
     {
       "id": "mops-history-2885-1150824-2",
       "date": "2026-08-24",
       "announced_date": "2026-08-24",
-      "fact_date": "2026-08-24",
+      "fact_date": null,
       "announced_time": "19:51:42",
       "title": "元大金控公告本公司與元大證券投資信託股份有限公司 股份轉換案之換股比例調整",
-      "description": "1.事實發生日:115/08/24 2.公司名稱:元大金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由: (1)依本公司與元大證券投資信託股份有限公司(以下簡稱元大投信)間 股份轉換契約第四條規定辦理。 (2)因本公司與元大投信分別於115年6月12日股東常會決議通過114年度盈餘分配案 ，故換股比例於本公司115年8月24日除權基準日後調整為每1股元大投信普通股換發 本公司5.2981股普通股(原於115年3月25日公告換股比例為5.2583股普通股)。 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 無",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150824",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150824",
+        "serialNumber": "2"
       }
     },
     {
@@ -109,10 +172,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150824",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150824",
+        "serialNumber": "1"
       }
     },
     {
@@ -130,10 +193,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150821",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150821",
+        "serialNumber": "2"
       }
     },
     {
@@ -151,10 +214,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150821",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150821",
+        "serialNumber": "1"
       }
     },
     {
@@ -172,10 +235,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "6",
-        "enterDate": "1150820",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150820",
+        "serialNumber": "6"
       }
     },
     {
@@ -193,10 +256,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "5",
-        "enterDate": "1150820",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150820",
+        "serialNumber": "5"
       }
     },
     {
@@ -214,10 +277,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "4",
-        "enterDate": "1150820",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150820",
+        "serialNumber": "4"
       }
     },
     {
@@ -235,10 +298,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "3",
-        "enterDate": "1150820",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150820",
+        "serialNumber": "3"
       }
     },
     {
@@ -256,10 +319,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150820",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150820",
+        "serialNumber": "1"
       }
     },
     {
@@ -277,10 +340,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150819",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150819",
+        "serialNumber": "1"
       }
     },
     {
@@ -298,10 +361,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150813",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150813",
+        "serialNumber": "1"
       }
     },
     {
@@ -319,10 +382,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "5",
-        "enterDate": "1150812",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150812",
+        "serialNumber": "5"
       }
     },
     {
@@ -340,10 +403,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "4",
-        "enterDate": "1150812",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150812",
+        "serialNumber": "4"
       }
     },
     {
@@ -361,10 +424,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "3",
-        "enterDate": "1150812",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150812",
+        "serialNumber": "3"
       }
     },
     {
@@ -382,10 +445,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150812",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150812",
+        "serialNumber": "2"
       }
     },
     {
@@ -403,10 +466,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150812",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150812",
+        "serialNumber": "1"
       }
     },
     {
@@ -424,10 +487,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150811",
+        "companyId": "2885",
         "marketKind": "sii",
-        "companyId": "2885"
+        "enterDate": "1150811",
+        "serialNumber": "1"
       }
     },
     {
@@ -445,73 +508,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
+        "companyId": "2885",
+        "marketKind": "sii",
         "enterDate": "1150805",
-        "marketKind": "sii",
-        "companyId": "2885"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150730-8",
-      "date": "2026-07-30",
-      "announced_date": "2026-07-30",
-      "fact_date": null,
-      "announced_time": "18:13:42",
-      "title": "元大金控代元大證券公告向元大投信原取得使用權資產租賃範圍 調整",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "8",
-        "enterDate": "1150730",
-        "marketKind": "sii",
-        "companyId": "2885"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150730-7",
-      "date": "2026-07-30",
-      "announced_date": "2026-07-30",
-      "fact_date": null,
-      "announced_time": "18:01:38",
-      "title": "元大金控代子公司元大證券(香港)公告董事異動事",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "7",
-        "enterDate": "1150730",
-        "marketKind": "sii",
-        "companyId": "2885"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150730-6",
-      "date": "2026-07-30",
-      "announced_date": "2026-07-30",
-      "fact_date": null,
-      "announced_time": "16:19:26",
-      "title": "元大金控代子公司元大證券(韓國)公告董事會通過 擬轉投資設立百分之百持股之韓國資產管理子公司事",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "6",
-        "enterDate": "1150730",
-        "marketKind": "sii",
-        "companyId": "2885"
+        "serialNumber": "1"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-08-26T00:15:43.773Z",
+      "fetched_at": "2026-08-26T12:30:52.007Z",
       "row_count": 101,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-08-25T00:22:31.350Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-08-26T12:32:16.563Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
