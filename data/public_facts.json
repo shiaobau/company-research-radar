@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-26T12:30:53.906Z",
+  "generated_at": "2026-08-27T00:15:41.064Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -211,7 +211,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-08-26T12:30:53.906Z",
+      "generated_at": "2026-08-27T00:15:41.064Z",
       "facts": [
         {
           "id": "official_classification",
@@ -295,7 +295,7 @@
     "twse-1707": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-08-26T12:30:53.906Z",
+      "generated_at": "2026-08-27T00:15:41.064Z",
       "facts": [
         {
           "id": "official_classification",
@@ -371,7 +371,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-08-26T12:30:53.906Z",
+      "generated_at": "2026-08-27T00:15:41.064Z",
       "facts": [
         {
           "id": "official_classification",
@@ -424,6 +424,14 @@
           ]
         },
         {
+          "id": "latest_disclosure",
+          "label": "近期重大訊息",
+          "value": "2026-08-26：本公司董事會決議發行海外第七次無擔保轉換公司債。",
+          "source_ids": [
+            "twse_material_events"
+          ]
+        },
+        {
           "id": "governance_snapshot",
           "label": "股權與治理",
           "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
@@ -436,7 +444,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 0 則；申報違規 0 筆。",
+          "value": "官方事件 1 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -447,7 +455,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-08-26T12:30:53.906Z",
+      "generated_at": "2026-08-27T00:15:41.064Z",
       "facts": [
         {
           "id": "official_classification",
@@ -531,7 +539,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-08-26T12:30:53.906Z",
+      "generated_at": "2026-08-27T00:15:41.064Z",
       "facts": [
         {
           "id": "official_classification",
@@ -607,7 +615,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-08-26T12:30:53.906Z",
+      "generated_at": "2026-08-27T00:15:41.064Z",
       "facts": [
         {
           "id": "official_classification",
@@ -660,6 +668,14 @@
           ]
         },
         {
+          "id": "latest_disclosure",
+          "label": "近期重大訊息",
+          "value": "2026-08-26：元大金控代子公司元大投信公告董事會通過對關係人 捐贈事宜。",
+          "source_ids": [
+            "twse_material_events"
+          ]
+        },
+        {
           "id": "governance_snapshot",
           "label": "股權與治理",
           "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
@@ -672,7 +688,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 0 則；申報違規 0 筆。",
+          "value": "官方事件 3 則；待閱讀 1 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -683,7 +699,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-08-26T12:30:53.906Z",
+      "generated_at": "2026-08-27T00:15:41.064Z",
       "facts": [
         {
           "id": "official_classification",
@@ -738,7 +754,7 @@
         {
           "id": "latest_disclosure",
           "label": "近期重大訊息",
-          "value": "2026-08-25：公告本公司115年第二季合併財務報告業經審計委員會及 董事會決議通過。",
+          "value": "2026-08-26：代本公司之子公司兆豐國際商業銀行公告授信資產之轉讓。。",
           "source_ids": [
             "twse_material_events"
           ]
@@ -756,7 +772,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 2 則；申報違規 0 筆。",
+          "value": "官方事件 3 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -767,7 +783,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-08-26T12:30:53.906Z",
+      "generated_at": "2026-08-27T00:15:41.064Z",
       "facts": [
         {
           "id": "official_classification",
@@ -842,7 +858,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-08-26T12:30:53.906Z",
+      "generated_at": "2026-08-27T00:15:41.064Z",
       "facts": [
         {
           "id": "official_classification",
@@ -872,7 +888,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-26 收盤 46.4；區間報酬：20日 0%；60日 0%；當日量為 20 日均量 0.46 倍。",
+          "value": "2026-08-26 收盤 46.4；區間報酬：20日 11%；60日 -17.29%；當日量為 20 日均量 0.41 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -918,7 +934,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-08-26T12:30:53.906Z",
+      "generated_at": "2026-08-27T00:15:41.064Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1002,7 +1018,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-08-26T12:30:53.906Z",
+      "generated_at": "2026-08-27T00:15:41.064Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1086,7 +1102,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-08-26T12:30:53.906Z",
+      "generated_at": "2026-08-27T00:15:41.064Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1116,9 +1132,9 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-08-26 收盤 133；區間報酬：20日 0%；60日 0%；當日量為 20 日均量 0.29 倍。",
+          "value": "2026-08-26 收盤 133；區間報酬：20日 2.31%；60日 7.69%；當日量為 20 日均量 0.28 倍。",
           "source_ids": [
-            "twse_stock_day"
+            "yahoo_finance_chart"
           ]
         },
         {
