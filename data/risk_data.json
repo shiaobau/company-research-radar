@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-08-31T12:31:34.814Z",
+  "generated_at": "2026-09-01T00:15:58.667Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-31T12:31:34.814Z"
+      "refreshed_at": "2026-09-01T00:15:58.667Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-31T12:31:34.814Z"
+      "refreshed_at": "2026-09-01T00:15:58.667Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -99,7 +99,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-31T12:31:34.814Z"
+      "refreshed_at": "2026-09-01T00:15:58.667Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -122,7 +122,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-31T12:31:34.814Z"
+      "refreshed_at": "2026-09-01T00:15:58.667Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -145,7 +145,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-31T12:31:34.814Z"
+      "refreshed_at": "2026-09-01T00:15:58.667Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -168,7 +168,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-31T12:31:34.814Z"
+      "refreshed_at": "2026-09-01T00:15:58.667Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -191,7 +191,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-31T12:31:34.814Z"
+      "refreshed_at": "2026-09-01T00:15:58.667Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -214,7 +214,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-31T12:31:34.814Z"
+      "refreshed_at": "2026-09-01T00:15:58.667Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -225,19 +225,39 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
-      "negative_event_count": 0,
+      "event_count": 1,
+      "negative_event_count": 1,
       "positive_event_count": 0,
       "review_event_count": 0,
-      "negative_event_points": 0,
-      "negative_event_categories": {},
+      "negative_event_points": 18,
+      "negative_event_categories": {
+        "regulatory_enforcement": 1
+      },
       "disclosure_violation_count": 0,
-      "score": 92,
-      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
+      "score": 76,
+      "rationale": "負向/待釐清重大訊息 1 則；未偵測到資訊申報違規。",
+      "events": [
+        {
+          "date": "2026-08-31",
+          "announce_date": "2026-08-31",
+          "time": "175408",
+          "title": "代子公司寧波群志光電有限公司公告處分有價證券",
+          "clause": "第20款",
+          "description": "1.證券名稱: 深圳天德鈺科技股份有限公司普通股 2.交易日期:115/8/7~115/8/31 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:董事長核決 民國115年6月5日 5.交易數量、每單位價格及交易總金額: 交易單位數量：4,237,684股 每單位價格：人民幣19.03元 總金額：人民幣80,643千元 (約新台幣383,334千元) 6.處分利益（或損失）（取得有價證券者不適用）: 不適用 7.與交易標的公司之關係: 非關係人 8.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 累積持有數量:22,989,562股 累積持有金額：新台幣2,328,865仟元 持股比例：5.62% 權利受限情形：無 9.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列之有價證券投 資（含本次交易）占公司最近期財務報表中總資產及歸屬於母公司業主之權益之比例 暨最近期財務報表中營運資金數額: 占總資產比例：2.69% 占業主權益比例：3.83% 營運資金數額: 新台幣7,011,637 仟元 10.取得或處分之具體目的: 資金安排需要 11.本次交易表示異議董事之意見: 無 12.本次交易為關係人交易: 否 13.交易相對人及其與公司之關係: 不適用 14.監察人承認或審計委員會同意日期: 不適用，依取得或處分資產處理程序辦理 15.前已就同一件事件發布重大訊息日期: 2026/06/05 16.其他敘明事項: 無",
+          "source_id": "twse_material_events",
+          "sentiment": "negative",
+          "risk_class": "negative",
+          "risk_category": "regulatory_enforcement",
+          "risk_category_label": "監理處分或重大內控缺失",
+          "risk_points": 18,
+          "matched_patterns": [
+            "處分"
+          ]
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-31T12:31:34.814Z"
+      "refreshed_at": "2026-09-01T00:15:58.667Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -260,7 +280,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-31T12:31:34.814Z"
+      "refreshed_at": "2026-09-01T00:15:58.667Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -283,7 +303,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-31T12:31:34.814Z"
+      "refreshed_at": "2026-09-01T00:15:58.667Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -306,7 +326,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-08-31T12:31:34.814Z"
+      "refreshed_at": "2026-09-01T00:15:58.667Z"
     }
   }
 }
