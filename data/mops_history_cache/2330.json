@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1",
   "ticker": "2330",
-  "fetched_at": "2026-08-31T12:32:51.735Z",
+  "fetched_at": "2026-09-02T00:17:12.547Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2330-1150901-1",
+      "date": "2026-09-01",
+      "announced_date": "2026-09-01",
+      "fact_date": "2026-09-01",
+      "announced_time": "14:05:23",
+      "title": "公告本公司調整民國115年第一季每股現金股利金額",
+      "description": "1.董事會或股東會決議日期:NA 2.原發放股利種類及金額: 盈餘分派現金股利新台幣181,526,590,469元，每股配發新台幣7.0元。 3.變更後發放股利種類及金額: 盈餘分派現金股利新台幣181,526,590,469元，每股配發新台幣7.00000137元。 4.變更原因: 每股現金股利金額之細微變動係由於在董事會決議股利分派至配息基準日間， 本公司收回113年限制員工權利新股部分股數，因此本公司流通在外之股數變 化所致。 5.其他應敘明事項: 依據本公司115/5/12董事會決議，授權董事長調整每股現金股利金額。",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150901",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
+    },
     {
       "id": "mops-history-2330-1150817-1",
       "date": "2026-08-17",
@@ -28,10 +49,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150817",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150817",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -49,10 +70,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150811",
         "serialNumber": "7",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150811",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -70,31 +91,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150811",
         "serialNumber": "6",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150811",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
       "id": "mops-history-2330-1150811-5",
       "date": "2026-08-11",
       "announced_date": "2026-08-11",
-      "fact_date": "2026-08-11",
+      "fact_date": null,
       "announced_time": "19:38:43",
       "title": "Sony與台積公司同意成立合資公司 支援下一世代影像感測器",
-      "description": "1.事實發生日:115/08/11 2.公司名稱:台灣積體電路製造股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:不適用 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 索尼半導體解決方案公司（Sony）與台積公司今（11）日宣布雙方簽署具法律效 力之最終合作協議，於日本熊本縣合志市成立合資公司Advanced Vision Semiconductor Manufacturing Corporation。此合資公司將採用先進製程技術， 作為量產智慧型手機影像感測器所需之研發及製造的核心樞紐，並預計於2029年 開始量產。 此合資公司將由Sony作為單一控制股東，並計畫以索尼集團（Sony Group）公 司之合併子公司營運。此合資公司之代表董事將由Sony指派。 依據最終協議，Sony計畫透過現金投入及公司分割之資產轉移(註)方式，挹注合 資公司共約4,650億日圓；台積公司則計畫投資現金約2,820億日圓。這些資金的 投入將基於市場需求及其他相關業務條件分階段進行。除了Sony與台積公司所投 入的資金，有關實現此合資公司產能規畫所需要的投資，其考量前提是必須能夠 獲得來自日本政府的支持。 在此策略合作夥伴關係下，Sony將在核心影像感測器技術的研發、產品規劃與 設計中擔任領導角色，而此合資公司計畫利用台積公司的先進製程技術與製造專 業來推動量產所需的生產研發與製造。透過此次合作，雙方將加速推動受客戶需 求驅動的影像感測器產品進入市場，同時促進技術創新與強化製造能力。 此合資公司的設立與交易完成條件皆須取得必要的主管機關核准，並遵循交易 常規。 有關此策略合作夥伴關係的其他事宜，請依Sony與台積公司於今年5月8日發布 之「Sony與台積公司初步達成下一世代影像感測器策略合作協議」新聞稿為準。 註：Sony在日本熊本縣合志市已投資之新建廠房。",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150811",
         "serialNumber": "5",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150811",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -112,10 +133,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150811",
         "serialNumber": "4",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150811",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -133,10 +154,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150811",
         "serialNumber": "3",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150811",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -154,10 +175,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150811",
         "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150811",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -175,10 +196,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150811",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150811",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -196,10 +217,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150810",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150810",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -217,10 +238,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150722",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150722",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -238,10 +259,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150716",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150716",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -259,10 +280,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150713",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150713",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -280,10 +301,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150708",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150708",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -301,10 +322,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150702",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150702",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -322,10 +343,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150629",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150629",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -343,10 +364,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150610",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150610",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -364,10 +385,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150604",
         "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150604",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -385,10 +406,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150604",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150604",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -406,10 +427,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150603",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150603",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -427,10 +448,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150602",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150602",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -448,10 +469,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150601",
         "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150601",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -469,10 +490,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150601",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1150601",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -490,31 +511,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150527",
         "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150527-1",
-      "date": "2026-05-27",
-      "announced_date": "2026-05-27",
-      "fact_date": null,
-      "announced_time": "16:32:10",
-      "title": "公告本公司調整民國114年第四季每股現金股利金額",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
         "enterDate": "1150527",
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     }
   ]

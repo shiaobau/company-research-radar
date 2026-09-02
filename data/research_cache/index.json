@@ -1,19 +1,19 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-01T12:32:11.074Z",
+  "generated_at": "2026-09-02T00:16:40.049Z",
   "collection_scope": "targeted_research_company",
   "source_status": [
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-01T12:31:27.522Z",
+      "fetched_at": "2026-09-02T00:15:49.777Z",
       "row_count": 124,
       "available": true
     },
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-01T12:31:28.644Z",
+      "fetched_at": "2026-09-02T00:15:50.045Z",
       "row_count": 80,
       "available": true
     }
@@ -26,7 +26,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-09-01T12:32:11.074Z",
+      "collected_at": "2026-09-02T00:16:40.049Z",
       "cache_path": "data/research_cache/1231.json"
     },
     {
@@ -36,7 +36,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-09-01T12:32:11.074Z",
+      "collected_at": "2026-09-02T00:16:40.049Z",
       "cache_path": "data/research_cache/1707.json"
     },
     {
@@ -46,7 +46,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-09-01T12:32:11.074Z",
+      "collected_at": "2026-09-02T00:16:40.049Z",
       "cache_path": "data/research_cache/2303.json"
     },
     {
@@ -56,7 +56,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-09-01T12:32:11.074Z",
+      "collected_at": "2026-09-02T00:16:40.049Z",
       "cache_path": "data/research_cache/2308.json"
     },
     {
@@ -66,7 +66,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-09-01T12:32:11.074Z",
+      "collected_at": "2026-09-02T00:16:40.049Z",
       "cache_path": "data/research_cache/2330.json"
     },
     {
@@ -76,7 +76,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-09-01T12:32:11.074Z",
+      "collected_at": "2026-09-02T00:16:40.049Z",
       "cache_path": "data/research_cache/2885.json"
     },
     {
@@ -86,7 +86,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-09-01T12:32:11.074Z",
+      "collected_at": "2026-09-02T00:16:40.049Z",
       "cache_path": "data/research_cache/2886.json"
     },
     {
@@ -96,7 +96,7 @@
       "market": "TPEx",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-09-01T12:32:11.074Z",
+      "collected_at": "2026-09-02T00:16:40.049Z",
       "cache_path": "data/research_cache/3115.json"
     },
     {
@@ -106,7 +106,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-09-01T12:32:11.074Z",
+      "collected_at": "2026-09-02T00:16:40.049Z",
       "cache_path": "data/research_cache/3481.json"
     },
     {
@@ -116,7 +116,7 @@
       "market": "TPEx",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-09-01T12:32:11.074Z",
+      "collected_at": "2026-09-02T00:16:40.049Z",
       "cache_path": "data/research_cache/6023.json"
     },
     {
@@ -126,7 +126,7 @@
       "market": "TPEx",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-09-01T12:32:11.074Z",
+      "collected_at": "2026-09-02T00:16:40.049Z",
       "cache_path": "data/research_cache/8279.json"
     },
     {
@@ -136,7 +136,7 @@
       "market": "TWSE",
       "status": "ok",
       "event_count": 24,
-      "collected_at": "2026-09-01T12:32:11.074Z",
+      "collected_at": "2026-09-02T00:16:40.049Z",
       "cache_path": "data/research_cache/9939.json"
     }
   ],

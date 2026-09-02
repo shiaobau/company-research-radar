@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1",
   "ticker": "2885",
-  "fetched_at": "2026-08-31T12:32:59.552Z",
+  "fetched_at": "2026-09-02T00:17:19.185Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,48 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2885-1150901-2",
+      "date": "2026-09-01",
+      "announced_date": "2026-09-01",
+      "fact_date": "2026-09-01",
+      "announced_time": "16:00:01",
+      "title": "元大金控補充公告認購子公司元大期貨115年度現金增資事宜",
+      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: 元大期貨股份有限公司普通股股票 2.事實發生日:115/9/1~115/9/1 3.董事會通過日期: 民國115年6月24日 4.其他核決日期: 不適用 5.交易數量、每單位價格及交易總金額: (1)交易數量：1,525,923股(補充公告)。 (2)每單位價格：每股新臺幣73.5元(補充公告)。 (3)交易總金額：112,155,340元(補充公告)。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: 元大期貨股份有限公司；該公司為本公司持股65.06%之子公司。 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 元大期貨為本公司持股65.06%之子公司，辦理普通股現金增資。 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用。 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用。 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用。 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: (1)交付或付款條件：於繳款期間內繳付本次現金增資款112,155,340元(補充公告)。 (2)契約限制條款及其他重要約定事項：本案業經金管會民國115年7月24日 金管銀控字第1150224244號函核准投資(補充公告)。 12.本次交易之決定方式、價格決定之參考依據及決策單位: (1)交易之決定方式：係以現金增資方式認購。 (2)價格決定之參考依據：依元大期貨115年6月17日董事會，授權董事長訂定之 現增每股發行價格(補充公告)。 (3)決策單位：提報本公司審計委員會同意及董事會通過後辦理。 13.取得或處分有價證券標的公司每股淨值: 54.29元 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 本公司持有元大期貨股份有限公司 (1)累積持有本交易證券數量：普通股282,560,912股(補充公告)。 (2)累積持有金額：約9,291,837,343元(補充公告)。 (3)持股比例：約63.08%(補充公告)。 (4)權利受限情形：無。 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: (1)有價證券投資占公司最近期財務報表中總資產比例：94.28%(補充公告)。 (2)占歸屬於母公司業主之權益之比例：115.23%(補充公告)。 (3)最近期財務報表中營運資金數額：不適用。 16.經紀人及經紀費用: 不適用。 17.取得或處分之具體目的或用途: 為子公司元大期貨充實營運資金、強化財務結構、提高調整後淨資本額(ANC)及淨值。 18.本次交易表示異議董事之意見: 無。 19.本次交易為關係人交易:是 20.監察人承認或審計委員會同意日期: 民國115年06月16日 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用。 23.會計師姓名: 不適用。 24.會計師開業證書字號: 不適用。 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用。 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用。 28.資金來源: 自有資金。 29.前已就同一件事件發布重大訊息日期: 115年6月24日及115年8月27日。 30.其他敘明事項: 無。",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1150901",
+        "marketKind": "sii",
+        "companyId": "2885"
+      }
+    },
+    {
+      "id": "mops-history-2885-1150901-1",
+      "date": "2026-09-01",
+      "announced_date": "2026-09-01",
+      "fact_date": "2026-09-01",
+      "announced_time": "14:18:23",
+      "title": "元大金控代子公司元大證金公告董事異動",
+      "description": "1.發生變動日期:115/09/01 2.選任或變動人員別（請輸入法人董事、法人監察人、獨立董事、自然人董事 或自然人監察人）:自然人董事 3.舊任者職稱及姓名:元大證金董事/陳建文先生 4.舊任者簡歷:元大證金董事 5.新任者職稱及姓名:元大證金董事/馬瑞辰先生 6.新任者簡歷: 元大證金董事 元大證券董事 台灣農林董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）:新任 8.異動原因:改派 9.新任者選任時持股數:0 10.原任期（例xx/xx/xx ~ xx/xx/xx）:114/06/02~117/06/01 11.新任生效日期:115/09/01 12.同任期董事變動比率:1/5 13.同任期獨立董事變動比率:不適用 14.同任期監察人變動比率:不適用 15.屬三分之一以上董事發生變動（請輸入是或否）:否 16.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第6款所定對股東權益或證券價格有重大影響之事項): 無",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150901",
+        "marketKind": "sii",
+        "companyId": "2885"
+      }
+    },
     {
       "id": "mops-history-2885-1150828-1",
       "date": "2026-08-28",
@@ -28,10 +70,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150828",
         "serialNumber": "1",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150828",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -49,52 +91,52 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150827",
         "serialNumber": "7",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150827",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
       "id": "mops-history-2885-1150827-6",
       "date": "2026-08-27",
       "announced_date": "2026-08-27",
-      "fact_date": "2026-08-27",
+      "fact_date": null,
       "announced_time": "18:42:48",
       "title": "元大金控代子公司元大證金公告處分不動產予元大銀行",
-      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 臺中市北屯區東光段201-2地號土地及其上建物 建物門牌：臺中市北屯區崇德路二段46號及46之1至46之11號全棟建物(含地下室) 2.事實發生日:115/8/27~115/8/27 3.董事會通過日期: 民國115年8月27日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 土地：1,119.00平方公尺（約338.50坪） 建物：9,056.48平方公尺（約2739.59坪） 交易總金額：新臺幣606,390,000元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：元大商業銀行股份有限公司 其與本公司之關係：關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 選定關係人為交易對象之原因：元大銀行為現任承租戶。 前次移轉之所有人：群山建設有限公司、朱憶輝 (非關係人) 前次移轉日期：78年7月 前次移轉金額：新臺幣477,500,000元 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 預計處分利益新臺幣400,020,311元 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依買賣契約約定辦理。 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 參酌專業估價機構估價結果、市場行情及交易條件協商議價， 並經會計師出具交易價格合理性意見書後，報請董事會決議通過。 12.專業估價者事務所或公司名稱及其估價金額: 國泰不動產估價師事務所； 估價金額：新臺幣591,187,980元。 13.專業估價師姓名: 莊雅媛 14.專業估價師開業證書字號: (110)北市估字第000305號 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 無 23.取得或處分之具體目的或用途: 活化資產、提升資金運用效益，並降低未來管理、維護及修繕成本。 24.本次交易表示異議之董事之意見: 無 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 民國115年8月27日 27.本次交易係向關係人取得不動產或其使用權資產: 否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
-      "clause": "第20款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150827",
         "serialNumber": "6",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150827",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
       "id": "mops-history-2885-1150827-5",
       "date": "2026-08-27",
       "announced_date": "2026-08-27",
-      "fact_date": "2026-08-27",
+      "fact_date": null,
       "announced_time": "17:42:42",
       "title": "元大金控代子公司元大證券(柬埔寨)公告 股東臨時會召開事宜",
-      "description": "1.董事會決議日期:115/08/27 2.股東臨時會召開日期:115/09/03 3.股東臨時會召開地點:4th Floor, Emerald Building, No. 64 (corner st. 178), Preah Norodom Blvd., Sangkat Chey Chumneah, Khan Daun Penh, Phnom Penh, Cambodia 4.召集事由一、報告事項:無 5.召集事由二、承認事項:無 6.召集事由三、討論事項:通過續聘PricewaterhouseCoopers(Cambodia) Ltd. 為2026年至2029年之查核簽證會計師事務所 7.召集事由四、選舉事項:無 8.召集事由五、其他議案:無 9.召集事由六、臨時動議:無 10.停止過戶起始日期:NA 11.停止過戶截止日期:NA 12.其他應敘明事項:無",
-      "clause": "第17款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150827",
         "serialNumber": "5",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150827",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -112,10 +154,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150827",
         "serialNumber": "4",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150827",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -133,10 +175,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150827",
         "serialNumber": "3",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150827",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -154,10 +196,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150827",
         "serialNumber": "2",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150827",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -175,10 +217,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150826",
         "serialNumber": "3",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150826",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -196,10 +238,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150826",
         "serialNumber": "2",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150826",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -217,10 +259,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150826",
         "serialNumber": "1",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150826",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -238,10 +280,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150824",
         "serialNumber": "5",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150824",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -259,10 +301,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150824",
         "serialNumber": "4",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150824",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -280,10 +322,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150824",
         "serialNumber": "3",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150824",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -301,10 +343,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150824",
         "serialNumber": "2",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150824",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -322,10 +364,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150824",
         "serialNumber": "1",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150824",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -343,10 +385,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150821",
         "serialNumber": "2",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150821",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -364,10 +406,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150821",
         "serialNumber": "1",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150821",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -385,10 +427,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150820",
         "serialNumber": "6",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150820",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -406,10 +448,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150820",
         "serialNumber": "5",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150820",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -427,10 +469,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150820",
         "serialNumber": "4",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150820",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -448,10 +490,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150820",
         "serialNumber": "3",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "enterDate": "1150820",
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     },
     {
@@ -469,52 +511,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "serialNumber": "1",
         "enterDate": "1150820",
-        "serialNumber": "1",
-        "companyId": "2885",
-        "marketKind": "sii"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150819-1",
-      "date": "2026-08-19",
-      "announced_date": "2026-08-19",
-      "fact_date": null,
-      "announced_time": "15:58:30",
-      "title": "元大金控代子公司元大證券公告取得 元大期貨股份有限公司115年度第三次有擔保次順位普通公司債",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150819",
-        "serialNumber": "1",
-        "companyId": "2885",
-        "marketKind": "sii"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150813-1",
-      "date": "2026-08-13",
-      "announced_date": "2026-08-13",
-      "fact_date": null,
-      "announced_time": "15:04:24",
-      "title": "元大金控代元大證券(韓國)公告取得Hosan-Meritz Fund 2",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150813",
-        "serialNumber": "1",
-        "companyId": "2885",
-        "marketKind": "sii"
+        "marketKind": "sii",
+        "companyId": "2885"
       }
     }
   ]
