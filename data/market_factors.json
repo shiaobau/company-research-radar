@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-02T00:15:51.841Z",
+  "generated_at": "2026-09-02T12:31:01.728Z",
   "note": "全市場背景因子。估值百分位依上市櫃官方產業全樣本計算；官方產業樣本不足 10 家時才回退為全市場模板樣本，兩者皆不使用觀察清單。資料僅供研究快照與回測，尚未納入核心分數。",
   "sources": [
     "twse_valuation",
@@ -13,9 +13,9 @@
   "coverage": {
     "universe_count": 1974,
     "research_company_count": 12,
-    "valuation_count": 1962,
+    "valuation_count": 1961,
     "margin_count": 1859,
-    "institutional_count": 1844
+    "institutional_count": 1835
   },
   "companies": {
     "TWSE:1231": {
@@ -66,7 +66,7 @@
       "peer_group": {
         "basis": "official_industry",
         "label": "生技醫療",
-        "sample_count": 157
+        "sample_count": 156
       },
       "valuation": {
         "as_of": "2026-09-01",
@@ -75,8 +75,8 @@
         "dividend_yield_pct": 6.61,
         "favorable_percentiles": {
           "pe_ratio": 82,
-          "pb_ratio": 77,
-          "dividend_yield_pct": 92
+          "pb_ratio": 76,
+          "dividend_yield_pct": 93
         }
       },
       "margin": {
@@ -158,7 +158,7 @@
         "favorable_percentiles": {
           "pe_ratio": 24,
           "pb_ratio": 4,
-          "dividend_yield_pct": 31
+          "dividend_yield_pct": 30
         }
       },
       "margin": {
@@ -315,7 +315,7 @@
         "sample_count": 210
       },
       "valuation": {
-        "as_of": "2026-09-01",
+        "as_of": "2026-09-02",
         "pe_ratio": null,
         "pb_ratio": 1.15,
         "dividend_yield_pct": 0,
@@ -349,7 +349,7 @@
         "pb_ratio": 1.75,
         "dividend_yield_pct": 2.03,
         "favorable_percentiles": {
-          "pe_ratio": 19,
+          "pe_ratio": 21,
           "pb_ratio": 48,
           "dividend_yield_pct": 59
         }
@@ -385,10 +385,10 @@
         "sample_count": 40
       },
       "valuation": {
-        "as_of": "2026-09-01",
-        "pe_ratio": 9.46,
-        "pb_ratio": 1.37,
-        "dividend_yield_pct": 6.43,
+        "as_of": "2026-09-02",
+        "pe_ratio": 9.55,
+        "pb_ratio": 1.38,
+        "dividend_yield_pct": 6.37,
         "favorable_percentiles": {
           "pe_ratio": 68,
           "pb_ratio": 48,
@@ -403,11 +403,11 @@
         "short_change_lots": 6
       },
       "institutional": {
-        "as_of": "2026-09-01",
-        "foreign_net_shares": -69450,
-        "trust_net_shares": -69450,
+        "as_of": "2026-09-02",
+        "foreign_net_shares": 123673,
+        "trust_net_shares": 123673,
         "dealer_net_shares": 0,
-        "total_net_shares": -69450
+        "total_net_shares": 123673
       },
       "source_ids": [
         "tpex_valuation",
@@ -423,10 +423,10 @@
       "peer_group": {
         "basis": "official_industry",
         "label": "生技醫療",
-        "sample_count": 157
+        "sample_count": 156
       },
       "valuation": {
-        "as_of": "2026-09-01",
+        "as_of": "2026-09-02",
         "pe_ratio": 9.54,
         "pb_ratio": 0.92,
         "dividend_yield_pct": 6.28,
@@ -444,11 +444,11 @@
         "short_change_lots": 0
       },
       "institutional": {
-        "as_of": "2026-09-01",
-        "foreign_net_shares": 6000,
-        "trust_net_shares": 6000,
-        "dealer_net_shares": 477,
-        "total_net_shares": 6477
+        "as_of": "2026-09-02",
+        "foreign_net_shares": 22000,
+        "trust_net_shares": 22000,
+        "dealer_net_shares": -2,
+        "total_net_shares": 21998
       },
       "source_ids": [
         "tpex_valuation",
