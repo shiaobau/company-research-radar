@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-02T12:31:49.981Z",
+  "collected_at": "2026-09-03T00:16:49.664Z",
   "company": {
     "id": "twse-2303",
     "ticker": "2303",
@@ -10,6 +10,42 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "a0cf057863e5f428efb9",
+      "date": "2026-09-02",
+      "announced_date": "2026-09-02",
+      "fact_date": "2026-09-02",
+      "announced_time": "161825",
+      "title": "公告本公司國內第二次無擔保轉換公司債收足債款",
+      "description": "1.事實發生日:115/09/02 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依據「發行人募集與發行有價證券處理準則」第9條第1項第2款規定辦理 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 本公司發行國內第二次無擔保轉換公司債至公告日止，債款代收銀行業已收足所有 應募款項共計新台幣4,792,798,780元整，並匯撥至存儲專戶銀行，特此公告。",
+      "clause": "第51款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "mops-history-2303-1150902-1",
+      "date": "2026-09-02",
+      "announced_date": "2026-09-02",
+      "fact_date": "2026-09-02",
+      "announced_time": "16:18:25",
+      "title": "公告本公司國內第二次無擔保轉換公司債收足債款",
+      "description": "1.事實發生日:115/09/02 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依據「發行人募集與發行有價證券處理準則」第9條第1項第2款規定辦理 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 本公司發行國內第二次無擔保轉換公司債至公告日止，債款代收銀行業已收足所有 應募款項共計新台幣4,792,798,780元整，並匯撥至存儲專戶銀行，特此公告。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1150902",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2303-1150826-1",
       "date": "2026-08-26",
@@ -25,10 +61,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150826",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150826",
+        "serialNumber": "1"
       }
     },
     {
@@ -46,10 +82,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150814",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150814",
+        "serialNumber": "1"
       }
     },
     {
@@ -67,31 +103,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150811",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150811",
+        "serialNumber": "1"
       }
     },
     {
       "id": "mops-history-2303-1150805-1",
       "date": "2026-08-05",
       "announced_date": "2026-08-05",
-      "fact_date": "2026-08-05",
+      "fact_date": null,
       "announced_time": "15:08:44",
       "title": "公告本公司國內第一次無擔保轉換公司債收足債款",
-      "description": "1.事實發生日:115/08/05 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依據「發行人募集與發行有價證券處理準則」第9條第1項第2款規定辦理 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 本公司發行國內第一次無擔保轉換公司債至公告日止，債款代收銀行業已收足所有 應募款項共計新台幣12,120,000,000元整，並匯撥至存儲專戶銀行，特此公告。",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150805",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150805",
+        "serialNumber": "1"
       }
     },
     {
@@ -109,10 +145,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150730",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150730",
+        "serialNumber": "2"
       }
     },
     {
@@ -130,10 +166,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150730",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150730",
+        "serialNumber": "1"
       }
     },
     {
@@ -151,10 +187,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "7",
-        "enterDate": "1150729",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150729",
+        "serialNumber": "7"
       }
     },
     {
@@ -172,10 +208,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "5",
-        "enterDate": "1150729",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150729",
+        "serialNumber": "5"
       }
     },
     {
@@ -193,10 +229,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "4",
-        "enterDate": "1150729",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150729",
+        "serialNumber": "4"
       }
     },
     {
@@ -214,10 +250,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "6",
-        "enterDate": "1150729",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150729",
+        "serialNumber": "6"
       }
     },
     {
@@ -235,10 +271,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "3",
-        "enterDate": "1150729",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150729",
+        "serialNumber": "3"
       }
     },
     {
@@ -256,10 +292,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150729",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150729",
+        "serialNumber": "2"
       }
     },
     {
@@ -277,10 +313,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150729",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150729",
+        "serialNumber": "1"
       }
     },
     {
@@ -298,10 +334,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150721",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150721",
+        "serialNumber": "2"
       }
     },
     {
@@ -319,10 +355,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150721",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150721",
+        "serialNumber": "1"
       }
     },
     {
@@ -340,10 +376,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150715",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150715",
+        "serialNumber": "1"
       }
     },
     {
@@ -361,10 +397,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150714",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150714",
+        "serialNumber": "1"
       }
     },
     {
@@ -382,10 +418,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150629",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150629",
+        "serialNumber": "1"
       }
     },
     {
@@ -403,10 +439,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "6",
-        "enterDate": "1150623",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150623",
+        "serialNumber": "6"
       }
     },
     {
@@ -424,10 +460,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "7",
-        "enterDate": "1150623",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150623",
+        "serialNumber": "7"
       }
     },
     {
@@ -445,10 +481,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150623",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150623",
+        "serialNumber": "2"
       }
     },
     {
@@ -466,52 +502,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
         "enterDate": "1150623",
-        "marketKind": "sii",
-        "companyId": "2303"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150622-2",
-      "date": "2026-06-22",
-      "announced_date": "2026-06-22",
-      "fact_date": null,
-      "announced_time": "17:16:12",
-      "title": "公告本公司處分聯詠科技股份有限公司證券之相關資料",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150622",
-        "marketKind": "sii",
-        "companyId": "2303"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150622-1",
-      "date": "2026-06-22",
-      "announced_date": "2026-06-22",
-      "fact_date": null,
-      "announced_time": "12:04:24",
-      "title": "說明115年6月21日經濟日報報導",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150622",
-        "marketKind": "sii",
-        "companyId": "2303"
+        "serialNumber": "1"
       }
     }
   ],
@@ -541,14 +535,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-02T12:31:00.170Z",
-      "row_count": 124,
+      "fetched_at": "2026-09-03T00:15:51.715Z",
+      "row_count": 86,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-02T00:16:58.790Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-09-03T00:17:10.541Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

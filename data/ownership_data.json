@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-02T12:31:01.728Z",
+  "generated_at": "2026-09-03T00:15:53.346Z",
   "sources": [
     {
       "id": "twse_major_shareholders",
@@ -65,7 +65,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-02T12:31:01.728Z"
+      "refreshed_at": "2026-09-03T00:15:53.346Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -86,7 +86,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-02T12:31:01.728Z"
+      "refreshed_at": "2026-09-03T00:15:53.346Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -107,7 +107,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-02T12:31:01.728Z"
+      "refreshed_at": "2026-09-03T00:15:53.346Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -128,7 +128,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-02T12:31:01.728Z"
+      "refreshed_at": "2026-09-03T00:15:53.346Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -149,7 +149,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-02T12:31:01.728Z"
+      "refreshed_at": "2026-09-03T00:15:53.346Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -170,7 +170,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-02T12:31:01.728Z"
+      "refreshed_at": "2026-09-03T00:15:53.346Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -191,7 +191,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-02T12:31:01.728Z"
+      "refreshed_at": "2026-09-03T00:15:53.346Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -212,7 +212,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-02T12:31:01.728Z"
+      "refreshed_at": "2026-09-03T00:15:53.346Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -233,7 +233,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-02T12:31:01.728Z"
+      "refreshed_at": "2026-09-03T00:15:53.346Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -254,7 +254,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-02T12:31:01.728Z"
+      "refreshed_at": "2026-09-03T00:15:53.346Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -275,7 +275,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-02T12:31:01.728Z"
+      "refreshed_at": "2026-09-03T00:15:53.346Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -296,7 +296,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-02T12:31:01.728Z"
+      "refreshed_at": "2026-09-03T00:15:53.346Z"
     }
   }
 }
