@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-03T00:16:49.664Z",
+  "collected_at": "2026-09-03T12:32:17.999Z",
   "company": {
     "id": "tpex-6023",
     "ticker": "6023",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "588f651f93246f64a175",
+      "date": "2026-09-02",
+      "announced_date": "2026-09-02",
+      "fact_date": "2026-09-02",
+      "announced_time": "135015",
+      "title": "元大期貨公告115年現金增資收足股款暨現金增資基準日",
+      "description": "1.事實發生日:115/09/02 2.公司名稱:元大期貨股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依據「發行人募集與發行有價證券處理準則」規定辦理。 (1)本公司115年現金增資發行普通股80,000,000股，每股認購價格新台幣73.5元， 實收股款總額新台幣5,880,000,000元，業已全數收足。 (2)收足股款日:115年09月02日。 (3)委託存儲款項機構:合作金庫商業銀行台北分行。 (4)現金增資基準日:115年09月02日。 (5)預定股款繳納憑證上櫃日期:115年09月07日。 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第9款所定 對股東權益或證券價格有重大影響之事項):無",
+      "clause": "第53款",
+      "source_id": "tpex_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-6023-1150902-1",
       "date": "2026-09-02",
@@ -492,27 +507,6 @@
         "enterDate": "1150311",
         "serialNumber": "5"
       }
-    },
-    {
-      "id": "mops-history-6023-1150311-4",
-      "date": "2026-03-11",
-      "announced_date": "2026-03-11",
-      "fact_date": null,
-      "announced_time": "14:48:37",
-      "title": "元大期貨公告董事會決議盈餘轉增資發行新股",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "6023",
-        "marketKind": "otc",
-        "enterDate": "1150311",
-        "serialNumber": "4"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-03T00:15:51.987Z",
-      "row_count": 41,
+      "fetched_at": "2026-09-03T12:31:29.364Z",
+      "row_count": 55,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-09-03T00:17:57.478Z",
       "row_count": 24,
       "detail_count": 4,
