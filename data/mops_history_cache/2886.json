@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1",
   "ticker": "2886",
-  "fetched_at": "2026-09-03T00:17:38.326Z",
+  "fetched_at": "2026-09-06T00:17:37.363Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2886-1150903-1",
+      "date": "2026-09-03",
+      "announced_date": "2026-09-03",
+      "fact_date": "2026-09-03",
+      "announced_time": "17:02:15",
+      "title": "代本公司之子公司兆豐國際證券投資信託股份有限公司公告 董事會推選張傳章先生擔任董事長",
+      "description": "1.董事會決議日期或發生變動日期:115/09/03 2.人員別（請輸入董事長或總經理）:董事長 3.舊任者姓名:張傳章 4.舊任者簡歷:兆豐金融控股股份有限公司總經理 5.新任者姓名:張傳章 6.新任者簡歷:兆豐金融控股股份有限公司總經理 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「職務調整」、「資遣」、 「退休」、「逝世」或「新任」）: 職務調整 8.異動原因:原暫代董事長調整為董事長 9.新任生效日期:115/09/03 10.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第6款所定對股東權益或證券價格有重大影響之事項): 無",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2886",
+        "marketKind": "sii",
+        "enterDate": "1150903",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2886-1150826-3",
       "date": "2026-08-26",
@@ -80,11 +101,11 @@
       "id": "mops-history-2886-1150825-2",
       "date": "2026-08-25",
       "announced_date": "2026-08-25",
-      "fact_date": "2026-08-25",
+      "fact_date": null,
       "announced_time": "15:43:39",
       "title": "公告本公司之子公司兆豐國際商業銀行(股)公司 董事異動案",
-      "description": "1.發生變動日期:115/08/25 2.法人名稱:兆豐金融控股股份有限公司 3.舊任者姓名:葉盛 4.舊任者簡歷:前中央銀行經濟研究處副處長 5.新任者姓名:蔡美芬 6.新任者簡歷:中央銀行經濟研究處副處長 7.異動原因:董事會決議改派 8.原任期（例xx/xx/xx至xx/xx/xx）:114/04/08至117/04/07 9.新任生效日期:115/08/25 10.其他應敘明事項:無",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
@@ -494,27 +515,6 @@
         "marketKind": "sii",
         "enterDate": "1150625",
         "serialNumber": "2"
-      }
-    },
-    {
-      "id": "mops-history-2886-1150625-1",
-      "date": "2026-06-25",
-      "announced_date": "2026-06-25",
-      "fact_date": null,
-      "announced_time": "17:49:18",
-      "title": "公告本公司之子公司兆豐國際證券投資信託(股)公司 董事異動案",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2886",
-        "marketKind": "sii",
-        "enterDate": "1150625",
-        "serialNumber": "1"
       }
     }
   ]

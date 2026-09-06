@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1",
   "ticker": "2885",
-  "fetched_at": "2026-09-03T00:17:31.934Z",
+  "fetched_at": "2026-09-06T00:17:31.278Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2885-1150903-1",
+      "date": "2026-09-03",
+      "announced_date": "2026-09-03",
+      "fact_date": "2026-09-03",
+      "announced_time": "14:42:36",
+      "title": "元大金控代子公司元大證券(柬埔寨)公告股東臨時會 重要決議事項",
+      "description": "1.股東臨時會日期:115/09/03 2.重要決議事項:通過續聘PricewaterhouseCoopers(Cambodia) Ltd. 為2026年至2029年之查核簽證會計師事務所 3.其他應敘明事項:無",
+      "clause": "第18款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2885",
+        "marketKind": "sii",
+        "enterDate": "1150903",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2885-1150901-2",
       "date": "2026-09-01",
@@ -80,11 +101,11 @@
       "id": "mops-history-2885-1150827-7",
       "date": "2026-08-27",
       "announced_date": "2026-08-27",
-      "fact_date": "2026-08-27",
+      "fact_date": null,
       "announced_time": "18:54:54",
       "title": "元大金控代子公司元大銀行公告向元大證金取得不動產",
-      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 臺中市北屯區東光段201-2地號土地及其上建物 建物門牌：臺中市北屯區崇德路二段46號及46之1至46之11號全棟建物(含地下室) 2.事實發生日:115/8/27~115/8/27 3.董事會通過日期: 民國115年8月27日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 土地面積：338.5坪 建物面積：2,739.59坪 交易總金額：新臺幣606,390,000元整 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：元大證券金融股份有限公司 與公司之關係：關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 選定關係人為交易對象之原因：作為自用辦公室使用 前次移轉之所有人：群山建設有限公司、朱憶輝 前次移轉之所有人與公司及交易相對人間相互之關係：非關係人 前次移轉日期：78年7月 前次移轉金額：新臺幣477,500,000元整 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依買賣契約約定辦理 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 本次交易決定方式：雙方議價 價格決定之參考依據：依據不動產估價師事務所出具之估價報告書及 會計師出具之價格合理性複核意見書 決策單位：董事會 12.專業估價者事務所或公司名稱及其估價金額: 專業估價者公司名稱：精訊不動產估價師事務所 估價金額：新臺幣621,590,170元整 13.專業估價師姓名: 郭國樑 14.專業估價師開業證書字號: (110)北市估字第000303號 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 作為自用辦公室使用 24.本次交易表示異議之董事之意見: 無 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 民國115年8月18日 27.本次交易係向關係人取得不動產或其使用權資產: 是 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
-      "clause": "第20款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
@@ -494,27 +515,6 @@
         "marketKind": "sii",
         "enterDate": "1150820",
         "serialNumber": "3"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150820-1",
-      "date": "2026-08-20",
-      "announced_date": "2026-08-20",
-      "fact_date": null,
-      "announced_time": "15:02:20",
-      "title": "元大金控代子公司元大證券公告董事會決議不分派 115年上半年度盈餘",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2885",
-        "marketKind": "sii",
-        "enterDate": "1150820",
-        "serialNumber": "1"
       }
     }
   ]

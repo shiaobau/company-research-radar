@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-03T12:31:31.347Z",
+  "generated_at": "2026-09-06T00:16:09.696Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-03T12:31:31.347Z"
+      "refreshed_at": "2026-09-06T00:16:09.696Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,7 +50,7 @@
       "rationale": "財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-03T12:31:31.347Z"
+      "refreshed_at": "2026-09-06T00:16:09.696Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -59,31 +59,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 70,
+      "score": 67,
       "rationale": "月營收分數 71；財務品質分數 74。",
-      "events": [
-        {
-          "date": "2026-09-02",
-          "announce_date": "2026-09-02",
-          "time": "161825",
-          "title": "公告本公司國內第二次無擔保轉換公司債收足債款",
-          "clause": "第51款",
-          "description": "1.事實發生日:115/09/02 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依據「發行人募集與發行有價證券處理準則」第9條第1項第2款規定辦理 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 本公司發行國內第二次無擔保轉換公司債至公告日止，債款代收銀行業已收足所有 應募款項共計新台幣4,792,798,780元整，並匯撥至存儲專戶銀行，特此公告。",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-03T12:31:31.347Z"
+      "refreshed_at": "2026-09-06T00:16:09.696Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -92,33 +76,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 70,
+      "score": 67,
       "rationale": "月營收分數 79；財務品質分數 69。",
-      "events": [
-        {
-          "date": "2026-09-02",
-          "announce_date": "2026-09-02",
-          "time": "221332",
-          "title": "澄清工商時報115年9月2日報導",
-          "clause": "第51款",
-          "description": "1.事實發生日:115/09/02 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.傳播媒體名稱:工商時報 6.報導內容:有關市場流傳台達電發文予客戶提及：「台達電子工業謹代表其關聯公司致 函通知您，關於某電源供應器特定批次產品存在潛在品質問題」等內容。 7.發生緣由:大眾傳播媒體報導 8.因應措施:公佈澄清訊息於公開資訊觀測站 9.其他應敘明事項:若供應商零組件出現問題，公司將盡力協助客戶安排換貨，以確保 滿足客戶需求。目前本公司整體營運未受影響。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
-          "risk_points": 0,
-          "matched_patterns": [
-            "澄清"
-          ]
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-03T12:31:31.347Z"
+      "refreshed_at": "2026-09-06T00:16:09.696Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -135,7 +101,7 @@
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-03T12:31:31.347Z"
+      "refreshed_at": "2026-09-06T00:16:09.696Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -152,7 +118,7 @@
       "rationale": "月營收分數 76；財務品質分數 89。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-03T12:31:31.347Z"
+      "refreshed_at": "2026-09-06T00:16:09.696Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -169,7 +135,7 @@
       "rationale": "財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-03T12:31:31.347Z"
+      "refreshed_at": "2026-09-06T00:16:09.696Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -186,7 +152,7 @@
       "rationale": "月營收分數 76。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-03T12:31:31.347Z"
+      "refreshed_at": "2026-09-06T00:16:09.696Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -203,7 +169,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-03T12:31:31.347Z"
+      "refreshed_at": "2026-09-06T00:16:09.696Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -212,31 +178,15 @@
       "source_ids": [
         "tpex_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 74,
+      "score": 71,
       "rationale": "月營收分數 79；財務品質分數 78。",
-      "events": [
-        {
-          "date": "2026-09-02",
-          "announce_date": "2026-09-02",
-          "time": "135015",
-          "title": "元大期貨公告115年現金增資收足股款暨現金增資基準日",
-          "clause": "第53款",
-          "description": "1.事實發生日:115/09/02 2.公司名稱:元大期貨股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依據「發行人募集與發行有價證券處理準則」規定辦理。 (1)本公司115年現金增資發行普通股80,000,000股，每股認購價格新台幣73.5元， 實收股款總額新台幣5,880,000,000元，業已全數收足。 (2)收足股款日:115年09月02日。 (3)委託存儲款項機構:合作金庫商業銀行台北分行。 (4)現金增資基準日:115年09月02日。 (5)預定股款繳納憑證上櫃日期:115年09月07日。 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第9款所定 對股東權益或證券價格有重大影響之事項):無",
-          "source_id": "tpex_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-03T12:31:31.347Z"
+      "refreshed_at": "2026-09-06T00:16:09.696Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -253,7 +203,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-03T12:31:31.347Z"
+      "refreshed_at": "2026-09-06T00:16:09.696Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -270,7 +220,7 @@
       "rationale": "財務品質分數 65。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-03T12:31:31.347Z"
+      "refreshed_at": "2026-09-06T00:16:09.696Z"
     }
   }
 }
