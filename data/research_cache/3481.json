@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-07T12:35:30.498Z",
+  "collected_at": "2026-09-08T00:16:09.264Z",
   "company": {
     "id": "twse-3481",
     "ticker": "3481",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "db8308bd1f223243fd51",
+      "date": "2026-09-07",
+      "announced_date": "2026-09-07",
+      "fact_date": "2026-09-14",
+      "announced_time": "155244",
+      "title": "公告公司受邀參加UBS證券所舉辦之「UBS Taiwan Summit 2026」",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/09/14 1.召開法人說明會之日期：115/09/14 2.召開法人說明會之時間：11 時 00 分 3.召開法人說明會之地點：W Hotel 4.法人說明會擇要訊息：公告公司受邀參加UBS證券所舉辦之「UBS Taiwan Summit 2026」，說明營運現況及前景。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-3481-1150831-1",
       "date": "2026-08-31",
@@ -492,27 +507,6 @@
         "companyId": "3481",
         "marketKind": "sii"
       }
-    },
-    {
-      "id": "mops-history-3481-1150312-1",
-      "date": "2026-03-12",
-      "announced_date": "2026-03-12",
-      "fact_date": null,
-      "announced_time": "13:57:55",
-      "title": "公告公司受邀參加美林證券所舉辦之「 2026 Asia Tech Conference」",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150312",
-        "serialNumber": "1",
-        "companyId": "3481",
-        "marketKind": "sii"
-      }
     }
   ],
   "references": [
@@ -541,8 +535,8 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-07T12:31:19.568Z",
-      "row_count": 6,
+      "fetched_at": "2026-09-08T00:15:40.780Z",
+      "row_count": 94,
       "available": true
     },
     {

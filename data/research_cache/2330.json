@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-07T12:35:30.498Z",
+  "collected_at": "2026-09-08T00:16:09.264Z",
   "company": {
     "id": "twse-2330",
     "ticker": "2330",
@@ -10,6 +10,36 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "8eb1b4d3b5e80aa705b7",
+      "date": "2026-09-07",
+      "announced_date": "2026-09-07",
+      "fact_date": "2026-09-14",
+      "announced_time": "163536",
+      "title": "本公司受邀參加機構投資人說明會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/09/14 1.召開法人說明會之日期：115/09/14 2.召開法人說明會之時間：08 時 00 分 3.召開法人說明會之地點：W Hotel Taipei 4.法人說明會擇要訊息：本公司受邀參加瑞銀證券所舉辦之『UBS Taiwan Summit 2026』，會中就本公司7/16法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "01ac8135b15f7f0e9ba6",
+      "date": "2026-09-07",
+      "announced_date": "2026-09-07",
+      "fact_date": "2026-09-08",
+      "announced_time": "143930",
+      "title": "本公司受邀參加機構投資人說明會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/09/08 1.召開法人說明會之日期：115/09/08 ~ 115/09/11 2.召開法人說明會之時間：23 時 10 分 3.召開法人說明會之地點：Palace Hotel - San Francisco 4.法人說明會擇要訊息：本公司受邀參加美商高盛證券所舉辦之『Goldman Sachs Communacopia + Technology Conference 2026』，會中就本公司7/16法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2330-1150901-1",
       "date": "2026-09-01",
@@ -471,48 +501,6 @@
         "companyId": "2330",
         "marketKind": "sii"
       }
-    },
-    {
-      "id": "mops-history-2330-1150601-1",
-      "date": "2026-06-01",
-      "announced_date": "2026-06-01",
-      "fact_date": null,
-      "announced_time": "17:50:38",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150601",
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150527-2",
-      "date": "2026-05-27",
-      "announced_date": "2026-05-27",
-      "fact_date": null,
-      "announced_time": "17:18:30",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150527",
-        "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii"
-      }
     }
   ],
   "references": [
@@ -541,8 +529,8 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-07T12:31:19.568Z",
-      "row_count": 6,
+      "fetched_at": "2026-09-08T00:15:40.780Z",
+      "row_count": 94,
       "available": true
     },
     {

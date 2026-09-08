@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-07T12:35:30.498Z",
+  "collected_at": "2026-09-08T00:16:09.264Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -10,6 +10,51 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "c1b9133dc1560f2d8498",
+      "date": "2026-09-07",
+      "announced_date": "2026-09-07",
+      "fact_date": "2026-09-07",
+      "announced_time": "174036",
+      "title": "元大金控代子公司元大證券 公告第十二屆薪資報酬委員會成員變動",
+      "description": "1.發生變動日期:115/09/07 2.功能性委員會名稱:薪資報酬委員會 3.舊任者姓名:孫雅麗 4.舊任者簡歷:臺灣大學資訊管理學系教授 5.新任者姓名:不適用 6.新任者簡歷:不適用 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）:辭職 8.異動原因:辭職 9.原任期（例xx/xx/xx ~ xx/xx/xx）:114/06/02~117/06/01 10.新任生效日期:不適用 11.其他應敘明事項:孫雅麗女士辭任元大證券薪資報酬委員會委員，自民國115年09月 07日生效。",
+      "clause": "第6款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "13e23ba1e8a0696d224f",
+      "date": "2026-09-07",
+      "announced_date": "2026-09-07",
+      "fact_date": "2026-09-07",
+      "announced_time": "172656",
+      "title": "元大金控代子公司元大證券公告審計委員會成員異動",
+      "description": "1.發生變動日期:115/09/07 2.功能性委員會名稱:審計委員會 3.舊任者姓名:孫雅麗 4.舊任者簡歷:國立臺灣大學資訊管理學系教授 5.新任者姓名:吳宗成 6.新任者簡歷: (1)元大金融控股股份有限公司獨立董事 (2)國立臺灣科技大學資訊管理系特聘教授 (3)財團法人電信技術中心董事長 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 辭職 8.異動原因:辭職 9.原任期（例xx/xx/xx ~ xx/xx/xx）:114/06/02~117/06/01 10.新任生效日期:115/09/07 11.其他應敘明事項:無",
+      "clause": "第6款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "fb9c9f1053427da0e0fa",
+      "date": "2026-09-07",
+      "announced_date": "2026-09-07",
+      "fact_date": "2026-09-07",
+      "announced_time": "172633",
+      "title": "元大金控代子公司元大證券公告獨立董事異動",
+      "description": "1.發生變動日期:115/09/07 2.選任或變動人員別（請輸入法人董事、法人監察人、獨立董事、自然人董事 或自然人監察人）:獨立董事 3.舊任者職稱及姓名:孫雅麗/元大證券獨立董事 4.舊任者簡歷:國立臺灣大學資訊管理學系教授 5.新任者職稱及姓名:吳宗成/元大證券獨立董事 6.新任者簡歷: (1)元大金融控股股份有限公司獨立董事 (2)國立臺灣科技大學資訊管理系特聘教授 (3)財團法人電信技術中心董事長 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 辭職 8.異動原因:辭職 9.新任者選任時持股數:不適用 10.原任期（例xx/xx/xx ~ xx/xx/xx）:114/06/02~117/06/01 11.新任生效日期:115/09/07 12.同任期董事變動比率:3/16 13.同任期獨立董事變動比率:2/6 14.同任期監察人變動比率:不適用 15.屬三分之一以上董事發生變動（請輸入是或否）:否 16.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第6款所定對股東權益或證券價格有重大影響之事項): 無",
+      "clause": "第6款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2885-1150903-1",
       "date": "2026-09-03",
@@ -450,69 +495,6 @@
         "companyId": "2885",
         "marketKind": "sii"
       }
-    },
-    {
-      "id": "mops-history-2885-1150820-5",
-      "date": "2026-08-20",
-      "announced_date": "2026-08-20",
-      "fact_date": null,
-      "announced_time": "16:08:34",
-      "title": "元大金控代子公司元大亞投(香港)公告董事會 通過減資港幣7500萬元事",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150820",
-        "serialNumber": "5",
-        "companyId": "2885",
-        "marketKind": "sii"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150820-4",
-      "date": "2026-08-20",
-      "announced_date": "2026-08-20",
-      "fact_date": null,
-      "announced_time": "16:02:43",
-      "title": "元大金控代子公司元大亞金公告董事會 通過元大亞投(香港)減資港幣7500萬元事",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150820",
-        "serialNumber": "4",
-        "companyId": "2885",
-        "marketKind": "sii"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150820-3",
-      "date": "2026-08-20",
-      "announced_date": "2026-08-20",
-      "fact_date": null,
-      "announced_time": "16:00:01",
-      "title": "元大金控代子公司元大證券公告董事會 通過元大亞投(香港)減資港幣7500萬元事",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150820",
-        "serialNumber": "3",
-        "companyId": "2885",
-        "marketKind": "sii"
-      }
     }
   ],
   "references": [
@@ -541,8 +523,8 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-07T12:31:19.568Z",
-      "row_count": 6,
+      "fetched_at": "2026-09-08T00:15:40.780Z",
+      "row_count": 94,
       "available": true
     },
     {
