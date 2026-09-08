@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1",
   "ticker": "2308",
-  "fetched_at": "2026-09-07T00:17:31.001Z",
+  "fetched_at": "2026-09-08T12:32:17.944Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2308-1150908-1",
+      "date": "2026-09-08",
+      "announced_date": "2026-09-08",
+      "fact_date": "2026-09-08",
+      "announced_time": "16:50:56",
+      "title": "本公司代子公司Delta Electronics (USA) Inc.公告取得不動產使用權資產",
+      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 承租坐落於美國德克薩斯州普萊諾市普萊諾園道⻄2716號之建物 2.事實發生日:115/9/8~115/9/8 3.董事會通過日期: 民國115年9月7日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 租賃建物面積：96,072平方英尺 初始租金金額：每月約美金11.4萬元 使用權資產金額：約美金12.5佰萬元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 2700 West Plano Owner, LLC非本公司之關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 交付或付款條件：依雙方所簽訂之租賃契約約定付款。 租賃期間：自民國115年10月1日起至民國125年12月31日止。 契約限制條款及其他重要約定事項：依雙方所簽訂之租賃契約履行。 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 經Delta Electronics (USA) Inc.董事會參考專業估價機構之估價金額及市場行情等因素 後決議辦理。 12.專業估價者事務所或公司名稱及其估價金額: 專業估價者事務所名稱：長興不動產估價師聯合事務所 估價金額：約美金10.9佰萬元至美金12.9佰萬元 13.專業估價師姓名: 黃健誌 14.專業估價師開業證書字號: 000545 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 營運所需 24.本次交易表示異議之董事之意見: 無 25.本次交易為關係人交易:否 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 子公司Delta Electronics (USA) Inc.董事會於美國德州時間西元2026年9月7日(台灣 時間民國115年9月8日)通過取得不動產使用權資產。",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150908",
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2308-1150904-2",
       "date": "2026-09-04",
@@ -29,9 +50,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150904",
-        "serialNumber": "2",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "2"
       }
     },
     {
@@ -50,9 +71,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150904",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -71,20 +92,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150902",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
       "id": "mops-history-2308-1150828-1",
       "date": "2026-08-28",
       "announced_date": "2026-08-28",
-      "fact_date": "2026-08-28",
+      "fact_date": null,
       "announced_time": "17:06:25",
       "title": "本公司代子公司Delta Electronics (Thailand) Public Company Limited公告向非關係 人取得機器設備",
-      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 機器設備 2.事實發生日:115/6/6~115/8/28 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:依內部核決權限規定辦理 民國115年08月28日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 累計取得機器設備之交易金額約為美金31.7佰萬元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：CHROMA ATE INC. 與公司關係：非本公司關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 電匯 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 交易之決定方式：議價 決策單位：依Delta Electronics (Thailand) Public Company Limited內部核決權限規 定辦理 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 供營業用 24.本次交易表示異議之董事之意見: 不適用 25.本次交易為關係人交易:否 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
-      "clause": "第20款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
@@ -92,9 +113,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150828",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -113,9 +134,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150812",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -134,9 +155,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150810",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -155,9 +176,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150807",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -176,9 +197,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150803",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -197,9 +218,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150724",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -218,9 +239,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150727",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -239,9 +260,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150724",
-        "serialNumber": "3",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "3"
       }
     },
     {
@@ -260,9 +281,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150724",
-        "serialNumber": "2",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "2"
       }
     },
     {
@@ -281,9 +302,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150720",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -302,9 +323,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150715",
-        "serialNumber": "2",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "2"
       }
     },
     {
@@ -323,9 +344,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150715",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -344,9 +365,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150714",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -365,9 +386,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150709",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -386,9 +407,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150706",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -407,9 +428,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150612",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -428,9 +449,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150618",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -449,9 +470,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150616",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -470,9 +491,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150608",
-        "serialNumber": "2",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "2"
       }
     },
     {
@@ -491,30 +512,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150605",
-        "serialNumber": "4",
+        "marketKind": "sii",
         "companyId": "2308",
-        "marketKind": "sii"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150605-3",
-      "date": "2026-06-05",
-      "announced_date": "2026-06-05",
-      "fact_date": null,
-      "announced_time": "16:22:01",
-      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告發放現金股利",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150605",
-        "serialNumber": "3",
-        "companyId": "2308",
-        "marketKind": "sii"
+        "serialNumber": "4"
       }
     }
   ]

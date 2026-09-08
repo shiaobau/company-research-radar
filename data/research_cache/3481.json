@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-08T00:16:09.264Z",
+  "collected_at": "2026-09-08T12:31:52.056Z",
   "company": {
     "id": "twse-3481",
     "ticker": "3481",
@@ -26,6 +26,27 @@
       "review_status": "unreviewed"
     },
     {
+      "id": "mops-history-3481-1150907-1",
+      "date": "2026-09-07",
+      "announced_date": "2026-09-07",
+      "fact_date": "2026-09-14",
+      "announced_time": "15:52:44",
+      "title": "公告公司受邀參加UBS證券所舉辦之「UBS Taiwan Summit 2026」",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/09/14 1.召開法人說明會之日期：115/09/14 2.召開法人說明會之時間：11 時 00 分 3.召開法人說明會之地點：W Hotel 4.法人說明會擇要訊息：公告公司受邀參加UBS證券所舉辦之「UBS Taiwan Summit 2026」，說明營運現況及前景。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150907",
+        "marketKind": "sii",
+        "companyId": "3481",
+        "serialNumber": "1"
+      }
+    },
+    {
       "id": "mops-history-3481-1150831-1",
       "date": "2026-08-31",
       "announced_date": "2026-08-31",
@@ -41,9 +62,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150831",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -62,9 +83,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150814",
-        "serialNumber": "2",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "2"
       }
     },
     {
@@ -83,20 +104,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150814",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
       "id": "mops-history-3481-1150810-1",
       "date": "2026-08-10",
       "announced_date": "2026-08-10",
-      "fact_date": "2026-08-10",
+      "fact_date": null,
       "announced_time": "17:42:26",
       "title": "公告修正本公司114年度股東會年報部分內容",
-      "description": "1.事實發生日:115/08/10 2.公司名稱:群創光電股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:依臺灣證券交易所指示修正本公司民國114年度股東會年報部分內容 6.更正資訊項目/報表名稱:民國114年度年報 7.更正前金額/內容/頁次: 中文版:第9~10、26、28、85及111頁 英文版:第8、24、26、87及109~110頁 8.更正後金額/內容/頁次: 中文版:第9~10、26、28、85及111頁 英文版:第8、24、26、87及109~110頁 9.因應措施:重新上傳股東會年報至公開資訊觀測站(股東會後修訂本) 10.其他應敘明事項:無",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
@@ -104,9 +125,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150810",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -125,9 +146,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150806",
-        "serialNumber": "3",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "3"
       }
     },
     {
@@ -146,9 +167,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150806",
-        "serialNumber": "2",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "2"
       }
     },
     {
@@ -167,9 +188,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150806",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -188,9 +209,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150709",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -209,9 +230,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150629",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -230,9 +251,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150622",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -251,9 +272,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150605",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -272,9 +293,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150601",
-        "serialNumber": "2",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "2"
       }
     },
     {
@@ -293,9 +314,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150601",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -314,9 +335,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150527",
-        "serialNumber": "2",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "2"
       }
     },
     {
@@ -335,9 +356,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150527",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -356,9 +377,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150525",
-        "serialNumber": "2",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "2"
       }
     },
     {
@@ -377,9 +398,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150525",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -398,9 +419,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150515",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -419,9 +440,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150511",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -440,9 +461,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150430",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -461,9 +482,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150415",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     },
     {
@@ -482,30 +503,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150326",
-        "serialNumber": "1",
+        "marketKind": "sii",
         "companyId": "3481",
-        "marketKind": "sii"
-      }
-    },
-    {
-      "id": "mops-history-3481-1150324-1",
-      "date": "2026-03-24",
-      "announced_date": "2026-03-24",
-      "fact_date": null,
-      "announced_time": "16:34:24",
-      "title": "公告本公司處分南科廠房及附屬設施",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150324",
-        "serialNumber": "1",
-        "companyId": "3481",
-        "marketKind": "sii"
+        "serialNumber": "1"
       }
     }
   ],
@@ -535,14 +535,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-08T00:15:40.780Z",
+      "fetched_at": "2026-09-08T12:30:55.080Z",
       "row_count": 94,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-07T00:18:03.494Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-09-08T12:32:50.220Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
