@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1",
   "ticker": "2308",
-  "fetched_at": "2026-09-08T12:32:17.944Z",
+  "fetched_at": "2026-09-09T12:33:07.188Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2308-1150909-1",
+      "date": "2026-09-09",
+      "announced_date": "2026-09-09",
+      "fact_date": "2026-09-09",
+      "announced_time": "15:01:48",
+      "title": "發布本公司115年08月份業績資料",
+      "description": "1.事實發生日:115/09/09 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:發布本公司115年08月份業績資料 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 本公司115年08月份合併營業額為新台幣645.86億元，較去年同期合併營業額 新台幣478.60億元成長34.9%，較上月份合併營業額新台幣670.73億元減少3.7%； 115年1~8月份累積合併營業額為新台幣4,742.68億元，較去年同期累積合併營業 額新台幣3,362.11億元成長41.1%。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150909",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2308-1150908-1",
       "date": "2026-09-08",
@@ -28,9 +49,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150908",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150908",
         "serialNumber": "1"
       }
     },
@@ -49,9 +70,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150904",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150904",
         "serialNumber": "2"
       }
     },
@@ -70,9 +91,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150904",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150904",
         "serialNumber": "1"
       }
     },
@@ -80,20 +101,20 @@
       "id": "mops-history-2308-1150902-1",
       "date": "2026-09-02",
       "announced_date": "2026-09-02",
-      "fact_date": "2026-09-02",
+      "fact_date": null,
       "announced_time": "22:13:32",
       "title": "澄清工商時報115年9月2日報導",
-      "description": "1.事實發生日:115/09/02 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.傳播媒體名稱:工商時報 6.報導內容:有關市場流傳台達電發文予客戶提及：「台達電子工業謹代表其關聯公司致 函通知您，關於某電源供應器特定批次產品存在潛在品質問題」等內容。 7.發生緣由:大眾傳播媒體報導 8.因應措施:公佈澄清訊息於公開資訊觀測站 9.其他應敘明事項:若供應商零組件出現問題，公司將盡力協助客戶安排換貨，以確保 滿足客戶需求。目前本公司整體營運未受影響。",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150902",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150902",
         "serialNumber": "1"
       }
     },
@@ -112,9 +133,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150828",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150828",
         "serialNumber": "1"
       }
     },
@@ -133,9 +154,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150812",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150812",
         "serialNumber": "1"
       }
     },
@@ -154,9 +175,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150810",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150810",
         "serialNumber": "1"
       }
     },
@@ -175,9 +196,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150807",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150807",
         "serialNumber": "1"
       }
     },
@@ -196,9 +217,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150803",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150803",
         "serialNumber": "1"
       }
     },
@@ -217,9 +238,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150724",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150724",
         "serialNumber": "1"
       }
     },
@@ -238,9 +259,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150727",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150727",
         "serialNumber": "1"
       }
     },
@@ -259,9 +280,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150724",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150724",
         "serialNumber": "3"
       }
     },
@@ -280,9 +301,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150724",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150724",
         "serialNumber": "2"
       }
     },
@@ -301,9 +322,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150720",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150720",
         "serialNumber": "1"
       }
     },
@@ -322,9 +343,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150715",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150715",
         "serialNumber": "2"
       }
     },
@@ -343,9 +364,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150715",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150715",
         "serialNumber": "1"
       }
     },
@@ -364,9 +385,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150714",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150714",
         "serialNumber": "1"
       }
     },
@@ -385,9 +406,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150709",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150709",
         "serialNumber": "1"
       }
     },
@@ -406,9 +427,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150706",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150706",
         "serialNumber": "1"
       }
     },
@@ -427,9 +448,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150612",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150612",
         "serialNumber": "1"
       }
     },
@@ -448,9 +469,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150618",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150618",
         "serialNumber": "1"
       }
     },
@@ -469,9 +490,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150616",
-        "marketKind": "sii",
         "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1150616",
         "serialNumber": "1"
       }
     },
@@ -490,31 +511,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "companyId": "2308",
+        "marketKind": "sii",
         "enterDate": "1150608",
-        "marketKind": "sii",
-        "companyId": "2308",
         "serialNumber": "2"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150605-4",
-      "date": "2026-06-05",
-      "announced_date": "2026-06-05",
-      "fact_date": null,
-      "announced_time": "16:22:35",
-      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告現金股利除息基準日",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150605",
-        "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "4"
       }
     }
   ]
