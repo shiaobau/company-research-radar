@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-08T12:30:58.815Z",
+  "generated_at": "2026-09-09T00:15:56.937Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-08T12:30:58.815Z"
+      "refreshed_at": "2026-09-09T00:15:56.937Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,7 +50,7 @@
       "rationale": "財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-08T12:30:58.815Z"
+      "refreshed_at": "2026-09-09T00:15:56.937Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -67,10 +67,43 @@
       "rationale": "月營收分數 71；財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-08T12:30:58.815Z"
+      "refreshed_at": "2026-09-09T00:15:56.937Z"
     },
     "twse-2308": {
       "ticker": "2308",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events"
+      ],
+      "evidence_level": "high",
+      "event_count": 1,
+      "positive_event_count": 0,
+      "negative_event_count": 0,
+      "score": 70,
+      "rationale": "月營收分數 79；財務品質分數 69。",
+      "events": [
+        {
+          "date": "2026-09-08",
+          "announce_date": "2026-09-08",
+          "time": "165056",
+          "title": "本公司代子公司Delta Electronics (USA) Inc.公告取得不動產使用權資產",
+          "clause": "第20款",
+          "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 承租坐落於美國德克薩斯州普萊諾市普萊諾園道&#11972;2716號之建物 2.事實發生日:115/9/8~115/9/8 3.董事會通過日期: 民國115年9月7日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 租賃建物面積：96,072平方英尺 初始租金金額：每月約美金11.4萬元 使用權資產金額：約美金12.5佰萬元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 2700 West Plano Owner, LLC非本公司之關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 交付或付款條件：依雙方所簽訂之租賃契約約定付款。 租賃期間：自民國115年10月1日起至民國125年12月31日止。 契約限制條款及其他重要約定事項：依雙方所簽訂之租賃契約履行。 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 經Delta Electronics (USA) Inc.董事會參考專業估價機構之估價金額及市場行情等因素 後決議辦理。 12.專業估價者事務所或公司名稱及其估價金額: 專業估價者事務所名稱：長興不動產估價師聯合事務所 估價金額：約美金10.9佰萬元至美金12.9佰萬元 13.專業估價師姓名: 黃健誌 14.專業估價師開業證書字號: 000545 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 營運所需 24.本次交易表示異議之董事之意見: 無 25.本次交易為關係人交易:否 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 子公司Delta Electronics (USA) Inc.董事會於美國德州時間西元2026年9月7日(台灣 時間民國115年9月8日)通過取得不動產使用權資產。",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-09-09T00:15:56.937Z"
+    },
+    "twse-2330": {
+      "ticker": "2330",
       "market": "TWSE",
       "status": "ok",
       "source_ids": [
@@ -80,63 +113,11 @@
       "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 67,
-      "rationale": "月營收分數 79；財務品質分數 69。",
+      "score": 71,
+      "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-08T12:30:58.815Z"
-    },
-    "twse-2330": {
-      "ticker": "2330",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_material_events"
-      ],
-      "evidence_level": "high",
-      "event_count": 2,
-      "positive_event_count": 0,
-      "negative_event_count": 0,
-      "score": 74,
-      "rationale": "月營收分數 79；財務品質分數 78。",
-      "events": [
-        {
-          "date": "2026-09-08",
-          "announce_date": "2026-09-07",
-          "time": "143930",
-          "title": "本公司受邀參加機構投資人說明會",
-          "clause": "第12款",
-          "description": "符合條款第四條第XX款：12 事實發生日：115/09/08 1.召開法人說明會之日期：115/09/08 ~ 115/09/11 2.召開法人說明會之時間：23 時 10 分 3.召開法人說明會之地點：Palace Hotel - San Francisco 4.法人說明會擇要訊息：本公司受邀參加美商高盛證券所舉辦之『Goldman Sachs Communacopia + Technology Conference 2026』，會中就本公司7/16法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
-          "risk_points": 0,
-          "matched_patterns": [
-            "說明"
-          ]
-        },
-        {
-          "date": "2026-09-14",
-          "announce_date": "2026-09-07",
-          "time": "163536",
-          "title": "本公司受邀參加機構投資人說明會",
-          "clause": "第12款",
-          "description": "符合條款第四條第XX款：12 事實發生日：115/09/14 1.召開法人說明會之日期：115/09/14 2.召開法人說明會之時間：08 時 00 分 3.召開法人說明會之地點：W Hotel Taipei 4.法人說明會擇要訊息：本公司受邀參加瑞銀證券所舉辦之『UBS Taiwan Summit 2026』，會中就本公司7/16法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
-          "risk_points": 0,
-          "matched_patterns": [
-            "說明"
-          ]
-        }
-      ],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-09-08T12:30:58.815Z"
+      "refreshed_at": "2026-09-09T00:15:56.937Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -145,61 +126,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 3,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 74,
+      "score": 71,
       "rationale": "月營收分數 76；財務品質分數 89。",
-      "events": [
-        {
-          "date": "2026-09-07",
-          "announce_date": "2026-09-07",
-          "time": "172633",
-          "title": "元大金控代子公司元大證券公告獨立董事異動",
-          "clause": "第6款",
-          "description": "1.發生變動日期:115/09/07 2.選任或變動人員別（請輸入法人董事、法人監察人、獨立董事、自然人董事 或自然人監察人）:獨立董事 3.舊任者職稱及姓名:孫雅麗/元大證券獨立董事 4.舊任者簡歷:國立臺灣大學資訊管理學系教授 5.新任者職稱及姓名:吳宗成/元大證券獨立董事 6.新任者簡歷: (1)元大金融控股股份有限公司獨立董事 (2)國立臺灣科技大學資訊管理系特聘教授 (3)財團法人電信技術中心董事長 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 辭職 8.異動原因:辭職 9.新任者選任時持股數:不適用 10.原任期（例xx/xx/xx ~ xx/xx/xx）:114/06/02~117/06/01 11.新任生效日期:115/09/07 12.同任期董事變動比率:3/16 13.同任期獨立董事變動比率:2/6 14.同任期監察人變動比率:不適用 15.屬三分之一以上董事發生變動（請輸入是或否）:否 16.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第6款所定對股東權益或證券價格有重大影響之事項): 無",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        },
-        {
-          "date": "2026-09-07",
-          "announce_date": "2026-09-07",
-          "time": "172656",
-          "title": "元大金控代子公司元大證券公告審計委員會成員異動",
-          "clause": "第6款",
-          "description": "1.發生變動日期:115/09/07 2.功能性委員會名稱:審計委員會 3.舊任者姓名:孫雅麗 4.舊任者簡歷:國立臺灣大學資訊管理學系教授 5.新任者姓名:吳宗成 6.新任者簡歷: (1)元大金融控股股份有限公司獨立董事 (2)國立臺灣科技大學資訊管理系特聘教授 (3)財團法人電信技術中心董事長 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 辭職 8.異動原因:辭職 9.原任期（例xx/xx/xx ~ xx/xx/xx）:114/06/02~117/06/01 10.新任生效日期:115/09/07 11.其他應敘明事項:無",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        },
-        {
-          "date": "2026-09-07",
-          "announce_date": "2026-09-07",
-          "time": "174036",
-          "title": "元大金控代子公司元大證券 公告第十二屆薪資報酬委員會成員變動",
-          "clause": "第6款",
-          "description": "1.發生變動日期:115/09/07 2.功能性委員會名稱:薪資報酬委員會 3.舊任者姓名:孫雅麗 4.舊任者簡歷:臺灣大學資訊管理學系教授 5.新任者姓名:不適用 6.新任者簡歷:不適用 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）:辭職 8.異動原因:辭職 9.原任期（例xx/xx/xx ~ xx/xx/xx）:114/06/02~117/06/01 10.新任生效日期:不適用 11.其他應敘明事項:孫雅麗女士辭任元大證券薪資報酬委員會委員，自民國115年09月 07日生效。",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-08T12:30:58.815Z"
+      "refreshed_at": "2026-09-09T00:15:56.937Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -216,7 +151,7 @@
       "rationale": "財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-08T12:30:58.815Z"
+      "refreshed_at": "2026-09-09T00:15:56.937Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -233,7 +168,7 @@
       "rationale": "月營收分數 76。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-08T12:30:58.815Z"
+      "refreshed_at": "2026-09-09T00:15:56.937Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -242,31 +177,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 48,
+      "score": 45,
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
-      "events": [
-        {
-          "date": "2026-09-14",
-          "announce_date": "2026-09-07",
-          "time": "155244",
-          "title": "公告公司受邀參加UBS證券所舉辦之「UBS Taiwan Summit 2026」",
-          "clause": "第12款",
-          "description": "符合條款第四條第XX款：12 事實發生日：115/09/14 1.召開法人說明會之日期：115/09/14 2.召開法人說明會之時間：11 時 00 分 3.召開法人說明會之地點：W Hotel 4.法人說明會擇要訊息：公告公司受邀參加UBS證券所舉辦之「UBS Taiwan Summit 2026」，說明營運現況及前景。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-08T12:30:58.815Z"
+      "refreshed_at": "2026-09-09T00:15:56.937Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -283,7 +202,7 @@
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-08T12:30:58.815Z"
+      "refreshed_at": "2026-09-09T00:15:56.937Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -300,7 +219,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-08T12:30:58.815Z"
+      "refreshed_at": "2026-09-09T00:15:56.937Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -317,7 +236,7 @@
       "rationale": "財務品質分數 65。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-08T12:30:58.815Z"
+      "refreshed_at": "2026-09-09T00:15:56.937Z"
     }
   }
 }
