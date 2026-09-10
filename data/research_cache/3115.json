@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-09T12:32:42.198Z",
+  "collected_at": "2026-09-10T12:36:47.499Z",
   "company": {
     "id": "tpex-3115",
     "ticker": "3115",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-3115-1150910-1",
+      "date": "2026-09-10",
+      "announced_date": "2026-09-10",
+      "fact_date": "2026-09-10",
+      "announced_time": "19:54:42",
+      "title": "公告本公司處分私募有價證券 Siegfried Supply Chain Finance Fund",
+      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件， 如股息率等）: VTeam Siegfried Supply Chain Finance Fund S.C.A. SICAV-SIF - Series 1 Class A 股份； 性質為私募有價證券 2.事實發生日:115/09/10 3.交易單位數量、每單位價格及交易總金額: (A)交易數量：1,498.5186單位 (B)每單位價格：US$1,381.1247元 (C)交易總金額：US$2,069,641.05元 4.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司 之關係人者，得免揭露其姓名）: (A)交易相對人：Siegfried Asset Management Limited (B)與公司之關係：非關係人 5.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及 前次移轉之所有人、前次移轉之所有人與公司及交易相對人間相互之 關係、前次移轉日期及移轉金額: 不適用 6.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告 關係人之取得及處分日期、價格及交易當時與公司之關係: 不適用 7.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分 債權如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人 之債權帳面金額: 不適用 8.處分利益（或損失）（取得有價證券者不適用）（遞延者應列表 說明認列情形）: 本次處分利益約新台幣851,844元 9.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要 約定事項: 依據申購合約約定辦理 10.本次交易之決定方式、價格決定之參考依據及決策單位: (A)交易之決定方式、價格決定之參考依據：依基金公司提供之每單位淨資產價值 與市場最新報價之每股淨值 (B)決策單位：本公司董事會 11.取得或處分有價證券標的公司每股淨值:不適用 12.有價證券標的公司私募參考價格與每股交易金額差距達20%以上:不適用 13.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、 持股比例及權利受限情形（如質押情形）: (A)數量：0 (B)累積持有總金額：0 (C)持股比例：不適用 (D)權利受限情形：無 14.迄目前為止，私募有價證券投資（含本次交易）占公司最近期財 務報表中總資產及歸屬於母公司業主之權益之比例暨最近期財務報表中營運資金數額: (A)占母公司最近期個體財務報表總資產比例：10.77% (B)占最近期合併財務報表歸屬於母公司業主之權益比例：12.02% (C)母公司最近期個體財務報表中營運資金：NT$535,759仟元 15.經理人及經紀費用: 無 16.取得或處分之具體目的或用途: 獲利贖回 17.本次交易表示異議董事之意見: 無 18.本次交易為關係人交易: 否 19.董事會通過日期: 不適用 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.其他敘明事項: 本次處分金額美金2,069,641.05元，以美金匯率31.5換算，約新台幣65,193,694元。",
+      "clause": "第24款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "enterDate": "1150910",
+        "serialNumber": "1",
+        "companyId": "3115"
+      }
+    },
     {
       "id": "mops-history-3115-1150811-2",
       "date": "2026-08-11",
@@ -25,10 +46,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150811",
-        "serialNumber": "2"
+        "serialNumber": "2",
+        "companyId": "3115"
       }
     },
     {
@@ -46,10 +67,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150811",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -67,31 +88,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150803",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
       "id": "mops-history-3115-1150715-1",
       "date": "2026-07-15",
       "announced_date": "2026-07-15",
-      "fact_date": "2026-07-15",
+      "fact_date": null,
       "announced_time": "20:57:10",
       "title": "公告本公司內部稽核主管異動",
-      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管 (如:執行長、營運長、行銷長及策略長等)、財務主管、會計 主管、公司治理主管、資訊安全長、研發主管、內部稽核主管或訴訟及非 訟代理人）:內部稽核主管 2.發生變動日期:115/07/15 3.舊任者姓名、級職及簡歷:劉良泰/本公司稽核主管 4.新任者姓名、級職及簡歷:鄭俊益/統一精工(股)公司財務部經理 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、 「退休」、「死亡」、「新任」或「解任」）:職務調整 6.異動原因:經本公司115/07/15董事會決議通過任命。 7.生效日期:115/07/15 8.其他應敘明事項:無。",
-      "clause": "第8款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150715",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -109,10 +130,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150630",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -130,10 +151,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150623",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -151,10 +172,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150518",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -172,10 +193,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150511",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -193,10 +214,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150426",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -214,10 +235,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150309",
-        "serialNumber": "3"
+        "serialNumber": "3",
+        "companyId": "3115"
       }
     },
     {
@@ -235,10 +256,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150309",
-        "serialNumber": "2"
+        "serialNumber": "2",
+        "companyId": "3115"
       }
     },
     {
@@ -256,10 +277,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150309",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -277,10 +298,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150302",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -298,10 +319,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150301",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -319,10 +340,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150113",
-        "serialNumber": "2"
+        "serialNumber": "2",
+        "companyId": "3115"
       }
     },
     {
@@ -340,10 +361,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1150113",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -361,10 +382,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1141218",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -382,10 +403,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1141211",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -403,10 +424,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1141128",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -424,10 +445,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1141120",
-        "serialNumber": "2"
+        "serialNumber": "2",
+        "companyId": "3115"
       }
     },
     {
@@ -445,10 +466,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1141120",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -466,10 +487,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1141117",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "3115"
       }
     },
     {
@@ -487,31 +508,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "3115",
         "marketKind": "otc",
         "enterDate": "1141110",
-        "serialNumber": "3"
-      }
-    },
-    {
-      "id": "mops-history-3115-1141110-2",
-      "date": "2025-11-10",
-      "announced_date": "2025-11-10",
-      "fact_date": null,
-      "announced_time": "17:48:39",
-      "title": "本公司代重要子公司富育榮綱控股股份有限公司(Wealth Prosper Holdings Limited)公告董事會決議辦理現金增資發行新股",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "3115",
-        "marketKind": "otc",
-        "enterDate": "1141110",
-        "serialNumber": "2"
+        "serialNumber": "3",
+        "companyId": "3115"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-09T12:31:26.448Z",
-      "row_count": 47,
+      "fetched_at": "2026-09-10T12:31:17.265Z",
+      "row_count": 41,
       "available": true
     },
     {
       "source_id": "mops_history_api",
       "cache_status": "updated",
-      "fetched_at": "2026-09-09T12:33:32.939Z",
+      "fetched_at": "2026-09-10T12:37:42.012Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
