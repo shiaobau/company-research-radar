@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-10T12:36:47.499Z",
+  "collected_at": "2026-09-13T00:21:42.283Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2885-1150911-1",
+      "date": "2026-09-11",
+      "announced_date": "2026-09-11",
+      "fact_date": "2026-09-11",
+      "announced_time": "17:13:16",
+      "title": "元大金控代子公司元大證券公告內部稽核主管異動",
+      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、 行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、 內部稽核主管或訴訟及非訟代理人）:內部稽核主管 2.發生變動日期:115/09/11 3.舊任者姓名、級職及簡歷:無 4.新任者姓名、級職及簡歷:蔡玉蘭 (1)元大證券股份有限公司資深副總經理 (2)元大證券投資信託股份有限公司資深副總經理 (3)元大證券股份有限公司副總經理 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新 任」或「解任」）:新任 6.異動原因:新任 7.生效日期:115/09/11 8.其他應敘明事項: 115/09/11接獲金融監督管理委員會核准函。",
+      "clause": "第8款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150911",
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2885-1150910-2",
       "date": "2026-09-10",
@@ -25,10 +46,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150910",
-        "serialNumber": "2",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "2"
       }
     },
     {
@@ -46,10 +67,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150910",
-        "serialNumber": "1",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1"
       }
     },
     {
@@ -67,31 +88,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150907",
-        "serialNumber": "3",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "3"
       }
     },
     {
       "id": "mops-history-2885-1150907-2",
       "date": "2026-09-07",
       "announced_date": "2026-09-07",
-      "fact_date": "2026-09-07",
+      "fact_date": null,
       "announced_time": "17:26:56",
       "title": "元大金控代子公司元大證券公告審計委員會成員異動",
-      "description": "1.發生變動日期:115/09/07 2.功能性委員會名稱:審計委員會 3.舊任者姓名:孫雅麗 4.舊任者簡歷:國立臺灣大學資訊管理學系教授 5.新任者姓名:吳宗成 6.新任者簡歷: (1)元大金融控股股份有限公司獨立董事 (2)國立臺灣科技大學資訊管理系特聘教授 (3)財團法人電信技術中心董事長 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 辭職 8.異動原因:辭職 9.原任期（例xx/xx/xx ~ xx/xx/xx）:114/06/02~117/06/01 10.新任生效日期:115/09/07 11.其他應敘明事項:無",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150907",
-        "serialNumber": "2",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "2"
       }
     },
     {
@@ -109,10 +130,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150907",
-        "serialNumber": "1",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1"
       }
     },
     {
@@ -130,10 +151,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150903",
-        "serialNumber": "1",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1"
       }
     },
     {
@@ -151,10 +172,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150901",
-        "serialNumber": "2",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "2"
       }
     },
     {
@@ -172,10 +193,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150901",
-        "serialNumber": "1",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1"
       }
     },
     {
@@ -193,10 +214,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150828",
-        "serialNumber": "1",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1"
       }
     },
     {
@@ -214,10 +235,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150827",
-        "serialNumber": "7",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "7"
       }
     },
     {
@@ -235,10 +256,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150827",
-        "serialNumber": "6",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "6"
       }
     },
     {
@@ -256,10 +277,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150827",
-        "serialNumber": "5",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "5"
       }
     },
     {
@@ -277,10 +298,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150827",
-        "serialNumber": "4",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "4"
       }
     },
     {
@@ -298,10 +319,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150827",
-        "serialNumber": "3",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "3"
       }
     },
     {
@@ -319,10 +340,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150827",
-        "serialNumber": "2",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "2"
       }
     },
     {
@@ -340,10 +361,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150826",
-        "serialNumber": "3",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "3"
       }
     },
     {
@@ -361,10 +382,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150826",
-        "serialNumber": "2",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "2"
       }
     },
     {
@@ -382,10 +403,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150826",
-        "serialNumber": "1",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1"
       }
     },
     {
@@ -403,10 +424,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150824",
-        "serialNumber": "5",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "5"
       }
     },
     {
@@ -424,10 +445,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150824",
-        "serialNumber": "4",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "4"
       }
     },
     {
@@ -445,10 +466,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150824",
-        "serialNumber": "3",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "3"
       }
     },
     {
@@ -466,10 +487,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150824",
-        "serialNumber": "2",
-        "companyId": "2885"
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "2"
       }
     },
     {
@@ -487,31 +508,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "enterDate": "1150824",
-        "serialNumber": "1",
-        "companyId": "2885"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150821-2",
-      "date": "2026-08-21",
-      "announced_date": "2026-08-21",
-      "fact_date": null,
-      "announced_time": "15:27:04",
-      "title": "元大金控代子公司元大證券印尼公告股東臨時會 重要決議事項",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
         "marketKind": "sii",
-        "enterDate": "1150821",
-        "serialNumber": "2",
-        "companyId": "2885"
+        "companyId": "2885",
+        "serialNumber": "1"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-10T12:31:17.004Z",
-      "row_count": 106,
+      "fetched_at": "2026-09-13T00:16:34.448Z",
+      "row_count": 3,
       "available": true
     },
     {
       "source_id": "mops_history_api",
       "cache_status": "updated",
-      "fetched_at": "2026-09-10T12:37:26.833Z",
+      "fetched_at": "2026-09-13T00:22:25.351Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

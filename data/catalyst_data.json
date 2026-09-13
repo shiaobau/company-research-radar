@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-10T12:31:18.945Z",
+  "generated_at": "2026-09-13T00:16:40.306Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -32,7 +32,7 @@
       "score": 53,
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-1707": {
@@ -49,7 +49,7 @@
       "score": 53,
       "rationale": "財務品質分數 74。",
       "events": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-2303": {
@@ -66,7 +66,7 @@
       "score": 67,
       "rationale": "月營收分數 71；財務品質分數 74。",
       "events": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-2308": {
@@ -99,7 +99,7 @@
           "matched_patterns": []
         }
       ],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-2330": {
@@ -116,7 +116,7 @@
       "score": 71,
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-2885": {
@@ -133,7 +133,7 @@
       "score": 71,
       "rationale": "月營收分數 76；財務品質分數 89。",
       "events": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-2886": {
@@ -150,7 +150,7 @@
       "score": 65,
       "rationale": "財務品質分數 79。",
       "events": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "tpex-3115": {
@@ -167,7 +167,7 @@
       "score": 59,
       "rationale": "月營收分數 76。",
       "events": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-3481": {
@@ -184,7 +184,7 @@
       "score": 45,
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "tpex-6023": {
@@ -201,7 +201,7 @@
       "score": 71,
       "rationale": "月營收分數 79；財務品質分數 78。",
       "events": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "tpex-8279": {
@@ -218,7 +218,7 @@
       "score": 53,
       "rationale": "財務品質分數 70。",
       "events": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-9939": {
@@ -235,7 +235,7 @@
       "score": 53,
       "rationale": "財務品質分數 65。",
       "events": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     }
   }

@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-10T12:31:18.945Z",
+  "generated_at": "2026-09-13T00:16:40.306Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -52,7 +52,7 @@
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
       "violations": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-1707": {
@@ -75,7 +75,7 @@
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
       "violations": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-2303": {
@@ -98,7 +98,7 @@
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
       "violations": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-2308": {
@@ -121,7 +121,7 @@
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
       "violations": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-2330": {
@@ -144,7 +144,7 @@
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
       "violations": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-2885": {
@@ -167,7 +167,7 @@
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
       "violations": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-2886": {
@@ -190,7 +190,7 @@
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
       "violations": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "tpex-3115": {
@@ -213,7 +213,7 @@
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
       "violations": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-3481": {
@@ -236,7 +236,7 @@
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
       "violations": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "tpex-6023": {
@@ -259,7 +259,7 @@
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
       "violations": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "tpex-8279": {
@@ -282,7 +282,7 @@
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
       "violations": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     },
     "twse-9939": {
@@ -305,7 +305,7 @@
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
       "events": [],
       "violations": [],
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-09-10T12:31:18.945Z"
     }
   }
