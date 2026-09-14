@@ -3,7 +3,7 @@
   "timezone": "Asia/Taipei",
   "frequency": "weekday",
   "frequency_label": "平日",
-  "generated_at": "2026-09-13T12:33:20.824Z",
+  "generated_at": "2026-09-14T00:19:27.714Z",
   "current_run": null,
   "schedules": {
     "morning": {
@@ -14,7 +14,7 @@
         "slot": "morning",
         "label": "早間完整更新",
         "status": "done",
-        "started_at": "2026-09-13T00:16:13.500Z",
+        "started_at": "2026-09-14T00:15:52.770Z",
         "steps": [
           {
             "script": "tools/source-cache.mjs",
@@ -23,17 +23,17 @@
               "--continue-on-error"
             ],
             "status": "done",
-            "started_at": "2026-09-13T00:16:13.501Z",
-            "finished_at": "2026-09-13T00:16:40.272Z",
-            "output_tail": "failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\ntwse_financial_income_ins: updated, 5 rows, 2026-09-13T00:16:31.266Z\ntwse_financial_balance_ins: updated, 5 rows, 2026-09-13T00:16:31.425Z\ntpex_financial_income_ins: failed, PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\ntpex_financial_balance_ins: failed, PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\ntwse_material_events: updated, 3 rows, 2026-09-13T00:16:34.448Z\ntpex_material_events: failed, PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\ntwse_major_shareholders: updated, 1066 rows, 2026-09-13T00:16:36.057Z\ntpex_major_shareholders: failed, PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\ntwse_insider_transfer: updated, 8 rows, 2026-09-13T00:16:37.514Z\ntpex_insider_transfer: failed, PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\ntwse_disclosure_violations: updated, 33 rows, 2026-09-13T00:16:38.970Z\ntpex_disclosure_violations: failed, PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\nCompleted with 15 unavailable source(s).\n"
+            "started_at": "2026-09-14T00:15:52.772Z",
+            "finished_at": "2026-09-14T00:16:17.626Z",
+            "output_tail": "failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\ntwse_financial_income_ins: updated, 5 rows, 2026-09-14T00:16:08.727Z\ntwse_financial_balance_ins: updated, 5 rows, 2026-09-14T00:16:08.892Z\ntpex_financial_income_ins: failed, PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\ntpex_financial_balance_ins: failed, PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\ntwse_material_events: updated, 3 rows, 2026-09-14T00:16:11.712Z\ntpex_material_events: failed, PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\ntwse_major_shareholders: updated, 1066 rows, 2026-09-14T00:16:13.338Z\ntpex_major_shareholders: failed, PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\ntwse_insider_transfer: updated, 8 rows, 2026-09-14T00:16:14.796Z\ntpex_insider_transfer: failed, PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\ntwse_disclosure_violations: updated, 33 rows, 2026-09-14T00:16:16.259Z\ntpex_disclosure_violations: failed, PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\nCompleted with 15 unavailable source(s).\n"
           },
           {
             "script": "tools/update-data.mjs",
             "args": [],
             "status": "done",
-            "started_at": "2026-09-13T00:16:40.274Z",
-            "finished_at": "2026-09-13T00:21:42.208Z",
-            "output_tail": "WARN: market_factors.json update failed; retaining the previous background factor snapshot. fetch failed\nWARN: revenue_data.json update failed, using cached data if available. PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\nWARN: financial_data.json update failed, using cached data if available. PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\nWARN: event/governance update failed, using cached data if available. PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\nGenerated objective data for 12 research companies.\nTWSE 三大法人 20260912 unavailable: fetch failed\nTWSE 三大法人 20260911 unavailable: fetch failed\nTWSE 三大法人 20260910 unavailable: fetch failed\nTWSE 三大法人 20260909 unavailable: fetch failed\nTWSE 三大法人 20260908 unavailable: fetch failed\nTWSE 三大法人 20260907 unavailable: fetch failed\nTWSE 三大法人 20260906 unavailable: fetch failed\n"
+            "started_at": "2026-09-14T00:16:17.628Z",
+            "finished_at": "2026-09-14T00:19:26.278Z",
+            "output_tail": "WARN: market_factors.json update failed; retaining the previous background factor snapshot. fetch failed\nWARN: revenue_data.json update failed, using cached data if available. PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\nWARN: financial_data.json update failed, using cached data if available. PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\nWARN: event/governance update failed, using cached data if available. PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: fetch failed\nGenerated objective data for 12 research companies.\nTWSE 三大法人 20260913 unavailable: fetch failed\nTWSE 三大法人 20260912 unavailable: fetch failed\n"
           },
           {
             "script": "tools/verify-research-data.mjs",
@@ -41,22 +41,22 @@
               "--retry"
             ],
             "status": "done",
-            "started_at": "2026-09-13T00:21:42.209Z",
-            "finished_at": "2026-09-13T00:21:42.248Z",
+            "started_at": "2026-09-14T00:19:26.279Z",
+            "finished_at": "2026-09-14T00:19:26.318Z",
             "output_tail": "}\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    },\n    {\n      \"id\": \"twse-3481\",\n      \"ticker\": \"3481\",\n      \"name\": \"群創\",\n      \"status\": \"core_complete\",\n      \"missing_dimensions\": [\n        {\n          \"id\": \"industry\",\n          \"label\": \"產業證據調整\"\n        }\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    },\n    {\n      \"id\": \"tpex-6023\",\n      \"ticker\": \"6023\",\n      \"name\": \"元大期貨\",\n      \"status\": \"core_complete\",\n      \"missing_dimensions\": [\n        {\n          \"id\": \"industry\",\n          \"label\": \"產業證據調整\"\n        }\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    },\n    {\n      \"id\": \"tpex-8279\",\n      \"ticker\": \"8279\",\n      \"name\": \"生展\",\n      \"status\": \"core_complete\",\n      \"missing_dimensions\": [\n        {\n          \"id\": \"industry\",\n          \"label\": \"產業證據調整\"\n        }\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    },\n    {\n      \"id\": \"twse-9939\",\n      \"ticker\": \"9939\",\n      \"name\": \"宏全\",\n      \"status\": \"core_complete\",\n      \"missing_dimensions\": [\n        {\n          \"id\": \"industry\",\n          \"label\": \"產業證據調整\"\n        }\n      ],\n      \"completed_count\": 6,\n      \"total_count\": 7\n    }\n  ]\n}\n"
           },
           {
             "script": "tools/targeted-collector.mjs",
             "args": [],
             "status": "done",
-            "started_at": "2026-09-13T00:21:42.249Z",
-            "finished_at": "2026-09-13T00:22:59.202Z",
+            "started_at": "2026-09-14T00:19:26.319Z",
+            "finished_at": "2026-09-14T00:19:27.713Z",
             "output_tail": "{\n  \"status\": \"done\",\n  \"companies\": 12,\n  \"researched_companies\": 12,\n  \"total_events\": 288,\n  \"cache\": \"data/research_cache\"\n}\n"
           }
         ],
         "progress_percent": 100,
         "current_step": null,
-        "finished_at": "2026-09-13T00:22:59.202Z",
+        "finished_at": "2026-09-14T00:19:27.713Z",
         "company_count": 12
       }
     },
