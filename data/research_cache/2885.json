@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-14T00:19:26.353Z",
+  "collected_at": "2026-09-14T12:31:36.801Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2885-1150914-1",
+      "date": "2026-09-14",
+      "announced_date": "2026-09-14",
+      "fact_date": "2026-09-14",
+      "announced_time": "14:45:34",
+      "title": "元大金控代子公司元大證金公告 財務主管及會計主管異動",
+      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、 行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、 內部稽核主管或訴訟及非訟代理人）:財務主管及會計主管 2.發生變動日期:115/09/14 3.舊任者姓名、級職及簡歷:鐘美玲/ 元大證券金融股份有限公司資深副理 4.新任者姓名、級職及簡歷:孫文宏/ (1)元大證券金融股份有限公司協理 (2)元大商業銀行股份有限公司資深經理 (3)元大商業銀行股份有限公司經理 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新 任」或「解任」）:辭職 6.異動原因:辭職 7.生效日期:115/09/21 8.其他應敘明事項:無",
+      "clause": "第8款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150914",
+        "marketKind": "sii",
+        "companyId": "2885",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2885-1150911-1",
       "date": "2026-09-11",
@@ -77,11 +98,11 @@
       "id": "mops-history-2885-1150907-3",
       "date": "2026-09-07",
       "announced_date": "2026-09-07",
-      "fact_date": "2026-09-07",
+      "fact_date": null,
       "announced_time": "17:40:36",
       "title": "元大金控代子公司元大證券 公告第十二屆薪資報酬委員會成員變動",
-      "description": "1.發生變動日期:115/09/07 2.功能性委員會名稱:薪資報酬委員會 3.舊任者姓名:孫雅麗 4.舊任者簡歷:臺灣大學資訊管理學系教授 5.新任者姓名:不適用 6.新任者簡歷:不適用 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）:辭職 8.異動原因:辭職 9.原任期（例xx/xx/xx ~ xx/xx/xx）:114/06/02~117/06/01 10.新任生效日期:不適用 11.其他應敘明事項:孫雅麗女士辭任元大證券薪資報酬委員會委員，自民國115年09月 07日生效。",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
         "companyId": "2885",
         "serialNumber": "2"
       }
-    },
-    {
-      "id": "mops-history-2885-1150824-1",
-      "date": "2026-08-24",
-      "announced_date": "2026-08-24",
-      "fact_date": null,
-      "announced_time": "16:00:18",
-      "title": "元大金控公告115年第二季合併財務報告經董事會決議通過",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150824",
-        "marketKind": "sii",
-        "companyId": "2885",
-        "serialNumber": "1"
-      }
     }
   ],
   "references": [
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-14T00:16:11.712Z",
+      "fetched_at": "2026-09-14T12:30:56.613Z",
       "row_count": 3,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-13T00:22:25.351Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-09-14T12:32:17.840Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

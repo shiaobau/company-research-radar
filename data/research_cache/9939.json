@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-14T00:19:26.353Z",
+  "collected_at": "2026-09-14T12:31:36.801Z",
   "company": {
     "id": "twse-9939",
     "ticker": "9939",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-9939-1150914-1",
+      "date": "2026-09-14",
+      "announced_date": "2026-09-14",
+      "fact_date": "2026-09-15",
+      "announced_time": "15:15:09",
+      "title": "本公司受邀參加群益金鼎證卷所舉辦之第三季投資論壇",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/09/15 1.召開法人說明會之日期：115/09/15 2.召開法人說明會之時間：15 時 00 分 3.召開法人說明會之地點：台北茹曦酒店2F（台北市松山區敦化北路100號） 4.法人說明會擇要訊息：公司簡介財務、業務及相關資訊作業說明 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150914",
+        "marketKind": "sii",
+        "companyId": "9939",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-9939-1150820-1",
       "date": "2026-08-20",
@@ -77,11 +98,11 @@
       "id": "mops-history-9939-1150730-1",
       "date": "2026-07-30",
       "announced_date": "2026-07-30",
-      "fact_date": "2026-07-30",
+      "fact_date": null,
       "announced_time": "16:53:25",
       "title": "公告本公司115年第2季合併財務報告董事會召開日期 為115年8月7日",
-      "description": "1.董事會召集通知日:115/07/30 2.董事會預計召開日期:115/08/07 3.預計提報董事會或經董事會決議之財務報告或 年度自結財務資訊年季:115年第2季合併財務報告 4.其他應敘明事項:無",
-      "clause": "第31款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
         "companyId": "9939",
         "serialNumber": "1"
       }
-    },
-    {
-      "id": "mops-history-9939-1150430-1",
-      "date": "2026-04-30",
-      "announced_date": "2026-04-30",
-      "fact_date": null,
-      "announced_time": "14:54:43",
-      "title": "公告本公司115年第1季合併財務報告董事會召開日期 為115年5月8日",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150430",
-        "marketKind": "sii",
-        "companyId": "9939",
-        "serialNumber": "1"
-      }
     }
   ],
   "references": [
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-14T00:16:11.712Z",
+      "fetched_at": "2026-09-14T12:30:56.613Z",
       "row_count": 3,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-13T00:22:59.191Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-09-14T12:32:53.796Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
