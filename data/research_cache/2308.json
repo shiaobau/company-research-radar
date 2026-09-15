@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-15T00:19:13.639Z",
+  "collected_at": "2026-09-15T12:34:49.108Z",
   "company": {
     "id": "twse-2308",
     "ticker": "2308",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2308-1150914-5",
+      "date": "2026-09-15",
+      "announced_date": "2026-09-15",
+      "fact_date": "2026-09-14",
+      "announced_time": "06:41:17",
+      "title": "代子公司DEISG公告董事會決議發行以所持有之Delta Electronics (Thailand) Public Company Limited股份作為交換 標的之海外可交換公司債（下稱「本次可交換債」）",
+      "description": "1.董事會決議日期:115/09/14 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:Delta Electronics Int’l (Singapore) Pte. Ltd.（下稱「DEISG」或「發行人」）雙年期海外可交換債 3.是否採總括申報發行公司債(是/否):否 4.發行總額:美金1,500,000,000元（包含A券交換債美金500,000,000元、B券交換債 美金1,000,000,000元） 5.每張面額:A券及B券皆為美金200,000元 6.發行價格:A券及B券皆依面額之100%發行 7.發行期間:A券1年、B券5年 8.發行利率:A券及B券之票面利率均為年利率0% 9.擔保品之種類、名稱、金額及約定事項:無 10.募得價款之用途及運用計畫:本次發行所得資金將用於充實現有業務及強化未來拓展之 營運資金。 11.承銷方式:於中華民國境外依公司債銷售地區有關規定採公開銷售方式辦理 12.公司債受託人:Citicorp International Limited 13.承銷或代銷機構:Citigroup Global Markets Singapore Pte. Ltd.、J.P. Morgan Securities Asia Private Limited 14.發行保證人:無 15.代理還本付息機構:Citibank, N.A., London Branch 16.簽證機構:不適用 17.能轉換股份者，其轉換辦法: 交換標的：Delta Electronics (Thailand) Public Company Limited（「DET」）股份 A券初始交換價格每股泰銖266.80元（較參考價格溢價達15%）。本次發行後，A券交換 價格將依據A券債券條款條件進行調整（包括但不限於依據市場反稀釋慣例之調整）。 A券債券持有人將有權初步按每200,000美元本金金額的A券獲得24,856.8966股DET股份， 該數量將依據A券債券條款條件進行調整。 B券初始交換價格每股泰銖301.60元（較參考價格溢價達30%）。本次發行後，B券交換 價格將依據B券債券條款條件進行調整（包括但不限於依據市場反稀釋慣例之調整）。 B券債券持有人將有權初步按每200,000美元本金金額的B券獲得21,988.7931股DET股份， 該數量將依據B券債券條款條件進行調整。 18.賣回條件:在發生下列情事時，A券及B券之債券持有人有權要求發行人於到期日前將其 持有之本次可交換債依照適用的提前贖回金額全部贖回： (i) DET在泰國證券交易所終止上市或交易，或超過連續30個交易日暫停交易， (ii)發生有關債券條款條件內所定義之DET控制權變動情事時， (iii)發行人不再是本公司直接或間接持有之全資子公司。 另，除A券已被提前贖回、交換或回購並註銷外，發行人應於到期日（即民國116年 9月21日）依照發行本金98.01%贖回；除B券已被提前贖回、交換或回購並註銷外，發行 人應於到期日（即民國120年9月21日）依照發行本金97.53%贖回；B券之債券持有人亦得 於本次可交換債券發行屆滿1.5年當日以及屆滿3年當日，要求發行人分別以本金99.25% 的金額和本金98.51%的金額贖回其全部或部分的B券。 19.買回條件: 於下列情況，發行人得依照適用的提前贖回金額提前將相關可交換債全部贖回： (i)（僅A券）A券在115年12月21日或之後，如DET在泰國證券交易所之收盤價格連 續二十個交易日內達提前贖回金額乘以當時A券交換價格再除以A券面額後所得總數之至 少120%時； (ii)（僅B券）B券在118年9月21日或之後，如DET在泰國證券交易所之收盤價格連續 二十個交易日內達提前贖回金額乘以當時B券交換價格再除以B券面額後所得總數之至少 130%時； (iii)（僅A券）當剩餘未償還A券少於最初發行的A券本金金額的10%； (iv)（僅B券）當剩餘未償還B券少於最初發行的B券本金金額的10%； (v)如果發行人因新加坡的法律或法規或任何此類情況下的任何政治區劃或其具有徵稅 權力的機構發生任何變更或修訂，或因這些法律或法規的適用或官方解釋的變更，而 已經或將要被要求支付額外稅款（根據相關可交換債條款條件中的定義），且發行人 無法通過採取合理可行的措施來避免此義務。在發出此類贖回通知的情況下，相關可 交換債的債券持有人將有權選擇在發行人行使稅務贖回選擇權後，要求其持有的A券或 B券不被贖回，以取代稅務補償。 20.附有轉換、交換或認股者，其換股基準日: A券：自115年11月1日起至A券到期日或相關提前贖回日前第10個營業日或受託人根據 A券條款條件宣布A券立即到期並應支付時止，A券債券持有人有權依照約定交換（但 具體交換期間將受限於A券債券條款條件的約定）。 B券：自115年11月1日起至B券到期日或相關提前贖回日前第10個營業日或受託人根據 B券條款條件宣布B券立即到期並應支付時止，B券債券持有人有權依照約定交換（但 具體交換期間將受限於B券債券條款條件的約定）。 21.附有轉換、交換或認股者，對股權可能稀釋情形:對本公司及DEISG之股權無影響。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用 23.其他應敘明事項:無",
+      "clause": "第11款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "enterDate": "1150914",
+        "serialNumber": "5",
+        "companyId": "2308"
+      }
+    },
     {
       "id": "4623015c9e9fc39bc663",
       "date": "2026-09-14",
@@ -70,10 +91,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150914",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "4"
+        "enterDate": "1150914",
+        "serialNumber": "4",
+        "companyId": "2308"
       }
     },
     {
@@ -91,10 +112,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150914",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "3"
+        "enterDate": "1150914",
+        "serialNumber": "3",
+        "companyId": "2308"
       }
     },
     {
@@ -112,31 +133,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150914",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "2"
+        "enterDate": "1150914",
+        "serialNumber": "2",
+        "companyId": "2308"
       }
     },
     {
       "id": "mops-history-2308-1150909-1",
       "date": "2026-09-09",
       "announced_date": "2026-09-09",
-      "fact_date": "2026-09-09",
+      "fact_date": null,
       "announced_time": "15:01:48",
       "title": "發布本公司115年08月份業績資料",
-      "description": "1.事實發生日:115/09/09 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:發布本公司115年08月份業績資料 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 本公司115年08月份合併營業額為新台幣645.86億元，較去年同期合併營業額 新台幣478.60億元成長34.9%，較上月份合併營業額新台幣670.73億元減少3.7%； 115年1~8月份累積合併營業額為新台幣4,742.68億元，較去年同期累積合併營業 額新台幣3,362.11億元成長41.1%。",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150909",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "enterDate": "1150909",
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     },
     {
@@ -154,10 +175,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150908",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "enterDate": "1150908",
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     },
     {
@@ -175,10 +196,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150904",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "2"
+        "enterDate": "1150904",
+        "serialNumber": "2",
+        "companyId": "2308"
       }
     },
     {
@@ -196,10 +217,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150904",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "enterDate": "1150904",
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     },
     {
@@ -217,10 +238,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150902",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "enterDate": "1150902",
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     },
     {
@@ -238,10 +259,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150828",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "enterDate": "1150828",
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     },
     {
@@ -259,10 +280,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150812",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "enterDate": "1150812",
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     },
     {
@@ -280,10 +301,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150810",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "enterDate": "1150810",
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     },
     {
@@ -301,10 +322,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150807",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "enterDate": "1150807",
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     },
     {
@@ -322,10 +343,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150803",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "enterDate": "1150803",
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     },
     {
@@ -343,10 +364,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150724",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "enterDate": "1150724",
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     },
     {
@@ -364,10 +385,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150727",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "enterDate": "1150727",
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     },
     {
@@ -385,10 +406,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150724",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "3"
+        "enterDate": "1150724",
+        "serialNumber": "3",
+        "companyId": "2308"
       }
     },
     {
@@ -406,10 +427,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150724",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "2"
+        "enterDate": "1150724",
+        "serialNumber": "2",
+        "companyId": "2308"
       }
     },
     {
@@ -427,10 +448,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150720",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "enterDate": "1150720",
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     },
     {
@@ -448,10 +469,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1150715",
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "2"
+        "enterDate": "1150715",
+        "serialNumber": "2",
+        "companyId": "2308"
       }
     },
     {
@@ -469,31 +490,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "marketKind": "sii",
         "enterDate": "1150715",
-        "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150714-1",
-      "date": "2026-07-14",
-      "announced_date": "2026-07-14",
-      "fact_date": null,
-      "announced_time": "19:42:45",
-      "title": "本公司自辦法人說明會之相關資訊",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150714",
-        "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "companyId": "2308"
       }
     }
   ],
@@ -523,14 +523,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-15T00:15:49.815Z",
+      "fetched_at": "2026-09-15T12:32:14.137Z",
       "row_count": 82,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-14T12:32:02.427Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-09-15T12:35:15.078Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
