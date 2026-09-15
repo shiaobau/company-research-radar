@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-14T12:31:36.801Z",
+  "collected_at": "2026-09-15T00:19:13.639Z",
   "company": {
     "id": "twse-2886",
     "ticker": "2886",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "cf6780ba869796c51dd8",
+      "date": "2026-09-14",
+      "announced_date": "2026-09-14",
+      "fact_date": "2026-09-14",
+      "announced_time": "163017",
+      "title": "公告本公司暨主要子公司115年8月份自結合併盈餘",
+      "description": "1.事實發生日:115/09/14 2.公司名稱:兆豐金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:公告本公司暨主要子公司115年8月份自結合併盈餘 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 公告本公司暨主要子公司115年8月份業績資料： 當月稅前 當月稅後 累積稅前 累積稅後 累積每股 盈餘 盈餘 盈餘 盈餘 稅後盈餘 (億元) (億元) (億元) (億元) (元) 兆豐金控 42.12 35.60 353.84 292.19 1.97 兆豐銀行 30.48 25.34 271.93 226.12 2.26 兆豐證券 7.90 7.25 44.88 38.57 3.22 兆豐票券 2.77 2.22 29.61 23.73 1.57 兆豐產險 1.05 0.82 8.71 7.46 2.27 註:兆豐金控115年8月31日每股淨值27.50元。 註:累計至8月未適用巨災保險準備金之累計每股稅後盈餘 兆豐金控為1.97元、兆豐產險為2.27元。 上述資料均係自結數字，未經會計師查核或核閱。",
+      "clause": "第51款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2886-1150914-1",
       "date": "2026-09-14",
@@ -492,27 +507,6 @@
         "companyId": "2886",
         "serialNumber": "2"
       }
-    },
-    {
-      "id": "mops-history-2886-1150701-1",
-      "date": "2026-07-01",
-      "announced_date": "2026-07-01",
-      "fact_date": null,
-      "announced_time": "18:03:41",
-      "title": "代本公司之子公司兆豐國際證券投資信託股份有限公司公告 張傳章先生代行董事長職務",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150701",
-        "marketKind": "sii",
-        "companyId": "2886",
-        "serialNumber": "1"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-14T12:30:56.613Z",
-      "row_count": 3,
+      "fetched_at": "2026-09-15T00:15:49.815Z",
+      "row_count": 82,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-09-14T12:32:25.569Z",
       "row_count": 24,
       "detail_count": 4,

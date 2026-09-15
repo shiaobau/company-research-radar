@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-14T12:30:58.820Z",
+  "generated_at": "2026-09-15T00:15:51.474Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-14T12:30:58.820Z"
+      "refreshed_at": "2026-09-15T00:15:51.474Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,7 +50,7 @@
       "rationale": "財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-14T12:30:58.820Z"
+      "refreshed_at": "2026-09-15T00:15:51.474Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -67,7 +67,7 @@
       "rationale": "月營收分數 76；財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-14T12:30:58.820Z"
+      "refreshed_at": "2026-09-15T00:15:51.474Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -76,15 +76,67 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
+      "evidence_level": "high",
+      "event_count": 3,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 67,
+      "score": 70,
       "rationale": "月營收分數 77；財務品質分數 69。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-09-22",
+          "announce_date": "2026-09-14",
+          "time": "175312",
+          "title": "本公司受邀參加法人說明會之相關資訊",
+          "clause": "第12款",
+          "description": "符合條款第四條第XX款：12 事實發生日：115/09/22 1.召開法人說明會之日期：115/09/22 ~ 115/09/24 2.召開法人說明會之時間：13 時 00 分 3.召開法人說明會之地點：香港 4.法人說明會擇要訊息：本公司受永豐金證券邀請，將於上述時間地點，向法人投資者說明本公司115年第2季之財務報告相關資訊。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        },
+        {
+          "date": "2026-10-05",
+          "announce_date": "2026-09-14",
+          "time": "175342",
+          "title": "本公司受邀參加法人說明會之相關資訊",
+          "clause": "第12款",
+          "description": "符合條款第四條第XX款：12 事實發生日：115/10/05 1.召開法人說明會之日期：115/10/05 ~ 115/10/13 2.召開法人說明會之時間：21 時 00 分 3.召開法人說明會之地點：美國 4.法人說明會擇要訊息：本公司受Jefferies證券邀請，將於上述時間地點，向法人投資者說明本公司115年第2季之財務報告相關資訊。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "announce_date": "2026-09-14",
+          "time": "175415",
+          "title": "本公司受邀參加法人說明會之相關資訊",
+          "clause": "第12款",
+          "description": "符合條款第四條第XX款：12 事實發生日：115/11/03 1.召開法人說明會之日期：115/11/03 ~ 115/11/07 2.召開法人說明會之時間：08 時 00 分 3.召開法人說明會之地點：東京 4.法人說明會擇要訊息：本公司受大和國泰證券邀請，將於上述時間地點，向法人投資者說明本公司115年第2季之財務報告相關資訊。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-14T12:30:58.820Z"
+      "refreshed_at": "2026-09-15T00:15:51.474Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -101,7 +153,7 @@
       "rationale": "月營收分數 81；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-14T12:30:58.820Z"
+      "refreshed_at": "2026-09-15T00:15:51.474Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -110,15 +162,31 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
+      "evidence_level": "high",
+      "event_count": 1,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 71,
+      "score": 74,
       "rationale": "月營收分數 76；財務品質分數 89。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-09-14",
+          "announce_date": "2026-09-14",
+          "time": "144534",
+          "title": "元大金控代子公司元大證金公告 財務主管及會計主管異動",
+          "clause": "第8款",
+          "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、 行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、 內部稽核主管或訴訟及非訟代理人）:財務主管及會計主管 2.發生變動日期:115/09/14 3.舊任者姓名、級職及簡歷:鐘美玲/ 元大證券金融股份有限公司資深副理 4.新任者姓名、級職及簡歷:孫文宏/ (1)元大證券金融股份有限公司協理 (2)元大商業銀行股份有限公司資深經理 (3)元大商業銀行股份有限公司經理 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新 任」或「解任」）:辭職 6.異動原因:辭職 7.生效日期:115/09/21 8.其他應敘明事項:無",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-14T12:30:58.820Z"
+      "refreshed_at": "2026-09-15T00:15:51.474Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -127,15 +195,31 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
+      "evidence_level": "high",
+      "event_count": 1,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 65,
+      "score": 68,
       "rationale": "財務品質分數 79。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-09-14",
+          "announce_date": "2026-09-14",
+          "time": "163017",
+          "title": "公告本公司暨主要子公司115年8月份自結合併盈餘",
+          "clause": "第51款",
+          "description": "1.事實發生日:115/09/14 2.公司名稱:兆豐金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:公告本公司暨主要子公司115年8月份自結合併盈餘 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 公告本公司暨主要子公司115年8月份業績資料： 當月稅前 當月稅後 累積稅前 累積稅後 累積每股 盈餘 盈餘 盈餘 盈餘 稅後盈餘 (億元) (億元) (億元) (億元) (元) 兆豐金控 42.12 35.60 353.84 292.19 1.97 兆豐銀行 30.48 25.34 271.93 226.12 2.26 兆豐證券 7.90 7.25 44.88 38.57 3.22 兆豐票券 2.77 2.22 29.61 23.73 1.57 兆豐產險 1.05 0.82 8.71 7.46 2.27 註:兆豐金控115年8月31日每股淨值27.50元。 註:累計至8月未適用巨災保險準備金之累計每股稅後盈餘 兆豐金控為1.97元、兆豐產險為2.27元。 上述資料均係自結數字，未經會計師查核或核閱。",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-14T12:30:58.820Z"
+      "refreshed_at": "2026-09-15T00:15:51.474Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -152,7 +236,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-14T12:30:58.820Z"
+      "refreshed_at": "2026-09-15T00:15:51.474Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -161,15 +245,33 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
+      "evidence_level": "high",
+      "event_count": 1,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 53,
+      "score": 56,
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-09-14",
+          "announce_date": "2026-09-14",
+          "time": "144720",
+          "title": "代重要子公司Innolux Hong Kong Holding Limited 公告股東會重要決議事項",
+          "clause": "第18款",
+          "description": "1.股東常會日期:115/09/14 2.重要決議事項一、盈餘分配或盈虧撥補:無 3.重要決議事項二、章程修訂:無 4.重要決議事項三、營業報告書及財務報表:承認2025年度財務報表 5.重要決議事項四、董監事選舉:無 6.重要決議事項五、其他事項:通過續聘會計師 7.其他應敘明事項:無",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "routine",
+          "risk_category_label": "例行或權利事件",
+          "risk_points": 0,
+          "matched_patterns": [
+            "股東會"
+          ]
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-14T12:30:58.820Z"
+      "refreshed_at": "2026-09-15T00:15:51.474Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -186,7 +288,7 @@
       "rationale": "月營收分數 76；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-14T12:30:58.820Z"
+      "refreshed_at": "2026-09-15T00:15:51.474Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -203,7 +305,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-14T12:30:58.820Z"
+      "refreshed_at": "2026-09-15T00:15:51.474Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -212,15 +314,31 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
+      "evidence_level": "high",
+      "event_count": 1,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 61,
+      "score": 64,
       "rationale": "財務品質分數 65。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-09-15",
+          "announce_date": "2026-09-14",
+          "time": "151509",
+          "title": "本公司受邀參加群益金鼎證卷所舉辦之第三季投資論壇",
+          "clause": "第12款",
+          "description": "符合條款第四條第XX款：12 事實發生日：115/09/15 1.召開法人說明會之日期：115/09/15 2.召開法人說明會之時間：15 時 00 分 3.召開法人說明會之地點：台北茹曦酒店2F（台北市松山區敦化北路100號） 4.法人說明會擇要訊息：公司簡介財務、業務及相關資訊作業說明 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-14T12:30:58.820Z"
+      "refreshed_at": "2026-09-15T00:15:51.474Z"
     }
   }
 }

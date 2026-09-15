@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-14T12:31:36.801Z",
+  "collected_at": "2026-09-15T00:19:13.639Z",
   "company": {
     "id": "twse-2308",
     "ticker": "2308",
@@ -10,6 +10,51 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "4623015c9e9fc39bc663",
+      "date": "2026-09-14",
+      "announced_date": "2026-09-14",
+      "fact_date": "2026-11-03",
+      "announced_time": "175415",
+      "title": "本公司受邀參加法人說明會之相關資訊",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/11/03 1.召開法人說明會之日期：115/11/03 ~ 115/11/07 2.召開法人說明會之時間：08 時 00 分 3.召開法人說明會之地點：東京 4.法人說明會擇要訊息：本公司受大和國泰證券邀請，將於上述時間地點，向法人投資者說明本公司115年第2季之財務報告相關資訊。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "b6d9804ea08ac3b6dea2",
+      "date": "2026-09-14",
+      "announced_date": "2026-09-14",
+      "fact_date": "2026-10-05",
+      "announced_time": "175342",
+      "title": "本公司受邀參加法人說明會之相關資訊",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/10/05 1.召開法人說明會之日期：115/10/05 ~ 115/10/13 2.召開法人說明會之時間：21 時 00 分 3.召開法人說明會之地點：美國 4.法人說明會擇要訊息：本公司受Jefferies證券邀請，將於上述時間地點，向法人投資者說明本公司115年第2季之財務報告相關資訊。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "cbde2558529db3fcc66f",
+      "date": "2026-09-14",
+      "announced_date": "2026-09-14",
+      "fact_date": "2026-09-22",
+      "announced_time": "175312",
+      "title": "本公司受邀參加法人說明會之相關資訊",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/09/22 1.召開法人說明會之日期：115/09/22 ~ 115/09/24 2.召開法人說明會之時間：13 時 00 分 3.召開法人說明會之地點：香港 4.法人說明會擇要訊息：本公司受永豐金證券邀請，將於上述時間地點，向法人投資者說明本公司115年第2季之財務報告相關資訊。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2308-1150914-4",
       "date": "2026-09-14",
@@ -450,69 +495,6 @@
         "companyId": "2308",
         "serialNumber": "1"
       }
-    },
-    {
-      "id": "mops-history-2308-1150709-1",
-      "date": "2026-07-09",
-      "announced_date": "2026-07-09",
-      "fact_date": null,
-      "announced_time": "14:32:31",
-      "title": "發布本公司115年06月份業績資料",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150709",
-        "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150706-1",
-      "date": "2026-07-06",
-      "announced_date": "2026-07-06",
-      "fact_date": null,
-      "announced_time": "16:59:03",
-      "title": "本公司代子公司中達電子(蕪湖)有限公司公告決議興建蕪湖五廠相關事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150706",
-        "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150612-1",
-      "date": "2026-06-30",
-      "announced_date": "2026-06-30",
-      "fact_date": null,
-      "announced_time": "16:34:20",
-      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告115年股東常會重要決議事項",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150612",
-        "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1"
-      }
     }
   ],
   "references": [
@@ -541,13 +523,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-14T12:30:56.613Z",
-      "row_count": 3,
+      "fetched_at": "2026-09-15T00:15:49.815Z",
+      "row_count": 82,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-09-14T12:32:02.427Z",
       "row_count": 24,
       "detail_count": 4,

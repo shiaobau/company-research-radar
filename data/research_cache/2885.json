@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-14T12:31:36.801Z",
+  "collected_at": "2026-09-15T00:19:13.639Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "e3a0d7b74cd926933609",
+      "date": "2026-09-14",
+      "announced_date": "2026-09-14",
+      "fact_date": "2026-09-14",
+      "announced_time": "144534",
+      "title": "元大金控代子公司元大證金公告 財務主管及會計主管異動",
+      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、 行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、 內部稽核主管或訴訟及非訟代理人）:財務主管及會計主管 2.發生變動日期:115/09/14 3.舊任者姓名、級職及簡歷:鐘美玲/ 元大證券金融股份有限公司資深副理 4.新任者姓名、級職及簡歷:孫文宏/ (1)元大證券金融股份有限公司協理 (2)元大商業銀行股份有限公司資深經理 (3)元大商業銀行股份有限公司經理 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新 任」或「解任」）:辭職 6.異動原因:辭職 7.生效日期:115/09/21 8.其他應敘明事項:無",
+      "clause": "第8款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2885-1150914-1",
       "date": "2026-09-14",
@@ -492,27 +507,6 @@
         "companyId": "2885",
         "serialNumber": "3"
       }
-    },
-    {
-      "id": "mops-history-2885-1150824-2",
-      "date": "2026-08-24",
-      "announced_date": "2026-08-24",
-      "fact_date": null,
-      "announced_time": "19:51:42",
-      "title": "元大金控公告本公司與元大證券投資信託股份有限公司 股份轉換案之換股比例調整",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150824",
-        "marketKind": "sii",
-        "companyId": "2885",
-        "serialNumber": "2"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-14T12:30:56.613Z",
-      "row_count": 3,
+      "fetched_at": "2026-09-15T00:15:49.815Z",
+      "row_count": 82,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-09-14T12:32:17.840Z",
       "row_count": 24,
       "detail_count": 4,
