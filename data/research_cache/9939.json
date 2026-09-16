@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-15T12:34:49.108Z",
+  "collected_at": "2026-09-16T00:16:40.646Z",
   "company": {
     "id": "twse-9939",
     "ticker": "9939",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "0d73b8c080feb425b432",
-      "date": "2026-09-14",
-      "announced_date": "2026-09-14",
-      "fact_date": "2026-09-15",
-      "announced_time": "151509",
-      "title": "本公司受邀參加群益金鼎證卷所舉辦之第三季投資論壇",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/09/15 1.召開法人說明會之日期：115/09/15 2.召開法人說明會之時間：15 時 00 分 3.召開法人說明會之地點：台北茹曦酒店2F（台北市松山區敦化北路100號） 4.法人說明會擇要訊息：公司簡介財務、業務及相關資訊作業說明 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-      "clause": "第12款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-9939-1150914-1",
       "date": "2026-09-14",
@@ -507,6 +492,27 @@
         "serialNumber": "1",
         "companyId": "9939"
       }
+    },
+    {
+      "id": "mops-history-9939-1150507-1",
+      "date": "2026-05-08",
+      "announced_date": "2026-05-08",
+      "fact_date": null,
+      "announced_time": "17:41:24",
+      "title": "公告本公司董事會通過115年度第1季合併財務報告",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "enterDate": "1150507",
+        "serialNumber": "1",
+        "companyId": "9939"
+      }
     }
   ],
   "references": [
@@ -535,13 +541,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-15T12:32:14.137Z",
-      "row_count": 82,
+      "fetched_at": "2026-09-16T00:15:50.219Z",
+      "row_count": 108,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-09-15T12:36:07.609Z",
       "row_count": 24,
       "detail_count": 4,

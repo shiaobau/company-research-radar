@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-15T12:34:49.108Z",
+  "collected_at": "2026-09-16T00:16:40.646Z",
   "company": {
     "id": "twse-2886",
     "ticker": "2886",
@@ -10,6 +10,36 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "4ff6c38ca8520ea43b01",
+      "date": "2026-09-15",
+      "announced_date": "2026-09-15",
+      "fact_date": "2026-09-15",
+      "announced_time": "175055",
+      "title": "代本公司之子公司兆豐國際商業銀行補充公告發行 115年度第1期無擔保一般順位金融債券，發行金額新臺幣壹拾 伍億元整。",
+      "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:兆豐國際商業銀行股份有限公司 115年度第1期無擔保一般順位金融債券。 3.是否採總括申報發行公司債(是/否):否。 4.發行總額:新臺幣壹拾伍億元整。 5.每張面額:新臺幣壹仟萬元整。 6.發行價格:依面額十足發行。 7.發行期間:3年期，民國115年9月30日發行，民國118年9月30日到期。 8.發行利率:年利率2.08%，單利固定計息。 9.擔保品之種類、名稱、金額及約定事項:無。 10.募得價款之用途及運用計畫:支應再生能源專案融資計畫之放款。 11.承銷方式:未委託證券承銷商對外公開承銷。 12.公司債受託人:無。 13.承銷或代銷機構:無。 14.發行保證人:無。 15.代理還本付息機構:兆豐國際商業銀行財務處。 16.簽證機構:無。 17.能轉換股份者，其轉換辦法:無。 18.賣回條件:無。 19.買回條件:無。 20.附有轉換、交換或認股者，其換股基準日:無。 21.附有轉換、交換或認股者，對股權可能稀釋情形:無。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):NA 23.其他應敘明事項:補充109年02月21日所發布之重大訊息。",
+      "clause": "第11款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "7a3549eca485b4d79004",
+      "date": "2026-09-15",
+      "announced_date": "2026-09-15",
+      "fact_date": "2026-09-15",
+      "announced_time": "174646",
+      "title": "代本公司之子公司兆豐期貨股份有限公司公告現金增資認股 基準日相關事宜",
+      "description": "1.董事會決議或公司決定日期:115/09/15 2.發行股數:19,231,000股 3.每股面額:新台幣10元 4.發行總金額:新台幣500,006,000元 5.發行價格:新台幣26元 6.員工認股股數:不適用 7.原股東認購比率:100% 8.公開銷售方式及股數:不適用 9.畸零股及逾期未認購股份之處理方式:不適用 10.本次發行新股之權利義務:與原股份相同 11.本次增資資金用途:業務發展及強化財務結構之需求 12.現金增資認股基準日:115/09/15 13.最後過戶日:不適用 14.停止過戶起始日期:不適用 15.停止過戶截止日期:不適用 16.股款繳納期間:115/09/16 17.與代收及專戶存儲價款行庫訂約日期:無 18.委託代收存款機構:無 19.委託存儲款項機構:無 20.其他應敘明事項: (1)本增資案經金融監督管理委員會115年09月15日金管證期字第 1150355306號函核准在案。 (2)於115年08月26日第十屆董事會第三次會議，授權董事長訂定 現金增資認股基準日及相關作業日期。 (3)現金增資基準日為115年09月16日。",
+      "clause": "第11款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2886-1150915-2",
       "date": "2026-09-15",
@@ -51,21 +81,6 @@
         "serialNumber": "1",
         "companyId": "2886"
       }
-    },
-    {
-      "id": "cf6780ba869796c51dd8",
-      "date": "2026-09-14",
-      "announced_date": "2026-09-14",
-      "fact_date": "2026-09-14",
-      "announced_time": "163017",
-      "title": "公告本公司暨主要子公司115年8月份自結合併盈餘",
-      "description": "1.事實發生日:115/09/14 2.公司名稱:兆豐金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:公告本公司暨主要子公司115年8月份自結合併盈餘 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 公告本公司暨主要子公司115年8月份業績資料： 當月稅前 當月稅後 累積稅前 累積稅後 累積每股 盈餘 盈餘 盈餘 盈餘 稅後盈餘 (億元) (億元) (億元) (億元) (元) 兆豐金控 42.12 35.60 353.84 292.19 1.97 兆豐銀行 30.48 25.34 271.93 226.12 2.26 兆豐證券 7.90 7.25 44.88 38.57 3.22 兆豐票券 2.77 2.22 29.61 23.73 1.57 兆豐產險 1.05 0.82 8.71 7.46 2.27 註:兆豐金控115年8月31日每股淨值27.50元。 註:累計至8月未適用巨災保險準備金之累計每股稅後盈餘 兆豐金控為1.97元、兆豐產險為2.27元。 上述資料均係自結數字，未經會計師查核或核閱。",
-      "clause": "第51款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
     },
     {
       "id": "mops-history-2886-1150914-1",
@@ -486,27 +501,6 @@
         "serialNumber": "1",
         "companyId": "2886"
       }
-    },
-    {
-      "id": "mops-history-2886-1150713-2",
-      "date": "2026-07-13",
-      "announced_date": "2026-07-13",
-      "fact_date": null,
-      "announced_time": "16:07:08",
-      "title": "本公司將於115/08/31~115/09/02參與高盛(Goldman Sachs) 於香港舉辦之外資法人投資說明會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150713",
-        "serialNumber": "2",
-        "companyId": "2886"
-      }
     }
   ],
   "references": [
@@ -535,13 +529,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-15T12:32:14.137Z",
-      "row_count": 82,
+      "fetched_at": "2026-09-16T00:15:50.219Z",
+      "row_count": 108,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-09-15T12:35:34.352Z",
       "row_count": 24,
       "detail_count": 4,

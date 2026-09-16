@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-15T12:32:15.671Z",
+  "generated_at": "2026-09-16T00:15:52.070Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -211,7 +211,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-09-15T12:32:15.671Z",
+      "generated_at": "2026-09-16T00:15:52.070Z",
       "facts": [
         {
           "id": "official_classification",
@@ -295,7 +295,7 @@
     "twse-1707": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-09-15T12:32:15.671Z",
+      "generated_at": "2026-09-16T00:15:52.070Z",
       "facts": [
         {
           "id": "official_classification",
@@ -371,7 +371,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-09-15T12:32:15.671Z",
+      "generated_at": "2026-09-16T00:15:52.070Z",
       "facts": [
         {
           "id": "official_classification",
@@ -447,7 +447,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-09-15T12:32:15.671Z",
+      "generated_at": "2026-09-16T00:15:52.070Z",
       "facts": [
         {
           "id": "official_classification",
@@ -502,7 +502,7 @@
         {
           "id": "latest_disclosure",
           "label": "近期重大訊息",
-          "value": "2026-09-14：本公司受邀參加法人說明會之相關資訊。",
+          "value": "2026-09-15：代子公司DEISG公告董事會決議發行以所持有之Delta Electronics (Thailand) Public Company Limited股份作為交換 標的之海外可交換公司債（下稱...。",
           "source_ids": [
             "twse_material_events"
           ]
@@ -528,7 +528,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 3 則；待閱讀 3 則；申報違規 0 筆。",
+          "value": "官方事件 1 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -539,7 +539,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-09-15T12:32:15.671Z",
+      "generated_at": "2026-09-16T00:15:52.070Z",
       "facts": [
         {
           "id": "official_classification",
@@ -615,7 +615,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-09-15T12:32:15.671Z",
+      "generated_at": "2026-09-16T00:15:52.070Z",
       "facts": [
         {
           "id": "official_classification",
@@ -628,7 +628,7 @@
         {
           "id": "monthly_revenue",
           "label": "月營收",
-          "value": "2026-07 月營收年增 78.99%；月增 -10.3%。",
+          "value": "2026-08 月營收年增 57.94%；月增 11.53%。",
           "source_ids": [
             "twse_monthly_revenue"
           ]
@@ -670,7 +670,7 @@
         {
           "id": "latest_disclosure",
           "label": "近期重大訊息",
-          "value": "2026-09-14：元大金控代子公司元大證金公告 財務主管及會計主管異動。",
+          "value": "2026-09-15：公告本公司擬於民國115年9月18日受邀參加第一金證券舉行之線上投資人會議。",
           "source_ids": [
             "twse_material_events"
           ]
@@ -699,7 +699,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-09-15T12:32:15.671Z",
+      "generated_at": "2026-09-16T00:15:52.070Z",
       "facts": [
         {
           "id": "official_classification",
@@ -712,7 +712,7 @@
         {
           "id": "monthly_revenue",
           "label": "月營收",
-          "value": "2026-07 月營收年增 4.11%；月增 6.77%。",
+          "value": "2026-08 月營收年增 15.55%；月增 -9.81%。",
           "source_ids": [
             "twse_monthly_revenue"
           ]
@@ -754,7 +754,7 @@
         {
           "id": "latest_disclosure",
           "label": "近期重大訊息",
-          "value": "2026-09-14：公告本公司暨主要子公司115年8月份自結合併盈餘。",
+          "value": "2026-09-15：代本公司之子公司兆豐期貨股份有限公司公告現金增資認股 基準日相關事宜。",
           "source_ids": [
             "twse_material_events"
           ]
@@ -772,7 +772,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 1 則；申報違規 0 筆。",
+          "value": "官方事件 2 則；待閱讀 1 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -783,7 +783,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-09-15T12:32:15.671Z",
+      "generated_at": "2026-09-16T00:15:52.070Z",
       "facts": [
         {
           "id": "official_classification",
@@ -858,7 +858,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-09-15T12:32:15.671Z",
+      "generated_at": "2026-09-16T00:15:52.070Z",
       "facts": [
         {
           "id": "official_classification",
@@ -911,14 +911,6 @@
           ]
         },
         {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-09-14：代重要子公司Innolux Hong Kong Holding Limited 公告股東會重要決議事項。",
-          "source_ids": [
-            "twse_material_events"
-          ]
-        },
-        {
           "id": "governance_snapshot",
           "label": "股權與治理",
           "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
@@ -931,7 +923,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 1 則；待閱讀 1 則；申報違規 0 筆。",
+          "value": "官方事件 0 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -942,7 +934,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-09-15T12:32:15.671Z",
+      "generated_at": "2026-09-16T00:15:52.070Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1026,7 +1018,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-09-15T12:32:15.671Z",
+      "generated_at": "2026-09-16T00:15:52.070Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1110,7 +1102,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-09-15T12:32:15.671Z",
+      "generated_at": "2026-09-16T00:15:52.070Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1140,7 +1132,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-09-15 收盤 125.5；區間報酬：20日 -3.09%；60日 -4.56%；當日量為 20 日均量 1.08 倍。",
+          "value": "2026-09-15 收盤 125.5；區間報酬：20日 -3.09%；60日 -4.56%；當日量為 20 日均量 1.06 倍。",
           "source_ids": [
             "yahoo_finance_chart"
           ]
@@ -1163,14 +1155,6 @@
           ]
         },
         {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-09-14：本公司受邀參加群益金鼎證卷所舉辦之第三季投資論壇。",
-          "source_ids": [
-            "twse_material_events"
-          ]
-        },
-        {
           "id": "governance_snapshot",
           "label": "股權與治理",
           "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
@@ -1183,7 +1167,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 1 則；申報違規 0 筆。",
+          "value": "官方事件 0 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"

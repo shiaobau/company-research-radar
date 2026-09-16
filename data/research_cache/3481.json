@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-15T12:34:49.108Z",
+  "collected_at": "2026-09-16T00:16:40.646Z",
   "company": {
     "id": "twse-3481",
     "ticker": "3481",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "761e5e8d20e4588022db",
-      "date": "2026-09-14",
-      "announced_date": "2026-09-14",
-      "fact_date": "2026-09-14",
-      "announced_time": "144720",
-      "title": "代重要子公司Innolux Hong Kong Holding Limited 公告股東會重要決議事項",
-      "description": "1.股東常會日期:115/09/14 2.重要決議事項一、盈餘分配或盈虧撥補:無 3.重要決議事項二、章程修訂:無 4.重要決議事項三、營業報告書及財務報表:承認2025年度財務報表 5.重要決議事項四、董監事選舉:無 6.重要決議事項五、其他事項:通過續聘會計師 7.其他應敘明事項:無",
-      "clause": "第18款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-3481-1150914-1",
       "date": "2026-09-14",
@@ -507,6 +492,27 @@
         "serialNumber": "1",
         "companyId": "3481"
       }
+    },
+    {
+      "id": "mops-history-3481-1150326-1",
+      "date": "2026-03-26",
+      "announced_date": "2026-03-26",
+      "fact_date": null,
+      "announced_time": "14:55:48",
+      "title": "本公司受邀參加中信證券舉辦之法人說明會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "enterDate": "1150326",
+        "serialNumber": "1",
+        "companyId": "3481"
+      }
     }
   ],
   "references": [
@@ -535,13 +541,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-15T12:32:14.137Z",
-      "row_count": 82,
+      "fetched_at": "2026-09-16T00:15:50.219Z",
+      "row_count": 108,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-09-15T12:35:47.255Z",
       "row_count": 24,
       "detail_count": 4,
