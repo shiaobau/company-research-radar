@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-17T00:15:53.309Z",
+  "generated_at": "2026-09-17T12:31:19.869Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-17T00:15:53.309Z"
+      "refreshed_at": "2026-09-17T12:31:19.869Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -68,7 +68,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-17T00:15:53.309Z"
+      "refreshed_at": "2026-09-17T12:31:19.869Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -85,7 +85,7 @@
       "rationale": "月營收分數 76；財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-17T00:15:53.309Z"
+      "refreshed_at": "2026-09-17T12:31:19.869Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -102,7 +102,7 @@
       "rationale": "月營收分數 77；財務品質分數 69。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-17T00:15:53.309Z"
+      "refreshed_at": "2026-09-17T12:31:19.869Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -119,7 +119,7 @@
       "rationale": "月營收分數 81；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-17T00:15:53.309Z"
+      "refreshed_at": "2026-09-17T12:31:19.869Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -136,7 +136,7 @@
       "rationale": "月營收分數 81；財務品質分數 89。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-17T00:15:53.309Z"
+      "refreshed_at": "2026-09-17T12:31:19.869Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -153,7 +153,7 @@
       "rationale": "月營收分數 72；財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-17T00:15:53.309Z"
+      "refreshed_at": "2026-09-17T12:31:19.869Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -162,15 +162,33 @@
       "source_ids": [
         "tpex_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
+      "evidence_level": "high",
+      "event_count": 1,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 45,
+      "score": 48,
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-09-16",
+          "announce_date": "2026-09-16",
+          "time": "185021",
+          "title": "澄清115年9月16日聯合新聞網等媒體報導",
+          "clause": "第53款",
+          "description": "1.事實發生日:115/09/16 2.公司名稱:富育榮綱股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.傳播媒體名稱:聯合新聞網及其他網路媒體 6.報導內容:「…天逸財金創辦人溫峰泰，取得上櫃公司寶島極光公司 (更名為富育榮綱公司)經營權期間，涉嫌花1300萬餘元向大陸天逸集團購買 跨境貿易供應鏈金融系統，又讓寶島極光公司支付天逸員工的薪資、勞健保等， 共掏空2814萬餘元」等內容。 7.發生緣由:115年9月16日聯合新聞網等媒體報導。 8.因應措施:該報導所涉交易與支出，係屬民國107年至109年(2018~2020年) 間之歷史營運事項。本公司目前各項業務運作正常，財務健全，該事項對 本公司目前核心業務推展及日常營運無重大不利影響。 本公司將於正式收受檢方起訴書後，委請法律顧問研擬相應之法律保全程序， 以維護全體股東及本公司之權益。 9.其他應敘明事項:投資人應以本公司於公開資訊觀測站公告之財務業務資訊為準。",
+          "source_id": "tpex_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "澄清"
+          ]
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-17T00:15:53.309Z"
+      "refreshed_at": "2026-09-17T12:31:19.869Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -187,7 +205,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-17T00:15:53.309Z"
+      "refreshed_at": "2026-09-17T12:31:19.869Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -204,7 +222,7 @@
       "rationale": "月營收分數 76；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-17T00:15:53.309Z"
+      "refreshed_at": "2026-09-17T12:31:19.869Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -221,7 +239,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-17T00:15:53.309Z"
+      "refreshed_at": "2026-09-17T12:31:19.869Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -238,7 +256,7 @@
       "rationale": "財務品質分數 65。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-17T00:15:53.309Z"
+      "refreshed_at": "2026-09-17T12:31:19.869Z"
     }
   }
 }
