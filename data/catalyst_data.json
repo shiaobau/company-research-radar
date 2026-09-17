@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-16T12:30:50.271Z",
+  "generated_at": "2026-09-17T00:15:53.309Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -42,15 +42,33 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
+      "evidence_level": "high",
+      "event_count": 1,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 53,
+      "score": 56,
       "rationale": "財務品質分數 74。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-09-17",
+          "announce_date": "2026-09-16",
+          "time": "143307",
+          "title": "本公司受邀參加永豐金證券舉辦之線上法人說明會",
+          "clause": "第12款",
+          "description": "符合條款第四條第XX款：12 事實發生日：115/09/17 1.召開法人說明會之日期：115/09/17 2.召開法人說明會之時間：14 時 00 分 3.召開法人說明會之地點：線上法說會 4.法人說明會擇要訊息：本公司受邀參加永豐金證券舉辦之線上法人說明會 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -67,7 +85,7 @@
       "rationale": "月營收分數 76；財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -76,31 +94,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 70,
+      "score": 67,
       "rationale": "月營收分數 77；財務品質分數 69。",
-      "events": [
-        {
-          "date": "2026-09-14",
-          "announce_date": "2026-09-15",
-          "time": "64117",
-          "title": "代子公司DEISG公告董事會決議發行以所持有之Delta Electronics (Thailand) Public Company Limited股份作為交換 標的之海外可交換公司債（下稱「本次可交換債」）",
-          "clause": "第11款",
-          "description": "1.董事會決議日期:115/09/14 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:Delta Electronics Int’l (Singapore) Pte. Ltd.（下稱「DEISG」或「發行人」）雙年期海外可交換債 3.是否採總括申報發行公司債(是/否):否 4.發行總額:美金1,500,000,000元（包含A券交換債美金500,000,000元、B券交換債 美金1,000,000,000元） 5.每張面額:A券及B券皆為美金200,000元 6.發行價格:A券及B券皆依面額之100%發行 7.發行期間:A券1年、B券5年 8.發行利率:A券及B券之票面利率均為年利率0% 9.擔保品之種類、名稱、金額及約定事項:無 10.募得價款之用途及運用計畫:本次發行所得資金將用於充實現有業務及強化未來拓展之 營運資金。 11.承銷方式:於中華民國境外依公司債銷售地區有關規定採公開銷售方式辦理 12.公司債受託人:Citicorp International Limited 13.承銷或代銷機構:Citigroup Global Markets Singapore Pte. Ltd.、J.P. Morgan Securities Asia Private Limited 14.發行保證人:無 15.代理還本付息機構:Citibank, N.A., London Branch 16.簽證機構:不適用 17.能轉換股份者，其轉換辦法: 交換標的：Delta Electronics (Thailand) Public Company Limited（「DET」）股份 A券初始交換價格每股泰銖266.80元（較參考價格溢價達15%）。本次發行後，A券交換 價格將依據A券債券條款條件進行調整（包括但不限於依據市場反稀釋慣例之調整）。 A券債券持有人將有權初步按每200,000美元本金金額的A券獲得24,856.8966股DET股份， 該數量將依據A券債券條款條件進行調整。 B券初始交換價格每股泰銖301.60元（較參考價格溢價達30%）。本次發行後，B券交換 價格將依據B券債券條款條件進行調整（包括但不限於依據市場反稀釋慣例之調整）。 B券債券持有人將有權初步按每200,000美元本金金額的B券獲得21,988.7931股DET股份， 該數量將依據B券債券條款條件進行調整。 18.賣回條件:在發生下列情事時，A券及B券之債券持有人有權要求發行人於到期日前將其 持有之本次可交換債依照適用的提前贖回金額全部贖回： (i) DET在泰國證券交易所終止上市或交易，或超過連續30個交易日暫停交易， (ii)發生有關債券條款條件內所定義之DET控制權變動情事時， (iii)發行人不再是本公司直接或間接持有之全資子公司。 另，除A券已被提前贖回、交換或回購並註銷外，發行人應於到期日（即民國116年 9月21日）依照發行本金98.01%贖回；除B券已被提前贖回、交換或回購並註銷外，發行 人應於到期日（即民國120年9月21日）依照發行本金97.53%贖回；B券之債券持有人亦得 於本次可交換債券發行屆滿1.5年當日以及屆滿3年當日，要求發行人分別以本金99.25% 的金額和本金98.51%的金額贖回其全部或部分的B券。 19.買回條件: 於下列情況，發行人得依照適用的提前贖回金額提前將相關可交換債全部贖回： (i)（僅A券）A券在115年12月21日或之後，如DET在泰國證券交易所之收盤價格連 續二十個交易日內達提前贖回金額乘以當時A券交換價格再除以A券面額後所得總數之至 少120%時； (ii)（僅B券）B券在118年9月21日或之後，如DET在泰國證券交易所之收盤價格連續 二十個交易日內達提前贖回金額乘以當時B券交換價格再除以B券面額後所得總數之至少 130%時； (iii)（僅A券）當剩餘未償還A券少於最初發行的A券本金金額的10%； (iv)（僅B券）當剩餘未償還B券少於最初發行的B券本金金額的10%； (v)如果發行人因新加坡的法律或法規或任何此類情況下的任何政治區劃或其具有徵稅 權力的機構發生任何變更或修訂，或因這些法律或法規的適用或官方解釋的變更，而 已經或將要被要求支付額外稅款（根據相關可交換債條款條件中的定義），且發行人 無法通過採取合理可行的措施來避免此義務。在發出此類贖回通知的情況下，相關可 交換債的債券持有人將有權選擇在發行人行使稅務贖回選擇權後，要求其持有的A券或 B券不被贖回，以取代稅務補償。 20.附有轉換、交換或認股者，其換股基準日: A券：自115年11月1日起至A券到期日或相關提前贖回日前第10個營業日或受託人根據 A券條款條件宣布A券立即到期並應支付時止，A券債券持有人有權依照約定交換（但 具體交換期間將受限於A券債券條款條件的約定）。 B券：自115年11月1日起至B券到期日或相關提前贖回日前第10個營業日或受託人根據 B券條款條件宣布B券立即到期並應支付時止，B券債券持有人有權依照約定交換（但 具體交換期間將受限於B券債券條款條件的約定）。 21.附有轉換、交換或認股者，對股權可能稀釋情形:對本公司及DEISG之股權無影響。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用 23.其他應敘明事項:無",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -117,7 +119,7 @@
       "rationale": "月營收分數 81；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -126,31 +128,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 80,
+      "score": 77,
       "rationale": "月營收分數 81；財務品質分數 89。",
-      "events": [
-        {
-          "date": "2026-09-18",
-          "announce_date": "2026-09-15",
-          "time": "150811",
-          "title": "公告本公司擬於民國115年9月18日受邀參加第一金證券舉行之線上投資人會議",
-          "clause": "第12款",
-          "description": "符合條款第四條第XX款：12 事實發生日：115/09/18 1.召開法人說明會之日期：115/09/18 2.召開法人說明會之時間：15 時 30 分 3.召開法人說明會之地點：台北 4.法人說明會擇要訊息：公告本公司擬於民國115年9月18日(五)受邀參加第一金證券舉行之線上投資人會議。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -159,48 +145,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 2,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 74,
+      "score": 71,
       "rationale": "月營收分數 72；財務品質分數 79。",
-      "events": [
-        {
-          "date": "2026-09-15",
-          "announce_date": "2026-09-15",
-          "time": "174646",
-          "title": "代本公司之子公司兆豐期貨股份有限公司公告現金增資認股 基準日相關事宜",
-          "clause": "第11款",
-          "description": "1.董事會決議或公司決定日期:115/09/15 2.發行股數:19,231,000股 3.每股面額:新台幣10元 4.發行總金額:新台幣500,006,000元 5.發行價格:新台幣26元 6.員工認股股數:不適用 7.原股東認購比率:100% 8.公開銷售方式及股數:不適用 9.畸零股及逾期未認購股份之處理方式:不適用 10.本次發行新股之權利義務:與原股份相同 11.本次增資資金用途:業務發展及強化財務結構之需求 12.現金增資認股基準日:115/09/15 13.最後過戶日:不適用 14.停止過戶起始日期:不適用 15.停止過戶截止日期:不適用 16.股款繳納期間:115/09/16 17.與代收及專戶存儲價款行庫訂約日期:無 18.委託代收存款機構:無 19.委託存儲款項機構:無 20.其他應敘明事項: (1)本增資案經金融監督管理委員會115年09月15日金管證期字第 1150355306號函核准在案。 (2)於115年08月26日第十屆董事會第三次會議，授權董事長訂定 現金增資認股基準日及相關作業日期。 (3)現金增資基準日為115年09月16日。",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        },
-        {
-          "date": "2026-09-15",
-          "announce_date": "2026-09-15",
-          "time": "175055",
-          "title": "代本公司之子公司兆豐國際商業銀行補充公告發行 115年度第1期無擔保一般順位金融債券，發行金額新臺幣壹拾 伍億元整。",
-          "clause": "第11款",
-          "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:兆豐國際商業銀行股份有限公司 115年度第1期無擔保一般順位金融債券。 3.是否採總括申報發行公司債(是/否):否。 4.發行總額:新臺幣壹拾伍億元整。 5.每張面額:新臺幣壹仟萬元整。 6.發行價格:依面額十足發行。 7.發行期間:3年期，民國115年9月30日發行，民國118年9月30日到期。 8.發行利率:年利率2.08%，單利固定計息。 9.擔保品之種類、名稱、金額及約定事項:無。 10.募得價款之用途及運用計畫:支應再生能源專案融資計畫之放款。 11.承銷方式:未委託證券承銷商對外公開承銷。 12.公司債受託人:無。 13.承銷或代銷機構:無。 14.發行保證人:無。 15.代理還本付息機構:兆豐國際商業銀行財務處。 16.簽證機構:無。 17.能轉換股份者，其轉換辦法:無。 18.賣回條件:無。 19.買回條件:無。 20.附有轉換、交換或認股者，其換股基準日:無。 21.附有轉換、交換或認股者，對股權可能稀釋情形:無。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):NA 23.其他應敘明事項:補充109年02月21日所發布之重大訊息。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "correction",
-          "risk_category_label": "更正或補充",
-          "risk_points": 0,
-          "matched_patterns": [
-            "補充"
-          ]
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -217,7 +170,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -234,7 +187,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -251,7 +204,7 @@
       "rationale": "月營收分數 76；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -268,7 +221,7 @@
       "rationale": "財務品質分數 70。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -285,7 +238,7 @@
       "rationale": "財務品質分數 65。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     }
   }
 }

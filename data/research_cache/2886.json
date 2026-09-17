@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-16T12:31:33.676Z",
+  "collected_at": "2026-09-17T00:16:34.047Z",
   "company": {
     "id": "twse-2886",
     "ticker": "2886",
@@ -10,36 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "4ff6c38ca8520ea43b01",
-      "date": "2026-09-15",
-      "announced_date": "2026-09-15",
-      "fact_date": "2026-09-15",
-      "announced_time": "175055",
-      "title": "代本公司之子公司兆豐國際商業銀行補充公告發行 115年度第1期無擔保一般順位金融債券，發行金額新臺幣壹拾 伍億元整。",
-      "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:兆豐國際商業銀行股份有限公司 115年度第1期無擔保一般順位金融債券。 3.是否採總括申報發行公司債(是/否):否。 4.發行總額:新臺幣壹拾伍億元整。 5.每張面額:新臺幣壹仟萬元整。 6.發行價格:依面額十足發行。 7.發行期間:3年期，民國115年9月30日發行，民國118年9月30日到期。 8.發行利率:年利率2.08%，單利固定計息。 9.擔保品之種類、名稱、金額及約定事項:無。 10.募得價款之用途及運用計畫:支應再生能源專案融資計畫之放款。 11.承銷方式:未委託證券承銷商對外公開承銷。 12.公司債受託人:無。 13.承銷或代銷機構:無。 14.發行保證人:無。 15.代理還本付息機構:兆豐國際商業銀行財務處。 16.簽證機構:無。 17.能轉換股份者，其轉換辦法:無。 18.賣回條件:無。 19.買回條件:無。 20.附有轉換、交換或認股者，其換股基準日:無。 21.附有轉換、交換或認股者，對股權可能稀釋情形:無。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):NA 23.其他應敘明事項:補充109年02月21日所發布之重大訊息。",
-      "clause": "第11款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
-    {
-      "id": "7a3549eca485b4d79004",
-      "date": "2026-09-15",
-      "announced_date": "2026-09-15",
-      "fact_date": "2026-09-15",
-      "announced_time": "174646",
-      "title": "代本公司之子公司兆豐期貨股份有限公司公告現金增資認股 基準日相關事宜",
-      "description": "1.董事會決議或公司決定日期:115/09/15 2.發行股數:19,231,000股 3.每股面額:新台幣10元 4.發行總金額:新台幣500,006,000元 5.發行價格:新台幣26元 6.員工認股股數:不適用 7.原股東認購比率:100% 8.公開銷售方式及股數:不適用 9.畸零股及逾期未認購股份之處理方式:不適用 10.本次發行新股之權利義務:與原股份相同 11.本次增資資金用途:業務發展及強化財務結構之需求 12.現金增資認股基準日:115/09/15 13.最後過戶日:不適用 14.停止過戶起始日期:不適用 15.停止過戶截止日期:不適用 16.股款繳納期間:115/09/16 17.與代收及專戶存儲價款行庫訂約日期:無 18.委託代收存款機構:無 19.委託存儲款項機構:無 20.其他應敘明事項: (1)本增資案經金融監督管理委員會115年09月15日金管證期字第 1150355306號函核准在案。 (2)於115年08月26日第十屆董事會第三次會議，授權董事長訂定 現金增資認股基準日及相關作業日期。 (3)現金增資基準日為115年09月16日。",
-      "clause": "第11款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-2886-1150915-2",
       "date": "2026-09-15",
@@ -55,9 +25,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150915",
         "serialNumber": "2",
+        "enterDate": "1150915",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -76,9 +46,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150915",
         "serialNumber": "1",
+        "enterDate": "1150915",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -97,9 +67,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150914",
         "serialNumber": "1",
+        "enterDate": "1150914",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -118,9 +88,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150903",
         "serialNumber": "1",
+        "enterDate": "1150903",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -139,9 +109,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150826",
         "serialNumber": "3",
+        "enterDate": "1150826",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -160,9 +130,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150826",
         "serialNumber": "2",
+        "enterDate": "1150826",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -181,9 +151,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150826",
         "serialNumber": "1",
+        "enterDate": "1150826",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -202,9 +172,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150825",
         "serialNumber": "2",
+        "enterDate": "1150825",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -223,9 +193,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150825",
         "serialNumber": "1",
+        "enterDate": "1150825",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -244,9 +214,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150813",
         "serialNumber": "1",
+        "enterDate": "1150813",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -265,9 +235,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150730",
         "serialNumber": "1",
+        "enterDate": "1150730",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -286,9 +256,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150729",
         "serialNumber": "5",
+        "enterDate": "1150729",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -307,9 +277,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150729",
         "serialNumber": "4",
+        "enterDate": "1150729",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -328,9 +298,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150729",
         "serialNumber": "3",
+        "enterDate": "1150729",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -349,9 +319,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150729",
         "serialNumber": "2",
+        "enterDate": "1150729",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -370,9 +340,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150729",
         "serialNumber": "1",
+        "enterDate": "1150729",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -391,9 +361,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150728",
         "serialNumber": "3",
+        "enterDate": "1150728",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -412,9 +382,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150728",
         "serialNumber": "2",
+        "enterDate": "1150728",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -433,9 +403,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150728",
         "serialNumber": "1",
+        "enterDate": "1150728",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -454,9 +424,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150717",
         "serialNumber": "1",
+        "enterDate": "1150717",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -475,9 +445,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150714",
         "serialNumber": "2",
+        "enterDate": "1150714",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     },
@@ -496,9 +466,51 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150714",
         "serialNumber": "1",
+        "enterDate": "1150714",
+        "marketKind": "sii",
+        "companyId": "2886"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150713-2",
+      "date": "2026-07-13",
+      "announced_date": "2026-07-13",
+      "fact_date": null,
+      "announced_time": "16:07:08",
+      "title": "本公司將於115/08/31~115/09/02參與高盛(Goldman Sachs) 於香港舉辦之外資法人投資說明會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1150713",
+        "marketKind": "sii",
+        "companyId": "2886"
+      }
+    },
+    {
+      "id": "mops-history-2886-1150713-1",
+      "date": "2026-07-13",
+      "announced_date": "2026-07-13",
+      "fact_date": null,
+      "announced_time": "16:06:48",
+      "title": "公告本公司將召開2026年第二季線上法人說明會",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150713",
+        "marketKind": "sii",
         "companyId": "2886"
       }
     }
@@ -529,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-16T12:30:45.545Z",
-      "row_count": 108,
+      "fetched_at": "2026-09-17T00:15:51.244Z",
+      "row_count": 99,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-15T12:35:34.352Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-09-17T00:17:18.140Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

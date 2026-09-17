@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-16T12:30:50.271Z",
+  "generated_at": "2026-09-17T00:15:53.309Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -64,19 +64,37 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 1,
       "negative_event_count": 0,
       "positive_event_count": 0,
-      "review_event_count": 0,
+      "review_event_count": 1,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 92,
+      "score": 91,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-09-17",
+          "announce_date": "2026-09-16",
+          "time": "143307",
+          "title": "本公司受邀參加永豐金證券舉辦之線上法人說明會",
+          "clause": "第12款",
+          "description": "符合條款第四條第XX款：12 事實發生日：115/09/17 1.召開法人說明會之日期：115/09/17 2.召開法人說明會之時間：14 時 00 分 3.召開法人說明會之地點：線上法說會 4.法人說明會擇要訊息：本公司受邀參加永豐金證券舉辦之線上法人說明會 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -99,7 +117,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -110,7 +128,7 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 1,
+      "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
       "review_event_count": 0,
@@ -122,7 +140,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -145,7 +163,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -156,7 +174,7 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 1,
+      "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
       "review_event_count": 0,
@@ -168,7 +186,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -179,37 +197,19 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 2,
+      "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
-      "review_event_count": 1,
+      "review_event_count": 0,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 91,
+      "score": 92,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [
-        {
-          "date": "2026-09-15",
-          "announce_date": "2026-09-15",
-          "time": "175055",
-          "title": "代本公司之子公司兆豐國際商業銀行補充公告發行 115年度第1期無擔保一般順位金融債券，發行金額新臺幣壹拾 伍億元整。",
-          "clause": "第11款",
-          "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:兆豐國際商業銀行股份有限公司 115年度第1期無擔保一般順位金融債券。 3.是否採總括申報發行公司債(是/否):否。 4.發行總額:新臺幣壹拾伍億元整。 5.每張面額:新臺幣壹仟萬元整。 6.發行價格:依面額十足發行。 7.發行期間:3年期，民國115年9月30日發行，民國118年9月30日到期。 8.發行利率:年利率2.08%，單利固定計息。 9.擔保品之種類、名稱、金額及約定事項:無。 10.募得價款之用途及運用計畫:支應再生能源專案融資計畫之放款。 11.承銷方式:未委託證券承銷商對外公開承銷。 12.公司債受託人:無。 13.承銷或代銷機構:無。 14.發行保證人:無。 15.代理還本付息機構:兆豐國際商業銀行財務處。 16.簽證機構:無。 17.能轉換股份者，其轉換辦法:無。 18.賣回條件:無。 19.買回條件:無。 20.附有轉換、交換或認股者，其換股基準日:無。 21.附有轉換、交換或認股者，對股權可能稀釋情形:無。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):NA 23.其他應敘明事項:補充109年02月21日所發布之重大訊息。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "correction",
-          "risk_category_label": "更正或補充",
-          "risk_points": 0,
-          "matched_patterns": [
-            "補充"
-          ]
-        }
-      ],
+      "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -232,7 +232,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -255,7 +255,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -278,7 +278,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -301,7 +301,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -324,7 +324,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-16T12:30:50.271Z"
+      "refreshed_at": "2026-09-17T00:15:53.309Z"
     }
   }
 }

@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1",
   "ticker": "1707",
-  "fetched_at": "2026-09-15T12:35:03.121Z",
+  "fetched_at": "2026-09-17T00:16:46.940Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-1707-1150916-1",
+      "date": "2026-09-16",
+      "announced_date": "2026-09-16",
+      "fact_date": "2026-09-17",
+      "announced_time": "14:33:07",
+      "title": "本公司受邀參加永豐金證券舉辦之線上法人說明會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/09/17 1.召開法人說明會之日期：115/09/17 2.召開法人說明會之時間：14 時 00 分 3.召開法人說明會之地點：線上法說會 4.法人說明會擇要訊息：本公司受邀參加永豐金證券舉辦之線上法人說明會 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150916",
+        "marketKind": "sii",
+        "companyId": "1707"
+      }
+    },
     {
       "id": "mops-history-1707-1150813-1",
       "date": "2026-08-13",
@@ -28,9 +49,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150813",
         "serialNumber": "1",
+        "enterDate": "1150813",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -49,9 +70,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150805",
         "serialNumber": "1",
+        "enterDate": "1150805",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -70,9 +91,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150714",
         "serialNumber": "1",
+        "enterDate": "1150714",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -80,20 +101,20 @@
       "id": "mops-history-1707-1150617-1",
       "date": "2026-06-17",
       "announced_date": "2026-06-17",
-      "fact_date": "2026-06-23",
+      "fact_date": null,
       "announced_time": "14:33:50",
       "title": "本公司受邀參加永豐金證券舉辦之線上法人說明會",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/06/23 1.召開法人說明會之日期：115/06/23 2.召開法人說明會之時間：14 時 00 分 3.召開法人說明會之地點：線上法說會 4.法人說明會擇要訊息：本公司受邀參加永豐金證券舉辦之線上法人說明會 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-      "clause": "第12款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150617",
         "serialNumber": "1",
+        "enterDate": "1150617",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -112,9 +133,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150526",
         "serialNumber": "1",
+        "enterDate": "1150526",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -133,9 +154,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150511",
         "serialNumber": "3",
+        "enterDate": "1150511",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -154,9 +175,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150511",
         "serialNumber": "2",
+        "enterDate": "1150511",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -175,9 +196,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150511",
         "serialNumber": "1",
+        "enterDate": "1150511",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -196,9 +217,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150430",
         "serialNumber": "1",
+        "enterDate": "1150430",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -217,9 +238,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150407",
         "serialNumber": "3",
+        "enterDate": "1150407",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -238,9 +259,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150407",
         "serialNumber": "2",
+        "enterDate": "1150407",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -259,9 +280,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150407",
         "serialNumber": "1",
+        "enterDate": "1150407",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -280,9 +301,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150317",
         "serialNumber": "1",
+        "enterDate": "1150317",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -301,9 +322,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150305",
         "serialNumber": "1",
+        "enterDate": "1150305",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -322,9 +343,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150304",
         "serialNumber": "4",
+        "enterDate": "1150304",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -343,9 +364,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150304",
         "serialNumber": "3",
+        "enterDate": "1150304",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -364,9 +385,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150223",
         "serialNumber": "1",
+        "enterDate": "1150223",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -385,9 +406,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150304",
         "serialNumber": "2",
+        "enterDate": "1150304",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -406,9 +427,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150304",
         "serialNumber": "1",
+        "enterDate": "1150304",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -427,9 +448,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150224",
         "serialNumber": "1",
+        "enterDate": "1150224",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -448,9 +469,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150205",
         "serialNumber": "3",
+        "enterDate": "1150205",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -469,9 +490,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
-        "enterDate": "1150205",
         "serialNumber": "2",
+        "enterDate": "1150205",
+        "marketKind": "sii",
         "companyId": "1707"
       }
     },
@@ -490,30 +511,9 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
+        "serialNumber": "1",
         "enterDate": "1150205",
-        "serialNumber": "1",
-        "companyId": "1707"
-      }
-    },
-    {
-      "id": "mops-history-1707-1141218-1",
-      "date": "2025-12-18",
-      "announced_date": "2025-12-18",
-      "fact_date": null,
-      "announced_time": "15:57:19",
-      "title": "代本公司重要子公司葡眾企業(股)公司公告董事會決議 向關係人葡萄王生技(股)公司承租高雄營運中心到期續約",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
         "marketKind": "sii",
-        "enterDate": "1141218",
-        "serialNumber": "1",
         "companyId": "1707"
       }
     }
