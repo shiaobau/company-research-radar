@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-17T12:32:21.404Z",
+  "collected_at": "2026-09-20T00:20:09.981Z",
   "company": {
     "id": "tpex-3115",
     "ticker": "3115",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "531d56548a2f267a90c3",
-      "date": "2026-09-16",
-      "announced_date": "2026-09-16",
-      "fact_date": "2026-09-16",
-      "announced_time": "185021",
-      "title": "澄清115年9月16日聯合新聞網等媒體報導",
-      "description": "1.事實發生日:115/09/16 2.公司名稱:富育榮綱股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.傳播媒體名稱:聯合新聞網及其他網路媒體 6.報導內容:「…天逸財金創辦人溫峰泰，取得上櫃公司寶島極光公司 (更名為富育榮綱公司)經營權期間，涉嫌花1300萬餘元向大陸天逸集團購買 跨境貿易供應鏈金融系統，又讓寶島極光公司支付天逸員工的薪資、勞健保等， 共掏空2814萬餘元」等內容。 7.發生緣由:115年9月16日聯合新聞網等媒體報導。 8.因應措施:該報導所涉交易與支出，係屬民國107年至109年(2018~2020年) 間之歷史營運事項。本公司目前各項業務運作正常，財務健全，該事項對 本公司目前核心業務推展及日常營運無重大不利影響。 本公司將於正式收受檢方起訴書後，委請法律顧問研擬相應之法律保全程序， 以維護全體股東及本公司之權益。 9.其他應敘明事項:投資人應以本公司於公開資訊觀測站公告之財務業務資訊為準。",
-      "clause": "第53款",
-      "source_id": "tpex_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-3115-1150916-1",
       "date": "2026-09-16",
@@ -40,10 +25,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150916",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -61,10 +46,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150910",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -82,10 +67,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1150811",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "2"
       }
     },
     {
@@ -103,10 +88,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150811",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -124,10 +109,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150803",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -145,10 +130,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150715",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -166,10 +151,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150630",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -187,10 +172,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150623",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -208,10 +193,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150518",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -229,10 +214,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150511",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -250,10 +235,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150426",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -271,10 +256,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "3",
         "enterDate": "1150309",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "3"
       }
     },
     {
@@ -292,10 +277,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1150309",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "2"
       }
     },
     {
@@ -313,10 +298,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150309",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -334,10 +319,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150302",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -355,10 +340,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150301",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -376,10 +361,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1150113",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "2"
       }
     },
     {
@@ -397,10 +382,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150113",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -418,10 +403,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1141218",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -439,10 +424,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1141211",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -460,10 +445,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1141128",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     },
     {
@@ -481,10 +466,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1141120",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "2"
       }
     },
     {
@@ -502,10 +487,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1141120",
         "marketKind": "otc",
-        "companyId": "3115"
+        "companyId": "3115",
+        "serialNumber": "1"
+      }
+    },
+    {
+      "id": "mops-history-3115-1141117-1",
+      "date": "2025-11-17",
+      "announced_date": "2025-11-17",
+      "fact_date": null,
+      "announced_time": "18:10:06",
+      "title": "公告本公司董事會決議辦理114年第二次私募普通股及定價 相關事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1141117",
+        "marketKind": "otc",
+        "companyId": "3115",
+        "serialNumber": "1"
       }
     }
   ],
@@ -535,14 +541,14 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-17T12:31:17.155Z",
-      "row_count": 40,
+      "fetched_at": "2026-09-20T00:16:24.750Z",
+      "row_count": 52,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-17T00:17:24.861Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-09-20T00:21:01.978Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
