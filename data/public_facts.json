@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-20T00:16:26.835Z",
+  "generated_at": "2026-09-20T12:30:41.624Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -198,20 +198,13 @@
       "short_title": "TPEx 三大法人",
       "url": "https://www.tpex.org.tw/web/stock/3insti/daily_trade/3itrade_hedge_result.php",
       "note": "上櫃公司每日外資、投信、自營商與合計買賣超。"
-    },
-    {
-      "id": "yahoo_finance_chart",
-      "title": "Yahoo Finance：台股歷史日線資料",
-      "short_title": "Yahoo Finance 股價",
-      "url": "https://query1.finance.yahoo.com/v8/finance/chart/",
-      "note": "當交易所歷史查詢暫時不可用時，作為次要公開市場資料備援；使用 .TW 或 .TWO 代號，並在每筆資料標示來源。"
     }
   ],
   "companies": {
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-09-20T00:16:26.835Z",
+      "generated_at": "2026-09-20T12:30:41.624Z",
       "facts": [
         {
           "id": "official_classification",
@@ -295,7 +288,7 @@
     "twse-1707": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-09-20T00:16:26.835Z",
+      "generated_at": "2026-09-20T12:30:41.624Z",
       "facts": [
         {
           "id": "official_classification",
@@ -371,7 +364,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-09-20T00:16:26.835Z",
+      "generated_at": "2026-09-20T12:30:41.624Z",
       "facts": [
         {
           "id": "official_classification",
@@ -447,7 +440,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-09-20T00:16:26.835Z",
+      "generated_at": "2026-09-20T12:30:41.624Z",
       "facts": [
         {
           "id": "official_classification",
@@ -531,7 +524,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-09-20T00:16:26.835Z",
+      "generated_at": "2026-09-20T12:30:41.624Z",
       "facts": [
         {
           "id": "official_classification",
@@ -607,7 +600,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-09-20T00:16:26.835Z",
+      "generated_at": "2026-09-20T12:30:41.624Z",
       "facts": [
         {
           "id": "official_classification",
@@ -683,7 +676,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-09-20T00:16:26.835Z",
+      "generated_at": "2026-09-20T12:30:41.624Z",
       "facts": [
         {
           "id": "official_classification",
@@ -713,7 +706,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-09-18 收盤 51.1；區間報酬：20日 8.84%；60日 0%；當日量為 20 日均量 1.7 倍。",
+          "value": "2026-09-18 收盤 51.1；區間報酬：20日 8.84%；60日 29.7%；當日量為 20 日均量 1.7 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -759,7 +752,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-09-20T00:16:26.835Z",
+      "generated_at": "2026-09-20T12:30:41.624Z",
       "facts": [
         {
           "id": "official_classification",
@@ -834,7 +827,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-09-20T00:16:26.835Z",
+      "generated_at": "2026-09-20T12:30:41.624Z",
       "facts": [
         {
           "id": "official_classification",
@@ -864,7 +857,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-09-18 收盤 48.25；區間報酬：20日 4.78%；60日 -31.95%；當日量為 20 日均量 0.73 倍。",
+          "value": "2026-09-18 收盤 48.25；區間報酬：20日 0%；60日 0%；當日量為 20 日均量 0.74 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -910,7 +903,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-09-20T00:16:26.835Z",
+      "generated_at": "2026-09-20T12:30:41.624Z",
       "facts": [
         {
           "id": "official_classification",
@@ -994,7 +987,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-09-20T00:16:26.835Z",
+      "generated_at": "2026-09-20T12:30:41.624Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1078,7 +1071,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-09-20T00:16:26.835Z",
+      "generated_at": "2026-09-20T12:30:41.624Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1108,9 +1101,9 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-09-18 收盤 127；區間報酬：20日 -5.22%；60日 -1.55%；當日量為 20 日均量 0.92 倍。",
+          "value": "2026-09-18 收盤 127；區間報酬：20日 0%；60日 0%；當日量為 20 日均量 1.05 倍。",
           "source_ids": [
-            "yahoo_finance_chart"
+            "twse_stock_day"
           ]
         },
         {
