@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-22T00:16:14.743Z",
+  "collected_at": "2026-09-22T12:33:04.096Z",
   "company": {
     "id": "tpex-6023",
     "ticker": "6023",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "975f74af6821624b3193",
+      "date": "2026-09-21",
+      "announced_date": "2026-09-21",
+      "fact_date": "2026-09-22",
+      "announced_time": "135048",
+      "title": "元大期貨受邀參加元大證券舉辦之線上法人說明會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/09/22 1.召開法人說明會之日期：115/09/22 2.召開法人說明會之時間：14 時 00 分 3.召開法人說明會之地點：線上法說會 4.法人說明會擇要訊息：本公司受邀參加元大證券舉辦之線上法說會，報告本公司營運狀況。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "tpex_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-6023-1150921-1",
       "date": "2026-09-21",
@@ -492,27 +507,6 @@
         "marketKind": "otc",
         "companyId": "6023"
       }
-    },
-    {
-      "id": "mops-history-6023-1150320-1",
-      "date": "2026-03-20",
-      "announced_date": "2026-03-20",
-      "fact_date": null,
-      "announced_time": "13:58:29",
-      "title": "元大期貨受邀參加證券櫃檯買賣中心舉辦之法人說明會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150320",
-        "marketKind": "otc",
-        "companyId": "6023"
-      }
     }
   ],
   "references": [
@@ -541,8 +535,8 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-22T00:15:39.990Z",
-      "row_count": 7,
+      "fetched_at": "2026-09-22T12:32:01.219Z",
+      "row_count": 53,
       "available": true
     },
     {

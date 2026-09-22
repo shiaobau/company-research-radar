@@ -1,20 +1,18 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-22T00:16:14.743Z",
+  "generated_at": "2026-09-22T12:33:04.096Z",
   "collection_scope": "targeted_research_company",
   "source_status": [
     {
       "source_id": "twse_material_events",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-22T00:15:39.817Z",
-      "row_count": 107,
-      "available": true
+      "available": false,
+      "error": "PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: Unexpected token '<', \"<html>\n<he\"... is not valid JSON"
     },
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-22T00:15:39.990Z",
-      "row_count": 7,
+      "fetched_at": "2026-09-22T12:32:01.219Z",
+      "row_count": 53,
       "available": true
     }
   ],
@@ -24,9 +22,9 @@
       "company_id": "twse-1231",
       "name": "聯華食",
       "market": "TWSE",
-      "status": "ok",
+      "status": "partial",
       "event_count": 24,
-      "collected_at": "2026-09-22T00:16:14.743Z",
+      "collected_at": "2026-09-22T12:33:04.096Z",
       "cache_path": "data/research_cache/1231.json"
     },
     {
@@ -34,9 +32,9 @@
       "company_id": "twse-1707",
       "name": "葡萄王",
       "market": "TWSE",
-      "status": "ok",
+      "status": "partial",
       "event_count": 24,
-      "collected_at": "2026-09-22T00:16:14.743Z",
+      "collected_at": "2026-09-22T12:33:04.096Z",
       "cache_path": "data/research_cache/1707.json"
     },
     {
@@ -44,9 +42,9 @@
       "company_id": "twse-2303",
       "name": "聯電",
       "market": "TWSE",
-      "status": "ok",
+      "status": "partial",
       "event_count": 24,
-      "collected_at": "2026-09-22T00:16:14.743Z",
+      "collected_at": "2026-09-22T12:33:04.096Z",
       "cache_path": "data/research_cache/2303.json"
     },
     {
@@ -54,9 +52,9 @@
       "company_id": "twse-2308",
       "name": "台達電",
       "market": "TWSE",
-      "status": "ok",
+      "status": "partial",
       "event_count": 24,
-      "collected_at": "2026-09-22T00:16:14.743Z",
+      "collected_at": "2026-09-22T12:33:04.096Z",
       "cache_path": "data/research_cache/2308.json"
     },
     {
@@ -64,9 +62,9 @@
       "company_id": "twse-2330",
       "name": "台積電",
       "market": "TWSE",
-      "status": "ok",
+      "status": "partial",
       "event_count": 24,
-      "collected_at": "2026-09-22T00:16:14.743Z",
+      "collected_at": "2026-09-22T12:33:04.096Z",
       "cache_path": "data/research_cache/2330.json"
     },
     {
@@ -74,9 +72,9 @@
       "company_id": "twse-2885",
       "name": "元大金",
       "market": "TWSE",
-      "status": "ok",
+      "status": "partial",
       "event_count": 24,
-      "collected_at": "2026-09-22T00:16:14.743Z",
+      "collected_at": "2026-09-22T12:33:04.096Z",
       "cache_path": "data/research_cache/2885.json"
     },
     {
@@ -84,9 +82,9 @@
       "company_id": "twse-2886",
       "name": "兆豐金",
       "market": "TWSE",
-      "status": "ok",
+      "status": "partial",
       "event_count": 24,
-      "collected_at": "2026-09-22T00:16:14.743Z",
+      "collected_at": "2026-09-22T12:33:04.096Z",
       "cache_path": "data/research_cache/2886.json"
     },
     {
@@ -94,9 +92,9 @@
       "company_id": "tpex-3115",
       "name": "富榮綱",
       "market": "TPEx",
-      "status": "ok",
+      "status": "partial",
       "event_count": 24,
-      "collected_at": "2026-09-22T00:16:14.743Z",
+      "collected_at": "2026-09-22T12:33:04.096Z",
       "cache_path": "data/research_cache/3115.json"
     },
     {
@@ -104,9 +102,9 @@
       "company_id": "twse-3481",
       "name": "群創",
       "market": "TWSE",
-      "status": "ok",
+      "status": "partial",
       "event_count": 24,
-      "collected_at": "2026-09-22T00:16:14.743Z",
+      "collected_at": "2026-09-22T12:33:04.096Z",
       "cache_path": "data/research_cache/3481.json"
     },
     {
@@ -114,9 +112,9 @@
       "company_id": "tpex-6023",
       "name": "元大期貨",
       "market": "TPEx",
-      "status": "ok",
+      "status": "partial",
       "event_count": 24,
-      "collected_at": "2026-09-22T00:16:14.743Z",
+      "collected_at": "2026-09-22T12:33:04.096Z",
       "cache_path": "data/research_cache/6023.json"
     },
     {
@@ -124,9 +122,9 @@
       "company_id": "tpex-8279",
       "name": "生展",
       "market": "TPEx",
-      "status": "ok",
+      "status": "partial",
       "event_count": 24,
-      "collected_at": "2026-09-22T00:16:14.743Z",
+      "collected_at": "2026-09-22T12:33:04.096Z",
       "cache_path": "data/research_cache/8279.json"
     },
     {
@@ -134,9 +132,9 @@
       "company_id": "twse-9939",
       "name": "宏全",
       "market": "TWSE",
-      "status": "ok",
+      "status": "partial",
       "event_count": 24,
-      "collected_at": "2026-09-22T00:16:14.743Z",
+      "collected_at": "2026-09-22T12:33:04.096Z",
       "cache_path": "data/research_cache/9939.json"
     }
   ],

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-22T00:16:14.743Z",
+  "collected_at": "2026-09-22T12:33:04.096Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "e2c0f6e08c0ccc4610e2",
-      "date": "2026-09-21",
-      "announced_date": "2026-09-21",
-      "fact_date": "2026-09-21",
-      "announced_time": "181741",
-      "title": "元大金控公告向元大銀行原租賃取得使用權資產範圍調整",
-      "description": "1. 原公告日期： 114/03/14 2. 簡述原公告申報內容： 元大金控向元大銀行取得臺北市大安區仁愛路三段157號6樓、8 樓、10樓、13樓、16至20樓部分面積、地下二層車位16席及地下 三層車位3席之使用權資產： 租賃面積：1,879.95坪 租金總額：每月7,483,510元(含稅) 使用權資產金額：383,989,025元(含稅) 3. 變動緣由及主要內容： 因本公司業務需求，調整租賃面積： 租賃面積：1,772.06坪 租金總額：每月7,122,060元(含稅) 使用權資產金額：192,890,119元(含稅) 上開調整預計自115年09月24日生效。 4. 變動後對公司財務業務之影響： 無重大影響 5. 其他應敘明事項： 元大金控前於114/03/14公告原契約、114/12/24公告租賃範圍調整。 實際內容以雙方簽訂增補契約為準，如有差異將另行公告。",
-      "clause": "第20款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-2885-1150921-1",
       "date": "2026-09-21",
@@ -507,6 +492,27 @@
         "marketKind": "sii",
         "companyId": "2885"
       }
+    },
+    {
+      "id": "mops-history-2885-1150824-4",
+      "date": "2026-08-24",
+      "announced_date": "2026-08-24",
+      "fact_date": null,
+      "announced_time": "20:36:21",
+      "title": "元大金控公告訂定與元大證券投資信託股份有限公司 股份轉換基準日暨增資基準日",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "enterDate": "1150824",
+        "marketKind": "sii",
+        "companyId": "2885"
+      }
     }
   ],
   "references": [
@@ -534,10 +540,8 @@
   "source_status": [
     {
       "source_id": "twse_material_events",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-22T00:15:39.817Z",
-      "row_count": 107,
-      "available": true
+      "available": false,
+      "error": "PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: Unexpected token '<', \"<html>\n<he\"... is not valid JSON"
     },
     {
       "source_id": "mops_history_api",

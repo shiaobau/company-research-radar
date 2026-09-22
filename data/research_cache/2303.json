@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-22T00:16:14.743Z",
+  "collected_at": "2026-09-22T12:33:04.096Z",
   "company": {
     "id": "twse-2303",
     "ticker": "2303",
@@ -540,10 +540,8 @@
   "source_status": [
     {
       "source_id": "twse_material_events",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-22T00:15:39.817Z",
-      "row_count": 107,
-      "available": true
+      "available": false,
+      "error": "PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: Unexpected token '<', \"<html>\n<he\"... is not valid JSON"
     },
     {
       "source_id": "mops_history_api",
