@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-21T12:31:18.351Z",
+  "generated_at": "2026-09-22T00:15:41.006Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-21T12:31:18.351Z"
+      "refreshed_at": "2026-09-22T00:15:41.006Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-21T12:31:18.351Z"
+      "refreshed_at": "2026-09-22T00:15:41.006Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -99,7 +99,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-21T12:31:18.351Z"
+      "refreshed_at": "2026-09-22T00:15:41.006Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -110,19 +110,54 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 2,
       "negative_event_count": 0,
       "positive_event_count": 0,
-      "review_event_count": 0,
+      "review_event_count": 2,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 92,
+      "score": 90,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-09-21",
+          "announce_date": "2026-09-21",
+          "time": "171825",
+          "title": "澄清工商時報115年9月19日報導",
+          "clause": "第51款",
+          "description": "1.事實發生日:115/09/21 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.傳播媒體名稱:工商時報 6.報導內容:法人看好第四季營收可望維持季增雙位數 7.發生緣由:大眾傳播媒體報導 8.因應措施:公佈澄清訊息於公開資訊觀測站 9.其他應敘明事項:報載內容係法人自行預估，本公司未提供財務預測，有關本公司 相關之財務數據，敬請投資大眾參閱公開資訊觀測站。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "澄清"
+          ]
+        },
+        {
+          "date": "2026-09-21",
+          "announce_date": "2026-09-21",
+          "time": "175320",
+          "title": "(補充公告)本公司代子公司DET公告決議重建泰國BP1廠及BP1-P樓",
+          "clause": "第20款",
+          "description": "1.契約種類:工程合約 2.事實發生日:115/9/21~115/9/21 3.董事會通過日期: 民國115年7月24日 4.其他核決日期: 不適用 5.契約相對人及其與公司之關係: 本案土建工程契約相對人為新南洋建設有限公司(以下簡稱新南洋建設)。新南洋建設非本 公司之關係人。 6.契約主要內容（含契約總金額、預計參與投入之金額及契約起迄日期） 、限制條款及其他重要約定事項: 子公司Delta Electronics (Thailand) Public Company Limited(簡稱DET)董事會於民國 115年7月24日決議通過重建泰國BP1廠及BP1-P樓，暫估工程總價款約泰銖32億元。本案土 建工程將由新南洋建設承攬，總價款約為泰銖15.8億元。其他相關事宜，待確定後另行 公告。 7.專業估價者事務所或公司名稱及其估價結果: 係自地委建，故不適用。 8.不動產估價師姓名: 不適用 9.不動產估價師開業證書字號: 不適用 10.取得之具體目的: 因應未來業務發展所需 11.本次交易表示異議之董事意見: 無 12.本次交易為關係人交易:否 13.監察人承認或審計委員會同意日期: 不適用 14.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 15.是否尚未取得估價報告:否或不適用 16.尚未取得估價報告之原因: 不適用 17.估價結果有重大差異時，其差異原因及會計師意見: 不適用 18.會計師事務所名稱: 不適用 19.會計師姓名: 不適用 20.會計師開業證書字號: 不適用 21.前已就同一件事件發布重大訊息日期: 民國115年7月24日 22.其他敘明事項: 無",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "correction",
+          "risk_category_label": "更正或補充",
+          "risk_points": 0,
+          "matched_patterns": [
+            "補充"
+          ]
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-21T12:31:18.351Z"
+      "refreshed_at": "2026-09-22T00:15:41.006Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -145,7 +180,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-21T12:31:18.351Z"
+      "refreshed_at": "2026-09-22T00:15:41.006Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -156,7 +191,7 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 1,
       "negative_event_count": 0,
       "positive_event_count": 0,
       "review_event_count": 0,
@@ -168,7 +203,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-21T12:31:18.351Z"
+      "refreshed_at": "2026-09-22T00:15:41.006Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -191,7 +226,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-21T12:31:18.351Z"
+      "refreshed_at": "2026-09-22T00:15:41.006Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -214,7 +249,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-21T12:31:18.351Z"
+      "refreshed_at": "2026-09-22T00:15:41.006Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -237,7 +272,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-21T12:31:18.351Z"
+      "refreshed_at": "2026-09-22T00:15:41.006Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -260,7 +295,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-21T12:31:18.351Z"
+      "refreshed_at": "2026-09-22T00:15:41.006Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -283,7 +318,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-21T12:31:18.351Z"
+      "refreshed_at": "2026-09-22T00:15:41.006Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -306,7 +341,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-21T12:31:18.351Z"
+      "refreshed_at": "2026-09-22T00:15:41.006Z"
     }
   }
 }
