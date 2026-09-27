@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-22T12:33:04.096Z",
+  "collected_at": "2026-09-27T00:16:47.028Z",
   "company": {
     "id": "twse-2886",
     "ticker": "2886",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2886-1150922-1",
+      "date": "2026-09-22",
+      "announced_date": "2026-09-22",
+      "fact_date": "2026-09-22",
+      "announced_time": "16:14:05",
+      "title": "公告本公司之子公司兆豐國際證券投資信託(股)公司 董事及監察人異動案",
+      "description": "1.發生變動日期:115/09/22 2.法人名稱:兆豐金融控股股份有限公司 3.舊任者姓名: 董事:呂秀媛 監察人:侯君儀 4.舊任者簡歷: 董事:呂秀媛,兆豐銀行新安分行經理 監察人:侯君儀,兆豐銀行金控總部分行經理 5.新任者姓名: 董事:陳安章 監察人:李俐俐 6.新任者簡歷: 董事:陳安章,兆豐銀行財富管理暨私人銀行處處長 監察人:李俐俐,兆豐銀行信託處協理兼處長 7.異動原因:董事會決議派任 8.原任期（例xx/xx/xx至xx/xx/xx）:114/04/08至117/04/07 9.新任生效日期:115/09/22 10.其他應敘明事項:無",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150922",
+        "marketKind": "sii",
+        "companyId": "2886",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2886-1150915-2",
       "date": "2026-09-15",
@@ -25,10 +46,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1150915",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "2"
       }
     },
     {
@@ -46,10 +67,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150915",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "1"
       }
     },
     {
@@ -67,31 +88,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150914",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "1"
       }
     },
     {
       "id": "mops-history-2886-1150903-1",
       "date": "2026-09-03",
       "announced_date": "2026-09-03",
-      "fact_date": "2026-09-03",
+      "fact_date": null,
       "announced_time": "17:02:15",
       "title": "代本公司之子公司兆豐國際證券投資信託股份有限公司公告 董事會推選張傳章先生擔任董事長",
-      "description": "1.董事會決議日期或發生變動日期:115/09/03 2.人員別（請輸入董事長或總經理）:董事長 3.舊任者姓名:張傳章 4.舊任者簡歷:兆豐金融控股股份有限公司總經理 5.新任者姓名:張傳章 6.新任者簡歷:兆豐金融控股股份有限公司總經理 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「職務調整」、「資遣」、 「退休」、「逝世」或「新任」）: 職務調整 8.異動原因:原暫代董事長調整為董事長 9.新任生效日期:115/09/03 10.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第6款所定對股東權益或證券價格有重大影響之事項): 無",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150903",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "1"
       }
     },
     {
@@ -109,10 +130,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "3",
         "enterDate": "1150826",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "3"
       }
     },
     {
@@ -130,10 +151,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1150826",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "2"
       }
     },
     {
@@ -151,10 +172,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150826",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "1"
       }
     },
     {
@@ -172,10 +193,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1150825",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "2"
       }
     },
     {
@@ -193,10 +214,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150825",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "1"
       }
     },
     {
@@ -214,10 +235,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150813",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "1"
       }
     },
     {
@@ -235,10 +256,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150730",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "1"
       }
     },
     {
@@ -256,10 +277,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "5",
         "enterDate": "1150729",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "5"
       }
     },
     {
@@ -277,10 +298,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "4",
         "enterDate": "1150729",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "4"
       }
     },
     {
@@ -298,10 +319,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "3",
         "enterDate": "1150729",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "3"
       }
     },
     {
@@ -319,10 +340,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1150729",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "2"
       }
     },
     {
@@ -340,10 +361,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150729",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "1"
       }
     },
     {
@@ -361,10 +382,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "3",
         "enterDate": "1150728",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "3"
       }
     },
     {
@@ -382,10 +403,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1150728",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "2"
       }
     },
     {
@@ -403,10 +424,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150728",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "1"
       }
     },
     {
@@ -424,10 +445,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150717",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "1"
       }
     },
     {
@@ -445,10 +466,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1150714",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "2"
       }
     },
     {
@@ -466,10 +487,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1150714",
         "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "1"
       }
     },
     {
@@ -487,31 +508,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1150713",
         "marketKind": "sii",
-        "companyId": "2886"
-      }
-    },
-    {
-      "id": "mops-history-2886-1150713-1",
-      "date": "2026-07-13",
-      "announced_date": "2026-07-13",
-      "fact_date": null,
-      "announced_time": "16:06:48",
-      "title": "公告本公司將召開2026年第二季線上法人說明會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150713",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "serialNumber": "2"
       }
     }
   ],
@@ -540,13 +540,15 @@
   "source_status": [
     {
       "source_id": "twse_material_events",
-      "available": false,
-      "error": "PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: Unexpected token '<', \"<html>\n<he\"... is not valid JSON"
+      "cache_status": "fresh",
+      "fetched_at": "2026-09-27T00:15:38.986Z",
+      "row_count": 4,
+      "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-21T12:37:22.817Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-09-27T00:17:35.017Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
