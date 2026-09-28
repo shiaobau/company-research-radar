@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1",
   "ticker": "1231",
-  "fetched_at": "2026-09-27T00:16:53.301Z",
+  "fetched_at": "2026-09-28T12:32:32.620Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -29,9 +29,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150731",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -50,9 +50,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150729",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -71,9 +71,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150714",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -92,9 +92,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150618",
-        "marketKind": "sii",
+        "serialNumber": "2",
         "companyId": "1231",
-        "serialNumber": "2"
+        "marketKind": "sii"
       }
     },
     {
@@ -113,9 +113,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150618",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -134,9 +134,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150622",
-        "marketKind": "sii",
+        "serialNumber": "2",
         "companyId": "1231",
-        "serialNumber": "2"
+        "marketKind": "sii"
       }
     },
     {
@@ -155,9 +155,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150622",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -176,9 +176,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150511",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -197,9 +197,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150505",
-        "marketKind": "sii",
+        "serialNumber": "2",
         "companyId": "1231",
-        "serialNumber": "2"
+        "marketKind": "sii"
       }
     },
     {
@@ -218,9 +218,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150505",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -239,9 +239,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150420",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -260,9 +260,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150226",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -281,9 +281,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150310",
-        "marketKind": "sii",
+        "serialNumber": "3",
         "companyId": "1231",
-        "serialNumber": "3"
+        "marketKind": "sii"
       }
     },
     {
@@ -302,9 +302,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150310",
-        "marketKind": "sii",
+        "serialNumber": "2",
         "companyId": "1231",
-        "serialNumber": "2"
+        "marketKind": "sii"
       }
     },
     {
@@ -323,9 +323,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150310",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -344,9 +344,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150209",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -365,9 +365,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1141231",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -386,9 +386,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1141216",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -407,9 +407,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1141105",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -428,9 +428,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1141030",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -449,9 +449,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1140807",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -470,9 +470,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1140804",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -491,9 +491,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1140729",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -512,9 +512,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1140630",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "1231",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     }
   ]

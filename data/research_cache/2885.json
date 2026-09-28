@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-28T00:16:39.785Z",
+  "collected_at": "2026-09-28T12:32:25.126Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2885-1150928-1",
+      "date": "2026-09-28",
+      "announced_date": "2026-09-28",
+      "fact_date": "2026-09-28",
+      "announced_time": "16:03:39",
+      "title": "元大金控代子公司元大證券(韓國)公告受韓國金融委員會裁罰",
+      "description": "1.事實發生日：115/09/28 2.事實發生主體：代子公司申報：元大證券(韓國) 3.發生緣由(事件說明)：元大證券(韓國)因受韓國金融監督局檢查發現其公司債銷售流程 有相關缺失，經韓國金融委員會核處罰鍰。 4.處理過程：元大證券(韓國)已完成相關改善計畫及教育訓練，並於115年9月28日自行繳清罰鍰 。 5.處分情形：核處罰鍰韓圜11.07億元；於115年9月28日(含當日)前自行繳納罰鍰者， 可適用減免20%罰鍰之規定(即改為繳納韓圜8.856億元)。 6.是否遭裁處罰鍰：是 7.裁罰金額(元)：新台幣 0 元; 韓圜 1,107,000,000 元 8.預計可能損失或影響：韓圜8.856億元 9.可能獲得保險理賠之金額(元)：不適用 10.改善情形及未來因應措施：元大證券(韓國)已強化相關控管措施並完成相關教育訓練。 11.是否前已就同一事件發布重大訊息：否 12.其他應述明事項：1.裁罰金額韓圜11.07億元約當為新臺幣2,607萬元； 減免20%後之罰鍰金額韓圜8.856億元約當為新臺幣2,085萬元。 2.本公告匯率換算以韓圜兌新臺幣0.023546為準。",
+      "clause": "第26款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150928",
+        "serialNumber": "1",
+        "companyId": "2885",
+        "marketKind": "sii"
+      }
+    },
     {
       "id": "mops-history-2885-1150924-4",
       "date": "2026-09-24",
@@ -26,9 +47,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150924",
-        "marketKind": "sii",
+        "serialNumber": "4",
         "companyId": "2885",
-        "serialNumber": "4"
+        "marketKind": "sii"
       }
     },
     {
@@ -47,9 +68,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150924",
-        "marketKind": "sii",
+        "serialNumber": "3",
         "companyId": "2885",
-        "serialNumber": "3"
+        "marketKind": "sii"
       }
     },
     {
@@ -68,20 +89,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150924",
-        "marketKind": "sii",
+        "serialNumber": "2",
         "companyId": "2885",
-        "serialNumber": "2"
+        "marketKind": "sii"
       }
     },
     {
       "id": "mops-history-2885-1150924-1",
       "date": "2026-09-24",
       "announced_date": "2026-09-24",
-      "fact_date": "2026-09-24",
+      "fact_date": null,
       "announced_time": "15:06:33",
       "title": "元大金控代子公司元大證券 公告新任薪資報酬委員會成員",
-      "description": "1.發生變動日期:115/09/24 2.功能性委員會名稱:薪資報酬委員會 3.舊任者姓名:無 4.舊任者簡歷:不適用 5.新任者姓名:吳宗成 6.新任者簡歷: (1)元大金融控股股份有限公司獨立董事 (2)國立臺灣科技大學資訊管理系特聘教授 (3)財團法人電信技術中心董事長 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）: 新任 8.異動原因:新任 9.原任期（例xx/xx/xx ~ xx/xx/xx）:115/09/24~117/06/01 10.新任生效日期:115/09/24 11.其他應敘明事項:無",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
@@ -89,9 +110,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150924",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "2885",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -110,9 +131,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150922",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "2885",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -131,9 +152,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150921",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "2885",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -152,9 +173,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150915",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "2885",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -173,9 +194,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150914",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "2885",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -194,9 +215,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150911",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "2885",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -215,9 +236,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150910",
-        "marketKind": "sii",
+        "serialNumber": "2",
         "companyId": "2885",
-        "serialNumber": "2"
+        "marketKind": "sii"
       }
     },
     {
@@ -236,9 +257,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150910",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "2885",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -257,9 +278,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150907",
-        "marketKind": "sii",
+        "serialNumber": "3",
         "companyId": "2885",
-        "serialNumber": "3"
+        "marketKind": "sii"
       }
     },
     {
@@ -278,9 +299,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150907",
-        "marketKind": "sii",
+        "serialNumber": "2",
         "companyId": "2885",
-        "serialNumber": "2"
+        "marketKind": "sii"
       }
     },
     {
@@ -299,9 +320,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150907",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "2885",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -320,9 +341,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150903",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "2885",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -341,9 +362,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150901",
-        "marketKind": "sii",
+        "serialNumber": "2",
         "companyId": "2885",
-        "serialNumber": "2"
+        "marketKind": "sii"
       }
     },
     {
@@ -362,9 +383,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150901",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "2885",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -383,9 +404,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150828",
-        "marketKind": "sii",
+        "serialNumber": "1",
         "companyId": "2885",
-        "serialNumber": "1"
+        "marketKind": "sii"
       }
     },
     {
@@ -404,9 +425,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150827",
-        "marketKind": "sii",
+        "serialNumber": "7",
         "companyId": "2885",
-        "serialNumber": "7"
+        "marketKind": "sii"
       }
     },
     {
@@ -425,9 +446,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150827",
-        "marketKind": "sii",
+        "serialNumber": "6",
         "companyId": "2885",
-        "serialNumber": "6"
+        "marketKind": "sii"
       }
     },
     {
@@ -446,9 +467,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150827",
-        "marketKind": "sii",
+        "serialNumber": "5",
         "companyId": "2885",
-        "serialNumber": "5"
+        "marketKind": "sii"
       }
     },
     {
@@ -467,9 +488,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150827",
-        "marketKind": "sii",
+        "serialNumber": "4",
         "companyId": "2885",
-        "serialNumber": "4"
+        "marketKind": "sii"
       }
     },
     {
@@ -488,30 +509,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "enterDate": "1150827",
-        "marketKind": "sii",
+        "serialNumber": "3",
         "companyId": "2885",
-        "serialNumber": "3"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150827-2",
-      "date": "2026-08-27",
-      "announced_date": "2026-08-27",
-      "fact_date": null,
-      "announced_time": "15:38:34",
-      "title": "公告本公司擬於民國115年8月31日至9月1日受邀參加高盛證券於香港舉行之投資人會議—Goldman Sachs Asia Leaders Conference 2026",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150827",
-        "marketKind": "sii",
-        "companyId": "2885",
-        "serialNumber": "2"
+        "marketKind": "sii"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-28T00:15:29.736Z",
+      "fetched_at": "2026-09-28T12:31:12.894Z",
       "row_count": 4,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-27T00:17:27.452Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-09-28T12:33:11.479Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
