@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-29T00:16:29.520Z",
+  "collected_at": "2026-09-29T12:34:00.664Z",
   "company": {
     "id": "tpex-6023",
     "ticker": "6023",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-6023-1150929-1",
+      "date": "2026-09-29",
+      "announced_date": "2026-09-29",
+      "fact_date": "2026-09-29",
+      "announced_time": "15:30:18",
+      "title": "元大期貨公告115年現金增資催繳股款期間屆滿暨 催繳股份發放公告",
+      "description": "1.事實發生日:115/09/29 2.公司名稱:元大期貨股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:本公司115年現金增資催繳股款期間自115年08月28日 至115年09月29日下午3點30分止。 6.因應措施: (1)未於催繳期間繳納股款之原股東即喪失認股權利。 (2)於催繳期間繳納股款之原股東，所認購之股數將於115年10月 07日劃撥至股東指定之集保帳戶。 (3)若股東有任何疑問，請洽詢本公司股務代理機構元大證券股份 有限公司股務代理部(臺北市大安區敦化南路2段67號地下1樓， 電話：(02)2586-5859)。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第9款所定 對股東權益或證券價格有重大影響之事項):無。",
+      "clause": "第53款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150929",
+        "serialNumber": "1",
+        "companyId": "6023",
+        "marketKind": "otc"
+      }
+    },
     {
       "id": "mops-history-6023-1150921-1",
       "date": "2026-09-21",
@@ -77,11 +98,11 @@
       "id": "mops-history-6023-1150827-1",
       "date": "2026-08-27",
       "announced_date": "2026-08-27",
-      "fact_date": "2026-08-27",
+      "fact_date": null,
       "announced_time": "14:00:19",
       "title": "元大期貨公告115年現金增資催繳股款相關事宜",
-      "description": "1.事實發生日:115/08/27 2.公司名稱:元大期貨股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:本公司115年現金增資股款繳納期限已於115年08月27日截止， 惟仍有部份認股人尚未繳納股款，特此催告。 6.因應措施: (1)茲依公司法第266條第3項準用同法第142條之規定，自民國115年08月28日 至民國115年09月29日下午3點30分止為催繳股款期間。 (2)尚未繳款之認股人，請於上述期間內，持原繳款書至合作金庫商業銀行 敦南分行暨全國各分行繳款，逾期未繳款者即喪失認股之權利。 (3)於催繳期間繳納股款之認股人，俟催繳期滿經集保公司作業後，依其認購 股數撥入認股人之集保帳戶。 (4)若認股人有任何疑問，請洽詢本公司股務代理機構元大證券股份有限公司 股務代理部(臺北市大安區敦化南路2段67號地下1樓，電話：(02)2586-5859)。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第9款所定 對股東權益或證券價格有重大影響之事項):無。",
-      "clause": "第53款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
         "companyId": "6023",
         "marketKind": "otc"
       }
-    },
-    {
-      "id": "mops-history-6023-1150320-1",
-      "date": "2026-03-20",
-      "announced_date": "2026-03-20",
-      "fact_date": null,
-      "announced_time": "13:58:29",
-      "title": "元大期貨受邀參加證券櫃檯買賣中心舉辦之法人說明會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150320",
-        "serialNumber": "1",
-        "companyId": "6023",
-        "marketKind": "otc"
-      }
     }
   ],
   "references": [
@@ -541,14 +541,14 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-29T00:15:32.915Z",
-      "row_count": 4,
+      "fetched_at": "2026-09-29T12:32:09.923Z",
+      "row_count": 7,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-28T12:33:38.653Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-09-29T12:35:32.407Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

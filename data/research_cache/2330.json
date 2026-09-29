@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-29T00:16:29.520Z",
+  "collected_at": "2026-09-29T12:34:00.664Z",
   "company": {
     "id": "twse-2330",
     "ticker": "2330",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2330-1150929-1",
+      "date": "2026-09-29",
+      "announced_date": "2026-09-29",
+      "fact_date": "2026-10-15",
+      "announced_time": "14:39:16",
+      "title": "公告本公司115年第三季法人說明會將於115年10月15日召開",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/10/15 1.召開法人說明會之日期：115/10/15 2.召開法人說明會之時間：14 時 00 分 3.召開法人說明會之地點：線上法說會 4.法人說明會擇要訊息：(1)公布本公司2026年第3季財務報告及2026年第4季業績展望。(2)參加方式：請參見https://investor.tsmc.com/chinese/quarterly-results/2026/q3 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150929",
+        "serialNumber": "1",
+        "companyId": "2330",
+        "marketKind": "sii"
+      }
+    },
     {
       "id": "mops-history-2330-1150910-1",
       "date": "2026-09-10",
@@ -77,11 +98,11 @@
       "id": "mops-history-2330-1150901-1",
       "date": "2026-09-01",
       "announced_date": "2026-09-01",
-      "fact_date": "2026-09-01",
+      "fact_date": null,
       "announced_time": "14:05:23",
       "title": "公告本公司調整民國115年第一季每股現金股利金額",
-      "description": "1.董事會或股東會決議日期:NA 2.原發放股利種類及金額: 盈餘分派現金股利新台幣181,526,590,469元，每股配發新台幣7.0元。 3.變更後發放股利種類及金額: 盈餘分派現金股利新台幣181,526,590,469元，每股配發新台幣7.00000137元。 4.變更原因: 每股現金股利金額之細微變動係由於在董事會決議股利分派至配息基準日間， 本公司收回113年限制員工權利新股部分股數，因此本公司流通在外之股數變 化所致。 5.其他應敘明事項: 依據本公司115/5/12董事會決議，授權董事長調整每股現金股利金額。",
-      "clause": "第14款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
         "companyId": "2330",
         "marketKind": "sii"
       }
-    },
-    {
-      "id": "mops-history-2330-1150602-1",
-      "date": "2026-06-02",
-      "announced_date": "2026-06-02",
-      "fact_date": null,
-      "announced_time": "18:04:55",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150602",
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
-      }
     }
   ],
   "references": [
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-29T00:15:32.754Z",
+      "fetched_at": "2026-09-29T12:32:09.625Z",
       "row_count": 13,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-09-28T12:33:04.053Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-09-29T12:34:44.053Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
