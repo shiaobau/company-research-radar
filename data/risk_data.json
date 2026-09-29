@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-09-28T12:31:14.842Z",
+  "generated_at": "2026-09-29T00:15:34.153Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-28T12:31:14.842Z"
+      "refreshed_at": "2026-09-29T00:15:34.153Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-28T12:31:14.842Z"
+      "refreshed_at": "2026-09-29T00:15:34.153Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -99,7 +99,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-28T12:31:14.842Z"
+      "refreshed_at": "2026-09-29T00:15:34.153Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -122,7 +122,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-28T12:31:14.842Z"
+      "refreshed_at": "2026-09-29T00:15:34.153Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -145,7 +145,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-28T12:31:14.842Z"
+      "refreshed_at": "2026-09-29T00:15:34.153Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -156,19 +156,39 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
-      "negative_event_count": 0,
+      "event_count": 1,
+      "negative_event_count": 1,
       "positive_event_count": 0,
       "review_event_count": 0,
-      "negative_event_points": 0,
-      "negative_event_categories": {},
+      "negative_event_points": 18,
+      "negative_event_categories": {
+        "regulatory_enforcement": 1
+      },
       "disclosure_violation_count": 0,
-      "score": 92,
-      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
+      "score": 76,
+      "rationale": "負向/待釐清重大訊息 1 則；未偵測到資訊申報違規。",
+      "events": [
+        {
+          "date": "2026-09-28",
+          "announce_date": "2026-09-28",
+          "time": "160339",
+          "title": "元大金控代子公司元大證券(韓國)公告受韓國金融委員會裁罰",
+          "clause": "第26款",
+          "description": "1.事實發生日：115/09/28 2.事實發生主體：代子公司申報：元大證券(韓國) 3.發生緣由(事件說明)：元大證券(韓國)因受韓國金融監督局檢查發現其公司債銷售流程 有相關缺失，經韓國金融委員會核處罰鍰。 4.處理過程：元大證券(韓國)已完成相關改善計畫及教育訓練，並於115年9月28日自行繳清罰鍰 。 5.處分情形：核處罰鍰韓圜11.07億元；於115年9月28日(含當日)前自行繳納罰鍰者， 可適用減免20%罰鍰之規定(即改為繳納韓圜8.856億元)。 6.是否遭裁處罰鍰：是 7.裁罰金額(元)：新台幣 0 元; 韓圜 1,107,000,000 元 8.預計可能損失或影響：韓圜8.856億元 9.可能獲得保險理賠之金額(元)：不適用 10.改善情形及未來因應措施：元大證券(韓國)已強化相關控管措施並完成相關教育訓練。 11.是否前已就同一事件發布重大訊息：否 12.其他應述明事項：1.裁罰金額韓圜11.07億元約當為新臺幣2,607萬元； 減免20%後之罰鍰金額韓圜8.856億元約當為新臺幣2,085萬元。 2.本公告匯率換算以韓圜兌新臺幣0.023546為準。",
+          "source_id": "twse_material_events",
+          "sentiment": "negative",
+          "risk_class": "negative",
+          "risk_category": "regulatory_enforcement",
+          "risk_category_label": "監理處分或重大內控缺失",
+          "risk_points": 18,
+          "matched_patterns": [
+            "裁罰"
+          ]
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-28T12:31:14.842Z"
+      "refreshed_at": "2026-09-29T00:15:34.153Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -191,7 +211,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-28T12:31:14.842Z"
+      "refreshed_at": "2026-09-29T00:15:34.153Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -214,7 +234,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-28T12:31:14.842Z"
+      "refreshed_at": "2026-09-29T00:15:34.153Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -237,7 +257,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-28T12:31:14.842Z"
+      "refreshed_at": "2026-09-29T00:15:34.153Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -260,7 +280,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-28T12:31:14.842Z"
+      "refreshed_at": "2026-09-29T00:15:34.153Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -283,7 +303,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-28T12:31:14.842Z"
+      "refreshed_at": "2026-09-29T00:15:34.153Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -306,7 +326,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-09-28T12:31:14.842Z"
+      "refreshed_at": "2026-09-29T00:15:34.153Z"
     }
   }
 }
