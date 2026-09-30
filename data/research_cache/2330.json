@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-29T12:34:00.664Z",
+  "collected_at": "2026-09-30T00:18:07.790Z",
   "company": {
     "id": "twse-2330",
     "ticker": "2330",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "e87de2186d4335c5a733",
+      "date": "2026-09-29",
+      "announced_date": "2026-09-29",
+      "fact_date": "2026-10-15",
+      "announced_time": "143916",
+      "title": "公告本公司115年第三季法人說明會將於115年10月15日召開",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/10/15 1.召開法人說明會之日期：115/10/15 2.召開法人說明會之時間：14 時 00 分 3.召開法人說明會之地點：線上法說會 4.法人說明會擇要訊息：(1)公布本公司2026年第3季財務報告及2026年第4季業績展望。(2)參加方式：請參見https://investor.tsmc.com/chinese/quarterly-results/2026/q3 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2330-1150929-1",
       "date": "2026-09-29",
@@ -492,27 +507,6 @@
         "companyId": "2330",
         "marketKind": "sii"
       }
-    },
-    {
-      "id": "mops-history-2330-1150603-1",
-      "date": "2026-06-03",
-      "announced_date": "2026-06-03",
-      "fact_date": null,
-      "announced_time": "17:34:11",
-      "title": "本公司代子公司 TSMC Global Ltd. 公告取得固定收益證券",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150603",
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-29T12:32:09.625Z",
-      "row_count": 13,
+      "fetched_at": "2026-09-30T00:16:24.480Z",
+      "row_count": 115,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-09-29T12:34:44.053Z",
       "row_count": 24,
       "detail_count": 4,

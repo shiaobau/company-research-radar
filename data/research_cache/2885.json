@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-29T12:34:00.664Z",
+  "collected_at": "2026-09-30T00:18:07.790Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "42e52295c47901216e72",
-      "date": "2026-09-28",
-      "announced_date": "2026-09-28",
-      "fact_date": "2026-09-28",
-      "announced_time": "160339",
-      "title": "元大金控代子公司元大證券(韓國)公告受韓國金融委員會裁罰",
-      "description": "1.事實發生日：115/09/28 2.事實發生主體：代子公司申報：元大證券(韓國) 3.發生緣由(事件說明)：元大證券(韓國)因受韓國金融監督局檢查發現其公司債銷售流程 有相關缺失，經韓國金融委員會核處罰鍰。 4.處理過程：元大證券(韓國)已完成相關改善計畫及教育訓練，並於115年9月28日自行繳清罰鍰 。 5.處分情形：核處罰鍰韓圜11.07億元；於115年9月28日(含當日)前自行繳納罰鍰者， 可適用減免20%罰鍰之規定(即改為繳納韓圜8.856億元)。 6.是否遭裁處罰鍰：是 7.裁罰金額(元)：新台幣 0 元; 韓圜 1,107,000,000 元 8.預計可能損失或影響：韓圜8.856億元 9.可能獲得保險理賠之金額(元)：不適用 10.改善情形及未來因應措施：元大證券(韓國)已強化相關控管措施並完成相關教育訓練。 11.是否前已就同一事件發布重大訊息：否 12.其他應述明事項：1.裁罰金額韓圜11.07億元約當為新臺幣2,607萬元； 減免20%後之罰鍰金額韓圜8.856億元約當為新臺幣2,085萬元。 2.本公告匯率換算以韓圜兌新臺幣0.023546為準。",
-      "clause": "第26款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-2885-1150928-1",
       "date": "2026-09-28",
@@ -507,6 +492,27 @@
         "companyId": "2885",
         "marketKind": "sii"
       }
+    },
+    {
+      "id": "mops-history-2885-1150827-3",
+      "date": "2026-08-27",
+      "announced_date": "2026-08-27",
+      "fact_date": null,
+      "announced_time": "16:42:11",
+      "title": "元大金控代子公司元大證券公告向元大銀行原取得使用權資產租賃範圍調整",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1150827",
+        "serialNumber": "3",
+        "companyId": "2885",
+        "marketKind": "sii"
+      }
     }
   ],
   "references": [
@@ -535,13 +541,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-29T12:32:09.625Z",
-      "row_count": 13,
+      "fetched_at": "2026-09-30T00:16:24.480Z",
+      "row_count": 115,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-09-29T12:34:55.460Z",
       "row_count": 24,
       "detail_count": 4,
