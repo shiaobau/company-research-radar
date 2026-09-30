@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-09-30T00:18:07.790Z",
+  "collected_at": "2026-09-30T12:32:53.625Z",
   "company": {
     "id": "tpex-6023",
     "ticker": "6023",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "a1145bed078220ca9e2b",
+      "date": "2026-09-29",
+      "announced_date": "2026-09-29",
+      "fact_date": "2026-09-29",
+      "announced_time": "153018",
+      "title": "元大期貨公告115年現金增資催繳股款期間屆滿暨 催繳股份發放公告",
+      "description": "1.事實發生日:115/09/29 2.公司名稱:元大期貨股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:本公司115年現金增資催繳股款期間自115年08月28日 至115年09月29日下午3點30分止。 6.因應措施: (1)未於催繳期間繳納股款之原股東即喪失認股權利。 (2)於催繳期間繳納股款之原股東，所認購之股數將於115年10月 07日劃撥至股東指定之集保帳戶。 (3)若股東有任何疑問，請洽詢本公司股務代理機構元大證券股份 有限公司股務代理部(臺北市大安區敦化南路2段67號地下1樓， 電話：(02)2586-5859)。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第9款所定 對股東權益或證券價格有重大影響之事項):無。",
+      "clause": "第53款",
+      "source_id": "tpex_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-6023-1150929-1",
       "date": "2026-09-29",
@@ -492,27 +507,6 @@
         "companyId": "6023",
         "marketKind": "otc"
       }
-    },
-    {
-      "id": "mops-history-6023-1150409-1",
-      "date": "2026-04-09",
-      "announced_date": "2026-04-09",
-      "fact_date": null,
-      "announced_time": "13:50:13",
-      "title": "元大期貨公告115年3月份營運概況",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1150409",
-        "serialNumber": "1",
-        "companyId": "6023",
-        "marketKind": "otc"
-      }
     }
   ],
   "references": [
@@ -541,8 +535,8 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-09-30T00:16:24.734Z",
-      "row_count": 7,
+      "fetched_at": "2026-09-30T12:30:54.926Z",
+      "row_count": 60,
       "available": true
     },
     {
