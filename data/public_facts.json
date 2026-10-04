@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-10-04T00:16:15.512Z",
+  "generated_at": "2026-10-04T12:31:19.814Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -130,11 +130,11 @@
       "note": "上櫃公司一般業資產負債表，用於流動比率、負債比率與每股淨值。"
     },
     {
-      "id": "yahoo_finance_chart",
-      "title": "Yahoo Finance：台股歷史日線資料",
-      "short_title": "Yahoo Finance 股價",
-      "url": "https://query1.finance.yahoo.com/v8/finance/chart/",
-      "note": "當交易所歷史查詢暫時不可用時，作為次要公開市場資料備援；使用 .TW 或 .TWO 代號，並在每筆資料標示來源。"
+      "id": "tpex_trading_stock",
+      "title": "證券櫃檯買賣中心：個股日成交資訊",
+      "short_title": "TPEx 股價",
+      "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock",
+      "note": "上櫃公司個股日成交資訊，用於計算近一年價格區間、20/60 日趨勢。"
     },
     {
       "id": "tpex_valuation",
@@ -204,7 +204,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-10-04T00:16:15.512Z",
+      "generated_at": "2026-10-04T12:31:19.814Z",
       "facts": [
         {
           "id": "official_classification",
@@ -242,7 +242,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 16.11；股價淨值比 3.17；殖利率 3.14%。本益比相對有利 52 百分位；股淨比相對有利 6 百分位；殖利率相對有利 31 百分位。比較母體：食品工業 34 家。",
+          "value": "本益比 16.05；股價淨值比 3.16；殖利率 3.15%。本益比相對有利 55 百分位；股淨比相對有利 6 百分位；殖利率相對有利 31 百分位。比較母體：食品工業 34 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -250,7 +250,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-01：外資淨買賣 90,060 股；投信淨買賣 0 股；三大法人合計 92,060 股；融資餘額 255 張；融券餘額 0 張。",
+          "value": "2026-10-02：外資淨買賣 -77,031 股；投信淨買賣 0 股；三大法人合計 -76,245 股；融資餘額 255 張；融券餘額 0 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -280,7 +280,7 @@
     "twse-1707": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-10-04T00:16:15.512Z",
+      "generated_at": "2026-10-04T12:31:19.814Z",
       "facts": [
         {
           "id": "official_classification",
@@ -318,7 +318,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 11.06；股價淨值比 1.24；殖利率 7%。本益比相對有利 85 百分位；股淨比相對有利 81 百分位；殖利率相對有利 94 百分位。比較母體：生技醫療 158 家。",
+          "value": "本益比 10.99；股價淨值比 1.23；殖利率 7.04%。本益比相對有利 85 百分位；股淨比相對有利 82 百分位；殖利率相對有利 94 百分位。比較母體：生技醫療 158 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -326,7 +326,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-01：外資淨買賣 -45,128 股；投信淨買賣 0 股；三大法人合計 -45,078 股；融資餘額 445 張；融券餘額 20 張。",
+          "value": "2026-10-02：外資淨買賣 -45,004 股；投信淨買賣 0 股；三大法人合計 -45,436 股；融資餘額 456 張；融券餘額 20 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -356,7 +356,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-10-04T00:16:15.512Z",
+      "generated_at": "2026-10-04T12:31:19.814Z",
       "facts": [
         {
           "id": "official_classification",
@@ -394,7 +394,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 23.23；股價淨值比 4.37；殖利率 1.69%。本益比相對有利 65 百分位；股淨比相對有利 37 百分位；殖利率相對有利 60 百分位。比較母體：半導體業 205 家。",
+          "value": "本益比 24.29；股價淨值比 4.56；殖利率 1.62%。本益比相對有利 64 百分位；股淨比相對有利 36 百分位；殖利率相對有利 59 百分位。比較母體：半導體業 205 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -402,7 +402,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-01：外資淨買賣 25,460,901 股；投信淨買賣 2,495,000 股；三大法人合計 29,723,592 股；融資餘額 174,574 張；融券餘額 5,684 張。",
+          "value": "2026-10-02：外資淨買賣 3,674,279 股；投信淨買賣 1,863,584 股；三大法人合計 7,837,617 股；融資餘額 189,831 張；融券餘額 6,373 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -432,7 +432,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-10-04T00:16:15.512Z",
+      "generated_at": "2026-10-04T12:31:19.814Z",
       "facts": [
         {
           "id": "official_classification",
@@ -470,7 +470,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 60.15；股價淨值比 16.72；殖利率 0.61%。本益比相對有利 22 百分位；股淨比相對有利 4 百分位；殖利率相對有利 30 百分位。比較母體：電子零組件業 210 家。",
+          "value": "本益比 59.99；股價淨值比 16.67；殖利率 0.62%。本益比相對有利 24 百分位；股淨比相對有利 5 百分位；殖利率相對有利 31 百分位。比較母體：電子零組件業 210 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -478,7 +478,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-01：外資淨買賣 -725,958 股；投信淨買賣 117,299 股；三大法人合計 -628,641 股；融資餘額 10,520 張；融券餘額 119 張。",
+          "value": "2026-10-02：外資淨買賣 -1,540,936 股；投信淨買賣 84,361 股；三大法人合計 -1,435,573 股；融資餘額 10,203 張；融券餘額 129 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -508,7 +508,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-10-04T00:16:15.512Z",
+      "generated_at": "2026-10-04T12:31:19.814Z",
       "facts": [
         {
           "id": "official_classification",
@@ -546,7 +546,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 28.75；股價淨值比 10；殖利率 0.89%。本益比相對有利 54 百分位；股淨比相對有利 11 百分位；殖利率相對有利 41 百分位。比較母體：半導體業 205 家。",
+          "value": "本益比 28.98；股價淨值比 10.08；殖利率 0.88%。本益比相對有利 54 百分位；股淨比相對有利 11 百分位；殖利率相對有利 42 百分位。比較母體：半導體業 205 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -554,7 +554,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-01：外資淨買賣 3,090,730 股；投信淨買賣 596,450 股；三大法人合計 4,289,708 股；融資餘額 30,696 張；融券餘額 18 張。",
+          "value": "2026-10-02：外資淨買賣 -5,913,974 股；投信淨買賣 253,678 股；三大法人合計 -5,343,414 股；融資餘額 30,939 張；融券餘額 18 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -584,7 +584,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-10-04T00:16:15.512Z",
+      "generated_at": "2026-10-04T12:31:19.814Z",
       "facts": [
         {
           "id": "official_classification",
@@ -622,7 +622,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 16.04；股價淨值比 2.38；殖利率 3.21%。本益比相對有利 25 百分位；股淨比相對有利 13 百分位；殖利率相對有利 28 百分位。比較母體：金融保險 40 家。",
+          "value": "本益比 15.64；股價淨值比 2.33；殖利率 3.29%。本益比相對有利 28 百分位；股淨比相對有利 13 百分位；殖利率相對有利 25 百分位。比較母體：金融保險 40 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -630,7 +630,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-01：外資淨買賣 -11,879,856 股；投信淨買賣 1,528,640 股；三大法人合計 -9,761,999 股；融資餘額 1,630 張；融券餘額 4 張。",
+          "value": "2026-10-02：外資淨買賣 -9,626,470 股；投信淨買賣 1,764,355 股；三大法人合計 -7,019,697 股；融資餘額 1,358 張；融券餘額 30 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -660,7 +660,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-10-04T00:16:15.512Z",
+      "generated_at": "2026-10-04T12:31:19.814Z",
       "facts": [
         {
           "id": "official_classification",
@@ -698,7 +698,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 19.12；股價淨值比 1.81；殖利率 3.56%。本益比相對有利 5 百分位；股淨比相對有利 30 百分位；殖利率相對有利 33 百分位。比較母體：金融保險 40 家。",
+          "value": "本益比 19.01；股價淨值比 1.8；殖利率 3.58%。本益比相對有利 5 百分位；股淨比相對有利 30 百分位；殖利率相對有利 33 百分位。比較母體：金融保險 40 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -706,7 +706,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-01：外資淨買賣 14,469,895 股；投信淨買賣 -1,895,000 股；三大法人合計 13,653,802 股；融資餘額 2,616 張；融券餘額 19 張。",
+          "value": "2026-10-02：外資淨買賣 13,683,716 股；投信淨買賣 2,421,501 股；三大法人合計 17,610,058 股；融資餘額 2,830 張；融券餘額 26 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -736,7 +736,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-10-04T00:16:15.512Z",
+      "generated_at": "2026-10-04T12:31:19.814Z",
       "facts": [
         {
           "id": "official_classification",
@@ -766,23 +766,31 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-02 收盤 8.39；區間報酬：20日 -2.56%；60日 -5.52%；當日量為 20 日均量 2.09 倍。",
+          "value": "2026-10-02 收盤 8.39；區間報酬：20日 -6.78%；60日 -8.31%；當日量為 20 日均量 1.97 倍。",
           "source_ids": [
-            "yahoo_finance_chart"
+            "tpex_trading_stock"
           ]
         },
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 0；股價淨值比 1.09；殖利率 0%。本益比相對有利 0 百分位；股淨比相對有利 87 百分位；殖利率相對有利 15 百分位。比較母體：電子零組件業 210 家。",
+          "value": "本益比 0；股價淨值比 1.12；殖利率 0%。本益比相對有利 0 百分位；股淨比相對有利 87 百分位；殖利率相對有利 15 百分位。比較母體：電子零組件業 210 家。",
           "source_ids": [
             "tpex_valuation"
           ]
         },
         {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：禾琦企業有限公司、承育企業管理顧問有限公司、采育企業管理顧問有限公司。",
+          "source_ids": [
+            "tpex_major_shareholders"
+          ]
+        },
+        {
           "id": "governance_snapshot",
           "label": "股權與治理",
-          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
+          "value": "主要股東揭露 3 位；內部人轉讓 0 筆。",
           "source_ids": [
             "tpex_major_shareholders",
             "tpex_insider_transfer",
@@ -803,7 +811,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-10-04T00:16:15.512Z",
+      "generated_at": "2026-10-04T12:31:19.814Z",
       "facts": [
         {
           "id": "official_classification",
@@ -841,7 +849,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 70.13；股價淨值比 1.94；殖利率 1.83%。本益比相對有利 18 百分位；股淨比相對有利 46 百分位；殖利率相對有利 58 百分位。比較母體：光電業 115 家。",
+          "value": "本益比 67.69；股價淨值比 1.87；殖利率 1.89%。本益比相對有利 19 百分位；股淨比相對有利 53 百分位；殖利率相對有利 59 百分位。比較母體：光電業 114 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -849,7 +857,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-01：外資淨買賣 -93,138,155 股；投信淨買賣 600,000 股；三大法人合計 -96,716,651 股；融資餘額 335,614 張；融券餘額 7,637 張。",
+          "value": "2026-10-02：外資淨買賣 2,752,216 股；投信淨買賣 36,988 股；三大法人合計 4,649,372 股；融資餘額 340,472 張；融券餘額 4,586 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
@@ -879,7 +887,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-10-04T00:16:15.512Z",
+      "generated_at": "2026-10-04T12:31:19.814Z",
       "facts": [
         {
           "id": "official_classification",
@@ -909,15 +917,15 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-02 收盤 84.7；區間報酬：20日 -1.97%；60日 -8.54%；當日量為 20 日均量 0.41 倍。",
+          "value": "2026-10-02 收盤 84.7；區間報酬：20日 -1.97%；60日 -17.77%；當日量為 20 日均量 0.41 倍。",
           "source_ids": [
-            "yahoo_finance_chart"
+            "tpex_trading_stock"
           ]
         },
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 9.37；股價淨值比 1.36；殖利率 6.49%。本益比相對有利 70 百分位；股淨比相對有利 50 百分位；殖利率相對有利 98 百分位。比較母體：金融保險 40 家。",
+          "value": "本益比 9.36；股價淨值比 1.36；殖利率 6.49%。本益比相對有利 70 百分位；股淨比相對有利 53 百分位；殖利率相對有利 98 百分位。比較母體：金融保險 40 家。",
           "source_ids": [
             "tpex_valuation"
           ]
@@ -925,7 +933,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-01：外資淨買賣 -239,359 股；投信淨買賣 -239,359 股；三大法人合計 -279,359 股；融資餘額 878 張；融券餘額 1 張。",
+          "value": "2026-10-02：外資淨買賣 -135,021 股；投信淨買賣 -135,021 股；三大法人合計 -175,021 股；融資餘額 882 張；融券餘額 0 張。",
           "source_ids": [
             "tpex_margin_balance",
             "tpex_institutional_trading"
@@ -955,7 +963,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-10-04T00:16:15.512Z",
+      "generated_at": "2026-10-04T12:31:19.814Z",
       "facts": [
         {
           "id": "official_classification",
@@ -985,15 +993,15 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-02 收盤 79.5；區間報酬：20日 -0.13%；60日 -9.66%；當日量為 20 日均量 0.66 倍。",
+          "value": "2026-10-02 收盤 79.5；區間報酬：20日 -0.13%；60日 -11.17%；當日量為 20 日均量 0.66 倍。",
           "source_ids": [
-            "yahoo_finance_chart"
+            "tpex_trading_stock"
           ]
         },
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 9.69；股價淨值比 0.94；殖利率 6.19%。本益比相對有利 93 百分位；股淨比相對有利 89 百分位；殖利率相對有利 90 百分位。比較母體：生技醫療 158 家。",
+          "value": "本益比 9.53；股價淨值比 0.92；殖利率 6.29%。本益比相對有利 93 百分位；股淨比相對有利 89 百分位；殖利率相對有利 90 百分位。比較母體：生技醫療 158 家。",
           "source_ids": [
             "tpex_valuation"
           ]
@@ -1001,7 +1009,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-01：外資淨買賣 0 股；投信淨買賣 0 股；三大法人合計 132 股；融資餘額 171 張；融券餘額 5 張。",
+          "value": "2026-10-02：外資淨買賣 -7,000 股；投信淨買賣 -7,000 股；三大法人合計 -7,000 股；融資餘額 172 張；融券餘額 0 張。",
           "source_ids": [
             "tpex_margin_balance",
             "tpex_institutional_trading"
@@ -1031,7 +1039,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-10-04T00:16:15.512Z",
+      "generated_at": "2026-10-04T12:31:19.814Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1069,7 +1077,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 11.45；股價淨值比 1.88；殖利率 4.92%。本益比相對有利 70 百分位；股淨比相對有利 33 百分位；殖利率相對有利 60 百分位。比較母體：其他 93 家。",
+          "value": "本益比 11.32；股價淨值比 1.86；殖利率 4.98%。本益比相對有利 67 百分位；股淨比相對有利 32 百分位；殖利率相對有利 61 百分位。比較母體：其他 93 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -1077,7 +1085,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-01：外資淨買賣 -260,735 股；投信淨買賣 0 股；三大法人合計 -262,428 股；融資餘額 1,072 張；融券餘額 4 張。",
+          "value": "2026-10-02：外資淨買賣 42,000 股；投信淨買賣 -1,448 股；三大法人合計 41,638 股；融資餘額 1,108 張；融券餘額 4 張。",
           "source_ids": [
             "twse_margin_balance",
             "twse_institutional_trading"
