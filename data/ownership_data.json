@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-10-06T12:33:08.222Z",
+  "generated_at": "2026-10-07T00:15:43.652Z",
   "sources": [
     {
       "id": "twse_major_shareholders",
@@ -56,16 +56,25 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "major_shareholder_count": 0,
+      "major_shareholder_count": 2,
       "insider_transfer_count": 0,
       "disclosure_violation_count": 0,
-      "score": 63,
-      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [],
+      "score": 73,
+      "rationale": "持股逾 10% 大股東 2 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
+      "major_shareholders": [
+        {
+          "name": "國衡投資有限公司",
+          "source_id": "twse_major_shareholders"
+        },
+        {
+          "name": "鑫德投資有限公司",
+          "source_id": "twse_major_shareholders"
+        }
+      ],
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-06T12:33:08.222Z"
+      "refreshed_at": "2026-10-07T00:15:43.652Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -86,7 +95,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-06T12:33:08.222Z"
+      "refreshed_at": "2026-10-07T00:15:43.652Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -107,7 +116,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-06T12:33:08.222Z"
+      "refreshed_at": "2026-10-07T00:15:43.652Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -119,16 +128,21 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "major_shareholder_count": 0,
+      "major_shareholder_count": 1,
       "insider_transfer_count": 0,
       "disclosure_violation_count": 0,
-      "score": 63,
-      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [],
+      "score": 73,
+      "rationale": "持股逾 10% 大股東 1 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
+      "major_shareholders": [
+        {
+          "name": "香港商香達國際有限公司",
+          "source_id": "twse_major_shareholders"
+        }
+      ],
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-06T12:33:08.222Z"
+      "refreshed_at": "2026-10-07T00:15:43.652Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -149,7 +163,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-06T12:33:08.222Z"
+      "refreshed_at": "2026-10-07T00:15:43.652Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -170,7 +184,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-06T12:33:08.222Z"
+      "refreshed_at": "2026-10-07T00:15:43.652Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -191,7 +205,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-06T12:33:08.222Z"
+      "refreshed_at": "2026-10-07T00:15:43.652Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -225,7 +239,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-06T12:33:08.222Z"
+      "refreshed_at": "2026-10-07T00:15:43.652Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -246,7 +260,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-06T12:33:08.222Z"
+      "refreshed_at": "2026-10-07T00:15:43.652Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -272,7 +286,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-06T12:33:08.222Z"
+      "refreshed_at": "2026-10-07T00:15:43.652Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -298,7 +312,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-06T12:33:08.222Z"
+      "refreshed_at": "2026-10-07T00:15:43.652Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -319,7 +333,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-06T12:33:08.222Z"
+      "refreshed_at": "2026-10-07T00:15:43.652Z"
     }
   }
 }

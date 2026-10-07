@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-10-06T12:33:08.222Z",
+  "generated_at": "2026-10-07T00:15:43.652Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -204,7 +204,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-10-06T12:33:08.222Z",
+      "generated_at": "2026-10-07T00:15:43.652Z",
       "facts": [
         {
           "id": "official_classification",
@@ -257,9 +257,17 @@
           ]
         },
         {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：國衡投資有限公司、鑫德投資有限公司。",
+          "source_ids": [
+            "twse_major_shareholders"
+          ]
+        },
+        {
           "id": "governance_snapshot",
           "label": "股權與治理",
-          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
+          "value": "主要股東揭露 2 位；內部人轉讓 0 筆。",
           "source_ids": [
             "twse_major_shareholders",
             "twse_insider_transfer",
@@ -280,7 +288,7 @@
     "twse-1707": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-10-06T12:33:08.222Z",
+      "generated_at": "2026-10-07T00:15:43.652Z",
       "facts": [
         {
           "id": "official_classification",
@@ -356,7 +364,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-10-06T12:33:08.222Z",
+      "generated_at": "2026-10-07T00:15:43.652Z",
       "facts": [
         {
           "id": "official_classification",
@@ -409,14 +417,6 @@
           ]
         },
         {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-10-05：公告本公司第七次海外無擔保轉換公司債完成訂價。",
-          "source_ids": [
-            "twse_material_events"
-          ]
-        },
-        {
           "id": "governance_snapshot",
           "label": "股權與治理",
           "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
@@ -429,7 +429,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 1 則；申報違規 0 筆。",
+          "value": "官方事件 0 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -440,7 +440,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-10-06T12:33:08.222Z",
+      "generated_at": "2026-10-07T00:15:43.652Z",
       "facts": [
         {
           "id": "official_classification",
@@ -493,9 +493,25 @@
           ]
         },
         {
+          "id": "latest_disclosure",
+          "label": "近期重大訊息",
+          "value": "2026-10-06：本公司代子公司Eltek Norway AS公告決議召集115年 股東臨時會。",
+          "source_ids": [
+            "twse_material_events"
+          ]
+        },
+        {
+          "id": "major_shareholders",
+          "label": "大股東資料",
+          "value": "持股逾 10% 大股東：香港商香達國際有限公司。",
+          "source_ids": [
+            "twse_major_shareholders"
+          ]
+        },
+        {
           "id": "governance_snapshot",
           "label": "股權與治理",
-          "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
+          "value": "主要股東揭露 1 位；內部人轉讓 0 筆。",
           "source_ids": [
             "twse_major_shareholders",
             "twse_insider_transfer",
@@ -505,7 +521,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 0 則；申報違規 0 筆。",
+          "value": "官方事件 2 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -516,7 +532,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-10-06T12:33:08.222Z",
+      "generated_at": "2026-10-07T00:15:43.652Z",
       "facts": [
         {
           "id": "official_classification",
@@ -592,7 +608,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-10-06T12:33:08.222Z",
+      "generated_at": "2026-10-07T00:15:43.652Z",
       "facts": [
         {
           "id": "official_classification",
@@ -645,14 +661,6 @@
           ]
         },
         {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-10-05：元大金控代子公司元大證券公告取得 上海商業儲蓄銀行股份有限公司一百一十五年度第一期次順位金融債券。",
-          "source_ids": [
-            "twse_material_events"
-          ]
-        },
-        {
           "id": "governance_snapshot",
           "label": "股權與治理",
           "value": "主要股東揭露 0 位；內部人轉讓 0 筆。",
@@ -665,7 +673,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 1 則；申報違規 0 筆。",
+          "value": "官方事件 0 則；申報違規 0 筆。",
           "source_ids": [
             "twse_material_events",
             "twse_disclosure_violations"
@@ -676,7 +684,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-10-06T12:33:08.222Z",
+      "generated_at": "2026-10-07T00:15:43.652Z",
       "facts": [
         {
           "id": "official_classification",
@@ -752,7 +760,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-10-06T12:33:08.222Z",
+      "generated_at": "2026-10-07T00:15:43.652Z",
       "facts": [
         {
           "id": "official_classification",
@@ -827,7 +835,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-10-06T12:33:08.222Z",
+      "generated_at": "2026-10-07T00:15:43.652Z",
       "facts": [
         {
           "id": "official_classification",
@@ -903,7 +911,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-10-06T12:33:08.222Z",
+      "generated_at": "2026-10-07T00:15:43.652Z",
       "facts": [
         {
           "id": "official_classification",
@@ -987,7 +995,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-10-06T12:33:08.222Z",
+      "generated_at": "2026-10-07T00:15:43.652Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1071,7 +1079,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-10-06T12:33:08.222Z",
+      "generated_at": "2026-10-07T00:15:43.652Z",
       "facts": [
         {
           "id": "official_classification",
