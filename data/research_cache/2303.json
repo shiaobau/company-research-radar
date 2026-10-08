@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-10-07T12:34:12.683Z",
+  "collected_at": "2026-10-08T00:17:44.627Z",
   "company": {
     "id": "twse-2303",
     "ticker": "2303",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "8c01ec488a6d6066a100",
+      "date": "2026-10-07",
+      "announced_date": "2026-10-07",
+      "fact_date": "2026-10-07",
+      "announced_time": "144013",
+      "title": "說明115年10月6日中時電子報報導",
+      "description": "1.事實發生日:115/10/07 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.傳播媒體名稱:中時電子報 6.報導內容: 「... 預估聯電2026年營收年增近21％、獲利跳升近1.33倍...」 7.發生緣由:本公司對於媒體之臆測性報導，無法提供評論。有關本公司財務、業務 資訊，皆以公開資訊觀測站公告為準。 8.因應措施:無。 9.其他應敘明事項:無。",
+      "clause": "第51款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2303-1151005-1",
       "date": "2026-10-05",
@@ -492,27 +507,6 @@
         "enterDate": "1150629",
         "serialNumber": "1"
       }
-    },
-    {
-      "id": "mops-history-2303-1150623-6",
-      "date": "2026-06-23",
-      "announced_date": "2026-06-23",
-      "fact_date": null,
-      "announced_time": "17:08:40",
-      "title": "係因本公司有價證券於集中交易市場達公布注意交易資訊 標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150623",
-        "serialNumber": "6"
-      }
     }
   ],
   "references": [
@@ -541,8 +535,8 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-10-07T12:32:22.359Z",
-      "row_count": 54,
+      "fetched_at": "2026-10-08T00:16:43.003Z",
+      "row_count": 72,
       "available": true
     },
     {
