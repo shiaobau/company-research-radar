@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1",
   "ticker": "6023",
-  "fetched_at": "2026-10-07T00:19:00.206Z",
+  "fetched_at": "2026-10-08T12:34:36.213Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-6023-1151008-1",
+      "date": "2026-10-08",
+      "announced_date": "2026-10-08",
+      "fact_date": "2026-10-08",
+      "announced_time": "13:50:21",
+      "title": "元大期貨公告115年9月份營運概況",
+      "description": "1.事實發生日:115/10/08 2.公司名稱:元大期貨股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由: 元大期貨公告115年09月份自結合併損益: (1)9月份稅前淨利：382,015仟元、每股稅前淨利1.01元。 (2)9月份稅後淨利：295,739仟元、每股稅後淨利0.79元。 (3)1至9月份累計稅前淨利：3,315,789 仟元、每股稅前淨利8.81元。 (4)1至9月份累計稅後淨利：2,622,548 仟元、每股稅後淨利6.97元。 以上資料係本公司自行結算結果，尚未經會計師查核簽證。 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第9款所定 對股東權益或證券價格有重大影響之事項):無",
+      "clause": "第53款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "otc",
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1151008"
+      }
+    },
     {
       "id": "mops-history-6023-1150930-3",
       "date": "2026-09-30",
@@ -28,10 +49,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150930",
-        "serialNumber": "3"
+        "companyId": "6023",
+        "serialNumber": "3",
+        "enterDate": "1150930"
       }
     },
     {
@@ -49,10 +70,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150930",
-        "serialNumber": "2"
+        "companyId": "6023",
+        "serialNumber": "2",
+        "enterDate": "1150930"
       }
     },
     {
@@ -70,31 +91,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150930",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150930"
       }
     },
     {
       "id": "mops-history-6023-1150929-1",
       "date": "2026-09-29",
       "announced_date": "2026-09-29",
-      "fact_date": "2026-09-29",
+      "fact_date": null,
       "announced_time": "15:30:18",
       "title": "元大期貨公告115年現金增資催繳股款期間屆滿暨 催繳股份發放公告",
-      "description": "1.事實發生日:115/09/29 2.公司名稱:元大期貨股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:本公司115年現金增資催繳股款期間自115年08月28日 至115年09月29日下午3點30分止。 6.因應措施: (1)未於催繳期間繳納股款之原股東即喪失認股權利。 (2)於催繳期間繳納股款之原股東，所認購之股數將於115年10月 07日劃撥至股東指定之集保帳戶。 (3)若股東有任何疑問，請洽詢本公司股務代理機構元大證券股份 有限公司股務代理部(臺北市大安區敦化南路2段67號地下1樓， 電話：(02)2586-5859)。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第9款所定 對股東權益或證券價格有重大影響之事項):無。",
-      "clause": "第53款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150929",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150929"
       }
     },
     {
@@ -112,10 +133,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150921",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150921"
       }
     },
     {
@@ -133,10 +154,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150908",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150908"
       }
     },
     {
@@ -154,10 +175,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150902",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150902"
       }
     },
     {
@@ -175,10 +196,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150827",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150827"
       }
     },
     {
@@ -196,10 +217,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150819",
-        "serialNumber": "3"
+        "companyId": "6023",
+        "serialNumber": "3",
+        "enterDate": "1150819"
       }
     },
     {
@@ -217,10 +238,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150819",
-        "serialNumber": "2"
+        "companyId": "6023",
+        "serialNumber": "2",
+        "enterDate": "1150819"
       }
     },
     {
@@ -238,10 +259,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150819",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150819"
       }
     },
     {
@@ -259,10 +280,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150807",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150807"
       }
     },
     {
@@ -280,10 +301,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150805",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150805"
       }
     },
     {
@@ -301,10 +322,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150729",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150729"
       }
     },
     {
@@ -322,10 +343,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150728",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150728"
       }
     },
     {
@@ -343,10 +364,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150723",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150723"
       }
     },
     {
@@ -364,10 +385,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150708",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150708"
       }
     },
     {
@@ -385,10 +406,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150617",
-        "serialNumber": "4"
+        "companyId": "6023",
+        "serialNumber": "4",
+        "enterDate": "1150617"
       }
     },
     {
@@ -406,10 +427,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150617",
-        "serialNumber": "2"
+        "companyId": "6023",
+        "serialNumber": "2",
+        "enterDate": "1150617"
       }
     },
     {
@@ -427,10 +448,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150617",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150617"
       }
     },
     {
@@ -448,10 +469,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150608",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150608"
       }
     },
     {
@@ -469,10 +490,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150527",
-        "serialNumber": "1"
+        "companyId": "6023",
+        "serialNumber": "1",
+        "enterDate": "1150527"
       }
     },
     {
@@ -490,31 +511,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "6023",
         "marketKind": "otc",
-        "enterDate": "1150508",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-6023-1150506-2",
-      "date": "2026-05-06",
-      "announced_date": "2026-05-06",
-      "fact_date": null,
-      "announced_time": "13:51:06",
-      "title": "元大期貨公告董事會通過捐贈元大文教基金會事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
         "companyId": "6023",
-        "marketKind": "otc",
-        "enterDate": "1150506",
-        "serialNumber": "2"
+        "serialNumber": "1",
+        "enterDate": "1150508"
       }
     }
   ]
