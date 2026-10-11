@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-10-11T00:16:09.880Z",
+  "generated_at": "2026-10-11T12:32:15.116Z",
   "note": "產業基本面公式化資料。未完成來源支持的產業子檢核時，不產生產業基本面分數。",
   "sources": [
     {
@@ -562,9 +562,9 @@
       "industry_evidence_score": null,
       "industry_evidence_completed_count": 0,
       "industry_evidence_total_count": 5,
-      "revenue_score": 76,
+      "revenue_score": 59,
       "financial_score": 78,
-      "catalyst_score": 71,
+      "catalyst_score": 57,
       "risk_score": 92,
       "score": null,
       "rationale": "產業證據尚未完成所有來源支持的子檢核，因此不產生產業基本面分數。"
@@ -589,7 +589,7 @@
       "industry_evidence_score": null,
       "industry_evidence_completed_count": 0,
       "industry_evidence_total_count": 5,
-      "revenue_score": 55,
+      "revenue_score": 52,
       "financial_score": 70,
       "catalyst_score": 53,
       "risk_score": 92,
