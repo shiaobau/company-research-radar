@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-10-08T12:33:10.585Z",
+  "collected_at": "2026-10-11T00:17:17.157Z",
   "company": {
     "id": "tpex-3115",
     "ticker": "3115",
@@ -541,14 +541,14 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-10-08T12:32:05.645Z",
-      "row_count": 33,
+      "fetched_at": "2026-10-11T00:16:08.762Z",
+      "row_count": 4,
       "available": true
     },
     {
       "source_id": "mops_history_api",
       "cache_status": "updated",
-      "fetched_at": "2026-10-08T12:34:20.755Z",
+      "fetched_at": "2026-10-11T00:18:09.585Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

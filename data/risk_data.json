@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-10-08T12:32:09.906Z",
+  "generated_at": "2026-10-11T00:16:09.880Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-08T12:32:09.906Z"
+      "refreshed_at": "2026-10-11T00:16:09.880Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-08T12:32:09.906Z"
+      "refreshed_at": "2026-10-11T00:16:09.880Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -87,48 +87,7 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 1,
-      "negative_event_count": 0,
-      "positive_event_count": 0,
-      "review_event_count": 1,
-      "negative_event_points": 0,
-      "negative_event_categories": {},
-      "disclosure_violation_count": 0,
-      "score": 91,
-      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [
-        {
-          "date": "2026-10-07",
-          "announce_date": "2026-10-07",
-          "time": "144013",
-          "title": "說明115年10月6日中時電子報報導",
-          "clause": "第51款",
-          "description": "1.事實發生日:115/10/07 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.傳播媒體名稱:中時電子報 6.報導內容: 「... 預估聯電2026年營收年增近21％、獲利跳升近1.33倍...」 7.發生緣由:本公司對於媒體之臆測性報導，無法提供評論。有關本公司財務、業務 資訊，皆以公開資訊觀測站公告為準。 8.因應措施:無。 9.其他應敘明事項:無。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
-          "risk_points": 0,
-          "matched_patterns": [
-            "說明"
-          ]
-        }
-      ],
-      "violations": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-10-08T12:32:09.906Z"
-    },
-    "twse-2308": {
-      "ticker": "2308",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_material_events",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
       "review_event_count": 0,
@@ -140,7 +99,30 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-08T12:32:09.906Z"
+      "refreshed_at": "2026-10-11T00:16:09.880Z"
+    },
+    "twse-2308": {
+      "ticker": "2308",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "event_count": 0,
+      "negative_event_count": 0,
+      "positive_event_count": 0,
+      "review_event_count": 0,
+      "negative_event_points": 0,
+      "negative_event_categories": {},
+      "disclosure_violation_count": 0,
+      "score": 92,
+      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
+      "events": [],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-10-11T00:16:09.880Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -163,7 +145,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-08T12:32:09.906Z"
+      "refreshed_at": "2026-10-11T00:16:09.880Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -174,7 +156,7 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 1,
+      "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
       "review_event_count": 0,
@@ -186,7 +168,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-08T12:32:09.906Z"
+      "refreshed_at": "2026-10-11T00:16:09.880Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -209,7 +191,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-08T12:32:09.906Z"
+      "refreshed_at": "2026-10-11T00:16:09.880Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -232,7 +214,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-08T12:32:09.906Z"
+      "refreshed_at": "2026-10-11T00:16:09.880Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -255,7 +237,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-08T12:32:09.906Z"
+      "refreshed_at": "2026-10-11T00:16:09.880Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -278,7 +260,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-08T12:32:09.906Z"
+      "refreshed_at": "2026-10-11T00:16:09.880Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -301,7 +283,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-08T12:32:09.906Z"
+      "refreshed_at": "2026-10-11T00:16:09.880Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -324,7 +306,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-08T12:32:09.906Z"
+      "refreshed_at": "2026-10-11T00:16:09.880Z"
     }
   }
 }
