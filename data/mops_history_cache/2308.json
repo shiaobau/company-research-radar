@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1",
   "ticker": "2308",
-  "fetched_at": "2026-10-11T00:17:44.919Z",
+  "fetched_at": "2026-10-12T12:34:58.436Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,69 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2308-1151012-2",
+      "date": "2026-10-12",
+      "announced_date": "2026-10-12",
+      "fact_date": "2026-10-12",
+      "announced_time": "18:29:01",
+      "title": "本公司代子公司台達電子(東莞)有限公司公告向關係人取得供營業使用之設備",
+      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 供營業使用之設備 2.事實發生日:115/5/25~115/10/12 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:依台達電子東莞內部核決權限規定辦理 民國115年10月12日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 台達電子(東莞)有限公司(簡稱台達電子東莞)向台達電子企業管理(上海)有限公司 (簡稱台達企管)購買供營業使用之設備，累積交易金額約人民幣98.88佰萬元。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：台達企管 與公司關係：台達電子東莞及台達企管皆為本公司之子公司 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 議價後交易 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 電匯 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 交易之決定方式：議價 決策單位：依台達電子東莞內部核決權限規定辦理 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 供營業用 24.本次交易表示異議之董事之意見: 不適用 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1151012",
+        "serialNumber": "2"
+      }
+    },
+    {
+      "id": "mops-history-2308-1151008-2",
+      "date": "2026-10-12",
+      "announced_date": "2026-10-12",
+      "fact_date": "2026-10-12",
+      "announced_time": "15:01:23",
+      "title": "發布本公司115年09月份業績資料",
+      "description": "1.事實發生日:115/10/12 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:發布本公司115年09月份業績資料 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 本公司115年09月份合併營業額為新台幣654.00億元，較去年同期合併營業額 新台幣570.61億元成長14.6%，較上月份合併營業額新台幣645.86億元成長1.3%； 115年1~9月份累積合併營業額為新台幣5,396.68億元，較去年同期累積合併營業 額新台幣3,932.72億元成長37.2%。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1151008",
+        "serialNumber": "2"
+      }
+    },
+    {
+      "id": "mops-history-2308-1151012-1",
+      "date": "2026-10-12",
+      "announced_date": "2026-10-12",
+      "fact_date": "2026-10-12",
+      "announced_time": "11:41:14",
+      "title": "美國國際貿易委員會337調查說明",
+      "description": "1.事實發生日:115/10/12 2.公司名稱:本公司及子公司Delta Electronics (Americas) Ltd.、DET Logistics (USA) Corporation (以下稱本公司及子公司) 3.與公司關係(請輸入本公司或子公司):本公司及子公司 4.相互持股比例:不適用 5.發生緣由:美國國際貿易委員會(USITC)就本公司及子公司之特定專利爭議展開調 查。 6.因應措施:本公司及子公司向來重視智慧財產權及各地法律，關於美國國際貿易委 員會(USITC)就特定專利爭議展開的調查，本公司及子公司將依相關程序積極因應 維護公司權益。由於案件已進入法律程序，目前不便進一步評論。相關產品目前未 受影響。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項):無",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1151012",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2308-1151007-1",
       "date": "2026-10-07",
@@ -28,73 +91,73 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1151007"
+        "marketKind": "sii",
+        "enterDate": "1151007",
+        "serialNumber": "1"
       }
     },
     {
       "id": "mops-history-2308-1151006-2",
       "date": "2026-10-06",
       "announced_date": "2026-10-06",
-      "fact_date": "2026-10-06",
+      "fact_date": null,
       "announced_time": "17:20:42",
       "title": "本公司代子公司Eltek Norway AS公告115年股東臨時會 重要決議事項",
-      "description": "1.股東臨時會日期:115/10/06 2.重要決議事項:通過修訂取得或處分資產處理程序案 3.其他應敘明事項:無",
-      "clause": "第18款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "2",
-        "enterDate": "1151006"
+        "marketKind": "sii",
+        "enterDate": "1151006",
+        "serialNumber": "2"
       }
     },
     {
       "id": "mops-history-2308-1151006-1",
       "date": "2026-10-06",
       "announced_date": "2026-10-06",
-      "fact_date": "2026-10-06",
+      "fact_date": null,
       "announced_time": "17:20:22",
       "title": "本公司代子公司Eltek Norway AS公告決議召集115年 股東臨時會",
-      "description": "1.董事會決議日期:115/10/06 2.股東臨時會召開日期:115/10/06 3.股東臨時會召開地點:書面決議 4.召集事由一、報告事項:無 5.召集事由二、承認事項:無 6.召集事由三、討論事項:修訂取得或處分資產處理程序案 7.召集事由四、選舉事項:無 8.召集事由五、其他議案:無 9.召集事由六、臨時動議:無 10.停止過戶起始日期:NA 11.停止過戶截止日期:NA 12.其他應敘明事項:無",
-      "clause": "第17款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1151006"
+        "marketKind": "sii",
+        "enterDate": "1151006",
+        "serialNumber": "1"
       }
     },
     {
       "id": "mops-history-2308-1150921-2",
       "date": "2026-09-21",
       "announced_date": "2026-09-21",
-      "fact_date": "2026-09-21",
+      "fact_date": null,
       "announced_time": "17:53:20",
       "title": "(補充公告)本公司代子公司DET公告決議重建泰國BP1廠及BP1-P樓",
-      "description": "1.契約種類:工程合約 2.事實發生日:115/9/21~115/9/21 3.董事會通過日期: 民國115年7月24日 4.其他核決日期: 不適用 5.契約相對人及其與公司之關係: 本案土建工程契約相對人為新南洋建設有限公司(以下簡稱新南洋建設)。新南洋建設非本 公司之關係人。 6.契約主要內容（含契約總金額、預計參與投入之金額及契約起迄日期） 、限制條款及其他重要約定事項: 子公司Delta Electronics (Thailand) Public Company Limited(簡稱DET)董事會於民國 115年7月24日決議通過重建泰國BP1廠及BP1-P樓，暫估工程總價款約泰銖32億元。本案土 建工程將由新南洋建設承攬，總價款約為泰銖15.8億元。其他相關事宜，待確定後另行 公告。 7.專業估價者事務所或公司名稱及其估價結果: 係自地委建，故不適用。 8.不動產估價師姓名: 不適用 9.不動產估價師開業證書字號: 不適用 10.取得之具體目的: 因應未來業務發展所需 11.本次交易表示異議之董事意見: 無 12.本次交易為關係人交易:否 13.監察人承認或審計委員會同意日期: 不適用 14.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 15.是否尚未取得估價報告:否或不適用 16.尚未取得估價報告之原因: 不適用 17.估價結果有重大差異時，其差異原因及會計師意見: 不適用 18.會計師事務所名稱: 不適用 19.會計師姓名: 不適用 20.會計師開業證書字號: 不適用 21.前已就同一件事件發布重大訊息日期: 民國115年7月24日 22.其他敘明事項: 無",
-      "clause": "第20款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "2",
-        "enterDate": "1150921"
+        "marketKind": "sii",
+        "enterDate": "1150921",
+        "serialNumber": "2"
       }
     },
     {
@@ -112,10 +175,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150921"
+        "marketKind": "sii",
+        "enterDate": "1150921",
+        "serialNumber": "1"
       }
     },
     {
@@ -133,10 +196,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150917"
+        "marketKind": "sii",
+        "enterDate": "1150917",
+        "serialNumber": "1"
       }
     },
     {
@@ -154,10 +217,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "5",
-        "enterDate": "1150914"
+        "marketKind": "sii",
+        "enterDate": "1150914",
+        "serialNumber": "5"
       }
     },
     {
@@ -175,10 +238,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "4",
-        "enterDate": "1150914"
+        "marketKind": "sii",
+        "enterDate": "1150914",
+        "serialNumber": "4"
       }
     },
     {
@@ -196,10 +259,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "3",
-        "enterDate": "1150914"
+        "marketKind": "sii",
+        "enterDate": "1150914",
+        "serialNumber": "3"
       }
     },
     {
@@ -217,10 +280,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "2",
-        "enterDate": "1150914"
+        "marketKind": "sii",
+        "enterDate": "1150914",
+        "serialNumber": "2"
       }
     },
     {
@@ -238,10 +301,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150909"
+        "marketKind": "sii",
+        "enterDate": "1150909",
+        "serialNumber": "1"
       }
     },
     {
@@ -259,10 +322,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150908"
+        "marketKind": "sii",
+        "enterDate": "1150908",
+        "serialNumber": "1"
       }
     },
     {
@@ -280,10 +343,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "2",
-        "enterDate": "1150904"
+        "marketKind": "sii",
+        "enterDate": "1150904",
+        "serialNumber": "2"
       }
     },
     {
@@ -301,10 +364,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150904"
+        "marketKind": "sii",
+        "enterDate": "1150904",
+        "serialNumber": "1"
       }
     },
     {
@@ -322,10 +385,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150902"
+        "marketKind": "sii",
+        "enterDate": "1150902",
+        "serialNumber": "1"
       }
     },
     {
@@ -343,10 +406,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150828"
+        "marketKind": "sii",
+        "enterDate": "1150828",
+        "serialNumber": "1"
       }
     },
     {
@@ -364,10 +427,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150812"
+        "marketKind": "sii",
+        "enterDate": "1150812",
+        "serialNumber": "1"
       }
     },
     {
@@ -385,10 +448,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150810"
+        "marketKind": "sii",
+        "enterDate": "1150810",
+        "serialNumber": "1"
       }
     },
     {
@@ -406,10 +469,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150807"
+        "marketKind": "sii",
+        "enterDate": "1150807",
+        "serialNumber": "1"
       }
     },
     {
@@ -427,10 +490,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150803"
+        "marketKind": "sii",
+        "enterDate": "1150803",
+        "serialNumber": "1"
       }
     },
     {
@@ -448,73 +511,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150724"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150727-1",
-      "date": "2026-07-29",
-      "announced_date": "2026-07-29",
-      "fact_date": null,
-      "announced_time": "16:22:33",
-      "title": "公告本公司115年第2季合併財務報告業經董事會通過",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150727"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150724-3",
-      "date": "2026-07-24",
-      "announced_date": "2026-07-24",
-      "fact_date": null,
-      "announced_time": "19:54:59",
-      "title": "本公司代子公司Delta Electronics (Thailand) Public Company Limited公告向關係人取得機器設備",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "3",
-        "enterDate": "1150724"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150724-2",
-      "date": "2026-07-24",
-      "announced_date": "2026-07-24",
-      "fact_date": null,
-      "announced_time": "19:52:54",
-      "title": "本公司代子公司Delta Electronics (Thailand) Public Company Limited公告決議重建 泰國BP1廠及BP1-P樓",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "2",
-        "enterDate": "1150724"
+        "enterDate": "1150724",
+        "serialNumber": "1"
       }
     }
   ]

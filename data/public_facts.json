@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-10-12T00:15:54.947Z",
+  "generated_at": "2026-10-12T12:32:22.053Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -130,11 +130,11 @@
       "note": "上櫃公司一般業資產負債表，用於流動比率、負債比率與每股淨值。"
     },
     {
-      "id": "yahoo_finance_chart",
-      "title": "Yahoo Finance：台股歷史日線資料",
-      "short_title": "Yahoo Finance 股價",
-      "url": "https://query1.finance.yahoo.com/v8/finance/chart/",
-      "note": "當交易所歷史查詢暫時不可用時，作為次要公開市場資料備援；使用 .TW 或 .TWO 代號，並在每筆資料標示來源。"
+      "id": "tpex_trading_stock",
+      "title": "證券櫃檯買賣中心：個股日成交資訊",
+      "short_title": "TPEx 股價",
+      "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock",
+      "note": "上櫃公司個股日成交資訊，用於計算近一年價格區間、20/60 日趨勢。"
     },
     {
       "id": "tpex_valuation",
@@ -204,7 +204,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-10-12T00:15:54.947Z",
+      "generated_at": "2026-10-12T12:32:22.053Z",
       "facts": [
         {
           "id": "official_classification",
@@ -217,7 +217,7 @@
         {
           "id": "monthly_revenue",
           "label": "月營收",
-          "value": "2026-08 月營收年增 6.89%；月增 5.39%。",
+          "value": "2026-09 月營收年增 -7.68%；月增 -21.02%。",
           "source_ids": [
             "twse_monthly_revenue"
           ]
@@ -234,7 +234,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-08 收盤 77.9；區間報酬：20日 -3.11%；60日 -9.21%；當日量為 20 日均量 0.9 倍。",
+          "value": "2026-10-12 收盤 77.5；區間報酬：20日 -3.73%；60日 -12.13%；當日量為 20 日均量 1.34 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -288,7 +288,7 @@
     "twse-1707": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-10-12T00:15:54.947Z",
+      "generated_at": "2026-10-12T12:32:22.053Z",
       "facts": [
         {
           "id": "official_classification",
@@ -318,7 +318,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-08 收盤 85.4；區間報酬：20日 -5.64%；60日 -6.67%；當日量為 20 日均量 0.45 倍。",
+          "value": "2026-10-12 收盤 85.7；區間報酬：20日 -6.03%；60日 -6.75%；當日量為 20 日均量 0.47 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -326,7 +326,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 11.02；股價淨值比 1.24；殖利率 7.03%。本益比相對有利 86 百分位；股淨比相對有利 82 百分位；殖利率相對有利 94 百分位。比較母體：生技醫療 157 家。",
+          "value": "本益比 11.02；股價淨值比 1.24；殖利率 7.03%。本益比相對有利 86 百分位；股淨比相對有利 82 百分位；殖利率相對有利 93 百分位。比較母體：生技醫療 157 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -364,7 +364,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-10-12T00:15:54.947Z",
+      "generated_at": "2026-10-12T12:32:22.053Z",
       "facts": [
         {
           "id": "official_classification",
@@ -377,7 +377,7 @@
         {
           "id": "monthly_revenue",
           "label": "月營收",
-          "value": "2026-08 月營收年增 30.71%；月增 5.04%。",
+          "value": "2026-09 月營收年增 27.22%；月增 1.22%。",
           "source_ids": [
             "twse_monthly_revenue"
           ]
@@ -394,7 +394,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-08 收盤 147.5；區間報酬：20日 7.66%；60日 -2.32%；當日量為 20 日均量 0.45 倍。",
+          "value": "2026-10-12 收盤 145.5；區間報酬：20日 2.83%；60日 -12.35%；當日量為 20 日均量 0.55 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -402,7 +402,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 22.18；股價淨值比 4.17；殖利率 1.77%。本益比相對有利 67 百分位；股淨比相對有利 40 百分位；殖利率相對有利 63 百分位。比較母體：半導體業 205 家。",
+          "value": "本益比 22.18；股價淨值比 4.17；殖利率 1.77%。本益比相對有利 66 百分位；股淨比相對有利 40 百分位；殖利率相對有利 63 百分位。比較母體：半導體業 205 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -440,7 +440,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-10-12T00:15:54.947Z",
+      "generated_at": "2026-10-12T12:32:22.053Z",
       "facts": [
         {
           "id": "official_classification",
@@ -470,7 +470,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-08 收盤 1,965；區間報酬：20日 8.86%；60日 5.93%；當日量為 20 日均量 0.45 倍。",
+          "value": "2026-10-12 收盤 1,900；區間報酬：20日 5.85%；60日 0.53%；當日量為 20 日均量 0.98 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -478,7 +478,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 62.54；股價淨值比 17.38；殖利率 0.59%。本益比相對有利 23 百分位；股淨比相對有利 4 百分位；殖利率相對有利 30 百分位。比較母體：電子零組件業 209 家。",
+          "value": "本益比 62.54；股價淨值比 17.38；殖利率 0.59%。本益比相對有利 24 百分位；股淨比相對有利 4 百分位；殖利率相對有利 30 百分位。比較母體：電子零組件業 209 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -524,7 +524,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-10-12T00:15:54.947Z",
+      "generated_at": "2026-10-12T12:32:22.053Z",
       "facts": [
         {
           "id": "official_classification",
@@ -537,7 +537,7 @@
         {
           "id": "monthly_revenue",
           "label": "月營收",
-          "value": "2026-08 月營收年增 53.32%；月增 10.1%。",
+          "value": "2026-09 月營收年增 54.65%；月增 -0.57%。",
           "source_ids": [
             "twse_monthly_revenue"
           ]
@@ -554,7 +554,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-08 收盤 2,550；區間報酬：20日 3.24%；60日 5.37%；當日量為 20 日均量 1.05 倍。",
+          "value": "2026-10-12 收盤 2,540；區間報酬：20日 3.04%；60日 4.1%；當日量為 20 日均量 1.08 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -562,7 +562,7 @@
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 29.56；股價淨值比 10.28；殖利率 0.86%。本益比相對有利 54 百分位；股淨比相對有利 12 百分位；殖利率相對有利 40 百分位。比較母體：半導體業 205 家。",
+          "value": "本益比 29.56；股價淨值比 10.28；殖利率 0.86%。本益比相對有利 54 百分位；股淨比相對有利 11 百分位；殖利率相對有利 40 百分位。比較母體：半導體業 205 家。",
           "source_ids": [
             "twse_valuation"
           ]
@@ -600,7 +600,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-10-12T00:15:54.947Z",
+      "generated_at": "2026-10-12T12:32:22.053Z",
       "facts": [
         {
           "id": "official_classification",
@@ -630,7 +630,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-08 收盤 68.3；區間報酬：20日 -3.26%；60日 2.4%；當日量為 20 日均量 1.05 倍。",
+          "value": "2026-10-12 收盤 70.1；區間報酬：20日 0.57%；60日 4.63%；當日量為 20 日均量 1.24 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -676,7 +676,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-10-12T00:15:54.947Z",
+      "generated_at": "2026-10-12T12:32:22.053Z",
       "facts": [
         {
           "id": "official_classification",
@@ -706,7 +706,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-08 收盤 49.3；區間報酬：20日 -2.57%；60日 4.89%；當日量為 20 日均量 1.07 倍。",
+          "value": "2026-10-12 收盤 50；區間報酬：20日 -0.6%；60日 8.7%；當日量為 20 日均量 0.69 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -752,7 +752,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-10-12T00:15:54.947Z",
+      "generated_at": "2026-10-12T12:32:22.053Z",
       "facts": [
         {
           "id": "official_classification",
@@ -765,7 +765,7 @@
         {
           "id": "monthly_revenue",
           "label": "月營收",
-          "value": "2026-08 月營收年增 -21.17%；月增 50.44%。",
+          "value": "2026-09 月營收年增 13.72%；月增 41.37%。",
           "source_ids": [
             "tpex_monthly_revenue"
           ]
@@ -782,15 +782,15 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-08 收盤 8；區間報酬：20日 -12.95%；60日 -10.31%；當日量為 20 日均量 1.5 倍。",
+          "value": "2026-10-12 收盤 8；區間報酬：20日 -12.95%；60日 -11.11%；當日量為 20 日均量 0.24 倍。",
           "source_ids": [
-            "yahoo_finance_chart"
+            "tpex_trading_stock"
           ]
         },
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 0；股價淨值比 1.07；殖利率 0%。本益比相對有利 0 百分位；股淨比相對有利 89 百分位；殖利率相對有利 16 百分位。比較母體：電子零組件業 209 家。",
+          "value": "本益比 0；股價淨值比 1.07；殖利率 0%。本益比相對有利 0 百分位；股淨比相對有利 88 百分位；殖利率相對有利 16 百分位。比較母體：電子零組件業 209 家。",
           "source_ids": [
             "tpex_valuation"
           ]
@@ -827,7 +827,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-10-12T00:15:54.947Z",
+      "generated_at": "2026-10-12T12:32:22.053Z",
       "facts": [
         {
           "id": "official_classification",
@@ -857,7 +857,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-08 收盤 51；區間報酬：20日 4.51%；60日 -10.84%；當日量為 20 日均量 0.37 倍。",
+          "value": "2026-10-12 收盤 51.3；區間報酬：20日 2.4%；60日 -12.31%；當日量為 20 日均量 0.48 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
@@ -903,7 +903,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-10-12T00:15:54.947Z",
+      "generated_at": "2026-10-12T12:32:22.053Z",
       "facts": [
         {
           "id": "official_classification",
@@ -933,15 +933,15 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-08 收盤 84.1；區間報酬：20日 1.45%；60日 -6.56%；當日量為 20 日均量 0.3 倍。",
+          "value": "2026-10-12 收盤 84.2；區間報酬：20日 -1.52%；60日 -20.57%；當日量為 20 日均量 0.36 倍。",
           "source_ids": [
-            "yahoo_finance_chart"
+            "tpex_trading_stock"
           ]
         },
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 9.29；股價淨值比 1.35；殖利率 6.54%。本益比相對有利 70 百分位；股淨比相對有利 53 百分位；殖利率相對有利 98 百分位。比較母體：金融保險 40 家。",
+          "value": "本益比 9.3；股價淨值比 1.35；殖利率 6.53%。本益比相對有利 70 百分位；股淨比相對有利 53 百分位；殖利率相對有利 98 百分位。比較母體：金融保險 40 家。",
           "source_ids": [
             "tpex_valuation"
           ]
@@ -949,7 +949,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-08：外資淨買賣 -43,000 股；投信淨買賣 -43,000 股；三大法人合計 -43,000 股；融資餘額 884 張；融券餘額 0 張。",
+          "value": "2026-10-12：外資淨買賣 -106,552 股；投信淨買賣 -106,552 股；三大法人合計 -113,552 股；融資餘額 884 張；融券餘額 0 張。",
           "source_ids": [
             "tpex_margin_balance",
             "tpex_institutional_trading"
@@ -987,7 +987,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-10-12T00:15:54.947Z",
+      "generated_at": "2026-10-12T12:32:22.053Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1017,15 +1017,15 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-08 收盤 80.9；區間報酬：20日 3.45%；60日 -6.9%；當日量為 20 日均量 1.21 倍。",
+          "value": "2026-10-12 收盤 81.1；區間報酬：20日 2.66%；60日 -6.67%；當日量為 20 日均量 1.24 倍。",
           "source_ids": [
-            "yahoo_finance_chart"
+            "tpex_trading_stock"
           ]
         },
         {
           "id": "valuation_peer_snapshot",
           "label": "同業估值",
-          "value": "本益比 9.7；股價淨值比 0.94；殖利率 6.18%。本益比相對有利 94 百分位；股淨比相對有利 90 百分位；殖利率相對有利 90 百分位。比較母體：生技醫療 157 家。",
+          "value": "本益比 9.72；股價淨值比 0.94；殖利率 6.17%。本益比相對有利 93 百分位；股淨比相對有利 90 百分位；殖利率相對有利 89 百分位。比較母體：生技醫療 157 家。",
           "source_ids": [
             "tpex_valuation"
           ]
@@ -1033,7 +1033,7 @@
         {
           "id": "market_positioning_snapshot",
           "label": "法人與融資券",
-          "value": "2026-10-08：外資淨買賣 -5,000 股；投信淨買賣 -5,000 股；三大法人合計 -5,000 股；融資餘額 172 張；融券餘額 0 張。",
+          "value": "2026-10-12：外資淨買賣 4,000 股；投信淨買賣 4,000 股；三大法人合計 4,003 股；融資餘額 172 張；融券餘額 0 張。",
           "source_ids": [
             "tpex_margin_balance",
             "tpex_institutional_trading"
@@ -1071,7 +1071,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-10-12T00:15:54.947Z",
+      "generated_at": "2026-10-12T12:32:22.053Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1084,7 +1084,7 @@
         {
           "id": "monthly_revenue",
           "label": "月營收",
-          "value": "2026-08 月營收年增 7.08%；月增 1.61%。",
+          "value": "2026-09 月營收年增 3.6%；月增 -10.82%。",
           "source_ids": [
             "twse_monthly_revenue"
           ]
@@ -1101,7 +1101,7 @@
         {
           "id": "market_snapshot",
           "label": "股價資料",
-          "value": "2026-10-08 收盤 128；區間報酬：20日 -0.39%；60日 2.4%；當日量為 20 日均量 0.68 倍。",
+          "value": "2026-10-12 收盤 125；區間報酬：20日 -1.96%；60日 0%；當日量為 20 日均量 1.12 倍。",
           "source_ids": [
             "twse_stock_day"
           ]
