@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-10-11T12:34:21.555Z",
+  "collected_at": "2026-10-12T00:17:02.772Z",
   "company": {
     "id": "tpex-8279",
     "ticker": "8279",
@@ -540,10 +540,8 @@
   "source_status": [
     {
       "source_id": "tpex_material_events",
-      "cache_status": "fresh",
-      "fetched_at": "2026-10-11T12:32:13.674Z",
-      "row_count": 2,
-      "available": true
+      "available": false,
+      "error": "PowerShell failed: spawn powershell.exe ENOENT; Node fetch failed: 403 Forbidden for https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O"
     },
     {
       "source_id": "mops_history_api",
