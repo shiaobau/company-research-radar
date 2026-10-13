@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-10-12T12:32:22.053Z",
+  "generated_at": "2026-10-13T00:15:46.169Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-12T12:32:22.053Z"
+      "refreshed_at": "2026-10-13T00:15:46.169Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-12T12:32:22.053Z"
+      "refreshed_at": "2026-10-13T00:15:46.169Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -99,7 +99,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-12T12:32:22.053Z"
+      "refreshed_at": "2026-10-13T00:15:46.169Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -110,19 +110,37 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 3,
       "negative_event_count": 0,
       "positive_event_count": 0,
-      "review_event_count": 0,
+      "review_event_count": 1,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 92,
+      "score": 91,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-10-12",
+          "announce_date": "2026-10-12",
+          "time": "114114",
+          "title": "美國國際貿易委員會337調查說明",
+          "clause": "第51款",
+          "description": "1.事實發生日:115/10/12 2.公司名稱:本公司及子公司Delta Electronics (Americas) Ltd.、DET Logistics (USA) Corporation (以下稱本公司及子公司) 3.與公司關係(請輸入本公司或子公司):本公司及子公司 4.相互持股比例:不適用 5.發生緣由:美國國際貿易委員會(USITC)就本公司及子公司之特定專利爭議展開調 查。 6.因應措施:本公司及子公司向來重視智慧財產權及各地法律，關於美國國際貿易委 員會(USITC)就特定專利爭議展開的調查，本公司及子公司將依相關程序積極因應 維護公司權益。由於案件已進入法律程序，目前不便進一步評論。相關產品目前未 受影響。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項):無",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-12T12:32:22.053Z"
+      "refreshed_at": "2026-10-13T00:15:46.169Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -145,7 +163,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-12T12:32:22.053Z"
+      "refreshed_at": "2026-10-13T00:15:46.169Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -168,7 +186,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-12T12:32:22.053Z"
+      "refreshed_at": "2026-10-13T00:15:46.169Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -191,7 +209,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-12T12:32:22.053Z"
+      "refreshed_at": "2026-10-13T00:15:46.169Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -214,7 +232,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-12T12:32:22.053Z"
+      "refreshed_at": "2026-10-13T00:15:46.169Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -237,7 +255,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-12T12:32:22.053Z"
+      "refreshed_at": "2026-10-13T00:15:46.169Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -260,7 +278,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-12T12:32:22.053Z"
+      "refreshed_at": "2026-10-13T00:15:46.169Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -283,7 +301,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-12T12:32:22.053Z"
+      "refreshed_at": "2026-10-13T00:15:46.169Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -306,7 +324,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-12T12:32:22.053Z"
+      "refreshed_at": "2026-10-13T00:15:46.169Z"
     }
   }
 }
