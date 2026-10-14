@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-10-13T12:31:34.745Z",
+  "generated_at": "2026-10-14T00:16:06.772Z",
   "sources": [
     {
       "id": "twse_monthly_revenue",
@@ -37,7 +37,7 @@
       "score": 50,
       "rationale": "2026-09 月營收 YoY -7.68%，MoM -21.02%，累計 YoY 2.73%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-13T12:31:34.745Z"
+      "refreshed_at": "2026-10-14T00:16:06.772Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -47,18 +47,18 @@
         "twse_monthly_revenue"
       ],
       "evidence_level": "high",
-      "data_month": "2026-08",
-      "current_revenue_thousand_twd": 706058,
-      "previous_month_revenue_thousand_twd": 716707,
-      "last_year_month_revenue_thousand_twd": 884118,
-      "mom_pct": -1.49,
-      "yoy_pct": -20.14,
-      "cumulative_revenue_thousand_twd": 6114390,
-      "cumulative_yoy_pct": -5.36,
-      "score": 42,
-      "rationale": "2026-08 月營收 YoY -20.14%，MoM -1.49%，累計 YoY -5.36%。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。",
-      "cache_status": "stale",
-      "refreshed_at": "2026-10-11T12:32:15.116Z"
+      "data_month": "2026-09",
+      "current_revenue_thousand_twd": 726307,
+      "previous_month_revenue_thousand_twd": 706058,
+      "last_year_month_revenue_thousand_twd": 788737,
+      "mom_pct": 2.87,
+      "yoy_pct": -7.92,
+      "cumulative_revenue_thousand_twd": 6840697,
+      "cumulative_yoy_pct": -5.64,
+      "score": 50,
+      "rationale": "2026-09 月營收 YoY -7.92%，MoM 2.87%，累計 YoY -5.64%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-10-14T00:16:06.772Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -79,7 +79,7 @@
       "score": 79,
       "rationale": "2026-09 月營收 YoY 27.22%，MoM 1.22%，累計 YoY 16.08%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-13T12:31:34.745Z"
+      "refreshed_at": "2026-10-14T00:16:06.772Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -89,18 +89,18 @@
         "twse_monthly_revenue"
       ],
       "evidence_level": "high",
-      "data_month": "2026-08",
-      "current_revenue_thousand_twd": 64586049,
-      "previous_month_revenue_thousand_twd": 67073192,
-      "last_year_month_revenue_thousand_twd": 47859758,
-      "mom_pct": -3.71,
-      "yoy_pct": 34.95,
-      "cumulative_revenue_thousand_twd": 474267973,
-      "cumulative_yoy_pct": 41.06,
-      "score": 77,
-      "rationale": "2026-08 月營收 YoY 34.95%，MoM -3.71%，累計 YoY 41.06%。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。",
-      "cache_status": "stale",
-      "refreshed_at": "2026-10-11T12:32:15.116Z"
+      "data_month": "2026-09",
+      "current_revenue_thousand_twd": 65399563,
+      "previous_month_revenue_thousand_twd": 64586049,
+      "last_year_month_revenue_thousand_twd": 57060781,
+      "mom_pct": 1.26,
+      "yoy_pct": 14.61,
+      "cumulative_revenue_thousand_twd": 539667536,
+      "cumulative_yoy_pct": 37.22,
+      "score": 74,
+      "rationale": "2026-09 月營收 YoY 14.61%，MoM 1.26%，累計 YoY 37.22%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-10-14T00:16:06.772Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -121,7 +121,7 @@
       "score": 77,
       "rationale": "2026-09 月營收 YoY 54.65%，MoM -0.57%，累計 YoY 41.11%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-13T12:31:34.745Z"
+      "refreshed_at": "2026-10-14T00:16:06.772Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -140,7 +140,7 @@
       "cumulative_revenue_thousand_twd": 138745725,
       "cumulative_yoy_pct": 116.28,
       "score": 81,
-      "rationale": "2026-08 月營收 YoY 57.94%，MoM 11.53%，累計 YoY 116.28%。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。",
+      "rationale": "2026-08 月營收 YoY 57.94%，MoM 11.53%，累計 YoY 116.28%。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。",
       "cache_status": "stale",
       "refreshed_at": "2026-10-11T12:32:15.116Z"
     },
@@ -161,7 +161,7 @@
       "cumulative_revenue_thousand_twd": 62732497,
       "cumulative_yoy_pct": 16.58,
       "score": 72,
-      "rationale": "2026-08 月營收 YoY 15.55%，MoM -9.81%，累計 YoY 16.58%。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。",
+      "rationale": "2026-08 月營收 YoY 15.55%，MoM -9.81%，累計 YoY 16.58%。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。",
       "cache_status": "stale",
       "refreshed_at": "2026-10-11T12:32:15.116Z"
     },
@@ -184,7 +184,7 @@
       "score": 76,
       "rationale": "2026-09 月營收 YoY 13.72%，MoM 41.37%，累計 YoY 97.11%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-13T12:31:34.745Z"
+      "refreshed_at": "2026-10-14T00:16:06.772Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -194,18 +194,18 @@
         "twse_monthly_revenue"
       ],
       "evidence_level": "high",
-      "data_month": "2026-08",
-      "current_revenue_thousand_twd": 18696603,
-      "previous_month_revenue_thousand_twd": 18890249,
-      "last_year_month_revenue_thousand_twd": 18692317,
-      "mom_pct": -1.03,
-      "yoy_pct": 0.02,
-      "cumulative_revenue_thousand_twd": 167931047,
-      "cumulative_yoy_pct": 11.86,
-      "score": 61,
-      "rationale": "2026-08 月營收 YoY 0.02%，MoM -1.03%，累計 YoY 11.86%。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。 本次端點未回傳資料，暫時保留上一版快取。",
-      "cache_status": "stale",
-      "refreshed_at": "2026-10-11T12:32:15.116Z"
+      "data_month": "2026-09",
+      "current_revenue_thousand_twd": 19994593,
+      "previous_month_revenue_thousand_twd": 18696603,
+      "last_year_month_revenue_thousand_twd": 19861192,
+      "mom_pct": 6.94,
+      "yoy_pct": 0.67,
+      "cumulative_revenue_thousand_twd": 187925640,
+      "cumulative_yoy_pct": 10.56,
+      "score": 62,
+      "rationale": "2026-09 月營收 YoY 0.67%，MoM 6.94%，累計 YoY 10.56%。",
+      "cache_status": "fresh",
+      "refreshed_at": "2026-10-14T00:16:06.772Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -226,7 +226,7 @@
       "score": 59,
       "rationale": "2026-09 月營收 YoY -6.94%，MoM -9.08%，累計 YoY 36.23%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-13T12:31:34.745Z"
+      "refreshed_at": "2026-10-14T00:16:06.772Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -247,7 +247,7 @@
       "score": 52,
       "rationale": "2026-09 月營收 YoY -7.84%，MoM 12.69%，累計 YoY -5.34%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-13T12:31:34.745Z"
+      "refreshed_at": "2026-10-14T00:16:06.772Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -268,7 +268,7 @@
       "score": 60,
       "rationale": "2026-09 月營收 YoY 3.6%，MoM -10.82%，累計 YoY 3.32%。",
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-13T12:31:34.745Z"
+      "refreshed_at": "2026-10-14T00:16:06.772Z"
     }
   }
 }

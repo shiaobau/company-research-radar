@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1",
   "ticker": "2303",
-  "fetched_at": "2026-10-12T12:34:51.016Z",
+  "fetched_at": "2026-10-14T00:17:19.730Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2303-1151013-1",
+      "date": "2026-10-13",
+      "announced_date": "2026-10-13",
+      "fact_date": "2026-10-28",
+      "announced_time": "14:57:08",
+      "title": "本公司召開2026年第三季法人說明會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/10/28 1.召開法人說明會之日期：115/10/28 2.召開法人說明會之時間：17 時 00 分 3.召開法人說明會之地點：線上法說會 4.法人說明會擇要訊息：本公司2026年第三季財務暨營運報告。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1151013",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2303-1151007-1",
       "date": "2026-10-07",
@@ -80,11 +101,11 @@
       "id": "mops-history-2303-1150903-2",
       "date": "2026-09-03",
       "announced_date": "2026-09-03",
-      "fact_date": "2026-09-14",
+      "fact_date": null,
       "announced_time": "14:03:49",
       "title": "本公司受邀參與法人說明會相關資訊",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/09/14 1.召開法人說明會之日期：115/09/14 ~ 115/09/15 2.召開法人說明會之時間：09 時 00 分 3.召開法人說明會之地點：台北W飯店 4.法人說明會擇要訊息：本公司受邀參加瑞銀證券舉辦之法人說明會「Taiwan Summit 2026」。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-      "clause": "第12款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
@@ -493,27 +514,6 @@
         "companyId": "2303",
         "marketKind": "sii",
         "enterDate": "1150714",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150629-1",
-      "date": "2026-06-29",
-      "announced_date": "2026-06-29",
-      "fact_date": null,
-      "announced_time": "17:52:39",
-      "title": "公告本公司第二十二次買回公司股份期間屆滿及執行情形",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150629",
         "serialNumber": "1"
       }
     }
