@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1",
   "ticker": "2886",
-  "fetched_at": "2026-10-14T00:17:49.857Z",
+  "fetched_at": "2026-10-15T00:18:16.430Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2886-1151014-1",
+      "date": "2026-10-14",
+      "announced_date": "2026-10-14",
+      "fact_date": "2026-10-14",
+      "announced_time": "15:00:09",
+      "title": "公告本公司暨主要子公司115年9月份自結合併盈餘",
+      "description": "1.事實發生日:115/10/14 2.公司名稱:兆豐金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:公告本公司暨主要子公司115年9月份自結合併盈餘 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 公告本公司暨主要子公司115年9月份業績資料： 當月稅前 當月稅後 累積稅前 累積稅後 累積每股 盈餘 盈餘 盈餘 盈餘 稅後盈餘 (億元) (億元) (億元) (億元) (元) 兆豐金控 40.05 36.29 393.88 328.48 2.21 兆豐銀行 25.18 22.06 297.11 248.18 2.48 兆豐證券 12.01 11.76 56.89 50.33 4.20 兆豐票券 2.00 1.70 31.61 25.43 1.68 兆豐產險 1.38 1.14 10.09 8.60 2.62 註:兆豐金控115年9月30日每股淨值27.53元。 註:累計至9月未適用巨災保險準備金之累計每股稅後盈餘 兆豐金控為2.21元、兆豐產險為2.62元。 上述資料均係自結數字，未經會計師查核或核閱。",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2886",
+        "marketKind": "sii",
+        "enterDate": "1151014",
+        "serialNumber": "1"
+      }
+    },
     {
       "id": "mops-history-2886-1151002-1",
       "date": "2026-10-02",
@@ -80,11 +101,11 @@
       "id": "mops-history-2886-1150915-1",
       "date": "2026-09-15",
       "announced_date": "2026-09-15",
-      "fact_date": "2026-09-15",
+      "fact_date": null,
       "announced_time": "17:46:46",
       "title": "代本公司之子公司兆豐期貨股份有限公司公告現金增資認股 基準日相關事宜",
-      "description": "1.董事會決議或公司決定日期:115/09/15 2.發行股數:19,231,000股 3.每股面額:新台幣10元 4.發行總金額:新台幣500,006,000元 5.發行價格:新台幣26元 6.員工認股股數:不適用 7.原股東認購比率:100% 8.公開銷售方式及股數:不適用 9.畸零股及逾期未認購股份之處理方式:不適用 10.本次發行新股之權利義務:與原股份相同 11.本次增資資金用途:業務發展及強化財務結構之需求 12.現金增資認股基準日:115/09/15 13.最後過戶日:不適用 14.停止過戶起始日期:不適用 15.停止過戶截止日期:不適用 16.股款繳納期間:115/09/16 17.與代收及專戶存儲價款行庫訂約日期:無 18.委託代收存款機構:無 19.委託存儲款項機構:無 20.其他應敘明事項: (1)本增資案經金融監督管理委員會115年09月15日金管證期字第 1150355306號函核准在案。 (2)於115年08月26日第十屆董事會第三次會議，授權董事長訂定 現金增資認股基準日及相關作業日期。 (3)現金增資基準日為115年09月16日。",
-      "clause": "第11款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
@@ -494,27 +515,6 @@
         "marketKind": "sii",
         "enterDate": "1150714",
         "serialNumber": "2"
-      }
-    },
-    {
-      "id": "mops-history-2886-1150714-1",
-      "date": "2026-07-14",
-      "announced_date": "2026-07-14",
-      "fact_date": null,
-      "announced_time": "15:15:17",
-      "title": "公告本公司暨主要子公司115年6月份自結合併盈餘",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2886",
-        "marketKind": "sii",
-        "enterDate": "1150714",
-        "serialNumber": "1"
       }
     }
   ]
