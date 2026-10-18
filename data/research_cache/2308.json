@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-10-15T12:33:22.378Z",
+  "collected_at": "2026-10-18T00:16:58.946Z",
   "company": {
     "id": "twse-2308",
     "ticker": "2308",
@@ -10,6 +10,27 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2308-1151015-1",
+      "date": "2026-10-15",
+      "announced_date": "2026-10-15",
+      "fact_date": "2026-10-29",
+      "announced_time": "15:57:26",
+      "title": "本公司自辦法人說明會之相關資訊",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/10/29 1.召開法人說明會之日期：115/10/29 2.召開法人說明會之時間：15 時 00 分 3.召開法人說明會之地點：台達電子台北總部 4.法人說明會擇要訊息：本公司自辦法人說明會，說明115年第3季財務報告相關資訊 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "marketKind": "sii",
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1151015"
+      }
+    },
     {
       "id": "mops-history-2308-1151013-1",
       "date": "2026-10-13",
@@ -25,10 +46,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1151013",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1151013"
       }
     },
     {
@@ -46,10 +67,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1151012",
-        "serialNumber": "2"
+        "companyId": "2308",
+        "serialNumber": "2",
+        "enterDate": "1151012"
       }
     },
     {
@@ -67,31 +88,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1151008",
-        "serialNumber": "2"
+        "companyId": "2308",
+        "serialNumber": "2",
+        "enterDate": "1151008"
       }
     },
     {
       "id": "mops-history-2308-1151012-1",
       "date": "2026-10-12",
       "announced_date": "2026-10-12",
-      "fact_date": "2026-10-12",
+      "fact_date": null,
       "announced_time": "11:41:14",
       "title": "美國國際貿易委員會337調查說明",
-      "description": "1.事實發生日:115/10/12 2.公司名稱:本公司及子公司Delta Electronics (Americas) Ltd.、DET Logistics (USA) Corporation (以下稱本公司及子公司) 3.與公司關係(請輸入本公司或子公司):本公司及子公司 4.相互持股比例:不適用 5.發生緣由:美國國際貿易委員會(USITC)就本公司及子公司之特定專利爭議展開調 查。 6.因應措施:本公司及子公司向來重視智慧財產權及各地法律，關於美國國際貿易委 員會(USITC)就特定專利爭議展開的調查，本公司及子公司將依相關程序積極因應 維護公司權益。由於案件已進入法律程序，目前不便進一步評論。相關產品目前未 受影響。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項):無",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1151012",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1151012"
       }
     },
     {
@@ -109,10 +130,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1151007",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1151007"
       }
     },
     {
@@ -130,10 +151,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1151006",
-        "serialNumber": "2"
+        "companyId": "2308",
+        "serialNumber": "2",
+        "enterDate": "1151006"
       }
     },
     {
@@ -151,10 +172,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1151006",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1151006"
       }
     },
     {
@@ -172,10 +193,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150921",
-        "serialNumber": "2"
+        "companyId": "2308",
+        "serialNumber": "2",
+        "enterDate": "1150921"
       }
     },
     {
@@ -193,10 +214,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150921",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150921"
       }
     },
     {
@@ -214,10 +235,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150917",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150917"
       }
     },
     {
@@ -235,10 +256,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150914",
-        "serialNumber": "5"
+        "companyId": "2308",
+        "serialNumber": "5",
+        "enterDate": "1150914"
       }
     },
     {
@@ -256,10 +277,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150914",
-        "serialNumber": "4"
+        "companyId": "2308",
+        "serialNumber": "4",
+        "enterDate": "1150914"
       }
     },
     {
@@ -277,10 +298,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150914",
-        "serialNumber": "3"
+        "companyId": "2308",
+        "serialNumber": "3",
+        "enterDate": "1150914"
       }
     },
     {
@@ -298,10 +319,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150914",
-        "serialNumber": "2"
+        "companyId": "2308",
+        "serialNumber": "2",
+        "enterDate": "1150914"
       }
     },
     {
@@ -319,10 +340,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150909",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150909"
       }
     },
     {
@@ -340,10 +361,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150908",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150908"
       }
     },
     {
@@ -361,10 +382,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150904",
-        "serialNumber": "2"
+        "companyId": "2308",
+        "serialNumber": "2",
+        "enterDate": "1150904"
       }
     },
     {
@@ -382,10 +403,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150904",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150904"
       }
     },
     {
@@ -403,10 +424,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150902",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150902"
       }
     },
     {
@@ -424,10 +445,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150828",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150828"
       }
     },
     {
@@ -445,10 +466,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150812",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150812"
       }
     },
     {
@@ -466,10 +487,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150810",
-        "serialNumber": "1"
+        "companyId": "2308",
+        "serialNumber": "1",
+        "enterDate": "1150810"
       }
     },
     {
@@ -487,31 +508,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "companyId": "2308",
         "marketKind": "sii",
-        "enterDate": "1150807",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150803-1",
-      "date": "2026-08-03",
-      "announced_date": "2026-08-03",
-      "fact_date": null,
-      "announced_time": "16:49:08",
-      "title": "(補充公告)本公司董事會決議重建桃園一廠相關事宜公告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
         "companyId": "2308",
-        "marketKind": "sii",
-        "enterDate": "1150803",
-        "serialNumber": "1"
+        "serialNumber": "1",
+        "enterDate": "1150807"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-10-15T12:31:45.459Z",
-      "row_count": 63,
+      "fetched_at": "2026-10-18T00:15:45.540Z",
+      "row_count": 5,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-10-15T00:17:52.104Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-10-18T00:17:27.407Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
