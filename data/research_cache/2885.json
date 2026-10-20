@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-10-19T12:31:57.325Z",
+  "collected_at": "2026-10-20T00:16:35.953Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -10,6 +10,81 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "0004a92833c64944979a",
+      "date": "2026-10-19",
+      "announced_date": "2026-10-19",
+      "fact_date": "2026-10-19",
+      "announced_time": "165245",
+      "title": "元大金控代子公司元大銀行公告與元大證金之租賃關係消滅",
+      "description": "1. 原公告日期： 113/01/17 2. 簡述原公告申報內容： 元大銀行向關係人元大證金取得使用權資產位於臺中市北屯區崇德路二段46之1號 (1)租賃面積：196.86坪(含公設) (2)每單位價格：550元/坪(含營業稅) (3)租金總金額：108,273元/月(含營業稅) (4)使用權資產金額：4,726,015元(含營業稅) (5)租賃期間：113/02/01~116/12/31 3. 變動緣由及主要內容： 因元大銀行向元大證金購買臺中市北屯區崇德路二段46號及46之1至46之11號 全棟建物(含地下室)，自所有權移轉完成日起，原租賃關係因混同而消滅。 4. 變動後對公司財務業務之影響： 無重大影響 5. 其他應敘明事項： 無",
+      "clause": "第20款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "dba13e659c53dcdad350",
+      "date": "2026-10-19",
+      "announced_date": "2026-10-19",
+      "fact_date": "2026-10-19",
+      "announced_time": "165205",
+      "title": "元大金控代子公司元大銀行公告與元大證金之租賃關係消滅",
+      "description": "1. 原公告日期： 111/11/23 2. 簡述原公告申報內容： 元大銀行向關係人元大證金取得使用權資產位於臺中市北屯區崇德路二段46號1樓 (1)租賃面積：195.28坪(含公設) (2)每單位價格：1,080元/坪(含營業稅) (3)租金總金額：210,902元/月(含營業稅) (4)使用權資產金額：12,169,610元(含營業稅) (5)租賃期間：112/01/01~116/12/31 3. 變動緣由及主要內容： 因元大銀行向元大證金購買臺中市北屯區崇德路二段46號及46之1至46之11號 全棟建物(含地下室)，自所有權移轉完成日起，原租賃關係因混同而消滅。 4. 變動後對公司財務業務之影響： 無重大影響 5. 其他應敘明事項： 無",
+      "clause": "第20款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "6b0fbe0e9deb3697bf24",
+      "date": "2026-10-19",
+      "announced_date": "2026-10-19",
+      "fact_date": "2026-10-19",
+      "announced_time": "163446",
+      "title": "元大金控代子公司元大投信公告變更與元大證金之租賃契約",
+      "description": "1. 原公告日期： 113/01/12 2. 簡述原公告申報內容： 元大投信向關係人元大證金取得位於台中市北屯區崇德路二段46之4號之使用權資產 (1)租賃面積：約198.02坪 (2)每單位價格：房屋每坪每月租金新台幣440元(含稅)。 (3)租金總金額：每個月新台幣87,129元(含稅) (4)使用權資產金額：新台幣3,064,307元(含稅) (5)租賃期間：自民國113年01月16日至民國116年01月15日止。 3. 變動緣由及主要內容： 因關係人元大銀行向元大證金購買臺中市北屯區崇德路二段46號 及46之1至46之11號全棟建物(含地下室)，自所有權移轉完成 日起，元大銀行承受原租賃契約出租人之全部權利義務，並成為該 租賃契約之出租人。 除出租人變更外，原租賃契約條件均維持不變。 4. 變動後對公司財務業務之影響： 無 5. 其他應敘明事項： 無",
+      "clause": "第20款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "4798c3cfc3639f96c6a5",
+      "date": "2026-10-19",
+      "announced_date": "2026-10-19",
+      "fact_date": "2026-10-19",
+      "announced_time": "163424",
+      "title": "元大金控代子公司元大人壽公告變更與元大證金之租賃契約",
+      "description": "1. 原公告日期： 115/02/10 2. 簡述原公告申報內容： 元大人壽向關係人元大證金取得位於臺中市北屯區 崇德路二段46之5號、46之6號之使用權資產 (1)租賃面積:1,309.26平方公尺，折合396.06坪 (2)每單位價格:每坪每月新台幣470元(含營業稅) (3)租金總金額:每月新台幣186,148元(含營業稅) (4)使用權資產金額:新台幣 4,396,332元 (5)租賃期間：自民國115年03月01日至 民國117年02月29日 3. 變動緣由及主要內容： 因關係人元大銀行向元大證金購買臺中市北屯區 崇德路二段46號及46之1至46之11號全棟建 物(含地下室)，自所有權移轉完成日起，元大銀行 承受原租賃契約出租人之全部權利義務，並成為 該租賃契約之出租人。 除出租人變更外，原租賃契約條件均維持不變。 4. 變動後對公司財務業務之影響： 無 5. 其他應敘明事項： 無",
+      "clause": "第20款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "9dc231d132099a339587",
+      "date": "2026-10-19",
+      "announced_date": "2026-10-19",
+      "fact_date": "2026-10-19",
+      "announced_time": "163312",
+      "title": "元大金控代子公司元大證券公告變更與元大證金之租賃契約",
+      "description": "1. 原公告日期： 115/04/21 2. 簡述原公告申報內容： 元大證券向關係人元大證金取得台中市北屯區崇德路二段46之2 號、46之3號及地下室6席停車位使用權資產 (1)租賃面積：394.12坪 (2)每單位價格：新台幣470元/坪/月(含稅) (3)車位租金:新台幣2,000元/席/月(含稅) (4)租金總金額：新台幣197,236元/月(含稅) (5)使用權資產金額：新台幣11,337,064元 (6)租賃期間：115年5月1日至120年4月30日 3. 變動緣由及主要內容： 因關係人元大銀行向元大證金購買臺中市北屯區崇德路二段46號 及46之1至46之11號全棟建物(含地下室)，自所有權移轉完成 日起，元大銀行承受原租賃契約出租人之全部權利義務，並成為該 租賃契約之出租人。 除出租人變更外，原租賃契約條件均維持不變。 4. 變動後對公司財務業務之影響： 無 5. 其他應敘明事項： 無",
+      "clause": "第20款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2885-1151019-5",
       "date": "2026-10-19",
@@ -408,111 +483,6 @@
         "enterDate": "1150924",
         "serialNumber": "3"
       }
-    },
-    {
-      "id": "mops-history-2885-1150924-2",
-      "date": "2026-09-24",
-      "announced_date": "2026-09-24",
-      "fact_date": null,
-      "announced_time": "15:11:06",
-      "title": "元大金控代子公司元大證券公告董事會通過對關係人 捐贈事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2885",
-        "marketKind": "sii",
-        "enterDate": "1150924",
-        "serialNumber": "2"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150924-1",
-      "date": "2026-09-24",
-      "announced_date": "2026-09-24",
-      "fact_date": null,
-      "announced_time": "15:06:33",
-      "title": "元大金控代子公司元大證券 公告新任薪資報酬委員會成員",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2885",
-        "marketKind": "sii",
-        "enterDate": "1150924",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150922-1",
-      "date": "2026-09-22",
-      "announced_date": "2026-09-22",
-      "fact_date": null,
-      "announced_time": "14:00:10",
-      "title": "元大金控代子公司元大人壽公告董事會代行股東臨時會 重要決議事項(通過修正取得或處分資產處理程序部分內容)",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2885",
-        "marketKind": "sii",
-        "enterDate": "1150922",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150921-1",
-      "date": "2026-09-21",
-      "announced_date": "2026-09-21",
-      "fact_date": null,
-      "announced_time": "18:17:41",
-      "title": "元大金控公告向元大銀行原租賃取得使用權資產範圍調整",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2885",
-        "marketKind": "sii",
-        "enterDate": "1150921",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150915-1",
-      "date": "2026-09-15",
-      "announced_date": "2026-09-15",
-      "fact_date": null,
-      "announced_time": "15:08:11",
-      "title": "公告本公司擬於民國115年9月18日受邀參加第一金證券舉行之線上投資人會議",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2885",
-        "marketKind": "sii",
-        "enterDate": "1150915",
-        "serialNumber": "1"
-      }
     }
   ],
   "references": [
@@ -541,13 +511,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-10-19T12:30:54.709Z",
-      "row_count": 4,
+      "fetched_at": "2026-10-20T00:15:58.456Z",
+      "row_count": 53,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-10-19T12:32:50.703Z",
       "row_count": 24,
       "detail_count": 4,
