@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-10-21T00:16:39.888Z",
+  "collected_at": "2026-10-21T12:33:35.911Z",
   "company": {
     "id": "twse-2886",
     "ticker": "2886",
@@ -25,10 +25,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "2",
-        "enterDate": "1151016"
+        "marketKind": "sii",
+        "enterDate": "1151016",
+        "serialNumber": "2"
       }
     },
     {
@@ -46,10 +46,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1151016"
+        "marketKind": "sii",
+        "enterDate": "1151016",
+        "serialNumber": "1"
       }
     },
     {
@@ -67,10 +67,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1151014"
+        "marketKind": "sii",
+        "enterDate": "1151014",
+        "serialNumber": "1"
       }
     },
     {
@@ -88,10 +88,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1151002"
+        "marketKind": "sii",
+        "enterDate": "1151002",
+        "serialNumber": "1"
       }
     },
     {
@@ -109,10 +109,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1150922"
+        "marketKind": "sii",
+        "enterDate": "1150922",
+        "serialNumber": "1"
       }
     },
     {
@@ -130,10 +130,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "2",
-        "enterDate": "1150915"
+        "marketKind": "sii",
+        "enterDate": "1150915",
+        "serialNumber": "2"
       }
     },
     {
@@ -151,10 +151,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1150915"
+        "marketKind": "sii",
+        "enterDate": "1150915",
+        "serialNumber": "1"
       }
     },
     {
@@ -172,10 +172,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1150914"
+        "marketKind": "sii",
+        "enterDate": "1150914",
+        "serialNumber": "1"
       }
     },
     {
@@ -193,10 +193,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1150903"
+        "marketKind": "sii",
+        "enterDate": "1150903",
+        "serialNumber": "1"
       }
     },
     {
@@ -214,10 +214,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "3",
-        "enterDate": "1150826"
+        "marketKind": "sii",
+        "enterDate": "1150826",
+        "serialNumber": "3"
       }
     },
     {
@@ -235,10 +235,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "2",
-        "enterDate": "1150826"
+        "marketKind": "sii",
+        "enterDate": "1150826",
+        "serialNumber": "2"
       }
     },
     {
@@ -256,10 +256,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1150826"
+        "marketKind": "sii",
+        "enterDate": "1150826",
+        "serialNumber": "1"
       }
     },
     {
@@ -277,10 +277,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "2",
-        "enterDate": "1150825"
+        "marketKind": "sii",
+        "enterDate": "1150825",
+        "serialNumber": "2"
       }
     },
     {
@@ -298,10 +298,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1150825"
+        "marketKind": "sii",
+        "enterDate": "1150825",
+        "serialNumber": "1"
       }
     },
     {
@@ -319,10 +319,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1150813"
+        "marketKind": "sii",
+        "enterDate": "1150813",
+        "serialNumber": "1"
       }
     },
     {
@@ -340,10 +340,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1150730"
+        "marketKind": "sii",
+        "enterDate": "1150730",
+        "serialNumber": "1"
       }
     },
     {
@@ -361,10 +361,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "5",
-        "enterDate": "1150729"
+        "marketKind": "sii",
+        "enterDate": "1150729",
+        "serialNumber": "5"
       }
     },
     {
@@ -382,10 +382,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "4",
-        "enterDate": "1150729"
+        "marketKind": "sii",
+        "enterDate": "1150729",
+        "serialNumber": "4"
       }
     },
     {
@@ -403,10 +403,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "3",
-        "enterDate": "1150729"
+        "marketKind": "sii",
+        "enterDate": "1150729",
+        "serialNumber": "3"
       }
     },
     {
@@ -424,10 +424,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "2",
-        "enterDate": "1150729"
+        "marketKind": "sii",
+        "enterDate": "1150729",
+        "serialNumber": "2"
       }
     },
     {
@@ -445,10 +445,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1150729"
+        "marketKind": "sii",
+        "enterDate": "1150729",
+        "serialNumber": "1"
       }
     },
     {
@@ -466,10 +466,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "3",
-        "enterDate": "1150728"
+        "marketKind": "sii",
+        "enterDate": "1150728",
+        "serialNumber": "3"
       }
     },
     {
@@ -487,10 +487,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "2",
-        "enterDate": "1150728"
+        "marketKind": "sii",
+        "enterDate": "1150728",
+        "serialNumber": "2"
       }
     },
     {
@@ -508,10 +508,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2886",
-        "serialNumber": "1",
-        "enterDate": "1150728"
+        "marketKind": "sii",
+        "enterDate": "1150728",
+        "serialNumber": "1"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-10-21T00:15:42.804Z",
+      "fetched_at": "2026-10-21T12:31:42.357Z",
       "row_count": 112,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-10-20T12:33:36.375Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-10-21T12:34:33.132Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
