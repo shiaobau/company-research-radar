@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1",
   "ticker": "2308",
-  "fetched_at": "2026-10-26T12:33:04.789Z",
+  "fetched_at": "2026-10-28T00:17:21.575Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -14,87 +14,171 @@
   "detail_count": 4,
   "events": [
     {
-      "id": "mops-history-2308-1151015-1",
-      "date": "2026-10-15",
-      "announced_date": "2026-10-15",
-      "fact_date": "2026-10-29",
-      "announced_time": "15:57:26",
-      "title": "本公司自辦法人說明會之相關資訊",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/10/29 1.召開法人說明會之日期：115/10/29 2.召開法人說明會之時間：15 時 00 分 3.召開法人說明會之地點：台達電子台北總部 4.法人說明會擇要訊息：本公司自辦法人說明會，說明115年第3季財務報告相關資訊 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-      "clause": "第12款",
+      "id": "mops-history-2308-1151027-5",
+      "date": "2026-10-27",
+      "announced_date": "2026-10-27",
+      "fact_date": "2026-10-27",
+      "announced_time": "18:28:40",
+      "title": "本公司代子公司DET公告董事會決議擬增資DELTA ELECTRONICS INDIA MANUFACTURING PRIVATE LIMITED",
+      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: DELTA ELECTRONICS INDIA MANUFACTURING PRIVATE LIMITED普通股 2.事實發生日:115/10/27~115/10/27 3.董事會通過日期: 民國115年10月27日 4.其他核決日期: 不適用 5.交易數量、每單位價格及交易總金額: 交易單位數量：約131佰萬股 每單位價格：印度盧比15元 交易總金額：約印度盧比1,969佰萬元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: Delta Electronics (Thailand) Public Company Limited(簡稱DET)及DELTA ELECTRONICS INDIA MANUFACTURING PRIVATE LIMITED皆為本公司之子公司，本案係DET 擬對其100%子公司DELTA ELECTRONICS INDIA MANUFACTURING PRIVATE LIMITED增資。 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 交付或付款條件：匯入指定之銀行帳戶 契約限制條款及其他重要約定事項：無 12.本次交易之決定方式、價格決定之參考依據及決策單位: 經DET董事會決議通過 13.取得或處分有價證券標的公司每股淨值: 2.77元 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 累積持有本交易證券(含本次交易)之數量：約506佰萬股 累積持有本交易證券(含本次交易)之金額：約印度盧比6,122佰萬 累積持有本交易證券(含本次交易)之持股比率：100% 權利受限情形：無 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 占總資產比例：70.30% 占歸屬於母公司業主之權益比例：100.70% 營運資金數額：新台幣-10,463,518仟元(集團之現金足敷支付本案之交易價金) 16.經紀人及經紀費用: 不適用 17.取得或處分之具體目的或用途: 充實子公司之營運資金 18.本次交易表示異議董事之意見: 無 19.本次交易為關係人交易:是 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 不適用 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無",
+      "clause": "第20款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1151015"
+        "marketKind": "sii",
+        "enterDate": "1151027",
+        "serialNumber": "5"
+      }
+    },
+    {
+      "id": "mops-history-2308-1151027-4",
+      "date": "2026-10-27",
+      "announced_date": "2026-10-27",
+      "fact_date": "2026-10-27",
+      "announced_time": "18:25:51",
+      "title": "本公司代子公司Delta Electronics (Thailand) Public Company Limited公告向關係人取得供營業使用之設備",
+      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 供營業使用之設備 2.事實發生日:115/10/27~115/10/27 3.董事會通過日期: 民國115年10月27日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: Delta Electronics (Thailand) Public Company Limited(簡稱DET)擬向Delta Electronics Int'l (Singapore) Pte. Ltd.(簡稱DEIL-SG)取得供營業使用之設備， 交易金額約美金34.5佰萬元。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：DEIL-SG 與公司關係：DEIL-SG及DET皆為本公司之子公司 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 因應DET製造策略轉型為智慧工廠，擬向DEIL-SG取得供營業使用之設備。 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 電匯 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 交易之決定方式：議價 決策單位：DET董事會 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 供營業用 24.本次交易表示異議之董事之意見: 無 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1151027",
+        "serialNumber": "4"
+      }
+    },
+    {
+      "id": "mops-history-2308-1151027-3",
+      "date": "2026-10-27",
+      "announced_date": "2026-10-27",
+      "fact_date": "2026-10-27",
+      "announced_time": "17:54:46",
+      "title": "本公司代子公司台達電子(重慶)有限公司公告向關係人取得供營業使用之設備",
+      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 供營業使用之設備 2.事實發生日:114/12/4~115/10/27 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:依台達電子(重慶)有限公司內部核決權限規定辦理 民國115年10月27日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 台達電子(重慶)有限公司向中達電子(江蘇)有限公司(簡稱中達江蘇)購買供營業使用之 設備，累積交易金額約人民幣205.86佰萬元。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：中達江蘇 與公司關係：台達電子(重慶)有限公司及中達江蘇皆為本公司之子公司 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 議價後交易 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 電匯 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 交易之決定方式：議價 決策單位：依台達電子(重慶)有限公司內部核決權限規定辦理 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 供營業用 24.本次交易表示異議之董事之意見: 不適用 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1151027",
+        "serialNumber": "3"
+      }
+    },
+    {
+      "id": "mops-history-2308-1151027-2",
+      "date": "2026-10-27",
+      "announced_date": "2026-10-27",
+      "fact_date": "2026-10-27",
+      "announced_time": "17:54:14",
+      "title": "本公司代子公司台達電子(重慶)有限公司公告向關係人取得供營業使用之設備",
+      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 供營業使用之設備 2.事實發生日:114/12/18~115/10/27 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:依台達電子(重慶)有限公司內部核決權限規定辦理 民國115年10月27日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 台達電子(重慶)有限公司向台達電子企業管理(上海)有限公司(簡稱台達企管)購買 供營業使用之設備，累積交易金額約人民幣85.19佰萬元。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：台達企管 與公司關係：台達電子(重慶)有限公司及台達企管皆為本公司之子公司 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 議價後交易 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 電匯 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 交易之決定方式：議價 決策單位：依台達電子(重慶)有限公司內部核決權限規定辦理 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 供營業用 24.本次交易表示異議之董事之意見: 不適用 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1151027",
+        "serialNumber": "2"
+      }
+    },
+    {
+      "id": "mops-history-2308-1151015-1",
+      "date": "2026-10-15",
+      "announced_date": "2026-10-15",
+      "fact_date": null,
+      "announced_time": "15:57:26",
+      "title": "本公司自辦法人說明會之相關資訊",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2308",
+        "marketKind": "sii",
+        "enterDate": "1151015",
+        "serialNumber": "1"
       }
     },
     {
       "id": "mops-history-2308-1151013-1",
       "date": "2026-10-13",
       "announced_date": "2026-10-13",
-      "fact_date": "2026-10-13",
+      "fact_date": null,
       "announced_time": "17:22:31",
       "title": "本公司代子公司華豐電子科技(蕪湖)有限公司公告向關係人取得供營 業使用之設備",
-      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 供營業使用之設備 2.事實發生日:114/10/18~115/10/13 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:依華豐蕪湖內部核決權限規定辦理 民國115年10月13日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 華豐電子科技(蕪湖)有限公司(簡稱華豐蕪湖)向吳江華豐電子科技有限 公司(簡稱華豐)購買供營業使用之設備，累積交易金額約人民幣 72.64佰萬元。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：華豐 與公司關係：華豐蕪湖及華豐皆為本公司之子公司 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 議價後交易 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 電匯 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 交易之決定方式：議價 決策單位：依華豐蕪湖內部核決權限規定辦理 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 供營業用 24.本次交易表示異議之董事之意見: 不適用 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 不適用。 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
-      "clause": "第20款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1151013"
+        "marketKind": "sii",
+        "enterDate": "1151013",
+        "serialNumber": "1"
       }
     },
     {
       "id": "mops-history-2308-1151012-2",
       "date": "2026-10-12",
       "announced_date": "2026-10-12",
-      "fact_date": "2026-10-12",
+      "fact_date": null,
       "announced_time": "18:29:01",
       "title": "本公司代子公司台達電子(東莞)有限公司公告向關係人取得供營業使用之設備",
-      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 供營業使用之設備 2.事實發生日:115/5/25~115/10/12 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:依台達電子東莞內部核決權限規定辦理 民國115年10月12日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 台達電子(東莞)有限公司(簡稱台達電子東莞)向台達電子企業管理(上海)有限公司 (簡稱台達企管)購買供營業使用之設備，累積交易金額約人民幣98.88佰萬元。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：台達企管 與公司關係：台達電子東莞及台達企管皆為本公司之子公司 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 議價後交易 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 電匯 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 交易之決定方式：議價 決策單位：依台達電子東莞內部核決權限規定辦理 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 供營業用 24.本次交易表示異議之董事之意見: 不適用 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
-      "clause": "第20款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "2",
-        "enterDate": "1151012"
+        "marketKind": "sii",
+        "enterDate": "1151012",
+        "serialNumber": "2"
       }
     },
     {
       "id": "mops-history-2308-1151008-2",
       "date": "2026-10-12",
       "announced_date": "2026-10-12",
-      "fact_date": "2026-10-12",
+      "fact_date": null,
       "announced_time": "15:01:23",
       "title": "發布本公司115年09月份業績資料",
-      "description": "1.事實發生日:115/10/12 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:發布本公司115年09月份業績資料 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 本公司115年09月份合併營業額為新台幣654.00億元，較去年同期合併營業額 新台幣570.61億元成長14.6%，較上月份合併營業額新台幣645.86億元成長1.3%； 115年1~9月份累積合併營業額為新台幣5,396.68億元，較去年同期累積合併營業 額新台幣3,932.72億元成長37.2%。",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "2",
-        "enterDate": "1151008"
+        "marketKind": "sii",
+        "enterDate": "1151008",
+        "serialNumber": "2"
       }
     },
     {
@@ -112,10 +196,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1151012"
+        "marketKind": "sii",
+        "enterDate": "1151012",
+        "serialNumber": "1"
       }
     },
     {
@@ -133,10 +217,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1151007"
+        "marketKind": "sii",
+        "enterDate": "1151007",
+        "serialNumber": "1"
       }
     },
     {
@@ -154,10 +238,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "2",
-        "enterDate": "1151006"
+        "marketKind": "sii",
+        "enterDate": "1151006",
+        "serialNumber": "2"
       }
     },
     {
@@ -175,10 +259,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1151006"
+        "marketKind": "sii",
+        "enterDate": "1151006",
+        "serialNumber": "1"
       }
     },
     {
@@ -196,10 +280,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "2",
-        "enterDate": "1150921"
+        "marketKind": "sii",
+        "enterDate": "1150921",
+        "serialNumber": "2"
       }
     },
     {
@@ -217,10 +301,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150921"
+        "marketKind": "sii",
+        "enterDate": "1150921",
+        "serialNumber": "1"
       }
     },
     {
@@ -238,10 +322,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150917"
+        "marketKind": "sii",
+        "enterDate": "1150917",
+        "serialNumber": "1"
       }
     },
     {
@@ -259,10 +343,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "5",
-        "enterDate": "1150914"
+        "marketKind": "sii",
+        "enterDate": "1150914",
+        "serialNumber": "5"
       }
     },
     {
@@ -280,10 +364,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "4",
-        "enterDate": "1150914"
+        "marketKind": "sii",
+        "enterDate": "1150914",
+        "serialNumber": "4"
       }
     },
     {
@@ -301,10 +385,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "3",
-        "enterDate": "1150914"
+        "marketKind": "sii",
+        "enterDate": "1150914",
+        "serialNumber": "3"
       }
     },
     {
@@ -322,10 +406,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "2",
-        "enterDate": "1150914"
+        "marketKind": "sii",
+        "enterDate": "1150914",
+        "serialNumber": "2"
       }
     },
     {
@@ -343,10 +427,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150909"
+        "marketKind": "sii",
+        "enterDate": "1150909",
+        "serialNumber": "1"
       }
     },
     {
@@ -364,10 +448,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150908"
+        "marketKind": "sii",
+        "enterDate": "1150908",
+        "serialNumber": "1"
       }
     },
     {
@@ -385,10 +469,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "2",
-        "enterDate": "1150904"
+        "marketKind": "sii",
+        "enterDate": "1150904",
+        "serialNumber": "2"
       }
     },
     {
@@ -406,10 +490,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150904"
+        "marketKind": "sii",
+        "enterDate": "1150904",
+        "serialNumber": "1"
       }
     },
     {
@@ -427,94 +511,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "marketKind": "sii",
         "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150902"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150828-1",
-      "date": "2026-08-28",
-      "announced_date": "2026-08-28",
-      "fact_date": null,
-      "announced_time": "17:06:25",
-      "title": "本公司代子公司Delta Electronics (Thailand) Public Company Limited公告向非關係 人取得機器設備",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
         "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150828"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150812-1",
-      "date": "2026-08-12",
-      "announced_date": "2026-08-12",
-      "fact_date": null,
-      "announced_time": "17:53:01",
-      "title": "本公司代子公司台達電子(重慶)有限公司公告決議興建重慶二期廠房相關事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150812"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150810-1",
-      "date": "2026-08-10",
-      "announced_date": "2026-08-10",
-      "fact_date": null,
-      "announced_time": "15:31:44",
-      "title": "發布本公司115年07月份業績資料",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150810"
-      }
-    },
-    {
-      "id": "mops-history-2308-1150807-1",
-      "date": "2026-08-07",
-      "announced_date": "2026-08-07",
-      "fact_date": null,
-      "announced_time": "17:58:40",
-      "title": "代子公司Delta Electronics (H.K.) Ltd.公告 設立台達電子(杭州)有限公司",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "marketKind": "sii",
-        "companyId": "2308",
-        "serialNumber": "1",
-        "enterDate": "1150807"
+        "enterDate": "1150902",
+        "serialNumber": "1"
       }
     }
   ]
