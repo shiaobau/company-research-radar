@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-10-28T12:32:17.589Z",
+  "collected_at": "2026-10-29T00:16:34.266Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "929059fac2456abf9f50",
+      "date": "2026-10-28",
+      "announced_date": "2026-10-28",
+      "fact_date": "2026-10-28",
+      "announced_time": "162337",
+      "title": "元大金控補充公告法務長真除",
+      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、 行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、 內部稽核主管或訴訟及非訟代理人）:法務長 2.發生變動日期:115/10/28 3.舊任者姓名、級職及簡歷:李國榮 元大金融控股股份有限公司代理法務長 元大商業銀行股份有限公司副總經理 4.新任者姓名、級職及簡歷:李國榮 元大金融控股股份有限公司法務長 元大商業銀行股份有限公司副總經理 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新 任」或「解任」）:職務調整 6.異動原因:代理真除 7.生效日期:115/11/01 8.其他應敘明事項:無",
+      "clause": "第8款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2885-1151022-2",
       "date": "2026-10-22",
@@ -492,27 +507,6 @@
         "enterDate": "1150924",
         "serialNumber": "1"
       }
-    },
-    {
-      "id": "mops-history-2885-1150922-1",
-      "date": "2026-09-22",
-      "announced_date": "2026-09-22",
-      "fact_date": null,
-      "announced_time": "14:00:10",
-      "title": "元大金控代子公司元大人壽公告董事會代行股東臨時會 重要決議事項(通過修正取得或處分資產處理程序部分內容)",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2885",
-        "marketKind": "sii",
-        "enterDate": "1150922",
-        "serialNumber": "1"
-      }
     }
   ],
   "references": [
@@ -541,8 +535,8 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-10-28T12:31:00.483Z",
-      "row_count": 137,
+      "fetched_at": "2026-10-29T00:15:42.757Z",
+      "row_count": 160,
       "available": true
     },
     {

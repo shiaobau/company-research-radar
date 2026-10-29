@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-10-28T12:31:02.116Z",
+  "generated_at": "2026-10-29T00:15:43.937Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-28T12:31:02.116Z"
+      "refreshed_at": "2026-10-29T00:15:43.937Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-28T12:31:02.116Z"
+      "refreshed_at": "2026-10-29T00:15:43.937Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -87,9 +87,9 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 4,
       "negative_event_count": 0,
-      "positive_event_count": 0,
+      "positive_event_count": 2,
       "review_event_count": 0,
       "negative_event_points": 0,
       "negative_event_categories": {},
@@ -99,7 +99,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-28T12:31:02.116Z"
+      "refreshed_at": "2026-10-29T00:15:43.937Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -110,19 +110,39 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 4,
-      "negative_event_count": 0,
-      "positive_event_count": 0,
+      "event_count": 6,
+      "negative_event_count": 1,
+      "positive_event_count": 1,
       "review_event_count": 0,
-      "negative_event_points": 0,
-      "negative_event_categories": {},
+      "negative_event_points": 18,
+      "negative_event_categories": {
+        "regulatory_enforcement": 1
+      },
       "disclosure_violation_count": 0,
-      "score": 92,
-      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
+      "score": 76,
+      "rationale": "負向/待釐清重大訊息 1 則；未偵測到資訊申報違規。",
+      "events": [
+        {
+          "date": "2026-10-28",
+          "announce_date": "2026-10-28",
+          "time": "181837",
+          "title": "本公司及子公司晶睿公告擬取得及處分不動產",
+          "clause": "第20款",
+          "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 土地：新北市中和區健康段381、613地號；安邦段164、217地號 建物：新北市中和區健康段1206、1207、1215、1216、1219、1220 建號及安邦段369、385~389、397、398建號 門牌：新北市中和區連城路192號五樓及168號五樓等14戶 2.事實發生日:115/10/28~115/10/28 3.董事會通過日期: 民國115年10月28日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 交易單位數量： 土地2,519.61平方公尺 建物13,297.07平方公尺 交易總金額：約新台幣17.27億元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：本公司及晶睿通訊股份有限公司(以下稱晶睿) 交易相對人與公司之關係：晶睿為本公司100%之子公司 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 選定關係人為交易對象之原因：業務發展所需 前次移轉之所有人：春風建設股份有限公司、東景實業有限公司、漢威 聯合股份有限公司及自然人等 前次移轉之所有人與公司之關係：無。 前次移轉之所有人與交易相對人間相互之關係：無。 前次移轉日期：民國94年05月12日至107年年12月13日 前次移轉移轉金額：約新台幣8.18億元 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 同上 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 交付或付款條件：依買賣雙方所簽訂之契約約定付款 契約限制條款及其他重要約定：依買賣雙方所簽訂之買賣契約履行 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 本公司及晶睿董事會參考專業估價機構之估價金額及市場行情等因素後決議辦理 12.專業估價者事務所或公司名稱及其估價金額: 一、專業估價者事務所：佳駒不動產估價師聯合事務所 一、估價金額：新台幣1,727,367,500元 二、專業估價者事務所：長興不動產估價師聯合事務所 二、估價金額：新台幣1,680,605,243元 13.專業估價師姓名: 一、徐昌駿 二、吳國仕 14.專業估價師開業證書字號: 一、(98)台內估字第00334號 二、(99)台內估字第00367號 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 業務發展所需 24.本次交易表示異議之董事之意見: 無 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 民國115年10月28日 27.本次交易係向關係人取得不動產或其使用權資產:是 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
+          "source_id": "twse_material_events",
+          "sentiment": "negative",
+          "risk_class": "negative",
+          "risk_category": "regulatory_enforcement",
+          "risk_category_label": "監理處分或重大內控缺失",
+          "risk_points": 18,
+          "matched_patterns": [
+            "處分"
+          ]
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-28T12:31:02.116Z"
+      "refreshed_at": "2026-10-29T00:15:43.937Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -145,7 +165,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-28T12:31:02.116Z"
+      "refreshed_at": "2026-10-29T00:15:43.937Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -156,19 +176,37 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 1,
       "negative_event_count": 0,
       "positive_event_count": 0,
-      "review_event_count": 0,
+      "review_event_count": 1,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 92,
+      "score": 91,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-10-28",
+          "announce_date": "2026-10-28",
+          "time": "162337",
+          "title": "元大金控補充公告法務長真除",
+          "clause": "第8款",
+          "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、 行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、 內部稽核主管或訴訟及非訟代理人）:法務長 2.發生變動日期:115/10/28 3.舊任者姓名、級職及簡歷:李國榮 元大金融控股股份有限公司代理法務長 元大商業銀行股份有限公司副總經理 4.新任者姓名、級職及簡歷:李國榮 元大金融控股股份有限公司法務長 元大商業銀行股份有限公司副總經理 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新 任」或「解任」）:職務調整 6.異動原因:代理真除 7.生效日期:115/11/01 8.其他應敘明事項:無",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "correction",
+          "risk_category_label": "更正或補充",
+          "risk_points": 0,
+          "matched_patterns": [
+            "補充"
+          ]
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-28T12:31:02.116Z"
+      "refreshed_at": "2026-10-29T00:15:43.937Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -179,7 +217,7 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 2,
       "negative_event_count": 0,
       "positive_event_count": 0,
       "review_event_count": 0,
@@ -191,7 +229,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-28T12:31:02.116Z"
+      "refreshed_at": "2026-10-29T00:15:43.937Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -214,7 +252,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-28T12:31:02.116Z"
+      "refreshed_at": "2026-10-29T00:15:43.937Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -225,7 +263,7 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 1,
       "negative_event_count": 0,
       "positive_event_count": 0,
       "review_event_count": 0,
@@ -237,7 +275,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-28T12:31:02.116Z"
+      "refreshed_at": "2026-10-29T00:15:43.937Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -260,7 +298,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-28T12:31:02.116Z"
+      "refreshed_at": "2026-10-29T00:15:43.937Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -283,7 +321,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-28T12:31:02.116Z"
+      "refreshed_at": "2026-10-29T00:15:43.937Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -294,19 +332,37 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 1,
       "negative_event_count": 0,
       "positive_event_count": 0,
-      "review_event_count": 0,
+      "review_event_count": 1,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 92,
+      "score": 91,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-10-28",
+          "announce_date": "2026-10-28",
+          "time": "140153",
+          "title": "代子公司更正115年8月~9月份衍生性商品交易資訊",
+          "clause": "第51款",
+          "description": "1.事實發生日:115/10/28 2.公司名稱:馬來西亞宏全有限公司/豐信國際貿易股份有限公司 3.與公司關係(請輸入本公司或子公司):子公司 4.相互持股比例:100%/99.96% 5.發生緣由:代子公司更正115年8月~9月份衍生性商品交易資訊 6.更正資訊項目/報表名稱:115年8月~9月份衍生性商品交易資訊 7.更正前金額/內容/頁次: 子公司115年8月衍生性商品交易資訊(新台幣:仟元) A.馬來西亞宏全有限公司 遠期契約 未沖銷契約契約總金額:47186 未沖銷契約公允價值:194 未沖銷契約本年度認列未實現損益金額:-1384 已沖銷契約契約總金額:113382 已沖銷契約本年度認列已實現損益金額:2749 B.豐信貿易公司 遠期契約 未沖銷契約契約總金額:0 未沖銷契約公允價值:0 未沖銷契約本年度認列未實現損益金額:0 已沖銷契約契約總金額:15672 已沖銷契約本年度認列已實現損益金額:379 子公司115年9月衍生性商品交易資訊(新台幣:仟元) A.馬來西亞宏全有限公司 遠期契約 未沖銷契約契約總金額:118775 未沖銷契約公允價值:967 未沖銷契約本年度認列未實現損益金額:-611 已沖銷契約契約總金額:113382 已沖銷契約本年度認列已實現損益金額:2749 B.豐信貿易公司 遠期契約 未沖銷契約契約總金額:0 未沖銷契約公允價值:0 未沖銷契約本年度認列未實現損益金額:0 已沖銷契約契約總金額:15534 已沖銷契約本年度認列已實現損益金額:379 8.更正後金額/內容/頁次: 子公司115年8月衍生性商品交易資訊(新台幣:仟元) A.馬來西亞宏全有限公司 遠期契約 未沖銷契約契約總金額:0 未沖銷契約公允價值:0 未沖銷契約本年度認列未實現損益金額:0 已沖銷契約契約總金額:15672 已沖銷契約本年度認列已實現損益金額:379 B.豐信貿易公司 遠期契約 未沖銷契約契約總金額:47186 未沖銷契約公允價值:194 未沖銷契約本年度認列未實現損益金額:-1384 已沖銷契約契約總金額:113382 已沖銷契約本年度認列已實現損益金額:2749 子公司115年9月衍生性商品交易資訊(新台幣:仟元) A.馬來西亞宏全有限公司 遠期契約 未沖銷契約契約總金額:0 未沖銷契約公允價值:0 未沖銷契約本年度認列未實現損益金額:0 已沖銷契約契約總金額:15534 已沖銷契約本年度認列已實現損益金額:379 B.豐信貿易公司 遠期契約 未沖銷契約契約總金額:118775 未沖銷契約公允價值:967 未沖銷契約本年度認列未實現損益金額:-611 已沖銷契約契約總金額:113382 已沖銷契約本年度認列已實現損益金額:2749 9.因應措施:資料更正後重新上傳至公開資訊觀測站 10.其他應敘明事項:無",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "correction",
+          "risk_category_label": "更正或補充",
+          "risk_points": 0,
+          "matched_patterns": [
+            "更正"
+          ]
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-10-28T12:31:02.116Z"
+      "refreshed_at": "2026-10-29T00:15:43.937Z"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-10-28T12:32:17.589Z",
+  "collected_at": "2026-10-29T00:16:34.266Z",
   "company": {
     "id": "twse-2303",
     "ticker": "2303",
@@ -10,6 +10,66 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "bbcdc480c2a14939a416",
+      "date": "2026-10-28",
+      "announced_date": "2026-10-28",
+      "fact_date": "2026-10-28",
+      "announced_time": "170604",
+      "title": "本公司2026年第三季財務報告",
+      "description": "1.事實發生日:115/10/28 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由: 聯華電子公佈2026年第三季財務報告 第三季營業利益季增24.7%，產能利用率達92% 22奈米業務佔第三季晶圓銷售達18.3% 2026年第三季概觀： ‧合併營收：新台幣742.4億元($23.2億美元) ‧毛利率：34.0%；營業利益率：25.1% ‧22/28奈米晶圓營收佔比：35% ‧晶圓製造產能利用率：92% ‧歸屬母公司淨利：新台幣164.3億元($5.14億美元) ‧每股盈餘：新台幣1.32元；每ADS盈餘：$0.206美元 聯華電子股份有限公司今(28)日公佈2026年第三季營運報告，合併營收為新台幣 742.4億元，較上季的687.3億元增加8.0%。與去年同期相比，本季的合併營收增 加25.6%。2026年第三季毛利率達到34.0%，歸屬母公司淨利為新台幣164.3億元， 普通股每股獲利為新台幣1.32元。 聯電執行長王石表示：「第三季各終端市場需求皆維持穩健，帶動聯電晶圓出貨 量成長7.3%，達逾120萬片12吋約當晶圓，創下歷史新高。整體產能利用率達92%， 其中數座12吋晶圓廠產能滿載，8吋晶圓廠營運亦強勁復甦。製程節點方面，隨 著客戶持續完成顯示驅動IC、車用雷達及Wi-Fi IC等新產品設計定案(tape out)， 22/28奈米業務再創單季新高，其中22奈米營收佔晶圓銷售達18.3%。在新業務領 域，客戶持續積極推進與聯電在先進封裝與矽光子的合作，隨著既有專案逐步放 量及新產品完成設計定案，我們預期這些合作將在未來幾季貢獻業務增長。」 聯電執行長王石補充：「展望第四季，我們預期需求動能將延續，晶圓出貨量及 產能利用率將維持穩健。隨著先進封裝與矽光子業務逐步放量，特殊製程營收亦 將持續成長。由於這些新業務領域的需求明顯增加，目前正將部分既有產能轉作 相關用途，以因應短期內尚未滿足的需求。長期而言，聯電在新加坡與台南的雙 軌擴產計畫，對確保產能成長與客戶需求同步至關重要。我們很高興宣布，董事 會今日已核准追加約32億美元資本支出預算，使我們能夠加快擴產時程，同時緊 密配合客戶產品藍圖與需求。」 王石執行長說明：「本季聯電榮獲《HR Asia》2026年亞洲最佳企業雇主獎，我 們很榮幸第三度獲得此項殊榮。此獎項肯定公司持續投入人才培育、完善員工福 利及拓展社會參與機會的努力。透過上述措施，我們致力打造支持員工共同成長、 發揮潛能的職場環境，並為聯電的長期發展奠定穩固基礎。」 Fourth Quarter 2026 Outlook & Guidance ‧Wafer Shipments: Will increase by low-single digit ‧ASP in USD: Will remain firm ‧Gross Profit Margin: Comparable to the preceding quarter ‧Capacity Utilization: Low-90% range ‧2026 CAPEX: US$2.0 billion 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 無",
+      "clause": "第51款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "ed05c5ad3fe0af60d976",
+      "date": "2026-10-28",
+      "announced_date": "2026-10-28",
+      "fact_date": "2026-10-28",
+      "announced_time": "170059",
+      "title": "公告本公司董事會決議辦理限制員工權利新股收回 註銷減資事宜",
+      "description": "1.董事會決議日期:115/10/28 2.減資緣由:因原獲配限制員工權利新股之員工未達既得條件，將收回之限制員工權利 新股辦理註銷減資。 3.減資金額:新台幣5,734,190元 4.消除股份:573,419股 5.減資比率:0.0046% 6.減資後股本:新台幣125,695,204,800元 7.預定股東會日期:不適用 8.預計減資新股上市後之上市普通股股數:不適用 9.預計減資新股上市後之上市普通股股數占已發行普通股比率 （減資後上市普通股股數/減資後已發行普通股股數）:不適用 10.前二項預計減資後上巿普通股股數未達6000萬股且未達25%者， 請說明股權流通性偏低之因應措施:不適用 11.減資基準日:115/10/28 12.其他應敘明事項:無",
+      "clause": "第11款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "9905161edb52f1c63d73",
+      "date": "2026-10-28",
+      "announced_date": "2026-10-28",
+      "fact_date": "2026-10-28",
+      "announced_time": "170030",
+      "title": "本公司董事會通過資本預算執行案",
+      "description": "1.董事會或股東會決議日期:115/10/28 2.投資計畫內容:資本預算執行案 3.預計投資金額:新台幣102,781佰萬元 4.預計投資日期:依各資本支出預算案計畫 5.資金來源:營運資金 6.具體目的:供產能建置需求 7.其他應敘明事項:無",
+      "clause": "第15款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "09dd740845a536de9925",
+      "date": "2026-10-28",
+      "announced_date": "2026-10-28",
+      "fact_date": "2026-10-28",
+      "announced_time": "170012",
+      "title": "公告本公司董事會決議通過民國115年第三季合併財務報告",
+      "description": "1.提報董事會或經董事會決議日期:115/10/28 2.審計委員會通過日期:115/10/28 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/09/30 4.1月1日累計至本期止營業收入(仟元):204,009,681 5.1月1日累計至本期止營業毛利(毛損) (仟元):65,345,803 6.1月1日累計至本期止營業利益(損失) (仟元):44,868,934 7.1月1日累計至本期止稅前淨利(淨損) (仟元):81,740,885 8.1月1日累計至本期止本期淨利(淨損) (仟元):74,729,928 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):74,865,383 10.1月1日累計至本期止基本每股盈餘(損失) (元):6.00 11.期末總資產(仟元):675,785,677 12.期末總負債(仟元):204,905,665 13.期末歸屬於母公司業主之權益(仟元):470,916,768 14.其他應敘明事項:不適用",
+      "clause": "第31款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2303-1151022-1",
       "date": "2026-10-23",
@@ -429,90 +489,6 @@
         "enterDate": "1150729",
         "serialNumber": "2"
       }
-    },
-    {
-      "id": "mops-history-2303-1150729-1",
-      "date": "2026-07-29",
-      "announced_date": "2026-07-29",
-      "fact_date": null,
-      "announced_time": "17:00:32",
-      "title": "公告本公司董事會決議通過民國115年第二季合併財務報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150729",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150721-2",
-      "date": "2026-07-21",
-      "announced_date": "2026-07-21",
-      "fact_date": null,
-      "announced_time": "16:07:02",
-      "title": "公告本公司發行國內第一次暨第二次無擔保轉換公司債代收 價款行庫及存儲專戶行庫",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150721",
-        "serialNumber": "2"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150721-1",
-      "date": "2026-07-21",
-      "announced_date": "2026-07-21",
-      "fact_date": null,
-      "announced_time": "16:02:44",
-      "title": "公告本公司115年第二季合併財務報告董事會召開日期",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150721",
-        "serialNumber": "1"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150715-1",
-      "date": "2026-07-15",
-      "announced_date": "2026-07-15",
-      "fact_date": null,
-      "announced_time": "17:11:27",
-      "title": "代子公司宏誠創業投資(股)公司公告處分台灣半導體(股)公司普通股之相關資料",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150715",
-        "serialNumber": "1"
-      }
     }
   ],
   "references": [
@@ -541,8 +517,8 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-10-28T12:31:00.483Z",
-      "row_count": 137,
+      "fetched_at": "2026-10-29T00:15:42.757Z",
+      "row_count": 160,
       "available": true
     },
     {
