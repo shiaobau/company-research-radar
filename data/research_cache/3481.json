@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-10-29T00:16:34.266Z",
+  "collected_at": "2026-10-29T12:32:44.029Z",
   "company": {
     "id": "twse-3481",
     "ticker": "3481",
@@ -24,6 +24,27 @@
       "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed"
+    },
+    {
+      "id": "mops-history-3481-1151028-1",
+      "date": "2026-10-28",
+      "announced_date": "2026-10-28",
+      "fact_date": "2026-10-28",
+      "announced_time": "16:40:48",
+      "title": "代子公司群豐駿科技（寧波）有限公司公告向關係人取得不動產使用權資產",
+      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 標的房屋：中國浙江省寧波市北侖區大碶街道揚子江北路16號 2.事實發生日:115/10/28~115/10/28 3.董事會通過日期: 民國115年10月28日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 租賃面積：78,848平方公尺（23,851.52坪） 租金金額： (1)2027年至2029年每月租金人民幣118.3萬元（新台幣570.2萬元） (2)2030年每月租金人民幣126.2萬元（新台幣608.2萬元） (3)2031年每月租金人民幣134.0萬元（新台幣646.2萬元） 使用權資產金額：人民幣6,746.5萬元 (新台幣32,524.8萬元) 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：寧波群志光電有限公司 與公司之關係：本公司之兄弟公司 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 選定關係人為交易對象之原因：集團營運策略考量 前次移轉之所有人、移轉價格及取得日期:不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依合約條件辦理 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 交易之決定方式：依據市場行情進行議價 決策單位：董事會 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 生產及營運使用 24.本次交易表示異議之董事之意見: 無 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 民國 115 年 10 月 28 日 27.本次交易係向關係人取得不動產或其使用權資產:是 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "3481",
+        "marketKind": "sii",
+        "enterDate": "1151028",
+        "serialNumber": "1"
+      }
     },
     {
       "id": "mops-history-3481-1150914-1",
@@ -92,11 +113,11 @@
       "id": "mops-history-3481-1150814-2",
       "date": "2026-08-14",
       "announced_date": "2026-08-14",
-      "fact_date": "2026-08-14",
+      "fact_date": null,
       "announced_time": "15:08:47",
       "title": "公告本公司薪資報酬委員會及 公司治理暨提名委員會成員異動",
-      "description": "1.發生變動日期:115/08/14 2.功能性委員會名稱:薪資報酬委員會及公司治理暨提名委員會 3.舊任者姓名: 薪資報酬委員會:不適用 公司治理暨提名委員會:申心蓓 4.舊任者簡歷: 薪資報酬委員會:不適用 公司治理暨提名委員會:申心蓓/群創光電(股)公司獨立董事 5.新任者姓名: 薪資報酬委員會:吳志毅 公司治理暨提名委員會:謝詠芬 6.新任者簡歷: 薪資報酬委員會:吳志毅/群創光電(股)公司獨立董事 公司治理暨提名委員會:謝詠芬/群創光電(股)公司獨立董事 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）:新任 8.異動原因:董事會通過新增委任第六屆薪資報酬委員會成員及 變更第二屆公司治理暨提名委員會成員 9.原任期（例xx/xx/xx ~ xx/xx/xx）:114/05/07~117/05/06 10.新任生效日期:115/08/14 11.其他應敘明事項:任期與本屆董事會相同，至民國117年5月6日止",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
@@ -486,27 +507,6 @@
         "enterDate": "1150430",
         "serialNumber": "1"
       }
-    },
-    {
-      "id": "mops-history-3481-1150415-1",
-      "date": "2026-04-15",
-      "announced_date": "2026-04-15",
-      "fact_date": null,
-      "announced_time": "18:04:32",
-      "title": "公告本公司處分南科Fab5廠房及附屬設施",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "3481",
-        "marketKind": "sii",
-        "enterDate": "1150415",
-        "serialNumber": "1"
-      }
     }
   ],
   "references": [
@@ -535,14 +535,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-10-29T00:15:42.757Z",
+      "fetched_at": "2026-10-29T12:31:13.747Z",
       "row_count": 160,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-10-28T00:18:00.069Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-10-29T12:33:59.684Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

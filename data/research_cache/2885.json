@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-10-29T00:16:34.266Z",
+  "collected_at": "2026-10-29T12:32:44.029Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -24,6 +24,27 @@
       "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed"
+    },
+    {
+      "id": "mops-history-2885-1151028-1",
+      "date": "2026-10-28",
+      "announced_date": "2026-10-28",
+      "fact_date": "2026-10-28",
+      "announced_time": "16:23:37",
+      "title": "元大金控補充公告法務長真除",
+      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、 行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、 內部稽核主管或訴訟及非訟代理人）:法務長 2.發生變動日期:115/10/28 3.舊任者姓名、級職及簡歷:李國榮 元大金融控股股份有限公司代理法務長 元大商業銀行股份有限公司副總經理 4.新任者姓名、級職及簡歷:李國榮 元大金融控股股份有限公司法務長 元大商業銀行股份有限公司副總經理 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新 任」或「解任」）:職務調整 6.異動原因:代理真除 7.生效日期:115/11/01 8.其他應敘明事項:無",
+      "clause": "第8款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "companyId": "2885",
+        "marketKind": "sii",
+        "enterDate": "1151028",
+        "serialNumber": "1"
+      }
     },
     {
       "id": "mops-history-2885-1151022-2",
@@ -92,11 +113,11 @@
       "id": "mops-history-2885-1151019-4",
       "date": "2026-10-19",
       "announced_date": "2026-10-19",
-      "fact_date": "2026-10-19",
+      "fact_date": null,
       "announced_time": "16:52:05",
       "title": "元大金控代子公司元大銀行公告與元大證金之租賃關係消滅",
-      "description": "1. 原公告日期： 111/11/23 2. 簡述原公告申報內容： 元大銀行向關係人元大證金取得使用權資產位於臺中市北屯區崇德路二段46號1樓 (1)租賃面積：195.28坪(含公設) (2)每單位價格：1,080元/坪(含營業稅) (3)租金總金額：210,902元/月(含營業稅) (4)使用權資產金額：12,169,610元(含營業稅) (5)租賃期間：112/01/01~116/12/31 3. 變動緣由及主要內容： 因元大銀行向元大證金購買臺中市北屯區崇德路二段46號及46之1至46之11號 全棟建物(含地下室)，自所有權移轉完成日起，原租賃關係因混同而消滅。 4. 變動後對公司財務業務之影響： 無重大影響 5. 其他應敘明事項： 無",
-      "clause": "第20款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
@@ -486,27 +507,6 @@
         "enterDate": "1150924",
         "serialNumber": "2"
       }
-    },
-    {
-      "id": "mops-history-2885-1150924-1",
-      "date": "2026-09-24",
-      "announced_date": "2026-09-24",
-      "fact_date": null,
-      "announced_time": "15:06:33",
-      "title": "元大金控代子公司元大證券 公告新任薪資報酬委員會成員",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2885",
-        "marketKind": "sii",
-        "enterDate": "1150924",
-        "serialNumber": "1"
-      }
     }
   ],
   "references": [
@@ -535,14 +535,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-10-29T00:15:42.757Z",
+      "fetched_at": "2026-10-29T12:31:13.747Z",
       "row_count": 160,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-10-28T00:17:37.745Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-10-29T12:33:34.492Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
