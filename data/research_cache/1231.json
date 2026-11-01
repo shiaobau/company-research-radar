@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-10-29T12:32:44.029Z",
+  "collected_at": "2026-11-01T00:16:37.831Z",
   "company": {
     "id": "twse-1231",
     "ticker": "1231",
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-10-29T12:31:13.747Z",
-      "row_count": 160,
+      "fetched_at": "2026-11-01T00:15:42.837Z",
+      "row_count": 3,
       "available": true
     },
     {
       "source_id": "mops_history_api",
       "cache_status": "updated",
-      "fetched_at": "2026-10-29T12:32:51.740Z",
+      "fetched_at": "2026-11-01T00:16:44.657Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
