@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-04T00:15:43.530Z",
+  "generated_at": "2026-11-04T12:31:15.654Z",
   "sources": [
     {
       "id": "twse_major_shareholders",
@@ -64,8 +64,8 @@
       "major_shareholders": [],
       "insider_transfers": [],
       "violations": [],
-      "cache_status": "stale",
-      "refreshed_at": "2026-11-03T12:30:55.174Z"
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-04T12:31:15.654Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -85,8 +85,8 @@
       "major_shareholders": [],
       "insider_transfers": [],
       "violations": [],
-      "cache_status": "stale",
-      "refreshed_at": "2026-11-03T12:30:55.174Z"
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-04T12:31:15.654Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -106,8 +106,8 @@
       "major_shareholders": [],
       "insider_transfers": [],
       "violations": [],
-      "cache_status": "stale",
-      "refreshed_at": "2026-11-03T12:30:55.174Z"
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-04T12:31:15.654Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -127,8 +127,8 @@
       "major_shareholders": [],
       "insider_transfers": [],
       "violations": [],
-      "cache_status": "stale",
-      "refreshed_at": "2026-11-03T12:30:55.174Z"
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-04T12:31:15.654Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -148,8 +148,8 @@
       "major_shareholders": [],
       "insider_transfers": [],
       "violations": [],
-      "cache_status": "stale",
-      "refreshed_at": "2026-11-03T12:30:55.174Z"
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-04T12:31:15.654Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -169,8 +169,8 @@
       "major_shareholders": [],
       "insider_transfers": [],
       "violations": [],
-      "cache_status": "stale",
-      "refreshed_at": "2026-11-03T12:30:55.174Z"
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-04T12:31:15.654Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -190,8 +190,8 @@
       "major_shareholders": [],
       "insider_transfers": [],
       "violations": [],
-      "cache_status": "stale",
-      "refreshed_at": "2026-11-03T12:30:55.174Z"
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-04T12:31:15.654Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -203,16 +203,29 @@
         "tpex_disclosure_violations"
       ],
       "evidence_level": "high",
-      "major_shareholder_count": 0,
+      "major_shareholder_count": 3,
       "insider_transfer_count": 0,
       "disclosure_violation_count": 0,
-      "score": 63,
-      "rationale": "未列示持股逾 10% 大股東；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
-      "major_shareholders": [],
+      "score": 73,
+      "rationale": "持股逾 10% 大股東 3 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
+      "major_shareholders": [
+        {
+          "name": "禾琦企業有限公司",
+          "source_id": "tpex_major_shareholders"
+        },
+        {
+          "name": "承育企業管理顧問有限公司",
+          "source_id": "tpex_major_shareholders"
+        },
+        {
+          "name": "采育企業管理顧問有限公司",
+          "source_id": "tpex_major_shareholders"
+        }
+      ],
       "insider_transfers": [],
       "violations": [],
-      "cache_status": "stale",
-      "refreshed_at": "2026-11-03T12:30:55.174Z"
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-04T12:31:15.654Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -232,8 +245,8 @@
       "major_shareholders": [],
       "insider_transfers": [],
       "violations": [],
-      "cache_status": "stale",
-      "refreshed_at": "2026-11-03T12:30:55.174Z"
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-04T12:31:15.654Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -253,8 +266,8 @@
       "major_shareholders": [],
       "insider_transfers": [],
       "violations": [],
-      "cache_status": "stale",
-      "refreshed_at": "2026-11-03T12:30:55.174Z"
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-04T12:31:15.654Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -274,8 +287,8 @@
       "major_shareholders": [],
       "insider_transfers": [],
       "violations": [],
-      "cache_status": "stale",
-      "refreshed_at": "2026-11-03T12:30:55.174Z"
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-04T12:31:15.654Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -295,8 +308,8 @@
       "major_shareholders": [],
       "insider_transfers": [],
       "violations": [],
-      "cache_status": "stale",
-      "refreshed_at": "2026-11-03T12:30:55.174Z"
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-04T12:31:15.654Z"
     }
   }
 }
