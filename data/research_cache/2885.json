@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-03T12:32:24.148Z",
+  "collected_at": "2026-11-04T00:16:29.648Z",
   "company": {
     "id": "twse-2885",
     "ticker": "2885",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "24381a9a307abc6c319f",
+      "date": "2026-11-03",
+      "announced_date": "2026-11-03",
+      "fact_date": "2026-11-03",
+      "announced_time": "162345",
+      "title": "元大金控代子公司元大投信公告因股份轉換案 依據企業併購法第33條規定公告相關事項",
+      "description": "1.事實發生日:115/11/03 2.公司名稱:元大證券投資信託股份有限公司 3.與公司關係(請輸入本公司或子公司):子公司 4.相互持股比例:不適用 5.發生緣由:依企業併購法第33條規定，將公告下列事項： 一、元大投信與元大金控依企業併購法規定進行股份轉換(下稱本股份轉換案) ，並經金融監督管理委員會於115年7月29日金管銀控字第1150224616號函核准 ，於完成股份轉換後，元大投信將成為元大金控百分之百持股之子公司。本股份 轉換案以民國115年12月4日為股份轉換基準日，股份轉換比例為元大投信每1股 普通股換發元大金控普通股5.2981股。 二、本股份轉換案將於股份轉換基準日(即115年12月4日)發生股權移轉之效力。 三、股東應於股份轉換基準日一日前(即民國115年12月2日前，含當日)將所持 有之元大投信股票提出於元大投信股務代理機構元大證券股份有限公司股務代 理部(106045臺北市大安區敦化南路二段67號B1，電話：(02)2586-5859)； 逾期未提出者，原持有之元大投信股票自股份轉換基準日起失其效力。 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 無",
+      "clause": "第51款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2885-1151103-1",
       "date": "2026-11-03",
@@ -492,27 +507,6 @@
         "enterDate": "1150928",
         "serialNumber": "1"
       }
-    },
-    {
-      "id": "mops-history-2885-1150924-4",
-      "date": "2026-09-24",
-      "announced_date": "2026-09-24",
-      "fact_date": null,
-      "announced_time": "16:27:49",
-      "title": "元大金控代子公司元大銀行公告董事會決議通過臺中崇德 大樓依「都市危險及老舊建築物加速重建條例」辦理危老重建。",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2885",
-        "marketKind": "sii",
-        "enterDate": "1150924",
-        "serialNumber": "4"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-03T12:30:52.779Z",
-      "row_count": 92,
+      "fetched_at": "2026-11-04T00:15:42.303Z",
+      "row_count": 166,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-03T12:33:12.663Z",
       "row_count": 24,
       "detail_count": 4,

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-03T12:32:24.148Z",
+  "collected_at": "2026-11-04T00:16:29.648Z",
   "company": {
     "id": "twse-2308",
     "ticker": "2308",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "d4f707d53407b0a1bd5e",
+      "date": "2026-11-03",
+      "announced_date": "2026-11-03",
+      "fact_date": "2026-11-03",
+      "announced_time": "173503",
+      "title": "本公司代子公司DIH及TB&C GmbH公告取得及處分TB&C Outsert International B.V. 股權案",
+      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: TB&C Outsert International B.V. (\"NLH\")普通股 2.事實發生日:115/11/3~115/11/3 3.董事會通過日期: 民國115年11月3日 4.其他核決日期: 不適用 5.交易數量、每單位價格及交易總金額: 交易單位數量：22,285股 每單位價格：約785.28歐元 交易總金額：約17.50百萬歐元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: 交易相對人：Delta International Holding Limited B.V. (“DIH”)及 TB&C GmbH (\"DEH\") 與公司之關係：DIH及DEH係本公司持股100%之子公司 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 簡化集團股權結構 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 交付或付款條件：匯入指定銀行帳戶 契約限制條款：無 其他重要約定事項：無 12.本次交易之決定方式、價格決定之參考依據及決策單位: 決策單位：分別經DIH及DEH董事會通過後執行 價格決定之參考依據：獨立專家出具之交易價格合理性意見書 13.取得或處分有價證券標的公司每股淨值: 45,081.22元 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: DIH持有NLH之情形： 累積持有本交易證券(含本次交易)之數量：22,285股 累積持有本交易證券(含本次交易)之金額：約17.50百萬歐元 累積持有本交易證券(含本次交易)之持股比例：100% 權利受限情形：無 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 占總資產比例：70.29% 占歸屬於母公司業主之權益比例：92.94% 營運資金數額：新台幣-10,463,518仟元 (集團之現金足敷支付本案之交易價金) 16.經紀人及經紀費用: 無 17.取得或處分之具體目的或用途: 簡化集團股權結構 18.本次交易表示異議董事之意見: 無 19.本次交易為關係人交易:是 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:否 22.會計師事務所名稱: 國富浩華聯合會計師事務所 23.會計師姓名: 吳孟達 24.會計師開業證書字號: 台財證登（六）字第三六二二號 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 不適用 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2308-1151103-1",
       "date": "2026-11-03",
@@ -492,27 +507,6 @@
         "enterDate": "1151006",
         "serialNumber": "1"
       }
-    },
-    {
-      "id": "mops-history-2308-1150921-2",
-      "date": "2026-09-21",
-      "announced_date": "2026-09-21",
-      "fact_date": null,
-      "announced_time": "17:53:20",
-      "title": "(補充公告)本公司代子公司DET公告決議重建泰國BP1廠及BP1-P樓",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "companyId": "2308",
-        "marketKind": "sii",
-        "enterDate": "1150921",
-        "serialNumber": "2"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-03T12:30:52.779Z",
-      "row_count": 92,
+      "fetched_at": "2026-11-04T00:15:42.303Z",
+      "row_count": 166,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-03T12:32:55.474Z",
       "row_count": 24,
       "detail_count": 4,
