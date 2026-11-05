@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-04T12:32:59.312Z",
+  "collected_at": "2026-11-05T00:16:50.511Z",
   "company": {
     "id": "twse-2303",
     "ticker": "2303",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "7275e3644d78ae73dc3e",
-      "date": "2026-11-03",
-      "announced_date": "2026-11-03",
-      "fact_date": "2026-11-03",
-      "announced_time": "170127",
-      "title": "代重要子公司 UMC GROUP（USA）公告董事異動",
-      "description": "1.發生變動日期:115/11/03 2.選任或變動人員別（請輸入法人董事、法人監察人、獨立董事、自然人董事 或自然人監察人）:自然人董事 3.舊任者職稱及姓名:不適用 4.舊任者簡歷:不適用 5.新任者職稱及姓名:徐明志 6.新任者簡歷:聯電總經理暨營運長 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）:新任 8.異動原因:新增一席董事 9.新任者選任時持股數:不適用 10.原任期（例xx/xx/xx ~ xx/xx/xx）:不適用 11.新任生效日期:115/11/03 12.同任期董事變動比率:不適用 13.同任期獨立董事變動比率:不適用 14.同任期監察人變動比率:不適用 15.屬三分之一以上董事發生變動（請輸入是或否）:是 16.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第6款所定對股東權益或證券價格有重大影響之事項):無",
-      "clause": "第6款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-2303-1151103-1",
       "date": "2026-11-03",
@@ -507,6 +492,27 @@
         "marketKind": "sii",
         "companyId": "2303"
       }
+    },
+    {
+      "id": "mops-history-2303-1150729-3",
+      "date": "2026-07-29",
+      "announced_date": "2026-07-29",
+      "fact_date": null,
+      "announced_time": "17:04:25",
+      "title": "公告本公司董事會決議辦理限制員工權利新股收回 註銷減資事宜",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "enterDate": "1150729",
+        "marketKind": "sii",
+        "companyId": "2303"
+      }
     }
   ],
   "references": [
@@ -535,13 +541,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-04T12:31:10.356Z",
-      "row_count": 166,
+      "fetched_at": "2026-11-05T00:15:43.448Z",
+      "row_count": 225,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-04T12:33:22.646Z",
       "row_count": 24,
       "detail_count": 4,

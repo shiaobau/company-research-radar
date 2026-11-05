@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-04T12:32:59.312Z",
+  "collected_at": "2026-11-05T00:16:50.511Z",
   "company": {
     "id": "twse-1707",
     "ticker": "1707",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "9aa400a0bda9b39e3e9b",
+      "date": "2026-11-04",
+      "announced_date": "2026-11-04",
+      "fact_date": "2026-11-02",
+      "announced_time": "154058",
+      "title": "說明本公司線上商城「購健康」平台委外服務廠商資安 事件，訂單、個資疑似外洩之處理情形",
+      "description": "1.事實發生日:115/11/02 2.發生緣由:本公司接獲電子商城線上平台委外服務廠商順立智慧股份有限公司 (Cyberbiz，以下簡稱順立公司)通知，其資料庫部分資料遭未經授權之異常存取， 該資料庫包含本公司電子商城「購健康」訂單及個人資料。至目前為止，尚無法 釐清相關資料是否受到影響及其範圍。 3.處理過程:(1)本公司接獲通知後，已依內部個資相關規定組成個資事故緊急應變 小組，並召開應變會議，採取必要防護措施以降低事件影響。(2)透過本公司電子 商城官網發布及以簡訊通知等方式提醒會員、消費者提高防詐騙警覺，避免損失。 (3)本公司已主動通報相關主管機關。(4)本公司另要求委外服務廠商順立公司儘速 釐清事件原因、本公司「購健康」訂單資料或消費者個資是否遭未經授權存取及 可能受影響範圍，並進行資安檢視及必要強化措施。 4.預計可能損失或影響:截至目前對公司財務及業務並無重大影響。 5.可能獲得保險理賠之金額:不適用。若本公司遭受害者求償，將要求順立公司負責。 6.改善情形及未來因應措施:(1)本公司已要求順立公司重新檢視資安疑慮及相關風險 ，採取必要改善措施。(2)本公司將持續追蹤改善情形及強化委外服務之資安監督 管理。 7.其他應敘明事項:無。",
+      "clause": "第26款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-1707-1151104-1",
       "date": "2026-11-04",
@@ -492,27 +507,6 @@
         "marketKind": "sii",
         "companyId": "1707"
       }
-    },
-    {
-      "id": "mops-history-1707-1150205-2",
-      "date": "2026-02-05",
-      "announced_date": "2026-02-05",
-      "fact_date": null,
-      "announced_time": "16:35:33",
-      "title": "代本公司重要子公司葡眾企業股份有限公司 公告董事會決議召開115年股東常會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150205",
-        "marketKind": "sii",
-        "companyId": "1707"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-04T12:31:10.356Z",
-      "row_count": 166,
+      "fetched_at": "2026-11-05T00:15:43.448Z",
+      "row_count": 225,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-04T12:33:13.638Z",
       "row_count": 24,
       "detail_count": 4,
