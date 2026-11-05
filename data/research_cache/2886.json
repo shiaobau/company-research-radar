@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-05T00:16:50.511Z",
+  "collected_at": "2026-11-05T12:32:40.424Z",
   "company": {
     "id": "twse-2886",
     "ticker": "2886",
@@ -541,7 +541,7 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-05T00:15:43.448Z",
+      "fetched_at": "2026-11-05T12:31:16.002Z",
       "row_count": 225,
       "available": true
     },

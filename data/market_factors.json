@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-05T00:15:45.785Z",
+  "generated_at": "2026-11-05T12:31:25.580Z",
   "note": "全市場背景因子。估值百分位依上市櫃官方產業全樣本計算；官方產業樣本不足 10 家時才回退為全市場模板樣本，兩者皆不使用觀察清單。資料僅供研究快照與回測，尚未納入核心分數。",
   "sources": [
     "twse_valuation",
@@ -13,9 +13,9 @@
   "coverage": {
     "universe_count": 1974,
     "research_company_count": 12,
-    "valuation_count": 1959,
+    "valuation_count": 1958,
     "margin_count": 1862,
-    "institutional_count": 1858
+    "institutional_count": 1850
   },
   "companies": {
     "TWSE:1231": {
@@ -46,11 +46,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-11-04",
-        "foreign_net_shares": 11000,
+        "as_of": "2026-11-05",
+        "foreign_net_shares": 37538,
         "trust_net_shares": 0,
-        "dealer_net_shares": -4874,
-        "total_net_shares": 6126
+        "dealer_net_shares": 36358,
+        "total_net_shares": 73896
       },
       "source_ids": [
         "twse_valuation",
@@ -75,7 +75,7 @@
         "dividend_yield_pct": 7.33,
         "favorable_percentiles": {
           "pe_ratio": 85,
-          "pb_ratio": 82,
+          "pb_ratio": 81,
           "dividend_yield_pct": 94
         }
       },
@@ -87,11 +87,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-11-04",
-        "foreign_net_shares": -41257,
+        "as_of": "2026-11-05",
+        "foreign_net_shares": 117708,
         "trust_net_shares": 0,
-        "dealer_net_shares": -1442,
-        "total_net_shares": -42699
+        "dealer_net_shares": 10000,
+        "total_net_shares": 127708
       },
       "source_ids": [
         "twse_valuation",
@@ -116,8 +116,8 @@
         "dividend_yield_pct": 2.47,
         "favorable_percentiles": {
           "pe_ratio": 74,
-          "pb_ratio": 50,
-          "dividend_yield_pct": 67
+          "pb_ratio": 47,
+          "dividend_yield_pct": 66
         }
       },
       "margin": {
@@ -128,11 +128,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-11-04",
-        "foreign_net_shares": -33573457,
-        "trust_net_shares": 3106672,
-        "dealer_net_shares": 2965416,
-        "total_net_shares": -27501369
+        "as_of": "2026-11-05",
+        "foreign_net_shares": -29248107,
+        "trust_net_shares": 3501435,
+        "dealer_net_shares": 1827221,
+        "total_net_shares": -23919451
       },
       "source_ids": [
         "twse_valuation",
@@ -156,9 +156,9 @@
         "pb_ratio": 9.96,
         "dividend_yield_pct": 0.95,
         "favorable_percentiles": {
-          "pe_ratio": 34,
-          "pb_ratio": 6,
-          "dividend_yield_pct": 39
+          "pe_ratio": 31,
+          "pb_ratio": 5,
+          "dividend_yield_pct": 37
         }
       },
       "margin": {
@@ -169,11 +169,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-11-04",
-        "foreign_net_shares": -3127743,
-        "trust_net_shares": -299905,
-        "dealer_net_shares": 447215,
-        "total_net_shares": -2980433
+        "as_of": "2026-11-05",
+        "foreign_net_shares": -2025224,
+        "trust_net_shares": 22626,
+        "dealer_net_shares": 388775,
+        "total_net_shares": -1613823
       },
       "source_ids": [
         "twse_valuation",
@@ -197,9 +197,9 @@
         "pb_ratio": 9.11,
         "dividend_yield_pct": 0.97,
         "favorable_percentiles": {
-          "pe_ratio": 51,
-          "pb_ratio": 10,
-          "dividend_yield_pct": 38
+          "pe_ratio": 49,
+          "pb_ratio": 8,
+          "dividend_yield_pct": 36
         }
       },
       "margin": {
@@ -210,11 +210,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-11-04",
-        "foreign_net_shares": -21603811,
-        "trust_net_shares": 3715164,
-        "dealer_net_shares": 5966950,
-        "total_net_shares": -11921697
+        "as_of": "2026-11-05",
+        "foreign_net_shares": -10252100,
+        "trust_net_shares": 2739641,
+        "dealer_net_shares": 5295587,
+        "total_net_shares": -2216872
       },
       "source_ids": [
         "twse_valuation",
@@ -251,11 +251,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-11-04",
-        "foreign_net_shares": -2285250,
-        "trust_net_shares": 1654184,
-        "dealer_net_shares": 3020217,
-        "total_net_shares": 2389151
+        "as_of": "2026-11-05",
+        "foreign_net_shares": -1979528,
+        "trust_net_shares": 3372266,
+        "dealer_net_shares": 4444723,
+        "total_net_shares": 5837461
       },
       "source_ids": [
         "twse_valuation",
@@ -292,11 +292,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-11-04",
-        "foreign_net_shares": -502681,
-        "trust_net_shares": 7425251,
-        "dealer_net_shares": 3807991,
-        "total_net_shares": 10730561
+        "as_of": "2026-11-05",
+        "foreign_net_shares": -7459881,
+        "trust_net_shares": 8161937,
+        "dealer_net_shares": 5260071,
+        "total_net_shares": 5962127
       },
       "source_ids": [
         "twse_valuation",
@@ -315,13 +315,13 @@
         "sample_count": 209
       },
       "valuation": {
-        "as_of": "2026-11-04",
+        "as_of": "2026-11-05",
         "pe_ratio": null,
-        "pb_ratio": 1.06,
+        "pb_ratio": 1,
         "dividend_yield_pct": 0,
         "favorable_percentiles": {
           "pe_ratio": null,
-          "pb_ratio": 86,
+          "pb_ratio": 88,
           "dividend_yield_pct": 15
         }
       },
@@ -349,8 +349,8 @@
         "pb_ratio": 1.45,
         "dividend_yield_pct": 2.44,
         "favorable_percentiles": {
-          "pe_ratio": 23,
-          "pb_ratio": 58,
+          "pe_ratio": 20,
+          "pb_ratio": 57,
           "dividend_yield_pct": 61
         }
       },
@@ -362,11 +362,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-11-04",
-        "foreign_net_shares": -323699,
-        "trust_net_shares": -213834,
-        "dealer_net_shares": 1495555,
-        "total_net_shares": 958022
+        "as_of": "2026-11-05",
+        "foreign_net_shares": -9316444,
+        "trust_net_shares": 63690,
+        "dealer_net_shares": 477446,
+        "total_net_shares": -8775308
       },
       "source_ids": [
         "twse_valuation",
@@ -385,12 +385,12 @@
         "sample_count": 40
       },
       "valuation": {
-        "as_of": "2026-11-04",
-        "pe_ratio": 8.95,
-        "pb_ratio": 1.3,
-        "dividend_yield_pct": 6.79,
+        "as_of": "2026-11-05",
+        "pe_ratio": 10.96,
+        "pb_ratio": 1.31,
+        "dividend_yield_pct": 6.88,
         "favorable_percentiles": {
-          "pe_ratio": 70,
+          "pe_ratio": 57,
           "pb_ratio": 50,
           "dividend_yield_pct": 95
         }
@@ -403,11 +403,11 @@
         "short_change_lots": 0
       },
       "institutional": {
-        "as_of": "2026-11-04",
-        "foreign_net_shares": -267769,
-        "trust_net_shares": -267769,
-        "dealer_net_shares": 0,
-        "total_net_shares": -267769
+        "as_of": "2026-11-05",
+        "foreign_net_shares": -130000,
+        "trust_net_shares": -130000,
+        "dealer_net_shares": -10000,
+        "total_net_shares": -140000
       },
       "source_ids": [
         "tpex_valuation",
@@ -426,12 +426,12 @@
         "sample_count": 158
       },
       "valuation": {
-        "as_of": "2026-11-04",
-        "pe_ratio": 10.86,
+        "as_of": "2026-11-05",
+        "pe_ratio": 10.79,
         "pb_ratio": 0.92,
-        "dividend_yield_pct": 6.1,
+        "dividend_yield_pct": 6.13,
         "favorable_percentiles": {
-          "pe_ratio": 83,
+          "pe_ratio": 82,
           "pb_ratio": 89,
           "dividend_yield_pct": 85
         }
@@ -444,11 +444,11 @@
         "short_change_lots": 0
       },
       "institutional": {
-        "as_of": "2026-11-04",
-        "foreign_net_shares": 6000,
-        "trust_net_shares": 6000,
+        "as_of": "2026-11-05",
+        "foreign_net_shares": 5000,
+        "trust_net_shares": 5000,
         "dealer_net_shares": 0,
-        "total_net_shares": 6000
+        "total_net_shares": 5000
       },
       "source_ids": [
         "tpex_valuation",
@@ -472,8 +472,8 @@
         "pb_ratio": 1.83,
         "dividend_yield_pct": 5.06,
         "favorable_percentiles": {
-          "pe_ratio": 68,
-          "pb_ratio": 33,
+          "pe_ratio": 66,
+          "pb_ratio": 32,
           "dividend_yield_pct": 61
         }
       },
@@ -485,11 +485,11 @@
         "short_change_lots": null
       },
       "institutional": {
-        "as_of": "2026-11-04",
-        "foreign_net_shares": -205471,
-        "trust_net_shares": -4000,
-        "dealer_net_shares": -4673,
-        "total_net_shares": -214144
+        "as_of": "2026-11-05",
+        "foreign_net_shares": 465128,
+        "trust_net_shares": -1000,
+        "dealer_net_shares": -3578,
+        "total_net_shares": 460550
       },
       "source_ids": [
         "twse_valuation",
