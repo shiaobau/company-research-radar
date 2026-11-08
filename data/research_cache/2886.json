@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-05T12:32:40.424Z",
+  "collected_at": "2026-11-08T00:16:43.557Z",
   "company": {
     "id": "twse-2886",
     "ticker": "2886",
@@ -10,6 +10,69 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2886-1151106-1",
+      "date": "2026-11-06",
+      "announced_date": "2026-11-06",
+      "fact_date": "2026-11-06",
+      "announced_time": "15:29:32",
+      "title": "代本公司之子公司兆豐國際商業銀行股份有限公司公告 其董事會通過辦理115年度應分攤捐助財團法人中小企業信 用保證基金款項",
+      "description": "1.事實發生日:115/11/06 2.捐贈原由:115年度應分攤捐助財團法人中小企業信用保證基金款項 3.捐贈金額:新台幣75,785,556元 4.受贈對象:財團法人中小企業信用保證基金 5.與公司關係:非關係人之重大捐贈 6.表示反對或保留意見之獨立董事姓名及簡歷:無 7.前揭獨立董事表示反對或保留之意見:無 8.其他應敘明事項:事實發生日往前追溯推算一年內加計114年度應分攤捐助款項新台幣 82,559,077元，累計對同一對象捐贈金額達新台幣158,344,633元",
+      "clause": "第43款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151106",
+        "marketKind": "sii",
+        "companyId": "2886"
+      }
+    },
+    {
+      "id": "mops-history-2886-1151105-2",
+      "date": "2026-11-05",
+      "announced_date": "2026-11-05",
+      "fact_date": "2026-11-05",
+      "announced_time": "18:28:07",
+      "title": "代本公司之子公司兆豐資產管理股份有限公司公告以法拍標購取得土地及建物",
+      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 地號：雲林縣斗六市科一段41地號 建號：雲林縣斗六市科一段91建號 2.事實發生日:115/11/5~115/11/5 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:董事長 民國115年11月3日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 土地面積：13,260.92平方公尺(4,011.43坪) 建物面積：6,478.59平方公尺(1,959.77坪) 交易總金額：新台幣499,990,000元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 無 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依法拍公告 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 法院公開拍賣 12.專業估價者事務所或公司名稱及其估價金額: 瑞普國際不動產估價師事務所 13.專業估價師姓名: 汪明陽 14.專業估價師開業證書字號: (113)北市估字第000340號 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 本公司之主要營業活動 24.本次交易表示異議之董事之意見: 無 25.本次交易為關係人交易:否 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1151105",
+        "marketKind": "sii",
+        "companyId": "2886"
+      }
+    },
+    {
+      "id": "mops-history-2886-1151105-1",
+      "date": "2026-11-05",
+      "announced_date": "2026-11-05",
+      "fact_date": "2026-11-04",
+      "announced_time": "06:56:25",
+      "title": "代本公司之子公司兆豐國際商業銀行(股)公司公告受金管會 核處罰鍰新臺幣200萬元",
+      "description": "1.事實發生日：115/11/04 2.事實發生主體：代子公司申報：兆豐國際商業銀行(股)公司 3.發生緣由(事件說明)：兆豐銀行受委託機構辦理該行貸款利息收據之裝封作業涉有缺 失，並將裝封有他人貸款繳息資訊之貸款利息收據寄送予客戶。 4.處理過程：已採取相關改善措施並落實執行。 5.處分情形：處罰鍰新臺幣200萬元 6.是否遭裁處罰鍰：是 7.裁罰金額(元)：新台幣 2,000,000 元 8.預計可能損失或影響：新臺幣200萬元 9.可能獲得保險理賠之金額(元)：不適用 10.改善情形及未來因應措施：已採取相關改善措施並落實執行。 11.是否前已就同一事件發布重大訊息：否 12.其他應述明事項：無",
+      "clause": "第26款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151105",
+        "marketKind": "sii",
+        "companyId": "2886"
+      }
+    },
     {
       "id": "mops-history-2886-1151102-1",
       "date": "2026-11-02",
@@ -35,11 +98,11 @@
       "id": "mops-history-2886-1151030-1",
       "date": "2026-10-30",
       "announced_date": "2026-10-30",
-      "fact_date": "2026-10-30",
+      "fact_date": null,
       "announced_time": "17:30:31",
       "title": "代本公司之子公司兆豐期貨股份有限公司公告監察人辭任",
-      "description": "1.發生變動日期:115/10/30 2.法人名稱:兆豐證券股份有限公司 3.舊任者姓名:王億源 4.舊任者簡歷:兆豐證券(股)公司資深協理 5.新任者姓名:尚待核派 6.新任者簡歷:不適用 7.異動原因:請辭 8.原任期（例xx/xx/xx至xx/xx/xx）:115/07/29至118/07/28 9.新任生效日期:不適用 10.其他應敘明事項:辭任生效日115/11/01",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
@@ -56,11 +119,11 @@
       "id": "mops-history-2886-1151029-1",
       "date": "2026-10-29",
       "announced_date": "2026-10-29",
-      "fact_date": "2026-10-29",
+      "fact_date": null,
       "announced_time": "17:23:11",
       "title": "代從屬公司中銀財務管理顧問股份有限公司公告 董事會(代行股東會)決議辦理解散清算事宜",
-      "description": "1.事實發生日:115/10/29 2.公司名稱:中銀財務管理顧問股份有限公司 3.與公司關係(請輸入本公司或子公司):子公司 4.相互持股比例:99.56% 5.發生緣由:配合集團組織調整及資源整合規劃。 6.因應措施:依法辦理解散清算相關程序。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 無。",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
@@ -77,11 +140,11 @@
       "id": "mops-history-2886-1151028-2",
       "date": "2026-10-28",
       "announced_date": "2026-10-28",
-      "fact_date": "2026-10-28",
+      "fact_date": null,
       "announced_time": "17:36:38",
       "title": "代本公司之子公司兆豐證券公告財務主管、會計主管異動",
-      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、 行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、 內部稽核主管或訴訟及非訟代理人）:財務主管、會計主管 2.發生變動日期:115/10/28 3.舊任者姓名、級職及簡歷:王億源、資深協理 4.新任者姓名、級職及簡歷:無 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新 任」或「解任」）:辭職 6.異動原因:辭職 7.生效日期:115/11/01 8.其他應敘明事項:由職務代理人暫代",
-      "clause": "第8款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
@@ -450,69 +513,6 @@
         "marketKind": "sii",
         "companyId": "2886"
       }
-    },
-    {
-      "id": "mops-history-2886-1150825-1",
-      "date": "2026-08-25",
-      "announced_date": "2026-08-25",
-      "fact_date": null,
-      "announced_time": "15:43:17",
-      "title": "公告本公司115年第二季合併財務報告業經審計委員會及 董事會決議通過",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150825",
-        "marketKind": "sii",
-        "companyId": "2886"
-      }
-    },
-    {
-      "id": "mops-history-2886-1150813-1",
-      "date": "2026-08-13",
-      "announced_date": "2026-08-13",
-      "fact_date": null,
-      "announced_time": "16:52:51",
-      "title": "公告本公司暨主要子公司115年7月份自結合併盈餘",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150813",
-        "marketKind": "sii",
-        "companyId": "2886"
-      }
-    },
-    {
-      "id": "mops-history-2886-1150730-1",
-      "date": "2026-07-30",
-      "announced_date": "2026-07-30",
-      "fact_date": null,
-      "announced_time": "16:19:03",
-      "title": "代本公司之子公司兆豐國際證券投資信託股份有限公司 公告財務主管異動",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150730",
-        "marketKind": "sii",
-        "companyId": "2886"
-      }
     }
   ],
   "references": [
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-05T12:31:16.002Z",
-      "row_count": 225,
+      "fetched_at": "2026-11-08T00:15:39.717Z",
+      "row_count": 5,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-11-04T12:33:56.757Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-11-08T00:17:29.431Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

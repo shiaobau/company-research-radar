@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-05T12:31:25.580Z",
+  "generated_at": "2026-11-08T00:15:42.741Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-05T12:31:25.580Z"
+      "refreshed_at": "2026-11-08T00:15:42.741Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -42,33 +42,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 56,
+      "score": 53,
       "rationale": "財務品質分數 74。",
-      "events": [
-        {
-          "date": "2026-11-02",
-          "announce_date": "2026-11-04",
-          "time": "154058",
-          "title": "說明本公司線上商城「購健康」平台委外服務廠商資安 事件，訂單、個資疑似外洩之處理情形",
-          "clause": "第26款",
-          "description": "1.事實發生日:115/11/02 2.發生緣由:本公司接獲電子商城線上平台委外服務廠商順立智慧股份有限公司 (Cyberbiz，以下簡稱順立公司)通知，其資料庫部分資料遭未經授權之異常存取， 該資料庫包含本公司電子商城「購健康」訂單及個人資料。至目前為止，尚無法 釐清相關資料是否受到影響及其範圍。 3.處理過程:(1)本公司接獲通知後，已依內部個資相關規定組成個資事故緊急應變 小組，並召開應變會議，採取必要防護措施以降低事件影響。(2)透過本公司電子 商城官網發布及以簡訊通知等方式提醒會員、消費者提高防詐騙警覺，避免損失。 (3)本公司已主動通報相關主管機關。(4)本公司另要求委外服務廠商順立公司儘速 釐清事件原因、本公司「購健康」訂單資料或消費者個資是否遭未經授權存取及 可能受影響範圍，並進行資安檢視及必要強化措施。 4.預計可能損失或影響:截至目前對公司財務及業務並無重大影響。 5.可能獲得保險理賠之金額:不適用。若本公司遭受害者求償，將要求順立公司負責。 6.改善情形及未來因應措施:(1)本公司已要求順立公司重新檢視資安疑慮及相關風險 ，採取必要改善措施。(2)本公司將持續追蹤改善情形及強化委外服務之資安監督 管理。 7.其他應敘明事項:無。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
-          "risk_points": 0,
-          "matched_patterns": [
-            "說明"
-          ]
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-05T12:31:25.580Z"
+      "refreshed_at": "2026-11-08T00:15:42.741Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -85,7 +67,7 @@
       "rationale": "月營收分數 79；財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-05T12:31:25.580Z"
+      "refreshed_at": "2026-11-08T00:15:42.741Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -102,7 +84,7 @@
       "rationale": "月營收分數 74；財務品質分數 69。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-05T12:31:25.580Z"
+      "refreshed_at": "2026-11-08T00:15:42.741Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -119,7 +101,7 @@
       "rationale": "月營收分數 77；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-05T12:31:25.580Z"
+      "refreshed_at": "2026-11-08T00:15:42.741Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -136,7 +118,7 @@
       "rationale": "月營收分數 76；財務品質分數 89。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-05T12:31:25.580Z"
+      "refreshed_at": "2026-11-08T00:15:42.741Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -153,7 +135,7 @@
       "rationale": "月營收分數 74；財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-05T12:31:25.580Z"
+      "refreshed_at": "2026-11-08T00:15:42.741Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -170,7 +152,7 @@
       "rationale": "月營收分數 76。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-05T12:31:25.580Z"
+      "refreshed_at": "2026-11-08T00:15:42.741Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -187,7 +169,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-05T12:31:25.580Z"
+      "refreshed_at": "2026-11-08T00:15:42.741Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -196,15 +178,31 @@
       "source_ids": [
         "tpex_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
+      "evidence_level": "high",
+      "event_count": 1,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 57,
+      "score": 60,
       "rationale": "財務品質分數 78。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-11-06",
+          "announce_date": "2026-11-06",
+          "time": "135626",
+          "title": "元大期貨公告115年10月份營運概況",
+          "clause": "第53款",
+          "description": "1.事實發生日:115/11/06 2.公司名稱:元大期貨股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由: 元大期貨公告115年10月份自結合併損益: (1)10月份稅前淨利：381,759仟元、每股稅前淨利0.99元。 (2)10月份稅後淨利：293,492仟元、每股稅後淨利0.76元。 (3)1至10月份累計稅前淨利：3,697,548 仟元、每股稅前淨利9.63元。 (4)1至10月份累計稅後淨利：2,916,040 仟元、每股稅後淨利7.60元。 以上資料係本公司自行結算結果，尚未經會計師查核簽證。 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第9款所定 對股東權益或證券價格有重大影響之事項):無",
+          "source_id": "tpex_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-05T12:31:25.580Z"
+      "refreshed_at": "2026-11-08T00:15:42.741Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -221,7 +219,7 @@
       "rationale": "財務品質分數 71。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-05T12:31:25.580Z"
+      "refreshed_at": "2026-11-08T00:15:42.741Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -238,7 +236,7 @@
       "rationale": "財務品質分數 65。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-05T12:31:25.580Z"
+      "refreshed_at": "2026-11-08T00:15:42.741Z"
     }
   }
 }

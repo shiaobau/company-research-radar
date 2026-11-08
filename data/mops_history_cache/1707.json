@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1",
   "ticker": "1707",
-  "fetched_at": "2026-11-04T12:33:13.638Z",
+  "fetched_at": "2026-11-08T00:16:56.083Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,48 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-1707-1151106-1",
+      "date": "2026-11-06",
+      "announced_date": "2026-11-06",
+      "fact_date": "2026-11-06",
+      "announced_time": "14:51:51",
+      "title": "公告本公司董事會決議115年上半年度股利分派",
+      "description": "1. 董事會決議日期：115/11/06 2. 股利所屬年(季)度：115年 上半年 3. 股利所屬期間：115/01/01 至 115/06/30 4. 股東配發內容： (1)盈餘分配之現金股利(元/股)：1.90000000 (2)法定盈餘公積發放之現金(元/股)：0 (3)資本公積發放之現金(元/股)：0 (4)股東配發之現金(股利)總金額(元)：281,461,009 (5)盈餘轉增資配股(元/股)：0 (6)法定盈餘公積轉增資配股(元/股)：0 (7)資本公積轉增資配股(元/股)：0 (8)股東配股總股數(股)：0 5. 其他應敘明事項： 無 6. 普通股每股面額欄位：新台幣10.0000元",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151106",
+        "marketKind": "sii",
+        "companyId": "1707"
+      }
+    },
+    {
+      "id": "mops-history-1707-1151103-1",
+      "date": "2026-11-06",
+      "announced_date": "2026-11-06",
+      "fact_date": "2026-11-06",
+      "announced_time": "14:38:01",
+      "title": "公告本公司董事會決議通過115年第三季合併財務報告",
+      "description": "1.提報董事會或經董事會決議日期:115/11/06 2.審計委員會通過日期:115/11/06 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/09/30 4.1月1日累計至本期止營業收入(仟元):6,840,697 5.1月1日累計至本期止營業毛利(毛損) (仟元):4,886,125 6.1月1日累計至本期止營業利益(損失) (仟元):1,149,949 7.1月1日累計至本期止稅前淨利(淨損) (仟元):1,250,524 8.1月1日累計至本期止本期淨利(淨損) (仟元):1,001,804 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):618,598 10.1月1日累計至本期止基本每股盈餘(損失) (元):4.18 11.期末總資產(仟元):14,328,673 12.期末總負債(仟元):2,362,190 13.期末歸屬於母公司業主之權益(仟元):10,462,991 14.其他應敘明事項:無",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151103",
+        "marketKind": "sii",
+        "companyId": "1707"
+      }
+    },
     {
       "id": "mops-history-1707-1151104-1",
       "date": "2026-11-04",
@@ -59,11 +101,11 @@
       "id": "mops-history-1707-1150813-1",
       "date": "2026-08-13",
       "announced_date": "2026-08-13",
-      "fact_date": "2026-08-13",
+      "fact_date": null,
       "announced_time": "15:11:13",
       "title": "公告本公司董事會決議通過115年第二季合併財務報告",
-      "description": "1.提報董事會或經董事會決議日期:115/08/13 2.審計委員會通過日期:115/08/13 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/06/30 4.1月1日累計至本期止營業收入(仟元):4,691,625 5.1月1日累計至本期止營業毛利(毛損) (仟元):3,352,256 6.1月1日累計至本期止營業利益(損失) (仟元):748,588 7.1月1日累計至本期止稅前淨利(淨損) (仟元):809,164 8.1月1日累計至本期止本期淨利(淨損) (仟元):652,884 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):406,976 10.1月1日累計至本期止基本每股盈餘(損失) (元):2.75 11.期末總資產(仟元):15,002,187 12.期末總負債(仟元):3,398,386 13.期末歸屬於母公司業主之權益(仟元):10,238,044 14.其他應敘明事項:無",
-      "clause": "第31款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=115",
@@ -80,11 +122,11 @@
       "id": "mops-history-1707-1150805-1",
       "date": "2026-08-05",
       "announced_date": "2026-08-05",
-      "fact_date": "2026-08-05",
+      "fact_date": null,
       "announced_time": "14:30:23",
       "title": "公告本公司115年第二季財務報告 董事會預計召開日期為115年8月13日",
-      "description": "1.董事會召集通知日:115/08/05 2.董事會預計召開日期:115/08/13 3.預計提報董事會或經董事會決議之財務報告或 年度自結財務資訊年季:115年第二季 4.其他應敘明事項:無",
-      "clause": "第31款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=115",
@@ -471,48 +513,6 @@
       "detail_parameters": {
         "serialNumber": "1",
         "enterDate": "1150224",
-        "marketKind": "sii",
-        "companyId": "1707"
-      }
-    },
-    {
-      "id": "mops-history-1707-1150205-3",
-      "date": "2026-02-05",
-      "announced_date": "2026-02-05",
-      "fact_date": null,
-      "announced_time": "16:37:11",
-      "title": "代本公司重要子公司葡眾企業股份有限公司 公告董事會決議對關係人之捐贈事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "enterDate": "1150205",
-        "marketKind": "sii",
-        "companyId": "1707"
-      }
-    },
-    {
-      "id": "mops-history-1707-1150205-2",
-      "date": "2026-02-05",
-      "announced_date": "2026-02-05",
-      "fact_date": null,
-      "announced_time": "16:35:33",
-      "title": "代本公司重要子公司葡眾企業股份有限公司 公告董事會決議召開115年股東常會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150205",
         "marketKind": "sii",
         "companyId": "1707"
       }

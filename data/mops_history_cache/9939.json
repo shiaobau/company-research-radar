@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1",
   "ticker": "9939",
-  "fetched_at": "2026-11-04T12:34:31.357Z",
+  "fetched_at": "2026-11-08T00:17:58.536Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,48 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-9939-1151106-2",
+      "date": "2026-11-06",
+      "announced_date": "2026-11-06",
+      "fact_date": "2026-11-06",
+      "announced_time": "17:25:19",
+      "title": "公告本公司內部稽核主管異動",
+      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、 行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、 內部稽核主管或訴訟及非訟代理人）:內部稽核主管 2.發生變動日期:115/11/06 3.舊任者姓名、級職及簡歷:謝泓隆 稽核室副總經理 4.新任者姓名、級職及簡歷:林佳緯 稽核室經理 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新 任」或「解任」）:退休 6.異動原因:退休 7.生效日期:116/01/01 8.其他應敘明事項:無",
+      "clause": "第8款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1151106",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
+    {
+      "id": "mops-history-9939-1151106-1",
+      "date": "2026-11-06",
+      "announced_date": "2026-11-06",
+      "fact_date": "2026-11-06",
+      "announced_time": "17:23:25",
+      "title": "公告本公司董事會通過115年度第3季合併財務報告",
+      "description": "1.提報董事會或經董事會決議日期:115/11/06 2.審計委員會通過日期:115/11/06 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/09/30 4.1月1日累計至本期止營業收入(仟元):23,659,929 5.1月1日累計至本期止營業毛利(毛損) (仟元):5,882,561 6.1月1日累計至本期止營業利益(損失) (仟元):3,762,036 7.1月1日累計至本期止稅前淨利(淨損) (仟元):3,685,464 8.1月1日累計至本期止本期淨利(淨損) (仟元):2,977,039 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):2,910,498 10.1月1日累計至本期止基本每股盈餘(損失) (元):9.84 11.期末總資產(仟元):50,260,069 12.期末總負債(仟元):28,566,264 13.期末歸屬於母公司業主之權益(仟元):21,230,140 14.其他應敘明事項:有關115年度第3季合併財務報表詳細資訊 將於主管機關規定期限內完成上傳作業，屆時相關之訊息請逕 向台灣證券交易所股市觀測站查詢。",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151106",
+        "marketKind": "sii",
+        "companyId": "9939"
+      }
+    },
     {
       "id": "mops-history-9939-1151028-1",
       "date": "2026-10-28",
@@ -59,11 +101,11 @@
       "id": "mops-history-9939-1150820-1",
       "date": "2026-08-20",
       "announced_date": "2026-08-20",
-      "fact_date": "2026-08-21",
+      "fact_date": null,
       "announced_time": "17:54:08",
       "title": "本公司受邀參加宏遠證券所舉辦之線上法說會",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/08/21 1.召開法人說明會之日期：115/08/21 2.召開法人說明會之時間：14 時 00 分 3.召開法人說明會之地點：線上法說會 4.法人說明會擇要訊息：公司簡介財務、業務及相關資訊作業說明 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-      "clause": "第12款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
@@ -80,11 +122,11 @@
       "id": "mops-history-9939-1150817-1",
       "date": "2026-08-17",
       "announced_date": "2026-08-17",
-      "fact_date": "2026-08-17",
+      "fact_date": null,
       "announced_time": "18:15:34",
       "title": "代重要子公司宏全控股有限公司公告董事會新增 對單一企業宏全中國控股有限公司資金貸與金額達新台幣一千萬 以上且達本公司最近期財務報表淨值百分之二以上",
-      "description": "1.事實發生日:115/08/17 2.接受資金貸與之: (1)公司名稱:宏全中國控股股份有限公司 (2)與資金貸與他人公司之關係: 宏全中國控股股份有限公司係為宏全控股有限公司持有100%之子公司 (3)資金貸與之限額(仟元):11,182,239 (4)原資金貸與之餘額(仟元):3,996,747 (5)本次新增資金貸與之金額(仟元):740,306 (6)是否為董事會授權董事長對同一貸與對象分次撥貸或循環動用之資金貸與:否 (7)迄事實發生日止資金貸與餘額(仟元):4,737,053 (8)本次新增資金貸與之原因: 因前期借款到期償還所需 3.接受資金貸與公司所提供擔保品之: (1)內容: 無 (2)價值(仟元):0 4.接受資金貸與公司最近期財務報表之: (1)資本(仟元):452,604 (2)累積盈虧金額(仟元):4,235,412 5.計息方式: 2%+浮動利率 6.還款之: (1)條件: 無 (2)日期: 每筆借款期限以一年為限 7.迄事實發生日為止，資金貸與餘額(仟元): 6,081,126 8.迄事實發生日為止，資金貸與餘額占公開發行公司最近期財務報表淨值之比率: 30.75 9.公司貸與他人資金之來源: 子公司本身 10.其他應敘明事項: 無",
-      "clause": "第23款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
@@ -471,48 +513,6 @@
       "detail_parameters": {
         "serialNumber": "8",
         "enterDate": "1150522",
-        "marketKind": "sii",
-        "companyId": "9939"
-      }
-    },
-    {
-      "id": "mops-history-9939-1150522-2",
-      "date": "2026-05-22",
-      "announced_date": "2026-05-22",
-      "fact_date": null,
-      "announced_time": "18:21:19",
-      "title": "代重要子公司宏全食品包裝（漳州）有限公司公告 總經理異動案",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150522",
-        "marketKind": "sii",
-        "companyId": "9939"
-      }
-    },
-    {
-      "id": "mops-history-9939-1150520-1",
-      "date": "2026-05-21",
-      "announced_date": "2026-05-21",
-      "fact_date": null,
-      "announced_time": "08:39:47",
-      "title": "本公司受邀參加華南永昌證券2026年夏季產業暨企業論壇",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=9939&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150520",
         "marketKind": "sii",
         "companyId": "9939"
       }

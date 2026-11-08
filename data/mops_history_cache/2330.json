@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1",
   "ticker": "2330",
-  "fetched_at": "2026-11-04T12:33:39.836Z",
+  "fetched_at": "2026-11-08T00:17:15.649Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2330-1151106-1",
+      "date": "2026-11-06",
+      "announced_date": "2026-11-06",
+      "fact_date": "2026-11-16",
+      "announced_time": "18:05:50",
+      "title": "本公司受邀參加機構投資人說明會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/11/16 1.召開法人說明會之日期：115/11/16 ~ 115/11/17 2.召開法人說明會之時間：09 時 00 分 3.召開法人說明會之地點：Grand Hyatt Hong Kong 4.法人說明會擇要訊息：本公司受邀參加摩根大通證券所舉辦之『APAC Technology, Innovation and Growth (TIG) Conference』，會中就本公司10/15法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151106",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
+    },
     {
       "id": "mops-history-2330-1151103-1",
       "date": "2026-11-03",
@@ -80,11 +101,11 @@
       "id": "mops-history-2330-1151008-1",
       "date": "2026-10-08",
       "announced_date": "2026-10-08",
-      "fact_date": "2026-10-08",
+      "fact_date": null,
       "announced_time": "13:54:04",
       "title": "台積公司2026年9月營收報告",
-      "description": "1.事實發生日:115/10/08 2.公司名稱:台灣積體電路製造股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:不適用 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 台積公司今（8）日公佈2026年9月營收報告。2026年9月合併營收約為 新台幣5,118億5,700萬元，較上月減少了0.6%，較去年同期增加了54.6%。 累計2026年1至9月營收約為新台幣3兆8,987億2,700萬元，較去年同期增 加了41.1%。",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
       "detail_parameters": {
         "serialNumber": "1",
         "enterDate": "1150702",
-        "marketKind": "sii",
-        "companyId": "2330"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150629-1",
-      "date": "2026-06-29",
-      "announced_date": "2026-06-29",
-      "fact_date": null,
-      "announced_time": "18:50:00",
-      "title": "公告本公司115年第二季法人說明會將於115年7月16日召開",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150629",
         "marketKind": "sii",
         "companyId": "2330"
       }

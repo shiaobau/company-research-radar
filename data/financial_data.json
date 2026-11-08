@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-05T12:31:25.580Z",
+  "generated_at": "2026-11-08T00:15:42.741Z",
   "sources": [
     {
       "id": "twse_margin_balance",
@@ -227,7 +227,7 @@
       "book_value_per_share": 37.55,
       "score": 74,
       "rationale": "2026Q3 毛利率 32.03%，營益率 21.99%，流動比率 3.27，負債比率 30.32%。",
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-11-05T12:31:25.580Z"
     },
     "twse-2308": {
@@ -251,7 +251,7 @@
       "book_value_per_share": 122.5,
       "score": 69,
       "rationale": "2026Q3 毛利率 35.47%，營益率 16.97%，流動比率 1.71，負債比率 54%。",
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-11-05T12:31:25.580Z"
     },
     "twse-2330": {
@@ -434,7 +434,7 @@
       "book_value_per_share": 88.74,
       "score": 71,
       "rationale": "2026Q3 毛利率 31.95%，營益率 13.34%，流動比率 2.12，負債比率 23.43%。",
-      "cache_status": "fresh",
+      "cache_status": "stale",
       "refreshed_at": "2026-11-05T12:31:25.580Z"
     },
     "twse-9939": {

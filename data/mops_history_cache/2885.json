@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1",
   "ticker": "2885",
-  "fetched_at": "2026-11-04T12:33:49.431Z",
+  "fetched_at": "2026-11-08T00:17:22.758Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2885-1151106-1",
+      "date": "2026-11-06",
+      "announced_date": "2026-11-06",
+      "fact_date": "2026-11-10",
+      "announced_time": "15:16:51",
+      "title": "公告本公司擬於民國115年11月10日受邀參加美銀證券舉辦之BofA Taiwan Financial Tour",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/11/10 1.召開法人說明會之日期：115/11/10 2.召開法人說明會之時間：09 時 00 分 3.召開法人說明會之地點：台北 4.法人說明會擇要訊息：公告本公司擬於民國115年11月10日(二)受邀參加美銀證券舉辦之BofA Taiwan Financial Tour。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151106",
+        "marketKind": "sii",
+        "companyId": "2885"
+      }
+    },
     {
       "id": "mops-history-2885-1151103-1",
       "date": "2026-11-03",
@@ -80,11 +101,11 @@
       "id": "mops-history-2885-1151028-1",
       "date": "2026-10-28",
       "announced_date": "2026-10-28",
-      "fact_date": "2026-10-28",
+      "fact_date": null,
       "announced_time": "16:23:37",
       "title": "元大金控補充公告法務長真除",
-      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、 行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、 內部稽核主管或訴訟及非訟代理人）:法務長 2.發生變動日期:115/10/28 3.舊任者姓名、級職及簡歷:李國榮 元大金融控股股份有限公司代理法務長 元大商業銀行股份有限公司副總經理 4.新任者姓名、級職及簡歷:李國榮 元大金融控股股份有限公司法務長 元大商業銀行股份有限公司副總經理 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新 任」或「解任」）:職務調整 6.異動原因:代理真除 7.生效日期:115/11/01 8.其他應敘明事項:無",
-      "clause": "第8款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
@@ -492,27 +513,6 @@
       "detail_parameters": {
         "serialNumber": "1",
         "enterDate": "1150928",
-        "marketKind": "sii",
-        "companyId": "2885"
-      }
-    },
-    {
-      "id": "mops-history-2885-1150924-4",
-      "date": "2026-09-24",
-      "announced_date": "2026-09-24",
-      "fact_date": null,
-      "announced_time": "16:27:49",
-      "title": "元大金控代子公司元大銀行公告董事會決議通過臺中崇德 大樓依「都市危險及老舊建築物加速重建條例」辦理危老重建。",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2885&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "4",
-        "enterDate": "1150924",
         "marketKind": "sii",
         "companyId": "2885"
       }
