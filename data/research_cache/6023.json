@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-08T00:16:43.557Z",
+  "collected_at": "2026-11-08T12:32:05.128Z",
   "company": {
     "id": "tpex-6023",
     "ticker": "6023",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "7a7d10cacf50a53163a6",
-      "date": "2026-11-06",
-      "announced_date": "2026-11-06",
-      "fact_date": "2026-11-06",
-      "announced_time": "135626",
-      "title": "元大期貨公告115年10月份營運概況",
-      "description": "1.事實發生日:115/11/06 2.公司名稱:元大期貨股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由: 元大期貨公告115年10月份自結合併損益: (1)10月份稅前淨利：381,759仟元、每股稅前淨利0.99元。 (2)10月份稅後淨利：293,492仟元、每股稅後淨利0.76元。 (3)1至10月份累計稅前淨利：3,697,548 仟元、每股稅前淨利9.63元。 (4)1至10月份累計稅後淨利：2,916,040 仟元、每股稅後淨利7.60元。 以上資料係本公司自行結算結果，尚未經會計師查核簽證。 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司， 本則重大訊息同時符合證券交易法施行細則第7條第9款所定 對股東權益或證券價格有重大影響之事項):無",
-      "clause": "第53款",
-      "source_id": "tpex_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-6023-1151106-1",
       "date": "2026-11-06",
@@ -507,6 +492,27 @@
         "marketKind": "otc",
         "companyId": "6023"
       }
+    },
+    {
+      "id": "mops-history-6023-1150608-1",
+      "date": "2026-06-08",
+      "announced_date": "2026-06-08",
+      "fact_date": null,
+      "announced_time": "13:50:12",
+      "title": "元大期貨公告115年5月份營運概況",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150608",
+        "marketKind": "otc",
+        "companyId": "6023"
+      }
     }
   ],
   "references": [
@@ -535,13 +541,13 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-08T00:15:40.332Z",
-      "row_count": 285,
+      "fetched_at": "2026-11-08T12:30:51.815Z",
+      "row_count": 3,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-08T00:17:46.657Z",
       "row_count": 24,
       "detail_count": 4,

@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-08T00:15:42.741Z",
+  "generated_at": "2026-11-08T12:30:52.877Z",
   "note": "Display-only public facts generated from structured public datasets. Items without available source-backed data are omitted.",
   "sources": [
     {
@@ -204,7 +204,7 @@
     "twse-1231": {
       "ticker": "1231",
       "market": "TWSE",
-      "generated_at": "2026-11-08T00:15:42.741Z",
+      "generated_at": "2026-11-08T12:30:52.877Z",
       "facts": [
         {
           "id": "official_classification",
@@ -288,7 +288,7 @@
     "twse-1707": {
       "ticker": "1707",
       "market": "TWSE",
-      "generated_at": "2026-11-08T00:15:42.741Z",
+      "generated_at": "2026-11-08T12:30:52.877Z",
       "facts": [
         {
           "id": "official_classification",
@@ -364,7 +364,7 @@
     "twse-2303": {
       "ticker": "2303",
       "market": "TWSE",
-      "generated_at": "2026-11-08T00:15:42.741Z",
+      "generated_at": "2026-11-08T12:30:52.877Z",
       "facts": [
         {
           "id": "official_classification",
@@ -440,7 +440,7 @@
     "twse-2308": {
       "ticker": "2308",
       "market": "TWSE",
-      "generated_at": "2026-11-08T00:15:42.741Z",
+      "generated_at": "2026-11-08T12:30:52.877Z",
       "facts": [
         {
           "id": "official_classification",
@@ -524,7 +524,7 @@
     "twse-2330": {
       "ticker": "2330",
       "market": "TWSE",
-      "generated_at": "2026-11-08T00:15:42.741Z",
+      "generated_at": "2026-11-08T12:30:52.877Z",
       "facts": [
         {
           "id": "official_classification",
@@ -600,7 +600,7 @@
     "twse-2885": {
       "ticker": "2885",
       "market": "TWSE",
-      "generated_at": "2026-11-08T00:15:42.741Z",
+      "generated_at": "2026-11-08T12:30:52.877Z",
       "facts": [
         {
           "id": "official_classification",
@@ -676,7 +676,7 @@
     "twse-2886": {
       "ticker": "2886",
       "market": "TWSE",
-      "generated_at": "2026-11-08T00:15:42.741Z",
+      "generated_at": "2026-11-08T12:30:52.877Z",
       "facts": [
         {
           "id": "official_classification",
@@ -752,7 +752,7 @@
     "tpex-3115": {
       "ticker": "3115",
       "market": "TPEx",
-      "generated_at": "2026-11-08T00:15:42.741Z",
+      "generated_at": "2026-11-08T12:30:52.877Z",
       "facts": [
         {
           "id": "official_classification",
@@ -827,7 +827,7 @@
     "twse-3481": {
       "ticker": "3481",
       "market": "TWSE",
-      "generated_at": "2026-11-08T00:15:42.741Z",
+      "generated_at": "2026-11-08T12:30:52.877Z",
       "facts": [
         {
           "id": "official_classification",
@@ -903,7 +903,7 @@
     "tpex-6023": {
       "ticker": "6023",
       "market": "TPEx",
-      "generated_at": "2026-11-08T00:15:42.741Z",
+      "generated_at": "2026-11-08T12:30:52.877Z",
       "facts": [
         {
           "id": "official_classification",
@@ -924,7 +924,7 @@
         {
           "id": "financial_snapshot",
           "label": "最新財報",
-          "value": "2026 Q2：年化 ROE 15.45%；年化 ROA 0.98%；權益比率 6.33%；EPS 4.19。",
+          "value": "2026 Q3：年化 ROE 12.8%；年化 ROA 1%；權益比率 7.78%；EPS 6.97。",
           "source_ids": [
             "tpex_financial_income_bd",
             "tpex_financial_balance_bd"
@@ -956,14 +956,6 @@
           ]
         },
         {
-          "id": "latest_disclosure",
-          "label": "近期重大訊息",
-          "value": "2026-11-06：元大期貨公告115年10月份營運概況。",
-          "source_ids": [
-            "tpex_material_events"
-          ]
-        },
-        {
           "id": "major_shareholders",
           "label": "大股東資料",
           "value": "持股逾 10% 大股東：元大金融控股股份有限公司。",
@@ -984,7 +976,7 @@
         {
           "id": "event_risk_snapshot",
           "label": "事件與合規",
-          "value": "官方事件 1 則；申報違規 0 筆。",
+          "value": "官方事件 0 則；申報違規 0 筆。",
           "source_ids": [
             "tpex_material_events",
             "tpex_disclosure_violations"
@@ -995,7 +987,7 @@
     "tpex-8279": {
       "ticker": "8279",
       "market": "TPEx",
-      "generated_at": "2026-11-08T00:15:42.741Z",
+      "generated_at": "2026-11-08T12:30:52.877Z",
       "facts": [
         {
           "id": "official_classification",
@@ -1079,7 +1071,7 @@
     "twse-9939": {
       "ticker": "9939",
       "market": "TWSE",
-      "generated_at": "2026-11-08T00:15:42.741Z",
+      "generated_at": "2026-11-08T12:30:52.877Z",
       "facts": [
         {
           "id": "official_classification",
