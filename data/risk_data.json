@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-09T12:30:58.091Z",
+  "generated_at": "2026-11-10T00:15:47.181Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-09T12:30:58.091Z"
+      "refreshed_at": "2026-11-10T00:15:47.181Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -64,19 +64,37 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 1,
       "negative_event_count": 0,
       "positive_event_count": 0,
-      "review_event_count": 0,
+      "review_event_count": 1,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 92,
+      "score": 91,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-11-09",
+          "announce_date": "2026-11-09",
+          "time": "151512",
+          "title": "公告本公司董事長訂定115年上半年度現金股利 除息基準日相關事宜",
+          "clause": "第14款",
+          "description": "1.董事會、股東會決議或公司決定日期:115/11/09 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.普通股發放股利種類及金額: 每股無償配發現金股利新台幣1.9元，共計新台幣281,461,009元。 4.除權（息）交易日:115/12/30 5.最後過戶日:116/01/02 6.停止過戶起始日期:116/01/03 7.停止過戶截止日期:116/01/07 8.除權（息）基準日:116/01/07 9.債券最後申請轉換日期:無 10.債券停止轉換起始日期:無 11.債券停止轉換截止日期:無 12.普通股現金股利發放日期:116/01/28 13.現金股利之一部或全部是否以外幣發放(請填入「是」或「否」):否 14.外幣現金股利發放幣別:NA 15.外幣現金股利發放對象:NA 16.外幣現金股利匯率決定方式:NA 17.其他應敘明事項: 如嗣後因股本變動，以致影響流通在外股份數量，股東配息率因此發生變動者， 董事會授權董事長調整。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "routine",
+          "risk_category_label": "例行或權利事件",
+          "risk_points": 0,
+          "matched_patterns": [
+            "除息"
+          ]
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-09T12:30:58.091Z"
+      "refreshed_at": "2026-11-10T00:15:47.181Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -99,7 +117,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-09T12:30:58.091Z"
+      "refreshed_at": "2026-11-10T00:15:47.181Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -110,19 +128,37 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 2,
       "negative_event_count": 0,
       "positive_event_count": 0,
-      "review_event_count": 0,
+      "review_event_count": 1,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 92,
+      "score": 91,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-12-07",
+          "announce_date": "2026-11-09",
+          "time": "171953",
+          "title": "本公司受邀參加元大證券法人說明會之日期、地點更新",
+          "clause": "第12款",
+          "description": "符合條款第四條第XX款：12 事實發生日：115/12/07 1.召開法人說明會之日期：115/12/07 2.召開法人說明會之時間：14 時 30 分 3.召開法人說明會之地點：元大證券辦公室 4.法人說明會擇要訊息：本公司受元大證券邀請，將於上述時間地點，向法人投資者說明本公司115年第3季之財務報告相關資訊。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-09T12:30:58.091Z"
+      "refreshed_at": "2026-11-10T00:15:47.181Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -133,19 +169,37 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 0,
+      "event_count": 1,
       "negative_event_count": 0,
       "positive_event_count": 0,
-      "review_event_count": 0,
+      "review_event_count": 1,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 92,
+      "score": 91,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-11-18",
+          "announce_date": "2026-11-09",
+          "time": "171437",
+          "title": "本公司受邀參加機構投資人說明會",
+          "clause": "第12款",
+          "description": "符合條款第四條第XX款：12 事實發生日：115/11/18 1.召開法人說明會之日期：115/11/18 ~ 115/11/19 2.召開法人說明會之時間：08 時 30 分 3.召開法人說明會之地點：MANDARIN ORIENTAL SINGAPORE 4.法人說明會擇要訊息：本公司受邀參加摩根士丹利證券所舉辦之『Twenty-Fifth Annual Asia Pacific Summit』，會中就本公司10/15法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-09T12:30:58.091Z"
+      "refreshed_at": "2026-11-10T00:15:47.181Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -168,7 +222,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-09T12:30:58.091Z"
+      "refreshed_at": "2026-11-10T00:15:47.181Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -191,7 +245,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-09T12:30:58.091Z"
+      "refreshed_at": "2026-11-10T00:15:47.181Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -214,7 +268,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-09T12:30:58.091Z"
+      "refreshed_at": "2026-11-10T00:15:47.181Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -237,7 +291,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-09T12:30:58.091Z"
+      "refreshed_at": "2026-11-10T00:15:47.181Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -260,7 +314,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-09T12:30:58.091Z"
+      "refreshed_at": "2026-11-10T00:15:47.181Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -283,7 +337,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-09T12:30:58.091Z"
+      "refreshed_at": "2026-11-10T00:15:47.181Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -306,7 +360,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-09T12:30:58.091Z"
+      "refreshed_at": "2026-11-10T00:15:47.181Z"
     }
   }
 }

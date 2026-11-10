@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-09T12:32:01.278Z",
+  "collected_at": "2026-11-10T00:16:17.183Z",
   "company": {
     "id": "twse-1707",
     "ticker": "1707",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "da0ee852c1aca1532fa4",
+      "date": "2026-11-09",
+      "announced_date": "2026-11-09",
+      "fact_date": "2026-11-09",
+      "announced_time": "151512",
+      "title": "公告本公司董事長訂定115年上半年度現金股利 除息基準日相關事宜",
+      "description": "1.董事會、股東會決議或公司決定日期:115/11/09 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.普通股發放股利種類及金額: 每股無償配發現金股利新台幣1.9元，共計新台幣281,461,009元。 4.除權（息）交易日:115/12/30 5.最後過戶日:116/01/02 6.停止過戶起始日期:116/01/03 7.停止過戶截止日期:116/01/07 8.除權（息）基準日:116/01/07 9.債券最後申請轉換日期:無 10.債券停止轉換起始日期:無 11.債券停止轉換截止日期:無 12.普通股現金股利發放日期:116/01/28 13.現金股利之一部或全部是否以外幣發放(請填入「是」或「否」):否 14.外幣現金股利發放幣別:NA 15.外幣現金股利發放對象:NA 16.外幣現金股利匯率決定方式:NA 17.其他應敘明事項: 如嗣後因股本變動，以致影響流通在外股份數量，股東配息率因此發生變動者， 董事會授權董事長調整。",
+      "clause": "第14款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-1707-1151109-1",
       "date": "2026-11-09",
@@ -492,27 +507,6 @@
         "marketKind": "sii",
         "companyId": "1707"
       }
-    },
-    {
-      "id": "mops-history-1707-1150304-1",
-      "date": "2026-03-04",
-      "announced_date": "2026-03-04",
-      "fact_date": null,
-      "announced_time": "14:46:06",
-      "title": "代本公司重要子公司英屬維京群島葡萄王國際投資有限公司 公告董事會決議股利分派",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1707&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150304",
-        "marketKind": "sii",
-        "companyId": "1707"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-09T12:30:53.177Z",
-      "row_count": 4,
+      "fetched_at": "2026-11-10T00:15:43.586Z",
+      "row_count": 371,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-09T12:32:18.777Z",
       "row_count": 24,
       "detail_count": 4,
