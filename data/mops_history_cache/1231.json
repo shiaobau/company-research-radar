@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1",
   "ticker": "1231",
-  "fetched_at": "2026-11-09T12:32:09.432Z",
+  "fetched_at": "2026-11-10T12:33:04.558Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,48 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-1231-1151110-2",
+      "date": "2026-11-10",
+      "announced_date": "2026-11-10",
+      "fact_date": "2026-11-10",
+      "announced_time": "18:39:40",
+      "title": "公告本公司董事會補行委任薪資報酬委員會委員",
+      "description": "1.發生變動日期:115/11/10 2.功能性委員會名稱:薪資報酬委員會 3.舊任者姓名:不適用 4.舊任者簡歷:不適用 5.新任者姓名:黃瓊萱 6.新任者簡歷:中信聯合企管顧問公司食品產業法規諮詢顧問 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）:新任 8.異動原因:原薪酬委員逝世，董事會依規定補行委任 9.原任期（例xx/xx/xx ~ xx/xx/xx）:114/06/30~117/06/18 10.新任生效日期:115/11/10 11.其他應敘明事項:無",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1151110"
+      }
+    },
+    {
+      "id": "mops-history-1231-1151110-1",
+      "date": "2026-11-10",
+      "announced_date": "2026-11-10",
+      "fact_date": "2026-11-10",
+      "announced_time": "18:38:36",
+      "title": "公告本公司董事會通過115年第三季合併財務報告",
+      "description": "1.提報董事會或經董事會決議日期:115/11/10 2.審計委員會通過日期:115/11/10 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/09/30 4.1月1日累計至本期止營業收入(仟元):9,745,796 5.1月1日累計至本期止營業毛利(毛損) (仟元):1,997,902 6.1月1日累計至本期止營業利益(損失) (仟元):781,080 7.1月1日累計至本期止稅前淨利(淨損) (仟元):1,147,045 8.1月1日累計至本期止本期淨利(淨損) (仟元):989,879 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):990,636 10.1月1日累計至本期止基本每股盈餘(損失) (元):3.02 11.期末總資產(仟元):16,822,864 12.期末總負債(仟元):8,998,394 13.期末歸屬於母公司業主之權益(仟元):7,806,334 14.其他應敘明事項:無",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "1231",
+        "marketKind": "sii",
+        "enterDate": "1151110"
+      }
+    },
     {
       "id": "mops-history-1231-1150731-1",
       "date": "2026-08-06",
@@ -29,9 +71,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150731",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150731"
       }
     },
     {
@@ -50,20 +92,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150729",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150729"
       }
     },
     {
       "id": "mops-history-1231-1150714-1",
       "date": "2026-07-14",
       "announced_date": "2026-07-14",
-      "fact_date": "2026-07-14",
+      "fact_date": null,
       "announced_time": "16:24:33",
       "title": "公告本公司訂定115年除權息基準日及相關事宜",
-      "description": "1.董事會、股東會決議或公司決定日期:115/07/14 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除權息 3.普通股發放股利種類及金額: (1)現金股利：現金股利每股配發1.5元，總計新台幣447,681,718元。 (2)盈餘轉增資：股票股利每股配發1.0元，總計新台幣298,454,470元。 4.除權（息）交易日:115/07/30 5.最後過戶日:115/08/02 6.停止過戶起始日期:115/08/03 7.停止過戶截止日期:115/08/07 8.除權（息）基準日:115/08/07 9.債券最後申請轉換日期:不適用 10.債券停止轉換起始日期:不適用 11.債券停止轉換截止日期:不適用 12.普通股現金股利發放日期:115/09/04 13.現金股利之一部或全部是否以外幣發放(請填入「是」或「否」):否 14.外幣現金股利發放幣別:不適用 15.外幣現金股利發放對象:不適用 16.外幣現金股利匯率決定方式:不適用 17.其他應敘明事項: (1)本次盈餘轉增資發行新股案，業經金融監督管理委員會中華民國115年07月13日 金管會核准申報生效在案。 (2)增資股票採無實體發行以帳簿劃撥方式交付或以新股權利證書先行交付，發放 日期另行公告。",
-      "clause": "第14款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
@@ -71,20 +113,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150714",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150714"
       }
     },
     {
       "id": "mops-history-1231-1150618-2",
       "date": "2026-06-24",
       "announced_date": "2026-06-24",
-      "fact_date": "2026-06-24",
+      "fact_date": null,
       "announced_time": "15:18:27",
       "title": "公告本公司董事會授權董事長訂定除息除權基準日及相關事 宜",
-      "description": "1.事實發生日:115/06/24 2.公司名稱:聯華食品工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:本公司董事會授權董事長俟主管機關核准申報生效後，另訂除息除權基準日 並全權處理配息及配股率必要性之調整。 6.因應措施:除息除權基準日及相關事宜，俟董事長訂定後另行公告。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 無",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=115",
@@ -92,9 +134,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1150618",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150618"
       }
     },
     {
@@ -113,9 +155,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150618",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150618"
       }
     },
     {
@@ -134,9 +176,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1150622",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150622"
       }
     },
     {
@@ -155,9 +197,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150622",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150622"
       }
     },
     {
@@ -176,9 +218,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150511",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150511"
       }
     },
     {
@@ -197,9 +239,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1150505",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150505"
       }
     },
     {
@@ -218,9 +260,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150505",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150505"
       }
     },
     {
@@ -239,9 +281,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150420",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150420"
       }
     },
     {
@@ -260,9 +302,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150226",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150226"
       }
     },
     {
@@ -281,9 +323,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "enterDate": "1150310",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150310"
       }
     },
     {
@@ -302,9 +344,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1150310",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150310"
       }
     },
     {
@@ -323,9 +365,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150310",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150310"
       }
     },
     {
@@ -344,9 +386,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150209",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1150209"
       }
     },
     {
@@ -365,9 +407,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1141231",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1141231"
       }
     },
     {
@@ -386,9 +428,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1141216",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1141216"
       }
     },
     {
@@ -407,9 +449,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1141105",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1141105"
       }
     },
     {
@@ -428,9 +470,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1141030",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1141030"
       }
     },
     {
@@ -449,9 +491,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1140807",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1140807"
       }
     },
     {
@@ -470,51 +512,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1140804",
+        "companyId": "1231",
         "marketKind": "sii",
-        "companyId": "1231"
-      }
-    },
-    {
-      "id": "mops-history-1231-1140729-1",
-      "date": "2025-07-30",
-      "announced_date": "2025-07-30",
-      "fact_date": null,
-      "announced_time": "16:57:01",
-      "title": "公告本公司114年第二季合併財務報告董事會預計召開日期為 114年8月7日",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1140729",
-        "marketKind": "sii",
-        "companyId": "1231"
-      }
-    },
-    {
-      "id": "mops-history-1231-1140630-1",
-      "date": "2025-06-30",
-      "announced_date": "2025-06-30",
-      "fact_date": null,
-      "announced_time": "17:16:09",
-      "title": "公告本公司董事會通過總經理委任案",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=1231&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1140630",
-        "marketKind": "sii",
-        "companyId": "1231"
+        "enterDate": "1140804"
       }
     }
   ]

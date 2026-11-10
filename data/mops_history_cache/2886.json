@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1",
   "ticker": "2886",
-  "fetched_at": "2026-11-09T12:33:17.552Z",
+  "fetched_at": "2026-11-10T12:34:07.667Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2886-1151110-1",
+      "date": "2026-11-10",
+      "announced_date": "2026-11-10",
+      "fact_date": "2026-11-10",
+      "announced_time": "18:40:52",
+      "title": "代本公司之子公司兆豐國際商業銀行公告向關係人中央再保險(股)公司取得使用權資產",
+      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 台北市南京東路二段53號5樓 2.事實發生日:115/11/10~115/11/10 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:總經理核決 民國115年11月10日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 租賃面積:249.27坪 每單位價格:辦公室月租金新臺幣1,444元/坪 租金總金額:新臺幣12,960,000元 使用權資產金額:新臺幣12,602,811元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人:中央再保險股份有限公司 與公司之關係:關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 付款條件:按月給付 租約期間:115/12/01~118/11/30 契約限制條款及其他重要約定事項:租約到期有優先承租權 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 本次交易之決定方式:依租賃雙方議價 價格決定之參考依據:參考附近租金市場行情 決策單位:董事會概括授權經理部門得依內部作業規範辦理之項目 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 辦公場所使用 24.本次交易表示異議之董事之意見: 不適用 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產: 是 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 交易金額為月租金",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii",
+        "enterDate": "1151110"
+      }
+    },
     {
       "id": "mops-history-2886-1151106-1",
       "date": "2026-11-06",
@@ -29,9 +50,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151106",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151106"
       }
     },
     {
@@ -50,9 +71,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1151105",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151105"
       }
     },
     {
@@ -71,20 +92,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151105",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151105"
       }
     },
     {
       "id": "mops-history-2886-1151102-1",
       "date": "2026-11-02",
       "announced_date": "2026-11-02",
-      "fact_date": "2026-11-24",
+      "fact_date": null,
       "announced_time": "15:54:21",
       "title": "公告本公司將召開2026年第三季線上法人說明會",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/11/24 1.召開法人說明會之日期：115/11/24 2.召開法人說明會之時間：14 時 30 分 3.召開法人說明會之地點：線上 4.法人說明會擇要訊息：揭露本公司2026年第3季營運概況 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-      "clause": "第12款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
@@ -92,9 +113,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151102",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151102"
       }
     },
     {
@@ -113,9 +134,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151030",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151030"
       }
     },
     {
@@ -134,9 +155,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151029",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151029"
       }
     },
     {
@@ -155,9 +176,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1151028",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151028"
       }
     },
     {
@@ -176,9 +197,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151028",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151028"
       }
     },
     {
@@ -197,9 +218,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "enterDate": "1151022",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151022"
       }
     },
     {
@@ -218,9 +239,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1151022",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151022"
       }
     },
     {
@@ -239,9 +260,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151022",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151022"
       }
     },
     {
@@ -260,9 +281,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1151016",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151016"
       }
     },
     {
@@ -281,9 +302,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151016",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151016"
       }
     },
     {
@@ -302,9 +323,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151014",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151014"
       }
     },
     {
@@ -323,9 +344,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151002",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1151002"
       }
     },
     {
@@ -344,9 +365,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150922",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1150922"
       }
     },
     {
@@ -365,9 +386,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1150915",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1150915"
       }
     },
     {
@@ -386,9 +407,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150915",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1150915"
       }
     },
     {
@@ -407,9 +428,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150914",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1150914"
       }
     },
     {
@@ -428,9 +449,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150903",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1150903"
       }
     },
     {
@@ -449,9 +470,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "enterDate": "1150826",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1150826"
       }
     },
     {
@@ -470,9 +491,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1150826",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1150826"
       }
     },
     {
@@ -491,30 +512,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150826",
+        "companyId": "2886",
         "marketKind": "sii",
-        "companyId": "2886"
-      }
-    },
-    {
-      "id": "mops-history-2886-1150825-2",
-      "date": "2026-08-25",
-      "announced_date": "2026-08-25",
-      "fact_date": null,
-      "announced_time": "15:43:39",
-      "title": "公告本公司之子公司兆豐國際商業銀行(股)公司 董事異動案",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "enterDate": "1150825",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "enterDate": "1150826"
       }
     }
   ]

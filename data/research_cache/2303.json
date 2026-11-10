@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-10T00:16:17.183Z",
+  "collected_at": "2026-11-10T12:32:52.543Z",
   "company": {
     "id": "twse-2303",
     "ticker": "2303",
@@ -10,6 +10,69 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2303-1151110-3",
+      "date": "2026-11-10",
+      "announced_date": "2026-11-10",
+      "fact_date": "2026-11-10",
+      "announced_time": "17:01:39",
+      "title": "公告本公司取得無形資產之相關資料",
+      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: 無形資產-軟體及矽智財 2.事實發生日:115/5/5~115/11/10 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:不適用 民國115年11月10日 5.交易數量、每單位價格及交易總金額: 交易單位數量：一批； 每單位平均價格：新台幣1,171,169,241元； 總金額：新台幣1,171,169,241元。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: 愛爾蘭商新思股份有限公司台灣分公司；非關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依訂單條件付款。契約限制條款:無。其他重要約定事項:無。 12.本次交易之決定方式、價格決定之參考依據及決策單位: 交易決定方式:議價。 價格決定之參考依據:按市場行情。 決策單位:公司採購核定會議決定。 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 不適用 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 不適用 16.經紀人及經紀費用: 無 17.取得或處分之具體目的或用途: 供生產及研發使用 18.本次交易表示異議董事之意見: 不適用 19.本次交易為關係人交易:否 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:是 22.會計師事務所名稱: 高威聯合會計師事務所 23.會計師姓名: 蔡文精 24.會計師開業證書字號: 台財證登（六）字第一四九四號 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 視公司營運需求 28.資金來源: 營運資金 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1151110"
+      }
+    },
+    {
+      "id": "mops-history-2303-1151110-2",
+      "date": "2026-11-10",
+      "announced_date": "2026-11-10",
+      "fact_date": "2026-11-18",
+      "announced_time": "16:00:25",
+      "title": "本公司受邀參與法人說明會相關資訊",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/11/18 1.召開法人說明會之日期：115/11/18 2.召開法人說明會之時間：10 時 30 分 3.召開法人說明會之地點：新加坡文華東方酒店 4.法人說明會擇要訊息：本公司受邀參加摩根士丹利證券舉辦之法人說明會「Asia Pacific Summit」。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1151110"
+      }
+    },
+    {
+      "id": "mops-history-2303-1151110-1",
+      "date": "2026-11-10",
+      "announced_date": "2026-11-10",
+      "fact_date": "2026-11-16",
+      "announced_time": "15:59:22",
+      "title": "本公司受邀參與法人說明會相關資訊",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/11/16 1.召開法人說明會之日期：115/11/16 2.召開法人說明會之時間：09 時 00 分 3.召開法人說明會之地點：台北W飯店 4.法人說明會擇要訊息：本公司受邀參加麥格理證券舉辦之法人說明會「Taiwan Conference 2026」。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2303",
+        "marketKind": "sii",
+        "enterDate": "1151110"
+      }
+    },
     {
       "id": "mops-history-2303-1151103-1",
       "date": "2026-11-03",
@@ -26,20 +89,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151103",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1151103"
       }
     },
     {
       "id": "mops-history-2303-1151028-5",
       "date": "2026-10-28",
       "announced_date": "2026-10-28",
-      "fact_date": "2026-10-28",
+      "fact_date": null,
       "announced_time": "17:06:04",
       "title": "本公司2026年第三季財務報告",
-      "description": "1.事實發生日:115/10/28 2.公司名稱:聯華電子股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由: 聯華電子公佈2026年第三季財務報告 第三季營業利益季增24.7%，產能利用率達92% 22奈米業務佔第三季晶圓銷售達18.3% 2026年第三季概觀： ‧合併營收：新台幣742.4億元($23.2億美元) ‧毛利率：34.0%；營業利益率：25.1% ‧22/28奈米晶圓營收佔比：35% ‧晶圓製造產能利用率：92% ‧歸屬母公司淨利：新台幣164.3億元($5.14億美元) ‧每股盈餘：新台幣1.32元；每ADS盈餘：$0.206美元 聯華電子股份有限公司今(28)日公佈2026年第三季營運報告，合併營收為新台幣 742.4億元，較上季的687.3億元增加8.0%。與去年同期相比，本季的合併營收增 加25.6%。2026年第三季毛利率達到34.0%，歸屬母公司淨利為新台幣164.3億元， 普通股每股獲利為新台幣1.32元。 聯電執行長王石表示：「第三季各終端市場需求皆維持穩健，帶動聯電晶圓出貨 量成長7.3%，達逾120萬片12吋約當晶圓，創下歷史新高。整體產能利用率達92%， 其中數座12吋晶圓廠產能滿載，8吋晶圓廠營運亦強勁復甦。製程節點方面，隨 著客戶持續完成顯示驅動IC、車用雷達及Wi-Fi IC等新產品設計定案(tape out)， 22/28奈米業務再創單季新高，其中22奈米營收佔晶圓銷售達18.3%。在新業務領 域，客戶持續積極推進與聯電在先進封裝與矽光子的合作，隨著既有專案逐步放 量及新產品完成設計定案，我們預期這些合作將在未來幾季貢獻業務增長。」 聯電執行長王石補充：「展望第四季，我們預期需求動能將延續，晶圓出貨量及 產能利用率將維持穩健。隨著先進封裝與矽光子業務逐步放量，特殊製程營收亦 將持續成長。由於這些新業務領域的需求明顯增加，目前正將部分既有產能轉作 相關用途，以因應短期內尚未滿足的需求。長期而言，聯電在新加坡與台南的雙 軌擴產計畫，對確保產能成長與客戶需求同步至關重要。我們很高興宣布，董事 會今日已核准追加約32億美元資本支出預算，使我們能夠加快擴產時程，同時緊 密配合客戶產品藍圖與需求。」 王石執行長說明：「本季聯電榮獲《HR Asia》2026年亞洲最佳企業雇主獎，我 們很榮幸第三度獲得此項殊榮。此獎項肯定公司持續投入人才培育、完善員工福 利及拓展社會參與機會的努力。透過上述措施，我們致力打造支持員工共同成長、 發揮潛能的職場環境，並為聯電的長期發展奠定穩固基礎。」 Fourth Quarter 2026 Outlook & Guidance ‧Wafer Shipments: Will increase by low-single digit ‧ASP in USD: Will remain firm ‧Gross Profit Margin: Comparable to the preceding quarter ‧Capacity Utilization: Low-90% range ‧2026 CAPEX: US$2.0 billion 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 無",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
@@ -47,20 +110,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "5",
-        "enterDate": "1151028",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1151028"
       }
     },
     {
       "id": "mops-history-2303-1151028-3",
       "date": "2026-10-28",
       "announced_date": "2026-10-28",
-      "fact_date": "2026-10-28",
+      "fact_date": null,
       "announced_time": "17:00:59",
       "title": "公告本公司董事會決議辦理限制員工權利新股收回 註銷減資事宜",
-      "description": "1.董事會決議日期:115/10/28 2.減資緣由:因原獲配限制員工權利新股之員工未達既得條件，將收回之限制員工權利 新股辦理註銷減資。 3.減資金額:新台幣5,734,190元 4.消除股份:573,419股 5.減資比率:0.0046% 6.減資後股本:新台幣125,695,204,800元 7.預定股東會日期:不適用 8.預計減資新股上市後之上市普通股股數:不適用 9.預計減資新股上市後之上市普通股股數占已發行普通股比率 （減資後上市普通股股數/減資後已發行普通股股數）:不適用 10.前二項預計減資後上巿普通股股數未達6000萬股且未達25%者， 請說明股權流通性偏低之因應措施:不適用 11.減資基準日:115/10/28 12.其他應敘明事項:無",
-      "clause": "第11款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
@@ -68,20 +131,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "enterDate": "1151028",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1151028"
       }
     },
     {
       "id": "mops-history-2303-1151028-2",
       "date": "2026-10-28",
       "announced_date": "2026-10-28",
-      "fact_date": "2026-10-28",
+      "fact_date": null,
       "announced_time": "17:00:30",
       "title": "本公司董事會通過資本預算執行案",
-      "description": "1.董事會或股東會決議日期:115/10/28 2.投資計畫內容:資本預算執行案 3.預計投資金額:新台幣102,781佰萬元 4.預計投資日期:依各資本支出預算案計畫 5.資金來源:營運資金 6.具體目的:供產能建置需求 7.其他應敘明事項:無",
-      "clause": "第15款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
@@ -89,9 +152,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1151028",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1151028"
       }
     },
     {
@@ -110,9 +173,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151028",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1151028"
       }
     },
     {
@@ -131,9 +194,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151022",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1151022"
       }
     },
     {
@@ -152,9 +215,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151013",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1151013"
       }
     },
     {
@@ -173,9 +236,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151007",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1151007"
       }
     },
     {
@@ -194,9 +257,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151005",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1151005"
       }
     },
     {
@@ -215,9 +278,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151001",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1151001"
       }
     },
     {
@@ -236,9 +299,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1150903",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150903"
       }
     },
     {
@@ -257,9 +320,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150903",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150903"
       }
     },
     {
@@ -278,9 +341,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150902",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150902"
       }
     },
     {
@@ -299,9 +362,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150826",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150826"
       }
     },
     {
@@ -320,9 +383,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150814",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150814"
       }
     },
     {
@@ -341,9 +404,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150811",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150811"
       }
     },
     {
@@ -362,9 +425,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150805",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150805"
       }
     },
     {
@@ -383,9 +446,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1150730",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150730"
       }
     },
     {
@@ -404,9 +467,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150730",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150730"
       }
     },
     {
@@ -425,9 +488,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "7",
-        "enterDate": "1150729",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150729"
       }
     },
     {
@@ -446,72 +509,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "5",
-        "enterDate": "1150729",
+        "companyId": "2303",
         "marketKind": "sii",
-        "companyId": "2303"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150729-4",
-      "date": "2026-07-29",
-      "announced_date": "2026-07-29",
-      "fact_date": null,
-      "announced_time": "17:06:54",
-      "title": "公告本公司董事會決議解除經理人競業禁止之限制",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "4",
-        "enterDate": "1150729",
-        "marketKind": "sii",
-        "companyId": "2303"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150729-6",
-      "date": "2026-07-29",
-      "announced_date": "2026-07-29",
-      "fact_date": null,
-      "announced_time": "17:05:55",
-      "title": "公告本公司董事會通過投資台灣閎鼎亞洲參有限合夥",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "6",
-        "enterDate": "1150729",
-        "marketKind": "sii",
-        "companyId": "2303"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150729-3",
-      "date": "2026-07-29",
-      "announced_date": "2026-07-29",
-      "fact_date": null,
-      "announced_time": "17:04:25",
-      "title": "公告本公司董事會決議辦理限制員工權利新股收回 註銷減資事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "enterDate": "1150729",
-        "marketKind": "sii",
-        "companyId": "2303"
+        "enterDate": "1150729"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-10T00:15:43.586Z",
+      "fetched_at": "2026-11-10T12:30:55.213Z",
       "row_count": 371,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-11-09T12:32:29.222Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-11-10T12:33:22.805Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
