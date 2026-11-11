@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-10T12:30:57.703Z",
+  "generated_at": "2026-11-11T00:15:54.287Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -25,15 +25,46 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
-      "positive_event_count": 0,
+      "evidence_level": "high",
+      "event_count": 2,
+      "positive_event_count": 1,
       "negative_event_count": 0,
-      "score": 45,
-      "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
-      "events": [],
+      "score": 56,
+      "rationale": "正向重大訊息 1 則。",
+      "events": [
+        {
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "183836",
+          "title": "公告本公司董事會通過115年第三季合併財務報告",
+          "clause": "第31款",
+          "description": "1.提報董事會或經董事會決議日期:115/11/10 2.審計委員會通過日期:115/11/10 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/09/30 4.1月1日累計至本期止營業收入(仟元):9,745,796 5.1月1日累計至本期止營業毛利(毛損) (仟元):1,997,902 6.1月1日累計至本期止營業利益(損失) (仟元):781,080 7.1月1日累計至本期止稅前淨利(淨損) (仟元):1,147,045 8.1月1日累計至本期止本期淨利(淨損) (仟元):989,879 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):990,636 10.1月1日累計至本期止基本每股盈餘(損失) (元):3.02 11.期末總資產(仟元):16,822,864 12.期末總負債(仟元):8,998,394 13.期末歸屬於母公司業主之權益(仟元):7,806,334 14.其他應敘明事項:無",
+          "source_id": "twse_material_events",
+          "sentiment": "positive",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        },
+        {
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "183940",
+          "title": "公告本公司董事會補行委任薪資報酬委員會委員",
+          "clause": "第6款",
+          "description": "1.發生變動日期:115/11/10 2.功能性委員會名稱:薪資報酬委員會 3.舊任者姓名:不適用 4.舊任者簡歷:不適用 5.新任者姓名:黃瓊萱 6.新任者簡歷:中信聯合企管顧問公司食品產業法規諮詢顧問 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「逝世」或「新任」）:新任 8.異動原因:原薪酬委員逝世，董事會依規定補行委任 9.原任期（例xx/xx/xx ~ xx/xx/xx）:114/06/30~117/06/18 10.新任生效日期:115/11/10 11.其他應敘明事項:無",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-10T12:30:57.703Z"
+      "refreshed_at": "2026-11-11T00:15:54.287Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -42,33 +73,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 60,
+      "score": 57,
       "rationale": "財務品質分數 75。",
-      "events": [
-        {
-          "date": "2026-11-09",
-          "announce_date": "2026-11-09",
-          "time": "151512",
-          "title": "公告本公司董事長訂定115年上半年度現金股利 除息基準日相關事宜",
-          "clause": "第14款",
-          "description": "1.董事會、股東會決議或公司決定日期:115/11/09 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.普通股發放股利種類及金額: 每股無償配發現金股利新台幣1.9元，共計新台幣281,461,009元。 4.除權（息）交易日:115/12/30 5.最後過戶日:116/01/02 6.停止過戶起始日期:116/01/03 7.停止過戶截止日期:116/01/07 8.除權（息）基準日:116/01/07 9.債券最後申請轉換日期:無 10.債券停止轉換起始日期:無 11.債券停止轉換截止日期:無 12.普通股現金股利發放日期:116/01/28 13.現金股利之一部或全部是否以外幣發放(請填入「是」或「否」):否 14.外幣現金股利發放幣別:NA 15.外幣現金股利發放對象:NA 16.外幣現金股利匯率決定方式:NA 17.其他應敘明事項: 如嗣後因股本變動，以致影響流通在外股份數量，股東配息率因此發生變動者， 董事會授權董事長調整。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "routine",
-          "risk_category_label": "例行或權利事件",
-          "risk_points": 0,
-          "matched_patterns": [
-            "除息"
-          ]
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-10T12:30:57.703Z"
+      "refreshed_at": "2026-11-11T00:15:54.287Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -77,15 +90,65 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
+      "evidence_level": "high",
+      "event_count": 3,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 67,
+      "score": 70,
       "rationale": "月營收分數 79；財務品質分數 74。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-11-16",
+          "announce_date": "2026-11-10",
+          "time": "155922",
+          "title": "本公司受邀參與法人說明會相關資訊",
+          "clause": "第12款",
+          "description": "符合條款第四條第XX款：12 事實發生日：115/11/16 1.召開法人說明會之日期：115/11/16 2.召開法人說明會之時間：09 時 00 分 3.召開法人說明會之地點：台北W飯店 4.法人說明會擇要訊息：本公司受邀參加麥格理證券舉辦之法人說明會「Taiwan Conference 2026」。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        },
+        {
+          "date": "2026-11-18",
+          "announce_date": "2026-11-10",
+          "time": "160025",
+          "title": "本公司受邀參與法人說明會相關資訊",
+          "clause": "第12款",
+          "description": "符合條款第四條第XX款：12 事實發生日：115/11/18 1.召開法人說明會之日期：115/11/18 2.召開法人說明會之時間：10 時 30 分 3.召開法人說明會之地點：新加坡文華東方酒店 4.法人說明會擇要訊息：本公司受邀參加摩根士丹利證券舉辦之法人說明會「Asia Pacific Summit」。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
+          "risk_points": 0,
+          "matched_patterns": [
+            "說明"
+          ]
+        },
+        {
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "170139",
+          "title": "公告本公司取得無形資產之相關資料",
+          "clause": "第20款",
+          "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: 無形資產-軟體及矽智財 2.事實發生日:115/5/5~115/11/10 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:不適用 民國115年11月10日 5.交易數量、每單位價格及交易總金額: 交易單位數量：一批； 每單位平均價格：新台幣1,171,169,241元； 總金額：新台幣1,171,169,241元。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: 愛爾蘭商新思股份有限公司台灣分公司；非關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依訂單條件付款。契約限制條款:無。其他重要約定事項:無。 12.本次交易之決定方式、價格決定之參考依據及決策單位: 交易決定方式:議價。 價格決定之參考依據:按市場行情。 決策單位:公司採購核定會議決定。 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 不適用 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 不適用 16.經紀人及經紀費用: 無 17.取得或處分之具體目的或用途: 供生產及研發使用 18.本次交易表示異議董事之意見: 不適用 19.本次交易為關係人交易:否 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:是 22.會計師事務所名稱: 高威聯合會計師事務所 23.會計師姓名: 蔡文精 24.會計師開業證書字號: 台財證登（六）字第一四九四號 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 視公司營運需求 28.資金來源: 營運資金 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-10T12:30:57.703Z"
+      "refreshed_at": "2026-11-11T00:15:54.287Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -102,27 +165,29 @@
       "rationale": "月營收分數 74；財務品質分數 69。",
       "events": [
         {
-          "date": "2026-11-09",
-          "announce_date": "2026-11-09",
-          "time": "163201",
-          "title": "發布本公司115年10月份業績資料",
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "113254",
+          "title": "澄清經濟日報115年11月10日報導",
           "clause": "第51款",
-          "description": "1.事實發生日:115/11/09 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:發布本公司115年10月份業績資料 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 本公司115年10月份合併營業額為新台幣746.66億元，較去年同期合併營業額 新台幣573.84億元成長30.1%，較上月份合併營業額新台幣654.00億元成長14.2%； 115年1~10月份累積合併營業額為新台幣6,143.34億元，較去年同期累積合併營業 額新台幣4,506.56億元成長36.3%。",
+          "description": "1.事實發生日:115/11/10 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.傳播媒體名稱:經濟日報 6.報導內容:外界預期，台達電本季營收力拚連三季改寫新猷，單季營收將首度突破 2,000億元大關。 7.發生緣由:大眾傳播媒體報導 8.因應措施:公佈澄清訊息於公開資訊觀測站 9.其他應敘明事項:本公司未對營收做任何具體財務預測，所有財務資訊悉依規定於 公開資訊觀測站公佈。",
           "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "clarification",
+          "risk_category_label": "澄清或說明",
           "risk_points": 0,
-          "matched_patterns": []
+          "matched_patterns": [
+            "澄清"
+          ]
         },
         {
-          "date": "2026-12-07",
-          "announce_date": "2026-11-09",
-          "time": "171953",
-          "title": "本公司受邀參加元大證券法人說明會之日期、地點更新",
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "133646",
+          "title": "本公司受邀參加法人說明會之相關資訊",
           "clause": "第12款",
-          "description": "符合條款第四條第XX款：12 事實發生日：115/12/07 1.召開法人說明會之日期：115/12/07 2.召開法人說明會之時間：14 時 30 分 3.召開法人說明會之地點：元大證券辦公室 4.法人說明會擇要訊息：本公司受元大證券邀請，將於上述時間地點，向法人投資者說明本公司115年第3季之財務報告相關資訊。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+          "description": "符合條款第四條第XX款：12 事實發生日：115/11/10 1.召開法人說明會之日期：115/11/10 2.召開法人說明會之時間：16 時 00 分 3.召開法人說明會之地點：台北遠東香格里拉飯店 4.法人說明會擇要訊息：本公司受永豐金證券邀請，將於上述時間地點，向法人投資者說明本公司115年第3季之財務報告相關資訊。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
           "source_id": "twse_material_events",
           "sentiment": "review",
           "risk_class": "review",
@@ -135,7 +200,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-10T12:30:57.703Z"
+      "refreshed_at": "2026-11-11T00:15:54.287Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -145,32 +210,137 @@
         "twse_material_events"
       ],
       "evidence_level": "high",
-      "event_count": 1,
-      "positive_event_count": 0,
-      "negative_event_count": 0,
-      "score": 74,
-      "rationale": "月營收分數 77；財務品質分數 78。",
+      "event_count": 16,
+      "positive_event_count": 4,
+      "negative_event_count": 1,
+      "score": 88,
+      "rationale": "月營收分數 77；財務品質分數 78；正向重大訊息 4 則；負向/待釐清重大訊息 1 則。",
       "events": [
         {
-          "date": "2026-11-18",
-          "announce_date": "2026-11-09",
-          "time": "171437",
-          "title": "本公司受邀參加機構投資人說明會",
-          "clause": "第12款",
-          "description": "符合條款第四條第XX款：12 事實發生日：115/11/18 1.召開法人說明會之日期：115/11/18 ~ 115/11/19 2.召開法人說明會之時間：08 時 30 分 3.召開法人說明會之地點：MANDARIN ORIENTAL SINGAPORE 4.法人說明會擇要訊息：本公司受邀參加摩根士丹利證券所舉辦之『Twenty-Fifth Annual Asia Pacific Summit』，會中就本公司10/15法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "134522",
+          "title": "台積公司2026年10月營收報告",
+          "clause": "第51款",
+          "description": "1.事實發生日:115/11/10 2.公司名稱:台灣積體電路製造股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:不適用 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 台積公司今（10）日公佈2026年10月營收報告。2026年10月合併營收約為 新台幣5,868億9,000萬元，較上月增加了14.7%，較去年同期增加了59.7%。 累計2026年1至10月營收約為新台幣4兆4,856億1,700萬元，較去年同期增 加了43.3%。",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        },
+        {
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "202812",
+          "title": "台積公司董事會決議",
+          "clause": "第51款",
+          "description": "1.事實發生日:115/11/10 2.公司名稱:台灣積體電路製造股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:不適用 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 台積公司今（10）日召開董事會，會中重要決議如下： 一、核准2026年第三季營業報告書及財務報表，其中第三季合併營收約新台幣1兆 4,942億4千萬元，稅後純益約新台幣7,630億6千萬元，每股盈餘為新台幣 29.43元。 二、核准配發2026年第三季之每股現金股利9.0元，其普通股配息基準日訂定為2027 年3月17日，除息交易日則為2027年3月11日。依公司法第一六五條規定，在公 司決定分派股息之基準日前五日內，亦即自2027年3月13日起至3月17日止，停 止普通股股票過戶，並於2027年4月8日發放。台積公司在美國紐約證券交易所上 市之美國存託憑證之除息交易日及配息基準日皆為2027年3月11日。 三、為了因應基於市場需求預測及技術開發藍圖所制定的長期產能規劃，核准資本 預算約美金409億2,670萬元，內容主要包括：1. 建置及升級先進製程產能； 2. 建置及升級先進封裝、成熟及/或特殊製程產能；3. 廠房興建及廠務設施 工程；4. 2027年研發資本預算、經常性資本預算及資本化租賃資產預算。 四、核准以不超過美金5億元之資金設立一投資公司，以進行半導體產業及相關生態系 之策略性投資。 五、核准於不超過美金5億元之額度內認購Anthropic, PBC普通股股份，每股認購價格 將依該公司首次公開發行之價格而定；以及於不超過美金5億元之額度內認購 OpenAI Group PBC特別股股份。",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        },
+        {
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "203347",
+          "title": "本公司民國115年度第三季合併財務報告業經 董事會決議通過",
+          "clause": "第31款",
+          "description": "1.提報董事會或經董事會決議日期:115/11/10 2.審計委員會通過日期:115/11/09 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/09/30 4.1月1日累計至本期止營業收入(仟元):3,898,726,974 5.1月1日累計至本期止營業毛利(毛損) (仟元):2,603,984,766 6.1月1日累計至本期止營業利益(損失) (仟元):2,302,013,957 7.1月1日累計至本期止稅前淨利(淨損) (仟元):2,461,268,543 8.1月1日累計至本期止本期淨利(淨損) (仟元):2,042,923,054 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):2,042,106,112 10.1月1日累計至本期止基本每股盈餘(損失) (元):78.75 11.期末總資產(仟元):10,052,887,514 12.期末總負債(仟元):3,009,660,084 13.期末歸屬於母公司業主之權益(仟元):6,997,901,424 14.其他應敘明事項:無",
+          "source_id": "twse_material_events",
+          "sentiment": "positive",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        },
+        {
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "204354",
+          "title": "本公司董事會決議股利分派",
+          "clause": "第14款",
+          "description": "1. 董事會決議日期：115/11/10 2. 股利所屬年(季)度：115年 第3季 3. 股利所屬期間：115/07/01 至 115/09/30 4. 股東配發內容： (1)盈餘分配之現金股利(元/股)：9.00000000 (2)法定盈餘公積發放之現金(元/股)：0 (3)資本公積發放之現金(元/股)：0 (4)股東配發之現金(股利)總金額(元)：233,391,284,730 (5)盈餘轉增資配股(元/股)：0 (6)法定盈餘公積轉增資配股(元/股)：0 (7)資本公積轉增資配股(元/股)：0 (8)股東配股總股數(股)：0 5. 其他應敘明事項： 無。 6. 普通股每股面額欄位：新台幣10.0000元",
+          "source_id": "twse_material_events",
+          "sentiment": "positive",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        },
+        {
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "204821",
+          "title": "本公司訂定民國115年第三季之現金股利除息交易日",
+          "clause": "第14款",
+          "description": "1.董事會、股東會決議或公司決定日期:115/11/10 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.普通股發放股利種類及金額:現金股利 NT$233,391,284,730元(每股 NT$9.0 元) 4.除權（息）交易日:116/03/11 5.最後過戶日:116/03/12 6.停止過戶起始日期:116/03/13 7.停止過戶截止日期:116/03/17 8.除權（息）基準日:116/03/17 9.債券最後申請轉換日期:不適用 10.債券停止轉換起始日期:不適用 11.債券停止轉換截止日期:不適用 12.普通股現金股利發放日期:116/04/08 13.現金股利之一部或全部是否以外幣發放(請填入「是」或「否」):是 14.外幣現金股利發放幣別:美元 15.外幣現金股利發放對象: 依金管證交字第1150381112號函，為依「華僑及外國人投資證券 管理辦法」規定投資國內證券之境外華僑及外國人 16.外幣現金股利匯率決定方式: 以股利發放日前一週週五上午11點台北外匯經紀公司之美元 兌新台幣成交匯率為換算匯率 (遇假日提前至前一營業日) 17.其他應敘明事項: (1) 本公司在美國紐約證券交易所上市之美國存託憑證之除息交易日及配息基準 日皆為2027年03月11日。 (2) 境外華僑及外國人股東請透過保管機構向本公司股務代理機構中國信託登 記欲以美元或新台幣收受股利。未於保管機構所訂期限前完成幣別選擇、或 同一戶號股東對幣別選擇有不同意思表示者，其股利幣別選擇將視為美元。 (3) 將依金管證交字第1150381112號函，由保管機構代收美元現金股利後匯款 至華僑及外國人股東指定之境外或國內外匯存款帳戶。",
           "source_id": "twse_material_events",
           "sentiment": "review",
           "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
+          "risk_category": "routine",
+          "risk_category_label": "例行或權利事件",
           "risk_points": 0,
           "matched_patterns": [
-            "說明"
+            "除息"
           ]
+        },
+        {
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "205220",
+          "title": "本公司董事會核准投資TSMC Ventures(名稱待定)",
+          "clause": "第20款",
+          "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: TSMC Ventures(名稱待定)；普通股 2.事實發生日:115/11/10~115/11/10 3.董事會通過日期: 民國115年11月10日 4.其他核決日期: 不適用 5.交易數量、每單位價格及交易總金額: 不超過美金5億元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: TSMC Ventures(名稱待定)；本公司持股百分之百之子公司。 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 分批增資；無。 12.本次交易之決定方式、價格決定之參考依據及決策單位: 本公司董事會決議 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 不超過美金5億元；100%；無。 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 48.29%；50.21%；NT$325,002佰萬元。 16.經紀人及經紀費用: 不適用 17.取得或處分之具體目的或用途: 投資子公司 18.本次交易表示異議董事之意見: 無 19.本次交易為關係人交易:否 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 不適用 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無",
+          "source_id": "twse_material_events",
+          "sentiment": "positive",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        },
+        {
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "205548",
+          "title": "代子公司TSMC Partners, Ltd.公告投資Maverick Silicon Fund II, L.P.",
+          "clause": "第20款",
+          "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: Maverick Silicon Fund II, L.P.；創投基金 2.事實發生日:115/11/10~115/11/10 3.董事會通過日期: 民國115年11月10日 4.其他核決日期: 不適用 5.交易數量、每單位價格及交易總金額: 不適用；不適用；US$5佰萬元。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: Maverick Silicon Fund II, L.P.；與公司之關係：無。 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 於創投基金存續期間分批投資；無。 12.本次交易之決定方式、價格決定之參考依據及決策單位: 本公司董事會決議。 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 不適用；US$5佰萬元；低於10%；無。 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 0.62%；0.65%；NT$325,002佰萬元。 16.經紀人及經紀費用: 不適用 17.取得或處分之具體目的或用途: 長期投資 18.本次交易表示異議董事之意見: 無 19.本次交易為關係人交易:否 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:不適用 22.會計師事務所名稱: 不適用 23.會計師姓名: 不適用 24.會計師開業證書字號: 不適用 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 不適用 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 若實際投資前TSMC Ventures(名稱待定)已完成設立， TSMC可選擇以TSMC Partners或TSMC Ventures(名稱待定)施行投資。",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        },
+        {
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "211853",
+          "title": "本公司董事會核准機器設備、不動產及資本化租賃資產資本預算案",
+          "clause": "第20款",
+          "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: (1) 先進製程產能機器設備 (2) 先進封裝、成熟及/或特殊製程產能機器設備 (3) 研發及經常性資本預算機器設備 (4) 不動產及資本化租賃資產 2.事實發生日:115/11/10~115/11/10 3.董事會通過日期: 民國115年11月10日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: (1) 先進製程產能機器設備 美金19,442佰萬元 (2) 先進封裝、成熟及/或特殊製程產能機器設備 美金4,626佰萬元 (3) 研發及經常性資本預算機器設備 美金6,051佰萬元 (4) 不動產及資本化租賃資產 美金10,807佰萬元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 預期交易相對人及其與公司之關係（實際交易相對人應依本公司訂單為準）： (1) 先進製程產能機器設備： Applied Materials South East Asia Pte. Ltd.; ASM America, Inc.; ASML Hong Kong Ltd.; DAIFUKU CO., LTD; KLA Corporation; Lam Research International Sarl; SCREEN Semiconductor Solutions Co., Ltd.; Tokyo Electron Ltd. 等55家公司；與公司關係：皆無。 (2) 先進封裝、成熟及/或特殊製程產能機器設備： Advantest Corporation; Lam Research International Sarl 等77家公司；與公司關係：皆無。 (3) 研發及經常性資本預算機器設備： 共77家公司；與公司關係：皆無。 (4) 不動產及資本化租賃資產： ABB Ltd.; ABM Building Services, LLC; ACCO Engineered Systems, Inc.; Accurate Technology Enterprise Co.; ACME Control System Corporation; AECOM Taiwan Corporation; Air Liquide Electronics US, LP; Allis Electric Co., Ltd.; Am-Power Machine International Enterprise Co., Ltd.; Apollo Sheet Metal, Inc.; Arizona/Albuquerque Valve & Fitting Corporation; Atlas Technology Corp.; Austin Commercial, L.P.; B and D Industries, Inc.; Banner Industries of N.E., Inc; BESTCHEN INTERNATIONAL COMPANY LTD.; BMWC Constructors, Inc.; BrandSafway Solutions, LLC; Brycon Corporation; Camfil Taiwan Co., Ltd.; Camfil USA, Inc.; Carollo Engineers, Inc.; Central Taiwan Science Park Bureau, National Science and Technology Council; Challentech International Corporation; Chang Chun Petrochemical Co., Ltd.; Chen Yuan International Co., Ltd.; China Steel Structure Co., Ltd.; Chun Yuan Steel Industry Co., Ltd.; Copper State Bolt and Nut Co.; Corbins, LLC; CTCI CORPORATION; CURRIE & BROWN, INC.; CYH TECHNOLOGY USA LLC; D.P. Electric, Inc.; Da-Cin Construction Co., Ltd.; Daifuku Intralogistics America Corporation; EATON PHOENIXTEC MMPL CO., LTD.; Ele-Garden Landscape Construction CO.; EnerMech Mechanical Services, Inc.; ENERTEK SUSTAINABLE DESIGN & TECHNOLOGY LTD.; Entegris Asia Pte. Ltd., Taiwan Branch; Entegris Inc.; ENVIRONETICS DESIGN GROUP, INC.; Evergreen Steel Corporation; EXCEL AIR COND. CO., LTD.; Exyte Trading（Singapore）Pte. Ltd; F21 Design Build Team; FARO Technologies, Inc; Fastenal Company; Fisk Electric Company; Foresight Technologies, Inc.; FU ENERGY CORP.; Fu Tsu Construction Co., Ltd.; G2 Technology Corp.; GHA Technologies, Inc.; Great BIM Engineering Information Integration Co., Ltd.; Greenberry Industrial LLC; GREENFILTEC LTD.; Gudeng Equipment Co., Ltd.; H.K.B. Inc dba Southwest Industrial Rigging; Handling Systems, Inc.; Hansen Supply Company; Harder Mechanical Contractors, Inc.; Helix Electric, Inc.; Hitachi Energy Taiwan Co., Ltd.; Hitachi Energy USA Inc.; HMT System USA LLC; Hoffman Instrumentation Supply, Inc.; Hon Hui Zhu Gao CO., LTD.; Hsinchu Science Park Bureau, National Science and Technology Council; IES Communications, LLC; Independent Electric Supply, Inc.; Industrial Technology Research Institute; Intertek Testing Services Taiwan Ltd.; J.J. PAN AND PARTNERS, ARCHITECTS AND PLANNERS; Jack B. Henderson Construction Company, Inc.; Jack's Mechanical Solutions, Inc.; Jacobs Project Management Company; Jensen Hughes, Inc.; Jienshian Information Engineering Co.,Ltd.; Jing Yuan Technology Co., Ltd.; JT Thorpe Industrial, Inc.; Jung Chung Technology Corp.; Justrite Safety Group; JY Techs Inc.; KAEKO, Inc.; Kao Hsin Engineering Co., Ltd.; Kaohsiung City Government; Kedge Construction Co., Ltd.; Kinetic Systems, Inc.; KRIS YAO ARTECH; KRUSS Scientific Instruments, Inc.; L&K Engineering Co., Ltd.; LayerZero Power Systems, Inc.; Lee Ming Construction Co., Ltd.; LI YEI ENTERPRISE CO., LTD.; Linde Gas & Equipment Inc.; Logical Systems, LLC; LSW Engineers Arizona, Incorporated; Lumax Controls, Inc.; Lumax International Corp., Ltd.; M Consultants, LLC; Mandartech Interiors Inc.; Marketech International Corp.; Marketech International Corporation; Masthead International, Inc.; Mega Union Technology Incorporated; MEITEC, Inc.; METTLER TOLEDO LLC; Milling Machinery, Inc.; MornstAir Inc.; MRAK LLC dba Points North; MSR-FSR, LLC; MTC-MERCURY TRADING CO., LTD.; MUAQUA ENGINEERING INC.; NAGASE (TAIWAN) CO., LTD.; OBR Cooling Towers, Inc; Okland Construction Company, Inc.; Organo Technology Co., Ltd.; Organo USA, Inc.; Particle Measuring Systems, Inc.; Performance Contracting Inc.; Pfeiffer Vacuum Inc.; Port Plastics, Inc.; Prime Controls LP; PROLEX OA AND INTERIOR/PLANNING CO., LTD.; Propersys Corporation; Pure Plastics LLC; REIJU Construction Co., Ltd.; Revolution Industrial, LLC; Rosendin Electric, Inc.; S Plus C Design Consultant Co., Ltd; Schneider Electric USA, Inc.; SGC USA, INC; SHENG YI TECH & ANALYTICS CO., LTD.; Shihlin Electric & Engineering Corporation; Siemens Energy Limited; Siemens Industry, Inc.; Siemens Limited; Southern Taiwan Science Park Bureau, National Science and Technology Council; Southland Industries; SSOE Inc.; Streimer Sheet Metal Works, Inc.; Synergy Engineering Consultants; Taiwan Gleno Enterprise Co., Ltd.; TAIWAN POWER COMPANY; Taiwan Puritic Corp.; TASA Construction Corporation; TC Boiler, Inc.; Team Engineering Consulting Ltd.; Techgo Industrial Co., Ltd.; Technical Manufacturing Corporation; T-Group Architects and Planners; Tianding construction industry Co., Ltd.; Trident Mechanical Services, LLC; Tung Kang Steel Structure Corp.; UNITED INTEGRATED SERVICES (USA) CORP.; United Integrated Services Co., Ltd.; United Steel Engineering and Construction Corp.; UNIVERSITY MECHANICAL AND ENGINEERING CONTRACTORS, INC.; VERO VERIA CORPORATION; Versum Materials US, LLC; WAYNE ENTERPRISE, LTD.; Welmade Technology Corporation; Western States Sales DBA Cleanroom World; WITS America Corp.; World Wide Professional Solutions, LLC; Yankey Engineering Co., Ltd.; Yuan Yi Construction Co., Ltd.; Yuanshuo Archi & Construction COMPANY LIMITED; Yu-Cheng Kids Enterprise Co. 等275家公司；與公司關係：皆無。 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依訂單條件付款。 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 比價及議價；廠商提供之報價單及市場行情；依本公司董事會核決辦理。 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 供生產、營運用。 24.本次交易表示異議之董事之意見: 無。 25.本次交易為關係人交易:否 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無。",
+          "source_id": "twse_material_events",
+          "sentiment": "positive",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-10T12:30:57.703Z"
+      "refreshed_at": "2026-11-11T00:15:54.287Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -187,7 +357,7 @@
       "rationale": "月營收分數 76；財務品質分數 89。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-10T12:30:57.703Z"
+      "refreshed_at": "2026-11-11T00:15:54.287Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -196,15 +366,31 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
+      "evidence_level": "high",
+      "event_count": 1,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 71,
+      "score": 74,
       "rationale": "月營收分數 74；財務品質分數 79。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-11-10",
+          "announce_date": "2026-11-10",
+          "time": "184052",
+          "title": "代本公司之子公司兆豐國際商業銀行公告向關係人中央再保險(股)公司取得使用權資產",
+          "clause": "第20款",
+          "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 台北市南京東路二段53號5樓 2.事實發生日:115/11/10~115/11/10 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:總經理核決 民國115年11月10日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 租賃面積:249.27坪 每單位價格:辦公室月租金新臺幣1,444元/坪 租金總金額:新臺幣12,960,000元 使用權資產金額:新臺幣12,602,811元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人:中央再保險股份有限公司 與公司之關係:關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 付款條件:按月給付 租約期間:115/12/01~118/11/30 契約限制條款及其他重要約定事項:租約到期有優先承租權 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 本次交易之決定方式:依租賃雙方議價 價格決定之參考依據:參考附近租金市場行情 決策單位:董事會概括授權經理部門得依內部作業規範辦理之項目 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 辦公場所使用 24.本次交易表示異議之董事之意見: 不適用 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產: 是 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 交易金額為月租金",
+          "source_id": "twse_material_events",
+          "sentiment": "neutral",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-10T12:30:57.703Z"
+      "refreshed_at": "2026-11-11T00:15:54.287Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -221,7 +407,7 @@
       "rationale": "月營收分數 76。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-10T12:30:57.703Z"
+      "refreshed_at": "2026-11-11T00:15:54.287Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -238,7 +424,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-10T12:30:57.703Z"
+      "refreshed_at": "2026-11-11T00:15:54.287Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -255,7 +441,7 @@
       "rationale": "財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-10T12:30:57.703Z"
+      "refreshed_at": "2026-11-11T00:15:54.287Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -272,7 +458,7 @@
       "rationale": "財務品質分數 71。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-10T12:30:57.703Z"
+      "refreshed_at": "2026-11-11T00:15:54.287Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -289,7 +475,7 @@
       "rationale": "財務品質分數 65。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-10T12:30:57.703Z"
+      "refreshed_at": "2026-11-11T00:15:54.287Z"
     }
   }
 }
