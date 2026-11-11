@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1",
   "ticker": "2886",
-  "fetched_at": "2026-11-10T12:34:07.667Z",
+  "fetched_at": "2026-11-11T12:36:23.951Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2886-1151111-1",
+      "date": "2026-11-11",
+      "announced_date": "2026-11-11",
+      "fact_date": "2026-11-11",
+      "announced_time": "15:57:12",
+      "title": "公告本公司發行115年度第一期無擔保普通公司債 (補充114/05/20公告)",
+      "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:兆豐金融控股股份有限公司 115年度第一期無擔保普通公司債。 3.是否採總括申報發行公司債(是/否):是。 4.發行總額:新臺幣36.5億元整。 5.每張面額:新臺幣100萬元整。 6.發行價格:依票面金額十足發行。 7.發行期間:5年期(115/11/19~120/11/19)。 8.發行利率:固定利率2.45%。 9.擔保品之種類、名稱、金額及約定事項:不適用。 10.募得價款之用途及運用計畫:償還金融機構借款。 11.承銷方式:委託證券承銷商對外公開承銷。 12.公司債受託人:元大商業銀行信託部。 13.承銷或代銷機構:兆豐證券股份有限公司。 14.發行保證人:不適用。 15.代理還本付息機構:兆豐國際商業銀行金控總部分行。 16.簽證機構:不適用。 17.能轉換股份者，其轉換辦法:不適用。 18.賣回條件:不適用。 19.買回條件:不適用。 20.附有轉換、交換或認股者，其換股基準日:不適用。 21.附有轉換、交換或認股者，對股權可能稀釋情形:不適用。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用。 23.其他應敘明事項:無。",
+      "clause": "第11款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii",
+        "enterDate": "1151111"
+      }
+    },
     {
       "id": "mops-history-2886-1151110-1",
       "date": "2026-11-10",
@@ -80,11 +101,11 @@
       "id": "mops-history-2886-1151105-1",
       "date": "2026-11-05",
       "announced_date": "2026-11-05",
-      "fact_date": "2026-11-04",
+      "fact_date": null,
       "announced_time": "06:56:25",
       "title": "代本公司之子公司兆豐國際商業銀行(股)公司公告受金管會 核處罰鍰新臺幣200萬元",
-      "description": "1.事實發生日：115/11/04 2.事實發生主體：代子公司申報：兆豐國際商業銀行(股)公司 3.發生緣由(事件說明)：兆豐銀行受委託機構辦理該行貸款利息收據之裝封作業涉有缺 失，並將裝封有他人貸款繳息資訊之貸款利息收據寄送予客戶。 4.處理過程：已採取相關改善措施並落實執行。 5.處分情形：處罰鍰新臺幣200萬元 6.是否遭裁處罰鍰：是 7.裁罰金額(元)：新台幣 2,000,000 元 8.預計可能損失或影響：新臺幣200萬元 9.可能獲得保險理賠之金額(元)：不適用 10.改善情形及未來因應措施：已採取相關改善措施並落實執行。 11.是否前已就同一事件發布重大訊息：否 12.其他應述明事項：無",
-      "clause": "第26款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
@@ -491,27 +512,6 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2886",
-        "marketKind": "sii",
-        "enterDate": "1150826"
-      }
-    },
-    {
-      "id": "mops-history-2886-1150826-1",
-      "date": "2026-08-26",
-      "announced_date": "2026-08-26",
-      "fact_date": null,
-      "announced_time": "18:27:05",
-      "title": "代本公司之子公司兆豐國際商業銀行公告授信資產之轉讓。",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
         "companyId": "2886",
         "marketKind": "sii",
         "enterDate": "1150826"
