@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-12T00:15:51.142Z",
+  "generated_at": "2026-11-12T12:31:09.662Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-12T00:15:51.142Z"
+      "refreshed_at": "2026-11-12T12:31:09.662Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,7 +50,7 @@
       "rationale": "財務品質分數 75。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-12T00:15:51.142Z"
+      "refreshed_at": "2026-11-12T12:31:09.662Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -83,7 +83,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-12T00:15:51.142Z"
+      "refreshed_at": "2026-11-12T12:31:09.662Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -118,7 +118,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-12T00:15:51.142Z"
+      "refreshed_at": "2026-11-12T12:31:09.662Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -135,7 +135,7 @@
       "rationale": "月營收分數 81；財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-12T00:15:51.142Z"
+      "refreshed_at": "2026-11-12T12:31:09.662Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -183,7 +183,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-12T00:15:51.142Z"
+      "refreshed_at": "2026-11-12T12:31:09.662Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -218,7 +218,7 @@
         }
       ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-12T00:15:51.142Z"
+      "refreshed_at": "2026-11-12T12:31:09.662Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -227,15 +227,31 @@
       "source_ids": [
         "tpex_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
-      "positive_event_count": 0,
+      "evidence_level": "high",
+      "event_count": 1,
+      "positive_event_count": 1,
       "negative_event_count": 0,
-      "score": 59,
-      "rationale": "月營收分數 79。",
-      "events": [],
+      "score": 70,
+      "rationale": "月營收分數 79；正向重大訊息 1 則。",
+      "events": [
+        {
+          "date": "2026-11-11",
+          "announce_date": "2026-11-11",
+          "time": "175656",
+          "title": "公告本公司董事會通過115年度第三季合併財務報告",
+          "clause": "第31款",
+          "description": "1.提報董事會或經董事會決議日期:115/11/11 2.審計委員會通過日期:115/11/11 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/09/30 4.1月1日累計至本期止營業收入(仟元):5,573 5.1月1日累計至本期止營業毛利(毛損) (仟元):5,573 6.1月1日累計至本期止營業利益(損失) (仟元):(18,010) 7.1月1日累計至本期止稅前淨利(淨損) (仟元):(8,846) 8.1月1日累計至本期止本期淨利(淨損) (仟元):(9,203) 9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):(9,203) 10.1月1日累計至本期止基本每股盈餘(損失) (元):(0.13) 11.期末總資產(仟元):601,891 12.期末總負債(仟元):63,014 13.期末歸屬於母公司業主之權益(仟元):538,877 14.其他應敘明事項:無",
+          "source_id": "tpex_material_events",
+          "sentiment": "positive",
+          "risk_class": "neutral",
+          "risk_category": null,
+          "risk_category_label": null,
+          "risk_points": 0,
+          "matched_patterns": []
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-12T00:15:51.142Z"
+      "refreshed_at": "2026-11-12T12:31:09.662Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -252,7 +268,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-12T00:15:51.142Z"
+      "refreshed_at": "2026-11-12T12:31:09.662Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -269,7 +285,7 @@
       "rationale": "財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-12T00:15:51.142Z"
+      "refreshed_at": "2026-11-12T12:31:09.662Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -286,7 +302,7 @@
       "rationale": "財務品質分數 71。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-12T00:15:51.142Z"
+      "refreshed_at": "2026-11-12T12:31:09.662Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -303,7 +319,7 @@
       "rationale": "財務品質分數 65。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-12T00:15:51.142Z"
+      "refreshed_at": "2026-11-12T12:31:09.662Z"
     }
   }
 }
