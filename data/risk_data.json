@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-11T12:32:58.924Z",
+  "generated_at": "2026-11-12T00:15:51.142Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -41,9 +41,9 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 2,
+      "event_count": 0,
       "negative_event_count": 0,
-      "positive_event_count": 1,
+      "positive_event_count": 0,
       "review_event_count": 0,
       "negative_event_points": 0,
       "negative_event_categories": {},
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-11T12:32:58.924Z"
+      "refreshed_at": "2026-11-12T00:15:51.142Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,192 +76,10 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-11T12:32:58.924Z"
+      "refreshed_at": "2026-11-12T00:15:51.142Z"
     },
     "twse-2303": {
       "ticker": "2303",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_material_events",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "event_count": 3,
-      "negative_event_count": 0,
-      "positive_event_count": 0,
-      "review_event_count": 2,
-      "negative_event_points": 0,
-      "negative_event_categories": {},
-      "disclosure_violation_count": 0,
-      "score": 90,
-      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [
-        {
-          "date": "2026-11-16",
-          "announce_date": "2026-11-10",
-          "time": "155922",
-          "title": "本公司受邀參與法人說明會相關資訊",
-          "clause": "第12款",
-          "description": "符合條款第四條第XX款：12 事實發生日：115/11/16 1.召開法人說明會之日期：115/11/16 2.召開法人說明會之時間：09 時 00 分 3.召開法人說明會之地點：台北W飯店 4.法人說明會擇要訊息：本公司受邀參加麥格理證券舉辦之法人說明會「Taiwan Conference 2026」。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
-          "risk_points": 0,
-          "matched_patterns": [
-            "說明"
-          ]
-        },
-        {
-          "date": "2026-11-18",
-          "announce_date": "2026-11-10",
-          "time": "160025",
-          "title": "本公司受邀參與法人說明會相關資訊",
-          "clause": "第12款",
-          "description": "符合條款第四條第XX款：12 事實發生日：115/11/18 1.召開法人說明會之日期：115/11/18 2.召開法人說明會之時間：10 時 30 分 3.召開法人說明會之地點：新加坡文華東方酒店 4.法人說明會擇要訊息：本公司受邀參加摩根士丹利證券舉辦之法人說明會「Asia Pacific Summit」。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
-          "risk_points": 0,
-          "matched_patterns": [
-            "說明"
-          ]
-        }
-      ],
-      "violations": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-11-11T12:32:58.924Z"
-    },
-    "twse-2308": {
-      "ticker": "2308",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_material_events",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "event_count": 2,
-      "negative_event_count": 0,
-      "positive_event_count": 0,
-      "review_event_count": 2,
-      "negative_event_points": 0,
-      "negative_event_categories": {},
-      "disclosure_violation_count": 0,
-      "score": 90,
-      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [
-        {
-          "date": "2026-11-10",
-          "announce_date": "2026-11-10",
-          "time": "113254",
-          "title": "澄清經濟日報115年11月10日報導",
-          "clause": "第51款",
-          "description": "1.事實發生日:115/11/10 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.傳播媒體名稱:經濟日報 6.報導內容:外界預期，台達電本季營收力拚連三季改寫新猷，單季營收將首度突破 2,000億元大關。 7.發生緣由:大眾傳播媒體報導 8.因應措施:公佈澄清訊息於公開資訊觀測站 9.其他應敘明事項:本公司未對營收做任何具體財務預測，所有財務資訊悉依規定於 公開資訊觀測站公佈。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
-          "risk_points": 0,
-          "matched_patterns": [
-            "澄清"
-          ]
-        },
-        {
-          "date": "2026-11-10",
-          "announce_date": "2026-11-10",
-          "time": "133646",
-          "title": "本公司受邀參加法人說明會之相關資訊",
-          "clause": "第12款",
-          "description": "符合條款第四條第XX款：12 事實發生日：115/11/10 1.召開法人說明會之日期：115/11/10 2.召開法人說明會之時間：16 時 00 分 3.召開法人說明會之地點：台北遠東香格里拉飯店 4.法人說明會擇要訊息：本公司受永豐金證券邀請，將於上述時間地點，向法人投資者說明本公司115年第3季之財務報告相關資訊。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "clarification",
-          "risk_category_label": "澄清或說明",
-          "risk_points": 0,
-          "matched_patterns": [
-            "說明"
-          ]
-        }
-      ],
-      "violations": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-11-11T12:32:58.924Z"
-    },
-    "twse-2330": {
-      "ticker": "2330",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_material_events",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "event_count": 16,
-      "negative_event_count": 1,
-      "positive_event_count": 4,
-      "review_event_count": 2,
-      "negative_event_points": 18,
-      "negative_event_categories": {
-        "regulatory_enforcement": 1
-      },
-      "disclosure_violation_count": 0,
-      "score": 74,
-      "rationale": "負向/待釐清重大訊息 1 則；未偵測到資訊申報違規。",
-      "events": [
-        {
-          "date": "2026-11-10",
-          "announce_date": "2026-11-10",
-          "time": "204821",
-          "title": "本公司訂定民國115年第三季之現金股利除息交易日",
-          "clause": "第14款",
-          "description": "1.董事會、股東會決議或公司決定日期:115/11/10 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.普通股發放股利種類及金額:現金股利 NT$233,391,284,730元(每股 NT$9.0 元) 4.除權（息）交易日:116/03/11 5.最後過戶日:116/03/12 6.停止過戶起始日期:116/03/13 7.停止過戶截止日期:116/03/17 8.除權（息）基準日:116/03/17 9.債券最後申請轉換日期:不適用 10.債券停止轉換起始日期:不適用 11.債券停止轉換截止日期:不適用 12.普通股現金股利發放日期:116/04/08 13.現金股利之一部或全部是否以外幣發放(請填入「是」或「否」):是 14.外幣現金股利發放幣別:美元 15.外幣現金股利發放對象: 依金管證交字第1150381112號函，為依「華僑及外國人投資證券 管理辦法」規定投資國內證券之境外華僑及外國人 16.外幣現金股利匯率決定方式: 以股利發放日前一週週五上午11點台北外匯經紀公司之美元 兌新台幣成交匯率為換算匯率 (遇假日提前至前一營業日) 17.其他應敘明事項: (1) 本公司在美國紐約證券交易所上市之美國存託憑證之除息交易日及配息基準 日皆為2027年03月11日。 (2) 境外華僑及外國人股東請透過保管機構向本公司股務代理機構中國信託登 記欲以美元或新台幣收受股利。未於保管機構所訂期限前完成幣別選擇、或 同一戶號股東對幣別選擇有不同意思表示者，其股利幣別選擇將視為美元。 (3) 將依金管證交字第1150381112號函，由保管機構代收美元現金股利後匯款 至華僑及外國人股東指定之境外或國內外匯存款帳戶。",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "routine",
-          "risk_category_label": "例行或權利事件",
-          "risk_points": 0,
-          "matched_patterns": [
-            "除息"
-          ]
-        }
-      ],
-      "violations": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-11-11T12:32:58.924Z"
-    },
-    "twse-2885": {
-      "ticker": "2885",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_material_events",
-        "twse_disclosure_violations"
-      ],
-      "evidence_level": "high",
-      "event_count": 0,
-      "negative_event_count": 0,
-      "positive_event_count": 0,
-      "review_event_count": 0,
-      "negative_event_points": 0,
-      "negative_event_categories": {},
-      "disclosure_violation_count": 0,
-      "score": 92,
-      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [],
-      "violations": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-11-11T12:32:58.924Z"
-    },
-    "twse-2886": {
-      "ticker": "2886",
       "market": "TWSE",
       "status": "ok",
       "source_ids": [
@@ -281,7 +99,135 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-11T12:32:58.924Z"
+      "refreshed_at": "2026-11-12T00:15:51.142Z"
+    },
+    "twse-2308": {
+      "ticker": "2308",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "event_count": 1,
+      "negative_event_count": 0,
+      "positive_event_count": 0,
+      "review_event_count": 1,
+      "negative_event_points": 0,
+      "negative_event_categories": {},
+      "disclosure_violation_count": 0,
+      "score": 91,
+      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
+      "events": [
+        {
+          "date": "2026-11-11",
+          "announce_date": "2026-11-11",
+          "time": "173536",
+          "title": "補充公告本公司代子公司Delta Electronics (USA) Inc.公告決議興建F2廠及辦公大樓 相關事宜",
+          "clause": "第20款",
+          "description": "1.契約種類:工程合約 2.事實發生日:115/11/11~115/11/11 3.董事會通過日期: 民國113年9月12日 4.其他核決日期: 不適用 5.契約相對人及其與公司之關係: F2廠及辦公大樓機電、空調及消防系統工程契約相對人為Dachun Construction Inc， 非本公司關係人。其他契約相對人待確定後另行公告。 6.契約主要內容（含契約總金額、預計參與投入之金額及契約起迄日期） 、限制條款及其他重要約定事項: 子公司Delta Electronics (USA) Inc.董事會於西元2024年9月12日美國德州時間(台灣時 間民國113年9月13日)決議通過興建F2廠及辦公大樓，暫估工程總價款約美金205佰萬元 (未稅)。 其中，F2廠及辦公大樓機電、空調及消防系統工程總價款約美金48佰萬元(含稅)，其他相 關事宜待確定後另行公告。 7.專業估價者事務所或公司名稱及其估價結果: 係自地委建，故不適用 8.不動產估價師姓名: 不適用 9.不動產估價師開業證書字號: 不適用 10.取得之具體目的: 因應未來業務發展所需 11.本次交易表示異議之董事意見: 無 12.本次交易為關係人交易:否 13.監察人承認或審計委員會同意日期: 不適用 14.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 15.是否尚未取得估價報告:否或不適用 16.尚未取得估價報告之原因: 不適用 17.估價結果有重大差異時，其差異原因及會計師意見: 不適用 18.會計師事務所名稱: 不適用 19.會計師姓名: 不適用 20.會計師開業證書字號: 不適用 21.前已就同一件事件發布重大訊息日期: 民國113年9月13日 22.其他敘明事項: 無",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "correction",
+          "risk_category_label": "更正或補充",
+          "risk_points": 0,
+          "matched_patterns": [
+            "補充"
+          ]
+        }
+      ],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-12T00:15:51.142Z"
+    },
+    "twse-2330": {
+      "ticker": "2330",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "event_count": 0,
+      "negative_event_count": 0,
+      "positive_event_count": 0,
+      "review_event_count": 0,
+      "negative_event_points": 0,
+      "negative_event_categories": {},
+      "disclosure_violation_count": 0,
+      "score": 92,
+      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
+      "events": [],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-12T00:15:51.142Z"
+    },
+    "twse-2885": {
+      "ticker": "2885",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "event_count": 2,
+      "negative_event_count": 0,
+      "positive_event_count": 0,
+      "review_event_count": 0,
+      "negative_event_points": 0,
+      "negative_event_categories": {},
+      "disclosure_violation_count": 0,
+      "score": 92,
+      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
+      "events": [],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-12T00:15:51.142Z"
+    },
+    "twse-2886": {
+      "ticker": "2886",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_material_events",
+        "twse_disclosure_violations"
+      ],
+      "evidence_level": "high",
+      "event_count": 1,
+      "negative_event_count": 0,
+      "positive_event_count": 0,
+      "review_event_count": 1,
+      "negative_event_points": 0,
+      "negative_event_categories": {},
+      "disclosure_violation_count": 0,
+      "score": 91,
+      "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
+      "events": [
+        {
+          "date": "2026-11-11",
+          "announce_date": "2026-11-11",
+          "time": "155712",
+          "title": "公告本公司發行115年度第一期無擔保普通公司債 (補充114/05/20公告)",
+          "clause": "第11款",
+          "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:兆豐金融控股股份有限公司 115年度第一期無擔保普通公司債。 3.是否採總括申報發行公司債(是/否):是。 4.發行總額:新臺幣36.5億元整。 5.每張面額:新臺幣100萬元整。 6.發行價格:依票面金額十足發行。 7.發行期間:5年期(115/11/19~120/11/19)。 8.發行利率:固定利率2.45%。 9.擔保品之種類、名稱、金額及約定事項:不適用。 10.募得價款之用途及運用計畫:償還金融機構借款。 11.承銷方式:委託證券承銷商對外公開承銷。 12.公司債受託人:元大商業銀行信託部。 13.承銷或代銷機構:兆豐證券股份有限公司。 14.發行保證人:不適用。 15.代理還本付息機構:兆豐國際商業銀行金控總部分行。 16.簽證機構:不適用。 17.能轉換股份者，其轉換辦法:不適用。 18.賣回條件:不適用。 19.買回條件:不適用。 20.附有轉換、交換或認股者，其換股基準日:不適用。 21.附有轉換、交換或認股者，對股權可能稀釋情形:不適用。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用。 23.其他應敘明事項:無。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "correction",
+          "risk_category_label": "更正或補充",
+          "risk_points": 0,
+          "matched_patterns": [
+            "補充"
+          ]
+        }
+      ],
+      "violations": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-12T00:15:51.142Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -304,7 +250,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-11T12:32:58.924Z"
+      "refreshed_at": "2026-11-12T00:15:51.142Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -327,7 +273,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-11T12:32:58.924Z"
+      "refreshed_at": "2026-11-12T00:15:51.142Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -350,7 +296,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-11T12:32:58.924Z"
+      "refreshed_at": "2026-11-12T00:15:51.142Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -373,7 +319,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-11T12:32:58.924Z"
+      "refreshed_at": "2026-11-12T00:15:51.142Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -396,7 +342,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-11T12:32:58.924Z"
+      "refreshed_at": "2026-11-12T00:15:51.142Z"
     }
   }
 }
