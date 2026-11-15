@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-12T12:33:03.020Z",
+  "collected_at": "2026-11-15T00:16:38.690Z",
   "company": {
     "id": "tpex-6023",
     "ticker": "6023",
@@ -26,9 +26,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1151106",
         "marketKind": "otc",
-        "enterDate": "1151106"
+        "companyId": "6023"
       }
     },
     {
@@ -47,9 +47,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1151105",
         "marketKind": "otc",
-        "enterDate": "1151105"
+        "companyId": "6023"
       }
     },
     {
@@ -68,9 +68,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1151008",
         "marketKind": "otc",
-        "enterDate": "1151008"
+        "companyId": "6023"
       }
     },
     {
@@ -89,9 +89,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "companyId": "6023",
+        "enterDate": "1150930",
         "marketKind": "otc",
-        "enterDate": "1150930"
+        "companyId": "6023"
       }
     },
     {
@@ -110,9 +110,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "6023",
+        "enterDate": "1150930",
         "marketKind": "otc",
-        "enterDate": "1150930"
+        "companyId": "6023"
       }
     },
     {
@@ -131,9 +131,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150930",
         "marketKind": "otc",
-        "enterDate": "1150930"
+        "companyId": "6023"
       }
     },
     {
@@ -152,9 +152,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150929",
         "marketKind": "otc",
-        "enterDate": "1150929"
+        "companyId": "6023"
       }
     },
     {
@@ -173,9 +173,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150921",
         "marketKind": "otc",
-        "enterDate": "1150921"
+        "companyId": "6023"
       }
     },
     {
@@ -194,9 +194,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150908",
         "marketKind": "otc",
-        "enterDate": "1150908"
+        "companyId": "6023"
       }
     },
     {
@@ -215,9 +215,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150902",
         "marketKind": "otc",
-        "enterDate": "1150902"
+        "companyId": "6023"
       }
     },
     {
@@ -236,9 +236,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150827",
         "marketKind": "otc",
-        "enterDate": "1150827"
+        "companyId": "6023"
       }
     },
     {
@@ -257,9 +257,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "companyId": "6023",
+        "enterDate": "1150819",
         "marketKind": "otc",
-        "enterDate": "1150819"
+        "companyId": "6023"
       }
     },
     {
@@ -278,9 +278,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "6023",
+        "enterDate": "1150819",
         "marketKind": "otc",
-        "enterDate": "1150819"
+        "companyId": "6023"
       }
     },
     {
@@ -299,9 +299,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150819",
         "marketKind": "otc",
-        "enterDate": "1150819"
+        "companyId": "6023"
       }
     },
     {
@@ -320,9 +320,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150807",
         "marketKind": "otc",
-        "enterDate": "1150807"
+        "companyId": "6023"
       }
     },
     {
@@ -341,9 +341,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150805",
         "marketKind": "otc",
-        "enterDate": "1150805"
+        "companyId": "6023"
       }
     },
     {
@@ -362,9 +362,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150729",
         "marketKind": "otc",
-        "enterDate": "1150729"
+        "companyId": "6023"
       }
     },
     {
@@ -383,9 +383,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150728",
         "marketKind": "otc",
-        "enterDate": "1150728"
+        "companyId": "6023"
       }
     },
     {
@@ -404,9 +404,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150723",
         "marketKind": "otc",
-        "enterDate": "1150723"
+        "companyId": "6023"
       }
     },
     {
@@ -425,9 +425,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150708",
         "marketKind": "otc",
-        "enterDate": "1150708"
+        "companyId": "6023"
       }
     },
     {
@@ -446,9 +446,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "4",
-        "companyId": "6023",
+        "enterDate": "1150617",
         "marketKind": "otc",
-        "enterDate": "1150617"
+        "companyId": "6023"
       }
     },
     {
@@ -467,9 +467,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "6023",
+        "enterDate": "1150617",
         "marketKind": "otc",
-        "enterDate": "1150617"
+        "companyId": "6023"
       }
     },
     {
@@ -488,9 +488,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150617",
         "marketKind": "otc",
-        "enterDate": "1150617"
+        "companyId": "6023"
       }
     },
     {
@@ -509,9 +509,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150608",
         "marketKind": "otc",
-        "enterDate": "1150608"
+        "companyId": "6023"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-12T12:31:07.654Z",
-      "row_count": 398,
+      "fetched_at": "2026-11-15T00:15:50.599Z",
+      "row_count": 173,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-11-11T12:36:50.981Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-11-15T00:17:51.919Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

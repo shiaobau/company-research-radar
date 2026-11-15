@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-12T12:33:03.020Z",
+  "collected_at": "2026-11-15T00:16:38.690Z",
   "company": {
     "id": "twse-3481",
     "ticker": "3481",
@@ -11,55 +11,13 @@
   "collection_scope": "targeted_research_company",
   "events": [
     {
-      "id": "mops-history-3481-1151028-1",
-      "date": "2026-10-28",
-      "announced_date": "2026-10-28",
-      "fact_date": "2026-10-28",
-      "announced_time": "16:40:48",
-      "title": "代子公司群豐駿科技（寧波）有限公司公告向關係人取得不動產使用權資產",
-      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 標的房屋：中國浙江省寧波市北侖區大碶街道揚子江北路16號 2.事實發生日:115/10/28~115/10/28 3.董事會通過日期: 民國115年10月28日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 租賃面積：78,848平方公尺（23,851.52坪） 租金金額： (1)2027年至2029年每月租金人民幣118.3萬元（新台幣570.2萬元） (2)2030年每月租金人民幣126.2萬元（新台幣608.2萬元） (3)2031年每月租金人民幣134.0萬元（新台幣646.2萬元） 使用權資產金額：人民幣6,746.5萬元 (新台幣32,524.8萬元) 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：寧波群志光電有限公司 與公司之關係：本公司之兄弟公司 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 選定關係人為交易對象之原因：集團營運策略考量 前次移轉之所有人、移轉價格及取得日期:不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依合約條件辦理 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 交易之決定方式：依據市場行情進行議價 決策單位：董事會 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 生產及營運使用 24.本次交易表示異議之董事之意見: 無 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 民國 115 年 10 月 28 日 27.本次交易係向關係人取得不動產或其使用權資產:是 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
-      "clause": "第20款",
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "3481",
-        "marketKind": "sii",
-        "enterDate": "1151028"
-      }
-    },
-    {
-      "id": "mops-history-3481-1150914-1",
-      "date": "2026-09-14",
-      "announced_date": "2026-09-14",
-      "fact_date": "2026-09-14",
-      "announced_time": "14:47:20",
-      "title": "代重要子公司Innolux Hong Kong Holding Limited 公告股東會重要決議事項",
-      "description": "1.股東常會日期:115/09/14 2.重要決議事項一、盈餘分配或盈虧撥補:無 3.重要決議事項二、章程修訂:無 4.重要決議事項三、營業報告書及財務報表:承認2025年度財務報表 5.重要決議事項四、董監事選舉:無 6.重要決議事項五、其他事項:通過續聘會計師 7.其他應敘明事項:無",
-      "clause": "第18款",
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "3481",
-        "marketKind": "sii",
-        "enterDate": "1150914"
-      }
-    },
-    {
-      "id": "mops-history-3481-1150907-1",
-      "date": "2026-09-07",
-      "announced_date": "2026-09-07",
-      "fact_date": "2026-09-14",
-      "announced_time": "15:52:44",
-      "title": "公告公司受邀參加UBS證券所舉辦之「UBS Taiwan Summit 2026」",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/09/14 1.召開法人說明會之日期：115/09/14 2.召開法人說明會之時間：11 時 00 分 3.召開法人說明會之地點：W Hotel 4.法人說明會擇要訊息：公告公司受邀參加UBS證券所舉辦之「UBS Taiwan Summit 2026」，說明營運現況及前景。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "id": "mops-history-3481-1151113-6",
+      "date": "2026-11-13",
+      "announced_date": "2026-11-13",
+      "fact_date": "2026-11-24",
+      "announced_time": "16:17:48",
+      "title": "本公司受邀參加花旗證券所舉辦之「Citi Nov Taiwan Corporate Day」",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/11/24 1.召開法人說明會之日期：115/11/24 2.召開法人說明會之時間：11 時 00 分 3.召開法人說明會之地點：W Hotel 4.法人說明會擇要訊息：公司受邀參加花旗證券所舉辦之「Citi Nov Taiwan Corporate Day」，說明營運現況及前景。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
       "clause": "第12款",
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
@@ -67,21 +25,84 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "3481",
+        "serialNumber": "6",
+        "enterDate": "1151113",
         "marketKind": "sii",
-        "enterDate": "1150907"
+        "companyId": "3481"
       }
     },
     {
-      "id": "mops-history-3481-1150831-1",
-      "date": "2026-08-31",
-      "announced_date": "2026-08-31",
-      "fact_date": "2026-08-31",
-      "announced_time": "17:54:08",
-      "title": "代子公司寧波群志光電有限公司公告處分有價證券",
-      "description": "1.證券名稱: 深圳天德鈺科技股份有限公司普通股 2.交易日期:115/8/7~115/8/31 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:董事長核決 民國115年6月5日 5.交易數量、每單位價格及交易總金額: 交易單位數量：4,237,684股 每單位價格：人民幣19.03元 總金額：人民幣80,643千元 (約新台幣383,334千元) 6.處分利益（或損失）（取得有價證券者不適用）: 不適用 7.與交易標的公司之關係: 非關係人 8.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 累積持有數量:22,989,562股 累積持有金額：新台幣2,328,865仟元 持股比例：5.62% 權利受限情形：無 9.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列之有價證券投 資（含本次交易）占公司最近期財務報表中總資產及歸屬於母公司業主之權益之比例 暨最近期財務報表中營運資金數額: 占總資產比例：2.69% 占業主權益比例：3.83% 營運資金數額: 新台幣7,011,637 仟元 10.取得或處分之具體目的: 資金安排需要 11.本次交易表示異議董事之意見: 無 12.本次交易為關係人交易: 否 13.交易相對人及其與公司之關係: 不適用 14.監察人承認或審計委員會同意日期: 不適用，依取得或處分資產處理程序辦理 15.前已就同一件事件發布重大訊息日期: 2026/06/05 16.其他敘明事項: 無",
-      "clause": "第20款",
+      "id": "mops-history-3481-1151113-5",
+      "date": "2026-11-13",
+      "announced_date": "2026-11-13",
+      "fact_date": "2026-11-18",
+      "announced_time": "16:17:06",
+      "title": "本公司受邀參加摩根史丹利證券所舉辦之「Twenty-Fifth Annual AsiaPacific Summit」",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/11/18 1.召開法人說明會之日期：115/11/18 2.召開法人說明會之時間：10 時 30 分 3.召開法人說明會之地點：Singapore 4.法人說明會擇要訊息：公司受邀參加摩根史丹利證券所舉辦之法人說明會，說明營運現況及前景。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "5",
+        "enterDate": "1151113",
+        "marketKind": "sii",
+        "companyId": "3481"
+      }
+    },
+    {
+      "id": "mops-history-3481-1151113-4",
+      "date": "2026-11-13",
+      "announced_date": "2026-11-13",
+      "fact_date": "2026-11-13",
+      "announced_time": "14:41:18",
+      "title": "本公司董事會決議民國115年度限制員工權利新股增資基準日",
+      "description": "1.事實發生日:115/11/13 2.公司名稱:群創光電股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由: (1)本公司民國115年限制員工權利新股案，業經本公司115/5/27 股東常會核准，並經金融監督管理委員會115/7/17金管證發字 第1150349661號函申報生效。 (2)本公司董事會核准發行總股數36,870,000股，包含： 有償認購18,435,000股，每股新台幣10元； 無償配發18,435,000股； (3)本次實際發行股數及增資金額，以員工實際完成有償認購繳 款及無償配發之股數為準；如有員工認購不足、放棄認購或未完 成配發之情形，授權董事長於本次核配總股數20%（計7,374,000 股，其中有償認購及無償配發各以3,687,000股為限）之調減範圍 內，依實際認購及配發結果，確認本次最終發行股數及增資金額， 據以辦理增資變更登記事宜。前述未實際發行之股份，依發行辦 法轉列後續次別發行額度；後續核配及發行仍應依相關法令及公 司核決程序辦理。 (4)增資基準日：民國115年11月27日 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項):無",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "4",
+        "enterDate": "1151113",
+        "marketKind": "sii",
+        "companyId": "3481"
+      }
+    },
+    {
+      "id": "mops-history-3481-1151113-2",
+      "date": "2026-11-13",
+      "announced_date": "2026-11-13",
+      "fact_date": "2026-11-13",
+      "announced_time": "14:41:01",
+      "title": "本公司董事會決議庫藏股轉讓員工並訂定認股基準日",
+      "description": "1.事實發生日:115/11/13 2.公司名稱:群創光電股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:本公司董事會決議庫藏股轉讓員工並訂定認股基準日 6.因應措施: (1)本公司第三次買回本公司之股份依本公司買回股份轉讓員工辦法之規定辦理， 以每股新台幣6.99元轉讓予員工。 (2)認股基準日為：民國115年11月13日。 (3)本次預計轉讓股數：4,072,200股，實際轉讓股數以員工實際認購並完成股份轉 讓之結果為準。員工認購不足或放棄認購之股份，依相關法令及本公司庫藏股轉讓 辦法辦理。 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項):無",
+      "clause": "第51款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1151113",
+        "marketKind": "sii",
+        "companyId": "3481"
+      }
+    },
+    {
+      "id": "mops-history-3481-1151113-1",
+      "date": "2026-11-13",
+      "announced_date": "2026-11-13",
+      "fact_date": null,
+      "announced_time": "14:00:08",
+      "title": "群創光電2026年第三季財務報告",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
@@ -89,9 +110,93 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "3481",
+        "enterDate": "1151113",
         "marketKind": "sii",
-        "enterDate": "1150831"
+        "companyId": "3481"
+      }
+    },
+    {
+      "id": "mops-history-3481-1151028-1",
+      "date": "2026-10-28",
+      "announced_date": "2026-10-28",
+      "fact_date": null,
+      "announced_time": "16:40:48",
+      "title": "代子公司群豐駿科技（寧波）有限公司公告向關係人取得不動產使用權資產",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151028",
+        "marketKind": "sii",
+        "companyId": "3481"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150914-1",
+      "date": "2026-09-14",
+      "announced_date": "2026-09-14",
+      "fact_date": null,
+      "announced_time": "14:47:20",
+      "title": "代重要子公司Innolux Hong Kong Holding Limited 公告股東會重要決議事項",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150914",
+        "marketKind": "sii",
+        "companyId": "3481"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150907-1",
+      "date": "2026-09-07",
+      "announced_date": "2026-09-07",
+      "fact_date": null,
+      "announced_time": "15:52:44",
+      "title": "公告公司受邀參加UBS證券所舉辦之「UBS Taiwan Summit 2026」",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150907",
+        "marketKind": "sii",
+        "companyId": "3481"
+      }
+    },
+    {
+      "id": "mops-history-3481-1150831-1",
+      "date": "2026-08-31",
+      "announced_date": "2026-08-31",
+      "fact_date": null,
+      "announced_time": "17:54:08",
+      "title": "代子公司寧波群志光電有限公司公告處分有價證券",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1150831",
+        "marketKind": "sii",
+        "companyId": "3481"
       }
     },
     {
@@ -110,9 +215,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "3481",
+        "enterDate": "1150814",
         "marketKind": "sii",
-        "enterDate": "1150814"
+        "companyId": "3481"
       }
     },
     {
@@ -131,9 +236,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "3481",
+        "enterDate": "1150814",
         "marketKind": "sii",
-        "enterDate": "1150814"
+        "companyId": "3481"
       }
     },
     {
@@ -152,9 +257,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "3481",
+        "enterDate": "1150810",
         "marketKind": "sii",
-        "enterDate": "1150810"
+        "companyId": "3481"
       }
     },
     {
@@ -173,9 +278,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "companyId": "3481",
+        "enterDate": "1150806",
         "marketKind": "sii",
-        "enterDate": "1150806"
+        "companyId": "3481"
       }
     },
     {
@@ -194,9 +299,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "3481",
+        "enterDate": "1150806",
         "marketKind": "sii",
-        "enterDate": "1150806"
+        "companyId": "3481"
       }
     },
     {
@@ -215,9 +320,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "3481",
+        "enterDate": "1150806",
         "marketKind": "sii",
-        "enterDate": "1150806"
+        "companyId": "3481"
       }
     },
     {
@@ -236,9 +341,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "3481",
+        "enterDate": "1150709",
         "marketKind": "sii",
-        "enterDate": "1150709"
+        "companyId": "3481"
       }
     },
     {
@@ -257,9 +362,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "3481",
+        "enterDate": "1150629",
         "marketKind": "sii",
-        "enterDate": "1150629"
+        "companyId": "3481"
       }
     },
     {
@@ -278,9 +383,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "3481",
+        "enterDate": "1150622",
         "marketKind": "sii",
-        "enterDate": "1150622"
+        "companyId": "3481"
       }
     },
     {
@@ -299,9 +404,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "3481",
+        "enterDate": "1150605",
         "marketKind": "sii",
-        "enterDate": "1150605"
+        "companyId": "3481"
       }
     },
     {
@@ -320,9 +425,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "3481",
+        "enterDate": "1150601",
         "marketKind": "sii",
-        "enterDate": "1150601"
+        "companyId": "3481"
       }
     },
     {
@@ -341,9 +446,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "3481",
+        "enterDate": "1150601",
         "marketKind": "sii",
-        "enterDate": "1150601"
+        "companyId": "3481"
       }
     },
     {
@@ -362,9 +467,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "3481",
+        "enterDate": "1150527",
         "marketKind": "sii",
-        "enterDate": "1150527"
+        "companyId": "3481"
       }
     },
     {
@@ -383,9 +488,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "3481",
+        "enterDate": "1150527",
         "marketKind": "sii",
-        "enterDate": "1150527"
+        "companyId": "3481"
       }
     },
     {
@@ -404,114 +509,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "3481",
+        "enterDate": "1150525",
         "marketKind": "sii",
-        "enterDate": "1150525"
-      }
-    },
-    {
-      "id": "mops-history-3481-1150525-1",
-      "date": "2026-05-25",
-      "announced_date": "2026-05-25",
-      "fact_date": null,
-      "announced_time": "15:20:49",
-      "title": "本公司受邀參加摩根史丹利證券所舉辦之「Asia AI Summit 2026」",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "3481",
-        "marketKind": "sii",
-        "enterDate": "1150525"
-      }
-    },
-    {
-      "id": "mops-history-3481-1150515-1",
-      "date": "2026-05-15",
-      "announced_date": "2026-05-15",
-      "fact_date": null,
-      "announced_time": "17:05:37",
-      "title": "公告本公司法人董事改派代表人",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "3481",
-        "marketKind": "sii",
-        "enterDate": "1150515"
-      }
-    },
-    {
-      "id": "mops-history-3481-1150511-1",
-      "date": "2026-05-11",
-      "announced_date": "2026-05-11",
-      "fact_date": null,
-      "announced_time": "15:55:46",
-      "title": "群創光電2026年第一季財務報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "3481",
-        "marketKind": "sii",
-        "enterDate": "1150511"
-      }
-    },
-    {
-      "id": "mops-history-3481-1150430-1",
-      "date": "2026-04-30",
-      "announced_date": "2026-04-30",
-      "fact_date": null,
-      "announced_time": "17:18:04",
-      "title": "公告本公司民國115年第1季財務報告董事會召開日期",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "3481",
-        "marketKind": "sii",
-        "enterDate": "1150430"
-      }
-    },
-    {
-      "id": "mops-history-3481-1150415-1",
-      "date": "2026-04-15",
-      "announced_date": "2026-04-15",
-      "fact_date": null,
-      "announced_time": "18:04:32",
-      "title": "公告本公司處分南科Fab5廠房及附屬設施",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3481&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "3481",
-        "marketKind": "sii",
-        "enterDate": "1150415"
+        "companyId": "3481"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-12T12:31:06.540Z",
-      "row_count": 452,
+      "fetched_at": "2026-11-15T00:15:50.117Z",
+      "row_count": 2,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-11-11T12:36:41.596Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-11-15T00:17:45.747Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
