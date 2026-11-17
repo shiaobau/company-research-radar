@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-17T00:17:08.033Z",
+  "collected_at": "2026-11-17T12:32:13.450Z",
   "company": {
     "id": "tpex-3115",
     "ticker": "3115",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "d812e1ce2ab61d9daff0",
+      "date": "2026-11-16",
+      "announced_date": "2026-11-16",
+      "fact_date": "2026-11-18",
+      "announced_time": "171947",
+      "title": "本公司受邀參加福邦證券舉辦之法人說明會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/11/18 1.召開法人說明會之日期：115/11/18 2.召開法人說明會之時間：14 時 30 分 3.召開法人說明會之地點：台北市忠孝西路一段6號7樓(福邦證券股份有限公司) 4.法人說明會擇要訊息：受邀參加福邦證券舉辦法人說明會，就本公司已公開之財務業務資訊作說明。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "tpex_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap04_O",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-3115-1151116-1",
       "date": "2026-11-16",
@@ -492,27 +507,6 @@
         "marketKind": "otc",
         "enterDate": "1141128"
       }
-    },
-    {
-      "id": "mops-history-3115-1141120-2",
-      "date": "2025-11-20",
-      "announced_date": "2025-11-20",
-      "fact_date": null,
-      "announced_time": "17:13:01",
-      "title": "公告本公司董事會決議辦理114年第二次私募普通股及定價 相關事宜(更正本次私募增資基準日)",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "3115",
-        "marketKind": "otc",
-        "enterDate": "1141120"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-17T00:15:58.968Z",
-      "row_count": 1,
+      "fetched_at": "2026-11-17T12:31:02.854Z",
+      "row_count": 74,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-17T00:18:16.730Z",
       "row_count": 24,
       "detail_count": 4,
