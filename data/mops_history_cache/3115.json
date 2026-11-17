@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1",
   "ticker": "3115",
-  "fetched_at": "2026-11-16T00:18:00.388Z",
+  "fetched_at": "2026-11-17T00:18:16.730Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-3115-1151116-1",
+      "date": "2026-11-16",
+      "announced_date": "2026-11-16",
+      "fact_date": "2026-11-18",
+      "announced_time": "17:19:47",
+      "title": "本公司受邀參加福邦證券舉辦之法人說明會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/11/18 1.召開法人說明會之日期：115/11/18 2.召開法人說明會之時間：14 時 30 分 3.召開法人說明會之地點：台北市忠孝西路一段6號7樓(福邦證券股份有限公司) 4.法人說明會擇要訊息：受邀參加福邦證券舉辦法人說明會，就本公司已公開之財務業務資訊作說明。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "3115",
+        "marketKind": "otc",
+        "enterDate": "1151116"
+      }
+    },
     {
       "id": "mops-history-3115-1151111-1",
       "date": "2026-11-11",
@@ -29,9 +50,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151111",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1151111"
       }
     },
     {
@@ -50,9 +71,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150916",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150916"
       }
     },
     {
@@ -71,20 +92,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150910",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150910"
       }
     },
     {
       "id": "mops-history-3115-1150811-2",
       "date": "2026-08-11",
       "announced_date": "2026-08-11",
-      "fact_date": "2026-08-11",
+      "fact_date": null,
       "announced_time": "17:24:23",
       "title": "公告本公司會計主管異動",
-      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管 (如:執行長、營運長、行銷長及策略長等)、財務主管、會計 主管、公司治理主管、資訊安全長、研發主管、內部稽核主管或訴訟及非 訟代理人）:會計主管 2.發生變動日期:115/08/11 3.舊任者姓名、級職及簡歷:羅晉仁/本公司總經理兼會計主管 4.新任者姓名、級職及簡歷:陳映彤/本公司財會處協理兼會計主管 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、 「退休」、「死亡」、「新任」或「解任」）:職務調整 6.異動原因:經本公司115/08/11董事會決議通過任命。 7.生效日期:115/08/11 8.其他應敘明事項:無。",
-      "clause": "第8款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=115",
@@ -92,9 +113,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1150811",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150811"
       }
     },
     {
@@ -113,9 +134,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150811",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150811"
       }
     },
     {
@@ -134,9 +155,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150803",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150803"
       }
     },
     {
@@ -155,9 +176,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150715",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150715"
       }
     },
     {
@@ -176,9 +197,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150630",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150630"
       }
     },
     {
@@ -197,9 +218,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150623",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150623"
       }
     },
     {
@@ -218,9 +239,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150518",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150518"
       }
     },
     {
@@ -239,9 +260,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150511",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150511"
       }
     },
     {
@@ -260,9 +281,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150426",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150426"
       }
     },
     {
@@ -281,9 +302,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "enterDate": "1150309",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150309"
       }
     },
     {
@@ -302,9 +323,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1150309",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150309"
       }
     },
     {
@@ -323,9 +344,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150309",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150309"
       }
     },
     {
@@ -344,9 +365,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150302",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150302"
       }
     },
     {
@@ -365,9 +386,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150301",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150301"
       }
     },
     {
@@ -386,9 +407,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1150113",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150113"
       }
     },
     {
@@ -407,9 +428,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1150113",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1150113"
       }
     },
     {
@@ -428,9 +449,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1141218",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1141218"
       }
     },
     {
@@ -449,9 +470,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1141211",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1141211"
       }
     },
     {
@@ -470,9 +491,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1141128",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1141128"
       }
     },
     {
@@ -491,30 +512,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1141120",
+        "companyId": "3115",
         "marketKind": "otc",
-        "companyId": "3115"
-      }
-    },
-    {
-      "id": "mops-history-3115-1141120-1",
-      "date": "2025-11-20",
-      "announced_date": "2025-11-20",
-      "fact_date": null,
-      "announced_time": "17:12:23",
-      "title": "本公司受邀參加福邦證券舉辦之法人說明會",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=3115&firstin=true&step=1&year=114",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1141120",
-        "marketKind": "otc",
-        "companyId": "3115"
+        "enterDate": "1141120"
       }
     }
   ]
