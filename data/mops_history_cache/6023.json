@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1",
   "ticker": "6023",
-  "fetched_at": "2026-11-17T00:18:32.680Z",
+  "fetched_at": "2026-11-18T12:33:51.129Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-6023-1151117-1",
+      "date": "2026-11-17",
+      "announced_date": "2026-11-17",
+      "fact_date": "2026-11-17",
+      "announced_time": "14:31:56",
+      "title": "元大期貨公告向元大銀行取得使用權資產",
+      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 高雄市前金區中正四路143號7樓之1 2.事實發生日:115/11/17~115/11/17 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:董事長核決 民國115年11月17日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 租賃面積：約128.8坪(含公設) 每單位價格：每坪每月租金新台幣430元(含稅) 租金總金額：每月新台幣55,384元(含稅) 使用權資產金額：新台幣3,146,419元(含稅) 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：元大商業銀行股份有限公司。 其與公司之關係：關係人。 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 選定關係人為交易對象之原因：作為自用辦公及營業場所使用 前次移轉之所有人：不適用 與公司及交易相對人之關係：不適用 前次移轉日期：不適用 前次移轉金額：不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 租期自民國115年11月21日起至民國120年11月20日止 付款條件：每月支付新台幣55,384元(含稅) 其他重要約定事項：租賃期間屆滿本公司享有同一條件之優先承租權 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 經參考不動產估價師事務所出具之不動產估價報告書後由董事長核定 12.專業估價者事務所或公司名稱及其估價金額: 信義不動產估價師聯合事務所 每坪每月租金新台幣430元(含稅) 13.專業估價師姓名: 遲維新 14.專業估價師開業證書字號: (91)北市估字第000001號 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 作為自用辦公及營業場所使用 24.本次交易表示異議之董事之意見: 無 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:是 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151117",
+        "marketKind": "otc",
+        "companyId": "6023"
+      }
+    },
     {
       "id": "mops-history-6023-1151106-1",
       "date": "2026-11-06",
@@ -29,9 +50,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1151106",
         "marketKind": "otc",
-        "enterDate": "1151106"
+        "companyId": "6023"
       }
     },
     {
@@ -50,9 +71,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1151105",
         "marketKind": "otc",
-        "enterDate": "1151105"
+        "companyId": "6023"
       }
     },
     {
@@ -71,20 +92,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1151008",
         "marketKind": "otc",
-        "enterDate": "1151008"
+        "companyId": "6023"
       }
     },
     {
       "id": "mops-history-6023-1150930-3",
       "date": "2026-09-30",
       "announced_date": "2026-09-30",
-      "fact_date": "2026-09-30",
+      "fact_date": null,
       "announced_time": "22:40:45",
       "title": "元大期貨更正公告與利害關係人共同申請變更自有不動產都市更新案權利變換計畫",
-      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 臺北市中山區長春段一小段764及764-1地號持分土地及其地上建物 2.事實發生日:115/9/30~115/9/30 3.董事會通過日期: 民國114年11月6日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 更新前土地權利價值約350,236,706元(權值比例4.18549%) 預計投入共同負擔金額約205,728,532元 交易總金額約555,965,238元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人：元大銀行、元大投信、元大證券、元大證金及元大建設等五家公司 其與公司之關係：關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 選定關係人為交易對象之原因：本大樓各區分所有權人包含本公司之利害關係人 前次移轉之所有人：不適用 前次移轉日期：不適用 前次移轉金額：不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 交付或付款條件：依台北市政府核定之都市更新事業計畫辦理 契約限制條款及其他重要約定事項：無 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 交易決定方式：依台北市政府核定之都市更新事業計畫辦理 價格決定之參考依據：依台北市政府核定之都市更新事業計畫辦理 決策單位：董事會 12.專業估價者事務所或公司名稱及其估價金額: 巨秉不動產估價師聯合事務所 更新前土地權利價值約350,236,706元 (權值比例4.18549%) 更新後平均每坪單價約129.6~251.7萬元/坪，車位平均約363萬元/個 更新後可分配價值約79,252萬元 13.專業估價師姓名: 張能政 14.專業估價師開業證書字號: 巨秉不動產估價師聯合事務所：(94)北市估字第000081號 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 作為自用營業場所使用 24.本次交易表示異議之董事之意見: 不適用 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 114年10月29日 27.本次交易係向關係人取得不動產或其使用權資產:是 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:555,965,238元 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 108年5月2日、110年2月4日、114年11月6日 31.其他敘明事項: 更正：更新前土地權利價值、更新後平均每坪單價",
-      "clause": "第20款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
@@ -92,9 +113,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "companyId": "6023",
+        "enterDate": "1150930",
         "marketKind": "otc",
-        "enterDate": "1150930"
+        "companyId": "6023"
       }
     },
     {
@@ -113,9 +134,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "6023",
+        "enterDate": "1150930",
         "marketKind": "otc",
-        "enterDate": "1150930"
+        "companyId": "6023"
       }
     },
     {
@@ -134,9 +155,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150930",
         "marketKind": "otc",
-        "enterDate": "1150930"
+        "companyId": "6023"
       }
     },
     {
@@ -155,9 +176,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150929",
         "marketKind": "otc",
-        "enterDate": "1150929"
+        "companyId": "6023"
       }
     },
     {
@@ -176,9 +197,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150921",
         "marketKind": "otc",
-        "enterDate": "1150921"
+        "companyId": "6023"
       }
     },
     {
@@ -197,9 +218,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150908",
         "marketKind": "otc",
-        "enterDate": "1150908"
+        "companyId": "6023"
       }
     },
     {
@@ -218,9 +239,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150902",
         "marketKind": "otc",
-        "enterDate": "1150902"
+        "companyId": "6023"
       }
     },
     {
@@ -239,9 +260,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150827",
         "marketKind": "otc",
-        "enterDate": "1150827"
+        "companyId": "6023"
       }
     },
     {
@@ -260,9 +281,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "companyId": "6023",
+        "enterDate": "1150819",
         "marketKind": "otc",
-        "enterDate": "1150819"
+        "companyId": "6023"
       }
     },
     {
@@ -281,9 +302,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "6023",
+        "enterDate": "1150819",
         "marketKind": "otc",
-        "enterDate": "1150819"
+        "companyId": "6023"
       }
     },
     {
@@ -302,9 +323,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150819",
         "marketKind": "otc",
-        "enterDate": "1150819"
+        "companyId": "6023"
       }
     },
     {
@@ -323,9 +344,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150807",
         "marketKind": "otc",
-        "enterDate": "1150807"
+        "companyId": "6023"
       }
     },
     {
@@ -344,9 +365,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150805",
         "marketKind": "otc",
-        "enterDate": "1150805"
+        "companyId": "6023"
       }
     },
     {
@@ -365,9 +386,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150729",
         "marketKind": "otc",
-        "enterDate": "1150729"
+        "companyId": "6023"
       }
     },
     {
@@ -386,9 +407,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150728",
         "marketKind": "otc",
-        "enterDate": "1150728"
+        "companyId": "6023"
       }
     },
     {
@@ -407,9 +428,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150723",
         "marketKind": "otc",
-        "enterDate": "1150723"
+        "companyId": "6023"
       }
     },
     {
@@ -428,9 +449,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150708",
         "marketKind": "otc",
-        "enterDate": "1150708"
+        "companyId": "6023"
       }
     },
     {
@@ -449,9 +470,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "4",
-        "companyId": "6023",
+        "enterDate": "1150617",
         "marketKind": "otc",
-        "enterDate": "1150617"
+        "companyId": "6023"
       }
     },
     {
@@ -470,9 +491,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "6023",
+        "enterDate": "1150617",
         "marketKind": "otc",
-        "enterDate": "1150617"
+        "companyId": "6023"
       }
     },
     {
@@ -491,30 +512,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "6023",
+        "enterDate": "1150617",
         "marketKind": "otc",
-        "enterDate": "1150617"
-      }
-    },
-    {
-      "id": "mops-history-6023-1150608-1",
-      "date": "2026-06-08",
-      "announced_date": "2026-06-08",
-      "fact_date": null,
-      "announced_time": "13:50:12",
-      "title": "元大期貨公告115年5月份營運概況",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=6023&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "6023",
-        "marketKind": "otc",
-        "enterDate": "1150608"
+        "companyId": "6023"
       }
     }
   ]

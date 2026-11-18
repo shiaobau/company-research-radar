@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-18T00:16:28.382Z",
+  "collected_at": "2026-11-18T12:32:23.347Z",
   "company": {
     "id": "twse-2308",
     "ticker": "2308",
@@ -10,6 +10,48 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2308-1151118-2",
+      "date": "2026-11-18",
+      "announced_date": "2026-11-18",
+      "fact_date": "2026-11-18",
+      "announced_time": "16:34:43",
+      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告現金股利除息基準日",
+      "description": "1.董事會、股東會決議或公司決定日期:115/11/18 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.發放股利種類及金額:現金股利美金250,000,000元 4.除權（息）交易日:NA 5.最後過戶日:NA 6.停止過戶起始日期:NA 7.停止過戶截止日期:NA 8.除權（息）基準日:115/11/18 9.其他應敘明事項:無",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1151118",
+        "marketKind": "sii",
+        "companyId": "2308"
+      }
+    },
+    {
+      "id": "mops-history-2308-1151118-1",
+      "date": "2026-11-18",
+      "announced_date": "2026-11-18",
+      "fact_date": "2026-11-18",
+      "announced_time": "16:34:06",
+      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告發放現金股利",
+      "description": "1.董事會決議日期:115/11/18 2.發放股利種類及金額:發放現金股利美金250,000,000元 3.其他應敘明事項:本公司持有Delta Electronics Int'l (Singapore) Pte. Ltd. 100% 股權。",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151118",
+        "marketKind": "sii",
+        "companyId": "2308"
+      }
+    },
     {
       "id": "mops-history-2308-1151116-1",
       "date": "2026-11-16",
@@ -26,9 +68,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2308",
+        "enterDate": "1151116",
         "marketKind": "sii",
-        "enterDate": "1151116"
+        "companyId": "2308"
       }
     },
     {
@@ -47,20 +89,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2308",
+        "enterDate": "1151111",
         "marketKind": "sii",
-        "enterDate": "1151111"
+        "companyId": "2308"
       }
     },
     {
       "id": "mops-history-2308-1151110-2",
       "date": "2026-11-10",
       "announced_date": "2026-11-10",
-      "fact_date": "2026-11-10",
+      "fact_date": null,
       "announced_time": "13:36:46",
       "title": "本公司受邀參加法人說明會之相關資訊",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/11/10 1.召開法人說明會之日期：115/11/10 2.召開法人說明會之時間：16 時 00 分 3.召開法人說明會之地點：台北遠東香格里拉飯店 4.法人說明會擇要訊息：本公司受永豐金證券邀請，將於上述時間地點，向法人投資者說明本公司115年第3季之財務報告相關資訊。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-      "clause": "第12款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
@@ -68,20 +110,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2308",
+        "enterDate": "1151110",
         "marketKind": "sii",
-        "enterDate": "1151110"
+        "companyId": "2308"
       }
     },
     {
       "id": "mops-history-2308-1151110-1",
       "date": "2026-11-10",
       "announced_date": "2026-11-10",
-      "fact_date": "2026-11-10",
+      "fact_date": null,
       "announced_time": "11:32:54",
       "title": "澄清經濟日報115年11月10日報導",
-      "description": "1.事實發生日:115/11/10 2.公司名稱:台達電子工業股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.傳播媒體名稱:經濟日報 6.報導內容:外界預期，台達電本季營收力拚連三季改寫新猷，單季營收將首度突破 2,000億元大關。 7.發生緣由:大眾傳播媒體報導 8.因應措施:公佈澄清訊息於公開資訊觀測站 9.其他應敘明事項:本公司未對營收做任何具體財務預測，所有財務資訊悉依規定於 公開資訊觀測站公佈。",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
@@ -89,9 +131,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2308",
+        "enterDate": "1151110",
         "marketKind": "sii",
-        "enterDate": "1151110"
+        "companyId": "2308"
       }
     },
     {
@@ -110,9 +152,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2308",
+        "enterDate": "1151109",
         "marketKind": "sii",
-        "enterDate": "1151109"
+        "companyId": "2308"
       }
     },
     {
@@ -131,9 +173,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2308",
+        "enterDate": "1151109",
         "marketKind": "sii",
-        "enterDate": "1151109"
+        "companyId": "2308"
       }
     },
     {
@@ -152,9 +194,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2308",
+        "enterDate": "1151106",
         "marketKind": "sii",
-        "enterDate": "1151106"
+        "companyId": "2308"
       }
     },
     {
@@ -173,9 +215,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2308",
+        "enterDate": "1151105",
         "marketKind": "sii",
-        "enterDate": "1151105"
+        "companyId": "2308"
       }
     },
     {
@@ -194,9 +236,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2308",
+        "enterDate": "1151103",
         "marketKind": "sii",
-        "enterDate": "1151103"
+        "companyId": "2308"
       }
     },
     {
@@ -215,9 +257,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "4",
-        "companyId": "2308",
+        "enterDate": "1151030",
         "marketKind": "sii",
-        "enterDate": "1151030"
+        "companyId": "2308"
       }
     },
     {
@@ -236,9 +278,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "companyId": "2308",
+        "enterDate": "1151030",
         "marketKind": "sii",
-        "enterDate": "1151030"
+        "companyId": "2308"
       }
     },
     {
@@ -257,9 +299,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2308",
+        "enterDate": "1151030",
         "marketKind": "sii",
-        "enterDate": "1151030"
+        "companyId": "2308"
       }
     },
     {
@@ -278,9 +320,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2308",
+        "enterDate": "1151030",
         "marketKind": "sii",
-        "enterDate": "1151030"
+        "companyId": "2308"
       }
     },
     {
@@ -299,9 +341,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "5",
-        "companyId": "2308",
+        "enterDate": "1151028",
         "marketKind": "sii",
-        "enterDate": "1151028"
+        "companyId": "2308"
       }
     },
     {
@@ -320,9 +362,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2308",
+        "enterDate": "1151027",
         "marketKind": "sii",
-        "enterDate": "1151027"
+        "companyId": "2308"
       }
     },
     {
@@ -341,9 +383,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "4",
-        "companyId": "2308",
+        "enterDate": "1151028",
         "marketKind": "sii",
-        "enterDate": "1151028"
+        "companyId": "2308"
       }
     },
     {
@@ -362,9 +404,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "companyId": "2308",
+        "enterDate": "1151028",
         "marketKind": "sii",
-        "enterDate": "1151028"
+        "companyId": "2308"
       }
     },
     {
@@ -383,9 +425,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2308",
+        "enterDate": "1151028",
         "marketKind": "sii",
-        "enterDate": "1151028"
+        "companyId": "2308"
       }
     },
     {
@@ -404,9 +446,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2308",
+        "enterDate": "1151028",
         "marketKind": "sii",
-        "enterDate": "1151028"
+        "companyId": "2308"
       }
     },
     {
@@ -425,9 +467,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "5",
-        "companyId": "2308",
+        "enterDate": "1151027",
         "marketKind": "sii",
-        "enterDate": "1151027"
+        "companyId": "2308"
       }
     },
     {
@@ -446,9 +488,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "4",
-        "companyId": "2308",
+        "enterDate": "1151027",
         "marketKind": "sii",
-        "enterDate": "1151027"
+        "companyId": "2308"
       }
     },
     {
@@ -467,51 +509,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "companyId": "2308",
+        "enterDate": "1151027",
         "marketKind": "sii",
-        "enterDate": "1151027"
-      }
-    },
-    {
-      "id": "mops-history-2308-1151027-2",
-      "date": "2026-10-27",
-      "announced_date": "2026-10-27",
-      "fact_date": null,
-      "announced_time": "17:54:14",
-      "title": "本公司代子公司台達電子(重慶)有限公司公告向關係人取得供營業使用之設備",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2308",
-        "marketKind": "sii",
-        "enterDate": "1151027"
-      }
-    },
-    {
-      "id": "mops-history-2308-1151015-1",
-      "date": "2026-10-15",
-      "announced_date": "2026-10-15",
-      "fact_date": null,
-      "announced_time": "15:57:26",
-      "title": "本公司自辦法人說明會之相關資訊",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2308",
-        "marketKind": "sii",
-        "enterDate": "1151015"
+        "companyId": "2308"
       }
     }
   ],
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-18T00:15:46.270Z",
+      "fetched_at": "2026-11-18T12:31:08.366Z",
       "row_count": 94,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-11-17T00:17:40.012Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-11-18T12:32:56.235Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

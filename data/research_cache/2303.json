@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-18T00:16:28.382Z",
+  "collected_at": "2026-11-18T12:32:23.347Z",
   "company": {
     "id": "twse-2303",
     "ticker": "2303",
@@ -26,6 +26,27 @@
       "review_status": "unreviewed"
     },
     {
+      "id": "mops-history-2303-1151117-1",
+      "date": "2026-11-17",
+      "announced_date": "2026-11-17",
+      "fact_date": "2026-11-23",
+      "announced_time": "14:11:07",
+      "title": "本公司受邀參與法人說明會相關資訊",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/11/23 1.召開法人說明會之日期：115/11/23 ~ 115/11/24 2.召開法人說明會之時間：09 時 00 分 3.召開法人說明會之地點：台北W飯店 4.法人說明會擇要訊息：本公司受邀參加花旗證券舉辦之法人說明會「2026 Taiwan Corporate Day」。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151117",
+        "marketKind": "sii",
+        "companyId": "2303"
+      }
+    },
+    {
       "id": "mops-history-2303-1151113-1",
       "date": "2026-11-13",
       "announced_date": "2026-11-13",
@@ -41,9 +62,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1151113",
         "marketKind": "sii",
-        "enterDate": "1151113"
+        "companyId": "2303"
       }
     },
     {
@@ -62,9 +83,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1151111",
         "marketKind": "sii",
-        "enterDate": "1151111"
+        "companyId": "2303"
       }
     },
     {
@@ -83,20 +104,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "companyId": "2303",
+        "enterDate": "1151110",
         "marketKind": "sii",
-        "enterDate": "1151110"
+        "companyId": "2303"
       }
     },
     {
       "id": "mops-history-2303-1151110-2",
       "date": "2026-11-10",
       "announced_date": "2026-11-10",
-      "fact_date": "2026-11-18",
+      "fact_date": null,
       "announced_time": "16:00:25",
       "title": "本公司受邀參與法人說明會相關資訊",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/11/18 1.召開法人說明會之日期：115/11/18 2.召開法人說明會之時間：10 時 30 分 3.召開法人說明會之地點：新加坡文華東方酒店 4.法人說明會擇要訊息：本公司受邀參加摩根士丹利證券舉辦之法人說明會「Asia Pacific Summit」。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-      "clause": "第12款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
@@ -104,9 +125,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2303",
+        "enterDate": "1151110",
         "marketKind": "sii",
-        "enterDate": "1151110"
+        "companyId": "2303"
       }
     },
     {
@@ -125,9 +146,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1151110",
         "marketKind": "sii",
-        "enterDate": "1151110"
+        "companyId": "2303"
       }
     },
     {
@@ -146,9 +167,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1151103",
         "marketKind": "sii",
-        "enterDate": "1151103"
+        "companyId": "2303"
       }
     },
     {
@@ -167,9 +188,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "5",
-        "companyId": "2303",
+        "enterDate": "1151028",
         "marketKind": "sii",
-        "enterDate": "1151028"
+        "companyId": "2303"
       }
     },
     {
@@ -188,9 +209,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "companyId": "2303",
+        "enterDate": "1151028",
         "marketKind": "sii",
-        "enterDate": "1151028"
+        "companyId": "2303"
       }
     },
     {
@@ -209,9 +230,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2303",
+        "enterDate": "1151028",
         "marketKind": "sii",
-        "enterDate": "1151028"
+        "companyId": "2303"
       }
     },
     {
@@ -230,9 +251,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1151028",
         "marketKind": "sii",
-        "enterDate": "1151028"
+        "companyId": "2303"
       }
     },
     {
@@ -251,9 +272,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1151022",
         "marketKind": "sii",
-        "enterDate": "1151022"
+        "companyId": "2303"
       }
     },
     {
@@ -272,9 +293,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1151013",
         "marketKind": "sii",
-        "enterDate": "1151013"
+        "companyId": "2303"
       }
     },
     {
@@ -293,9 +314,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1151007",
         "marketKind": "sii",
-        "enterDate": "1151007"
+        "companyId": "2303"
       }
     },
     {
@@ -314,9 +335,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1151005",
         "marketKind": "sii",
-        "enterDate": "1151005"
+        "companyId": "2303"
       }
     },
     {
@@ -335,9 +356,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1151001",
         "marketKind": "sii",
-        "enterDate": "1151001"
+        "companyId": "2303"
       }
     },
     {
@@ -356,9 +377,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2303",
+        "enterDate": "1150903",
         "marketKind": "sii",
-        "enterDate": "1150903"
+        "companyId": "2303"
       }
     },
     {
@@ -377,9 +398,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1150903",
         "marketKind": "sii",
-        "enterDate": "1150903"
+        "companyId": "2303"
       }
     },
     {
@@ -398,9 +419,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1150902",
         "marketKind": "sii",
-        "enterDate": "1150902"
+        "companyId": "2303"
       }
     },
     {
@@ -419,9 +440,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1150826",
         "marketKind": "sii",
-        "enterDate": "1150826"
+        "companyId": "2303"
       }
     },
     {
@@ -440,9 +461,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1150814",
         "marketKind": "sii",
-        "enterDate": "1150814"
+        "companyId": "2303"
       }
     },
     {
@@ -461,9 +482,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1150811",
         "marketKind": "sii",
-        "enterDate": "1150811"
+        "companyId": "2303"
       }
     },
     {
@@ -482,30 +503,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2303",
+        "enterDate": "1150805",
         "marketKind": "sii",
-        "enterDate": "1150805"
-      }
-    },
-    {
-      "id": "mops-history-2303-1150730-2",
-      "date": "2026-07-30",
-      "announced_date": "2026-07-30",
-      "fact_date": null,
-      "announced_time": "16:51:02",
-      "title": "代子公司宏誠創業投資(股)公司公告處分源傑科技(股)公司普通股之相關資料",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2303",
-        "marketKind": "sii",
-        "enterDate": "1150730"
+        "companyId": "2303"
       }
     }
   ],
@@ -535,14 +535,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-18T00:15:46.270Z",
+      "fetched_at": "2026-11-18T12:31:08.366Z",
       "row_count": 94,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-11-17T00:17:31.271Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-11-18T12:32:47.245Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

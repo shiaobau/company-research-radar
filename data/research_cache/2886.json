@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-18T00:16:28.382Z",
+  "collected_at": "2026-11-18T12:32:23.347Z",
   "company": {
     "id": "twse-2886",
     "ticker": "2886",
@@ -10,6 +10,48 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2886-1151118-3",
+      "date": "2026-11-18",
+      "announced_date": "2026-11-18",
+      "fact_date": "2026-11-18",
+      "announced_time": "18:46:38",
+      "title": "公告本公司之子公司兆豐證券(股)公司董事異動",
+      "description": "1.發生變動日期:115/11/18 2.法人名稱:兆豐金融控股股份有限公司 3.舊任者姓名:李銘順 4.舊任者簡歷:高雄市政府運動發展局顧問 5.新任者姓名:不適用 6.新任者簡歷:不適用 7.異動原因:請辭 8.原任期（例xx/xx/xx至xx/xx/xx）:114/04/22~117/04/21 9.新任生效日期:不適用 10.其他應敘明事項:辭任生效日115/11/23",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "3",
+        "enterDate": "1151118",
+        "marketKind": "sii",
+        "companyId": "2886"
+      }
+    },
+    {
+      "id": "mops-history-2886-1151118-2",
+      "date": "2026-11-18",
+      "announced_date": "2026-11-18",
+      "fact_date": "2026-11-18",
+      "announced_time": "18:23:42",
+      "title": "代本公司之子公司兆豐票券金融公司公告董事長異動",
+      "description": "1.董事會決議日期或發生變動日期:115/11/18 2.人員別（請輸入董事長或總經理）:董事長 3.舊任者姓名:陳適毅 4.舊任者簡歷:兆豐票券金融公司董事兼總經理並代理董事長 5.新任者姓名:張傳章 6.新任者簡歷:兆豐金融控股公司總經理 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「職務調整」、「資遣」、 「退休」、「逝世」或「新任」）:職務調整 8.異動原因:董事會推舉新任董事長 9.新任生效日期:不適用 10.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第6款所定對股東權益或證券價格有重大影響之事項): 本案尚須俟主管機關核准後生效",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1151118",
+        "marketKind": "sii",
+        "companyId": "2886"
+      }
+    },
     {
       "id": "4a9b3fdb1b6641443846",
       "date": "2026-11-17",
@@ -24,6 +66,27 @@
       "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed"
+    },
+    {
+      "id": "mops-history-2886-1151117-2",
+      "date": "2026-11-17",
+      "announced_date": "2026-11-17",
+      "fact_date": "2026-11-17",
+      "announced_time": "17:13:26",
+      "title": "公告本公司之子公司兆豐票券金融(股)公司董事異動案",
+      "description": "1.發生變動日期:115/11/17 2.法人名稱:兆豐金融控股股份有限公司 3.舊任者姓名:不適用 4.舊任者簡歷:不適用 5.新任者姓名:張傳章 6.新任者簡歷:兆豐金控總經理 7.異動原因:董事會決議派任 8.原任期（例xx/xx/xx至xx/xx/xx）:114/04/08至117/04/07 9.新任生效日期:115/11/18 10.其他應敘明事項:無",
+      "clause": "第6款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1151117",
+        "marketKind": "sii",
+        "companyId": "2886"
+      }
     },
     {
       "id": "8792d4a7ad6344ca42bd",
@@ -41,14 +104,35 @@
       "review_status": "unreviewed"
     },
     {
+      "id": "mops-history-2886-1151117-1",
+      "date": "2026-11-17",
+      "announced_date": "2026-11-17",
+      "fact_date": "2026-11-17",
+      "announced_time": "16:43:38",
+      "title": "公告本公司115年第三季合併財務報告業經審計委員會及 董事會決議通過",
+      "description": "1.提報董事會或經董事會決議日期:115/11/17 2.審計委員會通過日期:115/11/10 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/09/30 4.1月1日累計至本期止利息淨收益(仟元):32,642,054 5.1月1日累計至本期止淨收益(仟元):71,076,533 6.1月1日累計至本期止稅前淨利(損) (仟元):39,388,411 7.1月1日累計至本期止本期淨利(淨損) (仟元):32,848,286 8.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):32,848,286 9.1月1日累計至本期止基本每股盈餘(損失) (元):2.21 10.期末總資產(仟元):5,611,286,553 11.期末總負債(仟元):5,202,972,736 12.期末歸屬於母公司業主之權益(仟元):408,313,817 13.其他應敘明事項:無",
+      "clause": "第31款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151117",
+        "marketKind": "sii",
+        "companyId": "2886"
+      }
+    },
+    {
       "id": "mops-history-2886-1151113-2",
       "date": "2026-11-13",
       "announced_date": "2026-11-13",
-      "fact_date": "2026-11-13",
+      "fact_date": null,
       "announced_time": "16:01:45",
       "title": "代本公司之子公司兆豐證券公告代理財務主管及會計主管異動",
-      "description": "1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、 行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、 內部稽核主管或訴訟及非訟代理人）:代理財務主管及會計主管 2.發生變動日期:115/11/13 3.舊任者姓名、級職及簡歷:無 4.新任者姓名、級職及簡歷:陳美朱、資深協理 5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新 任」或「解任」）:新任 6.異動原因:新任 7.生效日期:115/11/14 8.其他應敘明事項:無",
-      "clause": "第8款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
@@ -56,20 +140,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2886",
+        "enterDate": "1151113",
         "marketKind": "sii",
-        "enterDate": "1151113"
+        "companyId": "2886"
       }
     },
     {
       "id": "mops-history-2886-1151113-1",
       "date": "2026-11-13",
       "announced_date": "2026-11-13",
-      "fact_date": "2026-11-13",
+      "fact_date": null,
       "announced_time": "16:00:37",
       "title": "公告本公司暨主要子公司115年10月份自結合併盈餘",
-      "description": "1.事實發生日:115/11/13 2.公司名稱:兆豐金融控股股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:公告本公司暨主要子公司115年10月份自結合併盈餘 6.因應措施:無 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 公告本公司暨主要子公司115年10月份業績資料： 當月稅前 當月稅後 累積稅前 累積稅後 累積每股 盈餘 盈餘 盈餘 盈餘 稅後盈餘 (億元) (億元) (億元) (億元) (元) 兆豐金控 19.64 14.83 413.53 343.31 2.31 兆豐銀行 23.50 20.35 320.61 268.53 2.69 兆豐證券 (5.35) (6.66) 51.54 43.67 3.64 兆豐票券 1.85 1.50 33.46 26.94 1.78 兆豐產險 0.51 0.40 10.59 9.00 2.74 註:兆豐金控115年10月31日每股淨值27.66元。 註:累計至10月未適用巨災保險準備金之累計每股稅後盈餘 兆豐金控為2.31元、兆豐產險為2.74元。 上述資料均係自結數字，未經會計師查核或核閱。",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
@@ -77,20 +161,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2886",
+        "enterDate": "1151113",
         "marketKind": "sii",
-        "enterDate": "1151113"
+        "companyId": "2886"
       }
     },
     {
       "id": "mops-history-2886-1151111-1",
       "date": "2026-11-11",
       "announced_date": "2026-11-11",
-      "fact_date": "2026-11-11",
+      "fact_date": null,
       "announced_time": "15:57:12",
       "title": "公告本公司發行115年度第一期無擔保普通公司債 (補充114/05/20公告)",
-      "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:兆豐金融控股股份有限公司 115年度第一期無擔保普通公司債。 3.是否採總括申報發行公司債(是/否):是。 4.發行總額:新臺幣36.5億元整。 5.每張面額:新臺幣100萬元整。 6.發行價格:依票面金額十足發行。 7.發行期間:5年期(115/11/19~120/11/19)。 8.發行利率:固定利率2.45%。 9.擔保品之種類、名稱、金額及約定事項:不適用。 10.募得價款之用途及運用計畫:償還金融機構借款。 11.承銷方式:委託證券承銷商對外公開承銷。 12.公司債受託人:元大商業銀行信託部。 13.承銷或代銷機構:兆豐證券股份有限公司。 14.發行保證人:不適用。 15.代理還本付息機構:兆豐國際商業銀行金控總部分行。 16.簽證機構:不適用。 17.能轉換股份者，其轉換辦法:不適用。 18.賣回條件:不適用。 19.買回條件:不適用。 20.附有轉換、交換或認股者，其換股基準日:不適用。 21.附有轉換、交換或認股者，對股權可能稀釋情形:不適用。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):不適用。 23.其他應敘明事項:無。",
-      "clause": "第11款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
@@ -98,20 +182,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2886",
+        "enterDate": "1151111",
         "marketKind": "sii",
-        "enterDate": "1151111"
+        "companyId": "2886"
       }
     },
     {
       "id": "mops-history-2886-1151110-1",
       "date": "2026-11-10",
       "announced_date": "2026-11-10",
-      "fact_date": "2026-11-10",
+      "fact_date": null,
       "announced_time": "18:40:52",
       "title": "代本公司之子公司兆豐國際商業銀行公告向關係人中央再保險(股)公司取得使用權資產",
-      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: 台北市南京東路二段53號5樓 2.事實發生日:115/11/10~115/11/10 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:總經理核決 民國115年11月10日 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: 租賃面積:249.27坪 每單位價格:辦公室月租金新臺幣1,444元/坪 租金總金額:新臺幣12,960,000元 使用權資產金額:新臺幣12,602,811元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: 交易相對人:中央再保險股份有限公司 與公司之關係:關係人 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 付款條件:按月給付 租約期間:115/12/01~118/11/30 契約限制條款及其他重要約定事項:租約到期有優先承租權 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 本次交易之決定方式:依租賃雙方議價 價格決定之參考依據:參考附近租金市場行情 決策單位:董事會概括授權經理部門得依內部作業規範辦理之項目 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 辦公場所使用 24.本次交易表示異議之董事之意見: 不適用 25.本次交易為關係人交易:是 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產: 是 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 不適用 31.其他敘明事項: 交易金額為月租金",
-      "clause": "第20款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
@@ -119,9 +203,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2886",
+        "enterDate": "1151110",
         "marketKind": "sii",
-        "enterDate": "1151110"
+        "companyId": "2886"
       }
     },
     {
@@ -140,9 +224,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2886",
+        "enterDate": "1151106",
         "marketKind": "sii",
-        "enterDate": "1151106"
+        "companyId": "2886"
       }
     },
     {
@@ -161,9 +245,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2886",
+        "enterDate": "1151105",
         "marketKind": "sii",
-        "enterDate": "1151105"
+        "companyId": "2886"
       }
     },
     {
@@ -182,9 +266,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2886",
+        "enterDate": "1151105",
         "marketKind": "sii",
-        "enterDate": "1151105"
+        "companyId": "2886"
       }
     },
     {
@@ -203,9 +287,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2886",
+        "enterDate": "1151102",
         "marketKind": "sii",
-        "enterDate": "1151102"
+        "companyId": "2886"
       }
     },
     {
@@ -224,9 +308,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2886",
+        "enterDate": "1151030",
         "marketKind": "sii",
-        "enterDate": "1151030"
+        "companyId": "2886"
       }
     },
     {
@@ -245,9 +329,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2886",
+        "enterDate": "1151029",
         "marketKind": "sii",
-        "enterDate": "1151029"
+        "companyId": "2886"
       }
     },
     {
@@ -266,9 +350,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2886",
+        "enterDate": "1151028",
         "marketKind": "sii",
-        "enterDate": "1151028"
+        "companyId": "2886"
       }
     },
     {
@@ -287,9 +371,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2886",
+        "enterDate": "1151028",
         "marketKind": "sii",
-        "enterDate": "1151028"
+        "companyId": "2886"
       }
     },
     {
@@ -308,9 +392,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "companyId": "2886",
+        "enterDate": "1151022",
         "marketKind": "sii",
-        "enterDate": "1151022"
+        "companyId": "2886"
       }
     },
     {
@@ -329,9 +413,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2886",
+        "enterDate": "1151022",
         "marketKind": "sii",
-        "enterDate": "1151022"
+        "companyId": "2886"
       }
     },
     {
@@ -350,9 +434,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2886",
+        "enterDate": "1151022",
         "marketKind": "sii",
-        "enterDate": "1151022"
+        "companyId": "2886"
       }
     },
     {
@@ -371,9 +455,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "companyId": "2886",
+        "enterDate": "1151016",
         "marketKind": "sii",
-        "enterDate": "1151016"
+        "companyId": "2886"
       }
     },
     {
@@ -392,9 +476,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2886",
+        "enterDate": "1151016",
         "marketKind": "sii",
-        "enterDate": "1151016"
+        "companyId": "2886"
       }
     },
     {
@@ -413,93 +497,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "companyId": "2886",
+        "enterDate": "1151014",
         "marketKind": "sii",
-        "enterDate": "1151014"
-      }
-    },
-    {
-      "id": "mops-history-2886-1151002-1",
-      "date": "2026-10-02",
-      "announced_date": "2026-10-02",
-      "fact_date": null,
-      "announced_time": "17:12:51",
-      "title": "兆豐國際商業銀行公告授信資產之轉讓。",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2886",
-        "marketKind": "sii",
-        "enterDate": "1151002"
-      }
-    },
-    {
-      "id": "mops-history-2886-1150922-1",
-      "date": "2026-09-22",
-      "announced_date": "2026-09-22",
-      "fact_date": null,
-      "announced_time": "16:14:05",
-      "title": "公告本公司之子公司兆豐國際證券投資信託(股)公司 董事及監察人異動案",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2886",
-        "marketKind": "sii",
-        "enterDate": "1150922"
-      }
-    },
-    {
-      "id": "mops-history-2886-1150915-2",
-      "date": "2026-09-15",
-      "announced_date": "2026-09-15",
-      "fact_date": null,
-      "announced_time": "17:50:55",
-      "title": "代本公司之子公司兆豐國際商業銀行補充公告發行 115年度第1期無擔保一般順位金融債券，發行金額新臺幣壹拾 伍億元整。",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "2",
-        "companyId": "2886",
-        "marketKind": "sii",
-        "enterDate": "1150915"
-      }
-    },
-    {
-      "id": "mops-history-2886-1150915-1",
-      "date": "2026-09-15",
-      "announced_date": "2026-09-15",
-      "fact_date": null,
-      "announced_time": "17:46:46",
-      "title": "代本公司之子公司兆豐期貨股份有限公司公告現金增資認股 基準日相關事宜",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "companyId": "2886",
-        "marketKind": "sii",
-        "enterDate": "1150915"
+        "companyId": "2886"
       }
     }
   ],
@@ -529,14 +529,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-18T00:15:46.270Z",
+      "fetched_at": "2026-11-18T12:31:08.366Z",
       "row_count": 94,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-11-17T00:18:10.367Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-11-18T12:33:28.536Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true
