@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-18T12:32:23.347Z",
+  "collected_at": "2026-11-19T00:16:42.828Z",
   "company": {
     "id": "twse-2308",
     "ticker": "2308",
@@ -10,6 +10,36 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "8533a3beacde2ee96a53",
+      "date": "2026-11-18",
+      "announced_date": "2026-11-18",
+      "fact_date": "2026-11-18",
+      "announced_time": "163443",
+      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告現金股利除息基準日",
+      "description": "1.董事會、股東會決議或公司決定日期:115/11/18 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.發放股利種類及金額:現金股利美金250,000,000元 4.除權（息）交易日:NA 5.最後過戶日:NA 6.停止過戶起始日期:NA 7.停止過戶截止日期:NA 8.除權（息）基準日:115/11/18 9.其他應敘明事項:無",
+      "clause": "第14款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "904d1d5796d16c152dab",
+      "date": "2026-11-18",
+      "announced_date": "2026-11-18",
+      "fact_date": "2026-11-18",
+      "announced_time": "163406",
+      "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告發放現金股利",
+      "description": "1.董事會決議日期:115/11/18 2.發放股利種類及金額:發放現金股利美金250,000,000元 3.其他應敘明事項:本公司持有Delta Electronics Int'l (Singapore) Pte. Ltd. 100% 股權。",
+      "clause": "第14款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2308-1151118-2",
       "date": "2026-11-18",
@@ -471,48 +501,6 @@
         "marketKind": "sii",
         "companyId": "2308"
       }
-    },
-    {
-      "id": "mops-history-2308-1151027-4",
-      "date": "2026-10-27",
-      "announced_date": "2026-10-27",
-      "fact_date": null,
-      "announced_time": "18:25:51",
-      "title": "本公司代子公司Delta Electronics (Thailand) Public Company Limited公告向關係人取得供營業使用之設備",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "4",
-        "enterDate": "1151027",
-        "marketKind": "sii",
-        "companyId": "2308"
-      }
-    },
-    {
-      "id": "mops-history-2308-1151027-3",
-      "date": "2026-10-27",
-      "announced_date": "2026-10-27",
-      "fact_date": null,
-      "announced_time": "17:54:46",
-      "title": "本公司代子公司台達電子(重慶)有限公司公告向關係人取得供營業使用之設備",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2308&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "3",
-        "enterDate": "1151027",
-        "marketKind": "sii",
-        "companyId": "2308"
-      }
     }
   ],
   "references": [
@@ -541,13 +529,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-18T12:31:08.366Z",
+      "fetched_at": "2026-11-19T00:15:49.160Z",
       "row_count": 94,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-18T12:32:56.235Z",
       "row_count": 24,
       "detail_count": 4,

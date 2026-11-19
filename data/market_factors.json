@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-18T12:31:20.433Z",
+  "generated_at": "2026-11-19T00:15:51.224Z",
   "note": "全市場背景因子。估值百分位依上市櫃官方產業全樣本計算；官方產業樣本不足 10 家時才回退為全市場模板樣本，兩者皆不使用觀察清單。資料僅供研究快照與回測，尚未納入核心分數。",
   "sources": [
     "twse_valuation",
@@ -14,7 +14,7 @@
     "universe_count": 1974,
     "research_company_count": 12,
     "valuation_count": 1960,
-    "margin_count": 1868,
+    "margin_count": 1867,
     "institutional_count": 1842
   },
   "companies": {
@@ -28,19 +28,19 @@
         "sample_count": 34
       },
       "valuation": {
-        "as_of": "2026-11-17",
-        "pe_ratio": 15.91,
-        "pb_ratio": 2.98,
-        "dividend_yield_pct": 3.53,
+        "as_of": "2026-11-18",
+        "pe_ratio": 15.78,
+        "pb_ratio": 2.95,
+        "dividend_yield_pct": 3.56,
         "favorable_percentiles": {
-          "pe_ratio": 43,
+          "pe_ratio": 50,
           "pb_ratio": 9,
           "dividend_yield_pct": 31
         }
       },
       "margin": {
         "as_of": null,
-        "financing_balance_lots": 225,
+        "financing_balance_lots": 224,
         "short_balance_lots": 6,
         "financing_change_lots": null,
         "short_change_lots": null
@@ -69,20 +69,20 @@
         "sample_count": 158
       },
       "valuation": {
-        "as_of": "2026-11-17",
-        "pe_ratio": 10.68,
-        "pb_ratio": 1.09,
-        "dividend_yield_pct": 7.82,
+        "as_of": "2026-11-18",
+        "pe_ratio": 10.89,
+        "pb_ratio": 1.11,
+        "dividend_yield_pct": 7.67,
         "favorable_percentiles": {
-          "pe_ratio": 81,
-          "pb_ratio": 82,
+          "pe_ratio": 79,
+          "pb_ratio": 81,
           "dividend_yield_pct": 94
         }
       },
       "margin": {
         "as_of": null,
-        "financing_balance_lots": 374,
-        "short_balance_lots": 5,
+        "financing_balance_lots": 372,
+        "short_balance_lots": 10,
         "financing_change_lots": null,
         "short_change_lots": null
       },
@@ -110,20 +110,20 @@
         "sample_count": 205
       },
       "valuation": {
-        "as_of": "2026-11-17",
-        "pe_ratio": 13.65,
-        "pb_ratio": 2.46,
-        "dividend_yield_pct": 2.82,
+        "as_of": "2026-11-18",
+        "pe_ratio": 13.74,
+        "pb_ratio": 2.48,
+        "dividend_yield_pct": 2.81,
         "favorable_percentiles": {
-          "pe_ratio": 75,
-          "pb_ratio": 50,
-          "dividend_yield_pct": 68
+          "pe_ratio": 76,
+          "pb_ratio": 51,
+          "dividend_yield_pct": 67
         }
       },
       "margin": {
         "as_of": null,
-        "financing_balance_lots": 121583,
-        "short_balance_lots": 2038,
+        "financing_balance_lots": 121504,
+        "short_balance_lots": 1435,
         "financing_change_lots": null,
         "short_change_lots": null
       },
@@ -151,20 +151,20 @@
         "sample_count": 210
       },
       "valuation": {
-        "as_of": "2026-11-17",
-        "pe_ratio": 31.68,
-        "pb_ratio": 8.61,
-        "dividend_yield_pct": 1.1,
+        "as_of": "2026-11-18",
+        "pe_ratio": 31.83,
+        "pb_ratio": 8.65,
+        "dividend_yield_pct": 1.09,
         "favorable_percentiles": {
           "pe_ratio": 31,
-          "pb_ratio": 3,
-          "dividend_yield_pct": 38
+          "pb_ratio": 4,
+          "dividend_yield_pct": 39
         }
       },
       "margin": {
         "as_of": null,
-        "financing_balance_lots": 9562,
-        "short_balance_lots": 11,
+        "financing_balance_lots": 9757,
+        "short_balance_lots": 58,
         "financing_change_lots": null,
         "short_change_lots": null
       },
@@ -192,9 +192,9 @@
         "sample_count": 205
       },
       "valuation": {
-        "as_of": "2026-11-17",
-        "pe_ratio": 22.09,
-        "pb_ratio": 8.04,
+        "as_of": "2026-11-18",
+        "pe_ratio": 22.14,
+        "pb_ratio": 8.06,
         "dividend_yield_pct": 1.01,
         "favorable_percentiles": {
           "pe_ratio": 50,
@@ -204,8 +204,8 @@
       },
       "margin": {
         "as_of": null,
-        "financing_balance_lots": 32826,
-        "short_balance_lots": 36,
+        "financing_balance_lots": 33228,
+        "short_balance_lots": 24,
         "financing_change_lots": null,
         "short_change_lots": null
       },
@@ -233,20 +233,20 @@
         "sample_count": 40
       },
       "valuation": {
-        "as_of": "2026-11-17",
-        "pe_ratio": 15.93,
-        "pb_ratio": 2.37,
-        "dividend_yield_pct": 3.24,
+        "as_of": "2026-11-18",
+        "pe_ratio": 15.2,
+        "pb_ratio": 2.26,
+        "dividend_yield_pct": 3.39,
         "favorable_percentiles": {
-          "pe_ratio": 23,
+          "pe_ratio": 25,
           "pb_ratio": 10,
-          "dividend_yield_pct": 33
+          "dividend_yield_pct": 30
         }
       },
       "margin": {
         "as_of": null,
-        "financing_balance_lots": 1556,
-        "short_balance_lots": 4,
+        "financing_balance_lots": 2250,
+        "short_balance_lots": 2,
         "financing_change_lots": null,
         "short_change_lots": null
       },
@@ -274,20 +274,20 @@
         "sample_count": 40
       },
       "valuation": {
-        "as_of": "2026-11-17",
-        "pe_ratio": 21.28,
-        "pb_ratio": 2.02,
-        "dividend_yield_pct": 3.2,
+        "as_of": "2026-11-18",
+        "pe_ratio": 19.7,
+        "pb_ratio": 1.91,
+        "dividend_yield_pct": 3.33,
         "favorable_percentiles": {
           "pe_ratio": 5,
-          "pb_ratio": 20,
-          "dividend_yield_pct": 25
+          "pb_ratio": 23,
+          "dividend_yield_pct": 28
         }
       },
       "margin": {
         "as_of": null,
-        "financing_balance_lots": 1105,
-        "short_balance_lots": 161,
+        "financing_balance_lots": 1136,
+        "short_balance_lots": 47,
         "financing_change_lots": null,
         "short_change_lots": null
       },
@@ -344,20 +344,20 @@
         "sample_count": 115
       },
       "valuation": {
-        "as_of": "2026-11-17",
-        "pe_ratio": 20.4,
-        "pb_ratio": 1.21,
-        "dividend_yield_pct": 2.83,
+        "as_of": "2026-11-18",
+        "pe_ratio": 21.13,
+        "pb_ratio": 1.25,
+        "dividend_yield_pct": 2.74,
         "favorable_percentiles": {
-          "pe_ratio": 59,
-          "pb_ratio": 62,
+          "pe_ratio": 56,
+          "pb_ratio": 60,
           "dividend_yield_pct": 65
         }
       },
       "margin": {
         "as_of": null,
-        "financing_balance_lots": 266826,
-        "short_balance_lots": 4154,
+        "financing_balance_lots": 263851,
+        "short_balance_lots": 2836,
         "financing_change_lots": null,
         "short_change_lots": null
       },
@@ -396,10 +396,10 @@
         }
       },
       "margin": {
-        "as_of": "2026-11-17",
-        "financing_balance_lots": 841,
+        "as_of": "2026-11-18",
+        "financing_balance_lots": 840,
         "short_balance_lots": 2,
-        "financing_change_lots": 2,
+        "financing_change_lots": -1,
         "short_change_lots": 0
       },
       "institutional": {
@@ -431,16 +431,16 @@
         "pb_ratio": 0.9,
         "dividend_yield_pct": 6.29,
         "favorable_percentiles": {
-          "pe_ratio": 83,
+          "pe_ratio": 82,
           "pb_ratio": 89,
           "dividend_yield_pct": 85
         }
       },
       "margin": {
-        "as_of": "2026-11-17",
-        "financing_balance_lots": 180,
+        "as_of": "2026-11-18",
+        "financing_balance_lots": 178,
         "short_balance_lots": 0,
-        "financing_change_lots": -1,
+        "financing_change_lots": -2,
         "short_change_lots": 0
       },
       "institutional": {
@@ -467,19 +467,19 @@
         "sample_count": 93
       },
       "valuation": {
-        "as_of": "2026-11-17",
-        "pe_ratio": 10.49,
-        "pb_ratio": 1.66,
-        "dividend_yield_pct": 5.21,
+        "as_of": "2026-11-18",
+        "pe_ratio": 10.41,
+        "pb_ratio": 1.64,
+        "dividend_yield_pct": 5.25,
         "favorable_percentiles": {
-          "pe_ratio": 75,
-          "pb_ratio": 33,
+          "pe_ratio": 79,
+          "pb_ratio": 34,
           "dividend_yield_pct": 63
         }
       },
       "margin": {
         "as_of": null,
-        "financing_balance_lots": 1004,
+        "financing_balance_lots": 1035,
         "short_balance_lots": 12,
         "financing_change_lots": null,
         "short_change_lots": null

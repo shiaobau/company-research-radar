@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-18T12:32:23.347Z",
+  "collected_at": "2026-11-19T00:16:42.828Z",
   "company": {
     "id": "twse-2886",
     "ticker": "2886",
@@ -10,6 +10,36 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "5780449846efa9bad0c6",
+      "date": "2026-11-18",
+      "announced_date": "2026-11-18",
+      "fact_date": "2026-11-18",
+      "announced_time": "184638",
+      "title": "公告本公司之子公司兆豐證券(股)公司董事異動",
+      "description": "1.發生變動日期:115/11/18 2.法人名稱:兆豐金融控股股份有限公司 3.舊任者姓名:李銘順 4.舊任者簡歷:高雄市政府運動發展局顧問 5.新任者姓名:不適用 6.新任者簡歷:不適用 7.異動原因:請辭 8.原任期（例xx/xx/xx至xx/xx/xx）:114/04/22~117/04/21 9.新任生效日期:不適用 10.其他應敘明事項:辭任生效日115/11/23",
+      "clause": "第6款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "94dfef8beee9d793816f",
+      "date": "2026-11-18",
+      "announced_date": "2026-11-18",
+      "fact_date": "2026-11-18",
+      "announced_time": "182342",
+      "title": "代本公司之子公司兆豐票券金融公司公告董事長異動",
+      "description": "1.董事會決議日期或發生變動日期:115/11/18 2.人員別（請輸入董事長或總經理）:董事長 3.舊任者姓名:陳適毅 4.舊任者簡歷:兆豐票券金融公司董事兼總經理並代理董事長 5.新任者姓名:張傳章 6.新任者簡歷:兆豐金融控股公司總經理 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「職務調整」、「資遣」、 「退休」、「逝世」或「新任」）:職務調整 8.異動原因:董事會推舉新任董事長 9.新任生效日期:不適用 10.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第6款所定對股東權益或證券價格有重大影響之事項): 本案尚須俟主管機關核准後生效",
+      "clause": "第6款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2886-1151118-3",
       "date": "2026-11-18",
@@ -53,21 +83,6 @@
       }
     },
     {
-      "id": "4a9b3fdb1b6641443846",
-      "date": "2026-11-17",
-      "announced_date": "2026-11-17",
-      "fact_date": "2026-11-17",
-      "announced_time": "171326",
-      "title": "公告本公司之子公司兆豐票券金融(股)公司董事異動案",
-      "description": "1.發生變動日期:115/11/17 2.法人名稱:兆豐金融控股股份有限公司 3.舊任者姓名:不適用 4.舊任者簡歷:不適用 5.新任者姓名:張傳章 6.新任者簡歷:兆豐金控總經理 7.異動原因:董事會決議派任 8.原任期（例xx/xx/xx至xx/xx/xx）:114/04/08至117/04/07 9.新任生效日期:115/11/18 10.其他應敘明事項:無",
-      "clause": "第6款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
-    {
       "id": "mops-history-2886-1151117-2",
       "date": "2026-11-17",
       "announced_date": "2026-11-17",
@@ -87,21 +102,6 @@
         "marketKind": "sii",
         "companyId": "2886"
       }
-    },
-    {
-      "id": "8792d4a7ad6344ca42bd",
-      "date": "2026-11-17",
-      "announced_date": "2026-11-17",
-      "fact_date": "2026-11-17",
-      "announced_time": "164338",
-      "title": "公告本公司115年第三季合併財務報告業經審計委員會及 董事會決議通過",
-      "description": "1.提報董事會或經董事會決議日期:115/11/17 2.審計委員會通過日期:115/11/10 3.財務報告或年度自結財務資訊報導期間 起訖日期(XXX/XX/XX~XXX/XX/XX):115/01/01~115/09/30 4.1月1日累計至本期止利息淨收益(仟元):32,642,054 5.1月1日累計至本期止淨收益(仟元):71,076,533 6.1月1日累計至本期止稅前淨利(損) (仟元):39,388,411 7.1月1日累計至本期止本期淨利(淨損) (仟元):32,848,286 8.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):32,848,286 9.1月1日累計至本期止基本每股盈餘(損失) (元):2.21 10.期末總資產(仟元):5,611,286,553 11.期末總負債(仟元):5,202,972,736 12.期末歸屬於母公司業主之權益(仟元):408,313,817 13.其他應敘明事項:無",
-      "clause": "第31款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
     },
     {
       "id": "mops-history-2886-1151117-1",
@@ -529,13 +529,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-18T12:31:08.366Z",
+      "fetched_at": "2026-11-19T00:15:49.160Z",
       "row_count": 94,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-18T12:33:28.536Z",
       "row_count": 24,
       "detail_count": 4,

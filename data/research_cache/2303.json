@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-18T12:32:23.347Z",
+  "collected_at": "2026-11-19T00:16:42.828Z",
   "company": {
     "id": "twse-2303",
     "ticker": "2303",
@@ -10,21 +10,6 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
-    {
-      "id": "c351bf1c6995414a4f45",
-      "date": "2026-11-17",
-      "announced_date": "2026-11-17",
-      "fact_date": "2026-11-23",
-      "announced_time": "141107",
-      "title": "本公司受邀參與法人說明會相關資訊",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/11/23 1.召開法人說明會之日期：115/11/23 ~ 115/11/24 2.召開法人說明會之時間：09 時 00 分 3.召開法人說明會之地點：台北W飯店 4.法人說明會擇要訊息：本公司受邀參加花旗證券舉辦之法人說明會「2026 Taiwan Corporate Day」。 5.其他應敘明事項：無 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-      "clause": "第12款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
-    },
     {
       "id": "mops-history-2303-1151117-1",
       "date": "2026-11-17",
@@ -507,6 +492,27 @@
         "marketKind": "sii",
         "companyId": "2303"
       }
+    },
+    {
+      "id": "mops-history-2303-1150730-2",
+      "date": "2026-07-30",
+      "announced_date": "2026-07-30",
+      "fact_date": null,
+      "announced_time": "16:51:02",
+      "title": "代子公司宏誠創業投資(股)公司公告處分源傑科技(股)公司普通股之相關資料",
+      "description": "",
+      "clause": null,
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2303&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "2",
+        "enterDate": "1150730",
+        "marketKind": "sii",
+        "companyId": "2303"
+      }
     }
   ],
   "references": [
@@ -535,13 +541,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-18T12:31:08.366Z",
+      "fetched_at": "2026-11-19T00:15:49.160Z",
       "row_count": 94,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-18T12:32:47.245Z",
       "row_count": 24,
       "detail_count": 4,
