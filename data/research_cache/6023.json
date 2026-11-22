@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-19T12:32:08.988Z",
+  "collected_at": "2026-11-22T00:16:47.368Z",
   "company": {
     "id": "tpex-6023",
     "ticker": "6023",
@@ -541,14 +541,14 @@
     {
       "source_id": "tpex_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-19T12:30:59.402Z",
-      "row_count": 54,
+      "fetched_at": "2026-11-22T00:15:45.282Z",
+      "row_count": 55,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-11-18T12:33:51.129Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-11-22T00:18:01.020Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-19T12:31:00.926Z",
+  "generated_at": "2026-11-22T00:15:46.482Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,7 +50,7 @@
       "rationale": "財務品質分數 75。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -67,7 +67,7 @@
       "rationale": "月營收分數 72；財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -76,48 +76,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 2,
-      "positive_event_count": 1,
+      "evidence_level": "medium",
+      "event_count": 0,
+      "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 84,
-      "rationale": "月營收分數 81；財務品質分數 69；正向重大訊息 1 則。",
-      "events": [
-        {
-          "date": "2026-11-18",
-          "announce_date": "2026-11-18",
-          "time": "163406",
-          "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告發放現金股利",
-          "clause": "第14款",
-          "description": "1.董事會決議日期:115/11/18 2.發放股利種類及金額:發放現金股利美金250,000,000元 3.其他應敘明事項:本公司持有Delta Electronics Int'l (Singapore) Pte. Ltd. 100% 股權。",
-          "source_id": "twse_material_events",
-          "sentiment": "positive",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        },
-        {
-          "date": "2026-11-18",
-          "announce_date": "2026-11-18",
-          "time": "163443",
-          "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告現金股利除息基準日",
-          "clause": "第14款",
-          "description": "1.董事會、股東會決議或公司決定日期:115/11/18 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.發放股利種類及金額:現金股利美金250,000,000元 4.除權（息）交易日:NA 5.最後過戶日:NA 6.停止過戶起始日期:NA 7.停止過戶截止日期:NA 8.除權（息）基準日:115/11/18 9.其他應敘明事項:無",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "routine",
-          "risk_category_label": "例行或權利事件",
-          "risk_points": 0,
-          "matched_patterns": [
-            "除息"
-          ]
-        }
-      ],
+      "score": 73,
+      "rationale": "月營收分數 81；財務品質分數 69。",
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -134,7 +101,7 @@
       "rationale": "月營收分數 81；財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -151,7 +118,7 @@
       "rationale": "財務品質分數 89。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -160,46 +127,15 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "high",
-      "event_count": 2,
+      "evidence_level": "medium",
+      "event_count": 0,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 60,
+      "score": 57,
       "rationale": "財務品質分數 79。",
-      "events": [
-        {
-          "date": "2026-11-18",
-          "announce_date": "2026-11-18",
-          "time": "182342",
-          "title": "代本公司之子公司兆豐票券金融公司公告董事長異動",
-          "clause": "第6款",
-          "description": "1.董事會決議日期或發生變動日期:115/11/18 2.人員別（請輸入董事長或總經理）:董事長 3.舊任者姓名:陳適毅 4.舊任者簡歷:兆豐票券金融公司董事兼總經理並代理董事長 5.新任者姓名:張傳章 6.新任者簡歷:兆豐金融控股公司總經理 7.異動情形（請輸入「辭職」、「解任」、「任期屆滿」、「職務調整」、「資遣」、 「退休」、「逝世」或「新任」）:職務調整 8.異動原因:董事會推舉新任董事長 9.新任生效日期:不適用 10.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第6款所定對股東權益或證券價格有重大影響之事項): 本案尚須俟主管機關核准後生效",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        },
-        {
-          "date": "2026-11-18",
-          "announce_date": "2026-11-18",
-          "time": "184638",
-          "title": "公告本公司之子公司兆豐證券(股)公司董事異動",
-          "clause": "第6款",
-          "description": "1.發生變動日期:115/11/18 2.法人名稱:兆豐金融控股股份有限公司 3.舊任者姓名:李銘順 4.舊任者簡歷:高雄市政府運動發展局顧問 5.新任者姓名:不適用 6.新任者簡歷:不適用 7.異動原因:請辭 8.原任期（例xx/xx/xx至xx/xx/xx）:114/04/22~117/04/21 9.新任生效日期:不適用 10.其他應敘明事項:辭任生效日115/11/23",
-          "source_id": "twse_material_events",
-          "sentiment": "neutral",
-          "risk_class": "neutral",
-          "risk_category": null,
-          "risk_category_label": null,
-          "risk_points": 0,
-          "matched_patterns": []
-        }
-      ],
+      "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -216,7 +152,7 @@
       "rationale": "月營收分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -233,7 +169,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -250,7 +186,7 @@
       "rationale": "財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -267,7 +203,7 @@
       "rationale": "財務品質分數 71。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -284,7 +220,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     }
   }
 }

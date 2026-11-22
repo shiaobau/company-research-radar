@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-19T12:32:08.988Z",
+  "collected_at": "2026-11-22T00:16:47.368Z",
   "company": {
     "id": "twse-2330",
     "ticker": "2330",
@@ -10,6 +10,48 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "mops-history-2330-1151120-1",
+      "date": "2026-11-20",
+      "announced_date": "2026-11-20",
+      "fact_date": "2026-11-20",
+      "announced_time": "16:50:44",
+      "title": "代子公司Emerging Fund, L.P.公告投資Element Labs Ltd.",
+      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: Element Labs Ltd. (\"Element Labs\")之特別股; 無到期日、具轉換權。 2.事實發生日:115/11/20~115/11/20 3.董事會通過日期: 不適用 4.其他核決日期: 核決層級:依子公司核決權限 民國115年11月20日 5.交易數量、每單位價格及交易總金額: (1)交易數量：360,461股； (2)每單位價格：每股US$27.74元； (3)交易總金額：約 US$10佰萬元。 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: Element Labs；與公司之關係：無。 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 一次付清。 12.本次交易之決定方式、價格決定之參考依據及決策單位: 由Emerging Fund之General Partner依特別股投資合約決定。 13.取得或處分有價證券標的公司每股淨值: 不適用 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 360,461股；約US$10佰萬元；低於10%；無。 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 0.13%；0.13%；NT$325,002佰萬元。 16.經紀人及經紀費用: 不適用 17.取得或處分之具體目的或用途: 長期投資 18.本次交易表示異議董事之意見: 無 19.本次交易為關係人交易:否 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:否 22.會計師事務所名稱: 揚智聯合會計師事務所 23.會計師姓名: 胡湘寧 24.會計師開業證書字號: 中市會證字第0191號 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 不適用 29.前已就同一件事件發布重大訊息日期: 不適用 30.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151120",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
+    },
+    {
+      "id": "mops-history-2330-1151119-1",
+      "date": "2026-11-19",
+      "announced_date": "2026-11-19",
+      "fact_date": "2026-11-19",
+      "announced_time": "16:09:03",
+      "title": "代子公司TSMC Partners, Ltd.公告投資Anthropic, PBC(補充115/11/10公告)",
+      "description": "1.標的物之名稱及性質（屬特別股者，並應標明特別股約定發行條件，如股息率等）: Anthropic, PBC (\"Anthropic\") 之N類普通股 2.事實發生日:115/11/19~115/11/19 3.董事會通過日期: 民國115年11月10日 4.其他核決日期: 不適用 5.交易數量、每單位價格及交易總金額: 6,024,096股；每股US$83；總金額US$499,999,968 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之 關係人者，得免揭露其姓名）: Anthropic；與公司之關係：無。 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移 轉之所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次 移轉日期及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係人之取 得及處分日期、價格及交易當時與公司之關係: 不適用 9.本次係處分債權之相關事項（含處分之債權附隨擔保品種類、處分債權 如有屬對關係人債權者尚需公告關係人名稱及本次處分該關係人之債權 帳面金額: 不適用 10.處分利益（或損失）（取得有價證券者不適用）（原遞延者應列表說明 認列情形）: 不適用 11.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 一次付清；依美國1933年證券法Rule 144相關規範。 12.本次交易之決定方式、價格決定之參考依據及決策單位: 本公司董事會核准投資；交易價格同IPO價格。 13.取得或處分有價證券標的公司每股淨值: 0.01元 14.迄目前為止，累積持有本交易證券（含本次交易）之數量、金額、持股 比例及權利受限情形（如質押情形）: 6,024,096股；US$499,999,968；0.03%；無。 15.迄目前為止，依「公開發行公司取得或處分資產處理準則」第三條所列 之有價證券投資（含本次交易）占公司最近期財務報表中總資產及歸屬 於母公司業主之權益之比例暨最近期財務報表中營運資金數額（註二）: 0.91%；0.94%；NT$325,002佰萬元。 16.經紀人及經紀費用: 不適用 17.取得或處分之具體目的或用途: 股權投資。 18.本次交易表示異議董事之意見: 無 19.本次交易為關係人交易:否 20.監察人承認或審計委員會同意日期: 不適用 21.本次交易會計師出具非合理性意見:否 22.會計師事務所名稱: 揚智聯合會計師事務所 23.會計師姓名: 胡湘寧 24.會計師開業證書字號: 中市會證字第0191號 25.是否涉及營運模式變更:否 26.營運模式變更說明: 不適用 27.過去一年及預計未來一年內與交易相對人交易情形: 不適用 28.資金來源: 不適用 29.前已就同一件事件發布重大訊息日期: 115年11月10日 30.其他敘明事項: 無",
+      "clause": "第20款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151119",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
+    },
     {
       "id": "mops-history-2330-1151112-1",
       "date": "2026-11-12",
@@ -56,11 +98,11 @@
       "id": "mops-history-2330-1151110-15",
       "date": "2026-11-10",
       "announced_date": "2026-11-10",
-      "fact_date": "2026-11-10",
+      "fact_date": null,
       "announced_time": "21:56:11",
       "title": "本公司捐贈台積電慈善基金會",
-      "description": "1.事實發生日:115/11/10 2.捐贈原由:辦理社會福利慈善事業。 3.捐贈金額:新台幣2億7仟5佰萬元。 4.受贈對象:財團法人台積電慈善基金會。 5.與公司關係:本公司捐助成立之基金會。 6.表示反對或保留意見之獨立董事姓名及簡歷:無。 7.前揭獨立董事表示反對或保留之意見:無。 8.其他應敘明事項:無。",
-      "clause": "第43款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
@@ -77,11 +119,11 @@
       "id": "mops-history-2330-1151110-14",
       "date": "2026-11-10",
       "announced_date": "2026-11-10",
-      "fact_date": "2026-11-10",
+      "fact_date": null,
       "announced_time": "21:55:09",
       "title": "本公司捐贈台積電文教基金會",
-      "description": "1.事實發生日:115/11/10 2.捐贈原由:辦理文化教育之推動。 3.捐贈金額:新台幣9仟4佰萬元。 4.受贈對象:財團法人台積電文教基金會。 5.與公司關係:本公司捐助成立之基金會。 6.表示反對或保留意見之獨立董事姓名及簡歷:無。 7.前揭獨立董事表示反對或保留之意見:無。 8.其他應敘明事項:無。",
-      "clause": "第43款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
@@ -471,48 +513,6 @@
         "marketKind": "sii",
         "companyId": "2330"
       }
-    },
-    {
-      "id": "mops-history-2330-1151008-1",
-      "date": "2026-10-08",
-      "announced_date": "2026-10-08",
-      "fact_date": null,
-      "announced_time": "13:54:04",
-      "title": "台積公司2026年9月營收報告",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1151008",
-        "marketKind": "sii",
-        "companyId": "2330"
-      }
-    },
-    {
-      "id": "mops-history-2330-1150929-1",
-      "date": "2026-09-29",
-      "announced_date": "2026-09-29",
-      "fact_date": null,
-      "announced_time": "14:39:16",
-      "title": "公告本公司115年第三季法人說明會將於115年10月15日召開",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1150929",
-        "marketKind": "sii",
-        "companyId": "2330"
-      }
     }
   ],
   "references": [
@@ -541,14 +541,14 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-19T12:30:59.151Z",
-      "row_count": 94,
+      "fetched_at": "2026-11-22T00:15:45.039Z",
+      "row_count": 3,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "fresh",
-      "fetched_at": "2026-11-18T12:33:06.801Z",
+      "cache_status": "updated",
+      "fetched_at": "2026-11-22T00:17:21.294Z",
       "row_count": 24,
       "detail_count": 4,
       "available": true

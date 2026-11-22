@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-19T12:31:00.926Z",
+  "generated_at": "2026-11-22T00:15:46.482Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -53,7 +53,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -76,7 +76,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -99,7 +99,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -110,37 +110,19 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 2,
+      "event_count": 0,
       "negative_event_count": 0,
-      "positive_event_count": 1,
-      "review_event_count": 1,
+      "positive_event_count": 0,
+      "review_event_count": 0,
       "negative_event_points": 0,
       "negative_event_categories": {},
       "disclosure_violation_count": 0,
-      "score": 91,
+      "score": 92,
       "rationale": "未偵測到負向重大訊息關鍵字；未偵測到資訊申報違規。",
-      "events": [
-        {
-          "date": "2026-11-18",
-          "announce_date": "2026-11-18",
-          "time": "163443",
-          "title": "本公司代子公司Delta Electronics Int'l (Singapore) Pte. Ltd.公告現金股利除息基準日",
-          "clause": "第14款",
-          "description": "1.董事會、股東會決議或公司決定日期:115/11/18 2.除權、息類別（請填入「除權」、「除息」或「除權息」）:除息 3.發放股利種類及金額:現金股利美金250,000,000元 4.除權（息）交易日:NA 5.最後過戶日:NA 6.停止過戶起始日期:NA 7.停止過戶截止日期:NA 8.除權（息）基準日:115/11/18 9.其他應敘明事項:無",
-          "source_id": "twse_material_events",
-          "sentiment": "review",
-          "risk_class": "review",
-          "risk_category": "routine",
-          "risk_category_label": "例行或權利事件",
-          "risk_points": 0,
-          "matched_patterns": [
-            "除息"
-          ]
-        }
-      ],
+      "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -163,7 +145,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -186,7 +168,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -197,7 +179,7 @@
         "twse_disclosure_violations"
       ],
       "evidence_level": "high",
-      "event_count": 2,
+      "event_count": 0,
       "negative_event_count": 0,
       "positive_event_count": 0,
       "review_event_count": 0,
@@ -209,7 +191,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -232,7 +214,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -255,7 +237,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -278,7 +260,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -301,7 +283,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -324,7 +306,7 @@
       "events": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-19T12:31:00.926Z"
+      "refreshed_at": "2026-11-22T00:15:46.482Z"
     }
   }
 }
