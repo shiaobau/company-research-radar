@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-22T00:15:46.482Z",
+  "generated_at": "2026-11-22T12:31:09.647Z",
   "sources": [
     {
       "id": "twse_stock_day",
@@ -45,36 +45,7 @@
       "rationale": "近 255 個交易日，收盤 80.3，位於近 60 日區間 0%，20 日報酬 -37.27%，60 日報酬 -31.07%。",
       "errors": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-22T00:15:46.482Z"
-    },
-    "twse-1231": {
-      "ticker": "1231",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_stock_day"
-      ],
-      "evidence_level": "high",
-      "trading_days": 255,
-      "latest_trade_date": "2026-11-20",
-      "latest_close": 67,
-      "year_high": 109.5,
-      "year_low": 67,
-      "price_range_basis": "近一年交易區間",
-      "scoring_high": 109.5,
-      "scoring_low": 67,
-      "position_pct": 0,
-      "ma20": 71.66,
-      "ma60": 76.68,
-      "return_20d_pct": -10.19,
-      "return_60d_pct": -18.69,
-      "average_volume_20d": 436919,
-      "volume_ratio_20d": 1.4,
-      "score": 42,
-      "rationale": "近 255 個交易日，收盤 67，位於一年區間 0%，20 日報酬 -10.19%，60 日報酬 -18.69%。",
-      "errors": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-11-22T00:15:46.482Z"
+      "refreshed_at": "2026-11-22T12:31:09.647Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -103,36 +74,7 @@
       "rationale": "近 255 個交易日，收盤 72.1，位於一年區間 0%，20 日報酬 -15.77%，60 日報酬 -19.98%。",
       "errors": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-22T00:15:46.482Z"
-    },
-    "twse-2330": {
-      "ticker": "2330",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_stock_day"
-      ],
-      "evidence_level": "high",
-      "trading_days": 255,
-      "latest_trade_date": "2026-11-20",
-      "latest_close": 2000,
-      "year_high": 2585,
-      "year_low": 1375,
-      "price_range_basis": "近一年交易區間",
-      "scoring_high": 2585,
-      "scoring_low": 1375,
-      "position_pct": 51.65,
-      "ma20": 2276,
-      "ma60": 2394.25,
-      "return_20d_pct": -17.36,
-      "return_60d_pct": -17.01,
-      "average_volume_20d": 43573145,
-      "volume_ratio_20d": 2.02,
-      "score": 53,
-      "rationale": "近 255 個交易日，收盤 2000，位於一年區間 51.65%，20 日報酬 -17.36%，60 日報酬 -17.01%。",
-      "errors": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-11-22T00:15:46.482Z"
+      "refreshed_at": "2026-11-22T12:31:09.647Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -161,7 +103,65 @@
       "rationale": "近 255 個交易日，收盤 900，位於一年區間 0.61%，20 日報酬 -44.62%，60 日報酬 -48.57%。",
       "errors": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-22T00:15:46.482Z"
+      "refreshed_at": "2026-11-22T12:31:09.647Z"
+    },
+    "twse-1231": {
+      "ticker": "1231",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_stock_day"
+      ],
+      "evidence_level": "high",
+      "trading_days": 255,
+      "latest_trade_date": "2026-11-20",
+      "latest_close": 67,
+      "year_high": 109.5,
+      "year_low": 67,
+      "price_range_basis": "近一年交易區間",
+      "scoring_high": 109.5,
+      "scoring_low": 67,
+      "position_pct": 0,
+      "ma20": 71.66,
+      "ma60": 76.68,
+      "return_20d_pct": -10.19,
+      "return_60d_pct": -18.69,
+      "average_volume_20d": 436919,
+      "volume_ratio_20d": 1.4,
+      "score": 42,
+      "rationale": "近 255 個交易日，收盤 67，位於一年區間 0%，20 日報酬 -10.19%，60 日報酬 -18.69%。",
+      "errors": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-22T12:31:09.647Z"
+    },
+    "twse-2330": {
+      "ticker": "2330",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_stock_day"
+      ],
+      "evidence_level": "high",
+      "trading_days": 255,
+      "latest_trade_date": "2026-11-20",
+      "latest_close": 2000,
+      "year_high": 2585,
+      "year_low": 1375,
+      "price_range_basis": "近一年交易區間",
+      "scoring_high": 2585,
+      "scoring_low": 1375,
+      "position_pct": 51.65,
+      "ma20": 2276,
+      "ma60": 2394.25,
+      "return_20d_pct": -17.36,
+      "return_60d_pct": -17.01,
+      "average_volume_20d": 43573145,
+      "volume_ratio_20d": 2.02,
+      "score": 53,
+      "rationale": "近 255 個交易日，收盤 2000，位於一年區間 51.65%，20 日報酬 -17.36%，60 日報酬 -17.01%。",
+      "errors": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-22T12:31:09.647Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -190,65 +190,7 @@
       "rationale": "近 229 個交易日，收盤 7.28，位於一年區間 5.86%，20 日報酬 -9.79%，60 日報酬 -17.27%。",
       "errors": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-22T00:15:46.482Z"
-    },
-    "twse-2885": {
-      "ticker": "2885",
-      "market": "TWSE",
-      "status": "ok",
-      "source_ids": [
-        "twse_stock_day"
-      ],
-      "evidence_level": "high",
-      "trading_days": 255,
-      "latest_trade_date": "2026-11-20",
-      "latest_close": 59.3,
-      "year_high": 73.4,
-      "year_low": 34.5,
-      "price_range_basis": "近一年交易區間",
-      "scoring_high": 73.4,
-      "scoring_low": 34.5,
-      "position_pct": 63.75,
-      "ma20": 69.44,
-      "ma60": 68.95,
-      "return_20d_pct": -16.83,
-      "return_60d_pct": -7.34,
-      "average_volume_20d": 31804707,
-      "volume_ratio_20d": 1.33,
-      "score": 56,
-      "rationale": "近 255 個交易日，收盤 59.3，位於一年區間 63.75%，20 日報酬 -16.83%，60 日報酬 -7.34%。",
-      "errors": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-11-22T00:15:46.482Z"
-    },
-    "tpex-6023": {
-      "ticker": "6023",
-      "market": "TPEx",
-      "status": "ok",
-      "source_ids": [
-        "tpex_trading_stock"
-      ],
-      "evidence_level": "high",
-      "trading_days": 255,
-      "latest_trade_date": "2026-11-20",
-      "latest_close": 77.7,
-      "year_high": 108,
-      "year_low": 77.7,
-      "price_range_basis": "近一年交易區間",
-      "scoring_high": 108,
-      "scoring_low": 77.7,
-      "position_pct": 0,
-      "ma20": 80.61,
-      "ma60": 83.32,
-      "return_20d_pct": -5.82,
-      "return_60d_pct": -6.16,
-      "average_volume_20d": 471050,
-      "volume_ratio_20d": 2.39,
-      "score": 46,
-      "rationale": "近 255 個交易日，收盤 77.7，位於一年區間 0%，20 日報酬 -5.82%，60 日報酬 -6.16%。",
-      "errors": [],
-      "cache_status": "fresh",
-      "refreshed_at": "2026-11-22T00:15:46.482Z"
+      "refreshed_at": "2026-11-22T12:31:09.647Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -277,36 +219,65 @@
       "rationale": "近 255 個交易日，收盤 51.8，位於一年區間 78.89%，20 日報酬 -3.36%，60 日報酬 10.33%。",
       "errors": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-22T00:15:46.482Z"
+      "refreshed_at": "2026-11-22T12:31:09.647Z"
     },
-    "tpex-8279": {
-      "ticker": "8279",
+    "twse-2885": {
+      "ticker": "2885",
+      "market": "TWSE",
+      "status": "ok",
+      "source_ids": [
+        "twse_stock_day"
+      ],
+      "evidence_level": "high",
+      "trading_days": 255,
+      "latest_trade_date": "2026-11-20",
+      "latest_close": 59.3,
+      "year_high": 73.4,
+      "year_low": 34.5,
+      "price_range_basis": "近一年交易區間",
+      "scoring_high": 73.4,
+      "scoring_low": 34.5,
+      "position_pct": 63.75,
+      "ma20": 69.44,
+      "ma60": 68.95,
+      "return_20d_pct": -16.83,
+      "return_60d_pct": -7.34,
+      "average_volume_20d": 31804707,
+      "volume_ratio_20d": 1.33,
+      "score": 56,
+      "rationale": "近 255 個交易日，收盤 59.3，位於一年區間 63.75%，20 日報酬 -16.83%，60 日報酬 -7.34%。",
+      "errors": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-22T12:31:09.647Z"
+    },
+    "tpex-6023": {
+      "ticker": "6023",
       "market": "TPEx",
       "status": "ok",
       "source_ids": [
         "tpex_trading_stock"
       ],
       "evidence_level": "high",
-      "trading_days": 252,
+      "trading_days": 255,
       "latest_trade_date": "2026-11-20",
-      "latest_close": 77.5,
-      "year_high": 137,
-      "year_low": 77.5,
+      "latest_close": 77.7,
+      "year_high": 108,
+      "year_low": 77.7,
       "price_range_basis": "近一年交易區間",
-      "scoring_high": 137,
-      "scoring_low": 77.5,
+      "scoring_high": 108,
+      "scoring_low": 77.7,
       "position_pct": 0,
-      "ma20": 80.79,
-      "ma60": 80.18,
-      "return_20d_pct": -2.64,
-      "return_60d_pct": -8.61,
-      "average_volume_20d": 28150,
-      "volume_ratio_20d": 1.28,
-      "score": 49,
-      "rationale": "近 252 個交易日，收盤 77.5，位於一年區間 0%，20 日報酬 -2.64%，60 日報酬 -8.61%。",
+      "ma20": 80.61,
+      "ma60": 83.32,
+      "return_20d_pct": -5.82,
+      "return_60d_pct": -6.16,
+      "average_volume_20d": 471050,
+      "volume_ratio_20d": 2.39,
+      "score": 46,
+      "rationale": "近 255 個交易日，收盤 77.7，位於一年區間 0%，20 日報酬 -5.82%，60 日報酬 -6.16%。",
       "errors": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-22T00:15:46.482Z"
+      "refreshed_at": "2026-11-22T12:31:09.647Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -335,7 +306,36 @@
       "rationale": "近 255 個交易日，收盤 29.95，位於近 60 日區間 0%，20 日報酬 -38.25%，60 日報酬 -34.96%。",
       "errors": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-22T00:15:46.482Z"
+      "refreshed_at": "2026-11-22T12:31:09.647Z"
+    },
+    "tpex-8279": {
+      "ticker": "8279",
+      "market": "TPEx",
+      "status": "ok",
+      "source_ids": [
+        "tpex_trading_stock"
+      ],
+      "evidence_level": "high",
+      "trading_days": 252,
+      "latest_trade_date": "2026-11-20",
+      "latest_close": 77.5,
+      "year_high": 137,
+      "year_low": 77.5,
+      "price_range_basis": "近一年交易區間",
+      "scoring_high": 137,
+      "scoring_low": 77.5,
+      "position_pct": 0,
+      "ma20": 80.79,
+      "ma60": 80.18,
+      "return_20d_pct": -2.64,
+      "return_60d_pct": -8.61,
+      "average_volume_20d": 28150,
+      "volume_ratio_20d": 1.28,
+      "score": 49,
+      "rationale": "近 252 個交易日，收盤 77.5，位於一年區間 0%，20 日報酬 -2.64%，60 日報酬 -8.61%。",
+      "errors": [],
+      "cache_status": "fresh",
+      "refreshed_at": "2026-11-22T12:31:09.647Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -364,7 +364,7 @@
       "rationale": "近 255 個交易日，收盤 113，位於一年區間 8.7%，20 日報酬 -10.32%，60 日報酬 -15.67%。",
       "errors": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-22T00:15:46.482Z"
+      "refreshed_at": "2026-11-22T12:31:09.647Z"
     }
   }
 }
