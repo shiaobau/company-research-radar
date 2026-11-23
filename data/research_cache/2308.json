@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-22T12:32:03.276Z",
+  "collected_at": "2026-11-23T00:16:53.324Z",
   "company": {
     "id": "twse-2308",
     "ticker": "2308",
@@ -541,8 +541,8 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-22T12:31:06.976Z",
-      "row_count": 3,
+      "fetched_at": "2026-11-23T00:15:44.365Z",
+      "row_count": 2,
       "available": true
     },
     {
