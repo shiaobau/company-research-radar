@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1",
   "ticker": "2886",
-  "fetched_at": "2026-11-22T00:17:39.548Z",
+  "fetched_at": "2026-11-23T12:34:02.885Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2886-1151123-1",
+      "date": "2026-11-23",
+      "announced_date": "2026-11-23",
+      "fact_date": "2026-11-23",
+      "announced_time": "17:32:35",
+      "title": "代本公司之子公司兆豐國際商業銀行補充公告發行 115年度第2期無擔保一般順位金融債券，發行金額新臺幣伍拾 肆億元整。",
+      "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:兆豐國際商業銀行股份有限公司 115年度第2期無擔保一般順位金融債券。 3.是否採總括申報發行公司債(是/否):否 4.發行總額:新臺幣伍拾肆億元整。 5.每張面額:新臺幣壹仟萬元整。 6.發行價格:依面額十足發行。 7.發行期間:3年期，民國115年12月8日發行，民國118年12月8日到期。 8.發行利率:年利率2.40%，單利固定計息。 9.擔保品之種類、名稱、金額及約定事項:無。 10.募得價款之用途及運用計畫:充實資金流動性。 11.承銷方式:委請輔導銷售顧問。 12.公司債受託人:無。 13.承銷或代銷機構:不適用。 14.發行保證人:無。 15.代理還本付息機構:兆豐國際商業銀行財務處。 16.簽證機構:無。 17.能轉換股份者，其轉換辦法:無。 18.賣回條件:無。 19.買回條件:無。 20.附有轉換、交換或認股者，其換股基準日:無。 21.附有轉換、交換或認股者，對股權可能稀釋情形:無。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):NA 23.其他應敘明事項:補充109年02月21日所發布之重大訊息。",
+      "clause": "第11款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "enterDate": "1151123",
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
+      }
+    },
     {
       "id": "mops-history-2886-1151119-2",
       "date": "2026-11-19",
@@ -28,10 +49,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1151119",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "2",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -49,10 +70,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "3",
         "enterDate": "1151118",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "3",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -70,31 +91,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1151118",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "2",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
       "id": "mops-history-2886-1151117-2",
       "date": "2026-11-17",
       "announced_date": "2026-11-17",
-      "fact_date": "2026-11-17",
+      "fact_date": null,
       "announced_time": "17:13:26",
       "title": "公告本公司之子公司兆豐票券金融(股)公司董事異動案",
-      "description": "1.發生變動日期:115/11/17 2.法人名稱:兆豐金融控股股份有限公司 3.舊任者姓名:不適用 4.舊任者簡歷:不適用 5.新任者姓名:張傳章 6.新任者簡歷:兆豐金控總經理 7.異動原因:董事會決議派任 8.原任期（例xx/xx/xx至xx/xx/xx）:114/04/08至117/04/07 9.新任生效日期:115/11/18 10.其他應敘明事項:無",
-      "clause": "第6款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1151117",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "2",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -112,10 +133,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151117",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -133,10 +154,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1151113",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "2",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -154,10 +175,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151113",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -175,10 +196,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151111",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -196,10 +217,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151110",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -217,10 +238,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151106",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -238,10 +259,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1151105",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "2",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -259,10 +280,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151105",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -280,10 +301,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151102",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -301,10 +322,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151030",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -322,10 +343,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151029",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -343,10 +364,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1151028",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "2",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -364,10 +385,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151028",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -385,10 +406,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "3",
         "enterDate": "1151022",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "3",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -406,10 +427,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1151022",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "2",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -427,10 +448,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151022",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -448,10 +469,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "2",
         "enterDate": "1151016",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "2",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -469,10 +490,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151016",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "serialNumber": "1",
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     },
     {
@@ -490,31 +511,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "serialNumber": "1",
         "enterDate": "1151014",
-        "marketKind": "sii",
-        "companyId": "2886"
-      }
-    },
-    {
-      "id": "mops-history-2886-1151002-1",
-      "date": "2026-10-02",
-      "announced_date": "2026-10-02",
-      "fact_date": null,
-      "announced_time": "17:12:51",
-      "title": "兆豐國際商業銀行公告授信資產之轉讓。",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151002",
-        "marketKind": "sii",
-        "companyId": "2886"
+        "companyId": "2886",
+        "marketKind": "sii"
       }
     }
   ]
