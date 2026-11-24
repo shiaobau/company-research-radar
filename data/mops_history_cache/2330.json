@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1",
   "ticker": "2330",
-  "fetched_at": "2026-11-23T12:33:29.203Z",
+  "fetched_at": "2026-11-24T12:33:53.513Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2330-1151124-1",
+      "date": "2026-11-24",
+      "announced_date": "2026-11-24",
+      "fact_date": "2026-11-30",
+      "announced_time": "16:10:19",
+      "title": "本公司受邀參加機構投資人說明會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/11/30 1.召開法人說明會之日期：115/11/30 ~ 115/12/04 2.召開法人說明會之時間：23 時 55 分 3.召開法人說明會之地點：The Phoenician Hotel 4.法人說明會擇要訊息：本公司受邀參加瑞銀證券所舉辦之『UBS Global Technology and AI Conference』，會中就本公司10/15法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "enterDate": "1151124",
+        "marketKind": "sii",
+        "companyId": "2330"
+      }
+    },
     {
       "id": "mops-history-2330-1151120-1",
       "date": "2026-11-20",
@@ -28,10 +49,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151120",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151120",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -49,10 +70,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151119",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151119",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -70,31 +91,31 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151112",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151112",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
       "id": "mops-history-2330-1151110-16",
       "date": "2026-11-10",
       "announced_date": "2026-11-10",
-      "fact_date": "2026-11-10",
+      "fact_date": null,
       "announced_time": "22:05:14",
       "title": "補充本公司董事會民國108年11月12日核准資本預算案之實際執行情形",
-      "description": "1.標的物之名稱及性質（如坐落台中市北區ＸＸ段ＸＸ小段土地）: (1) 先進製程產能機器設備 (2) 先進封裝、成熟及/或特殊製程產能機器設備 (3) 研發及經常性資本支出 (4) 不動產及資本化租賃資產 2.事實發生日:115/11/10~115/11/10 3.董事會通過日期: 民國108年11月12日 4.其他核決日期: 不適用 5.交易單位數量（如ＸＸ平方公尺，折合ＸＸ坪）、每單位價格及交易總金額: (1) 先進製程產能機器設備 新台幣604億元 (2) 先進封裝、成熟及/或特殊製程產能機器設備 新台幣382億元 (3) 研發及經常性資本支出 新台幣140億元 (4) 不動產及資本化租賃資產 新台幣599億元 6.交易相對人及其與公司之關係（交易相對人如屬自然人，且非公司之關 係人者，得免揭露其姓名）: (1) 先進製程產能機器設備： Applied Materials South East Asia Pte. Ltd. 等224家公司；與公司關係：皆無。 (2) 先進封裝、成熟及/或特殊製程產能機器設備： 共349家公司；與公司關係：皆無。 (3) 研發及經常性資本支出： 共477家公司；與公司關係：皆無。 (4) 不動產及資本化租賃資產： CHEN YUAN INTERNATIONAL CO., LTD; Chien Kuo Construction Co., Ltd; China Steel Structure Co., Ltd.; Chun Yuan Steel Industry Co., Ltd; DA CIN Construction Co., Ltd; Evergreen Steel Corporation; Exyte Taiwan Co., Ltd.; Fu Tsu Construction Co., Ltd.; KEDGE CONSTRUCTION CO., LTD; L and K ENGINEERING CO., LTD.; Lee Ming Construction Co., Ltd.; M.Moser Associate Limited Taiwan Branch; Mandartech Interiors Inc; MARKETECH INTERNATIONAL CORP.; MEGA UNION TECHNOLOGY INCORPORATED; Ruentex Engineering & Construction Co., Ltd.; Southern Taiwan Science Park Bureau, National Science and Technology Council; Taiwan Puritic Corp.; TASA Construction Corporation; Tung Kang Steel Structure Corp.; UANGYIH-TECH INDUSTRIAL CO., LTD.; UNITED INTEGRATED SERVICES CO. LTD.; YANKEY ENGINEERING CO., LTD.; Yuan Yi Construction Co., Ltd. 等235家公司；與公司關係：皆無。 7.交易相對人為關係人者，並應公告選定關係人為交易對象之原因及前次移轉之 所有人、前次移轉之所有人與公司及交易相對人間相互之關係、前次移轉日期 及移轉金額: 不適用 8.交易標的最近五年內所有權人曾為公司之關係人者，尚應公告關係 人之取得及處分日期、價格及交易當時與公司之關係: 不適用 9.預計處分利益（或損失）（取得資產者不適用）（遞延者應列表說明 認列情形）: 不適用 10.交付或付款條件（含付款期間及金額）、契約限制條款及其他重要約定 事項: 依訂單條件付款。 11.本次交易之決定方式（如招標、比價或議價）、價格決定之參考依據及 決策單位: 比價及議價；廠商提供之報價單及市場行情；依本公司董事會核決辦理。 12.專業估價者事務所或公司名稱及其估價金額: 不適用 13.專業估價師姓名: 不適用 14.專業估價師開業證書字號: 不適用 15.估價報告是否為限定價格、特定價格或特殊價格:否或不適用 16.是否尚未取得估價報告:否或不適用 17.尚未取得估價報告之原因: 不適用 18.估價結果有重大差異時，其差異原因及會計師意見: 不適用 19.會計師事務所名稱: 不適用 20.會計師姓名: 不適用 21.會計師開業證書字號: 不適用 22.經紀人及經紀費用: 不適用 23.取得或處分之具體目的或用途: 供生產、營運用。 24.本次交易表示異議之董事之意見: 無。 25.本次交易為關係人交易:否 26.監察人承認或審計委員會同意日期: 不適用 27.本次交易係向關係人取得不動產或其使用權資產:否 28.依「公開發行公司取得或處分資產處理準則」第十六條規定 評估之價格:不適用 29.依前項評估之價格較交易價格為低者，依同準則第十七條規 定評估之價格:不適用 30.前已就同一件事件發布重大訊息日期: 民國108年11月12日 31.其他敘明事項: 依公開發行公司取得或處分資產處理準則第32條及其問答集規定辦理補充公告。",
-      "clause": "第20款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "16",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -112,10 +133,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "15",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -133,10 +154,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "14",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -154,10 +175,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "13",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -175,10 +196,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "12",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -196,10 +217,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "11",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -217,10 +238,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "10",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -238,10 +259,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "9",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -259,10 +280,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "8",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -280,10 +301,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "7",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -301,10 +322,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "6",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -322,10 +343,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "5",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -343,10 +364,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "4",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -364,10 +385,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "3",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -385,10 +406,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "2",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -406,10 +427,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151110",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151110",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -427,10 +448,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151109",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151109",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -448,10 +469,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151106",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151106",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -469,10 +490,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
-        "enterDate": "1151103",
         "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "enterDate": "1151103",
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     },
     {
@@ -490,31 +511,10 @@
       "claim_type": "official_disclosure",
       "review_status": "unreviewed",
       "detail_parameters": {
+        "serialNumber": "1",
         "enterDate": "1151029",
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
-      }
-    },
-    {
-      "id": "mops-history-2330-1151015-1",
-      "date": "2026-10-15",
-      "announced_date": "2026-10-15",
-      "fact_date": null,
-      "announced_time": "15:21:38",
-      "title": "台積公司2026年第三季每股盈餘新台幣29.43元",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1151015",
-        "serialNumber": "1",
-        "companyId": "2330",
-        "marketKind": "sii"
+        "marketKind": "sii",
+        "companyId": "2330"
       }
     }
   ]
