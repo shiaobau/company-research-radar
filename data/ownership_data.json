@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-23T12:30:54.906Z",
+  "generated_at": "2026-11-24T00:16:19.905Z",
   "sources": [
     {
       "id": "twse_major_shareholders",
@@ -74,7 +74,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -95,7 +95,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -116,7 +116,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -129,20 +129,27 @@
       ],
       "evidence_level": "high",
       "major_shareholder_count": 1,
-      "insider_transfer_count": 0,
+      "insider_transfer_count": 1,
       "disclosure_violation_count": 0,
-      "score": 73,
-      "rationale": "持股逾 10% 大股東 1 名；未偵測到近期內部人轉讓申報；未偵測到資訊申報違規。",
+      "score": 55,
+      "rationale": "持股逾 10% 大股東 1 名；近期內部人轉讓申報 1 筆；未偵測到資訊申報違規。",
       "major_shareholders": [
         {
           "name": "香港商香達國際有限公司",
           "source_id": "twse_major_shareholders"
         }
       ],
-      "insider_transfers": [],
+      "insider_transfers": [
+        {
+          "date": null,
+          "holder": "鄭平",
+          "shares": null,
+          "source_id": "twse_insider_transfer"
+        }
+      ],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -163,7 +170,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -184,7 +191,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -205,7 +212,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -239,7 +246,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -260,7 +267,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -286,7 +293,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -312,7 +319,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -333,7 +340,7 @@
       "insider_transfers": [],
       "violations": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-23T12:32:30.864Z",
+  "collected_at": "2026-11-24T00:17:21.850Z",
   "company": {
     "id": "twse-2886",
     "ticker": "2886",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "ebd258e1aee6abbfe163",
+      "date": "2026-11-23",
+      "announced_date": "2026-11-23",
+      "fact_date": "2026-11-23",
+      "announced_time": "173235",
+      "title": "代本公司之子公司兆豐國際商業銀行補充公告發行 115年度第2期無擔保一般順位金融債券，發行金額新臺幣伍拾 肆億元整。",
+      "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:兆豐國際商業銀行股份有限公司 115年度第2期無擔保一般順位金融債券。 3.是否採總括申報發行公司債(是/否):否 4.發行總額:新臺幣伍拾肆億元整。 5.每張面額:新臺幣壹仟萬元整。 6.發行價格:依面額十足發行。 7.發行期間:3年期，民國115年12月8日發行，民國118年12月8日到期。 8.發行利率:年利率2.40%，單利固定計息。 9.擔保品之種類、名稱、金額及約定事項:無。 10.募得價款之用途及運用計畫:充實資金流動性。 11.承銷方式:委請輔導銷售顧問。 12.公司債受託人:無。 13.承銷或代銷機構:不適用。 14.發行保證人:無。 15.代理還本付息機構:兆豐國際商業銀行財務處。 16.簽證機構:無。 17.能轉換股份者，其轉換辦法:無。 18.賣回條件:無。 19.買回條件:無。 20.附有轉換、交換或認股者，其換股基準日:無。 21.附有轉換、交換或認股者，對股權可能稀釋情形:無。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):NA 23.其他應敘明事項:補充109年02月21日所發布之重大訊息。",
+      "clause": "第11款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2886-1151123-1",
       "date": "2026-11-23",
@@ -492,27 +507,6 @@
         "companyId": "2886",
         "marketKind": "sii"
       }
-    },
-    {
-      "id": "mops-history-2886-1151014-1",
-      "date": "2026-10-14",
-      "announced_date": "2026-10-14",
-      "fact_date": null,
-      "announced_time": "15:00:09",
-      "title": "公告本公司暨主要子公司115年9月份自結合併盈餘",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2886&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "enterDate": "1151014",
-        "serialNumber": "1",
-        "companyId": "2886",
-        "marketKind": "sii"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-23T12:30:53.725Z",
-      "row_count": 2,
+      "fetched_at": "2026-11-24T00:16:18.375Z",
+      "row_count": 110,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-23T12:34:02.885Z",
       "row_count": 24,
       "detail_count": 4,

@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
-  "generated_at": "2026-11-23T12:30:54.906Z",
+  "generated_at": "2026-11-24T00:16:19.905Z",
   "sources": [
     {
       "id": "twse_material_events",
@@ -33,7 +33,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-1707": {
       "ticker": "1707",
@@ -50,7 +50,7 @@
       "rationale": "財務品質分數 75。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-2303": {
       "ticker": "2303",
@@ -67,7 +67,7 @@
       "rationale": "月營收分數 72；財務品質分數 74。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-2308": {
       "ticker": "2308",
@@ -84,7 +84,7 @@
       "rationale": "月營收分數 81；財務品質分數 69。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-2330": {
       "ticker": "2330",
@@ -101,7 +101,7 @@
       "rationale": "月營收分數 81；財務品質分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-2885": {
       "ticker": "2885",
@@ -118,7 +118,7 @@
       "rationale": "財務品質分數 89。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-2886": {
       "ticker": "2886",
@@ -127,15 +127,33 @@
       "source_ids": [
         "twse_material_events"
       ],
-      "evidence_level": "medium",
-      "event_count": 0,
+      "evidence_level": "high",
+      "event_count": 1,
       "positive_event_count": 0,
       "negative_event_count": 0,
-      "score": 57,
+      "score": 60,
       "rationale": "財務品質分數 79。",
-      "events": [],
+      "events": [
+        {
+          "date": "2026-11-23",
+          "announce_date": "2026-11-23",
+          "time": "173235",
+          "title": "代本公司之子公司兆豐國際商業銀行補充公告發行 115年度第2期無擔保一般順位金融債券，發行金額新臺幣伍拾 肆億元整。",
+          "clause": "第11款",
+          "description": "1.董事會決議日期:NA 2.名稱﹝XX公司第X次（有、無）擔保公司債﹞:兆豐國際商業銀行股份有限公司 115年度第2期無擔保一般順位金融債券。 3.是否採總括申報發行公司債(是/否):否 4.發行總額:新臺幣伍拾肆億元整。 5.每張面額:新臺幣壹仟萬元整。 6.發行價格:依面額十足發行。 7.發行期間:3年期，民國115年12月8日發行，民國118年12月8日到期。 8.發行利率:年利率2.40%，單利固定計息。 9.擔保品之種類、名稱、金額及約定事項:無。 10.募得價款之用途及運用計畫:充實資金流動性。 11.承銷方式:委請輔導銷售顧問。 12.公司債受託人:無。 13.承銷或代銷機構:不適用。 14.發行保證人:無。 15.代理還本付息機構:兆豐國際商業銀行財務處。 16.簽證機構:無。 17.能轉換股份者，其轉換辦法:無。 18.賣回條件:無。 19.買回條件:無。 20.附有轉換、交換或認股者，其換股基準日:無。 21.附有轉換、交換或認股者，對股權可能稀釋情形:無。 22.現金減資後再行募資之合理性及必要性 (募資當年度及前一年度有辦理現金減資者適用):NA 23.其他應敘明事項:補充109年02月21日所發布之重大訊息。",
+          "source_id": "twse_material_events",
+          "sentiment": "review",
+          "risk_class": "review",
+          "risk_category": "correction",
+          "risk_category_label": "更正或補充",
+          "risk_points": 0,
+          "matched_patterns": [
+            "補充"
+          ]
+        }
+      ],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "tpex-3115": {
       "ticker": "3115",
@@ -152,7 +170,7 @@
       "rationale": "月營收分數 79。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-3481": {
       "ticker": "3481",
@@ -169,7 +187,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "tpex-6023": {
       "ticker": "6023",
@@ -186,7 +204,7 @@
       "rationale": "財務品質分數 78。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "tpex-8279": {
       "ticker": "8279",
@@ -203,7 +221,7 @@
       "rationale": "財務品質分數 71。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     },
     "twse-9939": {
       "ticker": "9939",
@@ -220,7 +238,7 @@
       "rationale": "近期重大訊息較少，主要依月營收與財務品質判斷催化。",
       "events": [],
       "cache_status": "fresh",
-      "refreshed_at": "2026-11-23T12:30:54.906Z"
+      "refreshed_at": "2026-11-24T00:16:19.905Z"
     }
   }
 }
