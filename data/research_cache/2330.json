@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-24T12:32:44.396Z",
+  "collected_at": "2026-11-25T00:16:46.237Z",
   "company": {
     "id": "twse-2330",
     "ticker": "2330",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "b34c6b3f569d099194a9",
+      "date": "2026-11-24",
+      "announced_date": "2026-11-24",
+      "fact_date": "2026-11-30",
+      "announced_time": "161019",
+      "title": "本公司受邀參加機構投資人說明會",
+      "description": "符合條款第四條第XX款：12 事實發生日：115/11/30 1.召開法人說明會之日期：115/11/30 ~ 115/12/04 2.召開法人說明會之時間：23 時 55 分 3.召開法人說明會之地點：The Phoenician Hotel 4.法人說明會擇要訊息：本公司受邀參加瑞銀證券所舉辦之『UBS Global Technology and AI Conference』，會中就本公司10/15法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
+      "clause": "第12款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2330-1151124-1",
       "date": "2026-11-24",
@@ -492,27 +507,6 @@
         "marketKind": "sii",
         "companyId": "2330"
       }
-    },
-    {
-      "id": "mops-history-2330-1151029-1",
-      "date": "2026-10-29",
-      "announced_date": "2026-10-29",
-      "fact_date": null,
-      "announced_time": "14:05:38",
-      "title": "公告本公司取得廠房及附屬設施",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1151029",
-        "marketKind": "sii",
-        "companyId": "2330"
-      }
     }
   ],
   "references": [
@@ -541,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-24T12:31:28.631Z",
-      "row_count": 110,
+      "fetched_at": "2026-11-25T00:15:42.717Z",
+      "row_count": 94,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-24T12:33:53.513Z",
       "row_count": 24,
       "detail_count": 4,
