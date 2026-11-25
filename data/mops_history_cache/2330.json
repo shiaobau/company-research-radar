@@ -3,7 +3,7 @@
   "source_id": "mops_history_api",
   "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1",
   "ticker": "2330",
-  "fetched_at": "2026-11-24T12:33:53.513Z",
+  "fetched_at": "2026-11-25T12:35:16.508Z",
   "cache_status": "updated",
   "as_of_date": null,
   "queried_roc_years": [
@@ -13,6 +13,27 @@
   "event_count": 24,
   "detail_count": 4,
   "events": [
+    {
+      "id": "mops-history-2330-1151125-1",
+      "date": "2026-11-25",
+      "announced_date": "2026-11-25",
+      "fact_date": "2026-11-25",
+      "announced_time": "16:05:09",
+      "title": "公告本公司調整民國115年第二季每股現金股利金額",
+      "description": "1.董事會或股東會決議日期:NA 2.原發放股利種類及金額: 盈餘分派現金股利新台幣181,526,590,469元，每股配發新台幣7.0元。 3.變更後發放股利種類及金額: 盈餘分派現金股利新台幣181,526,590,469元，每股配發新台幣7.00000137元。 4.變更原因: 每股現金股利金額之細微變動係由於在董事會決議股利分派至配息基準日間， 本公司收回113年限制員工權利新股部分股數，因此本公司流通在外之股數變 化所致。 5.其他應敘明事項: 依據本公司115/8/11董事會決議，授權董事長調整每股現金股利金額。",
+      "clause": "第14款",
+      "source_id": "mops_history_api",
+      "source_type": "official_history_api",
+      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed",
+      "detail_parameters": {
+        "serialNumber": "1",
+        "companyId": "2330",
+        "marketKind": "sii",
+        "enterDate": "1151125"
+      }
+    },
     {
       "id": "mops-history-2330-1151124-1",
       "date": "2026-11-24",
@@ -29,9 +50,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151124",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151124"
       }
     },
     {
@@ -50,9 +71,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151120",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151120"
       }
     },
     {
@@ -71,20 +92,20 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151119",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151119"
       }
     },
     {
       "id": "mops-history-2330-1151112-1",
       "date": "2026-11-12",
       "announced_date": "2026-11-12",
-      "fact_date": "2026-11-12",
+      "fact_date": null,
       "announced_time": "21:01:11",
       "title": "台積公司針對員工個資遭未經授權存取事件說明",
-      "description": "1.事實發生日:115/11/12 2.公司名稱:台灣積體電路製造股份有限公司 3.與公司關係(請輸入本公司或子公司):本公司 4.相互持股比例:不適用 5.發生緣由:不適用 6.因應措施:不適用 7.其他應敘明事項(若事件發生或決議之主體係屬公開發行以上公司，本則重大訊息同時 符合證券交易法施行細則第7條第9款所定對股東權益或證券價格有重大影響之事項): 台積公司發現部分現職及離職員工資訊未經授權被置於外部網站，目前並無證據 顯示台積公司系統遭到入侵。已知這些資訊與某雲端服務供應商之系統服務中的 資料相符，且與公司生產或客戶相關資料無關。台積公司已陸續通知受影響的人 員並提供其必要的協助。同時，我們正與相關雲端服務供應商、調查機關，及第 三方網路安全機構密切合作以加速釐清狀況並採取必要措施。台積公司將持續致 力於保護同仁隱私與維護資訊安全。",
-      "clause": "第51款",
+      "description": "",
+      "clause": null,
       "source_id": "mops_history_api",
       "source_type": "official_history_api",
       "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
@@ -92,9 +113,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151112",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151112"
       }
     },
     {
@@ -113,9 +134,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "16",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -134,9 +155,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "15",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -155,9 +176,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "14",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -176,9 +197,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "13",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -197,9 +218,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "12",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -218,9 +239,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "11",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -239,9 +260,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "10",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -260,9 +281,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "9",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -281,9 +302,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "8",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -302,9 +323,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "7",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -323,9 +344,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "6",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -344,9 +365,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "5",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -365,9 +386,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "4",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -386,9 +407,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "3",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -407,9 +428,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "2",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -428,9 +449,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151110",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151110"
       }
     },
     {
@@ -449,9 +470,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151109",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151109"
       }
     },
     {
@@ -470,9 +491,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151106",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151106"
       }
     },
     {
@@ -491,30 +512,9 @@
       "review_status": "unreviewed",
       "detail_parameters": {
         "serialNumber": "1",
-        "enterDate": "1151103",
+        "companyId": "2330",
         "marketKind": "sii",
-        "companyId": "2330"
-      }
-    },
-    {
-      "id": "mops-history-2330-1151029-1",
-      "date": "2026-10-29",
-      "announced_date": "2026-10-29",
-      "fact_date": null,
-      "announced_time": "14:05:38",
-      "title": "公告本公司取得廠房及附屬設施",
-      "description": "",
-      "clause": null,
-      "source_id": "mops_history_api",
-      "source_type": "official_history_api",
-      "source_url": "https://mops.twse.com.tw/mops/web/t05st01?co_id=2330&firstin=true&step=1&year=115",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed",
-      "detail_parameters": {
-        "serialNumber": "1",
-        "enterDate": "1151029",
-        "marketKind": "sii",
-        "companyId": "2330"
+        "enterDate": "1151103"
       }
     }
   ]
