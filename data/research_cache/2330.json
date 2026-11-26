@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "collected_at": "2026-11-25T12:34:15.119Z",
+  "collected_at": "2026-11-26T00:17:05.324Z",
   "company": {
     "id": "twse-2330",
     "ticker": "2330",
@@ -10,6 +10,21 @@
   },
   "collection_scope": "targeted_research_company",
   "events": [
+    {
+      "id": "698085fbd17c29c75f8c",
+      "date": "2026-11-25",
+      "announced_date": "2026-11-25",
+      "fact_date": "2026-11-25",
+      "announced_time": "160509",
+      "title": "公告本公司調整民國115年第二季每股現金股利金額",
+      "description": "1.董事會或股東會決議日期:NA 2.原發放股利種類及金額: 盈餘分派現金股利新台幣181,526,590,469元，每股配發新台幣7.0元。 3.變更後發放股利種類及金額: 盈餘分派現金股利新台幣181,526,590,469元，每股配發新台幣7.00000137元。 4.變更原因: 每股現金股利金額之細微變動係由於在董事會決議股利分派至配息基準日間， 本公司收回113年限制員工權利新股部分股數，因此本公司流通在外之股數變 化所致。 5.其他應敘明事項: 依據本公司115/8/11董事會決議，授權董事長調整每股現金股利金額。",
+      "clause": "第14款",
+      "source_id": "twse_material_events",
+      "source_type": "official_api_cache",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "claim_type": "official_disclosure",
+      "review_status": "unreviewed"
+    },
     {
       "id": "mops-history-2330-1151125-1",
       "date": "2026-11-25",
@@ -30,21 +45,6 @@
         "marketKind": "sii",
         "enterDate": "1151125"
       }
-    },
-    {
-      "id": "b34c6b3f569d099194a9",
-      "date": "2026-11-24",
-      "announced_date": "2026-11-24",
-      "fact_date": "2026-11-30",
-      "announced_time": "161019",
-      "title": "本公司受邀參加機構投資人說明會",
-      "description": "符合條款第四條第XX款：12 事實發生日：115/11/30 1.召開法人說明會之日期：115/11/30 ~ 115/12/04 2.召開法人說明會之時間：23 時 55 分 3.召開法人說明會之地點：The Phoenician Hotel 4.法人說明會擇要訊息：本公司受邀參加瑞銀證券所舉辦之『UBS Global Technology and AI Conference』，會中就本公司10/15法說會已公開之財務數字、經營績效等相關資訊進行說明。 5.其他應敘明事項：無。 完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。",
-      "clause": "第12款",
-      "source_id": "twse_material_events",
-      "source_type": "official_api_cache",
-      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
-      "claim_type": "official_disclosure",
-      "review_status": "unreviewed"
     },
     {
       "id": "mops-history-2330-1151124-1",
@@ -535,13 +535,13 @@
     {
       "source_id": "twse_material_events",
       "cache_status": "fresh",
-      "fetched_at": "2026-11-25T12:31:10.408Z",
-      "row_count": 94,
+      "fetched_at": "2026-11-26T00:15:56.753Z",
+      "row_count": 111,
       "available": true
     },
     {
       "source_id": "mops_history_api",
-      "cache_status": "updated",
+      "cache_status": "fresh",
       "fetched_at": "2026-11-25T12:35:16.508Z",
       "row_count": 24,
       "detail_count": 4,
